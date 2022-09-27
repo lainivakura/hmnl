@@ -1,0 +1,20 @@
+state={
+	id=729
+	name="STATE_729"
+	manpower = 1
+	
+	state_category = enclave
+	
+	history={
+		owner = AFR
+
+		add_core_of = AFR
+
+	}
+	
+	provinces={
+		4189 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,11 @@
+	opinion_modifiers = {
+	
+		sanctions1 = {
+		trade = yes
+		value = -100
+	}
+	embargo1 = {
+		trade = yes
+		value = -100
+	}
+	}

@@ -1,0 +1,724 @@
+﻿l_english:
+
+ ###EVENTS###
+ 
+ 
+ #italymod.event
+ 
+ #italymod.event.1.desc:0 "Damn! The Ethiopian army has manage to throw us out from Eritrea and Somaliland!"
+ 
+ italymod.event.2.t:0 "Monarchists launch a coup!"
+ italymod.event.2.desc:0 "Despite our best efforts, the monarchists launched a coup d'etat with the intent of preventing the king's deposition."
+ italymod.event.2.a:0 "Damn those Bastards!"
+ 
+ italymod.event.3.t:0 "The king is deposed"
+ italymod.event.3.desc:0 "Success! Our soldiers captured the king and have force him to abdicate."
+ italymod.event.3.a:0 "A glorious day for Italy!"
+ 
+ italymod.event.4.t:0 "The Monarchists Coup!"
+ italymod.event.4.desc:0 "During the night, our soldiers have managed to occupy the principal industrial and government centers. The marshal Pietro Badoglio, who's leading the coup, has announced that the Mussolini regime is ended. But the fascists response is still not come..."
+ italymod.event.4.a:0 "The fascists surrender!"
+ italymod.event.4.b:0 "The fascists don't surrender!"
+ 
+ italymod.event.5.t:0 "The arrest of Mussolini"
+ italymod.event.5.desc:0 "Today Mussolini was forced to resign from the king, after the 'Gran Consiglio del Fascismo' (Grand Council of Fascism) passed a vote of no confidence to him. The former prime minister of Italy was immediately arrested by Marshal Pietro Badoglio, who was appointed new head of government by the king."
+ italymod.event.5.a:0 "So this is the end of Fascism, right?"
+ 
+ italymod.event.6.t:0 "Fascist launch a coup!"
+ italymod.event.6.desc:0 "Mussolini has been freed by his supporters and now they have launched a coup to regain power!"
+ italymod.event.6.a:0 "Damn those fascists!"
+ 
+ italymod.event.7.t:0 "Monarchy Referendum"
+ italymod.event.7.desc:0 "Time has come to choose the form of state that will lead Italy. Victor Emmanuel has abdicated the throne in favor to his son, Umberto, in order to save the monarchy, but the republican sentiment is growin more and more, explecially in the far left. Who will win?"
+ italymod.event.7.a:0 "I vote for the Republic!"
+ italymod.event.7.b:0 "I vote for the Monarchy!"
+ 
+ #italymod.event.8.desc:0 ""
+ #italymod.event.9.desc:0 ""
+ #italymod.event.10.desc:0 ""
+ #italymod.event.11.desc:0 ""
+ #italymod.event.12.desc:0 ""
+ #italymod.event.13.desc:0 ""
+ #italymod.event.14.desc:0 ""
+ 
+ italymod.event.15.t:0 "The formation of the 'Brigate Garibaldi'"
+ italymod.event.15.desc:0 "Our secret police have reported the formations of a partisan groups, called 'Brigate Garibaldi' (Garibaldi Brigades). Led by Luigi Longo and Pietro Secchia, they are aligned with the Italian Communist Party (PCI)."
+ italymod.event.15.a:0 "The reds are always annoying."
+ 
+ italymod.event.16.t:0 "The formation of the 'Brigate Giustizia e Libertà'"
+ italymod.event.16.desc:0 "Our secret police have reported the formations of a partisan groups, called 'Giustizia e Libertà'. They are the paramilitary group of the illegal party called 'Partito d'Azione'. They are mainly Republicans and liberals, lead by piedmonteis Ferruccio Parri."
+ italymod.event.16.a:0 "Those goddamn liberals haven't got enough?"
+ 
+ italymod.event.17.t:0 "Formation of an autonomous partisan group"
+ italymod.event.17.desc:0 "Our secret police have reported the formations of an autonomous partisan group. Their ideology aren't clear, but it's a common opinion of our agents that they are a mixture of cattolich, liberals and even monarchists."
+ italymod.event.17.a:0 "Another fly to crush."
+ 
+ italymod.event.18.t:0 "Attack from partisans succeeded"
+ italymod.event.18.desc:0 "A group of partisans have launched an attack in one of our regions. Sadly, we weren't able to stop them and so they have done some damage to the infrastructure and to the industry of the area."
+ italymod.event.18.a:0 "Goddamn!"
+ 
+ italymod.event.19.t:0 "Partisans captured"
+ italymod.event.19.desc:0 "Our militias were able to capture a group of partisans. This will surely show to the others rebels that the fight against us will not be easy."
+ italymod.event.19.a:0 "Excelent."
+ 
+ italymod.event.20.t:0 "The Abdication of Victor Emmanuel III"
+ italymod.event.20.desc:0 "With the incoming referendum where the Italians will be called to choose between the monarchy or the repubblic, the king of Italy, Victor Emmanuel III, has finally decided to abdicate the throne in favour of his son, Umberto. The soldier king was reluctant to give up his status, but with the growing republican sentiment, he was forced the give up, in order to save the monarchy. In fact, the crown is very discredited between the Italians, after many years of  collaborations with the fascist regime. Umberto, unlike his father, didn't collaborate with Mussolini, and many times he has expressed his disapproval about the dictatorship. The new king, who will be called Umberto II, maybe could save the monarchy in Italy."
+ italymod.event.20.a:0 "Long live to the king!"
+ 
+ italymod.event.21.t:0 "The Fate of the Kingdom"
+ italymod.event.21.desc:0 "The fascists are finally defeated, but, sadly, this doesn't mean the end of our problems. \nWhile the monarchy has regained the control of Italy, the king, Victor Emmanuel III, is a controversial figure. Despite his recent contrasts with Mussolini, he was who put him in command, and the memory of his collaborations with the fascist regime is still fresh. \nPerhaps the best choice for the reign is a new king, and Victor Emmanuel should abdicate in favor of his son, Umberto, who's always been critical of the Mussolini's regime."
+ italymod.event.21.a:0 "Victor Emmanuel is the legitimate king."
+ italymod.event.21.b:0 "The Soldier King must leave. Long live to Umberto II!"
+ 
+ italymod.event.22.desc:0 ""
+ 
+ italymod.event.23:0 ""
+ 
+ italymod.event.24.t:0 "Attempt on Togliatti life!"
+ italymod.event.24.desc:0 "Yesterday, the secretary of the PCI, Palmiro Togliatti, was shot three times, being severely wounded by Antonio Pallante, a strongly anti-communist fascist student. His life conditions were uncertain, causing an acute political crisis in Italy. Luckily, the politician has regained consciousness and he contributes to placate the crisis and avoided another civil war that it could have been disastrous for Italy."
+ italymod.event.24.a:0 "The worst has been avoided."
+ 
+ italymod.event.25.t:0 "The Assasination of Togliatti!"
+ italymod.event.25.desc:0 "Yesterday, the secretary of the PCI, Palmiro Togliatti, was shot three times, being severely wounded by Antonio Pallante, a strongly anti-communist fascist student. His life conditions were uncertain, causing an acute political crisis in Italy. It's a news from the last hours that the politician has died. Member and militants of the left have have already been starting to arm themselves. It's clear that a civil war will start in the next days."
+ italymod.event.25.a:0 "Support the Government!"
+ italymod.event.25.b:0 "Support the Peoples' Revolution!"
+  
+ #italymod.election
+ 
+ italymod.election.1.t:0 "The New Government of [THIS.GetNameDef]"
+ italymod.election.1.desc:0 "Now that the new constitution has been approved, it's clear that the current collaboration of all the democratic parties cannot continue. \nThe majority is split between who want to continue and reinforce the cooperation with the Socialist and Communist parties, and who propose a coalition of all the Centrist parties in order to exclude any extremism from the Government. \nThe more favourite candidates for the prime minister position are Alcide De Gasperi, leader of the re-founded PPI and staunch exponent for a centrist solution, and Ivanoe Bonomi, an old figure in the Italian politics with the past of a moderate socialist, who could reach an agreement with the Left."
+ italymod.election.1.a:0 "A Centrist coalition lead by Alcide De Gasperi."
+ italymod.election.1.b:0 "Ivanoe Bonomi will reach an agreement with the Left."
+ italymod.election.1.c:0 "The CLN alliance will continue."
+ italymod.election.1.d:0 "The Old Liberals will rebuild Italy."
+ 
+ italymod.election.2.t:0 "Parliament discusses about the government's budget"
+ italymod.election.2.desc:0 "The current parliamentary discussions are, by the most, dominated by one main topic: the approval of the annual government's budget. \nThe Liberals and Centrist parties have prepared a programme that would favor a private-sector investments, while keeping the public expense as low as possible. \nThe Social-Democrats, backed by some of the others leftist parties, have proposed a series of public works, in order to create new jobs for the people. \nThe Right, included Fascists and Monarchists, have suggested an increase in the military budget, in order to increase the Italian armament."
+ italymod.election.2.a:0 "The Centrist-Liberal budget."
+ italymod.election.2.b:0 "The Social-Democrat budget."
+ italymod.election.2.c:0 "The Right parties budget."
+ 
+ italymod.election.3.t:0 "A Trembling in the Majority"
+ italymod.election.3.desc:0 "A few years passed since [THIS.GetLeader] managed to get a majority in parliament in order to support his government. \nBut nothing is forever and, now, some parties are starting to push for a change in the majority, in order to get more influence in the administration of the country. \nWhile the government of [THIS.GetLeader] could easily survive by giving some concessions to his allies, a different majority could be created in parliament."
+ italymod.election.3.a:0 "The current government is fine."
+ italymod.election.3.b:0 "A Centrist coalition. The political extremism have already done to much damage in Italy."
+ italymod.election.3.c:0 "The majority should be expanse. We have to cooperate with the Left."
+ italymod.election.3.d:0 "Monarchists and Fascists will support a Centre-Right government."
+ 
+ italymod.election.4.t:0 "Strikes"
+ italymod.election.4.desc:0 "Following the sacking of some workers at a large factory, struggles between workers and factory owners have erupted across the country. Workers backed by [Root.GetCommunistParty] have organized and are demanding better conditions, such as higher wages and shorter work weeks. This will greatly reduce the output of our factories and is viewed as a victory for [Root.GetCommunistParty]. \nSome in the government has advocated a sharp response from the police. However, others parlamentars have recommended a more measured approach, pointing out that a heavy-handed response may well backfire to the government stability."
+ italymod.election.4.a:0 "Accept the workers request."
+ italymod.election.4.b:0 "They will eventually stop."
+ italymod.election.4.c:0 "Send the police to stop the demonstrators."
+ 
+ italymod.election.5.t:0 "Parliamentary deputy speaks against the Government"
+ italymod.election.5.desc:0 "Today, an influential deputy of the Parliament, spoke out against the current Italian government. While he didn't attack directly the prime minister, he criticised the parties that compose the majority, denouncing irregularities and corruptions between the members. \nDespite the government majority is still solid, his stability has been decisively compromised."
+ italymod.election.5.a:0 "He has a point."
+ italymod.election.5.b:0 "The government is doing fine."
+ 
+ italymod.election.6.t:0 "Majority divided on a law"
+ italymod.election.6.desc:0 "In these days, one discussion monopolize the parliament. An important law proposed by the government is dividing the majority. Not all the parties that support the government approve it, and the fight for approving the law is blocking the parliament works. We can force the majority to vote the law, or we can decide the abandon that. One last option is to search the support from the parties that are outside the government's majority."
+ italymod.election.6.a:0 "The law must be passed. We have to force the majority to vote it."
+ italymod.election.6.b:0 "Abandon the law, we have more important issues."
+ italymod.election.6.c:0 "We have to seek the support of the parties outside the majority."
+ 
+ italymod.election.7.t:0 "Minister criticised"
+ italymod.election.7.desc:0 "One of our minister has been recently criticised by the opposition. His mistake is clear to everyone, so defending him would damage the government stability, but, by accepting his resignation, we would only give strength to the opposition."
+ italymod.election.7.a:0 "We should support our minister."
+ italymod.election.7.b:0 "He should resign his position."
+ 
+ #italymod.election.8.desc:0 ""
+ 
+ italymod.election.9.t:0 "The Italian Elections of [GETYEAR]"
+ italymod.election.9.desc:0 "It's been a long time from the last time that the Italians had the possibility to vote, but despite this, the affluence to the urns is very high.\nThere are four principal blocs: the Popular Party, lead by Alcide De Gasperi; the Left bloc, usually called 'Popular Democratic Front', composed by the Socialist and Communist parties; the old liberal statesmen, who desire a return to the system there was before the dictatorship. Finally, there is the 'National Bloc', a coalition of monarchist and right wing parties, who are afraid of communist and seek a strong government that could protect their interest.\nWhile the victory of the PPI or the Left coalitions it seems the more likely, in these turbulent times, everything could happen."
+ italymod.election.9.a:0 "The PPI manages to get the majority of votes."
+ italymod.election.9.b:0 "The leftist parties are the majority in the parliament."
+ italymod.election.9.c:0 "The Old Liberals get a decent sum of votes."
+ italymod.election.9.d:0 "The Right has spoken: the National Bloc is the winner."
+ 
+ 
+ #italymod.pci
+ 
+ italymod.pci.1.t:0 "The V PCI Congress"
+ italymod.pci.1.desc:0 "All PCI members gathered at the 5th Congress, in Rome. The congress will debate the future of the party and Italy."
+ italymod.pci.1.a:0 "Let the congress begin"
+ 
+ italymod.pci.2:0 "The Party Structure"
+ italymod.pci.2.desc:0 "The first matter that we have to settle is the structure of the party. The majority of the members believe that the party should have a centralized structure, while there's a strong group of delegates that believe that the secretary should have the direct control of the party policies. Finally, the socialists are advocating for giving more representation to the trade unions."
+ italymod.pci.2.a:0 "We support a centralized party."
+ italymod.pci.2.b:0 "We prefer a strong secretary."
+ italymod.pci.2.c:0 "We believe in empowering the trade unions."
+ 
+ italymod.pci.3.t:0 "Union with Socialist?"
+ italymod.pci.3.desc:0 "On January 1921 the PCI party was created by some scissionist from the PSI. The political division allowed the facist to take power, because there wasn't any solid opposition. When the regime has fallen, our renewed alliance with the socialist allowed us to take the power in Italy, and even now the PSI has sent some delegates to our congress. Should we try to recreate a unite left party?"
+ italymod.pci.3.a:0 "We should continue the dialogue with the socialists."
+ italymod.pci.3.b:0 "The socialists are too moderate, we have to continue alone."
+ 
+ italymod.pci.4.t:0 "The Democracy question"
+ italymod.pci.4.desc:0 "While the communist doctrine in most of his cases isn't against the free elections, in the reality the things are a bit different.\nWe can allow some minors elections, like the leader of a local trade unions, while the central policy will be lead directly by the party."
+ italymod.pci.4.a:0 "Allow some minors elections."
+ italymod.pci.4.b:0 "Everything will be put under the direct control of the party."
+ italymod.pci.4.c:0 "Everything in the party will be decided by democracy."
+ 
+ italymod.pci.5.t:0 "The Future of the colonies"
+ italymod.pci.5.desc:0 "We have to decide what to do with the old Italian colonies located in Africa. The mere possession of them goes against the communist doctrine, which is openly sided against imperialism.\n\nVarious positions have emerged within the party.\nSome say that we should definitively recognizes the colonies as an integral part of the Italian Union, others claim that they must be freed. A third party claims that colonies should be freed, but placed under the direction of our government."
+ italymod.pci.5.a:0 "They are part of the Italian Union."
+ italymod.pci.5.b:0 "We will decolonize."
+ italymod.pci.5.c:0 "They will be free, but under our direction."
+ 
+ italymod.pci.6.t:0 "The fate of Pope and the Church"
+ italymod.pci.6.desc:0 "One of the hottest questions is the fate of the Pope and the Catholic Church. It's undeniable that the religion have influenced a lot the Italian history, but, in the other hand, it's the main cause of many injustices and abuses.\n\nWe could allow the Church to continue its functions, but under a strict supervision, or follow the Cavour doctrine 'Free Church in Free State' and only secularize the instution, leaving alone the Pope and his followers. Finally, we could exile the Pope from Italy and end the Catholic Church institution."
+ italymod.pci.6.a:0 "Allow the Pope and the Church to stay, but under the party control."
+ italymod.pci.6.b:0 "Free Church in Free State. We will secularize the state."
+ italymod.pci.6.c:0 "The Pope will be exiled from Italy and the Church institution dismantled."
+ 
+ italymod.pci.7.t:0 "The Secretary of the Party"
+ italymod.pci.7.desc:0 "Finally, it's the time to choose who will be the secretary of the party."
+ italymod.pci.7.a:0 "Palmiro Togliatti"
+ italymod.pci.7.b:0 "Luigi Longo"
+ italymod.pci.7.c:0 "Pietro Nenni"
+ italymod.pci.7.d:0 "Pietro Secchia"
+ italymod.pci.7.e:0 "Antonio Gramsci"
+ italymod.pci.7.f:0 "Amadeo Bordiga"
+ 
+ #italymod.diploevent
+  
+ italymod.diploevent.1.t:0 "[From.GetName] require our subjugation"
+ italymod.diploevent.1.desc:0 "Our ambassador to [ITA.GetNameDef] has hurriedly been summoned to the office of [ITA.GetLeader]. Before he could ask the cause of that unexpected convocation, he was presented with an ultimatum. [BUL.GetNameDef], [ITA.GetLeader] insisted, is no longer allowed to have an independent policy and should align itself with the decisions from Rome. Refusal would be met with force."
+ italymod.diploevent.1.a:0 "We cannot risk a war against them."
+ italymod.diploevent.1.b:0 "They will have to take our independence by force!"
+ 
+ italymod.diploevent.2.t:0 "[From.GetName] accept"
+ italymod.diploevent.2.desc:0 "[BUL.GetNameDef] has accepted our request and now consults with us before making any political decisions. A Special Representative has arrived in Sofia to coordinate with their government."
+ italymod.diploevent.2.a:0 "They have made the best choice."
+ 
+ italymod.diploevent.3.t:0 "[From.GetName] refuse"
+ italymod.diploevent.3.desc:0 "When presented with a list of our demands, [BUL.GetLeader] was reportedly to laugh at them and then tore up the papers, claiming that no Italian army could ever best a Bulgarian one in combat."
+ italymod.diploevent.3.a:0 "So they choose war."
+ 
+ italymod.diploevent.4.t:0 "Should we ask control over Bulgaria?"
+ italymod.diploevent.4.desc:0 "Italy, our ally, has successful establish a puppet government in Bulgaria. Despite this, that region is supposed to been in our sphere of influence. Should we ask Italy to cede the control over Bulgaria to us?"
+ italymod.diploevent.4.a:0 "Bulgaria is on our sphere of influence."
+ italymod.diploevent.4.b:0 "It doesn't matter, the Italians are our ally, right?"
+ 
+ italymod.diploevent.5.t:0 "[From.GetName] ask control over Bulgaria"
+ italymod.diploevent.5.desc:0 "Our Romanian allies are asking to us to cede the control over the Bulgaria, as they claiming that is a part of their sphere of influence. Should we accept?"
+ italymod.diploevent.5.a:0 "Yes, we're pleasure to share the victorys with our allies."
+ italymod.diploevent.5.b:0 "No, they have to learn their position."
+ 
+ italymod.diploevent.6.t:0 "[From.GetName] send us an ultimatum"
+ italymod.diploevent.6.desc:0 "After they have secured some powerful allies, the Italian government has sending us an ultimatum, with the request of cede to them the province of Slovenia and Dalmatia."
+ italymod.diploevent.6.a:0 "Stand down, we can't compare with them."
+ italymod.diploevent.6.b:0 "We will fight to the last breath!"
+ 
+ italymod.diploevent.7.t:0 "[From.GetName] accept"
+ italymod.diploevent.7.desc:0 "The Yugoslav government has accepted our request. Now the infamy of Versailles is avenged."
+ italymod.diploevent.7.a:0 "Finally the 'Terre Irredente' are ours."
+ 
+ italymod.diploevent.8.t:0 "[From.GetName] refuse"
+ italymod.diploevent.8.desc:0 "The Yugoslav government has declined our ultimatum. They feel to much confidence over their military power."
+ italymod.diploevent.8.a:0 "So they choose war."
+ 
+ #italymod.diploevent.9.desc:0 "In attempt to expand their influence, the Italian government has requested your annexation, threatening war in case of refuse." 
+ #italymod.diploevent.10.desc:0 "The Swiss citizen have accepted their annexation to the Latin Union."
+ #italymod.diploevent.11.desc:0 "The Swiss citizen have refused our offer. They said that none will take the Swiss independence, and if we try, we will fail like the Hapsburg centuries ago."
+ #italymod.diploevent.12.desc:0 "Italy has successfully annexed the territories of Switzerland. We also have a claims on these area, should we request a partition of these regions?"
+ #italymod.diploevent.13.desc:0 "Our ally, France, demand a partition of Switzerland. They argue to have a claims on west cantons of the former confederation. Should we accept?"
+ 
+ italymod.diploevent.14.t:0 "[From.GetName] require our subjugation"
+ italymod.diploevent.14.desc:0 "Our ambassador to [ITA.GetNameDef] has hurriedly been summoned to the office of [ITA.GetLeader]. Before he could ask the cause of that unexpected convocation, he was presented with an ultimatum. [POR.GetNameDef], [ITA.GetLeader] insisted, could no longer be permitted to conduct itself without his express consent, and should submit every major policy decision for his approval. Refusal would be met with force."
+ italymod.diploevent.14.a:0 "We cannot risk a war against them."
+ italymod.diploevent.14.b:0 "They will have to take our independence by force!"
+ 
+ italymod.diploevent.15.t:0 "[From.GetName] accept"
+ italymod.diploevent.15.desc:0 "[POR.GetNameDef] has accepted our requests and now consults us before making any political decisions. A Special Representative has arrived in Lisbon to coordinate with their government."
+ italymod.diploevent.15.a:0 "They have made the best choice."
+ 
+ italymod.diploevent.16.t:0 "[From.GetName] refuse"
+ italymod.diploevent.16.desc:0 "When presented with a list of our demands, [POR.GetLeader] reportedly laughed and then tore up the paper, claiming that no Italian army could ever best a Portugal one in combat."
+ italymod.diploevent.16.a:0 "So they choose war."
+ 
+ italymod.diploevent.17.t:0 "Should we ask control over Portugal?"
+ italymod.diploevent.17.desc:0 "Italy, our ally, has successful establish a puppet government in Portugal. Despite this, that region is supposed to been in our sphere of influence. Should we ask Italy to cede the control over Portugal to us, while letting him occupy to them the Portuguese colonies?"
+ italymod.diploevent.17.a:0 "Portugal is on our sphere of influence."
+ italymod.diploevent.17.b:0 "It doesn't matter, Italy is our ally, right?"
+ 
+ italymod.diploevent.18.t:0 "[From.GetName] ask control over Portugal"
+ italymod.diploevent.18.desc:0 "Our Spanish allies are asking to us to cede the control over the Portugal, as they claiming that is a part of their sphere of influence. They only desire the control over his homeland, while they aren't interested on the colonies. Should we accept?"
+ italymod.diploevent.18.a:0 "Yes, we're pleasure to share the victorys with our allies."
+ italymod.diploevent.18.b:0 "No, they have to learn their position."
+ 
+ italymod.diploevent.19.t:0 "[From.GetName] demand territorial renegotiation"
+ italymod.diploevent.19.desc:0 "With the Italian and his allies armies poised at our borders, rumors have been flying around about their purpose. When our ambassador in Rome inquired about the issue, he was told bluntly that Italy and his allies had decided that they want to push their claims over us. As we expected, some days later, an ultimatum was sent to us, with the requests to surrend our territories to them."
+ italymod.diploevent.19.a:0 "We can't hope to stand against them."
+ italymod.diploevent.19.b:0 "Never!"
+ 
+ italymod.diploevent.20.t:0 "[From.GetName] accept"
+ italymod.diploevent.20.desc:0 "Faced with the ultimatum of us and our allies, and the threat of military force if they should refuse, [FROM.GetName] saw no other opinion than to submit to our requests."
+ italymod.diploevent.20.a:0 "Excelent."
+ 
+ italymod.diploevent.21.t:0 "[From.GetName] refuse"
+ italymod.diploevent.21.desc:0 "The [FROM.GetAdjective] government has let the ultimatum run out without a reply. It's clear that they choose to response with war."
+ italymod.diploevent.21.a:0 "We will strike them down."
+ 
+ italymod.diploevent.22.t:0 "[From.GetName] demand territorial renegotiation"
+ italymod.diploevent.22.desc:0 "It's been a while that the relations with Italy are deteriorating, since they announce their intentions to redraw the map of the Balkans. While they haven't any claims on our lands, their allies do. As we espected, soon we have recive an ultimatum from Italy, that ask us to cede our lands to their allies and submit us to them."
+ italymod.diploevent.22.a:0 "We can't hope to stand against them."
+ italymod.diploevent.22.b:0 "Never!"
+ 
+ italymod.diploevent.23.t:0 "[From.GetName] accept"
+ italymod.diploevent.23.desc:0 "Facing to our military superiority, the Romanian government understand that it cannot do anything than surrender to our requests."
+ italymod.diploevent.23.a:0 "Excelent."
+ 
+ italymod.diploevent.24.t:0 "[From.GetName] refuse"
+ italymod.diploevent.24.desc:0 "The Romanian government, sure of having international support, has refused our ultimatum and retired theirs ambassadors from Rome. This is a clear act of hostility."
+ italymod.diploevent.24.a:0 "We will strike them down."
+ 
+ italymod.diploevent.25.t:0 "[From.GetName] demand our annexation"
+ italymod.diploevent.25.desc:0 "Is not a secret that the Italians are trying to expand their influence over us. But, hoewer, our ambassador in Rome was shocked after he received an ultimatum that request our complete annexation. The [ITA.GetAdjective] troops are already come on the Albanian front, and the war seems sure in case of our refusal."
+ italymod.diploevent.25.a:0 "We can't hope to stand against them."
+ italymod.diploevent.25.b:0 "Never!"
+ 
+ italymod.diploevent.26.t:0 "[From.GetName] accept"
+ italymod.diploevent.26.desc:0 "Faced with the impossibility of making any military opposition, the [FROM.GetName] was forced to accept our ultimatum."
+ italymod.diploevent.26.a:0 "Excelent."
+ 
+ italymod.diploevent.27.t:0 "[From.GetName] refuse"
+ italymod.diploevent.27.desc:0 "The response from [FROM.GetLeader] was clear: the [FROM.GetAdjective] people will never surrender to the Italian domination. It's clear that they have choose the hard way."
+ italymod.diploevent.27.a:0 "We will strike them down."
+ 
+ italymod.diploevent.28.t:0 "[From.GetName] request the throne of Spain"
+ italymod.diploevent.28.desc:0 "Now that that awful republic is gone, the [FROM.GetName] has requested to put a Savoy over the throne of Spain. This, of course, will also lead an alliance with Italy."
+ italymod.diploevent.28.a:0 "We're glad to accept a Savoy on our throne."
+ italymod.diploevent.28.b:0 "Never!"
+ 
+ italymod.diploevent.29.t:0 "[From.GetName] accept"
+ italymod.diploevent.29.desc:0 "The Spanish has accepted to put Amedo on the throne. This is the birth of good friendship between our two nations."
+ italymod.diploevent.29.a:0 "Excelent."
+ 
+ italymod.diploevent.30.t:0 "[From.GetName] refuse"
+ italymod.diploevent.30.desc:0 "The Spanish government has response to us with a refuse. It seems that we are going to take the throne by force."
+ italymod.diploevent.30.a:0 "We will strike them down."
+ 
+ italymod.diploevent.31.t:0 "[From.GetName] demand Montenegro"
+ italymod.diploevent.31.desc:0 "The king of Italy, his majesty [ITA.GetLeader], using his the dynasty ties, has requested to restore the throne of Montenegro. Formally this will be a free country, but in reality it will be a vassal of [ITA.GetName]."
+ italymod.diploevent.31.a:0 "We're glad to accept a Savoy on our throne."
+ italymod.diploevent.31.b:0 "They can take these useless mountains if they really desire..."
+ italymod.diploevent.31.c:0 "They have to fight for it!"
+ 
+ italymod.diploevent.32.t:0 "[From.GetName] accept"
+ italymod.diploevent.32.desc:0 "The [FROM.GetAdjective] has accepted our requests. Finally the [MNT.GetName] is a free nation."
+ italymod.diploevent.32.a:0 "Excelent."
+ 
+ italymod.diploevent.33.t:0 "[From.GetName] refuse"
+ italymod.diploevent.33.desc:0 "The [FROM.GetAdjective] government has response to us with a refuse. It's clear to everyone that the war is the only solution to enforce our requests."
+ italymod.diploevent.33.a:0 "They will regret of their choose."
+ 
+ italymod.diploevent.34.t:0 "[From.GetName] propose a royal wedding"
+ italymod.diploevent.34.desc:0 "The [ITA.Get Adjective] ambassador has reached us with an interesting proposal: a royal wedding between Aimone of Savoia-Aosta and princess Irene. This will surely end the contrast between our two conutry and probably even an alliance with them."
+ italymod.diploevent.34.a:0 "It's time to end this useless conflict."
+ italymod.diploevent.34.b:0 "We are not interested in it."
+ 
+ italymod.diploevent.35.t:0 "[From.GetName] accept"
+ italymod.diploevent.35.desc:0 "The [FROM.GetAdjective] has accepted our requests. Finally the conflict between our nations is end."
+ italymod.diploevent.35.a:0 "Excelent."
+ 
+ italymod.diploevent.36.t:0 "[From.GetName] refuse"
+ italymod.diploevent.36.desc:0 "The [FROM.GetAdjective] government has response to us with a refuse."
+ italymod.diploevent.36.a:0 "We have tried with the pen, now we might will use the sword."
+ 
+ italymod.diploevent.37.t:0 "[From.GetName] request the throne of Hungary"
+ italymod.diploevent.37.desc:0 "The [FROM.GetAdjective] government has reached us with an interesting offer: they want to put a Savoy on our throne. Of course, if we accept, this will lead to an alliance with the [FROM.GetName]."
+ italymod.diploevent.37.a:0 "We're glad to accept a Savoy on our throne."
+ italymod.diploevent.37.b:0 "Never!"
+ 
+ italymod.diploevent.38.t:0 "[From.GetName] accept"
+ italymod.diploevent.38.desc:0 "The [FROM.GetName] has accepted our proposal. The influence of the Savoy family is increasing."
+ italymod.diploevent.38.a:0 "Excelent."
+ 
+ italymod.diploevent.39.t:0 "[From.GetName] refuse"
+ italymod.diploevent.39.desc:0 "The [FROM.GetName] has refused our proposal. This is a breakpoint of the relations of our two countries."
+ italymod.diploevent.39.a:0 "Damn it."
+ 
+ italymod.diploevent.40.t:0 "[From.GetName] wants to create a kingdoms for the Croatians"
+ italymod.diploevent.40.desc:0 "The [FROM.GetName] has proposed the creations of a Kingdom for the Croatians, under the rule of a Savoy. This will surely bring Croatia under the sphere of influence of Italy."
+ italymod.diploevent.40.a:0 "We're glad to accept a Savoy on our throne."
+ italymod.diploevent.40.b:0 "Never!"
+ 
+ italymod.diploevent.41.t:0 "[From.GetName] accept"
+ italymod.diploevent.41.desc:0 "The [FROM.GetAdjective] has accepted our proposal. Our influence in the Balkans are expanding."
+ italymod.diploevent.41.a:0 "Excelent."
+ 
+ italymod.diploevent.42.t:0 "[From.GetName] refuse"
+ italymod.diploevent.42.desc:0 "The [FROM.GetAdjective] has notified us that they won't accept our proposal."
+ italymod.diploevent.42.a:0 "Damn it."
+ 
+ italymod.diploevent.43.t:0 "[From.GetName] propose an agreement"
+ italymod.diploevent.43.desc:0 "The border friction with Italy is a matter that is going on since the end of the Great War. Despite sometimes the relations seems to improve, the conflicts between our two countries never stop.\nBut now the politics in [ITA.GetName] is changed, and a new democratic government was elected.\n Their ambassadors reach us with an interesting agreement: both of us will renounce to any claims on the other, in exchange of a reciprocal assistance in case of an enemy aggression."
+ italymod.diploevent.43.a:0 "Sure, where we have to sign?"
+ italymod.diploevent.43.b:0 "No, thanks, we are fine like this."
+ 
+ italymod.diploevent.44.t:0 "[From.GetName] accept"
+ italymod.diploevent.44.desc:0 "The [FROM.GetAdjective] has accepted our agreement."
+ italymod.diploevent.44.a:0 "It seems the pen is mightier than sword."
+ 
+ italymod.diploevent.45.t:0 "[From.GetName] refuse"
+ italymod.diploevent.45.desc:0 "The [FROM.GetAdjective] has refused our agreement."
+ italymod.diploevent.45.a:0 "An opportunity lost."
+ 
+ italymod.diploevent.46.t:0 "[From.GetName] ask to reform our government"
+ italymod.diploevent.46.desc:0 "Our ally, [FROM.GetNameDef], has remark us that one of the conditions to join to the Mediterranean Entente, was to have an elected government, or, at least, promise some democratic reform. Italy is now asking to us to improve our democratic liberties or, if we disagree, to leave the Mediterranean Entente."
+ italymod.diploevent.46.a:0 "So democracy will be."
+ italymod.diploevent.46.b:0 "I guess this is a goodbye."
+ 
+ italymod.diploevent.47.t:0 "[From.GetName] launch a common industry development plan"
+ italymod.diploevent.47.desc:0 "[ITA.GetNameDef] has started an economic development plan for the member of the Mediterranean Common Market. Should we partecipate to it?"
+ italymod.diploevent.47.a:0 "We're glad to participate."
+ italymod.diploevent.47.b:0 "We aren't interested in it."
+ 
+ italymod.diploevent.48.t:0 "[From.GetName] launch a common infrastructure development plan"
+ italymod.diploevent.48.desc:0 ""
+ italymod.diploevent.48.a:0 "We're glad to participate."
+ italymod.diploevent.48.b:0 "We aren't interested in it."
+ 
+ italymod.diploevent.49.t:0 "[From.GetName] launch a common dockyards development plan"
+ italymod.diploevent.49.desc:0 ""
+ italymod.diploevent.49.a:0 "We're glad to participate."
+ italymod.diploevent.49.b:0 "We aren't interested in it."
+ 
+ italymod.diploevent.50.t:0 "[From.GetName] propose a common Mediterranean market"
+ italymod.diploevent.50.desc:0 "Is well known that the economy of the Mediterranean countries is weak and it cannot be compared to the others powers. The problem was amply discussed between the Member of the Mediterranean Entente, and [ITA.GetDef] have make an interesting proposal: the creation of a common market and a future economic collaboration between the countries."
+ italymod.diploevent.50.a:0 "We're glad to participate."
+ italymod.diploevent.50.b:0 "Our economy is fine."
+ 
+ italymod.diploevent.51.t:0 "[From.GetName] proposes joint military exercises"
+ italymod.diploevent.51.desc:0 "[ITA.GetNameDef] has proposed a joint military exercises between the members of the Mediterranean Entente."
+ italymod.diploevent.51.a:0 "We're glad to participate."
+ italymod.diploevent.51.b:0 "We aren't interested."
+ 
+ italymod.diploevent.52.t:0 "[From.GetName] participate"
+ italymod.diploevent.52.desc:0 "[From.GetNameDef] has accepted to participate at our joint exercises."
+ italymod.diploevent.52.a:0 "Wonderful!"
+ 
+ italymod.diploevent.53.t:0 "[From.GetName] proposes joint navy exercises"
+ italymod.diploevent.53.desc:0 "[ITA.GetNameDef] has proposed a joint navy exercises between the members of the Mediterranean Entente."
+ italymod.diploevent.53.a:0 "We're glad to participate."
+ italymod.diploevent.53.b:0 "We aren't interested."
+ 
+ italymod.diploevent.54.t:0 "[From.GetName] participate"
+ italymod.diploevent.54.desc:0 ""
+ italymod.diploevent.54.a:0 "Wonderful!"
+ 
+ italymod.diploevent.55.t:0 "[From.GetName] proposes joint air exercises"
+ italymod.diploevent.55.desc:0 "[ITA.GetNameDef] has proposed a joint air exercises between the members of the Mediterranean Entente."
+ italymod.diploevent.55.a:0 "We're glad to participate."
+ italymod.diploevent.55.b:0 "We aren't interested."
+ 
+ italymod.diploevent.56.t:0 "[From.GetName] participate"
+ italymod.diploevent.56.desc:0 ""
+ italymod.diploevent.56.a:0 "Wonderful!"
+ 
+ italymod.diploevent.57.t:0 "[From.GetName] don't participate"
+ italymod.diploevent.57.desc:0 "[From.GetNameDef] has refused to participate at our joint exercises."
+ italymod.diploevent.57.a:0 "Too bad for them."
+ 
+ italymod.diploevent.58.t:0 "Mediterranean Entente wants to buy Malta"
+ italymod.diploevent.58.desc:0 "Some diplomats from the Mediterranean Entente have reached us with a proposal: they desire to buy Malta, one of our strategic bases in the Mediterranean. Should we accept?"
+ italymod.diploevent.58.a:0 "Sure, a deal is a deal."
+ italymod.diploevent.58.b:0 "We aren't interested"
+ 
+ italymod.diploevent.59.t:0 "[FROM.GetName] has accepted to sell Malta"
+ italymod.diploevent.59.desc:0 "The [FROM.GetName] has accepted our request. Now the influence of the Mediterranean Entente is expanding."
+ italymod.diploevent.59.a:0 "Wonderful!"
+ 
+ italymod.diploevent.60.t:0 "[From.GetName] refuse to sell Malta"
+ italymod.diploevent.60.desc:0 "The [FROM.GetName] has decided to refuse our offer. We have to find another way for expell the British from the Mediterranean."
+ italymod.diploevent.60.a:0 "As they wish."
+ 
+ italymod.diploevent.61.t:0 "Mediterranean Entente wants to buy Gibraltair"
+ italymod.diploevent.61.desc:0 "Some diplomats from the Mediterranean Entente have reached us with a proposal: they desire to buy Gibraltair, one of our strategic bases in the Mediterranean. Should we accept?"
+ italymod.diploevent.61.a:0 "Sure, a deal is a deal."
+ italymod.diploevent.61.b:0 "We aren't interested"
+ 
+ italymod.diploevent.62.t:0 "[ENG.GetName] has accepted to sell Gibraltair"
+ italymod.diploevent.62.desc:0 ""
+ italymod.diploevent.62.a:0 "Wonderful!"
+ 
+ italymod.diploevent.63.t:0 "[From.GetName] refuse to sell Gibraltair"
+ italymod.diploevent.63.desc:0 ""
+ italymod.diploevent.63.a:0 "As they wish."
+ 
+ #italymod.diploevent.64.desc:0 ""
+ 
+ italymod.diploevent.65.t:0 "Mediterranean Entente wants to buy Cyprus"
+ italymod.diploevent.65.desc:0 "Some diplomats from the Mediterranean Entente have reached us with a proposal: they desire to buy Cyprus, one of our strategic bases in the Mediterranean. Should we accept?"
+ italymod.diploevent.65.a:0 "Sure, a deal is a deal."
+ italymod.diploevent.65.b:0 "We aren't interested"
+ 
+ italymod.diploevent.66.t:0 "[ENG.GetName] has accepted to sell Cyprus"
+ italymod.diploevent.66.desc:0 ""
+ italymod.diploevent.66.a:0 "Wonderful!"
+ 
+ italymod.diploevent.67.t:0 "[From.GetName] refuse to sell Cyprus"
+ italymod.diploevent.67.desc:0 ""
+ italymod.diploevent.67.a:0 "As they wish."
+ 
+ #italymod.diploevent.68.desc:0 ""
+ 
+ italymod.diploevent.69.t:0 "[ITA.GetName] requires our submission"
+ italymod.diploevent.69.desc:0 "Italian diplomats have presented an ultimatum to us demanding that we submit to their rule."
+ italymod.diploevent.69.a:0 "We can't hope to stand against them."
+ italymod.diploevent.69.b:0 "Never!"
+ 
+ italymod.diploevent.70.t:0 "[From.GetName] accept"
+ italymod.diploevent.70.desc:0 "The [FROM.GetAdjective] authorities have agreed to our demands."
+ italymod.diploevent.70.a:0 "The revolution is spreading."
+ 
+ italymod.diploevent.71.t:0 "[From.GetName] refuse"
+ italymod.diploevent.71.desc:0 "Defiant to the last, [FROM.GetName] has rejected our ultimatum. We must occupy their capital city and put an end to this farce."
+ italymod.diploevent.71.a:0 "As they wish."
+ 
+ italymod.diploevent.72.t:0 "[ITA.GetName] requires our submission"
+ italymod.diploevent.72.desc:0 ""
+ italymod.diploevent.72.a:0 "We can't hope to stand against them."
+ italymod.diploevent.72.b: "Never!"
+ 
+ italymod.diploevent.73.t:0 "[From.GetName] accept"
+ italymod.diploevent.73.desc:0 ""
+ italymod.diploevent.73.a:0 "The revolution is spreading."
+ 
+ italymod.diploevent.74.t:0 "[From.GetName] refuse"
+ italymod.diploevent.74.desc:0 ""
+ italymod.diploevent.74.a:0 "As they wish."
+ 
+ italymod.diploevent.75.t:0 "[From.GetName] is spreading revolutionary propaganda in our country"
+ italymod.diploevent.75.desc:0 "The [FROM.GetAdjective] have started a propaganda campaign in [ROOT.GetNameDef] with the aim of convincing the [ROOT.GetAdjective] population of the possibility of sparkling a revolution in our empire. \nTheir leftist propagande has reached the ears of many people, expecially between the industry workers and the inhabitants of our colonies, and the acts of disobbedience against our government has started to grown day after day."
+ italymod.diploevent.75.a:0 "Their foreign policy is getting way too far..."
+ 
+ #italymod.diploevent.76.desc:0 ""
+ #italymod.diploevent.77.desc:0 ""
+ #italymod.diploevent.78.desc:0 ""
+ 
+ italymod.diploevent.79.t:0 "[YUG.GetName] surrender to the Italian requests"
+ italymod.diploevent.79.desc:0 "[YUG.GetAdjective] has stepped back on the Italian requests, and now we can finally occupy our claimed territories."
+ italymod.diploevent.79.a:0 "Excelent."
+ 
+ italymod.diploevent.80.t:0 "[ROM.GetName] surrender to the Italian requests"
+ italymod.diploevent.80.desc:0 "[ROM.GetAdjective] has stepped back on the Italian requests, and now we can finally occupy our claimed territories."
+ italymod.diploevent.80.a:0 "Excelent."
+ 
+ italymod.diploevent.81.t:0 "[GRE.GetName] surrender to the Italian requests"
+ italymod.diploevent.81.desc:0 "[GRE.GetAdjective] has stepped back on the Italian requests, and now we can finally occupy our claimed territories."
+ italymod.diploevent.81.a:0 "Excelent."
+ 
+ italymod.diploevent.82.t:0 "[ITA.GetName] extend his influence over us"
+ italymod.diploevent.82.desc:0 "In the past years, the Italians influence in our country has became every day more important. Now the Italians have finally decided to formalize the thing by adding our country to their sphere of influence."
+ italymod.diploevent.82.a:0 "We don't have any other choice..."
+ 
+ #############################UNUSED#############################
+ italymod.diploevent.83.desc:0 "With the deterioration of the current situation in Europe, the Italians are trying to create a defensive alliance against Germany. Since their leader, Palmiro Togliatti, is truly loyal to Stalin, we can try to stop their initiative and realign Italy to the Comintern."
+ 
+ italymod.diploevent.84.desc:0 "The [SOV.GetAdjective], [SOV.GetLeader], seeing the current situation, as agreed with us that the major threat is Germany, and support our politic of reapproach to the Allies."
+ 
+ italymod.diploevent.85.desc:0 "Bad news are coming from the [SOV.GetName]. [SOV.GetLeader] has decided to put a veto on uor decision to approach the Allies governments in order to stop Germany. Since [ITA.GetLeader] is really faithful to him, the only way to continue this policy is trhowing away Togliatti from the PCI, but this will surely cause many problems to Italy, since there is nobody other than him that can unite the various currents of the left."
+ 
+ italymod.diploevent.86.desc:0 "[ITA.GetName] chose to remain loyal to Stalin and follow the Cominter's directives."
+ 
+ italymod.diploevent.87.desc:0 "The secretary of the PCI (Italian Communist Party), has decided to gets rid of Togliatti, in order to follow an independent foreign policy."
+ ################################################################
+ 
+ italymod.diploevent.88.t:0 "[ITA.GetFactionName] sanctions us"
+ italymod.diploevent.88.desc:0 "In order to stop or, at least, slow down our rearment, the signatories of the Stresa Front has decided to impose sanctions on us."
+ italymod.diploevent.88.a:0 "They will pay this with interest..."
+ 
+ italymod.diploevent.89.t:0 "Italy demand control over Croatia"
+ italymod.diploevent.89.desc:0 "Following our victorious campaign over Yugoslavia, the [ITA.GetAdjective] government has started to demand to us to recognise their ovenership over Croatia. This would mean that they will establish a [CRO.GetAdjective] puppet in the area."
+ italymod.diploevent.89.a:0 "Leave it to them."
+ italymod.diploevent.89.b:0 "Surely they won't be able to hold that lands. The answer is no."
+ 
+ italymod.diploevent.90.t:0 "Germany Supports our Demands over Croatia"
+ italymod.diploevent.90.desc:0 "Germany has seen the wisdom of supporting our demands over  territory. [CRO.GetName] is now a puppet of us."
+ italymod.diploevent.90.a:0 "This is our revenge for the 'Vittoria Mutilata'."
+ 
+ italymod.diploevent.91.t:0 "Germany reject our Demands over Croatia"
+ italymod.diploevent.91.desc:0 "Germany has seen fit to thwart our modest, fair and reasonable demands over Croatia. Should we leave [From.GetFactionName]?"
+ 
+ italymod.diploevent.92.t:0 "Germany Supports Italy demands over Croatia"
+ italymod.diploevent.92.desc:0 "Germany has decided to support the Italian request over Croatia, and they are now demanding to us to cede their occupied territories."
+ italymod.diploevent.92.a:0 "We don't have many choice..."
+ 
+ italymod.diploevent.93.t:0 "[ITA.GetName] submit our requests"
+ italymod.diploevent.93.desc:0 "The Italian government has recognized that our rivendication are legitimate and decided to accomplish our requests."
+ italymod.diploevent.93.a:0 "Excellent."
+ 
+ italymod.diploevent.94.t:0 "[ITA.GetName] rejects our requests"
+ italymod.diploevent.94.desc:0 "The Italian government has rejected our requests. They don't think that our country is not in the position to ask for them things like that."
+ 
+ italymod.diploevent.95.t:0 "[FROM.GetName] leave [THIS.GetFactionName]"
+ italymod.diploevent.95.desc:0 "After our refuse, the [FROM.GetAdjective] government has decided to leave our faction in sign of protest."
+ 
+ italymod.diploevent.96.t:0 "The renewal of the Rome Protocols"
+ italymod.diploevent.96.desc:0 "The increasing German power has started to worry the Italian government. In order to stop the German expansionism, the Italian diplomacy has started to improve the relations with our country. Their ambassadors have reached us with an interesting proposal: they suggest to renew the so called 'Rome Protocols', in order to improve the collaboration of our countries."
+ italymod.diploevent.96.a:0 "Where do I sign?"
+ italymod.diploevent.96.b:0 "We're not interested."
+ 
+ italymod.diploevent.97.t:0 "Trade agreements of the Rome Protocols"
+ italymod.diploevent.97.desc:0 "One of the purposes of the Rome Protocols is the abolishment of trade borders between the signers. Today the Italian government has announced his intentions go on with this project."
+ italymod.diploevent.97.a:0 "This will surely help our economy."
+ 
+ italymod.diploevent.98.t:0 "Italy proposes joint military exercises"
+ italymod.diploevent.98.desc:0 "The Italian government has proposed a series of joint military exercises between the member of the Stresa Front."
+ italymod.diploevent.98.a:0 "Cooperation is the key to win."
+ 
+ italymod.diploevent.99.t:0 "Ratification of Stresa Front"
+ italymod.diploevent.99.desc:0 "The Italian government, worried by the German expansionism, has started to improve the relations between the Western democracies. The have proposed to us a renewal of the 'Stresa Front', in order to contain the German ambitions."
+ italymod.diploevent.99.a:0 "Germany is the real threat."
+ italymod.diploevent.99.b:0 "This is not of our interest."
+ 
+ italymod.diploevent.100.t:0 "[FROM.GetName] ratifies"
+ italymod.diploevent.100.desc:0 "After many negotiations and consultations, the [FROM.GetAdjective] has decided to ratify the Stresa Front. This will surely slow down the German expansionism."
+ italymod.diploevent.100.a:0 "A triumph for the Italian diplomacy."
+ 
+ italymod.diploevent.101.t:0 "Germany is preparing for Anschluss"
+ italymod.diploevent.101.desc:0 "In the 1934 Italy helped the Austrian government to stop a coup d'etat, where the local Nazis, with the interference of Hitler, tried to seize the power and proclaim the annexation of their country to Germany. \nAfter that event, Italy, Hungary and Austria signed the "Rome Protocols", where Italy promised his military intervention in case of German aggression. \nThis never stopped Hitler's ambitions, and now Germany is preparing for the Anschluss again. \nBut things are changing in Italy, and, after the Ethiopian war, perhaps Germany is the only possible friends. \nAustrian chancellor, [AUS.GetLeader], is now asking Italy for support, but perhaps we have to reconsider our positions."
+ italymod.diploevent.101.a:0 "Germany is a friend of Italy."
+ italymod.diploevent.101.b:0 "We cannot allow that."
+ 
+ italymod.diploevent.102.t:0 "[ITA.GetName] extend his influence over us"
+ italymod.diploevent.102.desc:0 ""
+ italymod.diploevent.102.a:0 "We don't have any other choice..."
+ 
+ italymod.diploevent.103.t:0 "Albania Resist!"
+ italymod.diploevent.103.desc:0 ""
+ 
+ italymod.diploevent.104.t:0 "[From.GetName] demand our subjugation"
+ italymod.diploevent.104.desc:0 "Is not a secret that the Italians are trying to expand their influence over us. But, hoewer, our ambassador in Rome was shocked after he received an ultimatum that request our complete submission."
+ italymod.diploevent.104.a:0 "We can't hope to stand against them."
+ italymod.diploevent.104.b:0 "Never!"
+ 
+ italymod.diploevent.105.t:0 "[From.GetName] accept"
+ italymod.diploevent.105.desc:0 ""
+ italymod.diploevent.105.a:0 "Excelent."
+ 
+ italymod.diploevent.106.t:0 "[From.GetName] refuse"
+ italymod.diploevent.106.desc:0 ""
+ italymod.diploevent.106.a:0 "We will strike them down."
+ 
+ italymod.diploevent.107.t:0 "Italy propose Treaty of Mutual Assistance"
+ italymod.diploevent.107.desc:0 ""
+ 
+ italymod.diploevent.108.desc:0 ""
+ 
+ italymod.diploevent.109.desc:0 ""
+ 
+ #news
+ 
+ italymod.news.1.t:0 "The Italian Monarchists have launched a coup!"
+ italymod.news.1.desc:0 "In recent months the conflict between monarchy and fascism has intensified, leading to a real civil war. The supporters of the monarchy, led by Marshal Badoglio, have launched a coup d'etat, with the aim of bringing power back to the king's hands.\nThe monarchists therefore occupied some of the most important cities in Italy, including Milan, Turin, Venice and Rome.\nThe duce Benito Mussolini, on discovering the coup, said: 'In the end, the king and his gang proved themselves for what they really are: vile traitors! The time has finally come to get rid of these reminiscences of the past! '.\nWith both sides willing to make their vision of Italy prevail, the war looks very long and bloody."
+ italymod.news.1.a:0 "Let's smash these traitors."
+ italymod.news.1.b:0 "Avanti Savoia!"
+ italymod.news.1.c:0 "Led by a King or a Duce, what's the difference?"
+ 
+ italymod.news.2.t:0 "Mussolini declares the Italian Social Republic!"
+ italymod.news.2.desc:0 "Today, the duce Benito Mussolini, has declared to the world the birth of the Italian Social Republic.\nIt is no secret that in recent times the contrast between the king and the leader had increasingly intensified.\nDespite this, the regime managed to secure the loyalty of its army and eliminate all those who were still loyal to the old institutions. The king was then arrested by soldiers and forced to abdicate.\n\nNow that this step has also been taken, it seems that nothing can stop Mussolini's ambitions."
+ italymod.news.2.a:0 "Another victory for the blackshirts!"
+ italymod.news.2.b:0 "Another wreck from the past has disappeared among the rubble of history."
+ 
+ italymod.news.3.t:0 "A coup in Italy!"
+ italymod.news.3.desc:0 "In recent months the conflict between monarchy and fascism has intensified, leading to a real civil war. Supporters of the monarchy, led by Marshal Badoglio, have launched a coup, with the aim of bringing power back to the king's hands. The monarchists therefore occupied some of the most important cities in Italy, including Milan, Turin, Venice and Rome. \n\nMussolini, aware of the evident inferiority, decided to surrender to the monarchical forces, in order to avoid the Italians from a bloody civil war.\n\nThe Savoy's dinasty have conquered Italy again."
+ italymod.news.3.a:0 "Avanti Savoia!"
+ italymod.news.3.b:0 "Led by a king or a duce, what's the difference?"
+ 
+ italymod.news.4.t:0 "Italy withdraws from Ethiopia"
+ italymod.news.4.desc:0 "Today Italy has confirmed to the world its will to withdraw from the Ethiopian conflict.\n\nDespite the superiority of the Italian army, the invasion of the Ethiopian territory was proceeding very slowly, increasing his cost. This, together with the fear for a second 'Adua', was enough for convincing the upper spheres to put an end on that useless conflict.\n\nThe unusual silence of Mussolini is a clear statement of his precarious position."
+ italymod.news.4.a:0 "Screw it, it was just a waste of time."
+ italymod.news.4.b:0 "Another victory for the Solomonid Empire!"
+ italymod.news.4.c:0 "So Italy has been defeated again?"
+ 
+ italymod.news.5.t:0 "Mussolini Arrested!"
+ italymod.news.5.desc:0 "Mussolini, who had ruled Italy for about twenty years, was forced to resign from the King, after the 'Gran Consiglio del Fascismo' (Grand Council of Fascism) passed a vote of no confidence to him. The former 'Duce' was arrested by Marshal Pietro Badoglio, who was appointed new head of government. \n\n Despite the growing distrust of fascism, many Italians are still loyal to the Duce, while many others, including the king himself, have compromised by collaborating with Mussoloni. \n\nThe future of the Italian situation is still uncertain."
+ italymod.news.5.a:0 "Let's hope the best."
+ italymod.news.5.b:0 "So this is the end of the Italian Fascism?"
+ 
+ italymod.news.6.t:0 "The Italian Civil War!"
+ italymod.news.6.desc:0 "Bring air of war into Italy. \nMussolini, who had previously been arrested, was freed from his followers. \n\nThe fascists then plotted to regain power, and subsequently launched a coup. \n\nWith the Italians and the government no longer willing to tolerate a new dictatorship, a civil war between the two factions has broken out."
+ italymod.news.6.a:0 "Vincere e Vinceremo!"
+ italymod.news.6.b:0 "O bella ciao, bella ciao..."
+ italymod.news.6.c:0 "So this is the end of the Italian Fascism?"
+ 
+ italymod.news.7.t:0 "The end of the 5th PCI conngress"
+ italymod.news.7.desc:0 "Today the 5th PCI congress is finished.\n\nAll the party members have discuss about the structure of the party and the principal political views that the secretariat will adopt.\n\nIt seems that the revolution is springing more and more in Europe."
+ italymod.news.7.a:0 "Avanti Popolo, alla riscossa!"
+ italymod.news.7.b:0 "So which side is Italy now?"
+ 
+ italymod.news.8.t:0 "[From.GetName] Submits to Italy"
+ italymod.news.8.desc:0 "Faced with Italian demands, and the threat of military force if they should refuse, [From.GetName] saw no other course of action than to submit to the Italian demands.\n\nNow everyone are asking theyself if this will appease the Italian ambitions, but after the last pubblic speach of [ITA.GetLeader], it seems more and more clear that this isn't the end."
+ italymod.news.8.a:0 "A success for the Italian diplomacy!"
+ italymod.news.8.b:0 "Italy is dangerously expanding."
+ 
+ italymod.news.9.t:0 "[From.GetName] Rejects Italians demands"
+ italymod.news.9.desc:0 "Despite has issued an ultimatum, and being faced with an immediate Italian military action if should they refuse, [From.GetName] has rejected the Italians demands. The latter has refused to back down, and both countries seem on a clear path towards military conflict.\n\n[ITA.GetLeader] has declared that he made all the possible for avoiding the conflict, but everybody knows that the Italian plans were different from the start."
+ italymod.news.9.a:0 "They'll see how wrong they were."
+ italymod.news.9.b:0 "We will see how it ends."
+ 
+ italymod.news.10.t:0 "Hitler visit Rome"
+ italymod.news.10.desc:0 "Is clear to everyone that [ITA.GetName] is shifting his position to the [GER.GetName].\nIt all began when Italy decides to invade [ETH.GetName], and the League of Nations, controlled by Uk and France , condemn the [ITA.GetAdjective] action and impose tarifs o them.\nAfter that, the [ITA.GetAdjective] diplomacy, who was at the start opposed to the [GER.GetAdjective], became more friendly with them.\nNow, the visit of the Führer, Adolf Hitler, to the [ITA.GetAdjective] capital, Rome, has sendt a clear message to everyone in the world.\nWhile there is still no formal alliance between the two countries, it is clear that it won't be long before the two dictators finally decide to expand their countries."
+ italymod.news.10.a:0 "A success for the Italian diplomacy!"
+ italymod.news.10.b:0 "Perhaps they may be a useful ally."
+ italymod.news.10.c:0 "So which side is Italy now?"
+ 
+ #italymod.news.11.desc:0 ""
+ 
+ italymod.news.12.t:0 "The homicide of Rosselli Brothers"
+ italymod.news.12.desc:0 "Disturbing news from France. Today, two brothers from Italy, Carlo and Nello Rosselli, were killed at Bagnoles-de-l'Orne, a location in northern France.\nThe two men were both historians and journalis, also knowed in Italy for beeing an antifascist intellectuals. Expecially Carlo, who was force to flee in France on 1929. Here he create the antifascist movent 'Giustizia e Libertà'.\nInjured after fighting in Spanish Civil War on the side of the Repubblicans, he retires again in France, where he was reached by his brother, Nello.\nHere the two brother were killed by the far-rigth French organization called Cagoule, but many people suspect that the Italian secret services are involved."
+ italymod.news.12.a:0 "One less problem."
+ italymod.news.12.b:0 "Their mouths will be closed forever."
+ italymod.news.12.c:0 "Other victims of Mussolini regime."
+ 
+ #italymod.news.13.desc:0 ""
+ 
+ italymod.news.14.t:0 "Italy leaves the League of Nations"
+ italymod.news.14.desc:0 "Today Italy has announced to the world gis intentions to withdraw from the League of Nations.\n\nIt's not new the growing discontent of Mussolini about the organization. During the Ethiopian War, the League of Nations imposed hard sanctions on the Italian economy.\n\nThis, with many other issues, has bring Italy far avay from the western natios, and now Italy isn't anymore a member of the League of Nations."
+ italymod.news.14.a:0 "So i guess it's a goodbye?"
+ 
+ italymod.news.15.t:0 "The New Constitution of Italy"
+ italymod.news.15.desc:0 "It's a great day for the Italian democracy.\n\nFinally, after many days of debate, the new constitution of [ITA.GetNameDef] has been finally approved by the parlament.\n\nThe new constitution is a compromise between all the major political forces in italy, from the socialists to the cattholics.\n\nThe main difference with the "Statuto Albertino", the first [ITA.GetAdjective] constitution, is its attentions to prevent the formation of another dictatorship."
+ italymod.news.15.a:0 "Hopefully, this is will better than the last one."
+ italymod.news.15.b:0 "So, pizza for celebrate?"
+ 
+ italymod.news.16.t:0 "Communists seize control of Italy"
+ italymod.news.16.desc:0 "After many discussion, protest and fights, the communists have manage to seize the power in Italy.\n\nAfter the abolition of the monarchy, the left was exuberant, and the great contribute that the communist partisans, the most numerous, had during the fascist dictatorship, bringed to them a lot of consens.\n\nIt's unclear now what Italy will do in the next future, but only one thing is sure: the workers, not the padrons, will make the choices."
+ italymod.news.16.a:0 "A better future for all the workers it's approaching."
+ italymod.news.16.b:0 "Does it mean pasta for everyone?"
+ 
+ italymod.news.17.t:0 "The Stresa Front Ratified"
+ italymod.news.17.desc:0 "After many days of discussions, the former allies of the Entente, Italy, Uk and France, has finally reached an agreement. \n\nDespite the meeting was conducted mostly discussed in Paris, he keeps the name from the last accord between these countries, the 'Stresa Front'. In fact, the three powers has agreed on ratify the arguments of this accord, that is prevent the German revisionism of the Treaty of Versailles.\n\nWhile now this means effectly nothing, is it clear that now this power have finally reject the politics of appeasement."
+ italymod.news.17.a:0 "This won't save them from us."
+ italymod.news.17.b:0 "The German ambition will soon fall."
+ italymod.news.17.c:0 "It seem that Italy really like to change his allies every year..."
+ 
+ italymod.news.18.t:0 "Italy backs Austria"
+ italymod.news.18.desc:0 "In the 1934 Italy helped the Austrian government to stop a coup d'etat, where the local Nazis, with the interference of Hitler, tried to seize the power and proclaim the annexation of their country to Germany. \nAfter that event, Italy, Hungary and Austria signed the "Rome Protocols", where Italy promised his military intervention in case of German aggression. \nThis never stopped Hitler's ambitions, and now Germany is preparing for the Anschluss again. \n[ITA.GetLeader] has decided to respect the Italians promises, and he has declared that Italy will defend the Austrian independence."
+ italymod.news.18.a:0 "We will see if they have to courage for that."
+ italymod.news.18.b:0 "We're glad to help."
+ italymod.news.18.c:0 "A very useful friend!"
+ italymod.news.18.d:0 "Interesting."
+ 
+ #italymod.news.19.desc:0 ""
+ 
+ italymod.news.20.t:0 "The Death of Italo Balbo"
+ italymod.news.20.desc:0 "Today, the Italian authorities have confirmed the death of Italo Balbo. \nOne of the most important members of the regime, he also was one of the four principal architects of the March on Rome that brought Mussolini and the Fascists to power in 1922. \nLater, he began the task of building the Italian Royal Air Force and took a leading role in popularizing aviation in Italy, and promoting Italian aviation in the world. \nBalbo was on a flight headed for the Libyan airfield of Tobruk, but he arrived shortly after the airfield had been attacked by British aircraft. Italian anti-aircraft batteries, misidentified the aircraft as British, opening fire upon it as it attempted a landing. It was downed and all on board perished."
+ italymod.news.20.a:0 "He will be remembered."
+ italymod.news.20.b:0 "War doesn't spare anyone."
+ 
+ #italymod.news.21.desc:0 ""
+ 
+ italymod.news.22.t:0 "The Death of Antonio Gramsci"
+ italymod.news.22.desc:0 "Antonio Sebastiano Francesco Gramsci, or just know as Antonio Gramsci, was a politician and a marxist philosopher. He was arrested on 9 November 1926, but in 1933, after the deteriorating of his healt conditions, he was moved from the prison to a clinic. After a long struggle against his illness, today the man has finnaly died."
+ italymod.news.22.a:0 "Memento Mori."
+ 
+ #italymod.news.23.desc:0 ""
+ 
+ italymod.news.24.t:0 "The Death of Guglielmo Marconi"
+ italymod.news.24.desc:0 "Guglielmo Giovanni Maria Marconi, 1st Marquis of Marconi, was an inventor and electrical engineer, known for his creation of a practical radio wave-based wireless telegraph system. This led to Marconi being credited as the inventor of radio, and he shared the 1909 Nobel Prize in Physics with Karl Ferdinand Braun. He died in the nigth, after a fatal heart attack. A state funeral will soon be organized."
+ italymod.news.24.a:0 "Memento Mori."

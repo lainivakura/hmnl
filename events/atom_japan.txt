@@ -1,0 +1,93 @@
+add_namespace = atom_japan
+
+country_event = {
+	id = atom_japan.1
+	title = atom_japan.1.t
+	desc = atom_japan.1.d
+	picture = GFX_tora
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = atom_japan.1.a
+		
+			
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PHI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = RAJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AST
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NZL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = INS
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					country_exists = MAL
+				}
+				declare_war_on = {
+					target = MAL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					DEN = {
+						is_in_faction = yes
+						is_in_faction_with = ENG
+					}
+				}
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						is_in_faction = yes
+						is_in_faction_with = ENG
+					}
+				}
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+			}
+			news_event = { days = 1 id = news.1000 }
+		}
+	}

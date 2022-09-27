@@ -1,0 +1,18 @@
+add_namespace = Atomevents
+
+
+
+country_event = {
+	id = Atomevents.1002
+	title =  Atomevents.1002.t
+	desc =  Atomevents.1002.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = { 
+		name =  Atomevents.1002.a
+                
+				GER = { puppet = D02 }		
+}
+}

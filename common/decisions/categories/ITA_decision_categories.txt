@@ -1,0 +1,45 @@
+
+
+ITA_reform_army_decision_categories = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		has_completed_focus = ITA_army_reform
+	}
+}
+
+ITA_first_marshall_categories = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		has_completed_focus = ITA_ethiopian_victory
+		has_government = fascism
+	}
+}
+
+ITA_empire_decision_categories = {
+
+	icon = generic_ignite_civil_war
+	
+	picture = GFX_decision_cat_generic_roman_empire
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		has_completed_focus = ITA_empire
+		has_government = fascism
+		is_puppet = no
+	}
+}

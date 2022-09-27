@@ -1,0 +1,96 @@
+leader_traits = {
+
+	ITA_duce = {
+		random = no
+		political_power_factor = 0.05
+		political_advisor_cost_factor = -0.05
+
+	}
+ITA_yspeh = {
+		random = no
+		stability_factor = -0.05
+production_speed_industrial_complex_factor = -0.15
+research_speed_factor = 0.01
+	}
+
+	ITA_soldier_king_trait = {
+		stability_factor = 0.05
+		drift_defence_factor = 0.15
+	}
+
+	ITA_nenni_trait = {
+		random = no
+		stability_factor = 0.05
+		industrial_capacity_factory = 0.05
+		political_power_factor = -0.05
+	}
+
+	ITA_de_gasperi_trait = {
+		random = no
+		political_power_factor = 0.05
+		political_advisor_cost_factor = -0.1
+	}
+	
+	ITA_gramsci_trait = {
+		stability_factor = 0.05
+		drift_defence_factor = 0.1
+		war_support_factor = 0.05
+	}
+	
+	ITA_gramsci_sick = {
+		political_power_factor = -0.05
+		political_advisor_cost_factor = 0.1
+		economy_cost_factor = 0.1
+	}
+	
+	ITA_democratic_negotiator = {
+		random = no
+		political_power_factor = 0.10
+		stability_factor = 0.05
+	}
+
+	ITA_communist_revolutionary = {
+		random = no
+		# Boosts Communism
+		sprite = 13
+		communism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+				factor = 0
+			}
+		}
+	}
+	
+	ITA_democratic_antifascist = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ITA_famous_economist = {
+		random = no
+		consumer_goods_factor = -0.05
+		trade_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+	}
+	
+	ITA_liberal_philosopher = {
+		random = no
+		stability_factor = 0.05 
+		democratic_drift = 0.01
+		democratic_acceptance = 75
+	}
+	
+	ITA_tire_manufacturer = {
+		random = no
+		
+	}
+}

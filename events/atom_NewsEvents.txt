@@ -1,0 +1,15 @@
+add_namespace = atom_news
+
+#Perl-Harbor
+news_event = {
+	id = news.1000
+	title = news.1000.title
+	desc = news.1000.desc
+	picture = GFX_report_event_usa_pearl_harbor_airphoto
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1000.a
+	}
+	}
