@@ -1,0 +1,39 @@
+on_actions = {
+
+  on_weekly = {
+    effect = {
+      
+      calculate_special_forces_limits = yes
+
+      if = {
+        limit = {
+          is_exploting_special_forces_cap = yes
+        }
+
+        add_ideas = special_forces_cap_exploit
+      } 
+      else_if = {
+        limit = {
+          has_idea = special_forces_cap_exploit
+        }
+
+        remove_ideas = special_forces_cap_exploit
+      }
+
+    }
+  }
+   on_capitulation = {
+    effect = {
+      ROOT = {
+        save_event_target_as = atom_capitulated_country
+      }
+
+      FROM = {
+        country_event = {
+          id = atom_generic.1
+          days = 2
+        }
+      }
+}
+}
+}

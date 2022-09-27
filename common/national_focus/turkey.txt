@@ -1,0 +1,213 @@
+focus_tree = {
+	id = turkey_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 400 y = 50 }	
+		focus = {
+		id = GER_spainhelp
+		text = GER_spainhelp
+		icon = GFX_focus_spr_war_of_independence
+		cost = 1
+		
+		x = 14
+		y = 0
+			available = {
+					date > 1937.9.1
+				}
+ai_will_do = {
+			factor = 10  }
+			completion_reward = {
+					171 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					41 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					165 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					166 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					167 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					168 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					169 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					170 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					172 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					173 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					174 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					175 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					176 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					788 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					789 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					790 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					791 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					792 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					793 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					794 = {
+							clr_state_flag = SPR_unplanned_offensive_flag
+							remove_province_modifier = {
+									static_modifiers = { unplanned_offensive }
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+				}
+
+	}
+}	

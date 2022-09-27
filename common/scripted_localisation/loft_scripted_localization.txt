@@ -1,0 +1,14 @@
+defined_text = { # Country
+	name = FINoccupyalands
+
+	text = {
+		trigger = {
+			original_tag = FIN
+			FIN = { NOT = { controls_state = 145 } }
+		}
+		localization_key = FIN_OCCUPY_ALANDS_2
+	}
+	text = {
+		localization_key = FIN_OCCUPY_ALANDS
+	}
+}

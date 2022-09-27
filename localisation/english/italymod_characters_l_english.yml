@@ -1,0 +1,119 @@
+﻿l_english:
+
+ #starting country leaders
+ benito_mussolini:0 "Benito Mussolini"
+ carlo_rosselli:0 "Carlo Rosselli"
+ victor_emmanuel_iii:0 "Victor Emmanuel III"
+ palmiro_togliatti:0 "Palmiro Togliatti"
+ 
+ #other country leaders
+ ferruccio_parri:0 "Ferruccio Parri"
+ alcide_de_gasperi:0 "Alcide De Gasperi"
+ #ivanoe_bonomi:0 "Ivanoe Bonomi"
+ roberto_lucifero_aprigliano:0 "Roberto Lucifero d'Aprigliano"
+ umberto_ii_leader:0 "Umberto II"
+ pietro_nenni:0 "Pietro Nenni"
+ cln:0 "National Liberation Committee"
+ constituent_assembly:0 "Constituent Assembly"
+ fernando_tambroni:0 "Fernando Tambroni"
+ #amadeo_bordiga:0 "Amadeo Bordiga"
+ antonio_gramsci:0 "Antonio Gramsci"
+ pci_leader:0 "PCI Secretariat"
+ 
+ #starting generals
+ #pietro_badoglio:0 "Pietro Badoglio"
+ #emilio_de_bono:0 "Emilio De Bono"
+ #rodolfo_graziani:0 "Rodolfo Graziani"
+ alberto_pariani:0 "Alberto Pariani"
+ cesare_maria_de_vecchi:0 "Cesare Maria De Vecchi"
+ enrico_caviglia:0 "Enrico Caviglia"
+ #vittorio_ambrosio:0 "Vittorio Ambrosio"
+ #ugo_cavallero:0 "Ugo Cavallero"
+ ettore_bastico:0 "Ettore Bastico"
+ orlando_lorenzini:0 "Orlando Lorenzini"
+ #giovanni_messe:0 "Giovanni Messe"
+ sebastiano_visconti_prasca:0 "Sebastiano Visconti Prasca"
+ ubaldo_soddu:0 "Ubaldo Soddu"
+ #italo_balbo:0 "Italo Balbo"
+ italo_gariboldi:0 "Italo Gariboldi"
+ #mario_roatta:0 "Mario Roatta"
+ annibale_bergonzoli:0 "Annibale Bergonzoli"
+ raffaele_cadorna:0 "Raffaele Cadorna"
+ #alfredo_guzzoni:0 "Alfredo Guzzoni"
+ gastone_gambara:0 "Gastone Gambara"
+ 
+ #admirals
+ #inigo_campioni:0 "Inigo Campioni"
+ #alberto_da_zara:0 "Alberto Da Zara"
+ giuseppe_fioravanzo:0 "Giuseppe Fioravanzo"
+ #carlo_bergamini:0 "Carlo Bergamini"
+ #angelo_iachino:0 "Angelo Iachino"
+ luigi_rizzo:0 "Luigi Rizzo"
+ raffaele_de_courten:0 "Raffaele De Courten"
+ junio_valerio_borghese:0 "Junio Valerio Borghese"
+ 
+ #political advisor
+ 
+ falcone_lucifero:0 "Falcone Lucifero"
+ ugo_la_malfa:0 "Ugo La Malfa"
+ alfredo_covelli:0 "Alfredo Covelli"
+ pietro_secchia:0 "Pietro Secchia"
+ #carlo_scorza:0 ""
+ #giovanni_marinelli:0 ""
+ #gian_galeazzo_ciano:0 ""
+ #roberto_farinacci:0 ""
+ #dino_grandi:0 ""
+ #serafino_mazzolini:0 ""
+ #giacomo_acerbo:0 ""
+ giovanni_gentile:0 "Giovanni Gentile"
+ guido_jung:0 "Guido Jung"
+ carlo_sforza:0 "Carlo Sforza"
+ giuseppe_pella:0 "Giuseppe Pella"
+ enrico_fermi:0 "Enrico Fermi"
+ #luigi_einaudi:0 ""
+ benedetto_croce:0 "Benedetto Croce"
+ giuseppe_saragat:0 "Giuseppe Saragat"
+ giuseppe_romita:0 "Giuseppe Romita"
+ luigi_longo:0 "Luigi Longo"
+ antonio_pesenti:0 "Antonio Pesenti"
+ giancarlo_pajetta:0 "Gian Carlo Pajetta"
+ mauro_scoccimarro:0 "Mauro Scoccimarro"
+ vittorio_vidali:0 "Vittorio Vidali"
+ pietro_acquarone:0 "Pietro d'Acquarone"
+ umberto_ricci:0 "Umberto Ricci"
+ raffaele_guariglia:0 "Raffaele Guariglia"
+ #paolo_thaon_di_revel:0 ""
+ enzo_emilio_galbiati:0 "Enzo Emilio Galbiati"
+ 
+ #army chief
+ 
+ #navy chief
+ #domenico_cavagnari:0 ""
+ #arturo_riccardi:0 ""
+ 
+ #air chief
+ #rino_corso_fougier:0 ""
+ #francesco_pricolo:0 ""
+ 
+ #high command
+ #ettore_muti:0 ""
+ #marziale_cerutti:0 ""
+ #silvio_scaroni:0 ""
+ #luigi_mascherpa:0 ""
+ 
+ #theorist
+ #amedeo_mecozzi:0 ""
+ #renato_sandalli:0 ""
+ #gaetano_crocco:0 ""
+ 
+ #others
+ pompeo_colajanni:0 "Pompeo Colajanni"
+ cino_moscatelli:0 "Cino Moscatelli"
+ antonio_carini:0 "Antonio Carini"
+ giorgio_amendola:0 "Giorgio Amendola"
+ 
+ #characters for other countries
+ amedeo_ii:0 "Amedeo II"
+ aimone_i:0 "Aimone I"
+ tomislav_ii:0 "Tomislav II"
+ michael_i:0 "Michael I"

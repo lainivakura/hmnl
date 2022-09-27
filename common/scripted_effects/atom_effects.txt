@@ -1,0 +1,206 @@
+calculate_special_forces_limits = {
+  # ALLOWED_SF_BATTALIONS_COUNT = (TOTAL_BATTALIONS_COUNT - SF_BATTALIONS_COUNT) * SPECIAL_FORCES_RATE
+  # RESULT - SF_BATTALIONS_COUNT >= ALLOWED_SF_BATTALIONS_COUNT
+  
+  # NDefines.NCountry.SPECIAL_FORCES_CAP_MIN
+  set_temp_variable = {
+    special_forces_cap_min = 72
+  }
+
+  # Adding country SF cap modifier if exists
+  add_to_temp_variable = {
+    special_forces_cap_min = modifier@special_forces_min
+  }
+
+  # Base special forces battalion rate (5% of non-SF battalions)
+  set_temp_variable = {
+    special_forces_rate = 0.05
+  }
+
+  add_to_temp_variable = {
+    special_forces_rate = modifier@special_forces_cap
+  }
+
+  # Getting number of all special forces battalions
+  set_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@amphibious_armor
+  }
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@amphibious_mechanized
+  }
+
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@mountaineers
+  }
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@marine
+  }
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@paratrooper
+  }
+
+  set_temp_variable = {
+    total_battallions_count = num_battalions
+  }
+
+  set_temp_variable = {
+    allowed_special_forces_battalions_count = total_battallions_count
+  }
+
+  subtract_from_temp_variable = {
+    allowed_special_forces_battalions_count = special_forces_battions_count
+  }
+
+  multiply_temp_variable = {
+    allowed_special_forces_battalions_count = special_forces_rate
+  }
+
+  if = {
+    limit = {
+      check_variable = {
+        allowed_special_forces_battalions_count < special_forces_cap_min
+      }
+    }
+
+    set_temp_variable = {
+      allowed_special_forces_battalions_count = special_forces_cap_min
+    }
+  }
+
+  set_variable = {
+    special_forces_battions_count = special_forces_battions_count
+  }
+
+  set_variable = {
+    allowed_special_forces_battalions_count = allowed_special_forces_battalions_count
+  }
+
+  set_variable = {
+    special_forces_check_date = global.date
+  }
+}
+
+add_faction_members_collaboration = {
+  for_each_scope_loop = {
+    array = faction_members
+
+    if = {
+      limit = {
+        has_collaboration = {
+          target = FROM
+          value < 1.0
+        }
+      }
+
+      add_collaboration = {
+        target = FROM
+        value = 0.25
+      }
+    }
+  }
+}
+
+add_faction_members_collaboration_excellent = {
+  for_each_scope_loop = {
+    array = faction_members
+
+    if = {
+      limit = {
+        has_collaboration = {
+          target = FROM
+          value < 1.0
+        }
+      }
+
+      add_collaboration = {
+        target = FROM
+        value = 0.5
+      }
+    }
+  }
+}
+atom_share_compliance = {
+  # sharing new member accumulated compliance among already existing faction members
+  
+  every_country = {
+    limit = {
+      var:GLOBAL.atom_faction_new_member = {
+        has_collaboration = {
+          target = PREV
+          value > 0
+        }
+      }
+    }
+
+    set_temp_variable = { atom_collaboration_target = THIS }
+    # THIS - country with an established collaboration government
+    # PREV - new faction member
+
+    var:GLOBAL.atom_faction_new_member = {
+      # THIS - new faction member
+      # PREV - country with an established collaboration government
+      set_temp_variable = { atom_collaboration = has_collaboration@PREV }
+      divide_temp_variable = { atom_collaboration = 2 }
+    }
+
+    every_country = {
+      limit = {
+        OR = {
+          is_in_faction_with = GLOBAL.atom_faction_spymaster
+          tag = GLOBAL.atom_faction_spymaster
+        }
+      }
+
+      add_collaboration = {
+        target = atom_collaboration_target
+        value = atom_collaboration
+      }
+    }
+  }
+  
+  # sharing spymaster's accumulated compliance with a new faction member
+
+  every_country = {
+    limit = {
+      var:GLOBAL.atom_faction_spymaster = {
+        has_collaboration = {
+          target = PREV
+          value > 0
+        }
+      }
+    }
+
+    var:GLOBAL.atom_faction_spymaster = {
+      set_temp_variable = { spymaster_collaboration = has_collaboration@PREV }
+    }
+
+    var:GLOBAL.atom_faction_new_member = {
+      set_temp_variable = { newcomer_collaboration = has_collaboration@PREV }
+    }
+
+    if = {
+      limit = {
+        check_variable = { spymaster_collaboration > newcomer_collaboration }
+      }
+
+      var:GLOBAL.atom_faction_new_member = {
+        set_collaboration = {
+          target = PREV
+          value = spymaster_collaboration
+        }
+      }
+    }
+  }
+}
+atom_add_compliance = {
+  if = { 
+    limit = { check_variable = { global.atom_marked_states^num > 0 } }
+    for_each_scope_loop = { 
+      array = global.atom_marked_states
+      
+      add_compliance = global.atom_add_comliance_increment
+    }
+   } else = {
+    add_compliance = global.atom_add_comliance_increment
+   }
+}

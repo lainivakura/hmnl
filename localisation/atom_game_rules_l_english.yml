@@ -1,0 +1,26 @@
+﻿l_english:
+ ################################################################# NMA GROUPS
+ ATOM_GROUPKEY:0 "Atom-mod:Настройки с Францией"
+################################################################ VICHY FRANCE
+ATOM_VIC_OPTIONS:0 "Настройки Виши"
+ATOM_RULE_OPTION_VIC_DISABLED:0 "Запретить Виши"
+ATOM_RULE_OPTION_VIC_DISABLED_DESC:0 "Включив эту опцию Вишистская Франция не будет доступна для игры."
+ATOM_RULE_OPTION_VIC_ALLOWED:0 "Разрешить Виши"
+ATOM_RULE_OPTION_VIC_ALLOWED_DESC:0 "Включив эту опцию Вишистская Франция будет доступна для игры."
+################################################################ FRA_ENG FREEFRANCE
+ATOM_FREEFRANCE_OPTIONS:0 "Настройки Свободной Франции"
+ATOM_RULE_OPTION_FREEFRANCE_DISABLED:0 "Запретить создание"
+ATOM_RULE_OPTION_FREEFRANCE_DISABLED_DESC:0 "Включив эту опцию, игрок на Франции не будет иметь вариант продолжать борьбу после своей капитуляции."
+ATOM_RULE_OPTION_FREEFRANCE_ENABLED:0 "Разрешить создание"
+ATOM_RULE_OPTION_FREEFRANCE_ENABLED_DESC:0 "Включив эту опцию, игрок на Франции будет иметь вариант продолжать борьбу после своей капитуляции."
+################################################################ ATOMDOCTRINS
+ATOM_ATOMDOCTRINS_OPTIONS:0 "Настройки Доктрин."
+ATOM_RULE_OPTION_ATOMDOCTRINS_DISABLED:0 "Включить ванильные доктрины."
+ATOM_RULE_OPTION_ATOMDOCTRINS_DISABLED_DESC:0 ""Включив эту опцию будут доступны ванильные доктрины."
+ATOM_RULE_OPTION_ATOMDOCTRINS_ENABLED:0 "Включить атомные доктрины."
+ATOM_RULE_OPTION_ATOMDOCTRINS_ENABLED_DESC:0 "Включив эту опцию будут доступны атомные доктрины."
+atom_spain_war:0 "Настройки Гражданской войны в Испании"
+ATOM_RULE_OPTION_SPAIN_WAR_DISABLED:0 "Без гражданки"
+ATOM_RULE_OPTION_SPAIN_WAR_DISABLED_DESC:0 "Включив эту опцию, не будет гражданской войны в Испании, но при этом будет возмещен опыт и тп."
+ATOM_RULE_OPTION_SPAIN_WAR_ALLOWED:0 "С гражданкой"
+ATOM_RULE_OPTION_SPAIN_WAR_ALLOWED_DESC:0 "С Включив эту опцию, будет гражданская война в Испании"

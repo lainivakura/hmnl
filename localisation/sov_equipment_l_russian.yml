@@ -1,0 +1,37 @@
+﻿l_russian:
+ SOV_medium_tank_equipment_3:0 "T-34-85"
+ SOV_medium_tank_equipment_3_short:0 "T-34-85"
+ SOV_medium_tank_equipment_3_desc:0 "Окончательная модификация танка Т-34 1943 года. Новая трехместная орудийная башня позволила установить более мощную 85-мм пушку. Это значительно повысило боевую эффективность танка по сравнению с его предшественником, Т-34-76. Всего было произведено более 35 000 экземпляров в нескольких вариантах. Сегодня танк все еще находится на вооружении в нескольких странах."
+ 
+ 
+ # Soviet medium SPG
+ SOV_medium_tank_destroyer_equipment_1:0 "SU-8-85"
+ SOV_medium_tank_destroyer_equipment_1_short:0 "SU-8-85"
+ SOV_medium_tank_destroyer_equipment_1_desc:0 "SU-8-85 - проект истребителя танков. 85-мм танковая пушка F-30 была размещена в корпусе на базе шасси Т-28."
+ SOV_medium_tank_destroyer_equipment_2:0 "SU-85"
+ SOV_medium_tank_destroyer_equipment_2_short:0 "SU-85"
+ SOV_medium_tank_destroyer_equipment_2_desc:0 "SU-85 - средняя противотанковая самоходная артиллерийская установка, относящаяся к классу истребителей танков. СУ-85 создан на базе среднего танка Т-34 и запущен в производство летом 1943 года. Всего было построено 2337 самоходных орудий. 85-мм пушка Д-5С позволяет СУ-85 эффективно бороться со средними танками противника на дальностях более километра и на меньших расстояниях пробивать лобовую броню тяжелых танков."
+ SOV_medium_tank_destroyer_equipment_3:0 "SU-100"
+ SOV_medium_tank_destroyer_equipment_3_short:0 "SU-100"
+ SOV_medium_tank_destroyer_equipment_3_desc:0 "SU-100 - противотанковая самоходная артиллерийская установка (истребитель танков). Он был создан на базе среднего танка Т-34-85 конструкторским бюро Уралмашзавода в конце 1943 года как дальнейшее развитие СУ-85 (из-за недостаточной мощности в борьбе с немецкими тяжелыми танками). Основным оружием СУ-100 была 100-мм пушка Д-10С."
+ 
+ SOV_medium_tank_aa_equipment_1:0 "ZSU-8-76"
+ SOV_medium_tank_aa_equipment_1_short:0 "ZSU-8-76"
+ SOV_medium_tank_aa_equipment_1_desc:0 "SU-8-76 - самоходная зенитная установка, основанная на шасси Т-28. Вместо башенок в передней части корпуса установлена 76,2-мм зенитная пушка 3К."
+ SOV_medium_tank_aa_equipment_2:0 "ZSU-37-34"
+ SOV_medium_tank_aa_equipment_2_short:0 "ZSU-37-34"
+ SOV_medium_tank_aa_equipment_2_desc:0 "ZSU-37-34 - самоходная зенитная установка, построенная на базе танка Т-34. Оснащен новой башней, разработанной Савиным, и вооружен 37-мм зенитной пушкой."
+ SOV_medium_tank_aa_equipment_3:0 "U-20"
+ SOV_medium_tank_aa_equipment_3_short:0 "U-20"
+ SOV_medium_tank_aa_equipment_3_desc:0 "U-20 - Проект SPG. На верхней части шасси Т-34 была установлена открытая башня с экипажем из 3 человек. В качестве оружия он использовал 85-мм зенитную пушку 52-К."
+ 
+ SOV_medium_tank_artillery_equipment_1:0 "SU-8-152"
+ SOV_medium_tank_artillery_equipment_1_short:0 "SU-8-152"
+ SOV_medium_tank_artillery_equipment_1_desc:0 "SU-8-152 - самоходное артиллерийское орудие на базе шасси Т-28 и вооруженное 152-мм гаубицей."
+ SOV_medium_tank_artillery_equipment_2:0 "SU-122"
+ SOV_medium_tank_artillery_equipment_2_short:0 "SU-122"
+ SOV_medium_tank_artillery_equipment_2_desc:0 "SU-122 самоходная гаубица. Калибр основного вооружения — 122-мм гаубицы М-30С. Шасси было таким же, как у Т-34."
+ SOV_medium_tank_artillery_equipment_3:0 "SU-D-15"
+ SOV_medium_tank_artillery_equipment_3_short:0 "SU-D-15"
+ SOV_medium_tank_artillery_equipment_3_desc:0 "SU-D-15 - средняя самоходная установка с вооружением состояла из 152-мм гаубицы Д-15. Гаубица была установлена в корпусе и стреляла снарядами массой 40-49 кг. Он квалифицируется как замена СУ-122, у которого недостаточно мощности для эффективного уничтожения тяжелых немецких танков."
+

@@ -1,0 +1,502 @@
+form_greater_german_reich_category = {
+
+	form_greater_german_reich = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GER
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			has_full_control_of_state = 10
+			has_full_control_of_state = 16
+			all_owned_state = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		visible = {
+			AND = {
+				original_tag = GER
+				has_government = fascism
+				
+			}
+			NOT = { has_global_flag = form_greater_german_reich_flag }
+			OR = {
+				AND = {
+					has_full_control_of_state = 16
+				}
+			}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = GER_greater_german_reich
+			hidden_effect = {
+				set_global_flag = form_greater_german_reich_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+form_commonwealth_category = {
+
+	form_commonwealth = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = POL
+				
+			}
+		}
+
+		available = {
+			is_subject = no
+			
+			
+			OR = {
+				AND = {
+					original_tag = POL
+					core_compliance = {
+						occupied_country_tag = LIT
+						value > 80
+					}
+				}
+				
+				
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = POL
+				
+			}
+			NOT = { has_global_flag = form_commonwealth_flag }
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+form_baltic_federation_category = {
+
+	form_baltic_federation = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = EST
+				original_tag = LAT
+				original_tag = LIT
+			}
+			OR = {
+				has_dlc = "Waking the Tiger"
+				has_dlc = "No Step Back"
+			}
+		}
+
+		available = {
+			is_subject = no
+			
+		}
+
+		visible = {
+			OR = {
+				original_tag = EST
+				
+			}
+			
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+
+form_greater_greece_category = {
+byz_restore_byzantium = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+			has_dlc = "Battle for the Bosporus"
+		}
+
+		available = {
+			is_subject = no
+			has_completed_focus = GRE_reviving_the_double_headed_eagle
+			# Greece
+			custom_trigger_tooltip = {
+				tooltip = form_country_greece_required_states_tt
+				controls_state = 185
+				controls_state = 731
+				controls_state = 47
+				controls_state = 186
+				controls_state = 184
+				controls_state = 187
+				controls_state = 182
+			}
+			
+		}
+
+		visible = {
+			AND = { 
+				has_completed_focus = GRE_horror_and_fear
+				
+			}
+			NOT = { has_global_flag = form_byzantine_empire_flag }
+		}
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	form_greater_greece = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = GRE
+			has_dlc = "Battle for the Bosporus"
+		}
+
+		available = {
+			is_subject = no
+			if = { 
+				limit = {
+					has_government = democratic
+				}
+				has_completed_focus = GRE_nenikikamen
+			}
+			# Greece
+			custom_trigger_tooltip = {
+				tooltip = form_country_greece_required_states_tt
+				controls_state = 185
+				controls_state = 731
+				controls_state = 47
+				controls_state = 186
+				controls_state = 184
+				controls_state = 187
+				controls_state = 182
+			}
+			}
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}}
+
+form_polynesia_category = {
+	
+	form_polynesia = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+			}
+			# Polynesia
+			controls_state = 284 #North Island
+			controls_state = 629 #Hawaii
+			controls_state = 684 #Caroline Islands
+			controls_state = 638 #Guam
+			controls_state = 641 #Tahiti
+			controls_state = 646 #Saipan
+			controls_state = 723 #South Island
+			controls_state = 726 #Samoa
+		}
+
+		visible = {
+			OR = {
+				original_tag = HAW
+				original_tag = TAH
+				original_tag = GUM
+				original_tag = FSM
+				original_tag = SAM
+				original_tag = SOL
+				original_tag = FIJ
+				original_tag = NZL
+			}
+			NOT = { has_global_flag = form_polynesia_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = united_polynesia
+			# Polynesia
+			custom_effect_tooltip = form_country_polynesia_coring_states_tt
+			hidden_effect = {
+				284 = { add_core_of = ROOT }
+				524 = { add_core_of = ROOT } #Taiwan
+				629 = { add_core_of = ROOT }
+				630 = { add_core_of = ROOT }
+				631 = { add_core_of = ROOT }
+				632 = { add_core_of = ROOT }
+				633 = { add_core_of = ROOT }
+				634 = { add_core_of = ROOT }
+				635 = { add_core_of = ROOT }
+				636 = { add_core_of = ROOT }
+				638 = { add_core_of = ROOT }
+				639 = { add_core_of = ROOT }
+				641 = { add_core_of = ROOT }
+				642 = { add_core_of = ROOT }
+				643 = { add_core_of = ROOT }
+				645 = { add_core_of = ROOT } #Iwo Jima
+				646 = { add_core_of = ROOT }
+				647 = { add_core_of = ROOT }
+				648 = { add_core_of = ROOT }
+				684 = { add_core_of = ROOT }
+				723 = { add_core_of = ROOT }
+				725 = { add_core_of = ROOT }
+				726 = { add_core_of = ROOT }
+				727 = { add_core_of = ROOT }
+				734 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				news_event = { id = lar_news.291 hours = 6 }
+				set_global_flag = form_polynesia_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	NZL_demand_islands = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = NZL
+		}
+
+		available = {
+			OR = {
+				is_subject = no
+				has_autonomy_state = autonomy_dominion #New Zealand should be able to do it
+			}
+			has_completed_focus = NZL_maori_volunteers
+			hidden_trigger = {
+				NOT = { has_country_flag = is_demanding_flag }
+				any_country = {
+					NOT = { tag = ROOT }
+					is_in_faction_with = ROOT
+					NOT = {
+						OR = {
+							original_tag = HAW
+							original_tag = TAH
+							original_tag = GUM
+							original_tag = FSM
+							original_tag = SAM
+							original_tag = SOL
+							original_tag = FIJ
+							original_tag = NZL
+						}
+					}
+					OR = {
+						controls_state = 284
+						controls_state = 629
+						controls_state = 630
+						controls_state = 631
+						controls_state = 632
+						controls_state = 633
+						controls_state = 634
+						controls_state = 635
+						controls_state = 636
+						controls_state = 638
+						controls_state = 639
+						controls_state = 641
+						controls_state = 642
+						controls_state = 643
+						controls_state = 645 #Iwo Jima
+						controls_state = 646
+						controls_state = 647
+						controls_state = 648
+						controls_state = 684
+						controls_state = 723
+						controls_state = 725
+						controls_state = 726
+						controls_state = 727
+						controls_state = 734
+					}
+					NOT = { has_country_flag = has_been_asked_for_islands_flag }
+				}
+			}
+		}
+
+		visible = {
+			original_tag = NZL
+			NOT = { has_global_flag = form_polynesia_flag }
+			has_completed_focus = NZL_maori_volunteers
+			hidden_trigger = {
+				NOT = { has_country_flag = is_demanding_flag }
+				any_country = {
+					NOT = { tag = ROOT }
+					is_in_faction_with = ROOT
+					NOT = {
+						OR = {
+							original_tag = HAW
+							original_tag = TAH
+							original_tag = GUM
+							original_tag = FSM
+							original_tag = SAM
+							original_tag = SOL
+							original_tag = FIJ
+							original_tag = NZL
+						}
+					}
+					OR = {
+						controls_state = 284
+						controls_state = 629
+						controls_state = 630
+						controls_state = 631
+						controls_state = 632
+						controls_state = 633
+						controls_state = 634
+						controls_state = 635
+						controls_state = 636
+						controls_state = 638
+						controls_state = 639
+						controls_state = 641
+						controls_state = 642
+						controls_state = 643
+						controls_state = 645 #Iwo Jima
+						controls_state = 646
+						controls_state = 647
+						controls_state = 648
+						controls_state = 684
+						controls_state = 723
+						controls_state = 725
+						controls_state = 726
+						controls_state = 727
+						controls_state = 734
+					}
+					NOT = { has_country_flag = has_been_asked_for_islands_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			random_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					is_in_faction_with = ROOT
+					NOT = {
+						OR = {
+							original_tag = HAW
+							original_tag = TAH
+							original_tag = GUM
+							original_tag = FSM
+							original_tag = SAM
+							original_tag = SOL
+							original_tag = FIJ
+							original_tag = NZL
+						}
+					}
+					OR = {
+						controls_state = 284
+						controls_state = 629
+						controls_state = 630
+						controls_state = 631
+						controls_state = 632
+						controls_state = 633
+						controls_state = 634
+						controls_state = 635
+						controls_state = 636
+						controls_state = 638
+						controls_state = 639
+						controls_state = 641
+						controls_state = 642
+						controls_state = 643
+						controls_state = 645 #Iwo Jima
+						controls_state = 646
+						controls_state = 647
+						controls_state = 648
+						controls_state = 684
+						controls_state = 723
+						controls_state = 725
+						controls_state = 726
+						controls_state = 727
+						controls_state = 734
+					}
+					hidden_trigger = { NOT = { has_country_flag = has_been_asked_for_islands_flag } }
+				}
+				save_event_target_as = new_zealand_island_demand_target
+			}
+			event_target:new_zealand_island_demand_target = {
+				country_event = { id = tfv_new_zealand.9 days = 3 }
+				set_country_flag = has_been_asked_for_islands_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
