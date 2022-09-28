@@ -1,0 +1,117 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_palazzo_venezia"
+		texturefile = "gfx/event_pictures/palazzo_venezia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_badoglio_coup"
+		texturefile = "gfx/event_pictures/badoglio_coup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_scared_mussolini"
+		texturefile = "gfx/event_pictures/scared_mussolini.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_selassie"
+		texturefile = "gfx/event_pictures/selassie.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_25_july"
+		texturefile = "gfx/event_pictures/25_july.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ita_referendum"
+		texturefile = "gfx/event_pictures/ita_referendum.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_referendum_victory"
+		texturefile = "gfx/event_pictures/referendum_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pci_congress"
+		texturefile = "gfx/event_pictures/pci_congress.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_fdp"
+		texturefile = "gfx/event_pictures/fdp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_end_pci_congress"
+		texturefile = "gfx/event_pictures/end_pci_congress.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Hitler_visit_Rome"
+		texturefile = "gfx/event_pictures/Hitler_visit_Rome.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_brigate_garibaldi"
+		texturefile = "gfx/event_pictures/brigate_garibaldi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_giallisti"
+		texturefile = "gfx/event_pictures/giallisti.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_partigiani"
+		texturefile = "gfx/event_pictures/partigiani.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_victor_emmanuel_III"
+		texturefile = "gfx/event_pictures/victor_emmanuel_III.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rosselli"
+		texturefile = "gfx/event_pictures/rosselli.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_league_of_nations"
+		texturefile = "gfx/event_pictures/league_of_nations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ITA_constitution"
+		texturefile = "gfx/event_pictures/ITA_constitution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ITA_pci_revolution"
+		texturefile = "gfx/event_pictures/ITA_pci_revolution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ITA_king_parlament"
+		texturefile = "gfx/event_pictures/king_parlament.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ITA_gramsci"
+		texturefile = "gfx/event_pictures/gramsci.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ITA_attentato_togliatti"
+		texturefile = "gfx/event_pictures/attentato_togliatti.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ITA_marconi"
+		texturefile = "gfx/event_pictures/marconi.dds"
+	}
+}

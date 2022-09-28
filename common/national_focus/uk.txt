@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = crypto_bomb_focus
 		icon = GFX_focus_generic_cryptologic_bomb
-		cost = 10
+		cost = 5
 		x = 0
 		y = 0
 			available = {
@@ -774,7 +774,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -1821,7 +1821,7 @@ focus_tree = {
 	focus = {
 		id = ENG_chiefs_of_staff_committee
 		icon = GFX_focus_eng_chiefs_of_staff_committee
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = air_rearmament_focus
 		}
@@ -1947,10 +1947,7 @@ focus_tree = {
 available = {
 					date > 1940.6.1 }
 			completion_reward = {
-					add_offsite_building = {
-					type = arms_factory
-					level = 8
-				}
+					add_ideas = british_fighter_discount
 				}
 
 	}
@@ -1982,7 +1979,7 @@ available = {
 	focus = {
 		id = naval_rearmament_focus
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = general_rearmament_focus
 		}
@@ -2208,7 +2205,7 @@ available = {
 	focus = {
 		id = uk_convoy_focus
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = uk_destroyer_focus
 		}
@@ -2376,7 +2373,7 @@ available = {
 	focus = {
 		id = ENG_expand_the_repair_yards
 		icon = GFX_goal_generic_production
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = uk_battleship_focus
 			focus = uk_carrier_focus

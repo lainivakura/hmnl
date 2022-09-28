@@ -7,13 +7,8 @@ state={
 	state_category = pastoral
 	
 	
-	history=
-	{
-		}
-
-		1938.10.25 = {
-			controller = JAP
-		}
+	history={
+	}z
 		
 	manpower=1
 	buildings_max_level_factor=1.000

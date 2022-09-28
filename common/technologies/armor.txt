@@ -1378,10 +1378,6 @@ technologies = {
 	
 	main_battle_tank = { #E-50
 
-		allow_branch = {
-			are_moderns_enabled = yes
-		}	
-
 		enable_equipments = {
 			modern_tank_equipment_1
 		}	

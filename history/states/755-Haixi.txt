@@ -10,7 +10,7 @@ state={
 	history={
 		}
 
-	}
+	
 
 	local_supplies=0.0 
 }

@@ -1889,9 +1889,6 @@ date > 1942.1.1
 		prerequisite = {
 			focus = USA_air_war_plans_division
 		}
-		mutually_exclusive = {
-			focus = USA_strategic_bombing
-		}
 		x = 34
 		y = 2
 			available_if_capitulated = yes
@@ -1952,9 +1949,7 @@ date > 1942.1.1
 		prerequisite = {
 			focus = USA_air_war_plans_division
 		}
-		mutually_exclusive = {
-			focus = USA_air_support
-		}
+
 		x = 36
 		y = 2
 			available_if_capitulated = yes
@@ -2179,7 +2174,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_bureau_of_ships
 		icon = GFX_goal_generic_build_navy
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_two_ocean_navy_act
 		}
@@ -2201,7 +2196,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_battleship_primacy
 		icon = GFX_goal_generic_navy_battleship
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_bureau_of_ships
 		}
@@ -2225,7 +2220,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_advanced_mahanian_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_battleship_primacy
 		}
@@ -2246,7 +2241,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_carrier_primacy
 		icon = GFX_goal_generic_navy_carrier
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_bureau_of_ships
 		}
@@ -2270,7 +2265,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_bureau_of_aeronautics
 		icon = GFX_goal_generic_air_naval_bomber
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_carrier_primacy
 		}
@@ -2292,7 +2287,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_escort_effort
 		icon = GFX_goal_generic_navy_anti_submarine
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_bureau_of_ships
 		}
@@ -2307,7 +2302,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_convoy_tactics
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_escort_effort
 		}
@@ -2329,7 +2324,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_fleet_submarines
 		icon = GFX_goal_generic_navy_submarine
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_bureau_of_ships
 		}
@@ -2369,7 +2364,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_unrestricted_submarine_warfare
 		icon = GFX_goal_generic_wolf_pack
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_fleet_submarines
 		}
@@ -2569,7 +2564,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_two_ocean_navy_act
 		}
@@ -2593,7 +2588,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_expand_the_USMC
 		icon = GFX_goal_generic_special_forces
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_fund_the_navy
 		}
@@ -2615,7 +2610,7 @@ date > 1942.1.1
 	focus = {
 		id = USA_amphibious_operations
 		icon = GFX_goal_generic_amphibious_assault
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = USA_expand_the_USMC
 		}

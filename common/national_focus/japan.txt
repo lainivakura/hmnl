@@ -1813,9 +1813,6 @@ add_timed_idea = {
 		prerequisite = {
 			focus = JAP_new_naval_estimates
 		}
-		mutually_exclusive = {
-			focus = JAP_supremacy_of_the_battlefleet
-		}
 		x = 29
 		y = 1
 			ai_will_do = {
@@ -1984,9 +1981,7 @@ add_timed_idea = {
 		prerequisite = {
 			focus = JAP_new_naval_estimates
 		}
-		mutually_exclusive = {
-			focus = JAP_carrier_warfare_experiments
-		}
+
 		x = 31
 		y = 1
 			ai_will_do = {

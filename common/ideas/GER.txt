@@ -2060,7 +2060,7 @@ send_volunteer_divisions_required = -1
 			always = no # Added via event
 		}
 
-			targeted_modifier = {
+		targeted_modifier = {
 			tag = SOV
 			max_planning = 10
 			planning_speed = 0.1
@@ -2068,8 +2068,7 @@ send_volunteer_divisions_required = -1
 
 		}
 
-}
+	}
 
 }
 
-}
