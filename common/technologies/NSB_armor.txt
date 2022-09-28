@@ -104,7 +104,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_light_armor
 		}
 	}
@@ -159,7 +158,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_light_armor
 		}
 	}
@@ -188,7 +186,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 		categories = {
-			year_1936
+			cat_light_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -228,18 +226,16 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_light_armor
 		}
 	}
 	advanced_light_tank_chassis = {	#Leopard
 		light_tank_recon = { 
 		
-		breakthrough = 0.15
-		soft_attack = 0.5
+		soft_attack = 0.1
 		
 		urban = {
-		    attack = 0.1
+		    attack = 0.05
 		}
 		
 		}
@@ -267,7 +263,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 		categories = {
-			year_1941
+			cat_light_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -293,7 +289,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_light_armor
 		}
 	}
@@ -329,7 +324,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 		categories = {
-			year_1939
+			cat_medium_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -369,7 +364,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_medium_armor
 		}
 	}
@@ -400,7 +394,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		categories = {
-			year_1941
+			cat_medium_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -451,7 +445,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_medium_armor
 		}
 	}
@@ -483,7 +476,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1943
 		categories = {
-			year_1943
+			cat_medium_armor
 		}
 		allow = {
 			date > 1940.1.1
@@ -508,7 +501,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_medium_armor
 		}
 	}
@@ -547,7 +539,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_medium_armor
 		}
 	}
@@ -589,7 +580,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 		categories = {
-			year_1939
+			cat_heavy_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -620,7 +611,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_heavy_armor
 		}
 	}
@@ -660,7 +650,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		categories = {
-			year_1941
+			cat_heavy_armor
 		}
 		allow = { 
 			date > 1939.1.1
@@ -690,7 +680,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_heavy_armor
 		}
 	}
@@ -721,7 +710,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1943
 		categories = {
-			year_1943
+			cat_heavy_armor
 		}
 		allow = { 
 			date > 1941.1.1
@@ -746,7 +735,6 @@ technologies = {
 			}
 		}
 		categories = {
-			armor
 			cat_heavy_armor
 		}
 	}
@@ -772,7 +760,7 @@ technologies = {
 		research_cost = 4
 		start_year = 1943
 		categories = {
-			year_1943
+			cat_heavy_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -782,7 +770,6 @@ technologies = {
 			factor = 0 # Hitler cries on the inside
 		}
 		categories = {
-			armor
 			cat_heavy_armor
 		}
 	}
@@ -848,7 +835,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1936
 		categories = {
-			year_1936
+			
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -897,7 +884,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		categories = {
-			year_1941
+			
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -932,7 +919,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1943
 		categories = {
-			year_1943
+			
 		}
 		folder = {
 			name = nsb_armour_folder
