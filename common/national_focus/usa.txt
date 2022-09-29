@@ -1526,12 +1526,8 @@ date > 1942.1.1
 					else = {
 							add_political_power = 150
 						}
-					if = {
-							limit = {
-									has_war_support < 0.1
-								}
-							set_war_support = 0.1
-						}
+					set_war_support = 0.1
+						
 					if = {
 							limit = {
 									has_war_support < 0.4

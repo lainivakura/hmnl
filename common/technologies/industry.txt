@@ -218,9 +218,7 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 	
-		line_change_production_efficiency_factor = 0.1
-		conversion_cost_civ_to_mil_factor = -0.2
-        global_building_slots = 0.05
+		equipment_conversion_speed = 0.40
 		
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -261,9 +259,7 @@ technologies = {
 	
 	advanced_equipment_conversion = {
 		
-		line_change_production_efficiency_factor = 0.1
-        conversion_cost_civ_to_mil_factor = -0.3
-		global_building_slots = 0.1
+		equipment_conversion_speed = 0.40
 
 
 		research_cost = 2

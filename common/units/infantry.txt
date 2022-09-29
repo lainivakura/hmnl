@@ -273,16 +273,6 @@ sub_units = {
 		}
 
 
-        forest = {
-			attack = 0.1
-			defence = 0.05
-			movement = 0.2
-		}
-		urban = {
-			attack = 0.1
-			defence = 0.05
-			movement = 0.2
-		}
 	}
 	
 		
