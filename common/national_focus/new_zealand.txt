@@ -28,7 +28,7 @@
 #		y = 0
 #		relative_position_id =
 #
-#		cost = 10
+#		cost = 5
 #
 #		ai_will_do = {
 #			factor = 1
@@ -69,7 +69,7 @@
 		x = 16
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -112,7 +112,7 @@
 		y = 1
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -150,7 +150,7 @@
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -221,7 +221,7 @@
 		y = 2
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -294,7 +294,7 @@
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -333,7 +333,7 @@
 		y = 3
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -371,7 +371,7 @@
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -409,7 +409,7 @@
 		y = 4
 		relative_position_id = NZL_transfer_the_new_zealand_division
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -451,7 +451,7 @@
 		x = 21
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -470,50 +470,26 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = { has_dlc = "By Blood Alone" }
-				create_equipment_variant = {
-					name = "Bristol Blenheim"
-					type = medium_plane_airframe_1
-					modules = {
-						fixed_main_weapon_slot = medium_bomb_bay
-						fixed_auxiliary_weapon_slot_1 = torpedo_mounting
-						fixed_auxiliary_weapon_slot_2 = bomb_locks
-						engine_type_slot = engine_3_2x
-						special_type_slot_1 = empty
-					}
-					icon = "GFX_ENG_tactical_bomber1_medium"
-				}
-				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_1
-					producer = ENG
-					amount = 116
-					variant_name = "Bristol Blenheim"
-				}
+			add_equipment_to_stockpile = {
+				type = nav_bomber_equipment_1
+				amount = 56
+				producer = ENG
 			}
-			else = {
+			if = {
+				limit = {
+					ENG = { has_tech = tactical_bomber1 }
+				}
 				add_equipment_to_stockpile = {
-					type = nav_bomber_equipment_1
-					amount = 56
+					type = tac_bomber_equipment_1
+					amount = 30
 					producer = ENG
 				}
-				
-				if = {
-					limit = {
-						ENG = { has_tech = tactical_bomber1 }
-					}
+				else = {
 					add_equipment_to_stockpile = {
-						type = tac_bomber_equipment_1
+						type = tac_bomber_equipment_0
 						amount = 30
 						producer = ENG
-					}
-					else = {
-						add_equipment_to_stockpile = {
-							type = tac_bomber_equipment_0
-							amount = 30
-							producer = ENG
-						}	
-					}
+					}	
 				}
 			}
 		}
@@ -527,7 +503,7 @@
 		y = 1
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -600,7 +576,7 @@
 		y = 2
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -638,7 +614,7 @@
 		y = 2
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -676,7 +652,7 @@
 		y = 3
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -714,7 +690,7 @@
 		y = 3
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -738,7 +714,10 @@
 				name = NZL_modern_fighters
 				bonus = 1.0
 				uses = 1
-				category = light_fighter
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
 				category = cat_heavy_fighter
 			}
 		}
@@ -753,7 +732,7 @@
 		y = 3
 		relative_position_id = NZL_expand_the_nzpaf
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -793,7 +772,7 @@
 		x = 25
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -879,7 +858,7 @@
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -916,7 +895,7 @@
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -953,7 +932,7 @@
 		y = 1
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -989,7 +968,7 @@
 		y = 2
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1055,7 +1034,7 @@
 		y = 3
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -1092,7 +1071,7 @@
 		y = 3
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1159,7 +1138,7 @@
 		y = 4
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1254,7 +1233,7 @@
 		y = 4
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -1291,7 +1270,7 @@
 		y = 5
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -1324,7 +1303,7 @@
 		y = 5
 		relative_position_id = NZL_national_roads_board
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 35
@@ -1359,7 +1338,7 @@
 		x = 30
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1397,7 +1376,7 @@
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1438,7 +1417,7 @@
 		y = 1
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1492,7 +1471,7 @@
 		y = 2
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1558,7 +1537,7 @@
 		y = 2
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1595,7 +1574,7 @@
 		y = 3
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1632,7 +1611,7 @@
 		y = 3
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1670,7 +1649,7 @@
 		y = 5
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1711,7 +1690,7 @@
 		y = 4
 		relative_position_id = NZL_army_reforms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1765,7 +1744,7 @@
 		x = 4
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1801,7 +1780,7 @@
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1833,7 +1812,7 @@
 		y = 1
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1871,7 +1850,7 @@
 		y = 1
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1903,7 +1882,7 @@
 		y = 2
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1936,7 +1915,7 @@
 		y = 3
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1974,7 +1953,7 @@
 		y = 3
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -2006,7 +1985,7 @@
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2038,7 +2017,7 @@
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2096,7 +2075,7 @@
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2135,13 +2114,14 @@
 		y = 1
 		relative_position_id = NZL_the_first_labor_government
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
 		}
 
 		available = {
+date > 1949.12.1
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -2175,7 +2155,7 @@
 		y = 1
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2206,7 +2186,7 @@
 		y = 2
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2238,7 +2218,7 @@
 		y = 3
 		relative_position_id = NZL_strengthen_the_commonwealth
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2279,7 +2259,7 @@
 		y = 1
 		relative_position_id = NZL_statute_of_westminster
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2314,7 +2294,7 @@
 		y = 1
 		relative_position_id = NZL_the_lee_affair
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2361,7 +2341,7 @@
 		y = 2
 		relative_position_id = NZL_the_lee_affair
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2395,7 +2375,7 @@
 		y = 3
 		relative_position_id = NZL_the_lee_affair
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2439,7 +2419,7 @@
 		y = 1
 		relative_position_id = NZL_statute_of_westminster
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2475,7 +2455,7 @@
 		y = 1
 		relative_position_id = NZL_in_the_darkness
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2511,7 +2491,7 @@
 		y = 1
 		relative_position_id = NZL_in_the_darkness
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2555,7 +2535,7 @@
 		y = 2
 		relative_position_id = NZL_in_the_darkness
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2596,7 +2576,7 @@
 		y = 1
 		relative_position_id = NZL_statute_of_westminster
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2638,7 +2618,7 @@
 		y = 1
 		relative_position_id = NZL_constitution_amendment_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

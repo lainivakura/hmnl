@@ -643,19 +643,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			air_experience = 10
-			212 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+			
 			add_ideas = BUL_aircraft_repair_facilities
 		}
 	}
@@ -2368,7 +2356,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_power_to_the_tsar }
 
 		available = {
-
+date > 1949.12.1
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -5213,6 +5201,7 @@ focus_tree = {
 		}
 
 		available = {
+date > 1949.12.1
 			country_exists = ENG
 			NOT = { has_war_with = ENG }
 			ENG = { 
@@ -6809,7 +6798,7 @@ focus_tree = {
 		}
 
 		available = {
-
+date > 1949.12.1
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -7095,6 +7084,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_join_the_tripartite_pact focus = BUL_join_the_allies focus = BUL_a_balkan_confederation }
 
 		available = {
+date > 1949.12.1
 			OR = {
 				has_government = fascism
 				has_government = neutrality
@@ -8647,6 +8637,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_peaceful_development }
 
 		available = {
+date > 1949.12.1
 			has_government = fascism
 		}
 		
@@ -8860,6 +8851,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+date > 1949.12.1
 			is_subject = no
 		}
 		
