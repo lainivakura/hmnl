@@ -50,7 +50,7 @@
 #		completion_reward = {
 #
 #		}
-#	}
+#	} 
 
 	############################
 	##### CATEGORY HERE ! ######
@@ -163,7 +163,7 @@
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = ROM_basing_rights_for_soviet_union
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = ROM_a_deal_with_the_devil }
@@ -178,7 +178,6 @@
 		}
 
 		available = {
-date > 1949.12.1
 			is_in_faction = no
 			SOV = {
 				exists = yes
@@ -290,7 +289,7 @@ date > 1949.12.1
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -324,7 +323,7 @@ date > 1949.12.1
 		y = 2
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 1
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -407,7 +406,7 @@ date > 1949.12.1
 		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 1
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -491,7 +490,7 @@ date > 1949.12.1
 				}
 				add_resource = {
 					type = oil
-					amount = 18
+					amount = 8
 				}
 			}
 			GER = {
@@ -501,7 +500,7 @@ date > 1949.12.1
 					}
 					add_resource = {
 						type = oil
-						amount = 14
+						amount = 4
 					}
 				}
 			}
@@ -523,7 +522,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			834 = {
 				is_owned_by = SOV
 				is_controlled_by = SOV
@@ -548,7 +546,7 @@ date > 1949.12.1
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = ROM_renew_the_romanian_polish_alliance
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = ROM_preserve_greater_romania }
@@ -563,7 +561,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			POL = { 
 				exists = yes 
 				is_puppet = no
@@ -1012,8 +1009,8 @@ date > 1949.12.1
 	focus = {
 		id = ROM_agrarian_reform
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = ROM_civil_works focus = ROM_national_defense_industry }
-		x = 1
+		prerequisite = { focus = ROM_civil_works }
+		x = 0
 		y = 1
 		relative_position_id = ROM_civil_works
 
@@ -1045,7 +1042,7 @@ date > 1949.12.1
 		id = ROM_danubian_transport_network
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ROM_agrarian_reform }
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = ROM_civil_works
 
@@ -1483,7 +1480,7 @@ date > 1949.12.1
 	### BALKANS DOMINANCE ####
 	####¤#####################
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = ROM_balkans_dominance
 		icon = GFX_goal_demand_sudetenland
 		mutually_exclusive = { focus = ROM_preserve_greater_romania }
@@ -1497,7 +1494,7 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
+
 		}
 
 		bypass = {
@@ -1857,7 +1854,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 21
+		x = 15
 		y = 0
 
 		cost = 10
@@ -2173,7 +2170,7 @@ date > 1949.12.1
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = ROM_appoint_soviet_friendly_government
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = ROM_flexible_foreign_policy }
@@ -2192,7 +2189,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			is_subject = no
 			SOV = {
 				is_faction_leader = yes
@@ -2357,7 +2353,7 @@ date > 1949.12.1
 		id = ROM_appoint_german_friendly_government
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
@@ -2594,7 +2590,7 @@ date > 1949.12.1
 		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = ROM_iron_guard focus = ROM_securitate }
 		mutually_exclusive = { focus = ROM_handle_the_king }
-		x = -1				
+		x = 0				
 		y = 2
 		relative_position_id = ROM_appoint_soviet_friendly_government
 
@@ -2715,7 +2711,7 @@ date > 1949.12.1
 				limit = {
 					POL = {
 						has_country_leader = {
-							name = "Michael I"
+							character = ROM_king_michael
 							ruling_only = yes
 						}
 					}
@@ -2766,7 +2762,7 @@ date > 1949.12.1
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = ROM_appoint_allied_friendly_government
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = ROM_flexible_foreign_policy }
@@ -2785,7 +2781,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			is_subject = no
 			ENG = {
 				is_faction_leader = yes
@@ -2953,7 +2948,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 31
+		x = 25
 		y = 0
 
 		cost = 10
@@ -3390,25 +3385,55 @@ date > 1949.12.1
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			#Give generic fighter bonus if fighter_2 already researched
 			if = {
-				limit = {
-					has_tech = fighter2
-				}
-				add_tech_bonus = {
-					name = ROM_iar_80
-					bonus = 1.0
-				
-					uses = 1
-					category = light_fighter
-				}
-				else = {
+				limit = { NOT = { has_dlc = "By Blood Alone" } }
+				if = {
+					limit = {
+						has_tech = fighter2
+					}
 					add_tech_bonus = {
 						name = ROM_iar_80
 						bonus = 1.0
-						
+						ahead_reduction = 2
 						uses = 1
-						technology = fighter2
+						category = light_fighter
+					}
+					else = {
+						add_tech_bonus = {
+							name = ROM_iar_80
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = fighter2
+						}
+					}
+				}
+			}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					create_equipment_variant = {
+						name = "IAR 80"
+						type = small_plane_airframe_2
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = empty
+						}
+						icon = "GFX_ROM_fighter2_medium"
+					}
+					else = {
+						add_tech_bonus = {
+							name = ROM_iar_80
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = improved_small_airframe
+						}
 					}
 				}
 			}
@@ -3531,7 +3556,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 39
+		x = 33
 		y = 0
 
 		cost = 10
@@ -4189,7 +4214,7 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-				name = ROM_the_maresal				
+				name = ROM_the_maresal
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
@@ -4205,7 +4230,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 46
+		x = 40
 		y = 0
 
 		cost = 10

@@ -105,7 +105,7 @@
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 4
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -143,7 +143,7 @@
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -175,10 +175,10 @@
 				limit = {
 					has_state_flag = CAN_national_housing_act_IC
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -193,10 +193,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -213,7 +213,7 @@
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -250,7 +250,7 @@
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -289,7 +289,7 @@
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 2
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -336,7 +336,7 @@
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -388,10 +388,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = CAN_retool_angus_shops_AF
@@ -407,7 +407,7 @@
 		y = 4
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -433,25 +433,25 @@
 			470 = {
 				add_resource = {
 					type = oil
-					amount = 7
+					amount = 2
 				}
 			}
 			471 = {
 				add_resource = {
 					type = oil
-					amount = 13
+					amount = 4
 				}
 			}
 			472 = {
 				add_resource = {
 					type = oil
-					amount = 11
+					amount = 4
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
-					amount = 9
+					amount = 4
 				}
 			}
 		}
@@ -468,7 +468,7 @@
 		x = 8
 		y = 0
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 30
@@ -509,7 +509,7 @@
 		y = 0
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 80
@@ -543,7 +543,7 @@
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -640,7 +640,7 @@
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -704,7 +704,7 @@
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -736,7 +736,7 @@
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 75
@@ -768,7 +768,7 @@
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -796,25 +796,34 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			682 = {
-			
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
 				add_resource = {
 					type = steel
-					amount = 22
+					amount = 2
 				}
 			}
-			473 = {
-				
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
 				add_resource = {
 					type = steel
-					amount = 28
+					amount = 2
 				}
 			}
-			682 = {
-				
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
 				add_resource = {
 					type = chromium
-					amount = 36
+					amount = 3
 				}
 			}
 		}
@@ -971,7 +980,7 @@
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -1042,7 +1051,7 @@
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 7
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1074,7 +1083,7 @@
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 1
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1177,7 +1186,7 @@
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50
@@ -1325,7 +1334,7 @@
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
-		
+		mutually_exclusive = { focus = CAN_send_in_the_zombies }
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1427,7 +1436,7 @@
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
-		
+		mutually_exclusive = { focus = CAN_national_steel_car }
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1465,7 +1474,7 @@
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2462,7 +2471,7 @@
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 2
+		cost = 10
 
 		ai_will_do = {
 			factor = 35
@@ -2500,7 +2509,7 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 1
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2535,7 +2544,7 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 1
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2589,7 +2598,7 @@
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2638,7 +2647,7 @@
 
 		available = {
 			controls_state = 682
-			controls_state = 466
+			controls_state = 863
 			controls_state = 468
 		}
 		
@@ -2655,19 +2664,19 @@
 			682 = {
 				add_resource = {
 					type = aluminium
-					amount = 34
+					amount = 20
 				}
 			}
-			466 = {
+			863 = {
 				add_resource = {
 					type = aluminium
-					amount = 18
+					amount = 8
 				}
 			}
 			468 = {
 				add_resource = {
 					type = aluminium
-					amount = 38
+					amount = 8
 				}
 			}
 		}
@@ -2704,7 +2713,7 @@
 			470 = {
 				add_resource = {
 					type = oil
-					amount = 49
+					amount = 36
 				}
 			}
 		}
@@ -2715,7 +2724,7 @@
 	#### LEAVE COMMONWEALTH ####
 	############################
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = CAN_patriation
 		icon = GFX_goal_tfv_sever_ties_with_uk #GFX_goal_generic_demand_territory
 		mutually_exclusive = { focus = CAN_strengthen_the_commonwealth_ties }
@@ -2737,7 +2746,6 @@
 		}
 
 		available = {
-date > 1949.12.1
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -3051,7 +3059,10 @@ date > 1949.12.1
 
 		available = {
 			has_government = fascism
-			GER = { has_government = fascism }
+			GER = { 
+				has_government = fascism 
+				is_subject = no
+			}
 
 			NOT = {
 				has_war_with = GER
@@ -3674,7 +3685,7 @@ date > 1949.12.1
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 35
+		x = 25
 		y = 0
 
 		cost = 10
@@ -3773,10 +3784,7 @@ date > 1949.12.1
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 			}
 		}
 	}
@@ -4182,7 +4190,7 @@ date > 1949.12.1
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 39
+		x = 30
 		y = 0
 
 		cost = 10

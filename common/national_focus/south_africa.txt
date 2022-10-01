@@ -9,12 +9,6 @@
 			tag = SAF
 			has_dlc = "Together for Victory"
 		}
-		
-		#modifier = {
-		#	add = 10
-		#	original_tag = SAF
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
@@ -510,8 +504,9 @@
 		}
 
 		available = {
-			NOT = { has_war_with = ENG }
-			ENG = { is_puppet = no }
+			# NOT = { has_war_with = ENG }
+			# ENG = { is_puppet = no }
+			always = no
 
 		}
 		
@@ -606,7 +601,7 @@
 	#### GO FASCIST SECTION ####
 	############################
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SAF_abandon_westminster
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		mutually_exclusive = { focus = SAF_support_the_policy_of_appeasement }
@@ -632,7 +627,6 @@
 		}
 
 		available = {
-date > 1949.12.1
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -840,6 +834,9 @@ date > 1949.12.1
 				compare_autonomy_state > autonomy_reichsprotectorate
 			}
 			controls_state = 541
+			controls_state = 893
+			controls_state = 894
+			controls_state = 895
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -868,18 +865,6 @@ date > 1949.12.1
 				add_building_construction = {
 					type = bunker
 					province = {
-						id = 5154
-						id = 5189
-						id = 7605
-						id = 10963
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					province = {
-						id = 12519
 						id = 7770
 						id = 4879
 					}
@@ -900,7 +885,30 @@ date > 1949.12.1
 					instant_build = yes
 				}
 			}
-			
+			893 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						id = 5154
+						id = 5189
+						id = 7605
+						id = 10963
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			895 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						id = 12519
+					
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -1266,6 +1274,8 @@ date > 1949.12.1
 						state = 546
 						state = 540
 						state = 544
+						state = 896
+						state = 897
 						state = 295
 						state = 538
 						state = 718
@@ -1274,7 +1284,7 @@ date > 1949.12.1
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1966,7 +1976,7 @@ date > 1949.12.1
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 20
+		x = 10
 		y = 0
 
 		cost = 10
@@ -2528,7 +2538,7 @@ date > 1949.12.1
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
-		x = 24
+		x = 15
 		y = 0
 
 		cost = 10
@@ -2910,7 +2920,7 @@ date > 1949.12.1
 	focus = {
 		id = SAF_commit_to_the_five_year_plan
 		icon = GFX_goal_generic_build_airforce
-		x = 28
+		x = 20
 		y = 0	
 
 		cost = 10
@@ -3010,10 +3020,7 @@ date > 1949.12.1
 				name = SAF_improve_the_hawker_hartbees
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_fighter
 			}
 		}
 	}
@@ -3216,10 +3223,10 @@ date > 1949.12.1
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 32
+		x = 25
 		y = 0		
 
-		cost = 2
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

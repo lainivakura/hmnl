@@ -315,6 +315,7 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -334,6 +335,7 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
+				add_extra_state_shared_building_slots = 2 #States already got 2 building slots and 2 civs in previous focuses, so let's just add 2 more slots and mils here
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -567,11 +569,6 @@
 
 		available = {
 			any_state = {
-				OR = {
-					is_core_of = VIN
-					is_core_of = CAM
-					is_core_of = LAO
-				}
 				is_owned_or_subject_trigger = yes
 			}
 		}
@@ -624,10 +621,6 @@
 
 		available = {
 			any_state = {
-				OR = {
-					is_core_of = SYR
-					is_core_of = LEB
-				}
 				is_owned_or_subject_trigger = yes
 			}
 		}
@@ -824,6 +817,7 @@
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -835,6 +829,7 @@
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1400,7 +1395,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			air_experience = 15
+			add_ideas = { FRA_air_dominance }
 		}
 	}
 	focus = {
@@ -1419,8 +1414,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_cas_focus
-				bonus = 0.3
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = cas_bomber
 			}
 		}
@@ -1460,7 +1455,7 @@
 				name = FRA_air_ground_cooperation
 				category = air_doctrine
 				uses = 2
-				cost_reduction = 0.15
+				cost_reduction = 0.5
 			}
 		}
 	}
@@ -1495,7 +1490,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			air_experience = 15
+			add_ideas = { FRA_flying_artillery }
 		}
 	}
 	focus = {
@@ -1515,7 +1510,6 @@
 		available_if_capitulated = yes
 
 		available = {
-date > 1940.5.1
 			NOT = { has_idea = FRA_disjointed_government }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1581,7 +1575,7 @@ date > 1940.5.1
 			set_country_flag = { flag = FRA_popular_front_cooldown value = 1 days = 360 } #fires strike event if labour laws not reformed in time
 		}
 	}
-focus = {
+	focus = {
 		id = FRA_invite_communist_ministers
 		icon = GFX_goal_support_communism
 		x = -3
@@ -1593,7 +1587,7 @@ focus = {
 		prerequisite = { focus = FRA_form_the_popular_front }
 		mutually_exclusive = { }
 		relative_position_id = FRA_form_the_popular_front
-		allow_branch = { has_dlc = "La Resistance" }
+		allow_branch = {always = no}
 		cost = 10
 
 		ai_will_do = {
@@ -1601,7 +1595,6 @@ focus = {
 		}
 
 		available = {
-date > 1949.12.1
 			not = {
 				has_completed_focus = FRA_review_foreign_policy	
 			}
@@ -1818,6 +1811,7 @@ date > 1949.12.1
 						include_locked = yes
 					}
 				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2255,6 +2249,10 @@ date > 1949.12.1
 			every_neighbor_country = {
 				limit = {
 					has_government = fascism
+					NOT = { has_non_aggression_pact_with = ROOT }
+					NOT = { is_guaranteed_by = ROOT }
+					NOT = { is_in_faction_with = ROOT }
+					NOT = { has_war_with = ROOT }
 				}
 				ROOT = {
 					create_wargoal = {
@@ -2467,7 +2465,7 @@ date > 1949.12.1
 		}
 
 		available = {
-			
+			is_subject = no
 		}
 		
 		bypass = {
@@ -2760,7 +2758,7 @@ date > 1949.12.1
 
 		available = {
 			ITA = {
-				not = { has_government = communism }
+				ITA_is_kinda_fascist = yes
 			}
 			is_subject = no
 		}
@@ -2772,7 +2770,7 @@ date > 1949.12.1
 					has_war_with = ROOT
 					is_in_faction_with = ROOT
 					is_subject_of = ROOT
-					has_government = communism
+					ITA_is_anti_fascist = yes
 				}
 			}
 		}
@@ -3422,7 +3420,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			has_war = no
 		}
 		
@@ -3486,7 +3483,7 @@ date > 1949.12.1
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
-		x = 10
+		x = 7
 		y = 1
 		offset = {
 			x = 0
@@ -3494,7 +3491,6 @@ date > 1949.12.1
 		}
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
-			focus = FRA_protect_the_rights_of_man
 		}
 		relative_position_id = FRA_reform_the_labour_laws
 		cost = 10
@@ -3546,7 +3542,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			SPR_scw_in_progress = yes
 			is_subject = no
 		}
@@ -3584,9 +3579,7 @@ date > 1949.12.1
 		}
 
 		available = {
-
-			date > 1949.12.1
-FIN = {
+			FIN = {
 				has_war = yes
 				NOT = {
 					has_war_with = ROOT
@@ -3615,7 +3608,7 @@ FIN = {
 			}
 		}
 	}
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = FRA_confirm_eastern_commitments
 		icon = GFX_goal_tripartite_pact
 		x = -2
@@ -3636,7 +3629,6 @@ FIN = {
 		}
 
 		available = {
-date > 1949.12.1
 			OR = {
 				country_exists = YUG
 				country_exists = CZE
@@ -3891,7 +3883,6 @@ date > 1949.12.1
 			x = 1
 			y = 0
 		}
-		allow_branch = { has_dlc = "Death or Dishonor" }
 		prerequisite = {
 			focus = FRA_invest_in_our_weaker_allies
 		}
@@ -4146,7 +4137,6 @@ date > 1949.12.1
 		available = {
 		}
 	 	prerequisite = {
-	 		focus = FRA_strengthen_the_little_entente
 	 		focus = FRA_buy_time
 	 	}
 		x = 5
@@ -4245,7 +4235,6 @@ date > 1949.12.1
 			}
 		}
 		completion_reward = {
-add_political_power = 120
 			ENG = { country_event = { id = britain.13 } }
 		}
 	}
@@ -4299,7 +4288,6 @@ add_political_power = 120
 		}
 
 		available = {
-date > 1949.12.1
 			is_subject = no
 			is_in_faction = no
 		}
@@ -4472,7 +4460,7 @@ date > 1949.12.1
 		y = 1
 		relative_position_id = FRA_form_the_popular_front
 		cost = 10
-		allow_branch = { not = { has_dlc = "La Resistance" } } 
+		allow_branch = {always = no}
 		available_if_capitulated = yes
 
 		ai_will_do = {
@@ -4604,7 +4592,7 @@ date > 1949.12.1
 		}
 	}	
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = FRA_revive_the_national_bloc
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 42
@@ -4996,9 +4984,8 @@ date > 1949.12.1
 		ai_will_do = {
 			factor = 1
 		}
-		allow_branch = { has_dlc = "La Resistance" }
+		allow_branch = {always = no}
 		available = {
-date > 1949.12.1
 			NOT = {
 				has_completed_focus = FRA_review_foreign_policy
 			}
@@ -5441,7 +5428,7 @@ date > 1949.12.1
 				OR = {
 					has_government = ROOT
 					AND = {
-						has_country_leader = { name = "Francisco Franco" }
+						has_country_leader = { character = SPA_francisco_franco }
 						ROOT = {
 							has_government = fascism
 						}
@@ -5479,7 +5466,7 @@ date > 1949.12.1
 					original_tag = SPR
 					OR = {
 						has_government = ROOT
-						has_country_leader = { name = "Francisco Franco" ruling_only = yes }
+						has_country_leader = { character = SPA_francisco_franco ruling_only = yes }
 						NOT = {
 							has_global_flag = spanish_civil_war #to make the focus show an effect before the SCW breaks out
 						}
@@ -5578,6 +5565,9 @@ date > 1949.12.1
 		}
 
 		available = {
+			country_exists = ITA
+			NOT = { has_war_with = ITA }
+			ITA = { is_subject = no }
 			OR = {
 				is_subject = no
 				is_subject_of = ITA
@@ -6094,7 +6084,11 @@ date > 1949.12.1
 		}
 		will_lead_to_war_with = CAN
 		bypass = {
-			owns_state  = 466
+			owns_state = 466
+			owns_state = 860
+			owns_state = 861
+			owns_state = 862
+			owns_state = 863
 		}
 
 		cancel_if_invalid = yes
@@ -6110,7 +6104,7 @@ date > 1949.12.1
 							target = PREV
 							expire = 0
 							generator = {
-								466
+								466 860 861 862 863
 							}
 						}
 					} 
@@ -6329,7 +6323,7 @@ date > 1949.12.1
 		cost = 10
 
 		available_if_capitulated = yes
-		allow_branch = { not = { has_dlc = "La Resistance" } } 
+		allow_branch = {always = no}
 		ai_will_do = {
 			factor = 1
 		}
@@ -7740,11 +7734,13 @@ date > 1949.12.1
 					4 = { is_owned_or_subject_trigger = yes }
 					152 = { is_owned_or_subject_trigger = yes }
 					153 = { is_owned_or_subject_trigger = yes }
+					848 = { is_owned_or_subject_trigger = yes }
 				}
 				AUS = {
 					transfer_state = 4
 					transfer_state = 152
 					transfer_state = 153
+					transfer_state = 848 
 				}
 				puppet = AUS
 			}
@@ -7979,7 +7975,7 @@ date > 1949.12.1
 	focus = {
 		id = FRA_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 70
+		x = 40
 		y = 0
 		cost = 10
 		offset = {
@@ -8008,6 +8004,7 @@ date > 1949.12.1
 			21 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
 						level = 2
@@ -8019,6 +8016,7 @@ date > 1949.12.1
 			14 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
 						level = 2
@@ -8108,6 +8106,7 @@ date > 1949.12.1
 			459 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
 						level = 2
@@ -8119,6 +8118,7 @@ date > 1949.12.1
 			272 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
 						level = 2
@@ -8130,6 +8130,7 @@ date > 1949.12.1
 			286 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
 						level = 2
@@ -8160,6 +8161,7 @@ date > 1949.12.1
 					is_coastal = yes
 					is_controlled_by = ROOT
 				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
 					level = 3
@@ -8326,7 +8328,7 @@ date > 1949.12.1
 							fixed_ship_anti_air_slot = ship_anti_air_1
 							fixed_ship_radar_slot = empty
 							fixed_ship_engine_slot = carrier_ship_engine_2
-							fixed_ship_secondaries_slot = dp_ship_secondaries
+							fixed_ship_secondaries_slot = dp_ship_secondaries_2
 							front_1_custom_slot = empty
 						}
 					}
@@ -8471,7 +8473,7 @@ date > 1949.12.1
 	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
-		x = 80
+		x = 50
 		y = 0
 		cost = 10
 		offset = {
