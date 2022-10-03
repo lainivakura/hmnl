@@ -1952,16 +1952,6 @@ focus_tree = {
 		relative_position_id = SOV_transpolar_flights
 		cost = 10
 
-		available = {
-			any_owned_state = {
-				is_fully_controlled_by = ROOT
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes
-				}
-			}
-		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -2095,10 +2085,6 @@ focus_tree = {
 
 		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
-		available = {
-date > 1942.5.1
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
@@ -2146,9 +2132,7 @@ date > 1942.5.1
 		relative_position_id = SOV_transpolar_flights
 		cost = 10
 
-		available = {
-date > 1941.9.1
-		}
+
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2173,12 +2157,7 @@ date > 1941.9.1
 		relative_position_id = SOV_foster_flying_clubs
 		cost = 10
 
-		available = {
-			OR = {
-				has_completed_focus = SOV_the_path_of_marxism_leninism
-				has_completed_focus = SOV_womens_fascist_movement
-			}
-		}
+
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2206,12 +2185,7 @@ date > 1941.9.1
 		relative_position_id = SOV_women_in_aviation
 		cost = 10
 
-		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-			has_full_control_of_state = 219 #MOSCOW
-		}
+
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2248,10 +2222,7 @@ date > 1941.9.1
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
-		available = {
-date > 1942.5.1
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
+
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2278,9 +2249,6 @@ date > 1942.5.1
 		relative_position_id = SOV_expand_the_aircraft_industry
 		cost = 10
 
-		available = {
-date > 1942.1.1
-		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 

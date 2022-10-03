@@ -1190,8 +1190,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "designer_division_support_slot_entry"
-		position = { x=0 y=-20}	
-		size = { width=64 height=50 }
+		position = { x=0 y=-30}	
+		size = { width=64 height=53 }
 		clipping = no
 
 		background = {

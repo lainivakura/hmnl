@@ -2696,12 +2696,6 @@ date > 1949.12.1
 			}
 		}	
 		completion_reward = {
-add_tech_bonus = {
-				name = arty_bonus
-				bonus = 1.3
-				uses = 2
-				category = artillery
-			}
 			JAP = {
 				add_opinion_modifier = { target = GER modifier = ger_jap_diplomacy_focus }
 			}
