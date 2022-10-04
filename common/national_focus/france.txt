@@ -1584,6 +1584,7 @@ date > 1940.5.1
 focus = {
 		id = FRA_invite_communist_ministers
 		icon = GFX_goal_support_communism
+		
 		x = -3
 		y = 1
 		offset = {
@@ -1593,7 +1594,7 @@ focus = {
 		prerequisite = { focus = FRA_form_the_popular_front }
 		mutually_exclusive = { }
 		relative_position_id = FRA_form_the_popular_front
-		allow_branch = { has_dlc = "La Resistance" }
+		allow_branch = { always = no has_dlc = "La Resistance" }
 		cost = 10
 
 		ai_will_do = {
@@ -3618,6 +3619,9 @@ FIN = {
 	focus = {
 		id = FRA_confirm_eastern_commitments
 		icon = GFX_goal_tripartite_pact
+		allow_branch = {
+			always = no
+		}
 		x = -2
 		y = 2
 		offset = {
@@ -3891,7 +3895,7 @@ date > 1949.12.1
 			x = 1
 			y = 0
 		}
-		allow_branch = { has_dlc = "Death or Dishonor" }
+		allow_branch = {always = no has_dlc = "Death or Dishonor" }
 		prerequisite = {
 			focus = FRA_invest_in_our_weaker_allies
 		}
@@ -4285,6 +4289,9 @@ add_political_power = 120
 	focus = {
 		id = FRA_france_leads
 		icon = GFX_goal_generic_demand_territory
+		allow_branch = {
+			always = no
+		}
 		x = 2
 		y = 1
 		prerequisite = {
@@ -4607,6 +4614,9 @@ date > 1949.12.1
 	focus = {
 		id = FRA_revive_the_national_bloc
 		icon = GFX_focus_generic_strike_at_democracy2
+		allow_branch = {
+			always = no
+		}
 		x = 42
 		y = 0
 		offset = {
@@ -4996,7 +5006,7 @@ date > 1949.12.1
 		ai_will_do = {
 			factor = 1
 		}
-		allow_branch = { has_dlc = "La Resistance" }
+		allow_branch = { always = no has_dlc = "La Resistance" }
 		available = {
 date > 1949.12.1
 			NOT = {
@@ -7979,7 +7989,7 @@ date > 1949.12.1
 	focus = {
 		id = FRA_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 70
+		x = 45
 		y = 0
 		cost = 10
 		offset = {
@@ -8471,7 +8481,7 @@ date > 1949.12.1
 	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
-		x = 80
+		x = 55
 		y = 0
 		cost = 10
 		offset = {

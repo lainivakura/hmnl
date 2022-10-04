@@ -576,12 +576,10 @@ focus_tree = {
 		available = {
 			OR = {
 				any_controlled_state = {
-					is_core_of = LBA
 					is_fully_controlled_by = ROOT
 				}
 				any_subject_country = { #FOR PUPPETS
 					any_controlled_state = {
-						is_core_of = LBA
 						is_fully_controlled_by = PREV
 					}
 				}
@@ -6142,7 +6140,7 @@ focus_tree = {
 		id = ITA_the_abyssinian_fiasco
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		mutually_exclusive = { focus = ITA_solid_progress focus = ITA_struggle_in_ethiopia }
-		x = 29
+		x = 10
 		y = 0
 		relative_position_id = ITA_naval_power_projection
 		cost = 5
@@ -6453,7 +6451,6 @@ focus_tree = {
 		prerequisite = { focus = ITA_triumph_in_africa_bba focus = ITA_conspiracies_in_the_shadows }
 
 		mutually_exclusive = { focus = ITA_culto_del_duce focus = ITA_defy_the_duce }
-
 		x = 20
 		y = 2
 		relative_position_id = ITA_triumph_in_africa_bba
@@ -6470,6 +6467,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			always = no
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
@@ -10184,6 +10182,7 @@ focus_tree = {
 		allow_branch = {
 			has_dlc = "By Blood Alone"
 			has_dlc = "No Step Back"
+			always = no
 		}
 
 		available = {
@@ -11206,6 +11205,9 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_towards_a_greater_italy }
 		x = 0
 		y = 1
+		allow_branch = {
+			always = no
+		}
 		offset = {
 			x = -25
 			y = 0
@@ -12235,7 +12237,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = ITA_triumph_in_africa_bba focus = ITA_conspiracies_in_the_shadows }
 
-		x = 50
+		x = 23
 		y = 1
 		offset = {
 			x = -29
@@ -12665,6 +12667,9 @@ focus_tree = {
 	focus = {
 		id = ITA_guarantee_austrian_independence
 		icon = GFX_goal_generic_territory_or_war
+		allow_branch = {
+			always = no
+		}
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
 		mutually_exclusive = { focus = ITA_pact_of_steel focus = ITA_italy_first }
 		x = -10
@@ -13134,7 +13139,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 10
-
+		allow_branch = {
+			always = no
+		}
 		bypass = {
 			is_in_faction = yes
 			NOT = { is_in_faction_with = GER }
@@ -13327,7 +13334,9 @@ focus_tree = {
 		id = ITA_war_with_france
 		icon = GFX_focus_attack_france
 		prerequisite = { focus = ITA_italian_irredentism }
-
+		allow_branch = {
+			always = no
+		}
 		mutually_exclusive = { focus = ITA_request_control_of_french_territories }
 
 		x = -1
@@ -13488,6 +13497,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = ITA_italian_irredentism
 		cost = 5
+		allow_branch = {
+			always = no
+		}
 		available = {
 			is_subject = no
 			NOT = { is_in_faction_with = GRE }
@@ -13796,7 +13808,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = ITA_corpo_di_truppe_volontarie
 		cost = 5
-
+		allow_branch = {
+			always = no
+		}
 		bypass = {
 			if = {
 				limit = {
@@ -15641,6 +15655,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			always = no
 		}
 
 		bypass = {
@@ -15751,6 +15766,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			always = no
 		}
 		
 		available = {
@@ -19607,8 +19623,3 @@ focus_tree = {
 				}
 			}
 		}
-	}
-
-
-
-}

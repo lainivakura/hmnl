@@ -7942,6 +7942,7 @@ date > 1941.10.1
 	focus = {
 		id = SOV_the_left_opposition
 		icon = GFX_focus_fra_loyalty_trotzky
+
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		mutually_exclusive = { focus = SOV_the_right_opposition focus = SOV_the_centre }
 		x = 2
@@ -7972,6 +7973,7 @@ date > 1949.12.1
 			}
 		}
 		allow_branch = {
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {
@@ -9205,6 +9207,7 @@ date > 1949.12.1
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		allow_branch = { 
 			has_dlc = "No Step Back"
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {
@@ -9462,6 +9465,7 @@ date > 1949.12.1
 		allow_branch = {
 			has_dlc = "La Resistance"
 			has_dlc = "No Step Back"
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {
@@ -10985,7 +10989,7 @@ date > 1949.12.1
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 24
+		x = 0
 		y = 1
 		offset = {
 			x = -7
@@ -12073,6 +12077,9 @@ ai_will_do = {
 		id = SOV_policy_of_individual_security
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
@@ -12439,6 +12446,9 @@ ai_will_do = {
 		id = SOV_anti_capitalist_policies
 		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 2
 		y = 1
 		relative_position_id = SOV_policy_of_individual_security
@@ -12900,6 +12910,9 @@ ai_will_do = {
 		id = SOV_respect_baltic_self_determination
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = SOV_baltic_security }
+		allow_branch = {
+			always = no
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_baltic_security
@@ -13081,7 +13094,9 @@ date > 1939.9.1
 		y = 2
 		relative_position_id = SOV_secure_leningrad
 		cost = 10
-
+		allow_branch = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -13288,6 +13303,9 @@ date > 1939.6.1
 		id = SOV_demand_eastern_poland
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = SOV_claims_on_poland }
+		allow_branch = {
+			always = no
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_claims_on_poland
@@ -13392,6 +13410,9 @@ date > 1939.9.1
 		id = SOV_offer_poland_protection
 		icon = GFX_focus_generic_polish_deal
 		prerequisite = { focus = SOV_claims_on_poland }
+		allow_branch = {
+			always = no
+		}
 		x = 1
 		y = 1
 		relative_position_id = SOV_claims_on_poland
@@ -13431,7 +13452,7 @@ date > 1939.9.1
 		}
 
 		available = {
-date > 1949.12.1
+		date > 1949.12.1
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			country_exists = POL
 			NOT = { has_war_with = POL }
@@ -13610,6 +13631,9 @@ date > 1949.12.1
 		id = SOV_demand_balkan_submission
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = SOV_claim_on_bessarabia }
+		allow_branch = {
+			always = no
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_claim_on_bessarabia
@@ -13664,6 +13688,9 @@ date > 1949.12.1
 		id = SOV_seek_balkan_cooperation
 		icon = GFX_focus_BUL_free_balkan_states
 		prerequisite = { focus = SOV_claim_on_bessarabia }
+		allow_branch = {
+			always = no
+		}
 		x = 1
 		y = 1
 		relative_position_id = SOV_claim_on_bessarabia
@@ -13723,6 +13750,9 @@ date > 1949.12.1
 		id = SOV_middle_east_diplomacy
 		icon = GFX_focus_TUR_treaty_of_saadabad
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 4
 		y = 0
 		relative_position_id = SOV_baltic_security
@@ -14066,6 +14096,9 @@ date > 1949.12.1
 		id = SOV_the_threat_from_the_land_of_the_rising_sun
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 5
 		y = 0
 		relative_position_id = SOV_middle_east_diplomacy
@@ -14697,6 +14730,9 @@ date > 1949.12.1
 		id = SOV_reconcile_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 3
 		y = 0
 		relative_position_id = SOV_the_threat_from_the_land_of_the_rising_sun
@@ -14924,6 +14960,7 @@ date > 1949.12.1
 		}
 		allow_branch = { 
 			has_dlc = "No Step Back" 
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {

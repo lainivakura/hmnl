@@ -2546,6 +2546,9 @@ add_tech_bonus = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_mol_rib_pact }
 		mutually_exclusive = { focus = GER_ussr_war_goal }
+		allow_branch = {
+			always = no
+		}
 		available = {
 			is_subject = no
 date > 1949.12.1
@@ -2600,6 +2603,7 @@ date > 1949.12.1
 		id = GER_turkey_puppet
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_soviet_ally }
+		
 		available = {
 date > 1949.12.1
 			is_subject = no
@@ -2820,6 +2824,9 @@ date > 1949.12.1
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_anti_comitern_pact }
 		mutually_exclusive = { focus = GER_mol_rib_pact }
+		allow_branch = {
+			always = no
+		}
 		available = {
 			is_subject = no
 			has_army_manpower = { size > 849999 } #ca 90 div
@@ -2882,8 +2889,8 @@ date > 1949.12.1
 date > 1941.5.1
 			is_subject = no
 		}
-		x = 1
-		y = 4
+		x = 0
+		y = 1
 		relative_position_id = GER_anti_comitern_pact
 		cost = 1
 		historical_ai = {
@@ -2956,7 +2963,9 @@ date > 1941.5.1
 		prerequisite = { focus = GER_ussr_war_goal }
 		prerequisite = { focus = GER_italy_ally }
 
-
+		allow_branch = {
+			always = no
+		}
 		available = { 
 date > 1949.12.1
 			is_subject = no 
@@ -4079,7 +4088,7 @@ date > 1949.12.1
 		id = GER_second_vienna_award
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = GER_czech_friend focus = GER_end_of_czechoslovakia }
-		x = 0
+		x = 2
 		y = 3
 		relative_position_id = GER_czech_friend
 		cost = 1
@@ -4154,6 +4163,9 @@ date > 1949.12.1
 		available = {
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ENG_ditched_the_italians_flag }
+		}
+		allow_branch = {
+			always = no
 		}
 
 		bypass = {
@@ -4296,6 +4308,9 @@ date > 1949.12.1
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		mutually_exclusive = { focus = GER_danzig_or_war }
+		allow_branch = {
+			always = no
+		}
 		available = {
 date > 1949.12.1
 			is_subject = no
@@ -4965,7 +4980,9 @@ date > 1949.12.1
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_plan_z }
 		mutually_exclusive = { focus = GER_weserubung }
-
+		allow_branch = {
+			always = no
+		}
 		available = {
 
 date > 1949.12.1
@@ -5354,6 +5371,7 @@ date > 1940.1.1
 		id = GER_first_ljubljana_award
 		prerequisite = { focus = GER_demand_slovenia }
 		icon = GFX_goal_generic_military_deal
+		
 		available = {
 date > 1940.1.1
 			is_subject = no
@@ -5609,6 +5627,9 @@ date > 1940.1.1
 	focus = {
 		id = GER_fate_of_yugoslavia
 		prerequisite = { focus = GER_first_ljubljana_award }
+		allow_branch = {
+			always = no
+		}
 		icon = GFX_goal_generic_territory_or_war
 		available = {
 date > 1949.12.1
@@ -5850,6 +5871,7 @@ date > 1949.12.1
 		mutually_exclusive = { focus = GER_rhineland }
 
 		allow_branch = {
+			always = no
 			has_dlc = "Waking the Tiger"
 		}
 

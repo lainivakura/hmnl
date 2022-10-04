@@ -2722,7 +2722,9 @@
 		x = 2
 		y = 0
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
-
+		allow_branch = {
+			always = no
+		}
 		cost = 10
 
 		ai_will_do = {
@@ -3674,7 +3676,7 @@ date > 1949.12.1
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 35
+		x = 25
 		y = 0
 
 		cost = 10
@@ -4182,7 +4184,7 @@ date > 1949.12.1
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 39
+		x = 30
 		y = 0
 
 		cost = 10

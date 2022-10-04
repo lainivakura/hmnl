@@ -3339,7 +3339,9 @@
 		mutually_exclusive = { focus = AST_support_the_policy_of_appeasement }
 		x = 35
 		y = 0
-
+		allow_branch = {
+			always = no
+		}
 		cost = 10
 
 		ai_will_do = {
