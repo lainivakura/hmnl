@@ -104,7 +104,7 @@ technologies = {
 			}
 		}
 		categories = {
-			
+			armor
 		}
 	}
 	basic_light_tank_chassis = { #Panzer I
@@ -158,7 +158,7 @@ technologies = {
 			}
 		}
 		categories = {
-			
+			armor
 		}
 	}
 	improved_light_tank_chassis = { #Panzer II
@@ -186,7 +186,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 		categories = {
-			
+			armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -225,9 +225,7 @@ technologies = {
 				date > "1939.1.1"
 			}
 		}
-		categories = {
-		
-		}
+
 	}
 	advanced_light_tank_chassis = {	#Leopard
 		light_tank_recon = { 
@@ -263,7 +261,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 		categories = {
-			
+			armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -288,9 +286,7 @@ technologies = {
 				date > "1944.1.1"
 			}
 		}
-		categories = {
-		
-		}
+
 	}
 	basic_medium_tank_chassis = { #Panzer III
 		enable_equipments = {
@@ -324,7 +320,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 		categories = {
-			
+			armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -363,9 +359,7 @@ technologies = {
 				has_opinion_modifier = sov_ger_treaty
 			}
 		}
-		categories = {
-			
-		}
+
 	}
 	improved_medium_tank_chassis = {	#Panzer IV
 			allow = { 
@@ -378,6 +372,7 @@ technologies = {
 			medium_tank_artillery_chassis_2
 			medium_tank_aa_chassis_2
 			tank_small_cannon_3
+
 		}
 		path = {
 			leads_to_tech = advanced_medium_tank_chassis
@@ -393,9 +388,7 @@ technologies = {
 		}
 		research_cost = 1
 		start_year = 1941
-		categories = {
-			
-		}
+
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 0 y = @1941 }
@@ -445,7 +438,7 @@ technologies = {
 			}
 		}
 		categories = {
-			
+			armor
 		}
 	}
 	advanced_medium_tank_chassis = {	#Panther
@@ -475,9 +468,7 @@ technologies = {
 		}
 		research_cost = 1
 		start_year = 1943
-		categories = {
-			
-		}
+
 		allow = {
 			date > 1940.1.1
 		}
@@ -501,7 +492,7 @@ technologies = {
 			}
 		}
 		categories = {
-			
+			armor
 		}
 	}
 	main_battle_tank_chassis = { #E-50
@@ -539,7 +530,7 @@ technologies = {
 			}
 		}
 		categories = {
-			
+			armor
 		}
 	}
 	basic_heavy_tank_chassis = { #Grosstraktor
@@ -580,7 +571,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 		categories = {
-			
+			armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -610,9 +601,7 @@ technologies = {
 				factor = 0
 			}
 		}
-		categories = {
-			
-		}
+
 	}
 	improved_heavy_tank_chassis = { #Tiger
 		enable_equipments = {
@@ -650,7 +639,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1941
 		categories = {
-			
+			armor
 		}
 		allow = { 
 			date > 1939.1.1
@@ -679,9 +668,7 @@ technologies = {
 				date > "1944.1.1"
 			}
 		}
-		categories = {
-			
-		}
+
 	}
 	advanced_heavy_tank_chassis = { #King Tiger
 		enable_equipments = {
@@ -710,7 +697,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1943
 		categories = {
-			
+			armor
 		}
 		allow = { 
 			date > 1941.1.1
@@ -734,9 +721,7 @@ technologies = {
 				date > "1946.1.1"
 			}
 		}
-		categories = {
-			
-		}
+
 	}
 	super_heavy_tank_chassis = { #Maus
 		enable_equipments = {
@@ -760,7 +745,7 @@ technologies = {
 		research_cost = 4
 		start_year = 1943
 		categories = {
-			
+			armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -769,9 +754,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0 # Hitler cries on the inside
 		}
-		categories = {
-			
-		}
+	
 	}
 
 	engine_tech_1 = {
@@ -875,7 +858,9 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			amphibious_drive
+			
 		}
+
 		xp_research_type = army
 		xp_boost_cost = 75
 		xp_unlock_cost = 0

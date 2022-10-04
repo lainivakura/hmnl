@@ -4232,10 +4232,11 @@ country_event = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 2
-				category = armor
+				type = armor
 			}
 		}
 		SOV = {
+			
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
 		}

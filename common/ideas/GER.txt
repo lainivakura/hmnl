@@ -1818,7 +1818,7 @@ send_volunteer_divisions_required = -1
 		}	
 	}
 	
-	aircraft_manufacturer = { 
+		aircraft_manufacturer = { 
 			
 		designer = yes
 		

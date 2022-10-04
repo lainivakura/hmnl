@@ -2134,7 +2134,7 @@ date > 1949.12.1
 				}
 			}
 			add_popularity = {
-				popularity = 0.4
+				popularity = 0.35
 				ideology = fascism
 			}
 			custom_effect_tooltip = available_political_advisor

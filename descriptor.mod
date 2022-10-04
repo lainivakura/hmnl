@@ -1,7 +1,8 @@
-version="1"
+version="1987"
 tags={
-	"Alternative History"
+	"Balance"
 }
-name="zaebali"
-supported_version="1.12.1"
-remote_file_id="2868475598"
+name="HMNL FIX"
+picture="thumbnail.jpg"
+supported_version="1.12.2"
+remote_file_id="2871204976"
