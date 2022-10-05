@@ -10998,18 +10998,18 @@ date > 1949.12.1
 				NOT = { has_dlc = "No Step Back" }
 			}
 		}
-		offset = {
-			x = -19
-			y = 0
-			trigger = { #Trotskyist branch hides
-				NOT = { has_dlc = "No Step Back" }
-				has_completed_focus = SOV_the_centre 
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		# offset = {
+		# 	x = -19
+		# 	y = 0
+		# 	trigger = { #Trotskyist branch hides
+		# 		NOT = { has_dlc = "No Step Back" }
+		# 		has_completed_focus = SOV_the_centre 
+		# 		has_game_rule = {
+		# 			rule = obsolete_focus_branches_visibility
+		# 			option = HIDE
+		# 		}
+		# 	}
+		# }
 		offset = {
 			x = -7
 			y = 0
@@ -11022,18 +11022,18 @@ date > 1949.12.1
 				}
 			}
 		}
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = SOV_the_centre
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		# offset = {
+		# 	x = -26
+		# 	y = 0
+		# 	trigger = {
+		# 		has_dlc = "No Step Back"
+		# 		has_completed_focus = SOV_the_centre
+		# 		has_game_rule = {
+		# 			rule = obsolete_focus_branches_visibility
+		# 			option = HIDE
+		# 		}
+		# 	}
+		# }
 		offset = {
 			x = -7
 			y = 0
