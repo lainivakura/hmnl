@@ -9505,7 +9505,8 @@ available = {
 		y = 1
 		relative_position_id = uk_iran_focus
 			allow_branch = {
-					always = yes
+					always = no
+				
 				}
 			available = {
 					SOV = {
@@ -9534,9 +9535,7 @@ available = {
 		id = ENG_war_with_ussr
 		icon = GFX_focus_attack_soviet
 		cost = 10
-		allow_branch = {
-			always = no
-		}
+		
 		prerequisite = {
 			focus = ENG_embargo_ussr
 		}
