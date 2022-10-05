@@ -9534,6 +9534,9 @@ available = {
 		id = ENG_war_with_ussr
 		icon = GFX_focus_attack_soviet
 		cost = 10
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = ENG_embargo_ussr
 		}
