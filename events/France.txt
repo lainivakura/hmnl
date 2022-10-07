@@ -197,6 +197,10 @@ country_event = {
 			}
 			GER = { country_event = france.14 }
 		}
+		else = {
+			ENG = { country_event = france.11 
+		}
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {
