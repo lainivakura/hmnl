@@ -22,6 +22,8 @@ on_actions = {
 						NOT = { #these two cores are given to germany in the Danzig or War event, but the states are not transfered immediately
 							state = 85
 							state = 807
+							state = 8 #Luxembourg & Alsace
+							state = 28
 						}
 					}
 					has_global_flag = achievement_france_surrender

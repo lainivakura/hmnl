@@ -4490,6 +4490,7 @@ ideas = {
 			
 			allowed = {
 				original_tag = ITA
+				has_dlc = "By Blood Alone"
 			}
 			
 			available = {
