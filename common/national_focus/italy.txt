@@ -234,7 +234,6 @@ focus_tree = {
 		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
 			OR = {
 				any_owned_state = { is_on_continent = africa }
 				any_subject_country = { capital_scope = { is_on_continent = africa } }
@@ -6991,8 +6990,6 @@ focus_tree = {
 			has_full_control_of_state = 836
 			has_full_control_of_state = 837
 			has_full_control_of_state = 838
-			NOT = { has_global_flag = ITA_antifascist_civil_war_triggered_flag }
-			hidden_trigger = { has_completed_focus = ITA_defy_the_duce }
 		}
 
 		search_filters = {}
@@ -12896,9 +12893,7 @@ focus_tree = {
 		available = {
 		}
 
-		bypass = {
-			44 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
-		}
+
 
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 
