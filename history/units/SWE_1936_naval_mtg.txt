@@ -1,0 +1,5 @@
+﻿units = {}
+
+
+### Starting Production ###
+instant_effect = {}

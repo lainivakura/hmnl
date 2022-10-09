@@ -223,6 +223,7 @@ focus_tree = {
 		y = 0
 			allow_branch = {
 					has_dlc = "Man the Guns"
+					always = no
 				}
 			available = {
 					date > 1949.12.1
@@ -271,9 +272,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ENG_a_change_in_course
 		}
-		x = 14
+		x = 3
 		y = 0
-		relative_position_id = ENG_revisit_colonial_policy
+		relative_position_id = uk_empire_focus
 			available = {
 					if = {
 							limit = {
@@ -327,6 +328,7 @@ focus_tree = {
 		relative_position_id = ENG_steady_as_she_goes
 			allow_branch = {
 					has_dlc = "Man the Guns"
+					always = no
 				}
 			available = {
 					date > 1949.12.1
@@ -688,7 +690,7 @@ focus_tree = {
 		prerequisite = {
 			focus = uk_service_focus
 		}
-		x = 5
+		x = 3
 		y = 1
 		relative_position_id = uk_service_focus
 			available = {
@@ -2507,7 +2509,7 @@ available = {
 		mutually_exclusive = {
 			focus = uk_spain_focus
 		}
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = uk_mediterranean_focus
 			available = {
@@ -2552,6 +2554,9 @@ available = {
 		}
 		mutually_exclusive = {
 			focus = uk_rock_focus
+		}
+		allow_branch = {
+			always = no
 		}
 		x = -1
 		y = 1
@@ -2764,6 +2769,9 @@ available = {
 		id = uk_balkan_strategy
 		icon = GFX_goal_generic_improve_relations
 		cost = 1
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = uk_protect_suez
 		}
@@ -2946,6 +2954,9 @@ available = {
 		id = uk_turkey_focus
 		icon = GFX_goal_generic_political_pressure
 		cost = 10
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = uk_protect_suez
 		}
@@ -3079,6 +3090,9 @@ available = {
 		id = uk_greece_focus
 		icon = GFX_goal_generic_political_pressure
 		cost = 10
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = uk_protect_suez
 		}
@@ -3210,8 +3224,8 @@ available = {
 		prerequisite = {
 			focus = uk_mediterranean_focus
 		}
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = uk_mediterranean_focus
 			available = {
 					116 = {
@@ -8609,6 +8623,7 @@ available = {
 		relative_position_id = ENG_steady_as_she_goes
 			allow_branch = {
 					has_dlc = "Man the Guns"
+					always = no
 				}
 			available = {
 					date > 1949.12.1
@@ -9308,7 +9323,7 @@ available = {
 		mutually_exclusive = {
 			focus = ENG_global_defense
 		}
-		x = 5
+		x = 3
 		y = 1
 		relative_position_id = ENG_steady_as_she_goes
 			offset = {
@@ -9393,6 +9408,10 @@ available = {
 		cost = 10
 		prerequisite = {
 			focus = ENG_home_defence
+
+		}
+		allow_branch = {
+			always = no
 		}
 		x = -6
 		y = 1
@@ -9486,7 +9505,8 @@ available = {
 		y = 1
 		relative_position_id = uk_iran_focus
 			allow_branch = {
-					always = yes
+					always = no
+				
 				}
 			available = {
 					SOV = {
@@ -9515,6 +9535,7 @@ available = {
 		id = ENG_war_with_ussr
 		icon = GFX_focus_attack_soviet
 		cost = 10
+		
 		prerequisite = {
 			focus = ENG_embargo_ussr
 		}
@@ -9547,7 +9568,7 @@ available = {
 		prerequisite = {
 			focus = ENG_home_defence
 		}
-		x = 4
+		x = 1
 		y = 1
 		relative_position_id = ENG_home_defence
 			available = {
@@ -9611,6 +9632,9 @@ available = {
 		prerequisite = {
 			focus = ENG_military_training_act
 		}
+		allow_branch = {
+			always = no
+		}
 		x = 0
 		y = 1
 		relative_position_id = ENG_military_training_act
@@ -9647,6 +9671,7 @@ available = {
 		prerequisite = {
 			focus = ENG_embargo_germany
 		}
+
 		x = 0
 		y = 1
 		relative_position_id = ENG_embargo_germany
@@ -9676,6 +9701,9 @@ available = {
 		id = uk_scandinavian_focus
 		icon = GFX_goal_generic_position_armies
 		cost = 10
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = ENG_home_defence
 		}
@@ -9937,6 +9965,9 @@ available = {
 		id = ENG_benelux_intervention
 		icon = GFX_goal_generic_position_armies
 		cost = 10
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = ENG_home_defence
 		}

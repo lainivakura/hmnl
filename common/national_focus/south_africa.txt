@@ -612,7 +612,9 @@
 		mutually_exclusive = { focus = SAF_support_the_policy_of_appeasement }
 		x = 7
 		y = 0
-
+		allow_branch = {
+			always = no
+		}
 		cost = 10
 
 		ai_will_do = {
@@ -1966,7 +1968,7 @@ date > 1949.12.1
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 20
+		x = 10
 		y = 0
 
 		cost = 10
@@ -2528,7 +2530,7 @@ date > 1949.12.1
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
-		x = 24
+		x = 14
 		y = 0
 
 		cost = 10
@@ -2910,7 +2912,7 @@ date > 1949.12.1
 	focus = {
 		id = SAF_commit_to_the_five_year_plan
 		icon = GFX_goal_generic_build_airforce
-		x = 28
+		x = 18
 		y = 0	
 
 		cost = 10
@@ -3216,7 +3218,7 @@ date > 1949.12.1
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 32
+		x = 22
 		y = 0		
 
 		cost = 2

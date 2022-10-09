@@ -178,34 +178,34 @@ country_event = {
 	option = { # Become Free French
 		name = france.10.b
 		trigger = {
-		has_game_rule = { rule = atom_vic_options option = ATOM_VIC_ALLOWED } }
+			has_game_rule = { rule = atom_vic_options option = ATOM_FREEFRANCE_ENABLED } 
+		}
 		ai_chance = {
 			factor = 0
 		}
 		set_global_flag = fall_of_france
 		save_global_event_target_as = free_france
-		GER = { country_event = france.14 }
+			
 		custom_effect_tooltip = france.10.b_tt
 	}
 	option = { # Ask for British Union
 		name = france.10.c
 		trigger = { has_game_rule = { rule = atom_frankobritish_options option = ATOM_FRANKOBRITISH_ALLOWED }  }
-		FRA = {
-			every_unit_leader = {
-				set_nationality = ENG
+		if = {
+			limit = {
+				has_game_rule = { rule = atom_vic_options option = ATOM_VIC_ALLOWED } 
 			}
+			GER = { country_event = france.14 }
+		}
+		else = {
+			ENG = { country_event = france.11 
+		}
 		}
 		ai_chance = {
 			factor = 100
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
-			}
-		}
-		ENG = {
-			country_event = france.11
-			effect_tooltip = {
-				annex_country = { target = FRA transfer_troops = yes }
 			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
@@ -220,14 +220,20 @@ country_event = {
 			}
 		}
 		trigger = { has_game_rule = { rule = atom_freefrance_options option = ATOM_FREEFRANCE_ENABLED }  }
+		if = {
+			limit = {
+				has_game_rule = { rule = atom_vic_options option = ATOM_VIC_ALLOWED } 
+			}
+			GER = { country_event = france.14 }
+		}
 		add_stability = -0.05
 		ENG = {
-		set_autonomy = {
-		target = FRA
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.5
-	}
-	}
+			set_autonomy = {
+				target = FRA
+				autonomous_state = autonomy_dominion
+				freedom_level = 0.5
+			}
+		}
 		hidden_effect =  {
 		FRA = { news_event = { id = france.20 days = 1 } }
 		}
@@ -242,15 +248,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # Refuse Union
-		name = france.11.a
-		ai_chance = {
-			factor = 0
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.13 }
-		}
-	}
 	option = { # Agree to Union
 		name = france.11.b
 		ai_chance = {
@@ -992,6 +989,15 @@ country_event = {
 				}
 				set_state_flag = vichy_italian_conquest
 			}
+			every_unit_leader = {
+				set_nationality = ENG
+			}
+		}	
+		ENG = {
+			country_event = france.11
+			effect_tooltip = {
+				annex_country = { target = FRA transfer_troops = yes }
+			}
 		}
 		custom_effect_tooltip = establishing_vichy_tt
 		hidden_effect = {
@@ -1143,19 +1149,19 @@ country_event = {
 			}
 		}
 	}
-	option = { # Conquer everything!
-		name = france.14.b
-		ai_chance = {
-			factor = 50
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.15 }
-		}
-	}
+	# option = { # Conquer everything!
+	# 	name = france.14.b
+	# 	ai_chance = {
+	# 		factor = 50
+	# 		modifier = {
+	# 			is_historical_focus_on = yes
+	# 			factor = 0
+	# 		}
+	# 	}
+	# 	FRA = {
+	# 		country_event = { hours = 6 id = france.15 }
+	# 	}
+	# }
 }
 
 # Germany refuses armistice! (France)
@@ -1163,7 +1169,7 @@ country_event = {
 	id = france.15
 	title = france.15.t
 	desc = france.15.d
-	picture = GFX_report_event_french_resёistance_01
+	picture = GFX_report_event_french_resistance_01
 
 	is_triggered_only = yes
 

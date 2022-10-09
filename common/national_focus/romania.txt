@@ -166,6 +166,9 @@
 	focus = {
 		id = ROM_basing_rights_for_soviet_union
 		icon = GFX_focus_generic_soviet_politics
+		allow_branch = {
+			always = no
+		}
 		prerequisite = { focus = ROM_a_deal_with_the_devil }
 		x = 0
 		y = 2
@@ -555,7 +558,9 @@ date > 1949.12.1
 		x = 2
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
-
+		allow_branch = {
+			always = no
+		}
 		cost = 10
 
 		ai_will_do = {
@@ -1489,7 +1494,9 @@ date > 1949.12.1
 		mutually_exclusive = { focus = ROM_preserve_greater_romania }
 		x = 15
 		y = 0
-
+		allow_branch = {
+			always = no
+		}
 		cost = 10
 
 		ai_will_do = {
@@ -1858,7 +1865,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 20
+		x = 14
 		y = 0
 
 		cost = 10
@@ -2461,7 +2468,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 31
+		x = 22
 		y = 0
 
 		cost = 5
@@ -2898,7 +2905,8 @@ date > 1949.12.1
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			#Give generic fighter bonus if fighter_2 already researched
+			if = {
+				limit = { NOT = { has_dlc = "By Blood Alone" } }
 			if = {
 				limit = {
 					has_tech = fighter2
@@ -2906,7 +2914,7 @@ date > 1949.12.1
 				add_tech_bonus = {
 					name = ROM_iar_80
 					bonus = 1.0
-				
+					ahead_reduction = 2
 					uses = 1
 					category = light_fighter
 				}
@@ -2914,9 +2922,38 @@ date > 1949.12.1
 					add_tech_bonus = {
 						name = ROM_iar_80
 						bonus = 1.0
-						
+						ahead_reduction = 2
 						uses = 1
 						technology = fighter2
+					}
+				}
+			}
+		}
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					create_equipment_variant = {
+						name = "IAR 80"
+						type = small_plane_airframe_2
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = light_mg_2x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = empty
+						}
+						icon = "GFX_ROM_fighter2_medium"
+					}
+					else = {
+						add_tech_bonus = {
+							name = ROM_iar_80
+							bonus = 1.0
+							ahead_reduction = 2
+							uses = 1
+							technology = improved_small_airframe
+						}
 					}
 				}
 			}
@@ -3039,7 +3076,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 39
+		x = 32
 		y = 0
 
 		cost = 10
@@ -3061,7 +3098,7 @@ date > 1949.12.1
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 50
 		}
 	}
 
@@ -3717,7 +3754,7 @@ date > 1949.12.1
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 46
+		x = 40
 		y = 0
 
 		cost = 5

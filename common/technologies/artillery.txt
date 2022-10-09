@@ -453,6 +453,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_rocket_launcher
+			rocket_rails
 		}
 
 		path = {
@@ -929,7 +930,7 @@ technologies = {
 			anti_tank_equipment_1
 		}
 		enable_equipment_modules = {
-
+			tank_buster_1
 		}
 		path = {
 			leads_to_tech = antitank1
@@ -1108,7 +1109,7 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			
+			tank_buster_2
 		}
 		path = {
 			leads_to_tech = antitank3

@@ -7942,6 +7942,7 @@ date > 1941.10.1
 	focus = {
 		id = SOV_the_left_opposition
 		icon = GFX_focus_fra_loyalty_trotzky
+
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		mutually_exclusive = { focus = SOV_the_right_opposition focus = SOV_the_centre }
 		x = 2
@@ -7972,6 +7973,7 @@ date > 1949.12.1
 			}
 		}
 		allow_branch = {
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {
@@ -9205,6 +9207,7 @@ date > 1949.12.1
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		allow_branch = { 
 			has_dlc = "No Step Back"
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {
@@ -9462,6 +9465,7 @@ date > 1949.12.1
 		allow_branch = {
 			has_dlc = "La Resistance"
 			has_dlc = "No Step Back"
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {
@@ -10985,7 +10989,7 @@ date > 1949.12.1
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 24
+		x = 0
 		y = 1
 		offset = {
 			x = -7
@@ -10994,18 +10998,18 @@ date > 1949.12.1
 				NOT = { has_dlc = "No Step Back" }
 			}
 		}
-		offset = {
-			x = -19
-			y = 0
-			trigger = { #Trotskyist branch hides
-				NOT = { has_dlc = "No Step Back" }
-				has_completed_focus = SOV_the_centre 
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		# offset = {
+		# 	x = -19
+		# 	y = 0
+		# 	trigger = { #Trotskyist branch hides
+		# 		NOT = { has_dlc = "No Step Back" }
+		# 		has_completed_focus = SOV_the_centre 
+		# 		has_game_rule = {
+		# 			rule = obsolete_focus_branches_visibility
+		# 			option = HIDE
+		# 		}
+		# 	}
+		# }
 		offset = {
 			x = -7
 			y = 0
@@ -11018,18 +11022,18 @@ date > 1949.12.1
 				}
 			}
 		}
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = SOV_the_centre
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		# offset = {
+		# 	x = -26
+		# 	y = 0
+		# 	trigger = {
+		# 		has_dlc = "No Step Back"
+		# 		has_completed_focus = SOV_the_centre
+		# 		has_game_rule = {
+		# 			rule = obsolete_focus_branches_visibility
+		# 			option = HIDE
+		# 		}
+		# 	}
+		# }
 		offset = {
 			x = -7
 			y = 0
@@ -11756,323 +11760,12 @@ date > 1949.12.1
 	}
 
 	focus = {
-		id = SOV_policy_of_collective_security
-		icon = GFX_goal_anschluss
-		prerequisite = { focus = SOV_the_comintern }
-		x = -1
-		y = 1
-		relative_position_id = SOV_the_comintern
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		mutually_exclusive = { focus = SOV_policy_of_individual_security }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		completion_reward = {
-			add_political_power = 35
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SOV_maksim_litvinov
-		}
-	}
-
-	focus = {
-		id = SOV_anti_fascist_policies
-		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = SOV_policy_of_collective_security }
-		x = 0
-		y = 1
-		relative_position_id = SOV_policy_of_collective_security
-		cost = 5
-		
-ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-				
-		search_filters = {FOCUS_FILTER_PROPAGANDA}
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-					is_major = yes
-					OR = {
-						has_government = democratic
-						has_government = communism
-					}
-					NOT = { has_war_with = ROOT }
-				}
-				add_opinion_modifier = { target = SOV modifier = SOV_anti_fascist_policies_good } 
-			}
-
-			every_other_country = {
-				limit = {
-					is_major = yes
-					has_government = fascism
-				}
-				add_opinion_modifier = { target = SOV modifier = SOV_anti_fascist_policies_bad } 
-			}
-
-			if = {
-				limit = {
-					has_government = communism
-				}
-				custom_effect_tooltip = unlock_propaganda_campaign_tt
-				unlock_decision_tooltip = SOV_propaganda_anti_fascism
-				custom_effect_tooltip = propaganda_campaign_requirement_tt
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_seek_a_defense_pact_with_the_allies
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SOV_anti_fascist_policies }
-		x = 0
-		y = 1
-		relative_position_id = SOV_anti_fascist_policies
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		bypass = {
-			OR = {
-				NOT = { country_exists = FRA }
-				FRA = { has_capitulated = yes }
-			}
-			NOT = {
-				any_other_country = {
-					is_faction_leader = yes
-					SOV_is_valid_collective_security_target = yes
-				}
-			}
-		}
-
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			if = { #FRA is default target
-				limit = {
-					country_exists = FRA
-					FRA = {	SOV_is_valid_collective_security_target = yes }
-				}
-				set_variable = { SOV_collective_security_target = FRA }
-				FRA = { country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 } }
-			}
-			else_if = { #ENG is first fallback target
-				limit = {
-					country_exists = ENG
-					is_faction_leader = yes
-					ENG = {	SOV_is_valid_collective_security_target = yes }
-				}
-				set_variable = { SOV_collective_security_target = FRA }
-				ENG = { country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 } }
-			}
-			else_if = { #Non-Fascist European faction leader is next
-				limit = {
-					any_country = {
-						is_faction_leader = yes
-						capital_scope = { is_on_continent = europe }
-						SOV_is_valid_collective_security_target = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						capital_scope = { is_on_continent = europe }
-						SOV_is_valid_collective_security_target = yes
-					}
-					ROOT = { set_variable = { SOV_collective_security_target = PREV } }
-					country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 }
-				}
-			}
-			else_if = { #Alright I don't really care anymore, pick whoever is left alive
-				limit = {
-					any_other_country = {
-						is_faction_leader = yes
-						SOV_is_valid_collective_security_target = yes
-					}
-				}
-				random_other_country = {
-					limit = {
-						is_faction_leader = yes
-						SOV_is_valid_collective_security_target = yes
-					}
-					ROOT = { set_variable = { SOV_collective_security_target = PREV } }
-					country_event = { id = NSB_soviet_policies_of_collective_security.1 hours = 8 random_hours = 4 }
-				}
-			}
-
-			custom_effect_tooltip = SOV_seek_a_defense_pact_with_the_allies_event_effects_tt
-
-			if = {
-				limit = {
-					country_exists = POL
-					POL = { SOV_is_valid_collective_security_target = yes }
-					var:SOV_collective_security_target = {
-						capital_scope = { is_on_continent = europe }
-					}
-				}
-				custom_effect_tooltip = SOV_seek_a_defense_pact_with_the_allies_poland_tt
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_the_khakimov_proposal
-		icon = GFX_focus_generic_befriend_saudi_arabia
-		prerequisite = { focus = SOV_seek_a_defense_pact_with_the_allies }
-		x = -1
-		y = 1
-		relative_position_id = SOV_seek_a_defense_pact_with_the_allies
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		available = {
-			is_subject = no
-			country_exists = SAU
-			NOT = { has_war_with = SAU }
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			SAU = {
-				add_ideas = SOV_ambassador_karim_khakimov #adds +35 communism acceptance and -50 for other ideologies
-				add_opinion_modifier = { target = SOV modifier = SOV_cordial_relations_developed_by_soviet_diplomat } 
-				hidden_effect = {
-					country_event = { id = NSB_soviet_foreign_politics_events.211 hours = 8 random_hours = 4 }
-				}
-			}
-			activate_targeted_decision = { target = SAU decision = SOV_pressure_country_government_middle_east }
-			activate_targeted_decision = { target = SAU decision = SOV_promote_ideology_rallies_middle_east }
-		}
-	}
-
-	focus = {
-		id = SOV_eradicate_western_fascism
-		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = { focus = SOV_seek_a_defense_pact_with_the_allies }
-		x = 0
-		y = 2
-		relative_position_id = SOV_seek_a_defense_pact_with_the_allies
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			any_country = {
-				OR = {
-					tag = ENG
-					tag = FRA
-					tag = GER
-					tag = ITA
-				}
-				has_government = fascism
-				is_major = yes
-			}
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			add_timed_idea = { idea = SOV_face_western_fascism_ns days = 365 }
-			
-			if = {
-				limit = {
-					ENG = {
-						has_government = fascism
-					}
-				}
-				hidden_effect = { add_ideas = SOV_targeted_bonus_against_ENG }
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = ENG
-				}
-			}
-			if = {
-				limit = {
-					FRA = {
-						has_government = fascism
-					}
-				}
-				hidden_effect = { add_ideas = SOV_targeted_bonus_against_FRA }
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = FRA
-				}
-			}
-			if = {
-				limit = {
-					GER = {
-						has_government = fascism
-					}
-				}
-				hidden_effect = { add_ideas = SOV_targeted_bonus_against_GER }
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = GER
-				}
-			}
-			if = {
-				limit = {
-					ITA = {
-						has_government = fascism
-					}
-				}
-				hidden_effect = { add_ideas = SOV_targeted_bonus_against_ITA }
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = ITA
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_policy_of_individual_security
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
@@ -12439,6 +12132,9 @@ ai_will_do = {
 		id = SOV_anti_capitalist_policies
 		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 2
 		y = 1
 		relative_position_id = SOV_policy_of_individual_security
@@ -12900,6 +12596,9 @@ ai_will_do = {
 		id = SOV_respect_baltic_self_determination
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = SOV_baltic_security }
+		allow_branch = {
+			always = no
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_baltic_security
@@ -13081,7 +12780,9 @@ date > 1939.9.1
 		y = 2
 		relative_position_id = SOV_secure_leningrad
 		cost = 10
-
+		allow_branch = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -13288,6 +12989,9 @@ date > 1939.6.1
 		id = SOV_demand_eastern_poland
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = SOV_claims_on_poland }
+		allow_branch = {
+			always = no
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_claims_on_poland
@@ -13392,6 +13096,9 @@ date > 1939.9.1
 		id = SOV_offer_poland_protection
 		icon = GFX_focus_generic_polish_deal
 		prerequisite = { focus = SOV_claims_on_poland }
+		allow_branch = {
+			always = no
+		}
 		x = 1
 		y = 1
 		relative_position_id = SOV_claims_on_poland
@@ -13431,7 +13138,7 @@ date > 1939.9.1
 		}
 
 		available = {
-date > 1949.12.1
+		date > 1949.12.1
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			country_exists = POL
 			NOT = { has_war_with = POL }
@@ -13610,6 +13317,9 @@ date > 1949.12.1
 		id = SOV_demand_balkan_submission
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = SOV_claim_on_bessarabia }
+		allow_branch = {
+			always = no
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_claim_on_bessarabia
@@ -13664,6 +13374,9 @@ date > 1949.12.1
 		id = SOV_seek_balkan_cooperation
 		icon = GFX_focus_BUL_free_balkan_states
 		prerequisite = { focus = SOV_claim_on_bessarabia }
+		allow_branch = {
+			always = no
+		}
 		x = 1
 		y = 1
 		relative_position_id = SOV_claim_on_bessarabia
@@ -13723,6 +13436,9 @@ date > 1949.12.1
 		id = SOV_middle_east_diplomacy
 		icon = GFX_focus_TUR_treaty_of_saadabad
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 4
 		y = 0
 		relative_position_id = SOV_baltic_security
@@ -14066,6 +13782,9 @@ date > 1949.12.1
 		id = SOV_the_threat_from_the_land_of_the_rising_sun
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 5
 		y = 0
 		relative_position_id = SOV_middle_east_diplomacy
@@ -14697,6 +14416,9 @@ date > 1949.12.1
 		id = SOV_reconcile_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = SOV_the_comintern }
+		allow_branch = {
+			always = no
+		}
 		x = 3
 		y = 0
 		relative_position_id = SOV_the_threat_from_the_land_of_the_rising_sun
@@ -14924,6 +14646,7 @@ date > 1949.12.1
 		}
 		allow_branch = { 
 			has_dlc = "No Step Back" 
+			always = no
 			if = {
 				limit = {
 					has_game_rule = {

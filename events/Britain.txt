@@ -34,14 +34,6 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = britain.1.b	#no way 
-		ai_chance = { factor = 10 }
-		#add_opinion_modifier = { target = ENG modifier = tizard_refused }
-		ENG = {
-			country_event = { days = 1 id = britain.3 }
-		}
-	}
 
 	option = {
 		name = britain.1.c	#tech_sharing
@@ -254,7 +246,7 @@ country_event = {
 		}
 		NOT = { has_country_flag = chamberlain_died }
 		has_country_leader = {
-			name = "Neville Chamberlain"
+			character = ENG_neville_chamberlain
 			ruling_only = yes
 		}
 	}
@@ -267,16 +259,8 @@ country_event = {
 	
 	option = {
 		name = britain.9.a
-		create_country_leader = {
-			name = "Winston Churchill"
-			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = "Portrait_Britain_Winston_Churchill.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				british_bulldog
-			}
-		}
+		promote_character = ENG_winston_churchill
+		retire_character = ENG_neville_chamberlain
 		add_stability = 0.1
 		add_war_support = 0.1
 
@@ -299,7 +283,7 @@ country_event = {
 		date > 1940.9.11
 		NOT = { has_country_flag = chamberlain_resigned }
 		has_country_leader = {
-			name = "Neville Chamberlain"
+			character = ENG_neville_chamberlain
 			ruling_only = yes
 		}
 	}	
@@ -316,7 +300,7 @@ country_event = {
 		create_country_leader = {
 			name = "Winston Churchill"
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = "Portrait_Britain_Winston_Churchill.dds"
+			picture = GFX_portrait_Winston_Churchill
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -330,7 +314,7 @@ country_event = {
 		create_country_leader = {
 			name = "Lord Edward Halifax"
 			desc = "POLITICS_EDWARD_HALIFAX_DESC"
-			picture = "Portrait_Britain_Edward_Halifax.dds"
+			picture = GFX_portrait_Lord_Edward_Halifax
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -434,20 +418,6 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = britain.13.b
-		ai_chance = { factor = 0 }
-		FROM = { 
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = FRA_go_with_britain_reject
-			}
-			country_event = { id = france.30 }
-		}
-		hidden_effect = {
-			news_event = { id = news.176 }
-		}
-	}
 }
 
 # Germany demands Slovenia from Yugoslavia
@@ -685,7 +655,7 @@ country_event = {
 		create_country_leader = {
 			name = "Edward VIII"
 			desc = "POLITICS_EDWARD_EDWARD_DESC"
-			picture = "Portrait_Britain_Edward_VIII.dds"
+			picture = GFX_portrait_Edward_VIII
 			expire = "1965.1.1"
 			ideology = fascism_ideology
 			traits = {
@@ -843,7 +813,7 @@ country_event = {
         create_country_leader = {
         	name = "Neville Chamberlain"
         	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-        	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+        	picture = GFX_portrait_Neville_Chamberlain
         	expire = "1965.1.1"
         	ideology = conservatism
         	traits = {
