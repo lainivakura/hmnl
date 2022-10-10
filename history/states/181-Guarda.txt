@@ -7,7 +7,11 @@ state={
 	state_category = town
 	
 	resources={
+<<<<<<< HEAD
 		tungsten=100 
+=======
+		tungsten=150 # was: 300
+>>>>>>> origin/vse-po-novoy
 	}
 
 	history={

@@ -7,11 +7,16 @@ state={
 	state_category = pastoral
 
 	history={
+<<<<<<< HEAD
 		owner = AFR
 
 		add_core_of = AFR
 
 	}
+=======
+	}
+
+>>>>>>> origin/vse-po-novoy
 	provinces={
 		2161 5118 5159 5201 5209 5215 8198 8218 8913 10961 
 	}

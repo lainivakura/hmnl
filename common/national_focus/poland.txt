@@ -786,6 +786,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		
 		available = {
+<<<<<<< HEAD
 			NOT = { has_completed_focus = POL_organize_the_peasants_strike }
 		}
 		
@@ -813,6 +814,11 @@ focus_tree = {
 					days = 70
 				}
 			}
+=======
+		}
+		
+		bypass = {
+>>>>>>> origin/vse-po-novoy
 		}
 
 		completion_reward = {
@@ -1321,6 +1327,7 @@ focus_tree = {
 		}
 	}
 
+<<<<<<< HEAD
 	focus = {
 		id = POL_army_modernisation
 		icon = GFX_goal_generic_army_doctrines
@@ -1874,15 +1881,21 @@ focus_tree = {
 		}
 	}
 
+=======
+>>>>>>> origin/vse-po-novoy
 	############################
 	##### POLITICS SECTION #####
 	############################
 
 	focus = {
 		id = POL_complete_april_constitution
+<<<<<<< HEAD
 		icon = GFX_focus_POL_complete_april_constitution
 		mutually_exclusive = { focus = POL_organize_the_peasants_strike focus = POL_nationalist_constitution focus = POL_assemble_the_regency_council focus = POL_restore_the_sejm }
 		
+=======
+		icon = GFX_focus_POL_complete_april_constitution		
+>>>>>>> origin/vse-po-novoy
 		x = 49
 		y = 0
 		cost = 10
@@ -1891,6 +1904,7 @@ focus_tree = {
 			factor = 10
 		}
 		
+<<<<<<< HEAD
 		allow_branch = {
 			if = {
 				limit = {
@@ -1908,6 +1922,8 @@ focus_tree = {
 				}
 			}
 		}
+=======
+>>>>>>> origin/vse-po-novoy
 		available = { is_subject = no }
 
 		available_if_capitulated = yes
@@ -1920,7 +1936,14 @@ focus_tree = {
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
+<<<<<<< HEAD
 			POL_april_constitution_up = yes
+=======
+			swap_ideas = {
+				remove_idea = POL_april_constitution_1
+				add_idea = POL_april_constitution_2
+			}
+>>>>>>> origin/vse-po-novoy
 			add_political_power = 100
 			swap_ideas = {
 				add_idea = POL_sanation_right_opposition_2
@@ -1930,10 +1953,13 @@ focus_tree = {
 				add_idea = POL_sanation_left_opposition_2
 				remove_idea = POL_sanation_left_opposition_1
 			}
+<<<<<<< HEAD
 			activate_mission = POL_sanation_left_irritation
 			activate_mission = POL_sanation_right_irritation
 			unlock_decision_tooltip = POL_sideline_the_left
 			unlock_decision_tooltip = POL_sideline_the_right
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -1956,7 +1982,14 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			add_ideas = POL_militarism_focus
+<<<<<<< HEAD
 			POL_april_constitution_up = yes
+=======
+			swap_ideas = {
+				remove_idea = POL_april_constitution_2
+				add_idea = POL_april_constitution_3
+			}
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -1977,7 +2010,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
+<<<<<<< HEAD
 			POL_april_constitution_up = yes
+=======
+			swap_ideas = {
+				remove_idea = POL_april_constitution_3
+				add_idea = POL_april_constitution_4
+			}
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -1997,12 +2037,15 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			NOT = {
 				OR = {
 					has_completed_focus = POL_dissolve_the_bbwr
 					has_completed_focus = POL_ozon
 				}
 			}
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
@@ -2022,8 +2065,11 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.1
 			}
+<<<<<<< HEAD
 			POL_sanation_left_opposition_down = yes
 			POL_sanation_right_opposition_down = yes
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -2042,12 +2088,15 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			NOT = {
 				OR = {
 					has_completed_focus = POL_dissolve_the_bbwr
 					has_completed_focus = POL_ozon
 				}
 			}
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
@@ -2061,8 +2110,11 @@ focus_tree = {
 				ideology = democratic
 				popularity = -0.05
 			}
+<<<<<<< HEAD
 			POL_sanation_left_opposition_down = yes 
 			POL_sanation_right_opposition_down = yes
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -2081,12 +2133,15 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			NOT = {
 				OR = {
 					has_completed_focus = POL_dissolve_the_bbwr
 					has_completed_focus = POL_ozon
 				}
 			}
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
@@ -2096,8 +2151,11 @@ focus_tree = {
 				ideology = democratic
 				popularity = -0.2
 			}
+<<<<<<< HEAD
 			POL_sanation_left_opposition_down = yes
 			POL_sanation_right_opposition_down = yes
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 	
@@ -2115,19 +2173,25 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			NOT = {
 				OR = {
 					has_completed_focus = POL_dissolve_the_bbwr
 					has_completed_focus = POL_ozon
 				}
 			}
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+<<<<<<< HEAD
 			POL_sanation_left_opposition_down = yes 
 			POL_sanation_right_opposition_down = yes
+=======
+>>>>>>> origin/vse-po-novoy
 			random_owned_controlled_state = {
 				prioritize = { 89 }
 				add_extra_state_shared_building_slots = 1
@@ -2150,8 +2214,12 @@ focus_tree = {
 		id = POL_camp_of_national_unity
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = POL_the_castle }
+<<<<<<< HEAD
 		prerequisite = { focus = POL_the_left_chairman focus = POL_second_man_of_the_state }
 		mutually_exclusive = { focus = POL_dissolve_the_bbwr focus = POL_ozon }
+=======
+		prerequisite = { focus = POL_second_man_of_the_state }
+>>>>>>> origin/vse-po-novoy
 		x = 0
 		y = 4
 		relative_position_id = POL_the_castle
@@ -2162,6 +2230,7 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			NOT = {
 				OR = {
 					has_completed_focus = POL_camp_of_national_unity
@@ -2170,18 +2239,26 @@ focus_tree = {
 				}
 			}
 			neutrality > 0.5
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+<<<<<<< HEAD
 			POL_sanation_left_opposition_remove = yes
 			POL_sanation_right_opposition_remove = yes
+=======
+			remove_ideas = POL_sanation_left_opposition_2
+			remove_ideas = POL_sanation_right_opposition_2
+>>>>>>> origin/vse-po-novoy
 			custom_effect_tooltip = no_more_san_right_tt
 			custom_effect_tooltip = no_more_san_left_tt
 		}
 	}
 
+<<<<<<< HEAD
 	#Sanation Left
 	focus = {
 		id = POL_the_sanation_left
@@ -2421,6 +2498,8 @@ focus_tree = {
 		}
 	}
 
+=======
+>>>>>>> origin/vse-po-novoy
 	#Sanation Right
 	focus = {
 		id = POL_the_sanation_right
@@ -2437,18 +2516,25 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			has_sanation_right_opposition = yes
 			NOT = { has_completed_focus = POL_the_left_chairman }
 			NOT = { has_completed_focus = POL_camp_of_national_unity }
 			NOT = { has_completed_focus = POL_ozon }
+=======
+			NOT = { has_completed_focus = POL_camp_of_national_unity }
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_political_power = 75
+<<<<<<< HEAD
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_down = yes
+=======
+>>>>>>> origin/vse-po-novoy
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = POL_edward_rydz_smigly
 			custom_effect_tooltip = available_political_advisor
@@ -2471,10 +2557,14 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			has_sanation_right_opposition = yes
 			NOT = { has_completed_focus = POL_the_left_chairman }
 			NOT = { has_completed_focus = POL_camp_of_national_unity }
 			NOT = { has_completed_focus = POL_ozon }
+=======
+			NOT = { has_completed_focus = POL_camp_of_national_unity }
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
@@ -2504,17 +2594,24 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			has_sanation_right_opposition = yes
 			NOT = { has_completed_focus = POL_the_left_chairman }
 			NOT = { has_completed_focus = POL_camp_of_national_unity }
 			NOT = { has_completed_focus = POL_ozon }
+=======
+			NOT = { has_completed_focus = POL_camp_of_national_unity }
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
 		completion_reward = {
+<<<<<<< HEAD
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_down = yes
+=======
+>>>>>>> origin/vse-po-novoy
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = POL_jerzy_rutkowski
 			add_ideas = {
@@ -2527,7 +2624,10 @@ focus_tree = {
 		id = POL_codify_national_unity
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = POL_the_sanation_right }
+<<<<<<< HEAD
 		mutually_exclusive = { focus = POL_draft_a_new_constitution }
+=======
+>>>>>>> origin/vse-po-novoy
 		
 		x = -1
 		y = 1
@@ -2539,17 +2639,24 @@ focus_tree = {
 		}
 
 		available = {
+<<<<<<< HEAD
 			has_sanation_right_opposition = yes
 			NOT = { has_completed_focus = POL_the_left_chairman }
 			NOT = { has_completed_focus = POL_camp_of_national_unity }
 			NOT = { has_completed_focus = POL_ozon }
+=======
+			NOT = { has_completed_focus = POL_camp_of_national_unity }
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+<<<<<<< HEAD
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_down = yes
+=======
+>>>>>>> origin/vse-po-novoy
 			swap_ideas = {
 				remove_idea = POL_april_constitution_4
 				add_idea = POL_april_constitution_right
@@ -2561,7 +2668,10 @@ focus_tree = {
 		id = POL_second_man_of_the_state
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = POL_the_sanation_right }
+<<<<<<< HEAD
 		mutually_exclusive = { focus = POL_the_left_chairman }
+=======
+>>>>>>> origin/vse-po-novoy
 		x = 0
 		y = 2
 		relative_position_id = POL_the_sanation_right
@@ -2572,19 +2682,26 @@ focus_tree = {
 		}
 		
 		available = {
+<<<<<<< HEAD
 			has_sanation_right_opposition = yes
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+<<<<<<< HEAD
 			POL_sanation_left_opposition_up = yes
 			POL_sanation_right_opposition_remove = yes
+=======
+>>>>>>> origin/vse-po-novoy
 			add_ideas = POL_edward_rydz_smigly_chairman
 			custom_effect_tooltip = no_more_san_left_tt
 		}
 	}
 
+<<<<<<< HEAD
 	focus = {
 		id = POL_ozon
 		icon = GFX_focus_POL_OZON
@@ -2628,16 +2745,26 @@ focus_tree = {
 		}
 	}
 
+=======
+>>>>>>> origin/vse-po-novoy
 	#Polish Revanchism
 	focus = {
 		id = POL_polish_revanchism
 		icon = GFX_focus_POL_polish_revanchism
+<<<<<<< HEAD
 		prerequisite = { focus = POL_ozon }
 		mutually_exclusive = { focus = POL_align_with_the_west focus = POL_baltic_security }
 		
 		x = 0
 		y = 1
 		relative_position_id = POL_ozon
+=======
+		prerequisite = { focus = POL_camp_of_national_unity }
+		
+		x = 0
+		y = 1
+		relative_position_id = POL_camp_of_national_unity
+>>>>>>> origin/vse-po-novoy
 		cost = 10
 
 		ai_will_do = {
@@ -2655,6 +2782,7 @@ focus_tree = {
 		}
 	}
 
+<<<<<<< HEAD
 	focus = {
 		id = POL_baltic_ultimatums
 		icon = GFX_goal_generic_forceful_treaty
@@ -13823,6 +13951,8 @@ date > 1949.12.1
 		}
 	}
 
+=======
+>>>>>>> origin/vse-po-novoy
 	################
 	###RESISTANCE###
 	################
@@ -13843,6 +13973,7 @@ date > 1949.12.1
 				}
 			}
 		}
+<<<<<<< HEAD
 		allow_branch = { has_dlc = "Man the Guns" }
 		x = 106
 		y = 0
@@ -13909,6 +14040,10 @@ date > 1949.12.1
 				}
 			}
 		}
+=======
+		x = 106
+		y = 0
+>>>>>>> origin/vse-po-novoy
 		cost = 10
 
 		ai_will_do = {
@@ -14009,6 +14144,7 @@ date > 1949.12.1
 		completion_reward = {
 			air_experience = 50
 			# 19400 Poles served in the exile airforce, 100 manpower per plane making it around 200 planes total.
+<<<<<<< HEAD
 			add_equipment_to_stockpile = {
 				type = fighter_equipment
 				amount = 150
@@ -14019,6 +14155,20 @@ date > 1949.12.1
 				amount = 50
 				producer = POL
 			}
+=======
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe_0
+					amount = 100
+					producer = POL
+					variant_name = "PZL P.11"
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					amount = 50
+					producer = POL
+					variant_name = "PZL P.23"
+				}
+>>>>>>> origin/vse-po-novoy
 			add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
@@ -14059,6 +14209,7 @@ date > 1949.12.1
 	}
 
 	focus = {
+<<<<<<< HEAD
 		id = POL_aces_in_exile
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = POL_foreign_air_support }
@@ -14098,6 +14249,8 @@ date > 1949.12.1
 	}
 
 	focus = {
+=======
+>>>>>>> origin/vse-po-novoy
 		id = POL_foreign_naval_support
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = POL_prepare_for_the_inevitable }
@@ -14206,7 +14359,10 @@ date > 1949.12.1
 			surrender_progress > 0.6
 
 		}
+<<<<<<< HEAD
 		allow_branch = { has_dlc = "La Resistance" }
+=======
+>>>>>>> origin/vse-po-novoy
 
 		x = 3
 		y = 1
@@ -14304,6 +14460,7 @@ date > 1949.12.1
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	focus = {
 		id = POL_the_bombe
@@ -14372,6 +14529,8 @@ date > 1949.12.1
 			}
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 
 	focus = {
 		id = POL_atomic_physics_institute
@@ -14405,7 +14564,10 @@ date > 1949.12.1
 	focus = {
 		id = POL_develop_polish_ship_building
 		icon = GFX_focus_POL_develop_polish_shipbuilding
+<<<<<<< HEAD
 		mutually_exclusive = { focus = POL_clamp_down_on_danzig }
+=======
+>>>>>>> origin/vse-po-novoy
 		x = 14
 		y = 0
 		cost = 10
@@ -14459,6 +14621,7 @@ date > 1949.12.1
 	}
 
 	focus = {
+<<<<<<< HEAD
 		id = POL_clamp_down_on_danzig
 		icon = GFX_focus_POL_clamp_down_on_danzig
 		mutually_exclusive = { focus = POL_develop_polish_ship_building }
@@ -14522,6 +14685,8 @@ date > 1949.12.1
 	}
 
 	focus = {
+=======
+>>>>>>> origin/vse-po-novoy
 		id = POL_attract_poles_to_gdynia
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = POL_develop_polish_ship_building }
@@ -14583,7 +14748,11 @@ date > 1949.12.1
 	focus = {
 		id = POL_study_foreign_built_ships
 		icon = GFX_focus_ger_accept_british_naval_dominance
+<<<<<<< HEAD
 		prerequisite = { focus = POL_develop_polish_ship_building focus = POL_clamp_down_on_danzig }
+=======
+		prerequisite = { focus = POL_develop_polish_ship_building }
+>>>>>>> origin/vse-po-novoy
 		x = 1
 		y = 1
 		cost = 10
@@ -14606,6 +14775,7 @@ date > 1949.12.1
 	}
 
 	focus = {
+<<<<<<< HEAD
 		id = POL_ban_the_nazi_party
 		icon = GFX_focus_POL_ban_nazi_party
 		prerequisite = { focus = POL_clamp_down_on_danzig }
@@ -14708,6 +14878,8 @@ date > 1949.12.1
 	}
 
 	focus = {
+=======
+>>>>>>> origin/vse-po-novoy
 		id = POL_expand_gdynia_seaport
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = POL_attract_poles_to_gdynia }
@@ -14775,6 +14947,7 @@ date > 1949.12.1
 	}
 
 	focus = {
+<<<<<<< HEAD
 		id = POL_integrate_gdansk_industries
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = POL_ban_the_nazi_party }
@@ -14823,6 +14996,11 @@ date > 1949.12.1
 		id = POL_expand_northern_rail
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = POL_integrate_gdansk_industries focus = POL_expand_gdynia_seaport }
+=======
+		id = POL_expand_northern_rail
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = POL_expand_gdynia_seaport }
+>>>>>>> origin/vse-po-novoy
 		x = 1
 		y = 1
 		relative_position_id = POL_expand_gdynia_seaport
@@ -14841,6 +15019,7 @@ date > 1949.12.1
 		completion_reward = {
 			if = {
 				limit = {
+<<<<<<< HEAD
 					has_completed_focus = POL_clamp_down_on_danzig
 					controls_state = 85
 				}
@@ -14851,6 +15030,8 @@ date > 1949.12.1
 			}
 			else_if = {
 				limit = {
+=======
+>>>>>>> origin/vse-po-novoy
 					controls_state = 807
 				}
 				build_railway = {
@@ -14860,6 +15041,7 @@ date > 1949.12.1
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	
 
@@ -15077,4 +15259,6 @@ date > 1949.12.1
 		}
 	}
 
+=======
+>>>>>>> origin/vse-po-novoy
 }		

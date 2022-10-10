@@ -8,6 +8,7 @@ set_technology = {
 }
 
 
+<<<<<<< HEAD
 
 if = {
 	limit = {
@@ -18,6 +19,8 @@ if = {
 		CHI_ineffective_bureaucracy_warlord
 	}
 }
+=======
+>>>>>>> origin/vse-po-novoy
 1939.1.1 = {
 
 	add_political_power = 1198

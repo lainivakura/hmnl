@@ -153,7 +153,11 @@ infrastructure_construction_effect = yes
 
 	synthetic_refinery = {
 		show_on_map = 1
+<<<<<<< HEAD
 		base_cost = 12000
+=======
+		base_cost = 10500
+>>>>>>> origin/vse-po-novoy
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name

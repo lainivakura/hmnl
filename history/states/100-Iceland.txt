@@ -18,10 +18,18 @@ state=
 			}
 		}
 		add_core_of = DEN
+<<<<<<< HEAD
 		add_core_of = ICE
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 	provinces=
 	{
 4861 12674 12689 	}
+<<<<<<< HEAD
 local_supplies=0.0 
+=======
+
+	local_supplies=0.0 
+>>>>>>> origin/vse-po-novoy
 }

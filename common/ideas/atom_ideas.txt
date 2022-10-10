@@ -24,6 +24,7 @@ trade_laws = {
 				min_export = 0
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
+<<<<<<< HEAD
 production_speed_industrial_complex_factor = 0.4
 				production_speed_arms_factory_factor = -0.25
 conversion_cost_civ_to_mil_factor = 0.25
@@ -66,6 +67,13 @@ trade_laws = {
 				industrial_capacity_dockyard = 0.08
 				production_speed_buildings_factor = 0.08
 				research_speed_factor = 0.07
+=======
+production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.2
+				production_speed_buildings_factor = 0.1
+global_building_slots_factor = 0.4
+				research_speed_factor = 0.15
+>>>>>>> origin/vse-po-novoy
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
 			}			
@@ -74,7 +82,11 @@ trade_laws = {
 	}
 
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> origin/vse-po-novoy
 
 
 

@@ -7,6 +7,7 @@ state={
 	state_category = rural
 
 	history={
+<<<<<<< HEAD
 		owner = AFR
 
 		add_core_of = AFR
@@ -14,6 +15,10 @@ state={
 	}
 
 
+=======
+	}
+
+>>>>>>> origin/vse-po-novoy
 	provinces={
 		1948 1995 2017 2062 2078 2101 4893 4949 5020 5064 8053 8090 10789 12788 12871 
 	}

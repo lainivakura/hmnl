@@ -34,7 +34,10 @@ state={
 			}
 		}
 		add_core_of = IRQ
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

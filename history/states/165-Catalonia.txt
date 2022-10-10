@@ -2,13 +2,20 @@
 state={
 	id=165
 	name="STATE_165"
+<<<<<<< HEAD
 	manpower = 3036537
+=======
+	manpower = 1
+>>>>>>> origin/vse-po-novoy
 	
 	state_category = large_city
 
 	history={
 		owner = SPR
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 		victory_points = {
 			9764 30
 		}
@@ -20,8 +27,13 @@ state={
 		}
 		buildings = {
 			infrastructure = 4 #was: 7
+<<<<<<< HEAD
 			arms_factory = 3
 			industrial_complex = 3
+=======
+			arms_factory = 1
+			industrial_complex = 1
+>>>>>>> origin/vse-po-novoy
 			air_base = 2
 			9764 = {
 				naval_base = 4

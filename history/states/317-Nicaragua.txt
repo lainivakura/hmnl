@@ -1,6 +1,7 @@
 state={
 	id=317
 	name="STATE_317"
+<<<<<<< HEAD
 	
 
 	state_category = town
@@ -9,6 +10,11 @@ state={
 		owner = AFR
 
 		add_core_of = AFR
+=======
+	state_category = town
+
+	history={
+>>>>>>> origin/vse-po-novoy
 
 	}
 
@@ -16,7 +22,11 @@ state={
 		1988 2075 10728 12738 13139 13178 
 	}
 	manpower=1
+<<<<<<< HEAD
 	
+=======
+	buildings_max_level_factor=1.000
+>>>>>>> origin/vse-po-novoy
 
 	local_supplies=0.0 
 }

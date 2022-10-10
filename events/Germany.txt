@@ -133,6 +133,7 @@ country_event = {
 		SOV  = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 	}
 
+<<<<<<< HEAD
 	option = {
 		name = germany.5.b		#refuse
 		trigger = { NOT = { is_puppet_of = GER } }
@@ -142,6 +143,8 @@ country_event = {
 		GER =  { add_opinion_modifier = { target = ROOT modifier = refused_anti_comintern_pact_opinion } }
 	}
 
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # tripartite_pact
@@ -382,6 +385,7 @@ country_event = {
 		}
 		set_global_flag = sov_yes_pact
 	}
+<<<<<<< HEAD
 
 	option = {
 		name = germany.11.b	#no way
@@ -407,6 +411,8 @@ country_event = {
 		}
 		set_global_flag = sov_no_pact
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # Soviets Sign MR Pact
@@ -714,6 +720,7 @@ country_event = {
 			SOU = { country_event = { id = germany.15 hours = 3 } }
 		}
 	}
+<<<<<<< HEAD
 	option = {
 		name = germany.14.b
 		ai_chance = {
@@ -916,6 +923,8 @@ country_event = {
 			}
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 #Event for allies signing MR pact
@@ -998,6 +1007,7 @@ country_event = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	option = {
 		name = germany.1002.b
 		ai_chance = {
@@ -1196,6 +1206,8 @@ country_event = {
 			}
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 #Event telling Germany their ally broke the pact
@@ -1773,6 +1785,7 @@ country_event = {
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
+<<<<<<< HEAD
 	option = { # Refuse
 		name = germany.28.b
 		ai_chance = {
@@ -1826,6 +1839,8 @@ country_event = {
 			}
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # Austria refuses Anschluss
@@ -1871,6 +1886,12 @@ country_event = {
 			tag = HOL
 		}
 	}
+<<<<<<< HEAD
+=======
+	mean_time_to_happen = {
+		days = 1
+	}
+>>>>>>> origin/vse-po-novoy
 	picture = GFX_report_event_german_politician_speech
 	
 	is_triggered_only = yes
@@ -1967,6 +1988,7 @@ country_event = {
 			remove_from_faction = CZE
 		}
 	}
+<<<<<<< HEAD
 	option = { # Support the Czechs
 		name = germany.40.b	
 		ai_chance = {
@@ -2083,6 +2105,8 @@ country_event = {
 			add_opinion_modifier = { target = ROOT modifier = offered_support }
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # France (Britain Backs Down)
@@ -2093,7 +2117,13 @@ country_event = {
 	picture = GFX_report_event_chamberlain_announce
 
 	is_triggered_only = yes
+<<<<<<< HEAD
 	
+=======
+	mean_time_to_happen = {
+		days = 1
+	}
+>>>>>>> origin/vse-po-novoy
 	option = { # Follow Britain's lead
 		name = germany.41.a
 		ai_chance = {
@@ -2184,6 +2214,7 @@ country_event = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	option = { # Support the Czechs alone
 		name = germany.41.b	
 		trigger = { is_puppet = no }
@@ -2327,6 +2358,8 @@ country_event = {
 			add_stability = 0.05
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # France (Britain Supports the Czechs)
@@ -2596,6 +2629,7 @@ country_event = {
 		}
 		GER = { country_event = germany.50 }
 	}
+<<<<<<< HEAD
 	option = { # Refuse anyway
 		name = germany.46.b
 		ai_chance = {
@@ -2633,6 +2667,8 @@ country_event = {
 			}
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # Germany (British and (possibly) French Support for Czechoslovakia)
@@ -2894,6 +2930,7 @@ country_event = {
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
+<<<<<<< HEAD
 	option = { # Refuse
 		name = germany.53.b
 		ai_chance = {
@@ -2967,6 +3004,8 @@ country_event = {
 			}
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # The Czechs Resist
@@ -3271,6 +3310,7 @@ country_event = {
 			country_event = { hours = 6 id = news.61 }
 		}
 	}
+<<<<<<< HEAD
 	option = {
 		name = germany.56.b
 		ai_chance = { factor = 0 }
@@ -3281,6 +3321,8 @@ country_event = {
 			country_event = { hours = 6 id = germany.57 }
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # Hungary refuses partition!
@@ -4141,6 +4183,7 @@ country_event = {
 		# REVISIT Balance research bonus
 		give_SOV_armor_research_bonuses = yes
 	}
+<<<<<<< HEAD
 
 	option = {
 		name = germany.75.b	#no way
@@ -4152,6 +4195,8 @@ country_event = {
 			country_event = { days = 1 id = germany.77 }
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # Soviets Accept German-Soviet Treaty
@@ -4232,10 +4277,18 @@ country_event = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 2
+<<<<<<< HEAD
 				category = armor
 			}
 		}
 		SOV = {
+=======
+				type = armor
+			}
+		}
+		SOV = {
+			
+>>>>>>> origin/vse-po-novoy
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
 		}
@@ -4582,6 +4635,7 @@ country_event = {
 		}
 	}
 
+<<<<<<< HEAD
 	option = {
 		name = germany.83.b		#refuse
 		trigger = { NOT = { is_puppet_of = GER } }
@@ -4589,6 +4643,8 @@ country_event = {
 			factor = 2
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 # Call Pact Members to War (Instigator)
@@ -4646,6 +4702,7 @@ country_event = {
 	}
 
 	option = {
+<<<<<<< HEAD
 		name = germany.86.a
 		ai_chance = {
 			factor = 20
@@ -4672,6 +4729,8 @@ country_event = {
 	}
 
 	option = {
+=======
+>>>>>>> origin/vse-po-novoy
 		name = germany.86.b
 		ai_chance = {
 			factor = 80

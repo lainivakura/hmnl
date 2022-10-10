@@ -2,7 +2,11 @@ state= {
 	id=599
 	name="STATE_599"
 	manpower = 8685200
+<<<<<<< HEAD
 	state_category = city
+=======
+	state_category = town
+>>>>>>> origin/vse-po-novoy
 	resources={
 		tungsten=15 # was: 20
 		steel= 15 # was: 20
@@ -11,6 +15,7 @@ state= {
 
 	history= {
 		owner = CHI
+<<<<<<< HEAD
 		
 		add_core_of = CHI
 	
@@ -18,12 +23,20 @@ state= {
 			infrastructure = 2
 			industrial_complex = 4
 			arms_factory = 2
+=======
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+>>>>>>> origin/vse-po-novoy
 			air_base = 2
 		}
 		victory_points = { 
 			10404 3 
 		}
 
+<<<<<<< HEAD
 		1938.10.25 = {
 			if = {
 				limit = {
@@ -32,6 +45,8 @@ state= {
 				CHI = { transfer_state = PREV }
 			}
 		}
+=======
+>>>>>>> origin/vse-po-novoy
 
 	}
 	provinces={

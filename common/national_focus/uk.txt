@@ -223,6 +223,10 @@ focus_tree = {
 		y = 0
 			allow_branch = {
 					has_dlc = "Man the Guns"
+<<<<<<< HEAD
+=======
+					always = no
+>>>>>>> origin/vse-po-novoy
 				}
 			available = {
 					date > 1949.12.1
@@ -271,9 +275,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ENG_a_change_in_course
 		}
+<<<<<<< HEAD
 		x = 14
 		y = 0
 		relative_position_id = ENG_revisit_colonial_policy
+=======
+		x = 3
+		y = 0
+		relative_position_id = uk_empire_focus
+>>>>>>> origin/vse-po-novoy
 			available = {
 					if = {
 							limit = {
@@ -327,6 +337,10 @@ focus_tree = {
 		relative_position_id = ENG_steady_as_she_goes
 			allow_branch = {
 					has_dlc = "Man the Guns"
+<<<<<<< HEAD
+=======
+					always = no
+>>>>>>> origin/vse-po-novoy
 				}
 			available = {
 					date > 1949.12.1
@@ -688,7 +702,11 @@ focus_tree = {
 		prerequisite = {
 			focus = uk_service_focus
 		}
+<<<<<<< HEAD
 		x = 5
+=======
+		x = 3
+>>>>>>> origin/vse-po-novoy
 		y = 1
 		relative_position_id = uk_service_focus
 			available = {
@@ -746,6 +764,7 @@ focus_tree = {
 	}
 	focus = {
 		id = tizard_mission_focus
+<<<<<<< HEAD
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 1
 		prerequisite = {
@@ -790,6 +809,46 @@ focus_tree = {
 						}
 				}
 
+=======
+		available = {				
+			has_government = democratic
+			any_other_country = {
+				has_war_with = ROOT
+				NOT = { has_government = democratic }
+				num_of_factories > 30
+			}
+			NOt = {
+				has_war_with = USA
+			}
+			USA = { 
+				has_government = ROOT
+				has_war = no
+				NOT = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+					}
+				}
+			}
+			
+		} 
+		prerequisite = { focus = crypto_bomb_focus }
+		prerequisite = { focus = radar_focus }
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 3
+		relative_position_id = crypto_bomb_focus
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			USA = {
+				country_event = britain.1
+			}
+		}
+>>>>>>> origin/vse-po-novoy
 	}
 	focus = {
 		id = maud_focus
@@ -819,6 +878,149 @@ focus_tree = {
 				}
 
 	}
+<<<<<<< HEAD
+=======
+     
+	focus = {
+		id = ENG_Operation_Countenance
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = limited_rearmament_focus }
+		relative_position_id = limited_rearmament_focus
+		x = 2
+		y = 1
+		cost = 0
+		available = {
+			date > 1942.01.01
+			OR = {
+				GER = { has_full_control_of_state = 446 }
+				HUN = { has_full_control_of_state = 446 }
+				ITA = { has_full_control_of_state = 446 }
+				ROM = { has_full_control_of_state = 446 }
+			}
+		}
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = {
+				GER = {
+					country_event = { id = mtg_britain.1490 days = 1}
+				}
+				ROM = {
+					country_event = { id = mtg_britain.1490 days = 1}
+				}
+				HUN = {
+					country_event = { id = mtg_britain.1490 days = 1}
+				}
+				ITA = {
+					country_event = { id = mtg_britain.1490 days = 1}
+				}
+				SOV = {
+					266 = {
+						add_compliance = 100
+					}
+					416 = {
+						add_compliance = 100
+					}
+					419 = {
+						add_compliance = 100
+					}
+					420 = {
+						add_compliance = 100
+					}
+				}
+				ENG = {
+					410 = {
+						add_compliance = 100
+					}
+					411 = {
+						add_compliance = 100
+					}
+					412 = {
+						add_compliance = 100
+					}
+					413 = {
+						add_compliance = 100
+					}
+					414 = {
+						add_compliance = 100
+					}
+					417 = {
+						add_compliance = 100
+					}
+					418 = {
+						add_compliance = 100
+					}
+					421 = {
+						add_compliance = 100
+					}
+				}
+			}
+			411 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+			414 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+			412 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+			410 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+			}
+			SOV = {
+				transfer_state = 419
+				transfer_state = 420
+				
+				transfer_state = 266
+
+				transfer_state = 416
+				
+			}
+			ENG = {
+				transfer_state = 418
+			transfer_state = 417
+			transfer_state = 421
+			transfer_state = 410
+			transfer_state = 414
+			transfer_state = 412
+			transfer_state = 411
+			transfer_state = 413
+			}
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/vse-po-novoy
 	focus = {
 		id = ENG_motorized_focus
 		icon = GFX_goal_generic_army_motorized
@@ -1687,7 +1889,11 @@ focus_tree = {
 	focus = {
 		id = ENG_chiefs_of_staff_committee
 		icon = GFX_focus_eng_chiefs_of_staff_committee
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = air_rearmament_focus
 		}
@@ -1813,10 +2019,14 @@ focus_tree = {
 available = {
 					date > 1940.6.1 }
 			completion_reward = {
+<<<<<<< HEAD
 					add_offsite_building = {
 					type = arms_factory
 					level = 8
 				}
+=======
+					add_ideas = british_fighter_discount
+>>>>>>> origin/vse-po-novoy
 				}
 
 	}
@@ -1848,7 +2058,11 @@ available = {
 	focus = {
 		id = naval_rearmament_focus
 		icon = GFX_goal_generic_construct_naval_dockyard
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = general_rearmament_focus
 		}
@@ -2074,7 +2288,11 @@ available = {
 	focus = {
 		id = uk_convoy_focus
 		icon = GFX_goal_generic_navy_cruiser
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = uk_destroyer_focus
 		}
@@ -2242,7 +2460,11 @@ available = {
 	focus = {
 		id = ENG_expand_the_repair_yards
 		icon = GFX_goal_generic_production
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = uk_battleship_focus
 			focus = uk_carrier_focus
@@ -2376,7 +2598,11 @@ available = {
 		mutually_exclusive = {
 			focus = uk_spain_focus
 		}
+<<<<<<< HEAD
 		x = -3
+=======
+		x = -1
+>>>>>>> origin/vse-po-novoy
 		y = 1
 		relative_position_id = uk_mediterranean_focus
 			available = {
@@ -2422,6 +2648,12 @@ available = {
 		mutually_exclusive = {
 			focus = uk_rock_focus
 		}
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		x = -1
 		y = 1
 		relative_position_id = uk_mediterranean_focus
@@ -2633,6 +2865,12 @@ available = {
 		id = uk_balkan_strategy
 		icon = GFX_goal_generic_improve_relations
 		cost = 1
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = uk_protect_suez
 		}
@@ -2815,6 +3053,12 @@ available = {
 		id = uk_turkey_focus
 		icon = GFX_goal_generic_political_pressure
 		cost = 10
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = uk_protect_suez
 		}
@@ -2948,6 +3192,12 @@ available = {
 		id = uk_greece_focus
 		icon = GFX_goal_generic_political_pressure
 		cost = 10
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = uk_protect_suez
 		}
@@ -3079,8 +3329,13 @@ available = {
 		prerequisite = {
 			focus = uk_mediterranean_focus
 		}
+<<<<<<< HEAD
 		x = 2
 		y = 2
+=======
+		x = 1
+		y = 1
+>>>>>>> origin/vse-po-novoy
 		relative_position_id = uk_mediterranean_focus
 			available = {
 					116 = {
@@ -8478,6 +8733,10 @@ available = {
 		relative_position_id = ENG_steady_as_she_goes
 			allow_branch = {
 					has_dlc = "Man the Guns"
+<<<<<<< HEAD
+=======
+					always = no
+>>>>>>> origin/vse-po-novoy
 				}
 			available = {
 					date > 1949.12.1
@@ -9177,7 +9436,11 @@ available = {
 		mutually_exclusive = {
 			focus = ENG_global_defense
 		}
+<<<<<<< HEAD
 		x = 5
+=======
+		x = 3
+>>>>>>> origin/vse-po-novoy
 		y = 1
 		relative_position_id = ENG_steady_as_she_goes
 			offset = {
@@ -9262,6 +9525,13 @@ available = {
 		cost = 10
 		prerequisite = {
 			focus = ENG_home_defence
+<<<<<<< HEAD
+=======
+
+		}
+		allow_branch = {
+			always = no
+>>>>>>> origin/vse-po-novoy
 		}
 		x = -6
 		y = 1
@@ -9355,7 +9625,12 @@ available = {
 		y = 1
 		relative_position_id = uk_iran_focus
 			allow_branch = {
+<<<<<<< HEAD
 					always = yes
+=======
+					always = no
+				
+>>>>>>> origin/vse-po-novoy
 				}
 			available = {
 					SOV = {
@@ -9384,6 +9659,10 @@ available = {
 		id = ENG_war_with_ussr
 		icon = GFX_focus_attack_soviet
 		cost = 10
+<<<<<<< HEAD
+=======
+		
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = ENG_embargo_ussr
 		}
@@ -9416,7 +9695,11 @@ available = {
 		prerequisite = {
 			focus = ENG_home_defence
 		}
+<<<<<<< HEAD
 		x = 4
+=======
+		x = 1
+>>>>>>> origin/vse-po-novoy
 		y = 1
 		relative_position_id = ENG_home_defence
 			available = {
@@ -9480,6 +9763,12 @@ available = {
 		prerequisite = {
 			focus = ENG_military_training_act
 		}
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		x = 0
 		y = 1
 		relative_position_id = ENG_military_training_act
@@ -9516,6 +9805,10 @@ available = {
 		prerequisite = {
 			focus = ENG_embargo_germany
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/vse-po-novoy
 		x = 0
 		y = 1
 		relative_position_id = ENG_embargo_germany
@@ -9545,6 +9838,12 @@ available = {
 		id = uk_scandinavian_focus
 		icon = GFX_goal_generic_position_armies
 		cost = 10
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = ENG_home_defence
 		}
@@ -9806,6 +10105,12 @@ available = {
 		id = ENG_benelux_intervention
 		icon = GFX_goal_generic_position_armies
 		cost = 10
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = ENG_home_defence
 		}

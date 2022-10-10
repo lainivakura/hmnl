@@ -13,8 +13,11 @@ state={
 
 		}
 		add_core_of = YUG
+<<<<<<< HEAD
 	
 		add_claim_by = BUL
+=======
+>>>>>>> origin/vse-po-novoy
 
 	}
 

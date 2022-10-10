@@ -1,15 +1,33 @@
 state={
 	id=729
 	name="STATE_729"
+<<<<<<< HEAD
 	manpower = 1
+=======
+	manpower = 157805
+>>>>>>> origin/vse-po-novoy
 	
 	state_category = enclave
 	
 	history={
+<<<<<<< HEAD
 		owner = AFR
 
 		add_core_of = AFR
 
+=======
+		owner = POR
+		add_core_of = CHI
+		victory_points = {
+			4189 1 
+		}
+		buildings = {
+			infrastructure = 2
+			4189 = {
+				naval_base = 1
+			}
+		}
+>>>>>>> origin/vse-po-novoy
 	}
 	
 	provinces={

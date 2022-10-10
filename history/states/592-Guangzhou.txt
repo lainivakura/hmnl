@@ -11,9 +11,13 @@ state={
 
 	history={
 		owner = CHI
+<<<<<<< HEAD
 		
 		add_core_of = CHI
 	
+=======
+		add_core_of = CHI
+>>>>>>> origin/vse-po-novoy
 		
 		buildings = {
 			infrastructure = 2
@@ -31,6 +35,7 @@ state={
 			1047 5
 		}
 
+<<<<<<< HEAD
 		1938.10.25 = {
 			if = {
 				limit = {
@@ -47,6 +52,10 @@ state={
 			} 			
 		}
 	}
+=======
+		}
+	
+>>>>>>> origin/vse-po-novoy
 
 	provinces={
 		1047 1087 1131 1187 4092 7039 7152 9963 11938 11941 12077 

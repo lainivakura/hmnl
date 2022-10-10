@@ -1,5 +1,6 @@
 ﻿capital = 49
 
+<<<<<<< HEAD
 if = {
 	limit = {
 		NOT = {
@@ -21,6 +22,8 @@ if = {
 		set_naval_oob = "TUR_1936_naval_legacy"
 	}
 }
+=======
+>>>>>>> origin/vse-po-novoy
 
 ###################
 #### 3D MODELS ####
@@ -32,6 +35,7 @@ if = {
 #TUR_fascism
 #TUR_neutrality
 set_cosmetic_tag = TUR_neutrality
+<<<<<<< HEAD
 add_opinion_modifier = {
 			target = USA
 			modifier = embargo
@@ -159,6 +163,11 @@ set_research_slots = 3
 add_ideas = {
      Horrors_WW1
 	}
+=======
+
+set_research_slots = 3
+
+>>>>>>> origin/vse-po-novoy
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -167,6 +176,7 @@ set_technology = {
 	tech_support = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+<<<<<<< HEAD
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
@@ -438,6 +448,11 @@ if = {
 		}
 	}
 }
+=======
+	basic_train = 1
+}
+
+>>>>>>> origin/vse-po-novoy
 
 set_politics = {
 	ruling_party = neutrality
@@ -452,6 +467,7 @@ set_popularities = {
 set_convoys = 20
 set_stability = 0.5
 set_war_support = 0.3
+<<<<<<< HEAD
 
 if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
@@ -735,3 +751,5 @@ if = {
 		}
 	}
 }
+=======
+>>>>>>> origin/vse-po-novoy

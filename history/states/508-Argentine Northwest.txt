@@ -5,10 +5,15 @@ state={
 	manpower = 1
 	
 	state_category = rural
+<<<<<<< HEAD
 history={
 		owner = AFR
 
 		add_core_of = AFR
+=======
+
+	history={
+>>>>>>> origin/vse-po-novoy
 
 	}
 

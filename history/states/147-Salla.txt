@@ -13,7 +13,10 @@ state=
 		}
 		add_core_of = FIN
 		
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 		victory_points = {
 			197 1
 		}

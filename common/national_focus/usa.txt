@@ -270,7 +270,11 @@ date > 1941.5.1
 			ai_will_do = {
 					factor = 1
 				}
+<<<<<<< HEAD
 			available = {
+=======
+			available = { date > 1937.7.1
+>>>>>>> origin/vse-po-novoy
 					congress_medium_support_trigger = yes
 					has_government = democratic
 				}
@@ -315,7 +319,11 @@ date > 1941.5.1
 			ai_will_do = {
 					factor = 1
 				}
+<<<<<<< HEAD
 			available = { date > 1938.6.1
+=======
+			available = { 
+>>>>>>> origin/vse-po-novoy
 					congress_medium_support_trigger = yes
 					has_government = democratic
 					not = {
@@ -359,7 +367,11 @@ date > 1941.5.1
 			ai_will_do = {
 					factor = 1
 				}
+<<<<<<< HEAD
 			available = { date > 1940.6.1
+=======
+			available = { 
+>>>>>>> origin/vse-po-novoy
 					congress_medium_support_trigger = yes
 					has_government = democratic
 					not = {
@@ -1280,8 +1292,13 @@ date > 1941.5.1
 					factor = 1
 				}
 			available = {
+<<<<<<< HEAD
 				date > 1942.1.1
 			}
+=======
+date > 1942.1.1
+}
+>>>>>>> origin/vse-po-novoy
 			bypass = {
 
 }
@@ -1307,8 +1324,13 @@ date > 1941.5.1
 		x = 22
 		y = 2
 			available = {
+<<<<<<< HEAD
 				date > 1942.1.1
 			}
+=======
+date > 1942.1.1
+}
+>>>>>>> origin/vse-po-novoy
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			#ai_will_do = {
@@ -1366,7 +1388,11 @@ date > 1941.5.1
 		y = 2
 			available = {
 
+<<<<<<< HEAD
 			}			
+=======
+}
+>>>>>>> origin/vse-po-novoy
 			continue_if_invalid = yes
 			available_if_capitulated = yes
 			#ai_will_do = {
@@ -1526,12 +1552,17 @@ date > 1941.5.1
 					else = {
 							add_political_power = 150
 						}
+<<<<<<< HEAD
 					if = {
 							limit = {
 									has_war_support < 0.1
 								}
 							set_war_support = 0.1
 						}
+=======
+					set_war_support = 0.1
+						
+>>>>>>> origin/vse-po-novoy
 					if = {
 							limit = {
 									has_war_support < 0.4
@@ -1949,7 +1980,11 @@ date > 1941.5.1
 		prerequisite = {
 			focus = USA_air_war_plans_division
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> origin/vse-po-novoy
 		x = 36
 		y = 2
 			available_if_capitulated = yes
@@ -2265,7 +2300,11 @@ date > 1941.5.1
 	focus = {
 		id = USA_bureau_of_aeronautics
 		icon = GFX_goal_generic_air_naval_bomber
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = USA_carrier_primacy
 		}
@@ -2564,7 +2603,11 @@ date > 1941.5.1
 	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = USA_two_ocean_navy_act
 		}
@@ -2588,7 +2631,11 @@ date > 1941.5.1
 	focus = {
 		id = USA_expand_the_USMC
 		icon = GFX_goal_generic_special_forces
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = USA_fund_the_navy
 		}
@@ -2610,7 +2657,11 @@ date > 1941.5.1
 	focus = {
 		id = USA_amphibious_operations
 		icon = GFX_goal_generic_amphibious_assault
+<<<<<<< HEAD
 		cost = 10
+=======
+		cost = 5
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = USA_expand_the_USMC
 		}

@@ -17,11 +17,18 @@ state = {
 		
 		buildings = {
 			infrastructure = 2
+<<<<<<< HEAD
+=======
+			industrial_complex = 1
+>>>>>>> origin/vse-po-novoy
 			air_base = 1
 		}
 		
 		add_core_of = SOV
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 
 	}
 

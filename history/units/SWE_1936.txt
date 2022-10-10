@@ -60,6 +60,7 @@ units = {
 	
 }
 
+<<<<<<< HEAD
 ### Flygvapnet ###
 air_wings = {
 	141 = {
@@ -83,6 +84,8 @@ air_wings = {
 	}
 }
 
+=======
+>>>>>>> origin/vse-po-novoy
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {

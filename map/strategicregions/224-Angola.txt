@@ -8,4 +8,8 @@ strategic_region={
 	weather={
 		
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/vse-po-novoy

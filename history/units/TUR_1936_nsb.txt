@@ -84,6 +84,7 @@ division_template = {
 #}
 
 units = {
+<<<<<<< HEAD
 	
 }
 
@@ -103,6 +104,8 @@ air_wings = {
 			amount = 16
 		}
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 
@@ -117,6 +120,7 @@ instant_effect = {
 		progress = 0.43
 		efficiency = 100
 	}
+<<<<<<< HEAD
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
@@ -126,4 +130,6 @@ instant_effect = {
 		progress = 0.47
 		efficiency = 100
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }

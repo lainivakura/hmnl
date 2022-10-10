@@ -8,7 +8,10 @@ state={
 	history={
 		owner = FRA
 		add_core_of = CHI
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 2
 			11981 = {

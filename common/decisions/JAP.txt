@@ -2125,5 +2125,10 @@ prospect_for_resources = {
 			}
 		}	
 	}
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> origin/vse-po-novoy
 
 }

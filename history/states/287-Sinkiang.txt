@@ -3,11 +3,15 @@ state={
 	name="STATE_287"
 
 	history={
+<<<<<<< HEAD
 		owner =AFR
 	
 		add_core_of = AFR
 	
 		
+=======
+	
+>>>>>>> origin/vse-po-novoy
 	}
 
 

@@ -5,11 +5,20 @@ state={
 
 	history={
 		owner = LAT
+<<<<<<< HEAD
 		victory_points = {
 			6222 3 #Jelgava
 		}
 		victory_points = {
 			3255 1 #Jekabpils
+=======
+		
+		victory_points = {
+			310 3 #Daugavpils
+		}
+		victory_points = {
+			222 1 #Rezekne
+>>>>>>> origin/vse-po-novoy
 		}
 		buildings = {
 			infrastructure = 2
@@ -24,7 +33,10 @@ state={
 		}
 		add_core_of = LAT
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

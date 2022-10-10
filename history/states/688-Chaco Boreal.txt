@@ -1,6 +1,7 @@
 state={
 	id=688
 	name="STATE_688"
+<<<<<<< HEAD
 	manpower =1
 	
 	state_category = pastoral
@@ -12,6 +13,12 @@ state={
 
 		add_core_of = AFR
 
+=======
+	manpower = 1
+	
+	state_category = pastoral
+	history={
+>>>>>>> origin/vse-po-novoy
 	}
 	
 	provinces={

@@ -6,10 +6,13 @@ state={
 	state_category = rural
 
 	history={
+<<<<<<< HEAD
 		owner = AFR
 
 		add_core_of = AFR
 
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

@@ -105,7 +105,11 @@
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
+<<<<<<< HEAD
 		cost = 4
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -143,7 +147,11 @@
 		y = 1
 		relative_position_id = CAN_rowell_sirois_commission
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 75
@@ -175,10 +183,17 @@
 				limit = {
 					has_state_flag = CAN_national_housing_act_IC
 				}
+<<<<<<< HEAD
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
+=======
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 			}
@@ -193,10 +208,17 @@
 						include_locked = yes
 					}
 				}
+<<<<<<< HEAD
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
+=======
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -213,7 +235,11 @@
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 75
@@ -250,7 +276,11 @@
 		y = 2
 		relative_position_id = CAN_rowell_sirois_commission
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 75
@@ -273,6 +303,40 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+<<<<<<< HEAD
+=======
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+>>>>>>> origin/vse-po-novoy
 			build_railway = { #Vancouver - NW Canada
 				path = {
 					1408 1858 10273 4870 10548
@@ -289,7 +353,11 @@
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
+<<<<<<< HEAD
 		cost = 2
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 75
@@ -324,6 +392,25 @@
 			build_railway = {
 				path = { 7433 12149 }
 			}
+<<<<<<< HEAD
+=======
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -336,7 +423,11 @@
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 75
@@ -388,10 +479,17 @@
 						include_locked = yes
 					}
 				}
+<<<<<<< HEAD
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
 					level = 3
+=======
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = CAN_retool_angus_shops_AF
@@ -407,7 +505,11 @@
 		y = 4
 		relative_position_id = CAN_rowell_sirois_commission
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 75
@@ -433,25 +535,41 @@
 			470 = {
 				add_resource = {
 					type = oil
+<<<<<<< HEAD
 					amount = 7
+=======
+					amount = 2
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 			471 = {
 				add_resource = {
 					type = oil
+<<<<<<< HEAD
 					amount = 13
+=======
+					amount = 4
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 			472 = {
 				add_resource = {
 					type = oil
+<<<<<<< HEAD
 					amount = 11
+=======
+					amount = 4
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
+<<<<<<< HEAD
 					amount = 9
+=======
+					amount = 4
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -468,7 +586,11 @@
 		x = 8
 		y = 0
 
+<<<<<<< HEAD
 		cost = 7
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 30
@@ -509,7 +631,11 @@
 		y = 0
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 3
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 80
@@ -543,7 +669,11 @@
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 50
@@ -640,7 +770,11 @@
 		y = 1
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 7
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -704,7 +838,11 @@
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -736,7 +874,11 @@
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 7
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 75
@@ -768,7 +910,11 @@
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -796,6 +942,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+<<<<<<< HEAD
 			682 = {
 			
 				add_resource = {
@@ -815,6 +962,36 @@
 				add_resource = {
 					type = chromium
 					amount = 36
+=======
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 471 472 683 }
+				limit = {
+					is_in_home_area = yes
+				}
+				add_resource = {
+					type = chromium
+					amount = 3
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -971,7 +1148,11 @@
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 50
@@ -1042,7 +1223,11 @@
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 7
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -1074,7 +1259,11 @@
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -1177,7 +1366,11 @@
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 50
@@ -1325,7 +1518,11 @@
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
+<<<<<<< HEAD
 		
+=======
+		mutually_exclusive = { focus = CAN_send_in_the_zombies }
+>>>>>>> origin/vse-po-novoy
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1427,7 +1624,11 @@
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
+<<<<<<< HEAD
 		
+=======
+		mutually_exclusive = { focus = CAN_national_steel_car }
+>>>>>>> origin/vse-po-novoy
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1465,7 +1666,11 @@
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -1868,7 +2073,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+<<<<<<< HEAD
 			army_experience = 5 
+=======
+			army_experience = 10 
+>>>>>>> origin/vse-po-novoy
 			add_doctrine_cost_reduction = {
 				name = CAN_army_modernization
 				cost_reduction = 0.5
@@ -2114,7 +2323,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+<<<<<<< HEAD
 			army_experience = 5
+=======
+			army_experience = 15
+>>>>>>> origin/vse-po-novoy
 			add_doctrine_cost_reduction = {
 				name = CAN_red_deer_training_camp
 				cost_reduction = 0.5
@@ -2462,7 +2675,11 @@
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
+<<<<<<< HEAD
 		cost = 2
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 35
@@ -2500,7 +2717,11 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -2535,7 +2756,11 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -2589,7 +2814,11 @@
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 25
@@ -2638,7 +2867,11 @@
 
 		available = {
 			controls_state = 682
+<<<<<<< HEAD
 			controls_state = 466
+=======
+			controls_state = 863
+>>>>>>> origin/vse-po-novoy
 			controls_state = 468
 		}
 		
@@ -2655,6 +2888,7 @@
 			682 = {
 				add_resource = {
 					type = aluminium
+<<<<<<< HEAD
 					amount = 34
 				}
 			}
@@ -2662,12 +2896,25 @@
 				add_resource = {
 					type = aluminium
 					amount = 18
+=======
+					amount = 20
+				}
+			}
+			863 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 			468 = {
 				add_resource = {
 					type = aluminium
+<<<<<<< HEAD
 					amount = 38
+=======
+					amount = 8
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -2704,7 +2951,11 @@
 			470 = {
 				add_resource = {
 					type = oil
+<<<<<<< HEAD
 					amount = 49
+=======
+					amount = 36
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -2715,7 +2966,11 @@
 	#### LEAVE COMMONWEALTH ####
 	############################
 
+<<<<<<< HEAD
 	focus = {
+=======
+	focus = {allow_branch = {always = no}
+>>>>>>> origin/vse-po-novoy
 		id = CAN_patriation
 		icon = GFX_goal_tfv_sever_ties_with_uk #GFX_goal_generic_demand_territory
 		mutually_exclusive = { focus = CAN_strengthen_the_commonwealth_ties }
@@ -2737,7 +2992,10 @@
 		}
 
 		available = {
+<<<<<<< HEAD
 date > 1949.12.1
+=======
+>>>>>>> origin/vse-po-novoy
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -3051,7 +3309,14 @@ date > 1949.12.1
 
 		available = {
 			has_government = fascism
+<<<<<<< HEAD
 			GER = { has_government = fascism }
+=======
+			GER = { 
+				has_government = fascism 
+				is_subject = no
+			}
+>>>>>>> origin/vse-po-novoy
 
 			NOT = {
 				has_war_with = GER
@@ -3674,7 +3939,11 @@ date > 1949.12.1
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
+<<<<<<< HEAD
 		x = 35
+=======
+		x = 25
+>>>>>>> origin/vse-po-novoy
 		y = 0
 
 		cost = 10
@@ -3773,10 +4042,14 @@ date > 1949.12.1
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
 				uses = 1
+<<<<<<< HEAD
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
 				technology = fighter3
+=======
+				category = light_fighter
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 	}
@@ -4182,7 +4455,11 @@ date > 1949.12.1
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
+<<<<<<< HEAD
 		x = 39
+=======
+		x = 30
+>>>>>>> origin/vse-po-novoy
 		y = 0
 
 		cost = 10

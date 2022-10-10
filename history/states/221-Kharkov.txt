@@ -21,7 +21,10 @@ state={
 			air_base = 5
 		}
 		add_core_of = SOV
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

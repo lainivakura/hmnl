@@ -6,12 +6,20 @@ state={
 	
 	state_category = rural
 	
+<<<<<<< HEAD
 	
 
 	history={
 		owner = AFR
 
 		add_core_of = AFR
+=======
+	resources={
+		rubber=23 # was: 30
+	}
+
+	history={
+>>>>>>> origin/vse-po-novoy
 
 	}
 

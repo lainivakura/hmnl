@@ -1,4 +1,5 @@
 ﻿capital = 112
+<<<<<<< HEAD
 add_opinion_modifier = {
 			target = USA
 			modifier = embargo
@@ -125,6 +126,9 @@ add_ideas = {
 add_ideas = {
      Horrors_WW1
 	}
+=======
+
+>>>>>>> origin/vse-po-novoy
 oob = "POR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -133,6 +137,21 @@ if = {
 		set_naval_oob = "POR_1936_naval_legacy"
 	}
 }
+<<<<<<< HEAD
+=======
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "POR_1936_air_bba"
+	else = {
+		set_air_oob = "POR_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+>>>>>>> origin/vse-po-novoy
 
 set_research_slots = 3
 
@@ -143,9 +162,12 @@ set_technology = {
 	interwar_antiair = 1
 	tech_support = 1		
 	tech_engineers = 1
+<<<<<<< HEAD
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
+=======
+>>>>>>> origin/vse-po-novoy
 	basic_train = 1
 }
 if = {
@@ -175,7 +197,12 @@ if = {
 
 if = {
 	limit = { has_dlc = "La Resistance" }	
+<<<<<<< HEAD
 	
+=======
+	add_ideas = POR_unreliable_army
+	add_ideas = POR_unstable_republic
+>>>>>>> origin/vse-po-novoy
 	set_stability = 0.60
 	set_war_support = 0.15	
 	set_research_slots = 2
@@ -221,6 +248,7 @@ if = {
 			has_dlc = "La Resistance"
 		}
 
+<<<<<<< HEAD
 		
 
 		
@@ -228,6 +256,47 @@ if = {
 		else = {
 			#generic focuses
 			
+=======
+		complete_national_focus = POR_estado_novo
+		unlock_national_focus = POR_support_the_spanish_nationalists
+		complete_national_focus = POR_portuguese_legion
+		complete_national_focus = POR_observation_mission
+		unlock_national_focus = POR_send_assistance
+		complete_national_focus = POR_army_reorganization
+		complete_national_focus = POR_metropolitan_army
+		complete_national_focus = POR_corpo_do_estado_maior
+		complete_national_focus = POR_second_navy_reequipment
+		complete_national_focus = POR_a_powerful_merchant_marine
+		complete_national_focus = POR_merchant_marine_protection
+		complete_national_focus = POR_arsenal_do_alfeite
+		complete_national_focus = POR_continue_the_public_works
+		complete_national_focus = POR_instituto_superior_tecnico
+		complete_national_focus = POR_roads_bridges_and_dams
+		complete_national_focus = POR_ogme
+		complete_national_focus = POR_food_industries
+		complete_national_focus = POR_textile_industry
+		complete_national_focus = POR_colonial_assimilation_policy
+
+		SPA = {
+			add_opinion_modifier = {
+				target = POR
+				modifier = POR_helped_in_civil_war
+			}
+		}
+		add_ideas = POR_volunteers_in_the_war_nationalist
+
+		else = {
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = large_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 		
@@ -239,6 +308,16 @@ if = {
 			set_naval_oob = "POR_1939_naval_legacy"
 		}
 	}
+<<<<<<< HEAD
+=======
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "POR_1939_air_bba"
+		else = {
+			set_air_oob = "POR_1939_air_legacy"
+		}
+	}
+>>>>>>> origin/vse-po-novoy
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons2 = 1
@@ -303,6 +382,7 @@ set_popularities = {
 set_convoys = 100
 set_stability = 0.75
 
+<<<<<<< HEAD
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -318,6 +398,8 @@ if = {
 
 	
 }
+=======
+>>>>>>> origin/vse-po-novoy
 
 ### VARIANTS ###
 # 1936 Start #

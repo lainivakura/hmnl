@@ -7,9 +7,17 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+<<<<<<< HEAD
 		
 		buildings = {
 			infrastructure = 1
+=======
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+>>>>>>> origin/vse-po-novoy
 
 		}
 		victory_points = {
@@ -19,6 +27,10 @@ state={
 			buildings = {
 				infrastructure = 2
 				air_base = 1
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 	}

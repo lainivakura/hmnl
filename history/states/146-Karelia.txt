@@ -7,11 +7,15 @@ state={
 	history={
 		owner = FIN
 		add_core_of = FIN
+<<<<<<< HEAD
 		add_core_of = SOV
+=======
+>>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
 
+<<<<<<< HEAD
 			
 			#Mannerheim Line
 			9100 = {
@@ -23,6 +27,17 @@ state={
 			9206 = {
 				coastal_bunker = 5
 bunker = 5
+=======
+			#Mannerheim Line
+			9100 = {
+				bunker = 2
+			}
+			9105 = {
+				bunker = 2
+			}
+			9206 = {
+				coastal_bunker = 1
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 		victory_points = {

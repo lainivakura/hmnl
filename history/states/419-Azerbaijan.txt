@@ -2,7 +2,11 @@
 state={
 	id=419
 	name="STATE_419"
+<<<<<<< HEAD
 	manpower = 1
+=======
+	manpower = 1431714
+>>>>>>> origin/vse-po-novoy
 	
 	state_category = rural
 	history={
@@ -20,7 +24,10 @@ state={
 			1822 1 
 		}
 		add_core_of = PER
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

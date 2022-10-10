@@ -9,7 +9,10 @@ state={
 	history={
 		owner = JAP
 		add_core_of = CHI
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

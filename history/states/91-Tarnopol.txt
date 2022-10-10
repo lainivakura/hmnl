@@ -19,11 +19,19 @@ state={
 			air_base = 5
 		}
 		add_core_of = POL
+<<<<<<< HEAD
 		add_core_of = SOV
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={
 		438 491 536 3483 3562 9454 9468 9558 11427 11479 
 	}
+<<<<<<< HEAD
 local_supplies=0.0 
+=======
+
+	local_supplies=0.0 
+>>>>>>> origin/vse-po-novoy
 }

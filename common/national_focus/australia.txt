@@ -708,6 +708,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
+<<<<<<< HEAD
 			add_tech_bonus = {
 				name = AST_cac_boomerang
 				bonus = 1.0
@@ -717,6 +718,37 @@
 				technology = fighter1
 				technology = fighter2
 				technology = fighter3
+=======
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_tech_bonus = {
+					name = AST_cac_boomerang
+					bonus = 1.0
+					ahead_reduction = 2
+					uses = 1
+					category = light_fighter
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = AST_cac_boomerang
+					bonus = 0.75
+					uses = 1
+					category = light_fighter
+				}
+				create_equipment_variant = {
+					name = "CAC Boomerang" #
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						engine_type_slot = engine_2_1x
+						special_type_slot_1 = drop_tanks
+					}
+				}	
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 	}
@@ -771,7 +803,11 @@
 		completion_reward = {
 			air_experience = 25
 			random_owned_controlled_state = {
+<<<<<<< HEAD
 				prioritize = { 521 520 }
+=======
+				prioritize = { 521 520 872}
+>>>>>>> origin/vse-po-novoy
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -822,6 +858,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
+<<<<<<< HEAD
 			add_tech_bonus = {
 				name = AST_cac_woomera
 				bonus = 3.0
@@ -835,6 +872,49 @@
 				bonus = 1.0
 				uses = 1
 				category = cat_strategic_bomber
+=======
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				add_tech_bonus = {
+					name = AST_cac_woomera
+					bonus = 3.0
+					uses = 1
+					category = cat_strategic_bomber
+					category = tactical_bomber
+					category = naval_air
+				}
+				add_tech_bonus = {
+					name = AST_cac_woomera
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = AST_cac_woomera
+					bonus = 2
+					uses = 2
+					category = tactical_bomber
+					category = naval_air
+				}
+				create_equipment_variant = {
+					name = "CAC Woomera" #
+					type = medium_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = medium_bomb_bay
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+						fixed_auxiliary_weapon_slot_3 = bomb_locks
+						engine_type_slot = engine_3_2x
+						special_type_slot_1 = lmg_defense_turret_2x
+					}
+				}
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 	}
@@ -915,7 +995,11 @@
 			if = {
 				limit = { has_tech = radio_detection }
 				random_owned_controlled_state = {
+<<<<<<< HEAD
 					prioritize = { 521 }
+=======
+					prioritize = { 521 872 }
+>>>>>>> origin/vse-po-novoy
 					limit = {
 						is_in_home_area = yes
 						free_building_slots = {
@@ -973,7 +1057,11 @@
 					}
 					effect_tooltip = {
 						random_owned_controlled_state = {
+<<<<<<< HEAD
 							prioritize = { 521 }
+=======
+							prioritize = { 521 872 }
+>>>>>>> origin/vse-po-novoy
 							limit = {
 								is_in_home_area = yes
 							}
@@ -998,7 +1086,11 @@
 						}
 					}
 					random_owned_controlled_state = {
+<<<<<<< HEAD
 						prioritize = { 521 }
+=======
+						prioritize = { 521 872 }
+>>>>>>> origin/vse-po-novoy
 						limit = {
 							is_in_home_area = yes
 							free_building_slots = {
@@ -1679,7 +1771,11 @@
 		x = 14
 		y = 0
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 4
@@ -1710,7 +1806,11 @@
 		y = 0
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -1748,7 +1848,11 @@
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 3
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -1762,6 +1866,10 @@
 			NOT = {
 				controls_state = 522
 				controls_state = 519
+<<<<<<< HEAD
+=======
+				controls_state = 871
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -1774,6 +1882,43 @@
 			build_railway = {
 				path = { 1652 2157 10983 1526 10949 8200 10969 2191 12948 5197 8165 10927 8186 }
 			}
+<<<<<<< HEAD
+=======
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					NOT = {state = 674}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+						include_locked = yes
+					}
+					NOT = {state = 674}
+				}
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -1785,7 +1930,11 @@
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -1809,10 +1958,17 @@
 				limit = {
 					has_state_flag = AST_south_australian_housing_trust_IC
 				}
+<<<<<<< HEAD
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
+=======
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 			}
@@ -1829,10 +1985,17 @@
 					}
 					NOT = { state = 674 }
 				}
+<<<<<<< HEAD
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 4
+=======
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = AST_south_australian_housing_trust_IC
@@ -1848,7 +2011,11 @@
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -1872,10 +2039,17 @@
 				limit = {
 					has_state_flag = AST_department_of_supply_and_development_AF
 				}
+<<<<<<< HEAD
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
+=======
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 			}
@@ -1892,10 +2066,17 @@
 					}
 					NOT = { state = 674 }
 				}
+<<<<<<< HEAD
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
+=======
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = AST_department_of_supply_and_development_AF
@@ -1911,7 +2092,11 @@
 		y = 3
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -1975,7 +2160,11 @@
 		y = 3
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -2067,7 +2256,11 @@
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 3
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -2091,6 +2284,11 @@
 				level = 2
 				path = { 7669 1431 12104 1454 }
 			}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -2102,7 +2300,11 @@
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -2174,7 +2376,11 @@
 		x = 22
 		y = 0
 
+<<<<<<< HEAD
 		cost = 7
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 3
@@ -2209,7 +2415,11 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 8
@@ -2244,7 +2454,11 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -2275,7 +2489,11 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 10
@@ -2310,7 +2528,11 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 7
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 15
@@ -2342,7 +2564,11 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -2374,7 +2600,11 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -2406,7 +2636,11 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -2549,7 +2783,11 @@
 		y = 4
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 15
@@ -2641,7 +2879,11 @@
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 5
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 5
@@ -2700,14 +2942,22 @@
 				limit = { has_state_flag = AST_rationing_and_recycling_alu }
 				add_resource = {
 					type = aluminium
+<<<<<<< HEAD
 					amount = 39
+=======
+					amount = 24
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 			random_state = {
 				limit = { has_state_flag = AST_rationing_and_recycling_oil }
 				add_resource = {
 					type = oil
+<<<<<<< HEAD
 					amount = 23
+=======
+					amount = 12
+>>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -2720,7 +2970,11 @@
 				}
 				add_resource = {
 					type = aluminium
+<<<<<<< HEAD
 					amount = 39
+=======
+					amount = 24
+>>>>>>> origin/vse-po-novoy
 				}
 				set_state_flag = AST_rationing_and_recycling_alu
 			}
@@ -2731,7 +2985,11 @@
 				}
 				add_resource = {
 					type = oil
+<<<<<<< HEAD
 					amount = 23
+=======
+					amount = 12
+>>>>>>> origin/vse-po-novoy
 				}
 				set_state_flag = AST_rationing_and_recycling_oil
 			}
@@ -2746,7 +3004,11 @@
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< HEAD
 		cost = 1
+=======
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -3333,7 +3595,11 @@
 	#### LEAVE COMMONWEALTH ####
 	############################
 	
+<<<<<<< HEAD
 	focus = {
+=======
+	focus = {allow_branch = {always = no}
+>>>>>>> origin/vse-po-novoy
 		id = AST_never_another_gallipoli
 		icon = GFX_focus_AST_never_gallipoli
 		mutually_exclusive = { focus = AST_support_the_policy_of_appeasement }
@@ -3365,7 +3631,10 @@
 		}
 
 		available = {
+<<<<<<< HEAD
 date > 1949.12.1
+=======
+>>>>>>> origin/vse-po-novoy
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		

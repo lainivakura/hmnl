@@ -1,6 +1,7 @@
 state={
 	id=492
 	name="STATE_492"
+<<<<<<< HEAD
 	
 	
 	state_category = rural
@@ -9,6 +10,11 @@ state={
 		owner = AFR
 
 		add_core_of = AFR
+=======
+	state_category = rural
+
+	history={
+>>>>>>> origin/vse-po-novoy
 
 	}
 
@@ -16,7 +22,11 @@ state={
 		2182 2210 2225 5202 12953 13086 13175 
 	}
 	manpower=1
+<<<<<<< HEAD
 
+=======
+	buildings_max_level_factor=1.000
+>>>>>>> origin/vse-po-novoy
 
 	local_supplies=0.0 
 }

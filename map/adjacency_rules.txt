@@ -51,10 +51,18 @@ adjacency_rule =
 		OR = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
 			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
+<<<<<<< HEAD
 		}
 		tooltip = disable_canal_tt
 	}
 		
+=======
+			has_country_flag = SUEZ_SANCTIONS_FLAG
+		}
+		tooltip = suez_blocked_tt
+	}
+	
+>>>>>>> origin/vse-po-novoy
 	icon = 12049
 	offset = { 1 0 -6 }
 }
@@ -168,7 +176,11 @@ adjacency_rule =
 	neutral =
 	{
 		army = no
+<<<<<<< HEAD
 		navy = no
+=======
+		navy = yes
+>>>>>>> origin/vse-po-novoy
 		submarine = no
 		trade = yes
 	}
@@ -190,11 +202,17 @@ adjacency_rule =
 #Marmara Strait
 adjacency_rule =
 {
+<<<<<<< HEAD
 	name = "BOSPHORUS_STRAIT"
 
 	is_friend = {
 		
 	}
+=======
+	
+	name = "BOSPHORUS_STRAIT"
+
+>>>>>>> origin/vse-po-novoy
 	contested =
 	{
 		army = no
@@ -219,11 +237,18 @@ adjacency_rule =
 	neutral =
 	{
 		army = no
+<<<<<<< HEAD
 		navy = no
 		submarine = no
 		trade = yes
 	}
 	
+=======
+		navy = yes
+		submarine = no
+		trade = yes
+	}
+>>>>>>> origin/vse-po-novoy
 	required_provinces = { 9833 11829 }
 
 	is_disabled = {
@@ -235,6 +260,7 @@ adjacency_rule =
 	offset = { -2 0 -9 }
 }
 
+<<<<<<< HEAD
 #The Dardanelles
 adjacency_rule =
 {
@@ -284,6 +310,8 @@ adjacency_rule =
 	offset = { 3 0 -5 } 
 }
 
+=======
+>>>>>>> origin/vse-po-novoy
 #Kiel Canal
 adjacency_rule =
 {
@@ -313,7 +341,11 @@ adjacency_rule =
 	neutral =
 	{
 		army = no
+<<<<<<< HEAD
 		navy = no
+=======
+		navy = yes
+>>>>>>> origin/vse-po-novoy
 		submarine = no
 		trade = yes
 	}
@@ -361,4 +393,47 @@ adjacency_rule =
 		
 	icon = 10904
 	offset = { 2 0 12 }
+<<<<<<< HEAD
+=======
+}
+
+#Strait of Otranto #TODO_Manu: TEST THIS OUT AND REMOVE IF NOT SATISFACTORY
+adjacency_rule =
+{
+	name = "OTRANTO_STRAIT" #TODO_Manu: Remove this loc key too if not necessary
+
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 6979 11767 }
+		
+	icon = 6979
+	offset = { 9 0 6 }
+>>>>>>> origin/vse-po-novoy
 }

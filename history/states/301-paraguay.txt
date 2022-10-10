@@ -7,9 +7,12 @@ state={
 	state_category = town
 	
 	history={
+<<<<<<< HEAD
 		owner = AFR
 
 		add_core_of = AFR
+=======
+>>>>>>> origin/vse-po-novoy
 
 	}
 

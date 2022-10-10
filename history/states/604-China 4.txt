@@ -3,6 +3,7 @@ state={
 	name="STATE_604"
 
 	history={
+<<<<<<< HEAD
 		owner = AFR
 		
 		add_core_of = AFR
@@ -26,6 +27,12 @@ state={
 		}
 
 	}
+=======
+
+		}
+
+	
+>>>>>>> origin/vse-po-novoy
 
 	provinces={
 		4914 4964 7940 8018 8037 12899 

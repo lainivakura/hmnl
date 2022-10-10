@@ -13,9 +13,15 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 3 #was: 5
+<<<<<<< HEAD
 		}
 		add_core_of = SOV
 		
+=======
+			industrial_complex = 1
+		}
+		add_core_of = SOV
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

@@ -71,7 +71,10 @@ recruit_character = SOV_dmitry_lelyushenko
 recruit_character = SOV_filipp_golikov
 recruit_character = SOV_filipp_oktyabrsky
 
+<<<<<<< HEAD
 recruit_character =SOV_Andrey_Potolot
+=======
+>>>>>>> origin/vse-po-novoy
 recruit_character = SOV_georgy_zakharov
 recruit_character = SOV_georgy_zhukov
 recruit_character = SOV_gordey_levchenko
@@ -574,7 +577,10 @@ set_variable = { SOV_the_red_army_army_org_factor = -0.15 } # -> Restore Cossack
 set_variable = { SOV_the_red_army_experience_gain_army_factor = -0.1 }
 set_variable = { SOV_the_red_army_experience_loss_factor = 0.25 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/vse-po-novoy
 set_variable = { SOV_the_red_army_mobilization_speed = 0 } #-> Strengthen the Mobilization Plan
 set_variable = { SOV_the_red_army_conscription_factor = 0 } #-> Strengthen the Mobilization Plan
 set_variable = { SOV_the_red_army_modifier_army_sub_unit_cavalry_speed_factor = 0 } #-> Restore Cossack Units
@@ -716,6 +722,36 @@ if = {
 		set_naval_oob = "SOV_1936_naval_legacy"
 	}
 }
+<<<<<<< HEAD
+=======
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "SOV_1936_air_bba"
+		set_technology = {
+			iw_small_airframe = 1
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+			aircraft_construction = 1
+		}
+	else = {
+		set_air_oob = "SOV_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+>>>>>>> origin/vse-po-novoy
 
 set_research_slots = 3
 set_stability = 0.5
@@ -733,11 +769,14 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+<<<<<<< HEAD
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
 	strategic_bomber1 = 1
 	naval_bomber1 = 1
+=======
+>>>>>>> origin/vse-po-novoy
 	mass_assault = 1
 	fleet_in_being = 1
 	fuel_silos = 1
@@ -790,12 +829,19 @@ if = {
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
+<<<<<<< HEAD
+=======
+		basic_ship_hull_cruiser = 1
+>>>>>>> origin/vse-po-novoy
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
+<<<<<<< HEAD
 		basic_secondary_battery = 1
+=======
+>>>>>>> origin/vse-po-novoy
 		mtg_transport = 1
 	}
 }
@@ -815,7 +861,11 @@ add_ideas = {
 	home_of_revolution
 	trotskyite_plot_nsb
 	SOV_politicized_military
+<<<<<<< HEAD
 
+=======
+	free_trade
+>>>>>>> origin/vse-po-novoy
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
 
@@ -1035,6 +1085,24 @@ add_ideas = {
 		}
 	}
 
+<<<<<<< HEAD
+=======
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "SOV_1939_air_bba"
+			set_technology = {
+				basic_large_airframe = 1
+			}
+		else = {
+			set_air_oob = "SOV_1939_air_legacy"
+			set_technology = {
+				CAS1 = 1
+				tactical_bomber1 = 1
+			}
+		}
+	}
+
+>>>>>>> origin/vse-po-novoy
 	#1936
 	complete_national_focus = SOV_heavy_industry #35
 	unlock_national_focus = SOV_the_path_of_marxism_leninism #35
@@ -1067,8 +1135,20 @@ add_ideas = {
 	complete_national_focus = SOV_expand_the_red_fleet #35
 	complete_national_focus = SOV_pc_of_the_ussr_navy #35
 
+<<<<<<< HEAD
 	#FYP NS
 	add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
+=======
+	#1939
+	complete_national_focus = SOV_support_the_kuomintang #35
+	complete_national_focus = SOV_develop_the_urals #35
+	complete_national_focus = SOV_the_ussr_academy_of_sciences
+	complete_national_focus = SOV_baltic_security #35 -> 1939
+
+	#FYP NS
+	add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
+	add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
+>>>>>>> origin/vse-po-novoy
 	remove_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
 	add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
 
@@ -1082,7 +1162,10 @@ add_ideas = {
 	add_to_variable = { SOV_the_red_army_modifier_army_sub_unit_cavalry_speed_factor = 0.05 }
 	add_to_variable = { SOV_the_red_army_cavalry_attack_factor = 0.05 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/vse-po-novoy
 	#THE POLITBURO NS
 	add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
 	add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
@@ -1102,9 +1185,12 @@ add_ideas = {
 	}
 
 	set_technology = {
+<<<<<<< HEAD
 		CAS1 = 1
 		
 		tactical_bomber1 = 1
+=======
+>>>>>>> origin/vse-po-novoy
 		interwar_artillery = 1
 		interwar_antitank = 1
 		infantry_weapons2 = 1
@@ -1243,6 +1329,68 @@ if = {
 
 if = {
 	limit = {
+<<<<<<< HEAD
+=======
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "I-15" #
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "I-16" #
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_SOV_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "DB-3" #
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_SOV_early_bomber_medium"
+	}
+	create_equipment_variant = {
+		name = "TB-3" #
+		type = large_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = large_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = engine_1_4x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		icon = "GFX_SOV_transport_plane_equipment_1_medium"
+	}
+	create_equipment_variant = {
+		name = "ANT-40" #
+		type = medium_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		icon = "GFX_SOV_tactical_bomber1_medium"
+	}
+}
+
+if = {
+	limit = {
+>>>>>>> origin/vse-po-novoy
 		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = {
@@ -1261,7 +1409,11 @@ if = {
 			tank_nsb_armor_upgrade = 1
 		}
 		obsolete = yes
+<<<<<<< HEAD
 		icon = "gfx/interface/technologies/gwtank.dds"
+=======
+		icon = "GFX_gwtank_medium"
+>>>>>>> origin/vse-po-novoy
 	}
 
 	create_equipment_variant = {
@@ -1280,7 +1432,11 @@ if = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 2
 		}
+<<<<<<< HEAD
 		icon = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+=======
+		icon = "GFX_SOV_basic_light_tank_medium"
+>>>>>>> origin/vse-po-novoy
 	}
 	create_equipment_variant = {
 		name = "BT-5"
@@ -1297,7 +1453,11 @@ if = {
 			tank_nsb_engine_upgrade = 8
 			tank_nsb_armor_upgrade = 1
 		}
+<<<<<<< HEAD
 		icon = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+=======
+		icon = "GFX_SOV_improved_light_tank_medium"
+>>>>>>> origin/vse-po-novoy
 	}
 	create_equipment_variant = {
 		name = "BT-7"
@@ -1314,7 +1474,11 @@ if = {
 			tank_nsb_engine_upgrade = 10
 			tank_nsb_armor_upgrade = 2
 		}
+<<<<<<< HEAD
 		icon = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+=======
+		icon = "GFX_SOV_improved_light_tank_medium"
+>>>>>>> origin/vse-po-novoy
 	}
 
 	create_equipment_variant = {
@@ -1335,7 +1499,11 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 10
 		}
+<<<<<<< HEAD
 		icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+=======
+		icon = "GFX_SOV_basic_heavy_tank_medium"
+>>>>>>> origin/vse-po-novoy
 	}
 	create_equipment_variant = {
 		name = "T-35"
@@ -1356,7 +1524,11 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 10
 		}
+<<<<<<< HEAD
 		icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+=======
+		icon = "GFX_SOV_basic_heavy_tank_medium"
+>>>>>>> origin/vse-po-novoy
 	}
 }
 if = {
@@ -1537,7 +1709,11 @@ if = {
 	create_equipment_variant = {
 		name = "Komintern Class"
 		type = ship_hull_cruiser_1
+<<<<<<< HEAD
 		name_group = SOV_CL_HISTORICAL
+=======
+		name_group = SOV_MINELAYERS_HISTORICAL
+>>>>>>> origin/vse-po-novoy
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -1586,7 +1762,11 @@ if = {
 	# Heavy Cruisers #
 		create_equipment_variant = {
 			name = "Kirov Class"
+<<<<<<< HEAD
 			type = ship_hull_cruiser_1
+=======
+			type = ship_hull_cruiser_2
+>>>>>>> origin/vse-po-novoy
 			name_group = SOV_CA_HISTORICAL
 			parent_version = 0
 			modules = {
@@ -1626,6 +1806,56 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
+<<<<<<< HEAD
+=======
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "I-153" #
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = rocket_rails
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "I-16 Type 10" #
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "MBR-2" #
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = floats
+				special_type_slot_2 = fuel_tanks_small
+			}
+		}
+		create_equipment_variant = {
+			name = "Pe-8" #
+			type = large_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+				engine_type_slot = engine_2_4x
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = cannon_defense_turret_2x
+			}
+		}
+	}
+	if = {
+>>>>>>> origin/vse-po-novoy
 		limit = { not = { has_dlc = "Man the Guns" } }
 		# Ship variants #
 		create_equipment_variant = {
@@ -1748,7 +1978,11 @@ if = {
 				tank_nsb_engine_upgrade = 8
 				tank_nsb_armor_upgrade = 2
 			}
+<<<<<<< HEAD
 			icon = "gfx/interface/technologies/SOV_basic_main_tank.dds"
+=======
+			icon = "GFX_SOV_basic_medium_tank_medium"
+>>>>>>> origin/vse-po-novoy
 		}
 		create_equipment_variant = {
 			name = "KV-1"
@@ -1765,7 +1999,11 @@ if = {
 				tank_nsb_engine_upgrade = 10
 				tank_nsb_armor_upgrade = 9
 			}
+<<<<<<< HEAD
 			icon = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
+=======
+			icon = "GFX_SOV_improved_heavy_tank_medium"
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 }

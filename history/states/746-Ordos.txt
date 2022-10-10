@@ -7,6 +7,7 @@ state={
 	state_category = pastoral
 	
 	
+<<<<<<< HEAD
 	history=
 	{
 		owner = CHI
@@ -30,6 +31,11 @@ state={
 		}
 	}
 	manpower=500000
+=======
+	history={
+	}
+	manpower=1
+>>>>>>> origin/vse-po-novoy
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

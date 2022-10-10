@@ -37,6 +37,7 @@ division_template = {
 	}
 }
 
+<<<<<<< HEAD
 units = {
 	
 }
@@ -57,6 +58,10 @@ air_wings = {
 		}
 	}
 }
+=======
+units = {}
+
+>>>>>>> origin/vse-po-novoy
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

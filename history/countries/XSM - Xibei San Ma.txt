@@ -10,6 +10,7 @@ set_technology = {
 
 
 
+<<<<<<< HEAD
 
 if = {
 	limit = {
@@ -21,6 +22,8 @@ if = {
 	}
 }
 
+=======
+>>>>>>> origin/vse-po-novoy
 1939.1.1 = {
 
 	add_political_power = 1198

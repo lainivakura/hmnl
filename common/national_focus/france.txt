@@ -1581,9 +1581,16 @@ date > 1940.5.1
 			set_country_flag = { flag = FRA_popular_front_cooldown value = 1 days = 360 } #fires strike event if labour laws not reformed in time
 		}
 	}
+<<<<<<< HEAD
 	focus = {
 		id = FRA_invite_communist_ministers
 		icon = GFX_goal_support_communism
+=======
+focus = {
+		id = FRA_invite_communist_ministers
+		icon = GFX_goal_support_communism
+		
+>>>>>>> origin/vse-po-novoy
 		x = -3
 		y = 1
 		offset = {
@@ -1593,7 +1600,11 @@ date > 1940.5.1
 		prerequisite = { focus = FRA_form_the_popular_front }
 		mutually_exclusive = { }
 		relative_position_id = FRA_form_the_popular_front
+<<<<<<< HEAD
 		allow_branch = { has_dlc = "La Resistance" }
+=======
+		allow_branch = { always = no has_dlc = "La Resistance" }
+>>>>>>> origin/vse-po-novoy
 		cost = 10
 
 		ai_will_do = {
@@ -3618,6 +3629,12 @@ FIN = {
 	focus = {
 		id = FRA_confirm_eastern_commitments
 		icon = GFX_goal_tripartite_pact
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		x = -2
 		y = 2
 		offset = {
@@ -3891,7 +3908,11 @@ date > 1949.12.1
 			x = 1
 			y = 0
 		}
+<<<<<<< HEAD
 		allow_branch = { has_dlc = "Death or Dishonor" }
+=======
+		allow_branch = {always = no has_dlc = "Death or Dishonor" }
+>>>>>>> origin/vse-po-novoy
 		prerequisite = {
 			focus = FRA_invest_in_our_weaker_allies
 		}
@@ -4285,6 +4306,12 @@ add_political_power = 120
 	focus = {
 		id = FRA_france_leads
 		icon = GFX_goal_generic_demand_territory
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		x = 2
 		y = 1
 		prerequisite = {
@@ -4607,6 +4634,12 @@ date > 1949.12.1
 	focus = {
 		id = FRA_revive_the_national_bloc
 		icon = GFX_focus_generic_strike_at_democracy2
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		x = 42
 		y = 0
 		offset = {
@@ -4996,7 +5029,11 @@ date > 1949.12.1
 		ai_will_do = {
 			factor = 1
 		}
+<<<<<<< HEAD
 		allow_branch = { has_dlc = "La Resistance" }
+=======
+		allow_branch = { always = no has_dlc = "La Resistance" }
+>>>>>>> origin/vse-po-novoy
 		available = {
 date > 1949.12.1
 			NOT = {
@@ -7979,7 +8016,11 @@ date > 1949.12.1
 	focus = {
 		id = FRA_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
+<<<<<<< HEAD
 		x = 70
+=======
+		x = 45
+>>>>>>> origin/vse-po-novoy
 		y = 0
 		cost = 10
 		offset = {
@@ -8471,7 +8512,11 @@ date > 1949.12.1
 	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
+<<<<<<< HEAD
 		x = 80
+=======
+		x = 55
+>>>>>>> origin/vse-po-novoy
 		y = 0
 		cost = 10
 		offset = {

@@ -18,7 +18,10 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 
 --Diplomacy
+<<<<<<< HEAD
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0
+=======
+>>>>>>> origin/vse-po-novoy
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 7
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 7
 NDefines.NDiplomacy.TROOP_FEAR = 0
@@ -26,6 +29,7 @@ NDefines.NDiplomacy.FLEET_FEAR = 0
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 ---Воздух с мультифлекса	
+<<<<<<< HEAD
 NDefines.NAir.AIR_WING_MAX_SIZE = 100
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 
 NDefines.NAir.DISRUPTION_SPEED_FACTOR = 0.75
@@ -34,6 +38,15 @@ NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 0.1
 
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500
 	NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
+=======
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 
+-- NDefines.NAir.DISRUPTION_SPEED_FACTOR = 0.75
+-- NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 2
+-- NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 0.1
+
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
+>>>>>>> origin/vse-po-novoy
  	
  
 
@@ -163,4 +176,8 @@ NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
 
+<<<<<<< HEAD
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
+=======
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
+>>>>>>> origin/vse-po-novoy

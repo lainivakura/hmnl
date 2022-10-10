@@ -12,6 +12,7 @@ set_technology = {
 
 
 
+<<<<<<< HEAD
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
@@ -20,6 +21,8 @@ if = {
 		
 		CHI_ineffective_bureaucracy_warlord
 	}
+=======
+>>>>>>> origin/vse-po-novoy
 }
 
 1939.1.1 = {

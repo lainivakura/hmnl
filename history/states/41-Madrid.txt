@@ -15,7 +15,11 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
+<<<<<<< HEAD
 			arms_factory = 4
+=======
+			arms_factory = 2
+>>>>>>> origin/vse-po-novoy
 			industrial_complex = 2
 			air_base = 6
 
@@ -27,7 +31,11 @@ state={
 	provinces={
 		858 896 939 977 3794 3845 3938 3986 6914 9767 9800 11820 13224 
 	}
+<<<<<<< HEAD
 	manpower=2064659
+=======
+	manpower=1
+>>>>>>> origin/vse-po-novoy
 	buildings_max_level_factor=1.000
 	state_category=city
 

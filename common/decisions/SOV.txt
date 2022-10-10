@@ -1960,7 +1960,11 @@ SOV_propaganda_campaigns = {
 			original_tag = SOV
 		}
 
+<<<<<<< HEAD
 		available = { date > 1942.10.1		
+=======
+		available = { date > 1942.1.1		
+>>>>>>> origin/vse-po-novoy
 			SOV_propaganda_poster_slot_available = yes
 
 			has_war = yes
@@ -1990,7 +1994,11 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_victory_at_hand_cost
 
 		modifier = {
+<<<<<<< HEAD
 			army_attack_factor = 0.05
+=======
+			army_attack_factor = 0.1
+>>>>>>> origin/vse-po-novoy
 			army_speed_factor = 0.1
 			org_loss_when_moving = -0.05
 		}
@@ -3882,7 +3890,11 @@ SOV_propaganda_campaigns = {
 		}
 
 		remove_effect = {
+<<<<<<< HEAD
 			every_controlled_state = {
+=======
+			every_state = {
+>>>>>>> origin/vse-po-novoy
 				limit = {
 					has_dynamic_modifier = { modifier = SOV_invaders_must_die }
 				}
@@ -14222,7 +14234,11 @@ SOV_soviet_civil_war_dec_cat = {
 			655 = { CONTROLLER = { original_tag = SOV } }
 			custom_trigger_tooltip = {
 				tooltip = SOV_not_has_conflict_with_japan
+<<<<<<< HEAD
 				NOT = { JAP = { } }
+=======
+				NOT = { JAP = { has_decision = JAP_test_the_soviets } }
+>>>>>>> origin/vse-po-novoy
 				NOT = { has_border_war_with = JAP }
 				NOT = { has_war_with = JAP }
 			}

@@ -2,7 +2,11 @@
 state={
 	id=344
 	name="STATE_344"
+<<<<<<< HEAD
 	manpower = 1
+=======
+	manpower = 1081781
+>>>>>>> origin/vse-po-novoy
 	
 	state_category = town
 
@@ -28,7 +32,10 @@ state={
 			}
 		}
 		add_core_of = TUR
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

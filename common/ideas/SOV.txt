@@ -42,9 +42,15 @@ ideas = {
 			}
 
 			modifier = {
+<<<<<<< HEAD
 				production_factory_efficiency_gain_factor = -0.05 #-0.1
 				production_factory_max_efficiency_factor = 0.05 #0.05
 				consumer_goods_factor = 0.05
+=======
+				production_factory_efficiency_gain_factor = -0.1 #-0.1
+				production_factory_max_efficiency_factor = 0.05 #0.05
+				consumer_goods_factor = 0.1 #0.1
+>>>>>>> origin/vse-po-novoy
 				production_speed_industrial_complex_factor = 0.05 #0.05
 				industrial_concern_cost_factor = -0.15 #-0.15
 			}
@@ -106,13 +112,19 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
+<<<<<<< HEAD
 army_morale_factor = -0.2
 send_volunteer_size = 2
+=======
+				max_dig_in_factor = -0.1
+				air_accidents_factor = 0.15
+>>>>>>> origin/vse-po-novoy
 			}
 			rule = {
 				can_create_factions = yes
 			}
 		}
+<<<<<<< HEAD
 home_of_revolution2 = {
 			removal_cost = -1
 			picture = generic_army_problems
@@ -130,6 +142,8 @@ army_morale_factor = 0.2
 			}
 			
 		}
+=======
+>>>>>>> origin/vse-po-novoy
 
 		SOV_molotov_ribbentrop_pact = {
 			removal_cost = -1
@@ -371,7 +385,11 @@ army_morale_factor = 0.2
 			modifier = {
 				industrial_capacity_dockyard = -0.1
 				naval_equipment_upgrade_xp_cost = 0.2
+<<<<<<< HEAD
 				navy_refit_speed = -0.1
+=======
+				refit_speed = -0.1
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -880,7 +898,11 @@ army_morale_factor = 0.2
 
 			modifier = {
 				stability_factor = 0.05
+<<<<<<< HEAD
 				consumer_goods_factor = -0.05
+=======
+				consumer_goods_factor = -0.03
+>>>>>>> origin/vse-po-novoy
 				global_building_slots = 0.1
 			}
 		}
@@ -1019,8 +1041,13 @@ army_morale_factor = 0.2
 			picture = CZE_planning_bonus
 
 			modifier = {
+<<<<<<< HEAD
 				intel_network_gain_factor = 0.25 #TODO_Manu: This should be targeted modifier - Need code support
 				decryption_factor = 0.1 #TODO_Manu: This should be targeted modifier - Need code support
+=======
+				intel_network_gain_factor = 0.25
+				decryption_factor = 0.1
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -1167,8 +1194,14 @@ army_morale_factor = 0.2
 			}
 
 			modifier = {
+<<<<<<< HEAD
 				mobilization_speed = 0.15
 				minimum_training_level = -0.15
+=======
+				mobilization_speed = 0.25
+				minimum_training_level = -0.05
+				training_time_factor = -0.1
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -1396,7 +1429,11 @@ army_morale_factor = 0.2
 			}
 			
 			modifier = {
+<<<<<<< HEAD
 				experience_gain_army = 0.14
+=======
+				experience_gain_army = 0.1
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -2284,6 +2321,10 @@ army_morale_factor = 0.2
 	
 			allowed_civil_war = {
 				original_tag = SOV
+<<<<<<< HEAD
+=======
+				NOT = { has_government = communism }
+>>>>>>> origin/vse-po-novoy
 			}
 			
 			modifier = {
@@ -2304,6 +2345,10 @@ army_morale_factor = 0.2
 	
 			allowed_civil_war = {
 				original_tag = SOV
+<<<<<<< HEAD
+=======
+				NOT = { has_government = communism }
+>>>>>>> origin/vse-po-novoy
 			}
 			
 			modifier = {
@@ -2324,6 +2369,10 @@ army_morale_factor = 0.2
 	
 			allowed_civil_war = {
 				original_tag = SOV
+<<<<<<< HEAD
+=======
+				NOT = { has_government = communism }
+>>>>>>> origin/vse-po-novoy
 			}
 			
 			modifier = {
@@ -2345,6 +2394,10 @@ army_morale_factor = 0.2
 	
 			allowed_civil_war = {
 				original_tag = SOV
+<<<<<<< HEAD
+=======
+				NOT = { has_government = communism }
+>>>>>>> origin/vse-po-novoy
 			}
 			
 			modifier = {
@@ -2356,7 +2409,11 @@ army_morale_factor = 0.2
 		} 
 		
 		SOV_rebuild_the_savior_cathedral = {
+<<<<<<< HEAD
 			picture = SOV_third_five_year_plan_civilian
+=======
+			picture = generic_exploit_mines
+>>>>>>> origin/vse-po-novoy
 	
 			removal_cost = -1
 			
@@ -2366,6 +2423,10 @@ army_morale_factor = 0.2
 	
 			allowed_civil_war = {
 				original_tag = SOV
+<<<<<<< HEAD
+=======
+				NOT = { has_government = communism }
+>>>>>>> origin/vse-po-novoy
 			}
 			
 			modifier = {
@@ -2405,6 +2466,10 @@ army_morale_factor = 0.2
 	
 			allowed_civil_war = {
 				original_tag = SOV
+<<<<<<< HEAD
+=======
+				NOT = { has_government = communism }
+>>>>>>> origin/vse-po-novoy
 			}
 			
 			modifier = {
@@ -2454,6 +2519,29 @@ army_morale_factor = 0.2
 			}
 		}
 
+<<<<<<< HEAD
+=======
+		SOV_modernize_the_far_eastern_fleet_vanilla = { #Non-MTG version of the NS above
+			name = SOV_modernize_the_far_eastern_fleet
+
+			picture = generic_navy_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = SOV
+			}
+
+			modifier = {
+				repair_speed_factor = 0.25
+			}
+		}
+
+>>>>>>> origin/vse-po-novoy
 		SOV_an_empire_in_the_pacific_idea = {
 
 			picture = generic_sea_focused_navy
@@ -9740,7 +9828,11 @@ army_morale_factor = 0.2
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
+<<<<<<< HEAD
 				production_factory_max_efficiency_factor = 0.03
+=======
+				production_factory_max_efficiency_factor = 0.1
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -9769,8 +9861,13 @@ army_morale_factor = 0.2
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
+<<<<<<< HEAD
 				production_factory_max_efficiency_factor = 0.03
 				consumer_goods_factor = -0.02
+=======
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.05
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -9799,7 +9896,11 @@ army_morale_factor = 0.2
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
+<<<<<<< HEAD
 				production_factory_max_efficiency_factor = 0.03
+=======
+				production_factory_max_efficiency_factor = 0.1
+>>>>>>> origin/vse-po-novoy
 				industrial_capacity_factory = 0.05
 			}
 		}
@@ -9829,7 +9930,11 @@ army_morale_factor = 0.2
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.1
 				license_purchase_cost = -0.25
+<<<<<<< HEAD
 				production_factory_max_efficiency_factor = 0.03
+=======
+				production_factory_max_efficiency_factor = 0.1
+>>>>>>> origin/vse-po-novoy
 				industrial_capacity_dockyard = 0.05
 			}
 		}
@@ -9891,7 +9996,11 @@ army_morale_factor = 0.2
 				license_purchase_cost = -0.25
 				line_change_production_efficiency_factor = 0.1
 				production_lack_of_resource_penalty_factor = -0.1
+<<<<<<< HEAD
 				consumer_goods_factor = -0.02
+=======
+				consumer_goods_factor = -0.05
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -10012,7 +10121,11 @@ army_morale_factor = 0.2
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
 				production_factory_efficiency_gain_factor = 0.05
+<<<<<<< HEAD
 				consumer_goods_factor = -0.02
+=======
+				consumer_goods_factor = -0.05
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -10131,7 +10244,11 @@ army_morale_factor = 0.2
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
 				production_factory_start_efficiency_factor = 0.1
+<<<<<<< HEAD
 				consumer_goods_factor = -0.02
+=======
+				consumer_goods_factor = -0.05
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 

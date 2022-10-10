@@ -6,11 +6,19 @@ state=
 	
 	state_category = town
 	
+<<<<<<< HEAD
 	
 	history={
 		owner = AFR
 
 		add_core_of = AFR
+=======
+	resources={
+		chromium=2 # was: 3
+	}
+	history=
+	{
+>>>>>>> origin/vse-po-novoy
 
 	}
 	provinces={

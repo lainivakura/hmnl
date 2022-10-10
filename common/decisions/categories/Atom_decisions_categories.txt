@@ -1,0 +1,6 @@
+d_occupation_decisions = {
+	icon = military_operation
+}
+operations_atom = {
+	icon = military_operation
+}

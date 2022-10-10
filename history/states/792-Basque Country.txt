@@ -10,7 +10,10 @@ state={
 		victory_points = {
 			740 10
 		}
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
@@ -27,7 +30,11 @@ state={
 	provinces={
 		740 3735 6756 13233 
 	}
+<<<<<<< HEAD
 	manpower=928094
+=======
+	manpower=1
+>>>>>>> origin/vse-po-novoy
 	buildings_max_level_factor=1.000
 	state_category=town
 

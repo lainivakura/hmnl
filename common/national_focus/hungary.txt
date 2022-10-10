@@ -171,6 +171,12 @@ focus_tree = {
 	focus = {
 		id = HUN_invite_the_habsburg_prince
 		icon = GFX_goal_generic_dangerous_deal
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		prerequisite = { focus = HUN_elect_a_king }
 		mutually_exclusive = { focus =  HUN_elect_a_democratic_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
@@ -744,6 +750,12 @@ date > 1949.12.1
 	focus = {
 		id = HUN_elect_a_democratic_king
 		icon = GFX_focus_generic_home_defense
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		prerequisite = { focus = HUN_elect_a_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
 		mutually_exclusive = { focus =  HUN_invite_the_habsburg_prince }
@@ -1490,6 +1502,12 @@ date > 1949.12.1
 		id = HUN_protect_austria
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = HUN_renew_the_rome_protocols }
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		x = 2
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
@@ -2252,6 +2270,12 @@ add_state_core = 70
 		id = HUN_council_of_peoples_commissars
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = HUN_economic_intervention }
+<<<<<<< HEAD
+=======
+		allow_branch = {
+			always = no
+		}
+>>>>>>> origin/vse-po-novoy
 		mutually_exclusive = { focus = HUN_strengthen_fascists }
 		relative_position_id = HUN_economic_intervention
 		x = 2
@@ -4302,7 +4326,11 @@ date > 1949.12.1
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
+<<<<<<< HEAD
 				ahead_reduction = 0.3
+=======
+				ahead_reduction = 2
+>>>>>>> origin/vse-po-novoy
 				uses = 1
 				category = armor
 			}

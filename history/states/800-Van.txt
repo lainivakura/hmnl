@@ -17,21 +17,31 @@ state={
 			limit = {
 				has_dlc = "Battle for the Bosporus"
 			}
+<<<<<<< HEAD
 			
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 		if = {
 			limit = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
 			add_core_of = TUR
+<<<<<<< HEAD
 			
+=======
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
 	provinces={
 		652 4583 6935 7470 11880 12376 13121 
 	}
+<<<<<<< HEAD
 	manpower = 1
+=======
+	manpower = 365490
+>>>>>>> origin/vse-po-novoy
 	state_category = rural
 
 	local_supplies=0.0 

@@ -7,10 +7,18 @@ state= {
 	{
 		owner = CHI
 		add_core_of = CHI
+<<<<<<< HEAD
 		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+=======
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 4
+			arms_factory = 3
+>>>>>>> origin/vse-po-novoy
 			7071 = {
 				naval_base = 1
 				coastal_bunker = 1

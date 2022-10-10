@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 state=
 {
 	id=118
@@ -8,12 +9,25 @@ state=
 	history={
 		owner = ENG
 		victory_points = { 4135 10 }
+=======
+
+state={
+	id=118
+	name="STATE_118"
+
+	history={
+		owner = ENG
+		victory_points = {
+			4135 10 
+		}
+>>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 3
 			air_base = 2
 			4135 = {
 				naval_base = 5
 				coastal_bunker = 2
+<<<<<<< HEAD
 			}
 
 		}
@@ -22,4 +36,21 @@ state=
 		4135 
 	}
 local_supplies=0.0 
+=======
+
+			}
+
+		}
+		add_claim_by = SPR
+
+	}
+
+	provinces={
+		4135 13228 
+	}
+	manpower=21372
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+>>>>>>> origin/vse-po-novoy
 }

@@ -20,7 +20,10 @@ state = {
 			4354 1 
 		}
 		add_core_of = SOV
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces = {

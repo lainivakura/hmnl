@@ -9,12 +9,15 @@
 			tag = SAF
 			has_dlc = "Together for Victory"
 		}
+<<<<<<< HEAD
 		
 		#modifier = {
 		#	add = 10
 		#	original_tag = SAF
 		#	has_dlc = "Together for Victory"
 		#}
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 	
 	default = no
@@ -510,8 +513,14 @@
 		}
 
 		available = {
+<<<<<<< HEAD
 			NOT = { has_war_with = ENG }
 			ENG = { is_puppet = no }
+=======
+			# NOT = { has_war_with = ENG }
+			# ENG = { is_puppet = no }
+			always = no
+>>>>>>> origin/vse-po-novoy
 
 		}
 		
@@ -606,7 +615,11 @@
 	#### GO FASCIST SECTION ####
 	############################
 
+<<<<<<< HEAD
 	focus = {
+=======
+	focus = {allow_branch = {always = no}
+>>>>>>> origin/vse-po-novoy
 		id = SAF_abandon_westminster
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		mutually_exclusive = { focus = SAF_support_the_policy_of_appeasement }
@@ -632,7 +645,10 @@
 		}
 
 		available = {
+<<<<<<< HEAD
 date > 1949.12.1
+=======
+>>>>>>> origin/vse-po-novoy
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -840,6 +856,12 @@ date > 1949.12.1
 				compare_autonomy_state > autonomy_reichsprotectorate
 			}
 			controls_state = 541
+<<<<<<< HEAD
+=======
+			controls_state = 893
+			controls_state = 894
+			controls_state = 895
+>>>>>>> origin/vse-po-novoy
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
@@ -868,6 +890,7 @@ date > 1949.12.1
 				add_building_construction = {
 					type = bunker
 					province = {
+<<<<<<< HEAD
 						id = 5154
 						id = 5189
 						id = 7605
@@ -880,6 +903,8 @@ date > 1949.12.1
 					type = bunker
 					province = {
 						id = 12519
+=======
+>>>>>>> origin/vse-po-novoy
 						id = 7770
 						id = 4879
 					}
@@ -900,7 +925,34 @@ date > 1949.12.1
 					instant_build = yes
 				}
 			}
+<<<<<<< HEAD
 			
+=======
+			893 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						id = 5154
+						id = 5189
+						id = 7605
+						id = 10963
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			895 = {
+				add_building_construction = {
+					type = bunker
+					province = {
+						id = 12519
+					
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+>>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -1266,6 +1318,11 @@ date > 1949.12.1
 						state = 546
 						state = 540
 						state = 544
+<<<<<<< HEAD
+=======
+						state = 896
+						state = 897
+>>>>>>> origin/vse-po-novoy
 						state = 295
 						state = 538
 						state = 718
@@ -1274,7 +1331,11 @@ date > 1949.12.1
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
+<<<<<<< HEAD
 					level = 3
+=======
+					level = 2
+>>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 			}
@@ -1966,7 +2027,11 @@ date > 1949.12.1
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
+<<<<<<< HEAD
 		x = 20
+=======
+		x = 10
+>>>>>>> origin/vse-po-novoy
 		y = 0
 
 		cost = 10
@@ -2528,7 +2593,11 @@ date > 1949.12.1
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
+<<<<<<< HEAD
 		x = 24
+=======
+		x = 15
+>>>>>>> origin/vse-po-novoy
 		y = 0
 
 		cost = 10
@@ -2910,7 +2979,11 @@ date > 1949.12.1
 	focus = {
 		id = SAF_commit_to_the_five_year_plan
 		icon = GFX_goal_generic_build_airforce
+<<<<<<< HEAD
 		x = 28
+=======
+		x = 20
+>>>>>>> origin/vse-po-novoy
 		y = 0	
 
 		cost = 10
@@ -3010,10 +3083,14 @@ date > 1949.12.1
 				name = SAF_improve_the_hawker_hartbees
 				bonus = 1.0
 				uses = 1
+<<<<<<< HEAD
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
 				technology = fighter3
+=======
+				category = light_fighter
+>>>>>>> origin/vse-po-novoy
 			}
 		}
 	}
@@ -3216,10 +3293,17 @@ date > 1949.12.1
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
+<<<<<<< HEAD
 		x = 32
 		y = 0		
 
 		cost = 2
+=======
+		x = 25
+		y = 0		
+
+		cost = 10
+>>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1

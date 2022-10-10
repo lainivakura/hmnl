@@ -4,6 +4,7 @@ state={
 	name="STATE_303" # Lima
 	manpower = 1
 	
+<<<<<<< HEAD
 	
 	state_category = large_city
 
@@ -11,6 +12,11 @@ state={
 		owner = AFR
 
 		add_core_of = AFR
+=======
+	state_category = large_city
+
+	history={
+>>>>>>> origin/vse-po-novoy
 
 	}
 

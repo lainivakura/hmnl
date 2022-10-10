@@ -6,6 +6,7 @@ state={
 	
 	
 	state_category = town
+<<<<<<< HEAD
 	
 	
 
@@ -17,6 +18,12 @@ state={
 	}
 
 
+=======
+
+	history={
+	}
+
+>>>>>>> origin/vse-po-novoy
 	provinces={
 		8010 12860 
 	}

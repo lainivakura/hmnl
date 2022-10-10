@@ -8,11 +8,16 @@ state={
 	
 
 	history={
+<<<<<<< HEAD
 		owner = AFR
 
 		add_core_of = AFR
 
 	}
+=======
+	}
+
+>>>>>>> origin/vse-po-novoy
 	provinces={
 		2212 2226 5166 8160 8191 10940 
 	}

@@ -6,10 +6,13 @@ state={
 	state_category = city
 
 	history={
+<<<<<<< HEAD
 		owner = AFR
 
 		add_core_of = AFR
 
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

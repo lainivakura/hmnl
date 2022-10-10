@@ -5,7 +5,10 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+<<<<<<< HEAD
 	
+=======
+>>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

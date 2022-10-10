@@ -19,6 +19,34 @@ ideas = {
 
 }
 
+<<<<<<< HEAD
+=======
+	GER_voina_s_sovkom= {
+
+		picture = generic_manpower_bonus
+
+
+		allowed = {
+			always = no # Added via event
+		}
+
+			targeted_modifier = {
+			tag = GER
+			max_planning = 0.1
+		    planning_speed = 0.1
+		    river_crossing_factor = -0.15
+
+
+}
+
+}
+
+
+
+
+
+
+>>>>>>> origin/vse-po-novoy
 GER_vtoroi= {
 
 			picture = idea_chi_forced_conscription
@@ -1793,7 +1821,11 @@ send_volunteer_divisions_required = -1
 		}	
 	}
 	
+<<<<<<< HEAD
 	aircraft_manufacturer = { 
+=======
+		aircraft_manufacturer = { 
+>>>>>>> origin/vse-po-novoy
 			
 		designer = yes
 		
@@ -2027,7 +2059,30 @@ send_volunteer_divisions_required = -1
 
 	}
 
+<<<<<<< HEAD
 
 
 
 }
+=======
+	GER_war_sovok= {
+
+		picture = idea_chi_forced_conscription
+
+		allowed = {
+			always = no # Added via event
+		}
+
+		targeted_modifier = {
+			tag = SOV
+			max_planning = 10
+			planning_speed = 0.1
+			river_crossing_factor = 0.15
+
+		}
+
+	}
+
+}
+
+>>>>>>> origin/vse-po-novoy

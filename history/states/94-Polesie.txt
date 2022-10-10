@@ -15,7 +15,10 @@ state={
 			560 1
 		}
 		add_core_of = POL
+<<<<<<< HEAD
 		add_core_of = SOV
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={
@@ -24,5 +27,10 @@ state={
 	manpower=1232200
 	buildings_max_level_factor=1.000
 	state_category=rural
+<<<<<<< HEAD
 local_supplies=0.0 
+=======
+
+	local_supplies=0.0 
+>>>>>>> origin/vse-po-novoy
 }

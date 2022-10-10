@@ -16,7 +16,11 @@ equipments = {
 		group_by = archetype
 		interface_category = interface_category_armor
 		priority = 2000
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> origin/vse-po-novoy
 		
 
 		module_slots = {

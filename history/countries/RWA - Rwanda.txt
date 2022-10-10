@@ -9,7 +9,10 @@ set_convoys = 0
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/vse-po-novoy
 1939.1.1 = {
 	
 	#generic focuses

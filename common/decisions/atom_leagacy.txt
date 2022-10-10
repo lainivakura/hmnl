@@ -1,0 +1,1695 @@
+operations_atom = {
+	SOV_bez_spain = {
+
+				icon = generic_army_support
+				visible = {
+					has_game_rule =  { rule = atom_spain_war  
+					option= ATOM_SPAIN_WAR_DISABLED } 
+					original_tag = SOV
+				}
+				available = {			
+					date > 1936.7.15	
+				}
+
+				fire_only_once = yes
+				cost = 100
+				is_good = yes
+			
+				complete_effect = {
+					air_experience = 550
+					add_war_support = 0.12
+					army_experience = 600
+				}
+	}
+	GER_bez_spain = {
+
+		icon = generic_army_support
+		visible = {
+			has_game_rule =  { rule = atom_spain_war 
+			option = ATOM_SPAIN_WAR_DISABLED } 
+			original_tag = GER
+		}
+		available = {
+			 
+			date > 1936.7.15	
+
+		}
+
+		fire_only_once = yes
+	
+		
+		cost = 100
+		is_good = yes
+	
+		complete_effect = {
+			air_experience = 750
+			add_war_support = 0.12
+			army_experience = 800
+		}
+	}
+	ITA_bez_spain = {
+
+		icon = generic_army_support
+		visible = {
+			has_game_rule =  { rule = atom_spain_war 
+			option = ATOM_SPAIN_WAR_DISABLED } 
+			original_tag = ITA
+		}
+		available = {			
+			date > 1936.7.15	
+		}
+
+		fire_only_once = yes
+	
+		
+		cost = 75
+		is_good = yes
+	
+		complete_effect = {
+			air_experience = 350
+
+			 army_experience = 500
+		}
+	}
+
+
+	ENG_annex_ISL = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			DEN = { 
+				has_war_with = GER	
+
+			}
+			date > 1939.9.1
+		}	
+		cost = 25
+			
+		visible = {
+			
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			set_state_owner = { 
+				ENG
+				add_compliance = 100 
+			}
+		}
+	}
+
+	ITA_grind_ETH = {
+
+		icon = generic_army_support
+
+		available = {
+			not = {has_war_with = ETH}
+		}
+
+		fire_only_once = yes
+	
+		activation = {
+			original_tag = ITA
+			has_war_with = ETH
+						
+		}
+	
+		is_good = yes
+		days_mission_timeout = 150
+
+		timeout_effect = {
+			annex_country = { target = ETH }
+			air_experience = 10
+		}
+	
+		complete_effect = {
+			air_experience = 10
+		}
+	}
+	jap_grind_chi = {
+
+		icon = generic_army_support
+
+		available = {
+			not = {has_war_with = CHI}
+		}
+
+		fire_only_once = yes
+	
+		activation = {
+			original_tag = JAP
+			has_war_with = CHI
+						
+		}
+	
+		is_good = yes
+		days_mission_timeout = 550
+
+		timeout_effect = {
+			annex_country = { target = CHI }
+			air_experience = 30
+		}
+	
+		complete_effect = {
+			air_experience = 30
+		}
+	}
+
+	SOV_grind_FIN = {
+
+		icon = generic_army_support
+
+		available = {
+			not = {has_war_with = FIN}
+		}
+		fire_only_once = yes
+		activation = {
+			original_tag = SOV
+			has_war_with = FIN
+			
+			
+		}
+	
+		is_good = yes
+		days_mission_timeout = 120
+
+		timeout_effect = {
+			country_event = { id = endpoint.3 }
+		}
+	
+		complete_effect = {
+			air_experience = 10
+		}
+	}
+
+
+	ENG_Establish_an_interim_government_in_Iraq = {
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = uk_iraq_focus
+			has_government = democratic
+			controls_state = 676
+			controls_state = 675
+			controls_state = 291
+		}
+
+		cost = 0
+
+		visible = {
+			has_completed_focus = uk_iraq_focus
+			has_government = democratic
+		}
+		complete_effect = {
+					676 = {add_compliance = 100 }
+					675 = {add_compliance = 100 }
+					291 = {add_compliance = 100 }
+		}
+	}
+
+
+ENG_annex_POL = {
+
+	icon = generic_operation
+
+	allowed = {
+		original_tag = ENG
+	}
+
+	available = {
+		POL = { 
+			is_ai = yes
+							has_capitulated = yes 
+		}
+		date > 1939.9.1
+	}
+		
+	cost = 20
+		
+	visible = {
+		has_war_with = GER	
+	}
+		
+	fire_only_once = yes
+
+	complete_effect = {
+		annex_country = {target = POL transfer_troops = yes}
+
+	}
+}
+
+
+
+
+ENG_annex_IRQ = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			IRQ = { 
+				is_ai = yes
+
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = IRQ transfer_troops = yes}
+
+	}
+}
+
+ENG_annex_TIB = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			TIB = { 
+				is_ai = yes
+								has_capitulated = yes 
+			}
+			date > 1941.6.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = JAP	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = TIB transfer_troops = yes}
+
+	}
+}
+
+ENG_annex_BHU = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			BHU = { 
+				is_ai = yes
+								has_capitulated = yes 
+			}
+			date > 1941.6.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = JAP	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = BHU transfer_troops = yes}
+
+	}
+}
+
+ENG_annex_NEP = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			NEP = { 
+				is_ai = yes
+								has_capitulated = yes 
+			}
+			date > 1941.6.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = JAP	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = NEP transfer_troops = yes}
+
+	}
+}
+	
+ENG_annex_BEL = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			BEL = { 
+				is_ai = yes
+								has_capitulated = yes 
+			}
+			LUX = { 
+				is_ai = yes
+								has_capitulated = yes 
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = BEL transfer_troops = yes}
+			annex_country = {target = LUX transfer_troops = yes}
+
+	}
+}
+
+ENG_annex_HOL = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			HOL = { 
+				is_ai = yes
+				has_capitulated = yes 
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = HOL transfer_troops = yes}
+
+	}
+}
+
+
+
+ENG_annex_frafr = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			FRA = { 
+				
+				has_capitulated = yes 
+			}
+			
+		}
+			
+		cost = 0
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+				ENG = { 
+				set_state_owner = 268
+				set_state_owner = 713
+				set_state_owner = 706
+				set_state_owner = 708
+				set_state_owner = 543
+				set_state_owner = 557
+				set_state_owner = 272
+				set_state_owner = 780 
+				set_state_owner = 779
+				set_state_owner = 785 
+				set_state_owner = 556
+				set_state_owner = 781
+				set_state_owner = 778
+				set_state_owner = 777
+				set_state_owner = 776
+				set_state_owner = 660
+				set_state_owner = 539
+				set_state_owner = 772
+				set_state_owner = 773
+				set_state_owner = 774
+			}
+			annex_country = {target = FRA transfer_troops = yes}
+
+	}
+}
+
+
+
+
+
+
+ENG_annex_YUG = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			YUG = { 
+				is_ai = yes
+				has_capitulated = yes 
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = YUG transfer_troops = yes}
+
+	}
+}
+
+ENG_annex_DEN = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			DEN = { 
+				is_ai = yes
+				has_capitulated = yes 
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = DEN transfer_troops = yes}
+
+	}
+}
+
+ENG_annex_GRE = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			GRE = { 
+				is_ai = yes
+				has_capitulated = yes 
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+
+			annex_country = {target = GRE transfer_troops = yes}
+
+	}
+}
+
+ENG_annex_SWI = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			SWI = { 
+				is_ai = yes
+				has_capitulated = yes 
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = SWI transfer_troops = yes}
+
+	}
+}
+
+
+
+ENG_annex_NOR = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			NOR = { 
+				is_ai = yes
+				has_capitulated = yes 
+			}
+			date > 1940.1.1
+		}
+			
+		cost = 20
+			
+		visible = {
+			has_war_with = GER	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = NOR transfer_troops = yes}
+
+	}
+}
+
+
+
+
+GER_annex_TUN = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			D02 = { exists = yes }
+			date > 1940.1.1
+
+			
+		}
+			
+		cost = 10
+			
+		visible = {
+			D02 = { exists = yes }
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			
+		
+		
+			GER = { transfer_state = 458 }
+			
+			GER = { transfer_state = 665 }
+					458 = { add_compliance = 100 } 
+			665 = { add_compliance = 100 }
+		
+	
+		}
+}
+
+
+
+
+
+
+
+
+GER_annex_minors = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			ROM = { 
+				is_ai = yes}
+			HUN = { 
+				is_ai = yes
+
+			}
+			date < 1937.1.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = ROM	
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+				add_ideas = GER_bezminors
+				add_research_slot = 1
+				46 = {
+											add_resource = {
+													type = oil
+													amount = 24
+												}
+				}
+
+
+
+				add_tech_bonus = {
+								name = GER_annex_minors
+								ahead_reduction = 2
+								uses = 1
+								technology = advanced_heavy_tank
+							}
+				add_tech_bonus = {
+								name = GER_annex_minors
+								ahead_reduction = 2
+								uses = 1
+								technology = improved_heavy_tank
+							}
+							annex_country = {target = HUN transfer_troops = yes}
+				annex_country = {target = ROM transfer_troops = yes}
+								add_state_core = 46 
+				add_state_core = 79 
+				add_state_core = 76 
+				add_state_core = 84 
+				add_state_core = 83 
+				add_state_core = 82 
+				add_state_core = 81 
+				add_state_core = 77 
+				add_state_core = 766 
+				add_state_core = 78 
+				add_state_core = 80 
+				add_state_core = 43 
+				add_state_core = 155 
+				add_state_core = 154 
+				add_state_core = 664 
+	}
+}
+
+
+
+GER_annex_ROM = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			ROM = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = ROM
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = ROM transfer_troops = yes}
+				46 = {
+					add_compliance = 100
+				}
+				79 = {
+					add_compliance = 100
+					}
+				76 = {
+					add_compliance = 100
+					}
+				84 = {
+					add_compliance = 100
+					}
+				83 = {
+					add_compliance = 100
+					}
+				82 = {
+					add_compliance = 100
+					}
+				81 = {
+					add_compliance = 100
+					}
+				77 = {
+					add_compliance = 100
+					}
+				766 = {
+					add_compliance = 100
+					}
+				78 = {
+					add_compliance = 100
+					}
+				80 = {
+					add_compliance = 100
+					}
+		}
+}
+
+GER_annex_BUL = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			BUL = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = BUL
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = BUL transfer_troops = yes}
+				48 = {
+				add_compliance = 100
+				}
+			801 = {
+				add_compliance = 100
+				}
+			211 = {
+				add_compliance = 100
+				}
+			212 = {
+				add_compliance = 100
+				}
+		}
+}
+GER_annex_HUN = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			HUN = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = HUN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = HUN transfer_troops = yes}
+							43 = {
+	add_compliance = 100
+			}
+		155 = {
+			add_compliance = 100
+			}
+		154 = {
+			add_compliance = 100
+			}
+		664 = {
+			add_compliance = 100
+			}
+	}
+}
+JAP_annex_MAN = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			MAN = { 
+				is_ai = yes 
+			}
+			date > 1936.1.1
+		}
+		cost = 25
+			
+		visible = {
+			country_exists = MAN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = MAN transfer_troops = yes}
+							761 = { add_compliance = 100 } 
+		714 = { add_compliance = 100 }
+		715 = { add_compliance = 100 }
+		610 = { add_compliance = 100 }
+		716 = { add_compliance = 100 }
+		328 = { add_compliance = 100 }
+		717 = { add_compliance = 100 }
+	
+	}
+}
+
+
+operation_torch = {
+
+	icon = generic_operation
+
+	allowed = {
+		tag = USA
+	}
+	
+	available = {
+		tag = USA
+		has_government = democratic
+		has_war_with = GER
+		VIC = { exists = yes }
+		
+	}
+
+	cost = 0
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 0
+	}
+	
+	visible = { always = yes }
+
+	
+	complete_effect = {		
+		declare_war_on = { target = VIC type = puppet_wargoal_focus }
+		ITA = {
+			462 = {
+				add_compliance = 100
+			}
+			461 = {
+				add_compliance = 100
+			}
+			459 = {
+				add_compliance = 100
+			}
+			460 = {
+				add_compliance = 100
+			}
+			458 = {
+				add_compliance = 100
+			}
+			665 = {
+				add_compliance = 100
+			}
+			513 = {
+				add_compliance = 100
+			}
+			annex_country = { target = VIC transfer_troops = no }
+		}
+		USA = {
+			transfer_state = 461
+			transfer_state = 462
+			462 = {
+				add_compliance = 100
+			}
+			461 = {
+				add_compliance = 100
+			}
+			459 = {
+				add_compliance = 100
+			}
+			460 = {
+				add_compliance = 100
+			}
+			458 = {
+				add_compliance = 100
+			}
+			665 = {
+				add_compliance = 100
+			}
+			513 = {
+				add_compliance = 100
+			}
+		}
+	}
+}
+
+
+
+ITA_annex_Baleari_and_Corsica = {
+
+	icon = generic_operation
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	available = {
+		SPR = { 
+			is_ai = yes
+
+		}
+		FRA = { exists = no }
+		date > 1939.9.1
+	}
+		
+	cost = 20
+		
+	fire_only_once = yes
+
+	
+
+	complete_effect = {
+		ITA = { 
+			set_state_owner = 177
+			set_state_owner = 1
+			177 = { add_compliance = 100 }
+			1 = { add_compliance = 100 }
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+JAP_annex_MEN = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			MEN = { 
+				is_ai = yes 
+			}
+			date > 1936.1.1
+		}	
+		cost = 25
+			
+		visible = {
+			country_exists = MEN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = MEN transfer_troops = yes}
+			612 = { add_compliance = 100 }
+			611 = { add_compliance = 100 }
+			}
+		
+}
+ENG_annex_RAJ = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		
+
+			}
+		available = {
+			NOT = {
+					has_war_with = JAP
+					}
+		RAJ = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+			
+		visible = {
+			country_exists = RAJ
+		}
+	
+		complete_effect = {
+			annex_country = {target = RAJ transfer_troops = yes}
+							every_controlled_state = {
+	add_compliance = 100
+	}
+	}
+}
+
+ENG_annex_NZL = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+
+		}
+		available = {
+			NOT = {
+					has_war_with = JAP
+					}
+			NZL = { 
+				is_ai = yes 
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 0
+			
+		visible = {
+			country_exists = NZL
+		}
+	
+		complete_effect = {
+			annex_country = {target = NZL transfer_troops = yes}
+							every_controlled_state = {
+	add_compliance = 100
+	}
+	}
+}
+ENG_annex_AST = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+
+					}
+
+		available = {
+		NOT = {
+					has_war_with = JAP
+					}
+			AST = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}
+			
+		
+		fire_only_once = yes
+		
+		cost = 0
+			
+		visible = {
+			country_exists = AST
+		}
+			
+	
+		complete_effect = {
+			annex_country = {target = AST transfer_troops = yes}
+			every_controlled_state = {
+				add_compliance = 100
+			}
+	}
+}
+	
+
+
+ENG_annex_minors = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			RAJ = { 
+				is_ai = yes 
+			}
+			AST = { 
+							is_ai = yes 
+						}
+			NZL = { 
+							is_ai = yes 
+						}
+			SAF = { 
+							is_ai = yes 
+						}
+						
+			date < 1937.1.1
+					}
+					cost = 0
+						
+					visible = {
+						country_exists = RAJ
+					}
+			visible = {
+						country_exists = AST
+					}
+						visible = {
+						country_exists = NZL
+					}
+			visible = {
+						country_exists = SAF
+					}
+		fire_only_once = yes
+	
+		complete_effect = {
+				add_ideas = ENG_bezminors
+							annex_country = {target = RAJ transfer_troops = yes}
+				annex_country = {target = SAF transfer_troops = yes}
+				annex_country = {target = AST transfer_troops = yes}
+				annex_country = {target = NZL transfer_troops = yes}
+							every_controlled_state = {
+					add_compliance = 100			 }
+				add_state_core = 521
+				add_state_core = 285
+				add_state_core = 517
+				add_state_core = 518
+				add_state_core = 674
+				add_state_core = 520
+				add_state_core = 519
+				add_state_core = 522
+				add_state_core = 723
+				add_state_core = 284	
+					army_experience = 50
+							add_research_slot = 1
+
+				add_offsite_building = {
+									type = arms_factory
+									level = 10
+								}
+
+													
+													
+												
+
+				add_equipment_to_stockpile = {
+								type = convoy
+								amount = 500
+								
+							}
+				add_doctrine_cost_reduction = {
+											name = land_doc_bonus
+											cost_reduction = 0.5
+											uses = 3
+											category = land_doctrine
+										}
+
+		}
+}
+
+
+
+ENG_annex_CAN_bezigrokov = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			CAN = { 
+				is_ai = yes 
+			}
+			
+			date < 1937.1.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = CAN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = CAN transfer_troops = yes}
+							add_state_core = 465
+				add_state_core = 464
+				add_state_core = 468
+				add_state_core = 466
+				add_state_core = 276
+				add_state_core = 682
+				add_state_core = 683
+				add_state_core = 467
+				add_state_core = 469
+				add_state_core = 472
+				add_state_core = 470
+				add_state_core = 471
+				add_state_core = 473
+				add_state_core = 740
+				add_state_core = 739
+				add_state_core = 332
+				add_state_core = 331
+				set_technology = {
+													improved_decimetric_radar = 1
+												}
+				set_technology = {
+													centimetric_radar = 1
+												}
+				set_technology = {
+													decimetric_radar = 1
+												}
+		}
+}
+
+
+
+
+
+
+
+
+
+ENG_annex_SAF = {
+			icon = generic_operation
+
+			allowed = {
+				original_tag = ENG
+			}
+				
+			available = {
+			SAF = { 
+					is_ai = yes 
+				}
+				date > 1939.9.1
+			}
+		
+
+			fire_only_once = yes
+
+			cost = 0
+				
+			visible = {
+				country_exists = SAF
+			}
+
+			complete_effect = {
+				annex_country = {target = SAF transfer_troops = yes}
+								every_controlled_state = {
+				add_compliance = 100
+				}
+			}
+}
+
+ENG_annex_CAN = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			CAN = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = CAN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = CAN transfer_troops = yes}
+							every_controlled_state = {
+			add_compliance = 100
+			}
+		}
+}
+
+
+
+FIN_clear_all = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = FIN
+		}
+
+		available = {
+			FIN = { 
+				is_ai = yes 
+			} has_war = yes
+			date > 1941.5.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -60000
+			}
+			add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = -5000
+						}
+				}
+			ai_will_do = {
+						factor = 200
+					}
+}
+
+
+
+ENG_annex_MAL = {
+
+			icon = generic_operation
+
+			allowed = {
+				original_tag = ENG
+
+	`}
+
+		available = {
+			NOT = {
+					has_war_with = JAP
+					}
+			MAL = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}	
+		cost = 300
+			
+		visible = {
+			country_exists = MAL
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = MAL transfer_troops = yes}
+							every_controlled_state = {
+	add_compliance = 100
+		}
+				}
+}
+USA_annex_PHI = {
+
+	icon = generic_operation
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		PHI = { 
+			is_ai = yes 
+		}
+		date > 1939.9.1
+	}	
+	cost = 50
+		
+	visible = {
+		country_exists = PHI
+	}
+		
+	fire_only_once = yes
+
+	complete_effect = {
+		annex_country = {target = PHI transfer_troops = yes}
+		623 = { add_compliance = 100 } 	327 = { add_compliance = 100 }	624 = { add_compliance = 100 } 625 = { add_compliance = 100 }
+		627 = { add_compliance = 100 } 	628 = { add_compliance = 100 }	626 = { add_compliance = 100 }
+				   }
+}
+	
+
+ENG_interim_leadership_of_the_French_regions = {
+		icon = generic_operation
+
+	allowed = {
+		original_tag = ENG
+	}
+
+	visible = {
+		country_exists = FRA
+	}
+
+	cost = 0
+	
+	fire_only_once = yes
+
+	available = {
+	FRA = {
+	is_ai = yes 
+		}
+		FRA = { 				has_capitulated = yes }
+	}
+	visible = {
+		country_exists = FRA
+	}
+	complete_effect = { 
+		ENG = { 
+			set_state_owner = 15 
+			set_state_owner = 14 
+			set_state_owner = 785 
+			set_state_owner = 29
+			set_state_owner = 30
+			set_state_owner = 23
+			set_state_owner = 19
+			set_state_owner = 16
+			set_state_owner = 18
+			set_state_owner = 24
+			set_state_owner = 27
+			set_state_owner = 17
+			set_state_owner = 806
+		}
+	}
+}
+FRA_Capital_Alg = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		always = yes
+	}
+
+	cost = 0
+	fire_only_once = no
+	available = {
+		has_war = yes
+		FRA = { 				has_capitulated = yes }
+		NOT = {
+		controls_state = 16
+		}
+		controls_state = 459
+	}
+	complete_effect = {
+			if = { 
+				limit = { 459 = { is_controlled_by = FRA } } 
+				set_capital = { state = 459}
+			}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+FRA_Capital_Brazzavil = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		always = yes
+	}
+
+	cost = 0
+	fire_only_once = no
+	available = {
+		has_war = yes
+		FRA = { 				has_capitulated = yes }
+					NOT = {
+		controls_state = 459
+		controls_state = 16
+		}
+		controls_state = 772
+	}
+
+	complete_effect = {
+			if = { 
+				limit = { 772 = { is_controlled_by = FRA } } 
+				set_capital = { state = 772}
+			}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+FRA_Capital_Caledonia = {
+
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		always = yes
+	}
+
+	cost = 0
+	fire_only_once = no
+	available = {
+		has_war = yes
+		FRA = { 				has_capitulated = yes }
+		NOT = {
+		controls_state = 459
+		controls_state = 16
+		controls_state = 772
+		}
+	}
+
+	complete_effect = {
+			if = { 
+				limit = { 635 = { is_controlled_by = FRA } } 
+				set_capital = { state = 635}
+			}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+USA_autonomy_integrated_puppet_INS = {
+
+	icon = generic_operation
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		INS = { 
+			is_ai = yes
+							has_capitulated = yes 
+		}
+	}
+		
+	cost = 20
+		
+	visible = {
+		has_war_with = JAP
+	}
+		
+	fire_only_once = yes
+	complete_effect = {
+		set_autonomy = {
+			target = INS
+			autonomous_state = autonomy_integrated_puppet
+		}
+	}
+}
+}
+
+

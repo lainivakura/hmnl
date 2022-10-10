@@ -16,7 +16,10 @@ state={
 
 		}
 		add_core_of = POL
+<<<<<<< HEAD
 		add_core_of = SOV
+=======
+>>>>>>> origin/vse-po-novoy
 
 	}
 

@@ -4,6 +4,7 @@ state={
 	name="STATE_493"
 	manpower = 1
 	
+<<<<<<< HEAD
 	
 	state_category = town
 
@@ -15,6 +16,14 @@ state={
 	}
 
 
+=======
+	state_category = town
+
+	history={
+
+	}
+
+>>>>>>> origin/vse-po-novoy
 	provinces={
 		1937 2023 2085 4969 8056 10494 10864 12703 12790 12845 12872 
 	}

@@ -24,8 +24,11 @@ division_template = {
 }
 
 units = {
+<<<<<<< HEAD
 	
 
+=======
+>>>>>>> origin/vse-po-novoy
 	##### No notable navy #####
 }
 

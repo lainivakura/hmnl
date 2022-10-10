@@ -21,11 +21,15 @@ division_template = {
 	}
 }
 
+<<<<<<< HEAD
 units = {
 	
 
 	##### No Notable Naval Forces #####
 }
+=======
+units = {}
+>>>>>>> origin/vse-po-novoy
 
 ##### No Notable Air Forces #####
 

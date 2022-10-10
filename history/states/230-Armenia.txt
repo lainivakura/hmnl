@@ -17,7 +17,10 @@ state={
 
 		}
 		add_core_of = SOV
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 3

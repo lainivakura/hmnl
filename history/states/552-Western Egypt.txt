@@ -2,6 +2,7 @@
 state={
 	id=552
 	name="STATE_552"
+<<<<<<< HEAD
 	manpower = 1
 	
 	state_category = wasteland
@@ -11,12 +12,31 @@ state={
 		owner = AFR
 
 		add_core_of = AFR
+=======
+	impassable = yes
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = EGY
+>>>>>>> origin/vse-po-novoy
 
 	}
 
 	provinces={
+<<<<<<< HEAD
 		 2064 7216  10869 10907 12099 12733 12816 
 	}
 
 	local_supplies=0.0 
+=======
+		2064 7216 10869 10907 12099 12733 12816 
+	}
+	manpower=18539
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+>>>>>>> origin/vse-po-novoy
 }

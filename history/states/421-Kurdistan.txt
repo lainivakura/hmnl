@@ -2,7 +2,11 @@
 state={
 	id=421
 	name="STATE_421"
+<<<<<<< HEAD
 	manpower = 1
+=======
+	manpower = 780278
+>>>>>>> origin/vse-po-novoy
 	
 	state_category = rural
 
@@ -18,7 +22,10 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = PER
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

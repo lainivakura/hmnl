@@ -9,6 +9,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 1
+<<<<<<< HEAD
 			13204 ={
 				naval_base = 1
 			}
@@ -21,6 +22,17 @@ state = {
 		4744 5264 13062 13063 13204
 	}
 	manpower = 34182
+=======
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces = {
+		4744 5264 13062 13063 
+	}
+	manpower = 31182
+>>>>>>> origin/vse-po-novoy
 	buildings_max_level_factor = 1
 	state_category = "pastoral"
 
