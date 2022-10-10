@@ -9,4 +9,8 @@ operations_atom = {
 	}
 }
 
+d_occupation_decisions = {
+	icon = military_operation
+}
+
 
