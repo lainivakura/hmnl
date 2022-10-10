@@ -4,13 +4,6 @@ state=
 	name="STATE_649"
 	state_category = tiny_island
 	manpower=1
-	history=
-	{
-		owner = 
-		buildings = {
-		}
-		add_core_of = 
-	}
 	provinces= { 5023 }
 
 	local_supplies=0.0 

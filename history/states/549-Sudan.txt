@@ -6,15 +6,13 @@ state={
 	manpower = 1802132
 
 	history = {
-		
+		victory_points = {
+			191 1 
+		}
 		owner = ENG
 		add_core_of = SUD
 		buildings = {
-			victory_points = {
-				191 1 
-			}
 			infrastructure = 2
-
 		}
 
 	}
