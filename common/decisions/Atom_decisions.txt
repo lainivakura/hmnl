@@ -113,38 +113,38 @@ ENG_annex_ISL = {
 		}
 		}
 
-		SOV_annex_FIN = {
+		# SOV_annex_FIN = {
 
-			icon = generic_operation
+		# 	icon = generic_operation
 	
-			allowed = {
-				original_tag = SOV
-			}
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
 	
-			available = {
-				FIN = { 
-					is_ai = yes 
-				}
-				date > 1941.1.1
-			}	
-			cost = 25
+		# 	available = {
+		# 		FIN = { 
+		# 			is_ai = yes 
+		# 		}
+		# 		date > 1941.1.1
+		# 	}	
+		# 	cost = 25
 				
-			visible = {
-				country_exists = FIN
-			}
+		# 	visible = {
+		# 		country_exists = FIN
+		# 	}
 				
-			fire_only_once = yes
+		# 	fire_only_once = yes
 		
-			complete_effect = {
-				annex_country = {target = FIN transfer_troops = yes}
-				111 = { add_compliance = 100 }
-				149 = { add_compliance = 100 }
-				150 = { add_compliance = 100 }
-				148 = { add_compliance = 100 }
-				722 = { add_compliance = 100 }
-				145 = { add_compliance = 100 }
-			}
-			}
+		# 	complete_effect = {
+		# 		annex_country = {target = FIN transfer_troops = yes}
+		# 		111 = { add_compliance = 100 }
+		# 		149 = { add_compliance = 100 }
+		# 		150 = { add_compliance = 100 }
+		# 		148 = { add_compliance = 100 }
+		# 		722 = { add_compliance = 100 }
+		# 		145 = { add_compliance = 100 }
+		# 	}
+		# 	}
 
 
 
@@ -263,61 +263,61 @@ jap_grind_chi = {
 	
 
 
-SOV_close_strong = {
-		icon = generic_operation
+# SOV_close_strong = {
+# 		icon = generic_operation
 
-		available = {
-				date < 1936.1.2		
-			}			
-         visible = {
-        }
-		fire_only_once = yes
+# 		available = {
+# 				date < 1936.1.2		
+# 			}			
+#          visible = {
+#         }
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 0
-		}
-		allowed = {
-			original_tag = SOV
-}
-		complete_effect = {
-add_ideas = forced_closed_eco
-add_offsite_building = {
-					type = industrial_complex
-					level = 5
-				}
-120= {
-add_resource = {
-									type = aluminium
-									amount = 45
-								}}
-422= {
-add_resource = {
-									type = tungsten 
-									amount = 56
-								}}
-635= {
-add_resource = {
-									type = chromium
-									amount = 68
-								}}
-233= {
-add_resource = {
-									type = tungsten 
-									amount = 33
-								}}
-651= {
-add_resource = {
-									type = tungsten 
-									amount = 41
-								}}
-
-
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 		allowed = {
+# 			original_tag = SOV
+# }
+# 		complete_effect = {
+# add_ideas = forced_closed_eco
+# add_offsite_building = {
+# 					type = industrial_complex
+# 					level = 5
+# 				}
+# 120= {
+# add_resource = {
+# 									type = aluminium
+# 									amount = 45
+# 								}}
+# 422= {
+# add_resource = {
+# 									type = tungsten 
+# 									amount = 56
+# 								}}
+# 635= {
+# add_resource = {
+# 									type = chromium
+# 									amount = 68
+# 								}}
+# 233= {
+# add_resource = {
+# 									type = tungsten 
+# 									amount = 33
+# 								}}
+# 651= {
+# add_resource = {
+# 									type = tungsten 
+# 									amount = 41
+# 								}}
 
 
 
 
-			}
-		}
+
+
+# 			}
+# 		}
 
 
 	ENG_annex_POL = {
