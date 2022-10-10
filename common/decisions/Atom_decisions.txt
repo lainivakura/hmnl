@@ -1,5 +1,4 @@
-﻿operations = { }
-operations_atom = {
+﻿operations_atom = {
 SOV_bez_spain = {
 
 			icon = generic_army_support

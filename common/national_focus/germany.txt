@@ -3656,13 +3656,12 @@ date > 1939.9.1
 
 	}
 	
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = GER_czech_friend
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_anschluss }
 		mutually_exclusive = { focus = GER_demand_sudetenland }
 		available = { 
-date > 1949.12.1
 			has_army_manpower = { size > 749999 }
 			NOT = { has_war_with = CZE }
 			CZE = {
