@@ -2418,6 +2418,7 @@ characters = {
 			slot = army_chief
 			idea_token = ITA_giovanni_duca
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2526,6 +2527,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_enrico_fermi
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2560,6 +2562,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_vittorio_emanuele_orlando
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2602,6 +2605,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_luigi_einaudi
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2635,6 +2639,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_pietro_d_acquarone
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2670,6 +2675,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_alberto_de_stefani
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2703,6 +2709,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ivanoe_bonomi
 			allowed = {
+				always = no
 				ITA_is_italian_tag = yes
 			}
 			available = {
@@ -2767,6 +2774,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_alcide_de_gasperi
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2812,6 +2820,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_mario_scelba
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2850,6 +2859,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_guido_de_ruggiero
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2889,6 +2899,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_alberto_tarchiani
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -2917,6 +2928,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_giuseppe_borea
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -3077,6 +3089,7 @@ characters = {
 			idea_token = ITA_randolfo_pacciardi
 			ledger = army
 			allowed = {
+				always = no
 				ITA_is_italian_tag = yes
 			}
 			available = {
@@ -3131,6 +3144,7 @@ characters = {
 			slot = political_advisor
 			idea_token = amadeo_bordiga
 			allowed = {
+				always = no
 				ITA_is_italian_tag = yes
 			}
 			available = {
@@ -3174,6 +3188,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_luigi_longo
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -3235,6 +3250,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_palmiro_togliatti
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -3291,6 +3307,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_sandro_pertini
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -3335,6 +3352,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_antonio_pesenti
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -3369,6 +3387,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_fausto_gullo
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -3403,6 +3422,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_giulio_paggio
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
@@ -3431,6 +3451,7 @@ characters = {
 			slot = political_advisor
 			idea_token = ITA_ignazio_silone
 			allowed = {
+				always = no
 				original_tag = ITA
 				has_dlc = "By Blood Alone"
 			}
