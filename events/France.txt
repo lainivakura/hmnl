@@ -178,7 +178,7 @@ country_event = {
 	option = { # Become Free French
 		name = france.10.b
 		trigger = {
-			has_game_rule = { rule = atom_vic_options option = ATOM_FREEFRANCE_ENABLED } 
+			has_game_rule = { rule = atom_freefrance_options option = ATOM_FREEFRANCE_ENABLED } 
 		}
 		ai_chance = {
 			factor = 0

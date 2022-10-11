@@ -195,6 +195,10 @@ send_volunteer_divisions_required = -1
 
 			picture = generic_air_bonus
 		
+			modifier = {
+				cat_battlefield_support_cost_factor = -0.075
+			}
+			
 			research_bonus = {
 				battlefield_support_tree = 0.10
 				jet_technology = 0.10
@@ -1011,19 +1015,19 @@ send_volunteer_divisions_required = -1
 			}
 
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					build_cost_ic = -0.25 instant = yes
 				}
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = 0.25 instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					build_cost_ic = 0.25 instant = yes
 				}
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = 0.25 instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = 0.25 instant = yes
 				}
 			}
@@ -1653,55 +1657,47 @@ send_volunteer_divisions_required = -1
 			picture = generic_air_bonus
 
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				jet_fighter_equipment = {
+				small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				CAS_equipment = {
+				small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				cv_nav_bomber_equipment = {
+				medium_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				rocket_interceptor_equipment = {
+				medium_plane_fighter_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				tac_bomber_equipment = {
+				medium_plane_scout_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				jet_tac_bomber_equipment = {
+				large_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
-				jet_strat_bomber_equipment = {
-					instant = yes
-					build_cost_ic = 0.05
-				}
-				heavy_fighter_equipment = {
-					instant = yes
-					build_cost_ic = 0.05
-				}
-				strat_bomber_equipment = {
+				large_plane_maritime_patrol_plane_airframe = {
 					instant = yes
 					build_cost_ic = 0.05
 				}
@@ -2047,24 +2043,6 @@ send_volunteer_divisions_required = -1
 			modifier = {
 				fascism_drift = 0.2
 			}
-
-		}
-
-	}
-
-	GER_war_sovok= {
-
-		picture = idea_chi_forced_conscription
-
-		allowed = {
-			always = no # Added via event
-		}
-
-		targeted_modifier = {
-			tag = SOV
-			max_planning = 10
-			planning_speed = 0.1
-			river_crossing_factor = 0.15
 
 		}
 

@@ -97,9 +97,8 @@ operations_atom = {
 		fire_only_once = yes
 	
 		complete_effect = {
-			set_state_owner = { 
-				ENG
-				add_compliance = 100 
+			ENG = {
+				annex_country = { target = ISL transfer_troops = yes }
 			}
 		}
 	}
@@ -1462,7 +1461,7 @@ ENG_annex_MAL = {
 			allowed = {
 				original_tag = ENG
 
-	`}
+	}
 
 		available = {
 			NOT = {
