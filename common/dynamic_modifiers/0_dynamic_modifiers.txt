@@ -59,7 +59,7 @@ semi_autonomous_state = {
 	
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
-	state_production_speed_buildings_factor = -2
+	state_production_speed_buildings_factor = -0.25
 }
 
 kurdish_agitation = {
@@ -84,6 +84,19 @@ kurdish_separatism = {
 	resistance_decay = -0.20
 	state_resources_factor = -0.33
 	disable_strategic_redeployment = 1
+}
+
+dense_rural_infrastructure = { #State Modifier
+	enable = { always = yes }
+	remove_trigger = {
+		ROOT = {
+			infrastructure > 4
+		}
+	}
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_non_core_supply_impact_factor = 0.35
 }
 
 kurdish_rebellion = {
@@ -176,7 +189,7 @@ devout_islamists = {
 	icon = GFX_modifiers_tur_traditionalist_placated
 	
 	recruitable_population_factor = 0.15
-	state_production_speed_buildings_factor = -0.120
+	state_production_speed_buildings_factor = 0.1
 }
 
 kemalist_loyalties = {
