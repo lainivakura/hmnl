@@ -15,7 +15,7 @@ country_event = {
 
  	immediate = {
  		hidden_effect = {
- 			add_named_threat = { threat = 10 name = germany.4.t }
+ 			add_named_threat = { threat = 12 name = germany.4.t }
  		}
  	}
 
@@ -34,6 +34,12 @@ country_event = {
 			}
 		}
 		153 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		848 = {
 			if = {
 				limit = { is_owned_by = AUS }
 				add_core_of = GER
@@ -3333,7 +3339,7 @@ country_event = {
 					tank_nsb_engine_upgrade = 6
 					tank_nsb_armor_upgrade = 3
 				}
-				icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+					icon = "GFX_GER_basic_medium_tank_medium"
 			}
 			create_equipment_variant = {
 				name = "Panzer IV Ausf. A"
@@ -3352,7 +3358,7 @@ country_event = {
 					tank_nsb_engine_upgrade = 6
 					tank_nsb_armor_upgrade = 2
 				}
-				icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+					icon = "GFX_GER_basic_medium_tank_medium"
 			}
 		}
 		else = {
@@ -3561,6 +3567,7 @@ country_event = {
 			}
 			GER = { transfer_state = 85 }
 			GER = { transfer_state = 807 }
+			807 = { add_core_of = GER }
 		}
 	}
 
@@ -3639,6 +3646,7 @@ country_event = {
 		}
 		transfer_state = 85
 		transfer_state = 807
+		807 = { add_core_of = GER }
 		if = {
 			limit = {
 				ENG = {
@@ -4153,7 +4161,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = YUG
-			generator = { 102 }
+			generator = { 102 853 }
 		}
 		hidden_effect = {
 			news_event = { id = news.164 hours = 6 }
@@ -4173,7 +4181,10 @@ country_event = {
 
 	option = {
 		name = germany.94.a
-		GER = { transfer_state = 102 }
+		GER = {
+			transfer_state = 102
+			transfer_state = 853
+		}
 		set_country_flag = slovenia_acquired
 		hidden_effect = {
 			news_event = { id = news.163 hours = 6 }
