@@ -221,6 +221,7 @@ technologies = {
 		equipment_conversion_speed = 0.40
 		
 		allow_branch = {
+			always = no
 			has_dlc = "Death or Dishonor"
 		}
 
@@ -246,8 +247,8 @@ technologies = {
 			}
 
 			modifier = {
-					
-
+				factor = 0
+				NOT = { has_government = fascism }
 			}
 		}
 		
@@ -260,7 +261,6 @@ technologies = {
 	advanced_equipment_conversion = {
 		
 		equipment_conversion_speed = 0.40
-
 
 		research_cost = 2
 		start_year = 1939
@@ -279,9 +279,8 @@ technologies = {
 			}
 
 			modifier = {
-				line_change_production_efficiency_factor = 0.1	
-				
-
+				factor = 0
+				NOT = { has_government = fascism }
 			}
 		}
 		
