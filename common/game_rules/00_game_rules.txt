@@ -83,14 +83,14 @@ atom_frankobritish_options = {
 	name = "ATOM_FRANKOBRITISH_OPTIONS"
 	group = "ATOM_GROUPKEY"
 
-	default = {
+	option = {
 		name = "ATOM_FRANKOBRITISH_DISABLED"
-	text = "ATOM_RULE_OPTION_FRANKOBRITISH_DISABLED"
+		text = "ATOM_RULE_OPTION_FRANKOBRITISH_DISABLED"
 		desc = "ATOM_RULE_OPTION_FRANKOBRITISH_DISABLED_DESC"
 		
 	}
 
-	option = {
+	default = {
 		name = "ATOM_FRANKOBRITISH_ALLOWED"
 		text = "ATOM_RULE_OPTION_FRANKOBRITISH_ALLOWED"
 		desc = "ATOM_RULE_OPTION_FRANKOBRITISH_ALLOWED_DESC"
@@ -261,7 +261,7 @@ allow_volunteers = {
 		text = "RULE_OPTION_FREE"
 		desc = "RULE_ALLOW_VOLUNTEERS_FREE_DESC"
 	}
-	default = {
+	option = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_VOLUNTEERS_LIMITED_DESC"
@@ -271,7 +271,7 @@ allow_volunteers = {
 		text = "RULE_OPTION_SAME_IDEOLOGY"
 		desc = "RULE_ALLOW_VOLUNTEERS_SAME_IDEOLOGY_DESC"
 	}
-	option = {
+	default = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_VOLUNTEERS_BLOCKED_DESC"
