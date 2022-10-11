@@ -98,7 +98,7 @@ operations_atom = {
 	
 		complete_effect = {
 			ENG = {
-				annex_country = { target = ISL transfer_troops = yes }
+				annex_country = { target = ICE transfer_troops = yes }
 			}
 		}
 	}

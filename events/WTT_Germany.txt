@@ -450,7 +450,6 @@ country_event = {
 			remove_idea = GER_preparing_ITA_coup
 			add_idea = GER_preparing_ITA_coup2
 		}
-		remove_ideas = victor_emmanuel
 		
 		add_ai_strategy = {
 			type = alliance

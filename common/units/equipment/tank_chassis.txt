@@ -452,22 +452,21 @@ equipments = {
 			steel = 1
 		}
 
-		module_slots = {
-			main_armament_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_medium_howitzer
-			tank_small_cannon_2
-			tank_close_support_gun
-			tank_medium_cannon
-			tank_auto_cannon
-			tank_anti_air_cannon
-			tank_high_velocity_cannon_m1
-			tank_medium_anti_air_cannon_1
-				}
-			}
-
-	}
+		# module_slots = {
+		# 	main_armament_slot = {
+		# 		required = yes
+		# 		allowed_module_categories = {
+		# 			tank_medium_howitzer
+		# 			tank_small_cannon_2
+		# 			tank_close_support_gun
+		# 			tank_medium_cannon
+		# 			tank_auto_cannon
+		# 			tank_anti_air_cannon
+		# 			tank_high_velocity_cannon_m1
+		# 			tank_medium_anti_air_cannon_1
+		# 		}
+		# 	}
+		# }
 }	
 	medium_tank_chassis_3 = {
 		abbreviation = "mt3"

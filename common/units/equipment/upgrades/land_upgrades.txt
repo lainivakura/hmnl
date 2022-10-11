@@ -40,52 +40,52 @@ upgrades = {
 	}
 
 	tank_nsb_armor_upgrade = {
-		abbreviation = "arm"
-		max_level = 0 #each level represents ~10mm of armor 
-		cost = land
+	# 	abbreviation = "arm"
+	# 	max_level = 0 #each level represents ~10mm of armor 
+	# 	cost = land
 
-		linear_cost = {
-			cost_by_level = 1
-			cost_by_level_for_licensed_equipment = 2
-		}
+	# 	linear_cost = {
+	# 		cost_by_level = 1
+	# 		cost_by_level_for_licensed_equipment = 2
+	# 	}
 
-		level_requirements = {
-			0 = { > 
-				has_tech = armor_tech_1
-			}
-			0 = {
-				has_tech = armor_tech_2
-			}
-			0 = {
-				has_tech = armor_tech_3
-			}
-			0 = {
-				has_tech = armor_tech_4
-			}
-		}
+	# 	level_requirements = {
+	# 		0 = { > 
+	# 			has_tech = armor_tech_1
+	# 		}
+	# 		0 = {
+	# 			has_tech = armor_tech_2
+	# 		}
+	# 		0 = {
+	# 			has_tech = armor_tech_3
+	# 		}
+	# 		0 = {
+	# 			has_tech = armor_tech_4
+	# 		}
+	# 	}
 
-		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
-			7 = { #more armor requires more resources
-				steel = 1 
-			}
-			12 = {
-				steel = 1
+	# 	resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+	# 		7 = { #more armor requires more resources
+	# 			steel = 1 
+	# 		}
+	# 		12 = {
+	# 			steel = 1
 				
-			}
-			16 = {
-				steel = 1
-				chromium = 1
-			}
-		}
+	# 		}
+	# 		16 = {
+	# 			steel = 1
+	# 			chromium = 1
+	# 		}
+	# 	}
 
-		maximum_speed = -0.03
-		reliability = -0.015
-		armor_value = 0.075
-		add_stats = {
-			breakthrough = 1.25
-			build_cost_ic = 0.1
+	# 	maximum_speed = -0.03
+	# 	reliability = -0.015
+	# 	armor_value = 0.075
+	# 	add_stats = {
+	# 		breakthrough = 1.25
+	# 		build_cost_ic = 0.1
 
-		}
+	# 	}
 	}
 
 	tank_gun_upgrade = {
