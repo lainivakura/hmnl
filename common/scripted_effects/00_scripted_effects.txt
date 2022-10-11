@@ -1634,3 +1634,224 @@ on_daily = {
 #	# you can specify an on daily action for a specific country
 #}
 
+###Game weight variables for faction load balancing.
+###We store these on germany because ... we have to
+
+set_add_fascist_game_weight_large = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = fascist_game_weight
+				}
+			}
+			set_variable = { var = fascist_game_weight value = 20 }
+		}
+		else = {
+			add_to_variable = { var = fascist_game_weight value = 20 }
+		}
+	}
+}
+
+set_add_democratic_game_weight_large = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = democratic_game_weight
+				}
+			}
+			set_variable = { var = democratic_game_weight value = 20 }
+		}
+		else = {
+			add_to_variable = { var = democratic_game_weight value = 20 }
+		}
+	}
+}
+
+set_add_unaligned_game_weight_large = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = unaligned_game_weight
+				}
+			}
+			set_variable = { var = unaligned_game_weight value = 20 }
+		}
+		else = {
+			add_to_variable = { var = unaligned_game_weight value = 20 }
+		}
+	}
+}
+
+set_add_communist_weight_large = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = communist_game_weight
+				}
+			}
+			set_variable = { var = communist_game_weight value = 20 }
+		}
+		else = {
+			add_to_variable = { var = communist_game_weight value = 20 }
+		}
+	}
+}
+
+set_add_fascist_weight_small = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = fascist_game_weight
+				}
+			}
+			set_variable = { var = fascist_game_weight value = 8 }
+		}
+		else = {
+			add_to_variable = { var = fascist_game_weight value = 8 }
+		}
+	}
+}
+
+set_add_democratic_weight_small = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = democratic_game_weight
+				}
+			}
+			set_variable = { var = democratic_game_weight value = 8 }
+		}
+		else = {
+			add_to_variable = { var = democratic_game_weight value = 8 }
+		}
+	}
+}
+
+set_add_unaligned_weight_small = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = unaligned_game_weight
+				}
+			}
+			set_variable = { var = unaligned_game_weight value = 8 }
+		}
+		else = {
+			add_to_variable = { var = unaligned_game_weight value = 8 }
+		}
+	}
+}
+
+set_add_communist_weight_small = {
+	GER = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = communist_game_weight
+				}
+			}
+			set_variable = { var = communist_game_weight value = 8 }
+		}
+		else = {
+			add_to_variable = { var = communist_game_weight value = 8 }
+		}
+	}
+}
+
+leave_the_league_of_nations = {
+	custom_effect_tooltip = leave_the_league_of_nations_tt
+	hidden_effect = { remove_ideas = league_of_nations_member_idea }
+}
+
+bba_get_fighter_GER_effect = { #creates a fighter design if necessary and exports a number of them to ROOT
+	if = {
+		limit = {
+			GER = {
+				has_tech = basic_small_airframe
+				NOT = {
+					has_tech = improved_small_airframe
+				}
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_1
+			producer = GER
+			amount = fighter_buy_amount #set before the effect is invoked (they said I couldn't have arguments in my scripted effects, BUT LOOK WHOS LAUGHING NOW!!!!!)
+			variant_name = "Bf 109 D" #set up at game start
+		}
+	}
+	else_if = {
+		limit = {
+			GER = {
+				has_tech = improved_small_airframe
+				NOT = {
+					has_tech = advanced_small_airframe
+				}
+			}
+		}
+		if = {
+			limit = {
+				GER = { NOT = { has_country_flag = GER_improved_export_fighter_template } }
+			}
+			GER = {
+				create_equipment_variant = {
+					name = "Fw 190"
+					type = small_plane_airframe_2
+					modules = {
+						fixed_main_weapon_slot = aircraft_cannon_1_2x
+						fixed_auxiliary_weapon_slot_1 = light_mg_4x
+						engine_type_slot = engine_3_1x
+						special_type_slot_1 = empty
+					}
+					icon = "GFX_GER_fighter2_medium"
+				}
+				set_country_flag = GER_improved_export_fighter_template #to avoid double templates if this effect is run from different countries
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_2
+			producer = GER
+			amount = fighter_buy_amount
+			variant_name = "Fw 190"
+		}
+	}
+	else_if = {
+		limit = {
+			GER = {
+				has_tech = advanced_small_airframe
+			}
+		}
+		if = {
+			limit = {
+				GER = { NOT = { has_country_flag = GER_advanced_export_fighter_template } }
+			}
+			GER = {
+				create_equipment_variant = {
+					name = "Ta 152"
+					type = small_plane_airframe_3
+					modules = {
+						fixed_main_weapon_slot = aircraft_cannon_2_2x
+						fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+						engine_type_slot = engine_4_1x
+						special_type_slot_1 = empty
+					}
+					icon = "GFX_GER_fighter3_medium"
+				}
+				set_country_flag = GER_advanced_export_fighter_template
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_3
+			producer = GER
+			amount = fighter_buy_amount
+			variant_name = "Ta 152"
+		}
+	}
+}
