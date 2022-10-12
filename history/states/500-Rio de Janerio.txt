@@ -6,8 +6,13 @@ state={
 	
 	state_category = large_city
 	
+##PUSTOI_SLOT
+	impassable = yes
 	history={
+		owner = VEN
 	}
+	
+
 
 	provinces={
 		5172 8190 10980 12996 

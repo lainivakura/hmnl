@@ -4,8 +4,13 @@ state={
 	manpower = 1
 	
 	state_category = pastoral
+##PUSTOI_SLOT
+	impassable = yes
 	history={
+		owner = VEN
 	}
+	
+
 	
 	provinces={
 		2195 2209 5165 8203 10973 

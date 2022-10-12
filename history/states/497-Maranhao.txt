@@ -10,8 +10,11 @@ state={
 		rubber=23 # was: 30
 	}
 
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-
+		owner = VEN
+	
 	}
 
 	provinces={

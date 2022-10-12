@@ -7,8 +7,11 @@ state={
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category = pastoral
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-
+		owner = VEN
+	
 	}
 
 	local_supplies=0.0 

@@ -2,8 +2,13 @@ state={
 	id=616
 	name="STATE_616"
 
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-		}
+		owner = VEN
+	}
+	
+
 
 	provinces={
 		3742 5031 5057 5100 7511 8055 8081 8127 10724 12327 12750 12776 

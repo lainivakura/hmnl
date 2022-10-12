@@ -9,10 +9,13 @@ state=
 	resources={
 		chromium=2 # was: 3
 	}
-	history=
-	{
-
+##PUSTOI_SLOT
+	impassable = yes
+	history={
+		owner = VEN
 	}
+	
+
 	provinces={
 		1594 1635 4641
 	}

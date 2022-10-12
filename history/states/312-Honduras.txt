@@ -8,10 +8,13 @@ state=
 	}
 	
 	state_category = town
-	history=
-	{
-
+##PUSTOI_SLOT
+	impassable = yes
+	history={
+		owner = VEN
 	}
+	
+
 	provinces={
 		2031 8017 12865
 	}

@@ -3,8 +3,11 @@ state={
 	name="STATE_492"
 	state_category = rural
 
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-
+		owner = VEN
+	
 	}
 
 	provinces={

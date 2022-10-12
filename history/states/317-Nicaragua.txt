@@ -3,8 +3,11 @@ state={
 	name="STATE_317"
 	state_category = town
 
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-
+		owner = VEN
+	
 	}
 
 	provinces={

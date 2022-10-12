@@ -6,8 +6,13 @@ state={
 	
 	state_category = rural
 
+##PUSTOI_SLOT
+	impassable = yes
 	history={
+		owner = VEN
 	}
+	
+
 
 	provinces={
 		1529 2109 4533 4548 4587 5156 5178 8181 8239 10405 12466 

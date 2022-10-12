@@ -5,8 +5,13 @@ state={
 	manpower = 1
 	
 	state_category = town
+##PUSTOI_SLOT
+	impassable = yes
 	history={
+		owner = VEN
 	}
+	
+
 
 	provinces={
 		4386 4987 5310 7374 10825 10910 12892 
