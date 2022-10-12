@@ -198,4 +198,24 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;OTRANTO STRAIT 
+11647;9674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11647;6692;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11617;11664;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11617;6692;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+672;6674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+654;6674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+9632;6674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+9632;685;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+9632;11614;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11645;4545;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11645;1450;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+6763;1450;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+6763;3711;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+7554;9645;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+7554;6689;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11609;11614;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+3667;670;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+3667;666;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+1455;666;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+1455;6689;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
 -1;-1;;-1;-1;-1;-1;-1;-1
