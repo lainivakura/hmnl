@@ -87,51 +87,6 @@ country_event = {
 	
 	option = { # Yield
 		name = italy.3.a
-		ai_chance = {
-			base = 40
-			modifier = {
-				factor = 0
-				OR = {			
-					any_other_country = {
-						OR = {
-							is_major = yes
-							tag = YUG
-							original_tag = BUL
-						}
-						NOT = { tag = FROM }
-						OR = {
-							has_guaranteed = ROOT
-							AND = {
-								is_in_faction_with = ROOT
-								OR = {
-									NOT = { is_in_faction_with = FROM }
-									AND = {
-										is_in_faction_with = FROM
-										FROM = { is_faction_leader = no }
-									}
-								}
-							}
-						}
-					}
-					AND = {
-						is_subject = yes
-						NOT = { is_subject_of = FROM }
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				OR = {
-					has_government = communism
-					has_government = fascism #glorious Albania will never yield! #Actually, there is nothing glorious to be found in fascism ;)
-				}
-			}
-			modifier = {
-				factor = 5
-				is_subject_of = FROM
-			}
-		}
-		
 		FROM = {
 			country_event = { days = 1 id = italy.1 }
 		}
