@@ -691,8 +691,6 @@ equipments = {
 		maximum_speed = 3
 		reliability = 1.15
 		armor_value = 120
-				soft_attack = 5
-		hard_attack = 5
 		resources = {
 			steel = 2
 			chromium = 1
@@ -710,13 +708,13 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		build_cost_ic = 23
-		maximum_speed = 2
+		maximum_speed = 4
 		reliability = 1.3
 		armor_value = 150
 				soft_attack = 10
 		hard_attack = 10
 		resources = {
-			steel = 3
+			steel = 2
 			chromium = 2
 		}
 	}
