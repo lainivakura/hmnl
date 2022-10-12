@@ -2952,7 +2952,7 @@ date > 1949.12.1
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_domestic_arms_industry }
+		
 		x = -1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -3020,7 +3020,7 @@ date > 1949.12.1
 		y = 1
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 70
@@ -3052,7 +3052,7 @@ date > 1949.12.1
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 70
@@ -3123,7 +3123,7 @@ date > 1949.12.1
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 70
@@ -3160,7 +3160,9 @@ date > 1949.12.1
 		x = -2
 		y = 3
 		relative_position_id = HUN_civilian_industry
-
+		allow_branch = {
+			always = no
+		}
 		cost = 10
 
 		ai_will_do = {
@@ -3193,7 +3195,7 @@ date > 1949.12.1
 		id = HUN_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_civilian_industry }
+		
 		x = 1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -4174,7 +4176,7 @@ date > 1949.12.1
 		id = HUN_mobile_focus
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_home_defense }
+		
 		x = -2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
@@ -4287,7 +4289,7 @@ date > 1949.12.1
 		id = HUN_develop_tanks
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = HUN_mobile_focus }
-		mutually_exclusive = { focus = HUN_assault_gun_focus }
+		
 		x = 0
 		y = 1
 		relative_position_id = HUN_mobile_focus
@@ -4325,7 +4327,7 @@ date > 1949.12.1
 		id = HUN_assault_gun_focus
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = HUN_mobile_focus focus = HUN_home_defense }
-		mutually_exclusive = { focus = HUN_develop_tanks }
+		
 		x = 2
 		y = 1
 		relative_position_id = HUN_mobile_focus
@@ -4475,7 +4477,7 @@ date > 1949.12.1
 		id = HUN_home_defense
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_mobile_focus }
+		
 		x = 2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
