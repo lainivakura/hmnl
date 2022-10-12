@@ -1189,7 +1189,12 @@ characters={
 				if  = {
 					limit  = {
 						not  = {
-							tag  = VIC 
+							AND = {
+								original_tag  = FRA
+								has_government  = fascism
+							}
+							
+
 						}
 					}
 					country_event  = lar_france_political_violence.2
