@@ -3,8 +3,9 @@ state={
 	name="STATE_322"
 
 ##PUSTOI_SLOT
-	impassable = yes
+	
 	history={
+		set_demilitarized_zone = yes
 		owner = VEN
 	
 	}

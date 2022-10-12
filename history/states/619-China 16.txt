@@ -7,8 +7,9 @@ state={
 	state_category = pastoral
 
 ##PUSTOI_SLOT
-	impassable = yes
+	
 	history={
+		set_demilitarized_zone = yes
 		owner = VEN
 	}
 	

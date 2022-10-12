@@ -7,9 +7,10 @@ state={
 	state_category = rural
 
 ##PUSTOI_SLOT
-	impassable = yes
+	
 	history={
 		owner = VEN
+		set_demilitarized_zone = yes
 	}
 	
 
