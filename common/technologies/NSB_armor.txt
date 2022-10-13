@@ -485,7 +485,7 @@ technologies = {
 	}
 	improved_medium_tank_chassis = {	#Panzer IV
 			allow = { 
-			date > 1939.1.1
+			date > 1938.1.1
 		}
 		
 		enable_equipments = {
@@ -618,6 +618,9 @@ technologies = {
 		}
 	}
 	main_battle_tank_chassis = { #E-50
+	allow = { 
+		date > 1945.1.1
+	}
 		enable_equipments = {
 			modern_tank_chassis_1
 			modern_tank_destroyer_chassis_1
@@ -822,7 +825,7 @@ technologies = {
 			armor
 		}
 		allow = { 
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -846,6 +849,9 @@ technologies = {
 
 	}
 	super_heavy_tank_chassis = { #Maus
+	allow = { 
+		date > 1942.1.1
+	}
 		enable_equipments = {
 			super_heavy_tank_chassis_1
 			super_heavy_tank_destroyer_chassis_1
