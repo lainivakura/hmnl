@@ -480,25 +480,41 @@
 			470 = {
 				add_resource = {
 					type = oil
+<<<<<<< Updated upstream
 					amount = 2
+=======
+					amount = 4
+>>>>>>> Stashed changes
 				}
 			}
 			471 = {
 				add_resource = {
 					type = oil
+<<<<<<< Updated upstream
 					amount = 4
+=======
+					amount = 8
+>>>>>>> Stashed changes
 				}
 			}
 			472 = {
 				add_resource = {
 					type = oil
+<<<<<<< Updated upstream
 					amount = 4
+=======
+					amount = 6
+>>>>>>> Stashed changes
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
+<<<<<<< Updated upstream
 					amount = 4
+=======
+					amount = 6
+>>>>>>> Stashed changes
 				}
 			}
 		}
@@ -850,7 +866,11 @@
 				}
 				add_resource = {
 					type = steel
+<<<<<<< Updated upstream
 					amount = 2
+=======
+					amount = 10
+>>>>>>> Stashed changes
 				}
 			}
 			random_owned_controlled_state = {
@@ -860,7 +880,11 @@
 				}
 				add_resource = {
 					type = steel
+<<<<<<< Updated upstream
 					amount = 2
+=======
+					amount = 5
+>>>>>>> Stashed changes
 				}
 			}
 			random_owned_controlled_state = {
@@ -870,7 +894,11 @@
 				}
 				add_resource = {
 					type = chromium
+<<<<<<< Updated upstream
 					amount = 3
+=======
+					amount = 10
+>>>>>>> Stashed changes
 				}
 			}
 		}
@@ -1381,7 +1409,11 @@
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
+<<<<<<< Updated upstream
 		mutually_exclusive = { focus = CAN_send_in_the_zombies }
+=======
+
+>>>>>>> Stashed changes
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1483,7 +1515,11 @@
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
+<<<<<<< Updated upstream
 		mutually_exclusive = { focus = CAN_national_steel_car }
+=======
+
+>>>>>>> Stashed changes
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -2518,7 +2554,11 @@
 		y = 1
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
+<<<<<<< Updated upstream
 		cost = 10
+=======
+		cost = 5
+>>>>>>> Stashed changes
 
 		ai_will_do = {
 			factor = 35
@@ -2591,7 +2631,11 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
+<<<<<<< Updated upstream
 		cost = 10
+=======
+		cost = 5
+>>>>>>> Stashed changes
 
 		ai_will_do = {
 			factor = 25

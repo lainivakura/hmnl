@@ -1727,8 +1727,12 @@
 		x = 14
 		y = 0
 
+<<<<<<< Updated upstream
 		cost = 10
 
+=======
+		cost = 5
+>>>>>>> Stashed changes
 		ai_will_do = {
 			factor = 4
 		}
@@ -1796,7 +1800,11 @@
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
+<<<<<<< Updated upstream
 		cost = 10
+=======
+		cost = 5
+>>>>>>> Stashed changes
 
 		ai_will_do = {
 			factor = 5
@@ -2329,7 +2337,11 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< Updated upstream
 		cost = 10
+=======
+		cost = 5ene
+>>>>>>> Stashed changes
 
 		ai_will_do = {
 			factor = 1
@@ -2459,7 +2471,11 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< Updated upstream
 		cost = 10
+=======
+		cost = 5
+>>>>>>> Stashed changes
 
 		ai_will_do = {
 			factor = 1
@@ -2831,7 +2847,11 @@
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
+<<<<<<< Updated upstream
 		cost = 10
+=======
+		cost = 5
+>>>>>>> Stashed changes
 
 		ai_will_do = {
 			factor = 1

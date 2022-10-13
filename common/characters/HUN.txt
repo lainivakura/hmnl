@@ -128,11 +128,12 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=3
-			attack_skill=3
-			defense_skill=2
+			traits={ organizer panzer_leader}
+			skill=4
+			attack_skill=4
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -146,7 +147,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster }
+			traits={ trickster panzer_leader}
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -165,11 +166,12 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			traits={ cavalry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}

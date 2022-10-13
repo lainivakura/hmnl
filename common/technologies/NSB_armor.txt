@@ -384,6 +384,7 @@ technologies = {
 		start_year = 1941
 		categories = {
 			armor
+			cat_light_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -443,6 +444,7 @@ technologies = {
 		start_year = 1936
 		categories = {
 			armor
+			cat_medium_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -508,7 +510,7 @@ technologies = {
 			leads_to_tech = advanced_light_tank_chassis
 			research_cost_coeff = 0.6
 		}
-		research_cost = 1
+		research_cost = 2
 		start_year = 1941
 
 		folder = {
@@ -561,6 +563,7 @@ technologies = {
 		}
 		categories = {
 			armor
+			cat_medium_armor
 		}
 	}
 	advanced_medium_tank_chassis = {	#Panther
@@ -588,7 +591,7 @@ technologies = {
 			leads_to_tech = advanced_heavy_tank_chassis
 			research_cost_coeff = 0.6
 		}
-		research_cost = 1
+		research_cost = 2
 		start_year = 1943
 
 		allow = {
@@ -615,6 +618,7 @@ technologies = {
 		}
 		categories = {
 			armor
+			cat_medium_armor
 		}
 	}
 	main_battle_tank_chassis = { #E-50
@@ -697,6 +701,7 @@ technologies = {
 		start_year = 1936
 		categories = {
 			armor
+			cat_heavy_armor
 		}
 		folder = {
 			name = nsb_armour_folder
@@ -761,10 +766,11 @@ technologies = {
 			leads_to_tech = advanced_light_tank_chassis
 			research_cost_coeff = 0.7
 		}
-		research_cost = 1
+		research_cost = 2
 		start_year = 1941
 		categories = {
 			armor
+			cat_heavy_armor
 		}
 		allow = { 
 			date > 1939.1.1
@@ -819,10 +825,11 @@ technologies = {
 			leads_to_tech = advanced_medium_tank_chassis
 			research_cost_coeff = 0.7
 		}
-		research_cost = 1
+		research_cost = 2
 		start_year = 1943
 		categories = {
 			armor
+			cat_heavy_armor
 		}
 		allow = { 
 			date > 1942.1.1
@@ -1190,6 +1197,7 @@ technologies = {
 		path = {
 			leads_to_tech = engine_tech_4
 			research_cost_coeff = 1
+<<<<<<< Updated upstream
 		}
 		on_research_complete = {
 			custom_effect_tooltip = engine_tech_3_tt
@@ -1198,6 +1206,16 @@ technologies = {
 			amphibious_drive
 			
 		}
+=======
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_3_tt
+		}
+		enable_equipment_modules = {
+			amphibious_drive
+			
+		}
+>>>>>>> Stashed changes
 
 		xp_research_type = army
 		xp_boost_cost = 75

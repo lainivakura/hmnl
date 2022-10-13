@@ -16,9 +16,15 @@ operations_atom = {
 				is_good = yes
 			
 				complete_effect = {
+<<<<<<< Updated upstream:common/decisions/atom_leagacy.txt
 					air_experience = 550
 					add_war_support = 0.12
 					army_experience = 600
+=======
+					air_experience = 50
+					add_war_support = 0.12
+					army_experience = 50
+>>>>>>> Stashed changes:common/decisions/Atom_decisions.txt
 				}
 	}
 	GER_bez_spain = {
@@ -42,9 +48,15 @@ operations_atom = {
 		is_good = yes
 	
 		complete_effect = {
+<<<<<<< Updated upstream:common/decisions/atom_leagacy.txt
 			air_experience = 750
 			add_war_support = 0.12
 			army_experience = 800
+=======
+			air_experience = 50
+			add_war_support = 0.12
+			army_experience = 50
+>>>>>>> Stashed changes:common/decisions/Atom_decisions.txt
 		}
 	}
 	ITA_bez_spain = {
@@ -66,9 +78,15 @@ operations_atom = {
 		is_good = yes
 	
 		complete_effect = {
+<<<<<<< Updated upstream:common/decisions/atom_leagacy.txt
 			air_experience = 350
 
 			 army_experience = 500
+=======
+			air_experience = 50
+
+			 army_experience = 50
+>>>>>>> Stashed changes:common/decisions/Atom_decisions.txt
 		}
 	}
 

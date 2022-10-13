@@ -107,6 +107,7 @@ ideas = {
 			
 			modifier = {
 				improve_relations_maintain_cost_factor = -0.5
+				min_export = 0.3
 			}
 		}
 

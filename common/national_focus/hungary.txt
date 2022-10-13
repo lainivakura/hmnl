@@ -3041,6 +3041,9 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = HUN_invite_foreign_investors
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -3149,6 +3152,9 @@ date > 1949.12.1
 					amount = 16
 				}
 			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				}
 		}
 	}
 

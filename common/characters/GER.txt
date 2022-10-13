@@ -181,12 +181,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster }
-			skill=4
-			attack_skill=4
+			traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster trait_engineer}
+			skill=5
+			attack_skill=6
 			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
+			planning_skill=3
+			logistics_skill=5
 			legacy_id=4
 		}
 	}
@@ -213,12 +213,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ brilliant_strategist armor_officer panzer_leader trickster trait_engineer }
+			traits={ brilliant_strategist armor_officer panzer_leader trickster trait_engineer organizer}
 			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=4
+			attack_skill=6
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=5
 		}
 	}
