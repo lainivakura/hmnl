@@ -5156,7 +5156,9 @@ focus_tree = {
 		relative_position_id = ITA_citta_dell_aria
 		cost = 5
 		available = {
-		
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -5535,6 +5537,7 @@ focus_tree = {
 		relative_position_id = ITA_bomber_designs
 		cost = 10
 		available = {
+			date > 1942.01.01
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
