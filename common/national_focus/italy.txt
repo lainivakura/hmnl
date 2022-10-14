@@ -5389,7 +5389,19 @@ focus_tree = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-				ITA_add_long_range_aircraft_templates = yes
+				if = {
+					limit = {
+						has_tech = improved_large_airframe
+					}
+					ITA_add_long_range_aircraft_templates = yes
+				}
+				else = {
+					custom_effect_tooltip = ITA_LARGE_tt
+					effect_tooltip = {
+						ITA_add_long_range_aircraft_templates = yes
+					}
+				}
+				
 			}
 		}
 	}
@@ -5432,7 +5444,18 @@ focus_tree = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-				ITA_add_bomber_designs_templates = yes
+				if = {
+					limit = {
+						has_tech = improved_medium_airframe
+					}
+					ITA_add_bomber_designs_templates = yes
+				}
+				else = {
+					custom_effect_tooltip = ITA_MEDIUM_tt
+					effect_tooltip = {
+						ITA_add_bomber_designs_templates = yes
+					}
+				}
 			}
 		}
 	}
@@ -5475,7 +5498,19 @@ focus_tree = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-				ITA_add_fighter_designs_templates = yes
+				if = {
+					limit = {
+						has_tech = advanced_small_airframe
+					}
+					ITA_add_fighter_designs_templates = yes
+				}
+				else = {
+					custom_effect_tooltip = ITA_FIGHTER_tt
+					effect_tooltip = {
+						ITA_add_fighter_designs_templates = yes
+					}
+				}
+				
 			}
 		}
 	}
@@ -5537,7 +5572,7 @@ focus_tree = {
 		relative_position_id = ITA_bomber_designs
 		cost = 10
 		available = {
-			date > 1942.01.01
+			
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
@@ -5571,8 +5606,21 @@ focus_tree = {
 				limit = {
 					has_dlc = "By Blood Alone"
 				}
-				ITA_add_supremacy_in_the_skies_templates = yes
+				if = {
+					limit = {
+						has_tech = modern_small_airframe
+					}
+					ITA_add_supremacy_in_the_skies_templates = yes
+				}
+				else = {
+					custom_effect_tooltip = ITA_JET_tt
+					effect_tooltip = {
+						ITA_add_supremacy_in_the_skies_templates = yes
+					}
+				}
+				
 			}
+				
 		}
 	}
 

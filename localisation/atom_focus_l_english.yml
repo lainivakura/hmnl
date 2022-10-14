@@ -40,3 +40,7 @@
  SOV_reorganization_higher_officers_desc:0 "Чистка офицеров ударила по репутации Красной Армии, сейчас самое время провести реорганизацию высшего офицерского состава." 
  SOV_reorganization_inferior_officers:0 "Реорганизация низшего командного состава"
  SOV_reorganization_inferior_officers_desc:0 "Низший офицерский состав переживает не самые лучшие времена, сейчас самое время разобраться и Красная армия полностью будет востановлена от большой Чистки"
+ITA_LARGE_tt:0 "\nКогда изучена технология §Y$improved_large_airframe$§!:\n"
+ITA_MEDIUM_tt:0 "\nКогда изучена технология §Y$improved_medium_airframe$§!:\n"
+ITA_FIGHTER_tt:0 "\nКогда изучена технология §Y$advanced_small_airframe$§!:\n"
+ITA_JET_tt:0 "\nКогда изучена технология §Y$modern_small_airframe$§!:\n"
