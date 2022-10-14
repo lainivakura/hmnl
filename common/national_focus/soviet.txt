@@ -5888,8 +5888,10 @@ date > 1941.10.1
 			add_timed_idea = {
 				idea = SOV_desperate_measures_ns
 				days = 250
+				
 			}
-
+			add_ideas = tot_economic_mobilisation
+			add_ideas = extensive_conscription
 			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
 		}
 	}

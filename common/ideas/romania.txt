@@ -107,7 +107,7 @@ ideas = {
 			
 			modifier = {
 				improve_relations_maintain_cost_factor = -0.5
-				min_export = 0.3
+				
 			}
 		}
 
@@ -132,6 +132,7 @@ ideas = {
 			modifier = {
 				join_faction_tension = -1.0
 				improve_relations_maintain_cost_factor = -0.5
+				min_export = 0.3
 			}
 		}
 

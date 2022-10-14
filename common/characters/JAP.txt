@@ -76,9 +76,9 @@ corps_commander={
 		}
 
 		corps_commander={
-			traits={ brilliant_strategist politically_connected trickster trait_engineer }
-			skill=5
-			attack_skill=4
+			traits={ brilliant_strategist politically_connected trickster trait_engineer infantry_leader mountaineer}
+			skill=6
+			attack_skill=6
 			defense_skill=5
 			planning_skill=3
 			logistics_skill=4
@@ -262,12 +262,12 @@ corps_commander={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist infantry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
+			traits={ brilliant_strategist infantry_officer infantry_leader organizer}
+			skill=5
+			attack_skill= 5	
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -637,12 +637,12 @@ corps_commander={
 		}
 		
 		corps_commander={
-			traits={ career_officer infantry_officer commando }
-			skill=3
-			attack_skill=3
-			defense_skill=1
+			traits={ career_officer infantry_officer commando infantry_leader trait_engineer}
+			skill=5
+			attack_skill=5
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=0
 		}
 	}

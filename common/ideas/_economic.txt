@@ -591,7 +591,7 @@ ideas = {
 				min_export = 0.1
 				industrial_capacity_factory = 0.07
 				industrial_capacity_dockyard = 0.07
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.07
 				research_speed_factor = 0.01
 				civilian_intel_to_others = 10.0
 				navy_intel_to_others = 5
@@ -666,6 +666,7 @@ ideas = {
 				min_export = 0
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
 				#civilian_intel_to_others = 0.0
 			}
 			
@@ -703,5 +704,7 @@ ideas = {
 				}
    			}
 		}
+	
+		
 	}
 }

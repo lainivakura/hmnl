@@ -4,7 +4,20 @@ ideas = {
     
 
 
+country = {
+     free_trade_for_ai = {
+      picture = MONTOE
 
+      allowed = {
+        always = yes
+      }
+
+      modifier = {
+        min_export = 0.55
+      }
+    }
+
+  }
 
   
 country = {

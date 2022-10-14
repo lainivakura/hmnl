@@ -4286,9 +4286,7 @@ focus_tree = {
 		relative_position_id = ITA_preserve_army_traditions
 		cost = 5
 		available = {
-			any_enemy_country = {
-				is_major_not_original_tag_root = yes
-			}
+		
 		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -5158,9 +5156,7 @@ focus_tree = {
 		relative_position_id = ITA_citta_dell_aria
 		cost = 5
 		available = {
-			any_enemy_country = {
-				is_major_not_original_tag_root = yes
-			}
+		
 		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -6193,9 +6189,7 @@ focus_tree = {
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
-			any_enemy_country = {
-				is_major_not_original_tag_root = yes
-			}
+			
 		}
 
 		search_filters = {FOCUS_FILTER_NAVY_XP}
