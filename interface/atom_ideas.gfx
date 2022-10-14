@@ -1,4 +1,6 @@
-spriteType = {
-    name = "ANDREY"
-    texturefile = gfx/interface/ideas/ANDREY.dds
+spriteTypes = {
+    spriteType = {
+        name = "ANDREY"
+        texturefile = gfx/interface/ideas/ANDREY.dds
+    }
 }
