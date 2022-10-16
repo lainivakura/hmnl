@@ -7,7 +7,10 @@ state={
 	
 	manpower = 1
 	resources={
+		steel=3 # was: 4
+		chromium=90 # was: 160
 		oil=41 # was: 58
+		rubber=6
 	}
 
 	history={

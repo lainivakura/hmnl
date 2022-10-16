@@ -1,0 +1,17 @@
+state={
+	id=855
+	name="STATE_855"
+	impassable = yes
+	history = {
+		owner = VEN
+		add_core_of = VEN
+	}
+	manpower=1
+	provinces={
+		1033 2027 2095 5027 7970 8092 12101 12455 
+	}
+
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
