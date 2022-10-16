@@ -9401,7 +9401,7 @@ date > 1949.12.1
 				AND = {
 					country_exists = SPC
 					NOT = { has_war_with = SPC }
-					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+					# SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 				}
 			}
 			
@@ -9428,7 +9428,7 @@ date > 1949.12.1
 					AND = {
 						has_global_flag = SPR_anarchist_uprising_flag
 						OR = {
-							NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
+							# NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
 							NOT = { country_exists = SPC }
 						}
 					}
@@ -9530,7 +9530,7 @@ date > 1949.12.1
 				tooltip = SOV_poum_exists_tt
 				SPC = { 
 					exists = yes 
-					has_completed_focus = SPR_the_anti_fascist_workers_revolution
+					# has_completed_focus = SPR_the_anti_fascist_workers_revolution
 				}
 			}
 		}
@@ -11653,7 +11653,7 @@ date > 1949.12.1
 					has_completed_focus = SOV_coup_detat
 					has_global_flag = SPR_anarchist_uprising_flag
 					country_exists = SPC
-					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+					# SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 				}
 				SPC = {
 					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }

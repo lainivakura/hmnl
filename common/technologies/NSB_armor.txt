@@ -1246,47 +1246,50 @@ technologies = {
 		}
 	}
 
-	# 	engine_tech_4 = {
-	# 	research_cost = 1
-	# 	start_year = 1943
-	# 	categories = {
+	engine_tech_4 = {
+		allow_branch = {
+			always = no
+		} #############
+		research_cost = 1
+		start_year = 1943
+		categories = {
 			
-	# 	}
-	# 	folder = {
-	# 		name = nsb_armour_folder
-	# 		position = { x = 2 y = @1943 }
-	# 	}
-	# 	xp_research_type = army
-	# 	xp_boost_cost = 75
-	# 	xp_unlock_cost = 0
-	# 	xp_research_bonus = 1
-	# 	on_research_complete = {
-	# 		custom_effect_tooltip = engine_tech_4_tt
-	# 	}
-	# 	show_effect_as_desc = yes
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 		modifier = {
-	# 			factor = 2
-	# 			is_major = yes
-	# 		}
-	# 		modifier = {
-	# 			has_war = yes
-	# 			factor = 2
-	# 		}
-	# 		modifier = {
-	# 			factor = 1.1
-	# 			date > "1937.1.1"
-	# 		}
-	# 		modifier = {
-	# 			factor = 1.1
-	# 			date > "1938.1.1"
-	# 		}
-	# 		modifier = {
-	# 			factor = 1.1
-	# 			date > "1939.1.1"
-	# 		}
-	# 	}
-	# }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1943 }
+		}
+		xp_research_type = army
+		xp_boost_cost = 75
+		xp_unlock_cost = 0
+		xp_research_bonus = 1
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_4_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+	}
 }
 

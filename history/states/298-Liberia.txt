@@ -6,7 +6,7 @@ state=
 	
 	state_category = rural
 	
-	impassible = yes
+	impassable = yes
 	history= {
 		owner = VEN
 	}
