@@ -4657,6 +4657,7 @@ focus_tree = {
 		}
 		
 		available = {
+			always = no
 			is_subject = no 
 			LIT = { 
 				exists = yes
@@ -8495,7 +8496,7 @@ focus_tree = {
 				create_country_leader = {
 					name = "Michał II"
 					desc = "POLITICS_MICHAEL_I_DESC"
-					picture = GFX_portrait_Michał_II
+					picture = GFX_portrait_Michal_II
 					expire = "1965.1.1"
 					ideology = despotism
 					traits = {
