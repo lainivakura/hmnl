@@ -3,12 +3,15 @@ state = {
 	name = "STATE_889"
 	manpower = 708190
 	state_category = pastoral
-
+ 
 	resources={
 		tungsten=2.000
 	}
 
 	history = {
+		victory_points = {
+			191 1 
+		}
 		owner = ENG
 		buildings = {
 			infrastructure = 1
