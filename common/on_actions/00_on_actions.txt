@@ -2103,6 +2103,21 @@ on_actions = {
 					state_event = { id = mtg_usa_civil_war_fascists.1000 trigger_for = controller }
 				}
 			}
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 85
+						has_dynamic_modifier = { modifier = international_city }
+					}
+					FROM = {
+						OR = {
+							original_tag = POL
+							tag = POL
+						}
+					}
+				}
+				FROM.FROM = { remove_dynamic_modifier = { modifier = international_city } }
+			}
 		}
 	}
 	
@@ -2210,4 +2225,30 @@ on_actions = {
 			}
 		}
 	}
+
+	on_unit_leader_promote_from_ranks_veteran = { #Unit leader scope, FROM is unit
+		effect = {
+			FROM = {
+				add_random_valid_trait_from_unit = {
+					character = ROOT
+				}
+			}
+			set_unit_leader_flag = field_promotion_achievement
+		}
+	}
+
+	on_unit_leader_promote_from_ranks_green = { #Unit leader scope, FROM is unit
+		effect = {
+			set_unit_leader_flag = field_promotion_achievement
+		}
+	}
+
+	on_add_history = { #Unit Scope
+		effect = {
+			#add_unit_medal_to_latest_entry = {
+			#	unit_medals = iron_cross_second_class
+			#} #This would add a unit medal to the history entry you just received
+		}
+	}
+
 }
