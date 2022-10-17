@@ -7,10 +7,9 @@ state= {
 	{
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 4
+			industrial_complex = 3
 			arms_factory = 3
 			7071 = {
 				naval_base = 1
@@ -18,7 +17,7 @@ state= {
 				bunker = 1
 			}
 			4196 = {
-				naval_base = 3
+				naval_base = 10
 				coastal_bunker = 1
 				bunker = 1
 			}
