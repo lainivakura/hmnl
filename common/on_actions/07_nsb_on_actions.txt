@@ -1821,63 +1821,63 @@ on_actions = {
 		}
 	}
 
-	on_monthly_SOV = { 
-		effect = { 
-			IF = {
-				limit = { has_global_flag = SOV_soviet_civil_war }
-				# nationalist uprisings 
-				IF = { 
-					limit = { 
-						check_variable = { SOV.SOV_civil_war_months > 2 }
-						SOV = { SOV_is_exiles = yes } # currently exiles only
-					}
-					SOV = {
-						country_event = {
-							id = NSB_soviet_nationalist.000
-							days = 2
-							random_days = 4
-						}
-					}
-				}
-				add_to_variable = { SOV.SOV_civil_war_months = 1 } # Civil war counter
-			}
-			# Check for leader desertions
-			IF = {
-				limit = {
-					ROOT = { has_global_flag = SOV_soviet_civil_war }
+	# on_monthly_SOV = { 
+	# 	effect = { 
+	# 		IF = {
+	# 			limit = { has_global_flag = SOV_soviet_civil_war }
+	# 			# nationalist uprisings 
+	# 			IF = { 
+	# 				limit = { 
+	# 					check_variable = { SOV.SOV_civil_war_months > 2 }
+	# 					SOV = { SOV_is_exiles = yes } # currently exiles only
+	# 				}
+	# 				SOV = {
+	# 					country_event = {
+	# 						id = NSB_soviet_nationalist.000
+	# 						days = 2
+	# 						random_days = 4
+	# 					}
+	# 				}
+	# 			}
+	# 			add_to_variable = { SOV.SOV_civil_war_months = 1 } # Civil war counter
+	# 		}
+	# 		# Check for leader desertions
+	# 		IF = {
+	# 			limit = {
+	# 				ROOT = { has_global_flag = SOV_soviet_civil_war }
 
-					SOS = {
-						any_unit_leader = {
-							has_trait = trait_SOV_cowed_by_stalin_army
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-					}
-				}
-				SOS = {
-					random_unit_leader = {
-						limit = {
-							has_trait = trait_SOV_cowed_by_stalin_army
-							NOT = { has_trait = trait_SOV_stalinist }
-						}
-						set_variable = { SOS.SOV_general_to_desert = THIS }
-					}
+	# 				SOS = {
+	# 					any_unit_leader = {
+	# 						has_trait = trait_SOV_cowed_by_stalin_army
+	# 						NOT = { has_trait = trait_SOV_stalinist }
+	# 					}
+	# 				}
+	# 			}
+	# 			SOS = {
+	# 				random_unit_leader = {
+	# 					limit = {
+	# 						has_trait = trait_SOV_cowed_by_stalin_army
+	# 						NOT = { has_trait = trait_SOV_stalinist }
+	# 					}
+	# 					set_variable = { SOS.SOV_general_to_desert = THIS }
+	# 				}
 					
-				}
-				random_list = {
-					25 = {
-				        # defections
-				        country_event = {
-				        	id = NSB_soviet_communist_civil_war.010
-				        	hours = 1
-				        }
-				    }
-					75 = {
-				        # Nothing happens
-				    }
-				}
-			}
-		} 
-	}
+	# 			}
+	# 			random_list = {
+	# 				25 = {
+	# 			        # defections
+	# 			        country_event = {
+	# 			        	id = NSB_soviet_communist_civil_war.010
+	# 			        	hours = 1
+	# 			        }
+	# 			    }
+	# 				75 = {
+	# 			        # Nothing happens
+	# 			    }
+	# 			}
+	# 		}
+	# 	} 
+	# }
 	
 	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
 	on_join_faction = {
