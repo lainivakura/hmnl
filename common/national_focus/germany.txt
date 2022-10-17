@@ -141,6 +141,10 @@ focus_tree = {
 			OR = {
 				FRA = { has_capitulated = yes }
 				NOT = { country_exists = FRA }
+				any_other_country = {
+					original_tag = FRA
+					has_government = fascism
+				}
 			}
 			OR = {
 				has_full_control_of_state = 19
