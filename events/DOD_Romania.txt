@@ -1395,8 +1395,30 @@ country_event = {
 				has_tech = fighter3
 				factor = 0
 			}
+			modifier = {
+				has_tech = basic_small_airframe
+				add = -10
+			}
+			modifier = {
+				has_tech = improved_small_airframe
+				add = -10
+			}
+			modifier = {
+				has_tech = advanced_small_airframe
+				factor = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
 		}
 		country_event = DOD_romania.151
+		}
+		else = {
+			country_event = DOD_romania.1511
+		}
 
 	}
 
@@ -1421,7 +1443,17 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
+			}
 		country_event = DOD_romania.152
+		}
+		else = {
+			country_event = DOD_romania.1521	
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1434,6 +1466,18 @@ country_event = {
 			}
 			modifier = {
 				has_tech = heavy_fighter3
+				factor = 0
+			}
+			modifier = {
+				has_tech = basic_medium_airframe
+				add = -10
+			}
+			modifier = {
+				has_tech = improved_medium_airframe
+				add = -10
+			}
+			modifier = {
+				has_tech = advanced_medium_airframe
 				factor = 0
 			}
 		}
@@ -1762,7 +1806,326 @@ country_event = {
 
 }
 
-#Fighter competition - Hungary is looking for a heavy fighter
+#Fighter competition - Romania is looking for a light fighter - BBA version
+country_event = {
+	id = DOD_romania.1511
+	title = DOD_hungary.151.t
+	desc = {
+		text = DOD_hungary.151.desc_light_fighter
+		trigger = {
+			NOT = { 
+				has_country_flag = GER_fighter_refused
+				has_country_flag = ENG_fighter_refused
+				has_country_flag = USA_fighter_refused
+				has_country_flag = FRA_fighter_refused
+				has_country_flag = ITA_fighter_refused
+			} 
+		}
+	}
+	desc = {
+		text = DOD_hungary.151.desc_light_fighter_refused
+		trigger = {
+			OR = {
+		 		has_country_flag = GER_fighter_refused
+				has_country_flag = ENG_fighter_refused
+				has_country_flag = USA_fighter_refused
+				has_country_flag = FRA_fighter_refused
+				has_country_flag = ITA_fighter_refused
+		 	}
+		}
+	}
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+
+	option = {# Select German Plane
+		name = DOD_hungary.151.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = GER
+				factor = 10
+			}
+			modifier = {
+				GER = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				GER = {
+					has_tech = basic_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				GER = {
+					has_tech = improved_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				GER = {
+					has_tech = advanced_small_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					GER = { has_tech = basic_small_airframe}
+					ROM = { NOT = { has_tech = basic_small_airframe } }
+				}
+				AND = {
+					GER = { has_tech = improved_small_airframe}
+					ROM = { NOT = { has_tech = improved_small_airframe } }
+				}
+				AND = {
+					GER = { has_tech = advanced_small_airframe}
+					ROM = { NOT = { has_tech = advanced_small_airframe } }
+				}
+			}
+			NOT = { has_war_with = GER }
+			NOT = { has_country_flag = GER_fighter_refused }
+		}
+		GER = { country_event = DOD_romania.153 }	
+	}
+
+	option = {# select italian plane
+		name = DOD_hungary.151.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = ITA
+				factor = 10
+			}
+			modifier = {
+				ITA = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				ITA = {
+					has_tech = basic_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ITA = {
+					has_tech = improved_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ITA = {
+					has_tech = advanced_small_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					ITA = { has_tech = basic_small_airframe}
+					ROM = { NOT = { has_tech = basic_small_airframe } }
+				}
+				AND = {
+					ITA = { has_tech = improved_small_airframe}
+					ROM = { NOT = { has_tech = improved_small_airframe } }
+				}
+				AND = {
+					ITA = { has_tech = advanced_small_airframe}
+					ROM = { NOT = { has_tech = advanced_small_airframe } }
+				}
+			}
+			NOT = { has_war_with = ITA }
+			NOT = { has_country_flag = ITA_fighter_refused }
+		}
+		ITA = { country_event = DOD_romania.153 }	
+	}
+
+	option = {# select french plane
+		name = DOD_hungary.151.c
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = FRA
+				factor = 10
+			}
+			modifier = {
+				FRA = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				FRA = {
+					has_tech = basic_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				FRA = {
+					has_tech = improved_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				FRA = {
+					has_tech = advanced_small_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					FRA = { has_tech = basic_small_airframe}
+					ROM = { NOT = { has_tech = basic_small_airframe } }
+				}
+				AND = {
+					FRA = { has_tech = improved_small_airframe}
+					ROM = { NOT = { has_tech = improved_small_airframe } }
+				}
+				AND = {
+					FRA = { has_tech = advanced_small_airframe}
+					ROM = { NOT = { has_tech = advanced_small_airframe } }
+				}
+			}
+			NOT = { has_war_with = FRA }
+			NOT = { has_country_flag = FRA_fighter_refused }
+			
+		}
+		FRA = { country_event = DOD_romania.153 }	
+	}
+	option = {# select british plane
+		name = DOD_hungary.151.d
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = ENG
+				factor = 10
+			}
+			modifier = {
+				ENG = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				ENG = {
+					has_tech = basic_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ENG = {
+					has_tech = improved_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ENG = {
+					has_tech = advanced_small_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					ENG = { has_tech = basic_small_airframe}
+					ROM = { NOT = { has_tech = basic_small_airframe } }
+				}
+				AND = {
+					ENG = { has_tech = improved_small_airframe}
+					ROM = { NOT = { has_tech = improved_small_airframe } }
+				}
+				AND = {
+					ENG = { has_tech = advanced_small_airframe}
+					ROM = { NOT = { has_tech = advanced_small_airframe } }
+				}
+			}
+			NOT = { has_war_with = ENG }
+			NOT = { has_country_flag = ENG_fighter_refused }
+		}
+		ENG = { country_event = DOD_romania.153 }	
+	}
+	option = {# select american plane
+		name = DOD_hungary.151.e
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = USA
+				factor = 10
+			}
+			modifier = {
+				USA = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				USA = {
+					has_tech = basic_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				USA = {
+					has_tech = improved_small_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				USA = {
+					has_tech = advanced_small_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					USA = { has_tech = basic_small_airframe}
+					ROM = { NOT = { has_tech = basic_small_airframe } }
+				}
+				AND = {
+					USA = { has_tech = improved_small_airframe}
+					ROM = { NOT = { has_tech = improved_small_airframe } }
+				}
+				AND = {
+					USA = { has_tech = advanced_small_airframe}
+					ROM = { NOT = { has_tech = advanced_small_airframe } }
+				}
+			}
+			NOT = { has_war_with = USA }
+			NOT = { has_country_flag = USA_fighter_refused }
+			OR = {
+				AND = {
+					has_country_flag = GER_fighter_refused
+					has_country_flag = ITA_fighter_refused
+					has_country_flag = ENG_fighter_refused
+					has_country_flag = FRA_fighter_refused
+				}
+				AND = {
+					GER = { is_available_fighter_HUN = no }
+					ENG = { is_available_fighter_HUN = no }
+					FRA = { is_available_fighter_HUN = no }
+					ITA = { is_available_fighter_HUN = no }
+				}
+			}
+		}
+		USA = { country_event = DOD_romania.153 }	
+	}
+	option = {# failsafe
+		name = DOD_hungary.151.f	
+		trigger = {
+			OR = {
+				has_country_flag = GER_fighter_refused
+				has_country_flag = ITA_fighter_refused
+				has_country_flag = ENG_fighter_refused
+				has_country_flag = FRA_fighter_refused
+				has_country_flag = USA_fighter_refused
+			}
+		}
+		air_experience = 50
+	}
+
+}
+#Fighter competition - Romania is looking for a heavy fighter
 country_event = {
 	id = DOD_romania.152
 	title = DOD_hungary.152.t
@@ -1795,7 +2158,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {# Select German Plane
-		name = DOD_hungary.152.a
+		name = DOD_hungary.151.a
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -1847,7 +2210,7 @@ country_event = {
 	}
 
 	option = {# select italian plane
-		name = DOD_hungary.152.b
+		name = DOD_hungary.151.b
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -1899,7 +2262,7 @@ country_event = {
 	}
 
 	option = {# select french plane
-		name = DOD_hungary.152.c
+		name = DOD_hungary.151.c
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -1951,7 +2314,7 @@ country_event = {
 		FRA = { country_event = DOD_romania.154 }
 	}
 	option = {# select british plane
-		name = DOD_hungary.152.d
+		name = DOD_hungary.151.d
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -2002,7 +2365,7 @@ country_event = {
 		ENG = { country_event = DOD_romania.154 }
 	}
 	option = {# select american plane
-		name = DOD_hungary.152.e
+		name = DOD_hungary.151.e
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -2084,6 +2447,326 @@ country_event = {
 
 }
 
+#Fighter competition - Romania is looking for a heavy fighter - BBA
+country_event = {
+	id = DOD_romania.1521
+	title = DOD_hungary.152.t
+	desc = {
+		text = DOD_hungary.152.desc_heavy_fighter
+		trigger = {
+			NOT = { 
+				has_country_flag = GER_heavy_fighter_refused
+				has_country_flag = ENG_heavy_fighter_refused
+				has_country_flag = USA_heavy_fighter_refused
+				has_country_flag = FRA_heavy_fighter_refused
+				has_country_flag = ITA_heavy_fighter_refused
+			} 
+		}
+	}
+	desc = {
+		text = DOD_hungary.152.desc_heavy_fighter_refused
+		trigger = {
+			OR = {
+		 		has_country_flag = GER_heavy_fighter_refused
+				has_country_flag = ENG_heavy_fighter_refused
+				has_country_flag = USA_heavy_fighter_refused
+				has_country_flag = FRA_heavy_fighter_refused
+				has_country_flag = ITA_heavy_fighter_refused
+		 	}
+		}
+	}
+	picture = GFX_report_event_fighters
+	
+	is_triggered_only = yes
+
+	option = {# Select German Plane
+		name = DOD_hungary.151.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = GER
+				factor = 10
+			}
+			modifier = {
+				GER = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				GER = {
+					has_tech = basic_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				GER = {
+					has_tech = improved_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				GER = {
+					has_tech = advanced_medium_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					GER = { has_tech = basic_medium_airframe}
+					ROM = { NOT = { has_tech = basic_medium_airframe } }
+				}
+				AND = {
+					GER = { has_tech = improved_medium_airframe}
+					ROM = { NOT = { has_tech = improved_medium_airframe } }
+				}
+				AND = {
+					GER = { has_tech = advanced_medium_airframe}
+					ROM = { NOT = { has_tech = advanced_medium_airframe } }
+				}
+			}
+			NOT = { has_war_with = GER }
+			NOT = { has_country_flag = GER_heavy_fighter_refused }
+		}
+		GER = { country_event = DOD_romania.154 }	
+	}
+
+	option = {# select italian plane
+		name = DOD_hungary.151.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = ITA
+				factor = 10
+			}
+			modifier = {
+				ITA = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				ITA = {
+					has_tech = basic_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ITA = {
+					has_tech = improved_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ITA = {
+					has_tech = advanced_medium_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					ITA = { has_tech = basic_medium_airframe}
+					ROM = { NOT = { has_tech = basic_medium_airframe } }
+				}
+				AND = {
+					ITA = { has_tech = improved_medium_airframe}
+					ROM = { NOT = { has_tech = improved_medium_airframe } }
+				}
+				AND = {
+					ITA = { has_tech = advanced_medium_airframe}
+					ROM = { NOT = { has_tech = advanced_medium_airframe } }
+				}
+			}
+			NOT = { has_war_with = ITA }
+			NOT = { has_country_flag = ITA_heavy_fighter_refused }
+		}
+		ITA = { country_event = DOD_romania.154 }	
+	}
+
+	option = {# select french plane
+		name = DOD_hungary.151.c
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = FRA
+				factor = 10
+			}
+			modifier = {
+				FRA = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				FRA = {
+					has_tech = basic_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				FRA = {
+					has_tech = improved_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				FRA = {
+					has_tech = advanced_medium_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					FRA = { has_tech = basic_medium_airframe}
+					ROM = { NOT = { has_tech = basic_medium_airframe } }
+				}
+				AND = {
+					FRA = { has_tech = improved_medium_airframe}
+					ROM = { NOT = { has_tech = improved_medium_airframe } }
+				}
+				AND = {
+					FRA = { has_tech = advanced_medium_airframe}
+					ROM = { NOT = { has_tech = advanced_medium_airframe } }
+				}
+			}
+			NOT = { has_war_with = FRA }
+			NOT = { has_country_flag = FRA_heavy_fighter_refused }
+			
+		}
+		FRA = { country_event = DOD_romania.154 }	
+	}
+	option = {# select british plane
+		name = DOD_hungary.151.d
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = ENG
+				factor = 10
+			}
+			modifier = {
+				ENG = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				ENG = {
+					has_tech = basic_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ENG = {
+					has_tech = improved_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				ENG = {
+					has_tech = advanced_medium_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					ENG = { has_tech = basic_medium_airframe}
+					ROM = { NOT = { has_tech = basic_medium_airframe } }
+				}
+				AND = {
+					ENG = { has_tech = improved_medium_airframe}
+					ROM = { NOT = { has_tech = improved_medium_airframe } }
+				}
+				AND = {
+					ENG = { has_tech = advanced_medium_airframe}
+					ROM = { NOT = { has_tech = advanced_medium_airframe } }
+				}
+			}
+			NOT = { has_war_with = ENG }
+			NOT = { has_country_flag = ENG_heavy_fighter_refused }
+		}
+		ENG = { country_event = DOD_romania.154 }	
+	}
+	option = {# select american plane
+		name = DOD_hungary.151.e
+		ai_chance = {
+			factor = 30
+			modifier = {
+				is_in_faction_with = USA
+				factor = 10
+			}
+			modifier = {
+				USA = { has_government = ROOT }
+				factor = 2
+			}
+			modifier = {
+				USA = {
+					has_tech = basic_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				USA = {
+					has_tech = improved_medium_airframe
+				}
+				add = 10
+			}
+			modifier = {
+				USA = {
+					has_tech = advanced_medium_airframe
+				}
+				add = 10
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					USA = { has_tech = basic_medium_airframe}
+					ROM = { NOT = { has_tech = basic_medium_airframe } }
+				}
+				AND = {
+					USA = { has_tech = improved_medium_airframe}
+					ROM = { NOT = { has_tech = improved_medium_airframe } }
+				}
+				AND = {
+					USA = { has_tech = advanced_medium_airframe}
+					ROM = { NOT = { has_tech = advanced_medium_airframe } }
+				}
+			}
+			NOT = { has_war_with = USA }
+			NOT = { has_country_flag = USA_heavy_fighter_refused }
+			
+			AND = { #to prevent overflow issues
+				GER = {
+					is_available_heavy_fighter_HUN = no
+				}
+				FRA = {
+					is_available_heavy_fighter_HUN = no
+				}
+				ITA = {
+					is_available_heavy_fighter_HUN = no
+				}
+				ENG = {
+					is_available_heavy_fighter_HUN = no
+				}
+			}
+		}
+		USA = { country_event = DOD_romania.154 }	
+	}
+	option = {# failsafe
+		name = DOD_hungary.151.f	
+		trigger = {
+			OR = {
+				has_country_flag = GER_heavy_fighter_refused
+				has_country_flag = ITA_heavy_fighter_refused
+				has_country_flag = ENG_heavy_fighter_refused
+				has_country_flag = FRA_heavy_fighter_refused
+				has_country_flag = USA_heavy_fighter_refused
+			}
+		}
+		air_experience = 50
+	}
+}
+
 #fighter competition - light fighter competition winner gets a choice whether to permit license production
 country_event = {
 	id = DOD_romania.153
@@ -2106,6 +2789,12 @@ country_event = {
 		air_experience = 20
 		if = {
 			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
+			}
+			if = {
+				limit = {
 				has_tech = fighter1
 				NOT = { has_tech = fighter2 }
 			}
@@ -2141,7 +2830,44 @@ country_event = {
 					type = fighter_equipment_3
 				}
 				cost_factor = 0
+				}
 			}
+		}
+		else = {
+			ROM = { set_variable = { fighter_buy_amount = 200 } }
+			FROM = { save_event_target_as = license_target }
+			if = {
+				limit = {
+					tag = GER
+				}
+				ROM = { bba_get_fighter_GER_effect = yes }
+				
+			}
+			else_if = {
+				limit = {
+					tag = ENG
+				}
+				ROM = { bba_get_fighter_ENG_effect = yes }
+			}
+			else_if = {
+				limit = {
+					tag = ITA
+				}
+				ROM = { bba_get_fighter_ITA_effect = yes }
+			}
+			else_if = {
+				limit = {
+					tag = FRA
+				}
+				ROM = { bba_get_fighter_FRA_effect = yes }
+			}
+			else_if = {
+				limit = {
+					tag = USA
+				}
+				ROM = { bba_get_fighter_USA_effect = yes }
+			}
+			bba_create_fighter_license_effect = yes
 		}
 	}
 
@@ -2174,7 +2900,17 @@ country_event = {
 			limit = { tag = USA }
 			ROM = { set_country_flag = USA_fighter_refused }
 		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
+			}
 		ROM = { country_event = DOD_romania.151 }
+		}
+		else = {
+			ROM = { country_event = DOD_romania.1511 }
+		}
 		reverse_add_opinion_modifier = { target = ROM modifier = refused_help }
 	}
 }
@@ -2201,6 +2937,12 @@ country_event = {
 		air_experience = 20
 		if = {
 			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
+			}
+			if = {
+				limit = {
 				has_tech = heavy_fighter1
 				NOT = { has_tech = heavy_fighter2 }
 			}
@@ -2237,6 +2979,43 @@ country_event = {
 				cost_factor = 0
 			}
 		}
+		}
+		else = {
+			ROM = { set_variable = { heavy_fighter_buy_amount = 200 } }
+			FROM = { save_event_target_as = license_target }
+			if = {
+				limit = {
+					tag = GER
+				}
+				ROM = { bba_get_heavy_fighter_GER_effect = yes }
+				
+			}
+			else_if = {
+				limit = {
+					tag = ENG
+				}
+				ROM = { bba_get_heavy_fighter_ENG_effect = yes }
+			}
+			else_if = {
+				limit = {
+					tag = ITA
+				}
+				ROM = { bba_get_heavy_fighter_ITA_effect = yes }
+			}
+			else_if = {
+				limit = {
+					tag = FRA
+				}
+				ROM = { bba_get_heavy_fighter_FRA_effect = yes }
+			}
+			else_if = {
+				limit = {
+					tag = USA
+				}
+				ROM = { bba_get_heavy_fighter_USA_effect = yes }
+			}
+			bba_create_heavy_fighter_license_effect = yes
+		}
 
 	}
 
@@ -2269,7 +3048,17 @@ country_event = {
 			limit = { tag = USA }
 			ROM = { set_country_flag = USA_heavy_fighter_refused }
 		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
+			}
 		ROM = { country_event = DOD_romania.152 }
+		}
+		else = {
+			ROM = { country_event = DOD_romania.1521 }	
+		}
 		reverse_add_opinion_modifier = { target = ROM modifier = refused_help }
 	}
 }
@@ -2325,4 +3114,229 @@ country_event = {
 		add_timed_idea = { idea = ROM_king_carol_ii_consumer_penalty days = 90 }
 	}
 
+}
+
+#Britain recieves Romania's request to change sides
+country_event = {
+	id = DOD_romania.16
+	title = DOD_romania.16.t
+	desc = DOD_romania.16.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	immediate = {
+		FROM = { set_country_flag = ROM_switched_sides }
+		FROM = {
+			every_other_country = {
+				limit = {
+					is_in_faction_with = PREV
+					has_capitulated = no
+				}
+				set_country_flag = ROM_former_ally_still_standing #required for achievement
+			}
+		}
+	}
+
+	option = { #End hostilities with Romania
+		name = DOD_romania.16.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+			#ensure Germany doesn't get randomly encircled
+			every_state = {
+				limit = {
+					controller = { tag = FROM }
+					owner = {
+						has_war_with = event_target:romania_former_ally_target
+						NOT = { has_war_with = event_target:romania_new_ally_target }
+					}
+				}
+				event_target:romania_former_ally_target = {
+					set_state_controller = PREV
+				}
+			}
+			FROM = {
+				# move our armies to back home
+				teleport_armies = {
+					to_state_array = owned_controlled_states
+				}
+			}
+		}
+		white_peace = FROM
+		FROM = {
+			leave_faction = yes
+		}
+		hidden_effect = {
+			event_target:romania_former_ally_target = {
+				country_event = { id = DOD_romania.161 days = 1 }
+			}
+			FROM = { #essentially so the Soviets peace out with Romania, preventing England from being dragged into a war with the Soviets.
+				every_enemy_country = {
+					limit = {
+						NOT = { has_war_with = event_target:romania_new_ally_target }
+						has_war_with = event_target:romania_former_ally_target
+						is_faction_leader = yes
+					}
+					save_global_event_target_as = romania_third_party_target
+					if = { #creates a collab gov out of every Moldovan state they occupy
+						limit = {
+							any_controlled_state = {
+								owner = { tag = FROM }
+							}
+						}
+						if = {
+							limit = { MOL = { exists = no } }
+							release_puppet = MOL 
+							MOL = { save_event_target_as = released_nation_target }
+						}
+						else = {
+							create_dynamic_country = {
+								original_tag = MOL
+								save_event_target_as = released_nation_target
+							}
+						}
+						event_target:released_nation_target = {
+							every_state = {
+								limit = {
+									is_core_of = MOL
+									controller = { tag = event_target:romania_third_party_target }
+								}
+								PREV = { transfer_state = PREV }
+							}
+							PREV = {
+								puppet = PREV
+								if = {
+									limit = {
+										has_dlc = "La Resistance"
+									}
+									PREV = { set_variable = { collaboration_formed_by = PREV } }
+									set_autonomy = { target = PREV autonomy_state = autonomy_collaboration_government }
+								}
+								else = {
+									set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+								}
+							}
+						}
+					}
+					if = { #creates a collab gov out of every Romanian state they occupy
+						limit = {
+							any_controlled_state = {
+								owner = { tag = FROM }
+							}
+						}
+						create_dynamic_country = {
+							original_tag = FROM
+							
+							save_event_target_as = released_nation_target
+							every_state = {
+								limit = {
+									is_core_of = FROM
+									NOT = { is_core_of = MOL }
+									controller = { tag = event_target:romania_third_party_target }
+								}
+								PREV = { transfer_state = PREV }
+							}
+							PREV = {
+								puppet = PREV
+								if = {
+									limit = {
+										has_dlc = "La Resistance"
+									}
+									PREV = { set_variable = { collaboration_formed_by = PREV } }
+									set_autonomy = { target = PREV autonomy_state = autonomy_collaboration_government }
+								}
+								else = {
+									set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+								}
+							}
+						}
+					}
+					white_peace = FROM
+				}
+			}
+		}
+	}
+}
+
+#change sides
+country_event = {
+	id = DOD_romania.161
+	title = DOD_romania.161.t
+	desc = DOD_romania.161.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			FROM.FROM = {
+				leave_faction = yes
+				country_event = { id = DOD_romania.162 }
+			}
+		}
+	}
+
+	option = { #time to abandon ship
+		name = DOD_romania.161.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+#change sides
+country_event = {
+	id = DOD_romania.162
+	title = DOD_romania.162.t
+	desc = DOD_romania.162.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = { #time to abandon ship
+		name = DOD_romania.162.a
+		ai_chance = {
+			base = 100
+		}
+		event_target:romania_new_ally_target = { 
+			add_to_faction = ROOT
+			ROOT = {
+				add_to_war = {
+					targeted_alliance = PREV
+					enemy = FROM
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}
+
+country_event = { #if Codreanu is still in power, kill him and replace with Goga, then change name of party
+	id = DOD_romania.163
+	title = DOD_romania.163.t
+	desc = DOD_romania.163.desc
+	picture = GFX_report_event_generic_funeral
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = DOD_romania.163.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		kill_ideology_leader = fascism
+		promote_character = ROM_octavian_goga
+		set_party_name = { 
+		    ideology = fascism
+		    long_name = ROM_fascism_party2_long
+		    name = ROM_fascism_party2
+		}
+	}
 }
