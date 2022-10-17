@@ -25,6 +25,7 @@ characters={
 				}
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -79,6 +80,7 @@ characters={
 				has_completed_focus  = ENG_the_kings_party 
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -115,6 +117,7 @@ characters={
 				original_tag  = ENG
 			}
 			available  = {
+				always = no
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
@@ -1647,6 +1650,7 @@ characters={
 				original_tag  = ENG
 			}
 			available  = {
+				always = no
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
@@ -1812,6 +1816,7 @@ characters={
 				has_government  = fascism 
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -1846,6 +1851,7 @@ characters={
 				}
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -1873,6 +1879,7 @@ characters={
 				has_government  = communism 
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -1900,6 +1907,7 @@ characters={
 				has_completed_focus  = ENG_the_kings_party 
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -2205,6 +2213,7 @@ characters={
 				}
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -2242,6 +2251,7 @@ characters={
 				}
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}
@@ -2279,6 +2289,7 @@ characters={
 				}
 			}
 			allowed  = {
+				always = no
 				original_tag  = ENG
 				has_dlc = "Man the Guns"
 			}

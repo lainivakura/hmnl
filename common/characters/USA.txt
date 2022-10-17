@@ -57,6 +57,7 @@ characters={
 			slot = political_advisor
 			idea_token = earl_browder
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {
@@ -1366,6 +1367,7 @@ characters={
 			slot = political_advisor
 			idea_token = harry_white
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {
@@ -1408,6 +1410,7 @@ characters={
 			slot = political_advisor
 			idea_token = victor_perlo
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {
@@ -1447,6 +1450,7 @@ characters={
 			slot = political_advisor
 			idea_token = whittaker_chambers
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {
@@ -1486,6 +1490,7 @@ characters={
 			slot = political_advisor
 			idea_token = USA_joseph_patterson
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {
@@ -1527,6 +1532,7 @@ characters={
 			slot = political_advisor
 			idea_token = USA_william_regnery
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {
@@ -1605,6 +1611,7 @@ characters={
 			slot = political_advisor
 			idea_token = charles_coughlin
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {
@@ -1694,6 +1701,7 @@ characters={
 			slot = political_advisor
 			idea_token = USA_joseph_mccarthy
 			allowed  = {
+				always = no
 				original_tag  = USA
 			}
 			available  = {

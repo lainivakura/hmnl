@@ -1489,6 +1489,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
+				always = no
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -1526,6 +1527,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
+				always = no
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
@@ -1742,6 +1744,7 @@ characters={
 			slot = political_advisor
 			idea_token = GER_hans_oster
 			allowed = {
+				always = no
 				original_tag = GER
 				has_dlc = "Waking the Tiger"
 			}
@@ -1768,6 +1771,7 @@ characters={
 			slot = political_advisor
 			idea_token = GER_alfred_hugenberg
 			allowed = {
+				always = no
 				original_tag = GER
 				has_dlc = "Waking the Tiger"
 			}
@@ -1794,6 +1798,7 @@ characters={
 			slot = political_advisor
 			idea_token = GER_carl_friedrich_goerdeler
 			allowed = {
+				always = no
 				original_tag = GER
 				has_dlc = "Waking the Tiger"
 			}
@@ -1820,6 +1825,7 @@ characters={
 			slot = political_advisor
 			idea_token = GER_julius_leber
 			allowed = {
+				always = no
 				original_tag = GER
 				has_dlc = "Waking the Tiger"
 			}
@@ -1846,6 +1852,7 @@ characters={
 			slot = political_advisor
 			idea_token = GER_theodor_heuss
 			allowed = {
+				always = no
 				original_tag = GER
 				has_dlc = "Waking the Tiger"
 			}
