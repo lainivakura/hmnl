@@ -1040,7 +1040,15 @@ ITA_annex_Baleari_and_Corsica = {
 			is_ai = yes
 
 		}
-		FRA = { exists = no }
+		OR = {
+			any_other_country = {
+				original_tag = FRA
+				has_government = fascism
+			}
+			FRA = {
+				exists = no
+			}
+		}
 		date > 1939.9.1
 	}
 		
