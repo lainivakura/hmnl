@@ -259,14 +259,16 @@ ENG_annex_IRQ = {
 
 		allowed = {
 			original_tag = ENG
+
 		}
 
 		available = {
+			446 = {is_fully_controlled_by = ENG}
 			IRQ = { 
 				is_ai = yes
 
 			}
-			date > 1940.1.1
+			date > 1941.1.1
 		}
 			
 		cost = 20
