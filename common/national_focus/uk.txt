@@ -635,7 +635,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				technology = assembly_line_production
-				technology = streamlined_lineflexible_line
+				technology = streamlined_line
 				technology = flexible_line
 				technology = concentrated_industry4
 				technology = concentrated_industry5
@@ -2084,7 +2084,7 @@ focus_tree = {
 				limit = {
 					has_government = neutrality
 					NOT = {
-						has_completed_focus = SPR_regional_defense_council_of_aragon
+						# has_completed_focus = SPR_regional_defense_council_of_aragon
 					}
 				}
 				every_other_country = {
