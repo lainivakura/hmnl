@@ -2260,7 +2260,7 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 3
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}
 						create_equipment_variant = {
 							name = "Panzer IV Ausf. A"
@@ -2279,7 +2279,7 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 2
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}
 					}
 				}
@@ -2303,7 +2303,7 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 3
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}
 						create_equipment_variant = {
 							name = "Panzer IV Ausf. A"
@@ -2322,7 +2322,7 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 2
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}	
 					}
 				}
@@ -2660,10 +2660,11 @@ date > 1949.12.1
 		completion_reward = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
+			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 5
-			add_named_threat = { threat = 8 name = GER_rhineland }
+			add_named_threat = { threat = 5 name = GER_rhineland }
 			if = {
 				limit = { FRA = { is_subject = no } }
 				FRA = {
@@ -2721,7 +2722,17 @@ date > 1949.12.1
 				limit = {
 					has_dlc = "Waking the Tiger"
 				}
-				
+				create_corps_commander = {
+					name = "Alexander von Falkenhausen"
+					gfx = GFX_portrait_chi_alexander_von_falkenhausen
+					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 3
+					legacy_id = 603
+					traits = { infantry_officer }
+				}
 			}
 		}
 	}
@@ -3122,6 +3133,7 @@ date > 1949.12.1
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
 						}
 					}
 				}
@@ -3140,6 +3152,7 @@ date > 1949.12.1
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
 						}
 					}
 				}
@@ -3217,6 +3230,21 @@ date > 1949.12.1
 					}
 				}
 				add_state_core = 153
+			}
+			if = {
+				limit = {
+					848 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848
 			}
 		}
 	}
@@ -3898,7 +3926,7 @@ date > 1939.9.1
 				ENG = {
 					country_event = germany.40
 				}
-				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+				add_named_threat = { threat = 4 name = GER_demand_sudetenland_threat }
 			}
 			if = {
 				limit = {
@@ -6853,7 +6881,8 @@ date > 1949.12.1
 		available = {
 			is_subject = no
 			NOT = { has_war_with = ITA }
-			ITA = { has_country_leader = { ruling_only = yes name = "Benito Mussolini" } }
+			ITA = { has_country_leader = { ruling_only = yes character = ITA_benito_mussolini } }
+			NOT = {	ITA = {	has_completed_focus = ITA_banda_carita } }
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -6874,13 +6903,13 @@ date > 1949.12.1
 					add_popularity = { ideology = neutrality popularity = 0.1 }
 					effect_tooltip = {
 						create_country_leader = {
-							name = "Victor Emmanuel III"
-							desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-							picture = "GFX_portrait_italy_victor_emmanuel_iii"
+							name = "vittorio Emanuele III"
+							desc = "POLITICS_VITTORIO_EMANUELE_III_DESC"
+							picture = "GFX_portrait_italy_vittorio_emanuele_iii"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {
-						
+								the_soldier_king
 							}
 						}
 					}
