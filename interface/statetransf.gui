@@ -1,0 +1,196 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "st_open_container"
+		position = { x = -30 y = 200 }
+		orientation = CENTER_RIGHT
+		buttonType = {
+			name = "open_ST"
+			quadTextureSprite = "GFX_execute_button_stop"
+			position = { x = 0 y = 0 }
+			
+			# pdx_tooltip = "[ST_TOOLTIP]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			
+		}
+		
+		instantTextboxType = {
+			name = "title"
+			position = {x=0 y=0}
+			font = "hoi_18mbs"
+			# text = "[transfer_states_tooltip]"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "st_state_manager_powers_container"
+		position = {x=-270 y=0}
+		size = { width=250 height=80 }
+		orientation = CENTER_RIGHT
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_BPT_areadef_conf_bg"
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = {x=14 y=6}
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "st_state_manager_power_mark_for_transfer" 
+			position = {x=15 y=35}
+			
+			quadTextureSprite ="GFX_sort_button_140x29"
+			frame = 1
+			font = "hoi_18mbs"
+			buttonText = "[This.mark_status]"
+			pdx_tooltip =  "ST_STATE_MARK_FOR_TRANSFER"
+		}
+		
+		buttonType = {
+			name = "st_state_manager_power_unmark_for_transfer"
+			position = {x=15 y=35}
+			
+			quadTextureSprite ="GFX_sort_button_140x29"
+			frame = 2
+			font = "hoi_18mbs"
+			buttonText = "[This.mark_status]"
+			pdx_tooltip = "ST_STATE_UNMARK_FOR_TRANSFER"
+		}
+		
+		instantTextboxType = {
+			name = "marking"
+			position = { x=155 y=20 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[This.mark_state_tooltip]"
+			maxWidth = 300
+			maxHeight = 100
+		}
+	}
+	
+	containerWindowType = {
+		name = "st_subject_powers_container"
+		position = {x=1250 y=50}
+		size = { width=400 height=300 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_console_win_bg"
+		}
+		
+		iconType ={
+			name ="title_background"
+			spriteType = "GFX_generic_text_bg_154"
+			position = { x=3 y=3}
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = {x=14 y=8}
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+		}
+
+			buttonType = {
+				name = "observer" 
+				position = {x=20 y=160}
+				quadTextureSprite ="GFX_sort_button_140x29"
+				font = "hoi_18mbs"
+				buttonText = "Observer"
+				pdx_tooltip = ""
+				pdx_tooltip_delayed = ""
+				scale = 1
+			}
+			buttonType = {
+				name = "mark_all_states" 
+				position = {x=20 y=80}
+				
+				quadTextureSprite = "GFX_global_alert_icons"
+				frame = 39
+				pdx_tooltip = "MARK_ALL_STATES"
+				pdx_tooltip_delayed = "MARK_ALL_STATES_DELAYED"
+				scale = 1
+			}
+			
+			buttonType = {
+				name = "clear_all_markings" 
+				position = {x=70 y=80}	
+				
+				quadTextureSprite = "GFX_global_alert_icons"
+				frame = 38
+				pdx_tooltip = "CLEAR_ALL_MARKINGS"
+				pdx_tooltip_delayed = "CLEAR_ALL_MARKINGS_DELAYED"
+				scale = 1
+			}
+			
+			buttonType = {
+				name = "mark_colonial_states"	
+				position = {x=115 y=80}
+				
+				quadTextureSprite = "GFX_global_diplorequest_icons"
+				frame = 11 
+				pdx_tooltip = "MARK_COLONIES"
+				pdx_tooltip_delayed = "MARK_COLONIES_DELAYED"
+				scale = 1
+			}
+		
+		
+			buttonType = {
+				name = "award_states" 
+				position = {x=170 y=80}	
+				
+				quadTextureSprite ="GFX_sort_button_140x29"
+				font = "hoi_18mbs"
+				buttonText = "Transfer"
+				pdx_tooltip = "AWARD_STATES"
+				pdx_tooltip_delayed = "AWARD_STATES_DELAYED"
+			}
+			
+			buttonType = {
+				name = "core_states" 
+				position = {x=170 y=120}	
+				
+				quadTextureSprite ="GFX_sort_button_140x29"
+				font = "hoi_18mbs"
+				buttonText = "Core"
+				pdx_tooltip = "CORE_STATES"
+				pdx_tooltip_delayed = "CORE_STATES_DELAYED"
+			}
+			buttonType = {
+				name = "compliance_states" 
+				position = {x=170 y=160}	
+				quadTextureSprite ="GFX_sort_button_140x29"
+				font = "hoi_18mbs"
+				buttonText = "Compliance 25"
+				pdx_tooltip = ""
+				pdx_tooltip_delayed = ""
+			}
+	}
+	
+}
