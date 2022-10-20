@@ -220,38 +220,35 @@ operations_atom = {
 	}
 
 
-ENG_annex_POL = {
+# ENG_annex_POL = {
 
-	icon = generic_operation
+# 	icon = generic_operation
 
-	allowed = {
-		original_tag = ENG
-	}
+# 	allowed = {
+# 		original_tag = ENG
+# 	}
 
-	available = {
-		POL = { 
-			is_ai = yes
-							has_capitulated = yes 
-		}
-		date > 1939.9.1
-	}
+# 	available = {
+# 		POL = { 
+# 			is_ai = yes
+# 							has_capitulated = yes 
+# 		}
+# 		date > 1939.9.1
+# 	}
 		
-	cost = 20
+# 	cost = 20
 		
-	visible = {
-		has_war_with = GER	
-	}
+# 	visible = {
+# 		has_war_with = GER	
+# 	}
 		
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	complete_effect = {
-		annex_country = {target = POL transfer_troops = yes}
+# 	complete_effect = {
+# 		annex_country = {target = POL transfer_troops = yes}
 
-	}
-}
-
-
-
+# 	}
+# }
 
 ENG_annex_IRQ = {
 
@@ -285,95 +282,95 @@ ENG_annex_IRQ = {
 	}
 }
 
-ENG_annex_TIB = {
+# ENG_annex_TIB = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 
-		available = {
-			TIB = { 
-				is_ai = yes
-								has_capitulated = yes 
-			}
-			date > 1941.6.1
-		}
+# 		available = {
+# 			TIB = { 
+# 				is_ai = yes
+# 								has_capitulated = yes 
+# 			}
+# 			date > 1941.6.1
+# 		}
 			
-		cost = 20
+# 		cost = 20
 			
-		visible = {
-			has_war_with = JAP	
-		}
+# 		visible = {
+# 			has_war_with = JAP	
+# 		}
 			
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		complete_effect = {
-			annex_country = {target = TIB transfer_troops = yes}
+# 		complete_effect = {
+# 			annex_country = {target = TIB transfer_troops = yes}
 
-	}
-}
+# 	}
+# }
 
-ENG_annex_BHU = {
+# ENG_annex_BHU = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 
-		available = {
-			BHU = { 
-				is_ai = yes
-								has_capitulated = yes 
-			}
-			date > 1941.6.1
-		}
+# 		available = {
+# 			BHU = { 
+# 				is_ai = yes
+# 								has_capitulated = yes 
+# 			}
+# 			date > 1941.6.1
+# 		}
 			
-		cost = 20
+# 		cost = 20
 			
-		visible = {
-			has_war_with = JAP	
-		}
+# 		visible = {
+# 			has_war_with = JAP	
+# 		}
 			
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		complete_effect = {
-			annex_country = {target = BHU transfer_troops = yes}
+# 		complete_effect = {
+# 			annex_country = {target = BHU transfer_troops = yes}
 
-	}
-}
+# 	}
+# }
 
-ENG_annex_NEP = {
+# ENG_annex_NEP = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 
-		available = {
-			NEP = { 
-				is_ai = yes
-								has_capitulated = yes 
-			}
-			date > 1941.6.1
-		}
+# 		available = {
+# 			NEP = { 
+# 				is_ai = yes
+# 								has_capitulated = yes 
+# 			}
+# 			date > 1941.6.1
+# 		}
 			
-		cost = 20
+# 		cost = 20
 			
-		visible = {
-			has_war_with = JAP	
-		}
+# 		visible = {
+# 			has_war_with = JAP	
+# 		}
 			
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		complete_effect = {
-			annex_country = {target = NEP transfer_troops = yes}
+# 		complete_effect = {
+# 			annex_country = {target = NEP transfer_troops = yes}
 
-	}
-}
+# 	}
+# }
 	
 ENG_annex_BEL = {
 
@@ -404,8 +401,12 @@ ENG_annex_BEL = {
 		fire_only_once = yes
 	
 		complete_effect = {
-			annex_country = {target = BEL transfer_troops = yes}
-			annex_country = {target = LUX transfer_troops = yes}
+			ENG = {
+				set_state_owner  = 6
+				set_state_owner  = 34
+				set_state_owner  = 8
+			}
+			
 
 	}
 }
@@ -435,7 +436,11 @@ ENG_annex_HOL = {
 		fire_only_once = yes
 	
 		complete_effect = {
-			annex_country = {target = HOL transfer_troops = yes}
+			ENG = {
+				set_state_owner  = 7
+				set_state_owner  = 35
+				set_state_owner  = 36
+			}
 
 	}
 }
@@ -524,9 +529,23 @@ ENG_annex_YUG = {
 		fire_only_once = yes
 	
 		complete_effect = {
-			annex_country = {target = YUG transfer_troops = yes}
-
-	}
+			ENG = {
+				set_state_owner  = 102
+				set_state_owner  = 853
+				set_state_owner  = 103
+				set_state_owner  = 109
+				set_state_owner  = 104
+				set_state_owner  = 804
+				set_state_owner  = 105
+				set_state_owner  = 45
+				set_state_owner  = 764
+				set_state_owner  = 107
+				set_state_owner  = 108
+				set_state_owner  = 802
+				set_state_owner  = 803
+				set_state_owner  = 106
+			}
+		}
 }
 
 ENG_annex_DEN = {
@@ -554,9 +573,13 @@ ENG_annex_DEN = {
 		fire_only_once = yes
 	
 		complete_effect = {
-			annex_country = {target = DEN transfer_troops = yes}
-
-	}
+			ENG = {
+				set_state_owner  = 99
+				set_state_owner  = 37
+				set_state_owner  = 184
+				set_state_owner  = 101
+			}
+		}
 }
 
 ENG_annex_GRE = {
@@ -585,40 +608,48 @@ ENG_annex_GRE = {
 	
 		complete_effect = {
 
-			annex_country = {target = GRE transfer_troops = yes}
-
-	}
-}
-
-ENG_annex_SWI = {
-
-		icon = generic_operation
-
-		allowed = {
-			original_tag = ENG
-		}
-
-		available = {
-			SWI = { 
-				is_ai = yes
-				has_capitulated = yes 
+			ENG = {
+				set_state_owner  = 185
+				set_state_owner  = 731
+				set_state_owner  = 184
+				set_state_owner  = 186
+				set_state_owner  = 47
+				set_state_owner  = 187
+				set_state_owner  = 182
 			}
-			date > 1940.1.1
-		}
-			
-		cost = 20
-			
-		visible = {
-			has_war_with = GER	
-		}
-			
-		fire_only_once = yes
-	
-		complete_effect = {
-			annex_country = {target = SWI transfer_troops = yes}
 
-	}
+		}
 }
+
+# ENG_annex_SWI = {
+
+# 		icon = generic_operation
+
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
+
+# 		available = {
+# 			SWI = { 
+# 				is_ai = yes
+# 				has_capitulated = yes 
+# 			}
+# 			date > 1940.1.1
+# 		}
+			
+# 		cost = 20
+			
+# 		visible = {
+# 			has_war_with = GER	
+# 		}
+			
+# 		fire_only_once = yes
+	
+# 		complete_effect = {
+# 			annex_country = {target = SWI transfer_troops = yes}
+
+# 	}
+# }
 
 
 
@@ -647,9 +678,15 @@ ENG_annex_NOR = {
 		fire_only_once = yes
 	
 		complete_effect = {
-			annex_country = {target = NOR transfer_troops = yes}
+			ENG = {
+				set_state_owner  = 142
+				set_state_owner  = 110
+				set_state_owner  = 143
+				set_state_owner  = 144
+				set_state_owner  = 47
+			}
 
-	}
+		}
 }
 
 
