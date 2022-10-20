@@ -1,6 +1,1 @@
 ﻿
-
-
-
-### Flygvapnet ###
-air_wings = {}
