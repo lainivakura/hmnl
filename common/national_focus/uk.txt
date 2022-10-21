@@ -8039,7 +8039,7 @@ focus_tree = {
 		prerequisite = { focus = uk_iran_focus focus = ENG_no_further_appeasement }
 
 		allow_branch = {
-			always = yes
+			always = no
 		}
 
 		available = {

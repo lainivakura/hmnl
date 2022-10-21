@@ -114,10 +114,11 @@ characters={
 			slot = political_advisor
 			idea_token = harry_pollitt
 			allowed  = {
+				always = no
 				original_tag  = ENG
 			}
 			available  = {
-				always = no
+				
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
@@ -1647,10 +1648,11 @@ characters={
 			slot = political_advisor
 			idea_token = john_beckett
 			allowed  = {
+				always = no
 				original_tag  = ENG
 			}
 			available  = {
-				always = no
+				
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
