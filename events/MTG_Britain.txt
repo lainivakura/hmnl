@@ -6035,31 +6035,6 @@ country_event = {
 			}
 		}
 	}
-
-	# Reject
-	option = {
-		name = mtg_britain.92.b
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0.8
-				has_opinion = { target = ENG value > 0 }
-			}
-			modifier = {
-				factor = 0.8
-				has_opinion = { target = ENG value > 25 }
-			}
-			modifier = {
-				factor = 0.8
-				has_opinion = { target = ENG value > 50 }
-			}
-			modifier = {
-				factor = 0.8
-				has_opinion = { target = ENG value > 75 }
-			}
-		}
-		FROM = { country_event = { id = mtg_britain.94 } }
-	}
 }
 
 # Event for ENG telling FROM voted yes on Imperial Economy
