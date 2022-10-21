@@ -1267,7 +1267,7 @@ global_building_slots_factor = 0.3
 				cv_small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
 			}
