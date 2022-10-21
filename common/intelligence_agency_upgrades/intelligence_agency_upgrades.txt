@@ -148,14 +148,14 @@ branch_defense = {
 		level = {
 			modifier = {
 				root_out_resistance_effectiveness_factor = 0.25
-compliance_gain 				= 0.01
+				compliance_gain = 0.01
 			}
 		}
 
 		level = {
 			modifier = {
 				root_out_resistance_effectiveness_factor = 0.25
-compliance_gain 				= 0.01
+				compliance_gain = 0.01
 			}
 		}
 	}
@@ -349,7 +349,7 @@ branch_operative = {
 		}
 
 	}
-upgrade_diplo_training = {
+	upgrade_diplo_training = {
 	
 		picture = GFX_agency_diplomatic_training
 		sound = Spy_Agency_Training_Facilities_Upgrades_Confirm
@@ -369,7 +369,7 @@ upgrade_diplo_training = {
 		}
 		
 	}
-	
+
 	upgrade_psycho_warfare = {
 	
 		picture = GFX_agency_psychological_warfare
