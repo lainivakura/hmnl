@@ -1239,22 +1239,28 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 150000
+				}
 			605 = {
-				add_resource = {
-					type = aluminium
-					amount = 8
+					add_resource = {
+							type = aluminium
+							amount = 20
+						}
 				}
-			}
 			325 = {
-				add_resource = {
-					type = aluminium
-					amount = 12
+					add_resource = {
+							type = aluminium
+							amount = 25
+						}
 				}
-			}
 			if = {
-				limit = { has_dlc = "Waking the Tiger" }
-				unlock_decision_category_tooltip = prospect_for_resources
-			}
+					limit = {
+							has_dlc = "Waking the Tiger"
+						}
+					unlock_decision_category_tooltip = prospect_for_resources
+				}
 		}
 	}
 
