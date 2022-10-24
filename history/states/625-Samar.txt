@@ -7,11 +7,15 @@ state=
 	state_category = rural
 	history=
 	{
-		owner = PHI
+		add_dynamic_modifier = {
+			modifier = ASIA_PREWAR
+		}
+		set_demilitarized_zone = yes
+		owner = USA
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PHI
+		add_core_of = PRC
 	}
 	provinces={
 		1224 1311 1340 4269 4373 

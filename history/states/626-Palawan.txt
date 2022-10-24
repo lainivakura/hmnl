@@ -8,14 +8,18 @@ state=
 	
 	history=
 	{
-		owner = PHI
+		add_dynamic_modifier = {
+			modifier = ASIA_PREWAR
+		}
+		set_demilitarized_zone = yes
+		owner = USA
 		buildings = {
 			infrastructure = 2
 			4429 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = PHI
+		add_core_of = PRC
 	}
 	provinces={
 		4429 7419 10145 

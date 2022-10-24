@@ -10,10 +10,14 @@ state= {
 	}
 
 	history= {
-		owner = PHI
+		add_dynamic_modifier = {
+			modifier = ASIA_PREWAR
+		}
+		set_demilitarized_zone = yes
+		owner = USA
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 3
 			12213 = {
 				naval_base = 1
 			}
@@ -28,7 +32,7 @@ state= {
 		victory_points = {
 			12213 1 
 		}
-		add_core_of = PHI
+		add_core_of = PRC
 	}
 	provinces={
 		1388 1415 4101 4214 4233 4350 4368 4423 7325 7439 10167 10241 10252 10280 10298 12213 12253 

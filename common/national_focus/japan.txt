@@ -1392,7 +1392,7 @@ focus_tree = {
 		will_lead_to_war_with = PHI
 
 		cost = 1
-
+		allow_branch = {always = no}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1439,6 +1439,96 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_jap_war
 			news_event = {
 				id = atom_japan.1
+			}
+			327 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			334 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			335 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			623 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			624 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			625 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			626 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			627 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			628 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			667 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			668 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			669 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			672 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			673 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			738 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
 			}
 		}
 	}
@@ -1491,6 +1581,100 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_jap_war
 			news_event = {
 				id = atom_japan.1
+			}
+			add_timed_idea = {
+				idea = tora_japan2
+				days = 60
+			}
+			327 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			334 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			335 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			623 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			624 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			625 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			626 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			627 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			628 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			667 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			668 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			669 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			672 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			673 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
+			}
+			738 = {
+				set_demilitarized_zone = no
+				remove_dynamic_modifier = {
+					modifier = ASIA_PREWAR
+				}
 			}
 		}
 	}
