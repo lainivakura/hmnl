@@ -1395,7 +1395,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			air_experience = 15
+			add_ideas = { FRA_air_dominance }
 		}
 	}
 	focus = {
@@ -1414,8 +1414,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_cas_focus
-				bonus = 0.3
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = cas_bomber
 			}
 		}
@@ -1455,7 +1455,7 @@
 				name = FRA_air_ground_cooperation
 				category = air_doctrine
 				uses = 2
-				cost_reduction = 0.15
+				cost_reduction = 0.5
 			}
 		}
 	}
@@ -1490,7 +1490,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			air_experience = 15
+			add_ideas = { FRA_flying_artillery }
 		}
 	}
 	focus = {
@@ -1510,7 +1510,6 @@
 		available_if_capitulated = yes
 
 		available = {
-date > 1940.5.1
 			NOT = { has_idea = FRA_disjointed_government }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1579,7 +1578,6 @@ date > 1940.5.1
 focus = {
 		id = FRA_invite_communist_ministers
 		icon = GFX_goal_support_communism
-		
 		x = -3
 		y = 1
 		offset = {
@@ -1597,7 +1595,6 @@ focus = {
 		}
 
 		available = {
-date > 1949.12.1
 			not = {
 				has_completed_focus = FRA_review_foreign_policy	
 			}
@@ -4245,7 +4242,6 @@ date > 1949.12.1
 			}
 		}
 		completion_reward = {
-add_political_power = 120
 			ENG = { country_event = { id = britain.13 } }
 		}
 	}
