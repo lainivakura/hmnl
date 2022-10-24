@@ -4782,7 +4782,7 @@ country_event = {
 		create_country_leader = {
 			name = "Adolfos I"
 			desc = "POLITICS_ADOLFOS_I_DESC"
-			picture = "Portrait_GRE_adolfos_i.dds"
+			picture = GFX_portrait_Adolfos_I
 			expire = "1965.1.1"
 			ideology = gen_nazism
 			traits = {
@@ -5141,40 +5141,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = bftb_greece.166.a #small investment
-		ai_chance = {
-			base = 10
-		}
-		add_timed_idea = {
-			idea = GRE_small_investment
-			days = 30
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_german_influence_over_greek_government
-					value = 5
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.169 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.166.b #no investment
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 10
-				num_of_available_civilian_factories < 15
-			}
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.170 days = 2 }
-		}
-	}
-	option = {
 		name = bftb_greece.166.c #no investments ever!
 		ai_chance = {
 			base = 0.1
@@ -5204,41 +5170,7 @@ country_event = {
 	picture = GFX_report_event_gre_athens
 
 	is_triggered_only = yes
-	
-	option = {
-		name = bftb_greece.167.a #moderate investment
-		ai_chance = {
-			base = 10
-		}
-		add_timed_idea = {
-			idea = GRE_moderate_investment
-			days = 45
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_german_influence_over_greek_government
-					value = 10
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.169 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.167.b #no investment
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 10
-				num_of_available_civilian_factories < 20
-			}
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.170 days = 2 }
-		}
-	}
+
 	option = {
 		name = bftb_greece.167.c #no investment ever!
 		ai_chance = {
@@ -5270,77 +5202,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-		name = bftb_greece.168.a #ok
-		ai_chance = {
-			base = 10
-			modifier = {
-				factor = 0.1
-				has_idea = hjalmar_schacht
-			}
-		}
-		add_timed_idea = {
-			idea = GRE_heavy_investment
-			days = 60
-		}
-		add_opinion_modifier = {
-			target = GRE
-			modifier = GRE_exploited_our_generosity
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_german_influence_over_greek_government
-					value = 25
-				}
-				country_event = { id = bftb_greece.169 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.168.b #turn the tables on them Schacht!
-		trigger = { 
-			has_idea = hjalmar_schacht
-		}
-		ai_chance = {
-			base = 100
-		}
-		add_offsite_building = {
-			type = industrial_complex
-			level = 1
-		}
-		custom_effect_tooltip = gott_bless_herr_schacht_tt
-		hidden_effect = { 
-			GRE = { 
-				country_event = { id = bftb_greece.172 days = 2 }
-			}
-			GRE = { 
-				add_to_variable = {
-					var = GRE_german_influence_over_greek_government
-					value = 15
-				}
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.168.c #no
-		trigger = { 
-			NOT = {
-				has_idea = hjalmar_schacht
-			}
-		}
-		ai_chance = {
-			base = 0
-		}
-		add_political_power = -120
-		add_opinion_modifier = { 
-			target = GRE
-			modifier = GRE_exploited_our_generosity
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.170 days = 2 }
-		}
-	}	
 	option = {
 		name = bftb_greece.168.d #no!
 		ai_chance = {
@@ -5499,41 +5360,7 @@ country_event = {
 	picture = GFX_report_event_gre_allied_diplomacy
 
 	is_triggered_only = yes
-	
-	option = {
-		name = bftb_greece.173.a 
-		ai_chance = {
-			base = 10
-		}
-		add_timed_idea = {
-			idea = GRE_small_investment
-			days = 30
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_british_influence_over_greek_government
-					value = 5
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.176 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.173.b  
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 10
-				num_of_available_civilian_factories < 15
-			}
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.177 days = 2 }
-		}
-	}
+
 	option = {
 		name = bftb_greece.173.c 
 		ai_chance = {
@@ -5566,40 +5393,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = bftb_greece.174.a 
-		ai_chance = {
-			base = 10
-		}
-		add_timed_idea = {
-			idea = GRE_moderate_investment
-			days = 45
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_british_influence_over_greek_government
-					value = 10
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.176 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.174.b 
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 10
-				num_of_available_civilian_factories < 20
-			}
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.177 days = 2 }
-		}
-	}
-	option = {
 		name = bftb_greece.174.c 
 		ai_chance = {
 			base = 0.1
@@ -5630,38 +5423,7 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-		name = bftb_greece.175.a 
-		ai_chance = {
-			base = 10
-		}
-		navy_experience = 5
-		add_offsite_building = { type = dockyard level = 2 } 
-		add_timed_idea = {
-			idea = GRE_heavy_investment
-			days = 60
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_british_influence_over_greek_government
-					value = 25
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.176 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.175.b 
-		ai_chance = {
-			base = 0
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.177 days = 2 }
-		}
-	}	
+
 	option = {
 		name = bftb_greece.175.c 
 		ai_chance = {
@@ -5785,41 +5547,7 @@ country_event = {
 	picture = GFX_report_event_gre_allied_diplomacy
 
 	is_triggered_only = yes
-	
-	option = {
-		name = bftb_greece.179.a 
-		ai_chance = {
-			base = 10
-		}
-		add_timed_idea = {
-			idea = GRE_small_investment 
-			days = 30
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_french_influence_over_greek_government
-					value = 5
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.182 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.179.b 
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 10
-				num_of_available_civilian_factories < 15
-			}
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.183 days = 2 }
-		}
-	}
+
 	option = {
 		name = bftb_greece.179.c 
 		ai_chance = {
@@ -5852,40 +5580,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = bftb_greece.180.a 
-		ai_chance = {
-			base = 10
-		}
-		add_timed_idea = {
-			idea = GRE_moderate_investment
-			days = 45
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_french_influence_over_greek_government
-					value = 10
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.182 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.180.b 
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 10
-				num_of_available_civilian_factories < 20
-			}
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.183 days = 2 }
-		}
-	}
-	option = {
 		name = bftb_greece.180.c 
 		ai_chance = {
 			base = 0.1
@@ -5916,48 +5610,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-		name = bftb_greece.181.a 
-		ai_chance = {
-			base = 10
-		}
-		add_timed_idea = {
-			idea = GRE_heavy_investment
-			days = 60
-		}
-		add_opinion_modifier = {
-			target = GRE
-			modifier = GRE_underhanded_rogues
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_french_influence_over_greek_government
-					value = 25
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.182 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.181.b 
-		ai_chance = {
-			base = 0
-		}
-		add_timed_idea = {
-			idea = strikes_2
-			days = 45
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.183 days = 2 }
-		}
-		add_opinion_modifier = {
-			target = GRE
-			modifier = GRE_underhanded_rogues
-		}
-	}	
 	option = {
 		name = bftb_greece.181.c
 		ai_chance = {
@@ -6091,36 +5743,7 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-		name = bftb_greece.185.a 
-		ai_chance = {
-			base = 5
-		}
-		add_timed_idea = {
-			idea = GRE_moderate_investment
-			days = 60
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_italian_influence_over_greek_government
-					value = 4
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.187 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.185.b 
-		ai_chance = {
-			base = 5
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.188 days = 2 }
-		}
-	}	
+
 	option = {
 		name = bftb_greece.185.c 
 		ai_chance = {
@@ -6152,42 +5775,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = {
-		name = bftb_greece.186.a 
-		ai_chance = {
-			base = 10
-		}
-		add_offsite_building = { 
-			type = industrial_complex
-			level = 1
-		}
-		hidden_effect = {
-			GRE = { 
-				add_timed_idea = {
-					idea = GRE_economic_fluctuations
-					days = 100
-				}	
-			}
-			GRE = { 
-				subtract_from_variable = {
-					var = GRE_italian_influence_over_greek_government
-					value = 6
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.187 days = 2 }
-			}
-		}
-	}
-	option = {
-		name = bftb_greece.186.b 
-		ai_chance = {
-			base = 0
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.188 days = 2 }
-		}
-	}
 	option = {
 		name = bftb_greece.186.c 
 		ai_chance = {
@@ -6298,37 +5885,7 @@ country_event = {
 	picture = GFX_report_event_gre_allied_diplomacy
 
 	is_triggered_only = yes
-	
-	option = { #Invest in Greece
-		name = bftb_greece.190.a 
-		ai_chance = {
-			base = 5
-		}
-		add_timed_idea = {
-			idea = GRE_small_investment
-			days = 30
-		}
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_soviet_influence_over_greek_government
-					value = 10
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.193 days = 2 }
-			}
-		}
-	}
-	option = { #No investment yet
-		name = bftb_greece.190.b 
-		ai_chance = {
-			base = 5
-		}		
-		GRE = { 
-			country_event = { id = bftb_greece.194 days = 2 }
-		}
-	}
+
 	option = { #Emphatic NO 
 		name = bftb_greece.190.c 
 		ai_chance = {
@@ -6360,37 +5917,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	option = { #Moderate Investment 
-		name = bftb_greece.191.a
-		ai_chance = {
-			base = 5
-		}
-		add_timed_idea = {
-			idea = GRE_moderate_investment
-			days = 75
-		}
-		custom_effect_tooltip = GRE_increased_influence_tt 
-		hidden_effect = {
-			GRE = { 
-				add_to_variable = {
-					var = GRE_soviet_influence_over_greek_government
-					value = 25
-				}
-			}
-			GRE = {
-				country_event = { id = bftb_greece.187 days = 2 }
-			}
-		}
-	}
-	option = { #No investment at this time
-		name = bftb_greece.191.b
-		ai_chance = {
-			base = 5
-		}
-		GRE = { 
-			country_event = { id = bftb_greece.194 days = 2 }
-		}
-	}	
 	option = { #Emphatic No 
 		name = bftb_greece.191.c 
 		ai_chance = {
