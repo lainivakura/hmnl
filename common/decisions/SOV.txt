@@ -11927,26 +11927,17 @@ SOV_great_patriotic_war = {
 			}
 			else = {
 				custom_effect_tooltip = SOV_military_offensive_ongoing_not_holding_main_objective_tt
-				hidden_effect = {
-					add_war_support = -0.1
-					add_political_power = -75
-				}
+
 			}
 
 			custom_effect_tooltip = SOV_military_offensive_ongoing_failing_main_objective_tt
-			effect_tooltip = {
-				add_war_support = -0.1
-				add_political_power = -75
-			}
 
 			SOV_clean_military_offensive_effect = yes
 		}
 
 		complete_effect = { #SUCCESS
 			SOV_clean_military_offensive_effect = yes
-
-			add_war_support = 0.1
-			add_political_power = 50
+	
 		}
 	}
 
@@ -12100,37 +12091,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		timeout_effect = {  #FAIL
-			custom_effect_tooltip = SOV_operation_iskra_ongoing_success_effects_tt
-			effect_tooltip = {
-				add_war_support = 0.1
-				add_political_power = 50
-			}
-			custom_effect_tooltip = SOV_operation_iskra_ongoing_failure_effects_tt
-			effect_tooltip = {
-				add_war_support = -0.1
-				add_political_power = -75
-			}
-
-			if = {
-				limit = {
-					195 = { is_in_home_area = yes }
-				}
-				custom_effect_tooltip = SOV_operation_iskra_ongoing_success_tt
-				hidden_effect = {
-					add_war_support = 0.1
-					add_political_power = 50
-				}
-			}
-			else = {
-				custom_effect_tooltip = SOV_operation_iskra_ongoing_failure_tt
-				hidden_effect = {
-					add_war_support = -0.1
-					add_political_power = -75
-				}
-			}
-			SOV_clean_military_offensive_effect = yes
-		}
+		
 
 		complete_effect = {
 			SOV_clean_military_offensive_effect = yes
