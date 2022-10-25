@@ -250,37 +250,37 @@ operations_atom = {
 # 	}
 # }
 
-ENG_annex_IRQ = {
+# ENG_annex_IRQ = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
+# 		allowed = {
+# 			original_tag = ENG
 
-		}
+# 		}
 
-		available = {
-			446 = {is_fully_controlled_by = ENG}
-			IRQ = { 
-				is_ai = yes
+# 		available = {
+# 			446 = {is_fully_controlled_by = ENG}
+# 			IRQ = { 
+# 				is_ai = yes
 
-			}
-			date > 1941.1.1
-		}
+# 			}
+# 			date > 1941.1.1
+# 		}
 			
-		cost = 20
+# 		cost = 20
 			
-		visible = {
-			has_war_with = GER	
-		}
+# 		visible = {
+# 			has_war_with = GER	
+# 		}
 			
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		complete_effect = {
-			annex_country = {target = IRQ transfer_troops = yes}
+# 		complete_effect = {
+# 			annex_country = {target = IRQ transfer_troops = yes}
 
-	}
-}
+# 	}
+# }
 
 # ENG_annex_TIB = {
 
@@ -1010,9 +1010,15 @@ operation_torch = {
 	visible = { always = yes }
 
 	
-	complete_effect = {		
+	complete_effect = {
+		news_event = {id = MOD_news.1001}
 		declare_war_on = { target = VIC type = puppet_wargoal_focus }
 		ITA = {
+			transfer_state = 459
+			transfer_state = 513
+			transfer_state = 460
+			transfer_state = 458
+			transfer_state = 665
 			462 = {
 				add_compliance = 100
 			}
@@ -1034,7 +1040,6 @@ operation_torch = {
 			513 = {
 				add_compliance = 100
 			}
-			annex_country = { target = VIC transfer_troops = no }
 		}
 		USA = {
 			transfer_state = 461
@@ -1059,6 +1064,12 @@ operation_torch = {
 			}
 			513 = {
 				add_compliance = 100
+			}
+		}
+		ENG = {
+			annex_country = {
+				target = VIC
+				transfer_troops = no
 			}
 		}
 	}
@@ -1539,34 +1550,34 @@ ENG_annex_MAL = {
 		}
 				}
 }
-USA_annex_PHI = {
+# USA_annex_PHI = {
 
-	icon = generic_operation
+# 	icon = generic_operation
 
-	allowed = {
-		original_tag = USA
-	}
+# 	allowed = {
+# 		original_tag = USA
+# 	}
 
-	available = {
-		PHI = { 
-			is_ai = yes 
-		}
-		date > 1939.9.1
-	}	
-	cost = 50
+# 	available = {
+# 		PHI = { 
+# 			is_ai = yes 
+# 		}
+# 		date > 1939.9.1
+# 	}	
+# 	cost = 50
 		
-	visible = {
-		country_exists = PHI
-	}
+# 	visible = {
+# 		country_exists = PHI
+# 	}
 		
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	complete_effect = {
-		annex_country = {target = PHI transfer_troops = yes}
-		623 = { add_compliance = 100 } 	327 = { add_compliance = 100 }	624 = { add_compliance = 100 } 625 = { add_compliance = 100 }
-		627 = { add_compliance = 100 } 	628 = { add_compliance = 100 }	626 = { add_compliance = 100 }
-				   }
-}
+# 	complete_effect = {
+# 		annex_country = {target = PHI transfer_troops = yes}
+# 		623 = { add_compliance = 100 } 	327 = { add_compliance = 100 }	624 = { add_compliance = 100 } 625 = { add_compliance = 100 }
+# 		627 = { add_compliance = 100 } 	628 = { add_compliance = 100 }	626 = { add_compliance = 100 }
+# 				   }
+# }
 	
 
 ENG_interim_leadership_of_the_French_regions = {

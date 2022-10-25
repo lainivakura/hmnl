@@ -7076,7 +7076,9 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_eng_imperial_federation
-
+		allow_branch = {
+			always = no
+		}
 		x = 0
 		y = 1
 		relative_position_id = ENG_imperial_conference
@@ -7947,15 +7949,10 @@ focus_tree = {
 
 	# START IRAQ/IRAN/USSR INTERVENTION #
 
-	focus = {allow_branch = {always = no}
+	focus = {
 		id = uk_iraq_focus
 		available = {
-			IRQ = {
-				OR = { 
-					communism > 0.2
-			 		fascism > 0.2
-			 	} 
-			}
+			ENG = { has_war_with = ITA }
 		} #UK at war with fascist/commie. iraq is fascist/commie
 
 		bypass = {
@@ -7965,7 +7962,7 @@ focus_tree = {
 		will_lead_to_war_with = IRQ
 		prerequisite = { focus = ENG_home_defence }
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -3
+		x = 3
 		y = 1
 		offset = {
 			x = 1
@@ -7975,52 +7972,42 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = IRQ
-				generator = { 291 }
-				expire = 0
-			}
+			annex_country = {target = IRQ transfer_troops = yes}
 		}
 	}
 	focus = {
 		id = uk_iran_focus
 		available = {
-			PER = {
-				exists = yes
-				OR = { 
-					communism > 0.2
-			 		fascism > 0.2
-			 	} 
-			}
-		} #UK at war with fascist/commie. iran is fascist/commie
-
+			ENG = { has_war_with = JAP }
+		}
 		bypass = {
 			PER = { exists = no }
 		}
 
-		will_lead_to_war_with = PER
 		prerequisite = { focus = uk_iraq_focus }
 		icon = GFX_goal_generic_forceful_treaty
 		x = 0
 		y = 1
 		relative_position_id = uk_iraq_focus
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = PER
-				generator = { 266 }
-				expire = 0
+			news_event = {id = MOD_news.1002}
+			SOV = {
+				transfer_state = 418
+				transfer_state = 419
+				transfer_state = 416
+				transfer_state = 420
+				transfer_state = 266
 			}
+			annex_country = { target = PER }
 		}
 	}
 	focus = {
