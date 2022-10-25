@@ -11655,54 +11655,9 @@ date > 1949.12.1
 		search_filters = {}
 
 		completion_reward = {
-			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1095 }
+			army_experience = 110
 			
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-					has_completed_focus = SOV_covert_support_for_spanish_poum
-					has_completed_focus = SOV_coup_detat
-					has_global_flag = SPR_anarchist_uprising_flag
-					country_exists = SPC
-					# SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
-				}
-				SPC = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					country_exists = SPD
-				}
-				SPD = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					NOT = { country_exists = SPD }
-				}
-				custom_effect_tooltip = SOV_aid_republican_spain_tt
-				effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-			}
-			else = {
-				random_country = {
-					limit = {
-						original_tag = SPR
-						has_civil_war = yes
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
+		
 			# A Spanish General will join the USSR if his side loses the SCW
 			if = {
 				limit = {
