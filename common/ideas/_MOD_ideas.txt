@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		warm_blood = {
+			modifier = {acclimatization_cold_climate_gain_factor = -9}
+			cancel = {
+				date > 1941.06.01 
+			}
+		}
+	}
+	
+}
