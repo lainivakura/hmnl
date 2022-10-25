@@ -199,27 +199,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = mexico.2.a
-		
-		add_political_power = -25
-		
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 10
-				FROM = {
-					has_government = ROOT
-				}
-			}
-			modifier = {
-				factor = 0.1
-				FROM = {
-					is_enemy_ideology = yes
-				}
-			}
-		}
-	}
-	option = {
 		name = mexico.2.b
 		
 		add_opinion_modifier = {
@@ -242,59 +221,6 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_government = communism
-				FROM = {
-					has_government = communism
-				}
-			}
-		}
-	}
-	option = {
-		name = mexico.2.c
-		
-		add_stability = -0.1
-		add_war_support = -0.1
-		
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = FROM
-		}
-		
-		add_opinion_modifier = {
-			target = FROM
-			modifier = embargo
-		}
-		
-		FROM = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = embargo
-			}
-			country_event = {
-				days = 1
-				id = mexico.3
-			}
-		}
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.4
-			}
-			modifier = {
-				factor = 0
-				has_war_support < 0.4
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
 			}
 			modifier = {
 				factor = 0
@@ -363,28 +289,7 @@ country_event = {
 			factor = 80
 		}
 	}
-	option = {
-		name = mexico.4.b
-		
-		trigger = {
-			has_opinion_modifier = embargo
-		}
-		
-		add_political_power = -25
-		
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0.1
-				has_war = yes
-			}
-			modifier = {
-				factor = 0.5
-				tag = USA
-				is_historical_focus_on = yes
-			}
-		}
-	}
+
 }
 
 # Mexico asks to join someone's faction via focus
@@ -404,115 +309,7 @@ country_event = {
 			FROM = { save_event_target_as = alliance_applicant }
 		}
 	}
-	
-	option = {
-		name = mexico.8.a
-		
-		if = {
-			limit = {
-				original_tag = ENG
-			}
-			add_to_tech_sharing_group = MEX_ENG_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_ENG_tech_group
-			}
-		}
-		
-		if = {
-			limit = {
-				original_tag = GER
-			}
-			add_to_tech_sharing_group = MEX_GER_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_GER_tech_group
-			}
-		}
-		
-		if = {
-			limit = {
-				original_tag = SOV
-			}
-			add_to_tech_sharing_group = MEX_SOV_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_SOV_tech_group
-			}
-		}
-		
-		if = {
-			limit = {
-				original_tag = USA
-			}
-			add_to_tech_sharing_group = MEX_USA_tech_group
-			
-			FROM = {
-				add_to_tech_sharing_group = MEX_USA_tech_group
-			}
-		}
-		
-		if = {
-			limit = {
-				is_faction_leader = yes
-			}
-			add_to_faction = FROM
-			hidden_effect = {
-				news_event = { id = news.289 hours = 12 }
-			}
-			FROM = { country_event = { id = generic.3 hours = 6 } }
-		}
-		
-		if = {
-			limit = {
-				is_faction_leader = no
-			}
-			random_other_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					is_faction_leader = yes
-				}
-				country_event = {
-					id = mexico.9
-					days = 1
-				}
-			}
-		}
-		
-		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 2.0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0.5
-				MEX = {
-					has_war = yes
-					any_enemy_country = {
-						NOT = {
-							has_war_with = ROOT
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				MEX = {
-					has_war = yes
-					any_enemy_country = {
-						NOT = {
-							has_war_with = ROOT
-						}
-						OR = {
-							has_government = ROOT
-							is_major = yes
-						}
-					}
-				}
-			}
-		}
-	}
+
 	
 	option = {
 		name = mexico.8.b
