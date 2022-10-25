@@ -233,7 +233,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "prod_effi"  
 			position = {x=320 y=170}
-			Orientation = "CENTER" 
+			# Orientation = "CENTER" 
 			font = "hoi_20b"
 			text = "[ROOT.prod_efficiency]"
 			maxWidth = 50
