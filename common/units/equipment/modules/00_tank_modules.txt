@@ -792,7 +792,7 @@ equipment_modules = {
 	}
 
     tank_small_cannon_3 = {
-		abbreviation = "sc2"
+		abbreviation = "sc3"
 		category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_small_cannon_2

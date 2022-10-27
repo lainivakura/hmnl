@@ -83,6 +83,10 @@ NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipment for every year of equipment after 1936
+
+
+
 
 --Navy
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 0.9
