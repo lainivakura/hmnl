@@ -139,14 +139,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_EMI_tank_high_velocity_cannon_2_5"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
 		name = "GFX_EMI_tank_high_velocity_cannon_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/very_heavy1.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
 		legacy_lazy_load = no
 	}
 
@@ -197,12 +191,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
-	spriteType = {
-		name = "GFX_EMI_tank_medium_cannon_2_5"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_3.dds"
-		legacy_lazy_load = no
-	}
-
 	spriteType = {
 		name = "GFX_EMI_tank_medium_fixed_superstructure_turret"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
@@ -356,11 +344,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_secondary_turret_close_support_gun.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_external_fuel_tank"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fuel.dds"
-		legacy_lazy_load = no
-	}
+
 	spriteType = {
 		name = "GFX_EMI_smoke_launchers"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_smoke_launcher.dds"
@@ -400,6 +384,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_wheeled_suspension"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_wheeled_suspension.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_expanded_fuel_tank"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_fuel_drum.dds"
 		legacy_lazy_load = no
 	}
 
@@ -554,71 +544,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_non_tracked_suspension_type"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_wheeled_suspension.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_expanded_fuel_tank"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_fuel_drum.dds"
-		legacy_lazy_load = no
-	}
-	#NEW
-	
-	
-	
-	
-	
-	###############armor shell
-	spriteType = {
-		name = "GFX_EMI_flat_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flat_armor.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_semi_flat_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_semi-flat_armor.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_sloped_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_sloped_armor_zwei"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor_zwei.dds"
-		legacy_lazy_load = no
-	}
-	##############360 defence
-	spriteType = {
-		name = "GFX_EMI_front_only_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/front_only_armor.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_c360_armor"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/c360_armor.dds"
-		legacy_lazy_load = no
-	}
-	############## ammo
-	spriteType = {
-		name = "GFX_EMI_soft_ammo"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/ammo_soft.dds" 
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_hard_ammo"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/ammo_hard.dds"
-		legacy_lazy_load = no
-	}
-	############# up turret
-	spriteType = {
-		name = "GFX_EMI_open_turret"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_open_top_turret.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_close_armored_turret"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_add_on_armor_turret.dds"
 		legacy_lazy_load = no
 	}
 	
