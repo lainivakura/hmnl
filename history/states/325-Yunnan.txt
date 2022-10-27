@@ -7,42 +7,12 @@ state={
 
 	history={
 		owner = CHI
-<<<<<<< HEAD
-		
 		add_core_of = CHI
-	
-=======
-		add_core_of = CHI
->>>>>>> origin/vse-po-novoy
 		victory_points = {
 			1319 10 
 		}
 		buildings = {
 			infrastructure = 2
-<<<<<<< HEAD
-			arms_factory = 2
-			industrial_complex = 3
-
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-
-	}
-=======
 			arms_factory = 1
 			industrial_complex = 3
 
@@ -51,18 +21,13 @@ state={
 		}
 
 	
->>>>>>> origin/vse-po-novoy
 
 	provinces={
 		1114 1172 1196 1319 1383 1522 1653 4501 7446 7606 8023 10346 10776 12262 12282 
 	}
 	manpower=10994500
 	buildings_max_level_factor=1.000
-<<<<<<< HEAD
-	state_category=city
-=======
 	state_category=town
->>>>>>> origin/vse-po-novoy
 
 	local_supplies=3.0 
 }

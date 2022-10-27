@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
-=======
 ### search_filters = {FOCUS_FILTER_POLITICAL}
->>>>>>> origin/vse-po-novoy
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -39,12 +35,12 @@ focus_tree = {
 				name = GER_four_year_plan
 				bonus = 1.0
 				uses = 2
-<<<<<<< HEAD
-				category = industry
-=======
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
 				technology = dispersed_industry3
 				technology = dispersed_industry4
->>>>>>> origin/vse-po-novoy
+				technology = dispersed_industry5
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
@@ -149,6 +145,10 @@ focus_tree = {
 			OR = {
 				FRA = { has_capitulated = yes }
 				NOT = { country_exists = FRA }
+				any_other_country = {
+					original_tag = FRA
+					has_government = fascism
+				}
 			}
 			OR = {
 				has_full_control_of_state = 19
@@ -1199,17 +1199,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2IC }
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 			}			
@@ -1224,17 +1217,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2IC
@@ -1247,17 +1233,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2IC
@@ -1270,17 +1249,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2IC
@@ -1306,17 +1278,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2_2IC }
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 			}
@@ -1331,17 +1296,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
@@ -1354,17 +1312,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
@@ -1377,17 +1328,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-=======
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
->>>>>>> origin/vse-po-novoy
 					instant_build = yes
 				}
 				set_state_flag = GER_industrial_effort_2_2IC
@@ -1451,7 +1395,7 @@ focus_tree = {
         	modify_building_resources = {
         	   building = synthetic_refinery
         	   resource = rubber
-        	   amount = 2
+        	   amount = 3
         	}
 		}
 	}
@@ -1804,15 +1748,7 @@ focus_tree = {
 									is_in_faction_with = ROOT
 									is_free_or_subject_of_root = yes
 								}
-<<<<<<< HEAD
-							BUL = {
-									is_ai = no
-									is_in_faction_with = ROOT
-									is_free_or_subject_of_root = yes
-								}
-=======
 							
->>>>>>> origin/vse-po-novoy
 						}
 				}
 			available_if_capitulated = no
@@ -1887,34 +1823,7 @@ focus_tree = {
 										}
 								}
 						}
-<<<<<<< HEAD
-					BUL = {
-							every_state = {
-									limit = {
-											has_state_flag = GER_integrate_war_economies_1
-										}
-									add_extra_state_shared_building_slots = 1
-									add_building_construction = {
-											type = arms_factory
-											level = 1
-											instant_build = yes
-										}
-								}
-							every_state = {
-									limit = {
-											has_state_flag = GER_integrate_war_economies_2
-										}
-									add_extra_state_shared_building_slots = 1
-									add_building_construction = {
-											type = arms_factory
-											level = 1
-											instant_build = yes
-										}
-								}
-						}
-=======
 					
->>>>>>> origin/vse-po-novoy
 				}
 			completion_reward = {
 					60 = {
@@ -1975,42 +1884,7 @@ focus_tree = {
 										}
 								}
 						}
-<<<<<<< HEAD
-					if = {
-							limit = {
-									BUL = {
-											is_ai = no
-										}
-								}
-							BUL = {
-									country_event = {
-											id = wtt_germany.72
-										}
-									if = {
-											limit = {
-													has_dlc = "Death or Dishonor"
-													is_subject = no
-												}
-											GER = {
-													set_autonomy = {
-															target = BUL
-															autonomy_state = autonomy_satellite
-														}
-												}
-										}
-									random_owned_controlled_state = {
-											add_extra_state_shared_building_slots = 2
-											add_building_construction = {
-													type = arms_factory
-													level = 2
-													instant_build = yes
-												}
-										}
-								}
-						}
-=======
 					
->>>>>>> origin/vse-po-novoy
 				}
 
 	}
@@ -2386,7 +2260,7 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 3
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}
 						create_equipment_variant = {
 							name = "Panzer IV Ausf. A"
@@ -2405,7 +2279,7 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 2
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}
 					}
 				}
@@ -2429,7 +2303,7 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 3
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}
 						create_equipment_variant = {
 							name = "Panzer IV Ausf. A"
@@ -2448,17 +2322,13 @@ add_tech_bonus = {
 								tank_nsb_engine_upgrade = 6
 								tank_nsb_armor_upgrade = 2
 							}
-							icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
+							icon = "GFX_GER_basic_medium_tank_medium"
 						}	
 					}
 				}
 				add_tech_bonus = {
 					name = armor_bonus
-<<<<<<< HEAD
-					bonus = 2.0
-=======
 					bonus = 1.0
->>>>>>> origin/vse-po-novoy
 					uses = 2
 					category = armor
 				}
@@ -2472,11 +2342,7 @@ add_tech_bonus = {
 					}
 					add_tech_bonus = {
 						name = armor_bonus
-<<<<<<< HEAD
-						bonus = 2.0
-=======
 						bonus = 1.0
->>>>>>> origin/vse-po-novoy
 						uses = 2
 						category = armor
 					}
@@ -2688,12 +2554,9 @@ add_tech_bonus = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_mol_rib_pact }
 		mutually_exclusive = { focus = GER_ussr_war_goal }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		available = {
 			is_subject = no
 date > 1949.12.1
@@ -2748,10 +2611,7 @@ date > 1949.12.1
 		id = GER_turkey_puppet
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_soviet_ally }
-<<<<<<< HEAD
-=======
 		
->>>>>>> origin/vse-po-novoy
 		available = {
 date > 1949.12.1
 			is_subject = no
@@ -2800,14 +2660,11 @@ date > 1949.12.1
 		completion_reward = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
+			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 5
-<<<<<<< HEAD
 			add_named_threat = { threat = 5 name = GER_rhineland }
-=======
-			add_named_threat = { threat = 8 name = GER_rhineland }
->>>>>>> origin/vse-po-novoy
 			if = {
 				limit = { FRA = { is_subject = no } }
 				FRA = {
@@ -2852,15 +2709,6 @@ date > 1949.12.1
 			}
 		}	
 		completion_reward = {
-<<<<<<< HEAD
-add_tech_bonus = {
-				name = arty_bonus
-				bonus = 1.3
-				uses = 2
-				category = artillery
-			}
-=======
->>>>>>> origin/vse-po-novoy
 			JAP = {
 				add_opinion_modifier = { target = GER modifier = ger_jap_diplomacy_focus }
 			}
@@ -2874,7 +2722,17 @@ add_tech_bonus = {
 				limit = {
 					has_dlc = "Waking the Tiger"
 				}
-				
+				create_corps_commander = {
+					name = "Alexander von Falkenhausen"
+					gfx = GFX_portrait_chi_alexander_von_falkenhausen
+					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 3
+					legacy_id = 603
+					traits = { infantry_officer }
+				}
 			}
 		}
 	}
@@ -2985,12 +2843,9 @@ date > 1949.12.1
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_anti_comitern_pact }
 		mutually_exclusive = { focus = GER_mol_rib_pact }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		available = {
 			is_subject = no
 			has_army_manpower = { size > 849999 } #ca 90 div
@@ -3053,13 +2908,8 @@ date > 1949.12.1
 date > 1941.5.1
 			is_subject = no
 		}
-<<<<<<< HEAD
-		x = 1
-		y = 4
-=======
 		x = 0
 		y = 1
->>>>>>> origin/vse-po-novoy
 		relative_position_id = GER_anti_comitern_pact
 		cost = 1
 		historical_ai = {
@@ -3098,23 +2948,16 @@ date > 1941.5.1
 			}
 		}	
 		completion_reward = {
-<<<<<<< HEAD
-=======
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
 						days = 100
 					}
->>>>>>> origin/vse-po-novoy
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
 				create_wargoal = {
 					type = annex_everything
 					target = SOV
-<<<<<<< HEAD
-					expire = 0
-=======
 					expire = 0	
->>>>>>> origin/vse-po-novoy
 				}
 			}
 			ELSE = {
@@ -3132,23 +2975,16 @@ date > 1941.5.1
 		}
 	}
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/vse-po-novoy
 	focus = {
 		id = GER_turkey_friend
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_ussr_war_goal }
 		prerequisite = { focus = GER_italy_ally }
 
-<<<<<<< HEAD
-
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		available = { 
 date > 1949.12.1
 			is_subject = no 
@@ -3297,6 +3133,7 @@ date > 1949.12.1
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
 						}
 					}
 				}
@@ -3315,6 +3152,7 @@ date > 1949.12.1
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
 						}
 					}
 				}
@@ -3392,6 +3230,21 @@ date > 1949.12.1
 					}
 				}
 				add_state_core = 153
+			}
+			if = {
+				limit = {
+					848 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848
 			}
 		}
 	}
@@ -3839,20 +3692,12 @@ date > 1939.9.1
 
 	}
 	
-<<<<<<< HEAD
-	focus = {
-=======
 	focus = {allow_branch = {always = no}
->>>>>>> origin/vse-po-novoy
 		id = GER_czech_friend
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_anschluss }
 		mutually_exclusive = { focus = GER_demand_sudetenland }
 		available = { 
-<<<<<<< HEAD
-date > 1949.12.1
-=======
->>>>>>> origin/vse-po-novoy
 			has_army_manpower = { size > 749999 }
 			NOT = { has_war_with = CZE }
 			CZE = {
@@ -4081,7 +3926,7 @@ date > 1949.12.1
 				ENG = {
 					country_event = germany.40
 				}
-				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+				add_named_threat = { threat = 4 name = GER_demand_sudetenland_threat }
 			}
 			if = {
 				limit = {
@@ -4278,11 +4123,7 @@ date > 1949.12.1
 		id = GER_second_vienna_award
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = GER_czech_friend focus = GER_end_of_czechoslovakia }
-<<<<<<< HEAD
-		x = 0
-=======
 		x = 2
->>>>>>> origin/vse-po-novoy
 		y = 3
 		relative_position_id = GER_czech_friend
 		cost = 1
@@ -4358,12 +4199,9 @@ date > 1949.12.1
 			NOT = { has_war_with = ITA }
 			NOT = { has_country_flag = ENG_ditched_the_italians_flag }
 		}
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 
 		bypass = {
 			
@@ -4505,12 +4343,9 @@ date > 1949.12.1
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = GER_end_of_czechoslovakia }
 		mutually_exclusive = { focus = GER_danzig_or_war }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		available = {
 date > 1949.12.1
 			is_subject = no
@@ -4910,11 +4745,7 @@ date > 1949.12.1
 		x = 0
 		y = 1
 		relative_position_id = GER_naval_effort
-<<<<<<< HEAD
-		cost = 10
-=======
 		cost = 5
->>>>>>> origin/vse-po-novoy
 		ai_will_do = {
 			factor = 1
 		}
@@ -5184,13 +5015,9 @@ date > 1949.12.1
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_plan_z }
 		mutually_exclusive = { focus = GER_weserubung }
-<<<<<<< HEAD
-
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		available = {
 
 date > 1949.12.1
@@ -5579,12 +5406,7 @@ date > 1940.1.1
 		id = GER_first_ljubljana_award
 		prerequisite = { focus = GER_demand_slovenia }
 		icon = GFX_goal_generic_military_deal
-<<<<<<< HEAD
-=======
-		
->>>>>>> origin/vse-po-novoy
 		available = {
-date > 1940.1.1
 			is_subject = no
 			NOT = { is_in_faction_with = YUG }
 			NOT = { YUG = { has_non_aggression_pact_with = GER } }
@@ -5596,6 +5418,8 @@ date > 1940.1.1
 					OR = {
 						owns_state = 102
 						102 = { owner = { is_subject_of = YUG } }
+						owns_state = 853
+						853 = { owner = { is_subject_of = YUG } }
 					}
 				}
 				custom_trigger_tooltip = {
@@ -5605,6 +5429,10 @@ date > 1940.1.1
 						OR = {
 							owns_state = 102
 							102 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 853
+							853 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
 							owns_state = 45
@@ -5619,11 +5447,11 @@ date > 1940.1.1
 							803 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #Herzegovina
-							owns_state = 803
+							owns_state = 804
 							804 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #Kosovo
-							owns_state = 803
+							owns_state = 802
 							802 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
@@ -5791,7 +5619,7 @@ date > 1940.1.1
 				limit = {
 					ITA = {
 						OR = {
-							has_completed_focus = ITA_slovenia_dalmatia_claims
+							has_completed_focus = ITA_balkan_ambition
 							owns_state = 44
 						}
 						is_friend_or_potential_friend_of_GER = yes
@@ -5808,7 +5636,7 @@ date > 1940.1.1
 					ITA = {
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 						if = {
-							limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+							limit = { has_completed_focus = ITA_balkan_ambition }
 							transfer_state = 103
 						}
 						if = {
@@ -5838,12 +5666,9 @@ date > 1940.1.1
 	focus = {
 		id = GER_fate_of_yugoslavia
 		prerequisite = { focus = GER_first_ljubljana_award }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		icon = GFX_goal_generic_territory_or_war
 		available = {
 date > 1949.12.1
@@ -5968,7 +5793,6 @@ date > 1949.12.1
 					ITA = {
 						NOT = { has_war_with = GRE }
 						country_exists = ITA
-						has_completed_focus = ITA_greece_war_goal
 						OR = {
 							is_in_faction_with = GER
 							is_in_faction = no							
@@ -6077,23 +5901,15 @@ date > 1949.12.1
 			GRE = { country_event = { id = greece.3 hours = 6 } }
 		}
 	}
-<<<<<<< HEAD
-
-	focus = {
-=======
 	
 
     focus = {
->>>>>>> origin/vse-po-novoy
 		id = GER_oppose_hitler
 		icon = GFX_focus_ger_oppose_hitler
 		mutually_exclusive = { focus = GER_rhineland }
 
 		allow_branch = {
-<<<<<<< HEAD
-=======
 			always = no
->>>>>>> origin/vse-po-novoy
 			has_dlc = "Waking the Tiger"
 		}
 
@@ -7065,7 +6881,8 @@ date > 1949.12.1
 		available = {
 			is_subject = no
 			NOT = { has_war_with = ITA }
-			ITA = { has_country_leader = { ruling_only = yes name = "Benito Mussolini" } }
+			ITA = { has_country_leader = { ruling_only = yes character = ITA_benito_mussolini } }
+			NOT = {	ITA = {	has_completed_focus = ITA_banda_carita } }
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -7086,13 +6903,13 @@ date > 1949.12.1
 					add_popularity = { ideology = neutrality popularity = 0.1 }
 					effect_tooltip = {
 						create_country_leader = {
-							name = "Victor Emmanuel III"
-							desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-							picture = "GFX_portrait_italy_victor_emmanuel_iii"
+							name = "vittorio Emanuele III"
+							desc = "POLITICS_VITTORIO_EMANUELE_III_DESC"
+							picture = "GFX_portrait_italy_vittorio_emanuele_iii"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {
-						
+								the_soldier_king
 							}
 						}
 					}

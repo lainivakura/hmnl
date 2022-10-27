@@ -2,11 +2,7 @@
 state={
 	id=354
 	name="STATE_354"
-<<<<<<< HEAD
-	manpower = 1
-=======
 	manpower = 1031129
->>>>>>> origin/vse-po-novoy
 	
 	state_category = town
 
@@ -20,12 +16,9 @@ state={
 			10472 5
 		}
 		victory_points = {
-<<<<<<< HEAD
-=======
 			11853 3
 		}
 		victory_points = {
->>>>>>> origin/vse-po-novoy
 			3979 3 
 		}
 		buildings = {

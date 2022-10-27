@@ -7,20 +7,15 @@ state={
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category = wasteland
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-<<<<<<< HEAD
-		owner = AFR
-		
-		add_core_of = AFR
-	
-		
-
+		owner = VEN
 	}
-=======
-		}
+	
+
 
 	
->>>>>>> origin/vse-po-novoy
 
 	local_supplies=0.0 
 }

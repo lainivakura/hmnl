@@ -3,25 +3,19 @@ state=
 	id=312
 	name="STATE_312"
 	manpower=1
-<<<<<<< HEAD
-	
-	
-	state_category = town
-	history={
-		owner = AFR
-
-		add_core_of = AFR
-=======
 	resources={
 		chromium=1 # was: 1
 	}
 	
 	state_category = town
-	history=
-	{
->>>>>>> origin/vse-po-novoy
-
+##PUSTOI_SLOT
+	
+	history={
+		set_demilitarized_zone = yes
+		owner = VEN
 	}
+	
+
 	provinces={
 		2031 8017 12865
 	}

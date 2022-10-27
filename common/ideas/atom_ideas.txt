@@ -1,104 +1,32 @@
 ideas = {
 
-trade_laws = { 
-		law = yes
-		use_list_view = yes	
-	
-		forced_closed_eco = {
-			picture = generic_production_bonus
-			allowed = {
-				tag  = SOV 
-}
-			available = {
-				always = yes
-			}
-						
-			cost = 9999
-			removal_cost = -1
-			
-			allowed_to_remove = {
-				always = no
-			}	
-			
-			modifier = {
-				min_export = 0
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-<<<<<<< HEAD
-production_speed_industrial_complex_factor = 0.4
-				production_speed_arms_factory_factor = -0.25
-conversion_cost_civ_to_mil_factor = 0.25
-				conversion_cost_mil_to_civ_factor = -0.1
-				production_speed_buildings_factor = 0.1
-global_building_slots_factor = 0.4
-				research_speed_factor = 0.13
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0
-			}			
-			cancel_if_invalid = no
-		}
-	}
 
-trade_laws = { 
-		law = yes
-		use_list_view = yes	
-	
-		forced_closed_eco2 = {
-			picture = warrior_traditions_idea
-			allowed = {
-				
-		tag  =JAP	
-			}
-
-			available = {
-				always = yes
-			}
-						
-			cost = 9999
-			removal_cost = -1
-			
-			allowed_to_remove = {
-				always = no
-			}	
-			
-			modifier = {
-				min_export = 0
-				industrial_capacity_factory = 0.08
-				industrial_capacity_dockyard = 0.08
-				production_speed_buildings_factor = 0.08
-				research_speed_factor = 0.07
-=======
-production_speed_industrial_complex_factor = 0.15
-				production_speed_arms_factory_factor = 0.2
-				production_speed_buildings_factor = 0.1
-global_building_slots_factor = 0.4
-				research_speed_factor = 0.15
->>>>>>> origin/vse-po-novoy
-				civilian_intel_to_others = 40.0
-				navy_intel_to_others = 20.0
-			}			
-			cancel_if_invalid = no
-		}
-	}
-
-
-<<<<<<< HEAD
-
-=======
     
->>>>>>> origin/vse-po-novoy
 
 
+country = {
+     free_trade_for_ai = {
+      picture = MONTOE
 
+      allowed = {
+        always = yes
+      }
+
+      modifier = {
+        min_export = 0.55
+      }
+    }
+
+  }
 
   
 country = {
      special_forces_cap_exploit = {
       picture = escort_effort_focus
 
-      allowed = {
-        always = yes
-      }
+      # allowed = {
+      #   always = yes
+      # }
 
       modifier = {
         special_forces_attack_factor = -10.00
@@ -110,16 +38,22 @@ country = {
   	country = {
 		Horrors_WW1 = {
 			picture = chi_war_of_resistance
-
+      allowed = {
+        is_ai = yes
+      }
 			removal_cost = -1
 			
 			modifier = {
+        monthly_population = -1
+        conscription_factor = -1
+        consumer_goods_factor = 1
+        political_power_gain = -2
 				industrial_capacity_dockyard = -2.5
 				industrial_capacity_factory = -2.5
-				production_factory_max_efficiency_factor = -3
-				line_change_production_efficiency_factor = -1
-				production_factory_start_efficiency_factor = 0
-				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				# production_factory_max_efficiency_factor = -3
+				# line_change_production_efficiency_factor = -1
+				# production_factory_start_efficiency_factor = 0
+				# custom_modifier_tooltip = SPR_military_disloyalty_tt
 			}
 		}		
 	}	

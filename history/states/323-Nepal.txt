@@ -5,21 +5,14 @@ state={
 	manpower = 1
 	
 	state_category = town
-<<<<<<< HEAD
+##PUSTOI_SLOT
+	impassable = yes
+	history={
+		owner = VEN
+	}
 	
-	history={
-		owner = AFR
-
-		add_core_of = AFR
-
-	}
 
 
-=======
-	history={
-	}
-
->>>>>>> origin/vse-po-novoy
 	provinces={
 		4386 4987 5310 7374 10825 10910 12892 
 	}

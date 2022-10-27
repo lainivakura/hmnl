@@ -9,10 +9,7 @@ state={
 	
 	resources={
 		aluminium=7 # was: 10
-<<<<<<< HEAD
-tungsten=31 
-=======
->>>>>>> origin/vse-po-novoy
+		chromium = 35
 	}
 
 	history={
@@ -24,10 +21,6 @@ tungsten=31
 			infrastructure = 2
 		}
 		add_core_of = YUG
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

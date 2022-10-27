@@ -3,22 +3,14 @@ state={
 	id=1
 	name="STATE_1" # Corsica
 	manpower = 322900
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> origin/vse-po-novoy
 	state_category = town
 
 	history={
 		owner = FRA
 		victory_points = { 3838 1 }
 		buildings = {
-<<<<<<< HEAD
-			infrastructure = 4
-=======
 			infrastructure = 2
->>>>>>> origin/vse-po-novoy
 			industrial_complex = 1
 			air_base = 1
 			3838 = {
@@ -29,14 +21,8 @@ state={
 	}
 
 	provinces={
-<<<<<<< HEAD
-		3838 9851 11804
-	}
-local_supplies=0.0 
-=======
 		3838 9851 11804 
 	}
 
 	local_supplies=0.0 
->>>>>>> origin/vse-po-novoy
 }

@@ -9,39 +9,14 @@ state={
 	state_category = pastoral
 	history={
 		owner = CHI
-<<<<<<< HEAD
-	
 		add_core_of = CHI
-		
-=======
-		add_core_of = CHI
->>>>>>> origin/vse-po-novoy
 		victory_points = {
 			7965 3 
 		}
 		buildings = {
 			infrastructure = 2
 		}
-<<<<<<< HEAD
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-=======
 		
->>>>>>> origin/vse-po-novoy
 
 	}
 

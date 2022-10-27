@@ -2,34 +2,11 @@
 state={
 	id=452
 	name="STATE_452"
-<<<<<<< HEAD
-	manpower = 52556
-	
-	state_category = wasteland
-=======
->>>>>>> origin/vse-po-novoy
 
 	history={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
-<<<<<<< HEAD
-		}
-
-		victory_points = {
-			9989 1
-		}
-
-	add_core_of = AFR
-	}
-
-	provinces={
-		1143 10127 12764 7079 9989 10061 11910 11967 5078 12033 12091 7148
-	}
-
-
-	local_supplies=9.0 
-=======
 
 		}
 		victory_points = {
@@ -38,7 +15,7 @@ state={
 		victory_points = {
 			9989 1 
 		}
-		add_core_of = EGY
+		add_core_of = PRC
 
 	}
 
@@ -49,5 +26,4 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=9.000
->>>>>>> origin/vse-po-novoy
 }

@@ -1009,11 +1009,7 @@ GER_military_buildup = {
 					size < 750
 				}
 				has_equipment = {
-<<<<<<< HEAD
-					fighter_equipment < 250
-=======
 					small_plane_airframe < 250
->>>>>>> origin/vse-po-novoy
 				}
 			}
 			NOT = {
@@ -1035,11 +1031,7 @@ GER_military_buildup = {
 					size < 750
 				}
 				has_equipment = {
-<<<<<<< HEAD
-					fighter_equipment < 250
-=======
 					small_plane_airframe < 250
->>>>>>> origin/vse-po-novoy
 				}
 			}
 			NOT = {

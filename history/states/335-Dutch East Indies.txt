@@ -8,10 +8,14 @@ state={
 	
 	resources={
 		rubber=140 # was: 242
-		oil=30 # was: 16
+		oil=10 # was: 16
 	}
 
 	history={
+		add_dynamic_modifier = {
+			modifier = ASIA_PREWAR
+		}
+		set_demilitarized_zone = yes
 		owner = INS
 		add_core_of = INS
 		victory_points = {

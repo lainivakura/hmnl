@@ -1,13 +1,9 @@
 state={
 	id=795
 	name="STATE_795"
-<<<<<<< HEAD
-	
-=======
 	resources={
 		chromium=20.000 #added due to portugal setup
 	}
->>>>>>> origin/vse-po-novoy
 	history={
 		owner = POR
 		victory_points = {

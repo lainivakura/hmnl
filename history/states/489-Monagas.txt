@@ -8,11 +8,6 @@ state={
 	
 	resources={
 		oil=35 # was: 126
-<<<<<<< HEAD
-steel = 3
-chromium= 90
-=======
->>>>>>> origin/vse-po-novoy
 	}
 
 	history={

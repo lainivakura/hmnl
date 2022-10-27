@@ -2,16 +2,17 @@ state=
 {
 	id=767
 	name="STATE_767" # North Darfur
-	manpower = 1
+	manpower = 8143
 	
 	state_category = wasteland
 	impassable = yes
 	
-	history={
-		owner = AFR
-
-		add_core_of = AFR
-
+	history= {
+		add_core_of = PRC
+		owner = ENG
+		buildings = {
+			infrastructure = 0
+		}
 	}
 	provinces={
 		7987 8103 10900

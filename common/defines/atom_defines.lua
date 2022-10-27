@@ -12,16 +12,12 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0         -- XP cost fo
 
 --ОПЫТ
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3,	0.39,	0.48,	0.57,	0.66,	0.75,	0.78,	0.81,	0.84,	0.87,	0.9}		-- Experience needed to progress to the next level
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 
 --Diplomacy
-<<<<<<< HEAD
-NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0
-=======
->>>>>>> origin/vse-po-novoy
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 7
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 7
 NDefines.NDiplomacy.TROOP_FEAR = 0
@@ -29,24 +25,10 @@ NDefines.NDiplomacy.FLEET_FEAR = 0
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 ---Воздух с мультифлекса	
-<<<<<<< HEAD
-NDefines.NAir.AIR_WING_MAX_SIZE = 100
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 
-NDefines.NAir.DISRUPTION_SPEED_FACTOR = 0.75
-NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 2
-NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 0.1
 
-NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500
-	NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
-=======
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 
--- NDefines.NAir.DISRUPTION_SPEED_FACTOR = 0.75
--- NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 2
--- NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 0.1
 
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
->>>>>>> origin/vse-po-novoy
  	
  
 
@@ -82,6 +64,15 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 72 --24
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 96 --24
+
+--вырезали кач 
+NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00 --0.1
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.00
+NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
+NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
+NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
+NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0
 
 
 --Politics
@@ -92,6 +83,10 @@ NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipment for every year of equipment after 1936
+
+
+
 
 --Navy
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 0.9
@@ -176,8 +171,4 @@ NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
 
-<<<<<<< HEAD
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
-=======
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
->>>>>>> origin/vse-po-novoy

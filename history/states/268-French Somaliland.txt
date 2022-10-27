@@ -8,11 +8,7 @@ state={
 
 	history={
 		owner = FRA
-<<<<<<< HEAD
-		add_core_of = AFR
-=======
-		add_core_of = DJI
->>>>>>> origin/vse-po-novoy
+		add_core_of = PRC
 		victory_points = {
 			8124 1
 		}

@@ -35,29 +35,45 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = USA
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
-targeted_modifier = {
+			targeted_modifier = {
 				tag = ENG
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
-targeted_modifier = {
+			targeted_modifier = {
 				tag = MAL
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
-targeted_modifier = {
+			targeted_modifier = {
 				tag = PHI
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
-targeted_modifier = {
+			targeted_modifier = {
 				tag = RAJ
 				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.1
 				defense_bonus_against = 0.15
-			}modifier = {
+			}
+			targeted_modifier = {
+				tag = SAF
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+			modifier = {
 				army_morale_factor = 0.1
 			}
 		}
@@ -1234,10 +1250,10 @@ global_building_slots_factor = 0.3
 			
 
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1258,16 +1274,16 @@ global_building_slots_factor = 0.3
 			
 
 			equipment_bonus = {
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				cv_CAS_equipment = {
+				cv_small_plane_cas_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				cv_nav_bomber_equipment = {
+				cv_small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					build_cost_ic = -0.2 instant = yes
 				}
 			}

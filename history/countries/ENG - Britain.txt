@@ -1,10 +1,7 @@
 ﻿capital = 126
 
-<<<<<<< HEAD
-=======
 give_guarantee = POL
 
->>>>>>> origin/vse-po-novoy
 if = {
 	limit = {
 		NOT = {
@@ -32,8 +29,6 @@ if = {
 	}
 }
 
-<<<<<<< HEAD
-=======
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "ENG_1936_air_bba"
@@ -62,7 +57,6 @@ if = {
 	}
 }
 
->>>>>>> origin/vse-po-novoy
 load_oob = "ENG_Motorized"
 
 set_research_slots = 4
@@ -81,15 +75,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-<<<<<<< HEAD
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	CAS1 = 1
-=======
->>>>>>> origin/vse-po-novoy
 	basic_train = 1
 	trench_warfare = 1
 	fleet_in_being = 1
@@ -98,13 +83,6 @@ set_technology = {
 	radio_detection = 1
 	fuel_silos = 1
 	fuel_refining = 1
-<<<<<<< HEAD
-scout_plane1 = 1
-           tech_mountaineers = 1
-	    paratroopers = 1
-	    marines = 1
-=======
->>>>>>> origin/vse-po-novoy
 }
 
 if = {
@@ -171,20 +149,11 @@ if = {
 		sonar = 1
 		smoke_generator = 1
 		basic_depth_charges = 1
-<<<<<<< HEAD
-		basic_secondary_battery = 1
-		basic_cruiser_armor_scheme = 1
-		basic_heavy_armor_scheme = 1
-		mtg_transport = 1
-		improved_secondary_battery = 1
-		basic_fire_control_system = 1
-=======
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 		basic_fire_control_system = 1
 		basic_dp_light_battery = 1
->>>>>>> origin/vse-po-novoy
 	}
 	add_ideas = MTG_naval_treaty_adherent
 	set_global_flag = MTG_second_london_conference
@@ -210,11 +179,7 @@ add_ideas = {
 	
 
 set_convoys = 800
-<<<<<<< HEAD
-give_guarantee = POL
-=======
 
->>>>>>> origin/vse-po-novoy
 # DIPLOMACY
 if = {
 	limit = {
@@ -326,21 +291,6 @@ if = {
 			set_naval_oob = "ENG_1939_Naval_Legacy"
 		}
 	}
-<<<<<<< HEAD
-
-	set_technology = {
-		fighter1 = 1
-		fighter2 = 1
-		heavy_fighter1 = 1
-		heavy_fighter2 = 1
-		CAS2 = 1
-		naval_bomber2 = 1
-		tactical_bomber1 = 1
-		tactical_bomber2 = 1
-		strategic_bomber1 = 1
-		cv_CAS1 = 1
-		cv_fighter1 = 1
-=======
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "ENG_1939_air_bba"
@@ -372,7 +322,6 @@ if = {
 }
 
 	set_technology = {
->>>>>>> origin/vse-po-novoy
 		
 		interwar_artillery = 1
 		interwar_antitank = 1
@@ -461,11 +410,7 @@ if = {
 			basic_carrier = 1
 			improved_carrier = 1
 		}
-<<<<<<< HEAD
-		set_naval_oob = "ENG_1939_Naval_Legacy"
-=======
 		
->>>>>>> origin/vse-po-novoy
 	}
 	if = {
 		limit = {
@@ -479,16 +424,9 @@ if = {
 			basic_ship_hull_heavy = 1
 			
 			improved_ship_hull_carrier = 1
-<<<<<<< HEAD
-			dp_secondary_battery = 1
-			improved_sonar = 1
-		}
-		set_naval_oob = "ENG_1939_Naval"
-=======
 			advanced_dp_light_battery = 1
 			improved_sonar = 1
 		}
->>>>>>> origin/vse-po-novoy
 		remove_ideas = MTG_naval_treaty_adherent
 		add_ideas = MTG_naval_treaty_adherent_reduced
 		clr_global_flag = MTG_second_london_conference
@@ -799,11 +737,7 @@ if = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 1
 		}
-<<<<<<< HEAD
-		icon = "gfx/interface/technologies/ENG_basic_light_tank.dds"
-=======
 		icon = "GFX_ENG_basic_light_tank_medium"
->>>>>>> origin/vse-po-novoy
 		obsolete = yes #used for oob
 	}
 	create_equipment_variant = {
@@ -819,11 +753,7 @@ if = {
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = smoke_launchers
 		}
-<<<<<<< HEAD
-		icon = "gfx/interface/technologies/ENG_basic_light_tank.dds"
-=======
 		icon = "GFX_ENG_basic_light_tank_medium"
->>>>>>> origin/vse-po-novoy
 		upgrades = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 2
@@ -846,11 +776,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 			tank_nsb_engine_upgrade = 2
 		}
-<<<<<<< HEAD
-		icon = "gfx/interface/technologies/ENG_basic_light_tank.dds"
-=======
 		icon = "GFX_ENG_basic_light_tank_medium"
->>>>>>> origin/vse-po-novoy
 	}
 
 	create_equipment_variant = {
@@ -869,11 +795,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 2
 		}
-<<<<<<< HEAD
-		icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_BAB_camo.dds"
-=======
 		icon = "GFX_ENG_light_BAB_camo"
->>>>>>> origin/vse-po-novoy
 		obsolete = yes #export only
 	}
 
@@ -892,11 +814,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 2
 		}
-<<<<<<< HEAD
-		icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_BAB_camo.dds"
-=======
 		icon = "GFX_ENG_light_BAB_camo"
->>>>>>> origin/vse-po-novoy
 		obsolete = yes #export only
 	}
 }
@@ -911,11 +829,7 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-<<<<<<< HEAD
-			fixed_ship_engine_slot = sub_ship_engine_1
-=======
 			fixed_ship_engine_slot = sub_ship_engine_2
->>>>>>> origin/vse-po-novoy
 			rear_1_custom_slot = empty
 		}
 	}
@@ -937,11 +851,7 @@ if = {
 		name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-<<<<<<< HEAD
-			fixed_ship_battery_slot = ship_light_battery_2
-=======
 			fixed_ship_battery_slot = dp_light_battery_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_sonar_1
@@ -958,11 +868,7 @@ if = {
 		name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-<<<<<<< HEAD
-			fixed_ship_battery_slot = ship_light_battery_2
-=======
 			fixed_ship_battery_slot = dp_light_battery_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_sonar_1
@@ -978,11 +884,7 @@ if = {
 		name_group = ENG_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-<<<<<<< HEAD
-			fixed_ship_battery_slot = ship_light_battery_1
-=======
 			fixed_ship_battery_slot = dp_light_battery_1
->>>>>>> origin/vse-po-novoy
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -1018,18 +920,11 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
-<<<<<<< HEAD
-			fixed_ship_anti_air_slot = ship_anti_air_1
-=======
->>>>>>> origin/vse-po-novoy
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-<<<<<<< HEAD
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
@@ -1056,11 +951,7 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "Emerald Class"
-<<<<<<< HEAD
-		type = ship_hull_cruiser_1
-=======
 		type = ship_hull_cruiser_2
->>>>>>> origin/vse-po-novoy
 		name_group = ENG_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -1070,10 +961,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-<<<<<<< HEAD
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_light_medium_battery_1
@@ -1092,10 +980,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-<<<<<<< HEAD
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			front_1_custom_slot = empty
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_airplane_launcher_1
@@ -1114,10 +999,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = empty
-<<<<<<< HEAD
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_2
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = ship_mine_layer_1
 			mid_2_custom_slot = ship_mine_layer_1
 			rear_1_custom_slot = ship_mine_layer_1
@@ -1135,10 +1017,7 @@ if = {
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-<<<<<<< HEAD
-=======
 				fixed_ship_secondaries_slot = dp_ship_secondaries_2
->>>>>>> origin/vse-po-novoy
 				front_1_custom_slot = ship_anti_air_2
 				mid_1_custom_slot = ship_torpedo_1
 				mid_2_custom_slot = ship_secondaries_2
@@ -1156,15 +1035,9 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			fixed_ship_secondaries_slot = ship_secondaries_1
-=======
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_medium_battery_2
@@ -1180,14 +1053,9 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-=======
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_airplane_launcher_1
@@ -1200,11 +1068,7 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
-<<<<<<< HEAD
-			fixed_ship_anti_air_slot = ship_anti_air_1
-=======
 			fixed_ship_anti_air_slot = ship_anti_air_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
@@ -1227,11 +1091,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-<<<<<<< HEAD
-			fixed_ship_secondaries_slot = ship_secondaries_1
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_armor_slot = ship_armor_bc_1
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_airplane_launcher_1
@@ -1252,11 +1112,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
-<<<<<<< HEAD
-			fixed_ship_secondaries_slot = ship_secondaries_1
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_armor_slot = ship_armor_bc_2
 			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = empty
@@ -1279,11 +1135,7 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_2
 			fixed_ship_armor_slot = ship_armor_bc_2
 			front_1_custom_slot = ship_heavy_battery_2
-<<<<<<< HEAD
-			mid_1_custom_slot = empty
-=======
 			mid_1_custom_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
@@ -1299,19 +1151,11 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
-			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_2
-			mid_1_custom_slot = empty
-=======
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_2
 			fixed_ship_armor_slot = ship_armor_bb_2
 			front_1_custom_slot = ship_heavy_battery_2
 			mid_1_custom_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
@@ -1327,11 +1171,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
-<<<<<<< HEAD
-			fixed_ship_secondaries_slot = ship_secondaries_1
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			fixed_ship_armor_slot = ship_armor_bb_1
 			front_1_custom_slot = empty
 			mid_1_custom_slot = ship_airplane_launcher_1
@@ -1371,11 +1211,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
-<<<<<<< HEAD
-			fixed_ship_secondaries_slot = empty
-=======
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -1392,11 +1228,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-<<<<<<< HEAD
-			fixed_ship_secondaries_slot = empty
-=======
 			fixed_ship_secondaries_slot = ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 		}
 		obsolete = yes
 	}
@@ -1410,13 +1242,8 @@ if = {
 			fixed_ship_deck_slot_2 = ship_deck_space
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = empty
-=======
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = dp_ship_secondaries_1
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = ship_deck_space
 		}
 		obsolete = yes
@@ -1432,14 +1259,6 @@ if = {
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_2
-<<<<<<< HEAD
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
-			}
-		}
-	
-}
-=======
 				fixed_ship_secondaries_slot = dp_ship_secondaries_2
 				front_1_custom_slot = ship_deck_space
 			}
@@ -1533,7 +1352,6 @@ if = {
 			icon = "GFX_ENG_heavy_fighter1_medium"
 		}
 	}
->>>>>>> origin/vse-po-novoy
 1939.1.1 = {
 	if = {
 		limit = {
@@ -1576,11 +1394,7 @@ if = {
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_2
-<<<<<<< HEAD
-				fixed_ship_secondaries_slot = dp_ship_secondaries
-=======
 				fixed_ship_secondaries_slot = dp_ship_secondaries_2
->>>>>>> origin/vse-po-novoy
 				front_1_custom_slot = ship_deck_space
 				mid_1_custom_slot = ship_armor_carrier_deck
 			}
@@ -1591,28 +1405,17 @@ if = {
 			name_group = ENG_CLAA_HISTORICAL
 			parent_version = 1
 			modules = {
-<<<<<<< HEAD
-				fixed_ship_battery_slot = dp_light_battery
-=======
 				fixed_ship_battery_slot = dp_light_battery_3
->>>>>>> origin/vse-po-novoy
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_1
-<<<<<<< HEAD
-				front_1_custom_slot = empty
-				mid_1_custom_slot = ship_anti_air_1
-				mid_2_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = dp_light_battery
-=======
 				fixed_ship_secondaries_slot = dp_ship_secondaries_3
 				front_1_custom_slot = empty
 				mid_1_custom_slot = ship_anti_air_1
 				mid_2_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = dp_light_battery_3
->>>>>>> origin/vse-po-novoy
 			}
 		}
 		create_equipment_variant = {
@@ -1629,11 +1432,7 @@ if = {
 				fixed_ship_armor_slot = ship_armor_cruiser_2
 				front_1_custom_slot = ship_anti_air_1
 				mid_1_custom_slot = ship_torpedo_1
-<<<<<<< HEAD
-				mid_2_custom_slot = dp_ship_secondaries
-=======
 				mid_2_custom_slot = dp_ship_secondaries_2
->>>>>>> origin/vse-po-novoy
 				rear_1_custom_slot = ship_light_medium_battery_2
 				rear_2_custom_slot = ship_anti_air_1
 			}
@@ -1643,11 +1442,7 @@ if = {
 			type = ship_hull_light_2
 			name_group = ENG_DD_HISTORICAL
 			modules = {
-<<<<<<< HEAD
-				fixed_ship_battery_slot = ship_light_battery_2
-=======
 				fixed_ship_battery_slot = dp_light_battery_2
->>>>>>> origin/vse-po-novoy
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = ship_sonar_2
@@ -1662,11 +1457,7 @@ if = {
 			type = ship_hull_light_3
 			name_group = ENG_DD_HISTORICAL
 			modules = {
-<<<<<<< HEAD
-				fixed_ship_battery_slot = ship_light_battery_2
-=======
 				fixed_ship_battery_slot = dp_light_battery_2
->>>>>>> origin/vse-po-novoy
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = ship_sonar_2
@@ -1684,17 +1475,6 @@ if = {
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_2
-<<<<<<< HEAD
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = dp_ship_secondaries
-=======
 				fixed_ship_anti_air_slot = ship_anti_air_2
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
 				fixed_ship_radar_slot = ship_radar_2
@@ -1704,7 +1484,6 @@ if = {
 				front_1_custom_slot = ship_anti_air_2
 				mid_1_custom_slot = ship_airplane_launcher_1
 				mid_2_custom_slot = dp_ship_secondaries_3
->>>>>>> origin/vse-po-novoy
 				rear_1_custom_slot = ship_heavy_battery_2
 			}
 		}
@@ -1715,17 +1494,6 @@ if = {
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_3
-<<<<<<< HEAD
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = dp_ship_secondaries
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = dp_ship_secondaries
-=======
 				fixed_ship_anti_air_slot = ship_anti_air_2
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
 				fixed_ship_radar_slot = empty
@@ -1735,7 +1503,6 @@ if = {
 				front_1_custom_slot = ship_anti_air_1
 				mid_1_custom_slot = ship_airplane_launcher_1
 				mid_2_custom_slot = dp_ship_secondaries_3
->>>>>>> origin/vse-po-novoy
 				rear_1_custom_slot = ship_heavy_battery_3
 			}
 		}
@@ -1792,11 +1559,7 @@ if = {
 				tank_nsb_engine_upgrade = 2
 				tank_nsb_armor_upgrade = 6
 			}
-<<<<<<< HEAD
-			icon = "gfx/interface/technologies/ENG_imp_light_tank.dds"
-=======
 			icon = "GFX_ENG_improved_light_tank_medium"
->>>>>>> origin/vse-po-novoy
 			obsolete = yes
 		}
 
@@ -1817,11 +1580,7 @@ if = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 8
 			}
-<<<<<<< HEAD
-			icon = "gfx/interface/technologies/ENG_imp_light_tank.dds"
-=======
 			icon = "GFX_ENG_improved_light_tank_medium"
->>>>>>> origin/vse-po-novoy
 		}
 
 		create_equipment_variant = {
@@ -1843,11 +1602,7 @@ if = {
 				tank_nsb_armor_upgrade = 1
 			}
 			obsolete = yes
-<<<<<<< HEAD
-			icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
-=======
 			icon = "GFX_ENG_light_CCA_camo"
->>>>>>> origin/vse-po-novoy
 		}
 
 		create_equipment_variant = {
@@ -1869,9 +1624,6 @@ if = {
 				tank_nsb_engine_upgrade = 7
 				tank_nsb_armor_upgrade = 3
 			}
-<<<<<<< HEAD
-			icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
-=======
 			icon = "GFX_ENG_light_CCA_camo"
 		}
 	}
@@ -2016,7 +1768,6 @@ if = {
 				engine_type_slot = engine_2_2x
 				special_type_slot_1 = lmg_defense_turret_2x
 			}
->>>>>>> origin/vse-po-novoy
 		}
 	}
 }

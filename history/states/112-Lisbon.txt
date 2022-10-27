@@ -2,11 +2,7 @@ state={
 	id=112
 	name="STATE_112"
 	resources={
-<<<<<<< HEAD
-		tungsten=20
-=======
 		tungsten=50.000
->>>>>>> origin/vse-po-novoy
 	}
 
 	history={
@@ -35,15 +31,9 @@ state={
 		799 3798 3861 6924 11805 
 	}
 	manpower=1
-<<<<<<< HEAD
-	buildings_max_level_factor=1.000
-	state_category=city
-local_supplies=12.0 
-=======
 	
 	buildings_max_level_factor=1.000
 	state_category=city
 
 	local_supplies=12.0 
->>>>>>> origin/vse-po-novoy
 }

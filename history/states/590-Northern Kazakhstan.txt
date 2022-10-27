@@ -8,10 +8,6 @@ state={
 
 	history={
 		owner = SOV
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		victory_points = {
 			4333 1
 		}

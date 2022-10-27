@@ -34,17 +34,6 @@ country_event = {
 		}
 	}
 	
-<<<<<<< HEAD
-	option = {
-		name = britain.1.b	#no way 
-		ai_chance = { factor = 10 }
-		#add_opinion_modifier = { target = ENG modifier = tizard_refused }
-		ENG = {
-			country_event = { days = 1 id = britain.3 }
-		}
-	}
-=======
->>>>>>> origin/vse-po-novoy
 
 	option = {
 		name = britain.1.c	#tech_sharing
@@ -257,11 +246,7 @@ country_event = {
 		}
 		NOT = { has_country_flag = chamberlain_died }
 		has_country_leader = {
-<<<<<<< HEAD
-			name = "Neville Chamberlain"
-=======
 			character = ENG_neville_chamberlain
->>>>>>> origin/vse-po-novoy
 			ruling_only = yes
 		}
 	}
@@ -274,21 +259,8 @@ country_event = {
 	
 	option = {
 		name = britain.9.a
-<<<<<<< HEAD
-		create_country_leader = {
-			name = "Winston Churchill"
-			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = "Portrait_Britain_Winston_Churchill.dds"
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				british_bulldog
-			}
-		}
-=======
 		promote_character = ENG_winston_churchill
 		retire_character = ENG_neville_chamberlain
->>>>>>> origin/vse-po-novoy
 		add_stability = 0.1
 		add_war_support = 0.1
 
@@ -311,11 +283,7 @@ country_event = {
 		date > 1940.9.11
 		NOT = { has_country_flag = chamberlain_resigned }
 		has_country_leader = {
-<<<<<<< HEAD
-			name = "Neville Chamberlain"
-=======
 			character = ENG_neville_chamberlain
->>>>>>> origin/vse-po-novoy
 			ruling_only = yes
 		}
 	}	
@@ -332,11 +300,7 @@ country_event = {
 		create_country_leader = {
 			name = "Winston Churchill"
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-<<<<<<< HEAD
-			picture = "Portrait_Britain_Winston_Churchill.dds"
-=======
 			picture = GFX_portrait_Winston_Churchill
->>>>>>> origin/vse-po-novoy
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -350,11 +314,7 @@ country_event = {
 		create_country_leader = {
 			name = "Lord Edward Halifax"
 			desc = "POLITICS_EDWARD_HALIFAX_DESC"
-<<<<<<< HEAD
-			picture = "Portrait_Britain_Edward_Halifax.dds"
-=======
 			picture = GFX_portrait_Lord_Edward_Halifax
->>>>>>> origin/vse-po-novoy
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -458,23 +418,6 @@ country_event = {
 		}
 	}
 	
-<<<<<<< HEAD
-	option = {
-		name = britain.13.b
-		ai_chance = { factor = 0 }
-		FROM = { 
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = FRA_go_with_britain_reject
-			}
-			country_event = { id = france.30 }
-		}
-		hidden_effect = {
-			news_event = { id = news.176 }
-		}
-	}
-=======
->>>>>>> origin/vse-po-novoy
 }
 
 # Germany demands Slovenia from Yugoslavia
@@ -712,11 +655,7 @@ country_event = {
 		create_country_leader = {
 			name = "Edward VIII"
 			desc = "POLITICS_EDWARD_EDWARD_DESC"
-<<<<<<< HEAD
-			picture = "Portrait_Britain_Edward_VIII.dds"
-=======
 			picture = GFX_portrait_Edward_VIII
->>>>>>> origin/vse-po-novoy
 			expire = "1965.1.1"
 			ideology = fascism_ideology
 			traits = {
@@ -874,11 +813,7 @@ country_event = {
         create_country_leader = {
         	name = "Neville Chamberlain"
         	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-<<<<<<< HEAD
-        	picture = "Portrait_Britain_Neville_Chamberlain.dds"
-=======
         	picture = GFX_portrait_Neville_Chamberlain
->>>>>>> origin/vse-po-novoy
         	expire = "1965.1.1"
         	ideology = conservatism
         	traits = {
@@ -954,6 +889,40 @@ country_event = {
     option = {
         name = britain.24.a
         random_owned_controlled_state = {
+			limit = {
+				is_in_home_area = yes
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = shadow_scheme_2AF
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_in_home_area = yes
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = shadow_scheme_2AF
+		}
+		random_owned_controlled_state = {
 			limit = {
 				is_in_home_area = yes
 				free_building_slots = {

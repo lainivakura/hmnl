@@ -11,10 +11,6 @@ state={
 	}
 
 	history={
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		owner = ENG
 		victory_points = {
 			3273 15

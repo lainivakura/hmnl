@@ -2,20 +2,12 @@
 state={
 	id=171
 	name="STATE_171"
-<<<<<<< HEAD
-	manpower = 2295085
-=======
 	manpower = 1
->>>>>>> origin/vse-po-novoy
 	
 	state_category = city
 
 	history={
 		owner = SPR
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		victory_points = {
 			758 5
 		}
@@ -25,11 +17,7 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 6
 			dockyard = 2
-<<<<<<< HEAD
-			arms_factory = 2
-=======
 			arms_factory = 1
->>>>>>> origin/vse-po-novoy
 			air_base = 2
 			758 = {
 				naval_base = 6

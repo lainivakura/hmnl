@@ -1,13 +1,10 @@
 state={
 	id=274
 	name="STATE_274"
-resources={
-		rubber=10 # was: 848
-		
-	}
+
 	history={
 		owner = ENG
-		add_core_of = AFR
+		add_core_of = PRC
 		victory_points = {
 			10862 1 
 		}

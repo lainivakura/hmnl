@@ -22,10 +22,6 @@ state={
 	provinces={
 		696 6682 6697 9640 
 	}
-<<<<<<< HEAD
-local_supplies=0.0 
-=======
 
 	local_supplies=0.0 
->>>>>>> origin/vse-po-novoy
 }

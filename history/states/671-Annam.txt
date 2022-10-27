@@ -13,8 +13,9 @@ state={
 
 
 	history={
-		add_core_of = AFR
+		
 		owner = FRA
+		add_core_of = PRC
 		victory_points = {
 			4075 1 
 		}

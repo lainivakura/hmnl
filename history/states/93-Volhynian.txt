@@ -9,25 +9,15 @@ state={
 		#victory_points = {
 		#	572 5
 		#}
-<<<<<<< HEAD
-		#victory_points = {
-		#	513 1
-		#}
-=======
 		victory_points = {
 			422 3
 		}
->>>>>>> origin/vse-po-novoy
 		owner = POL
 		buildings = {
 			infrastructure = 3
 
 		}
 		add_core_of = POL
-<<<<<<< HEAD
-		add_core_of = SOV
-=======
->>>>>>> origin/vse-po-novoy
 
 	}
 
@@ -37,10 +27,6 @@ state={
 	manpower=1985600
 	buildings_max_level_factor=1.000
 	state_category=town
-<<<<<<< HEAD
-local_supplies=0.0 
-=======
 
 	local_supplies=0.0 
->>>>>>> origin/vse-po-novoy
 }

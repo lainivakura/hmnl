@@ -5,14 +5,10 @@ state={
 	manpower = 811486
 	
 	state_category = wasteland
-resources={
-		
-		tungsten=12 # was: 308
-		oil = 15 # was: 25
-	}
+
 	history={
 		owner = FRA
-		add_core_of = AFR
+		add_core_of = PRC
 		victory_points = {
 			12034 1 
 		}

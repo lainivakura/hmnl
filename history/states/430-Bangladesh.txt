@@ -3,31 +3,19 @@ state={
 	name="STATE_430"
 
 	history={
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		owner = RAJ
 		victory_points = {
 			11929 1 
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-<<<<<<< HEAD
-			industrial_complex = 3
-=======
 			industrial_complex = 2
->>>>>>> origin/vse-po-novoy
 			11968 = {
 				naval_base = 3
 
 			}
 
 		}
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		add_core_of = RAJ
 
 	}

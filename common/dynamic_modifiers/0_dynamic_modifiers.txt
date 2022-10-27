@@ -28,7 +28,9 @@
 
 sabotaged_resources = {
 	remove_trigger = { 
+		ROOT = {
 		has_resistance = no
+		}
 	}
 	
 	icon = GFX_modifiers_sabotaged_resource
@@ -59,7 +61,7 @@ semi_autonomous_state = {
 	
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
-	state_production_speed_buildings_factor = -2
+	state_production_speed_buildings_factor = -0.25
 }
 
 kurdish_agitation = {
@@ -84,6 +86,19 @@ kurdish_separatism = {
 	resistance_decay = -0.20
 	state_resources_factor = -0.33
 	disable_strategic_redeployment = 1
+}
+
+dense_rural_infrastructure = { #State Modifier
+	enable = { always = yes }
+	remove_trigger = {
+		ROOT = {
+			infrastructure > 4
+		}
+	}
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_non_core_supply_impact_factor = 0.35
 }
 
 kurdish_rebellion = {
@@ -176,7 +191,7 @@ devout_islamists = {
 	icon = GFX_modifiers_tur_traditionalist_placated
 	
 	recruitable_population_factor = 0.15
-	state_production_speed_buildings_factor = -0.120
+	state_production_speed_buildings_factor = 0.1
 }
 
 kemalist_loyalties = {
@@ -830,11 +845,7 @@ SOV_the_red_fleet_dynamic_modifier = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	#FUTURE
@@ -853,11 +864,7 @@ SOV_the_red_fleet_surface_1_dynamic_modifier = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_surface_1_tt #The production bonus is handled via hidden NS, but it is communicated here
@@ -878,11 +885,7 @@ SOV_the_red_fleet_surface_2_dynamic_modifier = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_surface_2_tt #The production bonus is handled via hidden NS, but it is communicated here
@@ -903,11 +906,7 @@ SOV_the_red_fleet_submarine_1_dynamic_modifier = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_submarine_1_tt #The production bonus is handled via hidden NS, but it is communicated here
@@ -928,11 +927,7 @@ SOV_the_red_fleet_submarine_2_dynamic_modifier = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_submarine_2_tt #The production bonus is handled via hidden NS, but it is communicated here
@@ -953,11 +948,7 @@ SOV_the_red_fleet_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	#FUTURE
@@ -976,11 +967,7 @@ SOV_the_red_fleet_surface_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_surface_1_tt #The production bonus is handled via hidden NS, but it is communicated here
@@ -1001,11 +988,7 @@ SOV_the_red_fleet_surface_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_surface_2_tt #The production bonus is handled via hidden NS, but it is communicated here
@@ -1026,11 +1009,7 @@ SOV_the_red_fleet_submarine_1_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_submarine_1_tt #The production bonus is handled via hidden NS, but it is communicated here
@@ -1051,11 +1030,7 @@ SOV_the_red_fleet_submarine_2_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_navy_bonus
 
 	#INITIAL
-<<<<<<< HEAD
-	navy_refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
-=======
 	refit_ic_cost = SOV_red_fleet_navy_refit_ic_cost #-0.05
->>>>>>> origin/vse-po-novoy
 	repair_speed_factor = SOV_red_fleet_repair_speed_factor #0.05
 
 	custom_modifier_tooltip = SOV_the_red_fleet_submarine_2_tt #The production bonus is handled via hidden NS, but it is communicated here

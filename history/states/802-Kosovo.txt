@@ -13,10 +13,6 @@ state={
 
 		}
 		add_core_of = YUG
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 
 	}
 

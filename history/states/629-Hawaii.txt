@@ -3,13 +3,12 @@ state={
 	id=629
 	name="STATE_629"
 	manpower = 368336
-	state_category = city
+	state_category = town
 	history={
 		owner = USA
-		add_core_of = AFR
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-industrial_complex = 3
 			air_base = 5
 			4180 = {
 				naval_base = 10
@@ -26,6 +25,6 @@ industrial_complex = 3
 	provinces={
 		4180 7112 7195 10048 12021 
 	}
-buildings_max_level_factor=2.000
+
 	local_supplies=0.0 
 }

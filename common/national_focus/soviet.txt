@@ -90,85 +90,27 @@ focus_tree = {
 		}
 
 		completion_reward = { #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
-			if = {
-				limit = {
-					all_owned_state = {
-						infrastructure > 2
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 1
-						}
-					}
-					add_building_construction = {
+			651 = {
+				add_building_construction = {
 						type = infrastructure
 						level = 2
-						instant_build = yes						
-					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 1
+						instant_build = yes
 						}
-					}
-					add_building_construction = {
+				}
+			405 = {
+				add_building_construction = {
 						type = infrastructure
 						level = 2
 						instant_build = yes
 					}
-					set_state_flag = SOV_infrastructure_effort_3Inf
-				}				
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
 				}
+			652 = {
 				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
 				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = SOV_infrastructure_effort_3Inf	
-			}
 		}
 	}
 
@@ -478,11 +420,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-<<<<<<< HEAD
-				
-=======
 				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
->>>>>>> origin/vse-po-novoy
 			}
 			if = {
 				limit = {
@@ -545,11 +483,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-<<<<<<< HEAD
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.01 }
-=======
 				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 }
->>>>>>> origin/vse-po-novoy
 			}
 			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
 			if = {
@@ -762,13 +696,8 @@ focus_tree = {
 			else = {
 				hidden_effect = {
 					#Swap dynamic modifier to change icon
-<<<<<<< HEAD
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier }
-=======
 					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
 					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
->>>>>>> origin/vse-po-novoy
 				}
 			}
 			custom_effect_tooltip = SOV_shift_to_armaments_production_ns_tt
@@ -1131,11 +1060,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-<<<<<<< HEAD
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.01 } #Bonus to CG
-=======
 				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 } #Bonus to CG
->>>>>>> origin/vse-po-novoy
 				add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 } #Bonus to max efficicency
 				if = {
 					limit = {
@@ -1860,9 +1785,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-<<<<<<< HEAD
-			custom_effect_tooltip = SOV_national_academies_of_sciences_tt
-=======
 			if = { 
 				limit = { #DEFAULT COMMUNISM
 					has_government = communism
@@ -1872,7 +1794,6 @@ focus_tree = {
 			else = { #ALT IDEOLOGY
 				custom_effect_tooltip = SOV_national_academies_of_sciences_alt_tt
 			}
->>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -1973,19 +1894,6 @@ focus_tree = {
 		relative_position_id = SOV_transpolar_flights
 		cost = 10
 
-<<<<<<< HEAD
-		available = {
-			any_owned_state = {
-				is_fully_controlled_by = ROOT
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes
-				}
-			}
-		}
-=======
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -2119,13 +2027,6 @@ focus_tree = {
 
 		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
-<<<<<<< HEAD
-		available = {
-date > 1942.5.1
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
-=======
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
@@ -2136,22 +2037,6 @@ date > 1942.5.1
 				add_to_variable = { SOV_soviet_airforce_air_accidents_factor = 0.05 }
 			}
 
-<<<<<<< HEAD
-			if = { #DEFAULT COMMIE
-				limit = {
-					has_government = communism
-				}
-				#Swap dynamic modifiers to show the bonus equipment custom tooltip
-				remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier }
-				add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier }
-			}
-			else = { #ALT IDEOLOGY
-				#Swap dynamic modifiers to show the bonus equipment custom tooltip
-				remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier_alt }
-				add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
-			}
-
-=======
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
 					limit = {
@@ -2168,7 +2053,6 @@ date > 1942.5.1
 				}
 			}
 			
->>>>>>> origin/vse-po-novoy
 			custom_effect_tooltip = SOV_increase_aircraft_production_ns_tt
 
 			add_tech_bonus = {
@@ -2190,13 +2074,7 @@ date > 1942.5.1
 		relative_position_id = SOV_transpolar_flights
 		cost = 10
 
-<<<<<<< HEAD
-		available = {
-date > 1941.9.1
-		}
-=======
 
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2221,16 +2099,7 @@ date > 1941.9.1
 		relative_position_id = SOV_foster_flying_clubs
 		cost = 10
 
-<<<<<<< HEAD
-		available = {
-			OR = {
-				has_completed_focus = SOV_the_path_of_marxism_leninism
-				has_completed_focus = SOV_womens_fascist_movement
-			}
-		}
-=======
 
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2258,16 +2127,7 @@ date > 1941.9.1
 		relative_position_id = SOV_women_in_aviation
 		cost = 10
 
-<<<<<<< HEAD
-		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-			has_full_control_of_state = 219 #MOSCOW
-		}
-=======
 
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2304,14 +2164,7 @@ date > 1941.9.1
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
-<<<<<<< HEAD
-		available = {
-date > 1942.5.1
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
-=======
 
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2338,12 +2191,6 @@ date > 1942.5.1
 		relative_position_id = SOV_expand_the_aircraft_industry
 		cost = 10
 
-<<<<<<< HEAD
-		available = {
-date > 1942.1.1
-		}
-=======
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -3962,15 +3809,12 @@ date > 1942.1.1
 					category = motorized_equipment
 					category = infantry_weapons
 				}
-<<<<<<< HEAD
-=======
 				add_tech_bonus = {
 					name = SOV_pc_of_mechanical_engineering_name_default
 					bonus = 2.0
 					uses = 1
 					technology = advanced_heavy_tank_chassis
 				}
->>>>>>> origin/vse-po-novoy
 			}
 			else = { #ALT IDEOLOGY
 				add_tech_bonus = {
@@ -4013,9 +3857,6 @@ date > 1942.1.1
 		cost = 10
 
 		available = {
-<<<<<<< HEAD
-			has_tech = improved_medium_tank_chassis
-=======
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -4025,7 +3866,6 @@ date > 1942.1.1
 			else = {
 				has_tech = improved_medium_tank
 			}
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -4040,103 +3880,6 @@ date > 1942.1.1
 				uses = 2
 				category = armor
 			}
-<<<<<<< HEAD
-
-			#T-34 tank template
-			if = {
-				limit = {
-					OR = {
-						has_tech = artillery3
-						has_tech = antitank3
-					}
-				}
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon_2
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_tech = artillery1
-						has_tech = antitank1
-					}
-				}
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-				}
-			}
-			else_if = { #Why? You ruined your T-34
-				limit = {
-					has_tech = interwar_artillery
-				}
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_small_cannon_2
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-				}
-			}
-			else = { #Don't do this to yourself dude
-				create_equipment_variant = {
-					name = "T-34"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_small_cannon
-						turret_type_slot = tank_medium_two_man_tank_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/SOV_imp_main_tank.dds"
-=======
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -4236,7 +3979,6 @@ date > 1942.1.1
 						}
 						icon = "GFX_SOV_improved_medium_tank_medium"
 					}
->>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -4351,164 +4093,6 @@ date > 1942.1.1
 
 			add_ideas = SOV_defense_industry_artillery_bonus
 
-<<<<<<< HEAD
-			#SU-85/100 tank template (AT)
-			if = {
-				limit = {
-					has_tech = antitank5
-				}
-				create_equipment_variant = {
-					name = "SU-100"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon_3
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_advanced_medium_tank_destroyer.dds"
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = antitank2
-				}
-				create_equipment_variant = {
-					name = "SU-100"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon_2
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_advanced_medium_tank_destroyer.dds"
-				}
-			}
-			else_if = { #You really should invest some time in research AT...
-				limit = {
-					has_tech = interwar_antitank
-				}
-				create_equipment_variant = {
-					name = "SU-85"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_high_velocity_cannon
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_destroyer.dds"
-				}
-			}
-			else = { #This is just blasphemy
-				create_equipment_variant = {
-					name = "SU-85"
-					type = medium_tank_destroyer_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_cannon
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_christie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_destroyer.dds"
-				}
-			}
-
-			#SU-122 tank template (SPG)
-			if = {
-				limit = {
-					has_tech = artillery4
-				}
-				create_equipment_variant = {
-					name = "SU-122"
-					type = medium_tank_artillery_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_howitzer
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = artillery1
-				}
-				create_equipment_variant = {
-					name = "SU-122"
-					type = medium_tank_artillery_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_howitzer_2
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
-				}
-			}
-			else = { #You really need some arty research
-				create_equipment_variant = {
-					name = "SU-122"
-					type = medium_tank_artillery_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_howitzer
-						turret_type_slot = tank_medium_fixed_superstructure_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_riveted_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = sloped_armor
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 10
-						tank_nsb_armor_upgrade = 8
-					}
-					icon = "gfx/interface/technologies/SOV_improved_medium_tank_artillery.dds"
-=======
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -4670,7 +4254,6 @@ date > 1942.1.1
 						}
 						icon = "GFX_SOV_improved_medium_art_medium"
 					}
->>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -4809,11 +4392,7 @@ date > 1942.1.1
 						}
 						set_state_flag = SOV_development_of_tankograd_flag
 						add_to_temp_variable = { SOV.temp_targets_index = 1 }
-<<<<<<< HEAD
-						log = "Round [?SOV.temp_targets_index]"
-=======
 						#log = "Round [?SOV.temp_targets_index]"
->>>>>>> origin/vse-po-novoy
 					}
 				}
 			}
@@ -4924,13 +4503,9 @@ date > 1942.1.1
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_national_academies_of_sciences_available_tt
-<<<<<<< HEAD
-				check_variable = { SOV_academy_of_sciences_research_speed_factor = SOV_academies_required_for_atomic_bomb_project compare = greater_than_or_equals }
-=======
 				set_temp_variable = { SOV_current_academies = SOV_academy_of_sciences_research_speed_factor } #This is a factor (0.X value)
 				multiply_temp_variable = { SOV_current_academies = 100 } #Now it is possible to track the current number of civs
 				check_variable = { SOV_current_academies = SOV_academies_required_for_atomic_bomb_project compare = greater_than_or_equals }
->>>>>>> origin/vse-po-novoy
 			}
 			is_subject = no
 		}
@@ -5487,9 +5062,6 @@ date > 1942.1.1
 		mutually_exclusive = { focus = SOV_the_molotov_line }
 
 		available = {
-<<<<<<< HEAD
-
-=======
 			OR = {
 				has_full_control_of_state = 209
 				has_full_control_of_state = 210
@@ -5500,7 +5072,6 @@ date > 1942.1.1
 				has_full_control_of_state = 834
 				has_full_control_of_state = 192
 			}
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {}
@@ -5508,11 +5079,7 @@ date > 1942.1.1
 		completion_reward = {
 			209 = {
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 6
@@ -5523,11 +5090,7 @@ date > 1942.1.1
 			}
 			210 = {
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 4
@@ -5538,11 +5101,7 @@ date > 1942.1.1
 			}
 			207 = {
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 4
@@ -5565,11 +5124,7 @@ date > 1942.1.1
 			}
 			206 = {
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 4
@@ -5580,11 +5135,7 @@ date > 1942.1.1
 			}
 			202 = {
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 7
@@ -5602,11 +5153,7 @@ date > 1942.1.1
 			}
 			203 = {
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 7
@@ -5617,11 +5164,7 @@ date > 1942.1.1
 			}
 			834 ={
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -5638,11 +5181,7 @@ date > 1942.1.1
 			}
 			192 = {
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -5798,15 +5337,11 @@ date > 1942.1.1
 		cost = 10
 
 		available = {
-<<<<<<< HEAD
-
-=======
 			OR = {
 				has_full_control_of_state = 195 #LENINGRAD
 				has_full_control_of_state = 208 #LUGA
 				has_full_control_of_state = 137 #CRIMEA
 			}
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {}
@@ -5907,14 +5442,10 @@ date > 1942.1.1
 		cost = 5
 
 		available = {
-<<<<<<< HEAD
-
-=======
 			has_full_control_of_state = 215 #ONEGA
 			has_full_control_of_state = 216 #OLONETS
 			has_full_control_of_state = 264 #TIKHVIN
 			has_full_control_of_state = 195 #LENINGRAD
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {}
@@ -6026,9 +5557,6 @@ date > 1942.1.1
 		cost = 10
 
 		available = {
-<<<<<<< HEAD
-
-=======
 			OR = {
 				has_full_control_of_state = 563
 				has_full_control_of_state = 561
@@ -6036,7 +5564,6 @@ date > 1942.1.1
 				has_full_control_of_state = 409
 				has_full_control_of_state = 408
 			}
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {}
@@ -6044,11 +5571,7 @@ date > 1942.1.1
 		completion_reward = {
 			563 = { #CHITA
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					custom_effect_tooltip = SOV_far_east_fortification_forts_4
 					hidden_effect = {
 						add_building_construction = {
@@ -6073,11 +5596,7 @@ date > 1942.1.1
 			}
 			561 = { #AMUR
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					custom_effect_tooltip = SOV_far_east_fortification_forts_4
 					hidden_effect = {
 						add_building_construction = {
@@ -6103,11 +5622,7 @@ date > 1942.1.1
 			}
 			657 = { #BIROBIDZHAN
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					custom_effect_tooltip = SOV_far_east_fortification_forts_10
 					hidden_effect = {
 						add_building_construction = {
@@ -6136,11 +5651,7 @@ date > 1942.1.1
 			}
 			409 = { #KHABAROVSK
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					custom_effect_tooltip = SOV_far_east_fortification_forts_4
 					hidden_effect = {
 						add_building_construction = {
@@ -6164,11 +5675,7 @@ date > 1942.1.1
 			}
 			408 = { #VLADIVOSTOK
 				if = {
-<<<<<<< HEAD
-					limit = { is_controlled_by = ROOT }
-=======
 					limit = { is_fully_controlled_by = ROOT }
->>>>>>> origin/vse-po-novoy
 					custom_effect_tooltip = SOV_far_east_fortification_forts_10
 					hidden_effect = {
 						add_building_construction = {
@@ -6210,7 +5717,6 @@ date > 1942.1.1
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
 
-		mutually_exclusive = { focus = SOV_cohesion_first }
 
 		available = {
 
@@ -6281,7 +5787,6 @@ date > 1942.1.1
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
 
-		mutually_exclusive = { focus = SOV_restore_cossack_units }
 
 		available = {
 		}
@@ -6326,7 +5831,7 @@ date > 1941.10.1
 		x = 0
 		y = 2
 		relative_position_id = SOV_rehabilitated_military
-		cost = 10
+		cost = 17
 
 		select_effect = {
 			add_ideas = SOV_military_reorganization_ns
@@ -6344,17 +5849,24 @@ date > 1941.10.1
 			effect_tooltip = {
 				add_ideas = SOV_military_reorganization_ns
 			}
-
+			
 			#(Complete Effect)
 			custom_effect_tooltip = SOV_focus_complete_effect_tt
 			hidden_effect = {
 				remove_ideas = SOV_military_reorganization_ns
 			}
-
+			swap_ideas = {
+				remove_idea = SOV_politicized_military
+				add_idea = SOV_politicized_military_reorganization
+				}
 			add_to_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = -0.1 }
 			add_to_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = -0.1 }
 			custom_effect_tooltip = SOV_military_reorganization_ns_tt
-
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 			army_experience = 50
 			add_command_power = 25
 		}
@@ -6380,13 +5892,11 @@ date > 1941.10.1
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_desperate_measures_ns
-<<<<<<< HEAD
-				days = 270
-=======
 				days = 250
->>>>>>> origin/vse-po-novoy
+				
 			}
-
+			add_ideas = tot_economic_mobilisation
+			add_ideas = extensive_conscription
 			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
 		}
 	}
@@ -6434,24 +5944,19 @@ date > 1941.10.1
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-<<<<<<< HEAD
-add_ideas = home_of_revolution2
-=======
->>>>>>> origin/vse-po-novoy
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/vse-po-novoy
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt
 
 			unlock_decision_tooltip = SOV_order_227
 			custom_effect_tooltip = SOV_lessons_of_war_unlock_military_operations_tt
-
+			
 			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
 			hidden_effect = {
 				every_army_leader = {
@@ -6622,14 +6127,10 @@ add_ideas = home_of_revolution2
 					has_government = communism
 				}
 				custom_effect_tooltip = unlock_propaganda_campaign_tt
-<<<<<<< HEAD
-				unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
-=======
 				if = {
 					limit ={ has_dlc = "La Resistance" }
 					unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
 				}
->>>>>>> origin/vse-po-novoy
 				unlock_decision_tooltip = SOV_propaganda_do_not_blab
 				custom_effect_tooltip = propaganda_campaign_requirement_tt
 			}
@@ -6712,10 +6213,10 @@ add_ideas = home_of_revolution2
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = SOV_politicized_military
+					has_idea = SOV_politicized_military_reorganization
 				}
 				swap_ideas = {
-					remove_idea = SOV_politicized_military
+					remove_idea = SOV_politicized_military_reorganization
 					add_idea = SOV_politicized_military_keep
 				}
 			}
@@ -6808,10 +6309,10 @@ add_ideas = home_of_revolution2
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = SOV_politicized_military
+					has_idea = SOV_politicized_military_reorganization
 				}
 				swap_ideas = {
-					remove_idea = SOV_politicized_military
+					remove_idea = SOV_politicized_military_reorganization
 					add_idea = SOV_politicized_military_swap
 				}
 			}
@@ -6827,7 +6328,7 @@ add_ideas = home_of_revolution2
 			else = { #To prevent the ugly "No current effects" tooltip if other focus taken
 				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = SOV_politicized_military
+						remove_idea = SOV_politicized_military_reorganization
 						add_idea = SOV_politicized_military_swap
 					}
 				}
@@ -6843,7 +6344,7 @@ add_ideas = home_of_revolution2
 		y = 1
 		relative_position_id = SOV_keep_commissars_organization
 		cost = 10
-
+		
 		allow_branch = {
 			NOT = {
 				has_government = fascism
@@ -6855,7 +6356,7 @@ add_ideas = home_of_revolution2
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			surrender_progress < 0.05
+			date > 1942.11.23
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6863,14 +6364,12 @@ add_ideas = home_of_revolution2
 		completion_reward = {
 			add_to_variable = { SOV_the_red_army_special_forces_cap = 0.1 }
 			add_to_variable = { SOV_the_red_army_land_doctrine_cost_factor = -0.1 }
+			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
+			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
 			custom_effect_tooltip = SOV_the_glory_of_the_red_army_ns_tt
 
 			army_experience = 75
 
-<<<<<<< HEAD
-			#New
-			
-=======
 			show_unit_leaders_tooltip = SOV_pavel_rybalko
 
 			#New
@@ -6878,7 +6377,6 @@ add_ideas = home_of_revolution2
 				set_technology = { masterful_blitz = 1 popup = no }
 			}
 			custom_effect_tooltip = SOV_the_glory_of_the_red_army_masterful_blitz_tactic_tt
->>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -7219,11 +6717,7 @@ add_ideas = home_of_revolution2
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-<<<<<<< HEAD
-		cost = 10
-=======
 		cost = 5
->>>>>>> origin/vse-po-novoy
 
 		available = {
 
@@ -7866,10 +7360,6 @@ add_ideas = home_of_revolution2
 			}
 
 			SOV_paranoia_high_decrease_effect = yes
-<<<<<<< HEAD
-news_event = { id = news.37 }
-=======
->>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -7895,13 +7385,10 @@ news_event = { id = news.37 }
 				}
 			}
 			has_completed_focus = SOV_expand_the_agitprop
-<<<<<<< HEAD
-=======
 			has_country_leader = {
 				character = SOV_iosif_stalin
 				ruling_only = yes
 			}
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PROPAGANDA}
@@ -7926,9 +7413,6 @@ news_event = { id = news.37 }
 
 		available = {
 			has_defensive_war = yes
-<<<<<<< HEAD
-			has_tech = advanced_heavy_tank_chassis
-=======
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -7938,7 +7422,6 @@ news_event = { id = news.37 }
 			else = {
 				has_tech = advanced_heavy_tank
 			}
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -7951,63 +7434,6 @@ news_event = { id = news.37 }
 				category = armor
 			}
 
-<<<<<<< HEAD
-			# IS-2 tank template
-			if = {
-				limit = {
-					OR = {
-						has_tech = antiair2
-						has_tech = antitank2
-					}
-				}
-				create_equipment_variant = {
-					name = "IS-2"
-					type = heavy_tank_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_cannon_2
-						turret_type_slot = tank_heavy_three_man_tank_turret
-						suspension_type_slot = tank_torsion_bar_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = tank_radio_1
-						special_type_slot_2 = sloped_armor
-						special_type_slot_3 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 8
-						tank_nsb_armor_upgrade = 6
-					}
-					icon = "gfx/interface/technologies/SOV_adv_heavy_tank.dds"
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_tech = interwar_antiair
-						has_tech = interwar_antitank
-					}
-				}
-				create_equipment_variant = {
-					name = "IS-2"
-					type = heavy_tank_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_cannon
-						turret_type_slot = tank_heavy_three_man_tank_turret
-						suspension_type_slot = tank_torsion_bar_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_diesel_engine
-						special_type_slot_1 = tank_radio_1
-						special_type_slot_2 = sloped_armor
-						special_type_slot_3 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 8
-						tank_nsb_armor_upgrade = 6
-					}
-					icon = "gfx/interface/technologies/SOV_adv_heavy_tank.dds"
-=======
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
@@ -8068,7 +7494,6 @@ news_event = { id = news.37 }
 						}
 						icon = "GFX_SOV_advanced_heavy_tank_medium"
 					}
->>>>>>> origin/vse-po-novoy
 				}
 			}
 		}
@@ -8361,11 +7786,7 @@ news_event = { id = news.37 }
 				add = stalin_father_of_nations
 			}
 			hidden_effect = {
-<<<<<<< HEAD
-				play_song = "comintern_war_1" #TODO_Manu: Too abrupt (just like speeches) -> Pending feedback for removal
-=======
 				play_song = "comintern_war_1"
->>>>>>> origin/vse-po-novoy
 			}
 		}
 	}
@@ -8476,10 +7897,7 @@ news_event = { id = news.37 }
 	focus = {
 		id = SOV_the_left_opposition
 		icon = GFX_focus_fra_loyalty_trotzky
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/vse-po-novoy
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		mutually_exclusive = { focus = SOV_the_right_opposition focus = SOV_the_centre }
 		x = 2
@@ -8503,10 +7921,6 @@ news_event = { id = news.37 }
 
 		available = {
 date > 1949.12.1
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/vse-po-novoy
 			SOV_soviet_civil_war_not_started = yes 
 			custom_trigger_tooltip = {
 				tooltip = SOV_no_major_purge_tt		
@@ -8514,10 +7928,7 @@ date > 1949.12.1
 			}
 		}
 		allow_branch = {
-<<<<<<< HEAD
-=======
 			always = no
->>>>>>> origin/vse-po-novoy
 			if = {
 				limit = {
 					has_game_rule = {
@@ -8611,11 +8022,7 @@ date > 1949.12.1
 		}
 
 		available = {
-<<<<<<< HEAD
-			SOV_soviet_civil_war_not_started = yes 
-=======
 			
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
@@ -8794,11 +8201,6 @@ date > 1949.12.1
 		cost = 10
 
 		available = {
-<<<<<<< HEAD
-			SOV_soviet_civil_war_not_started = yes 
-		}
-		bypass = { has_global_flag = SOV_soviet_civil_war }
-=======
 		}
 		bypass = { 
 			OR = { 
@@ -8806,7 +8208,6 @@ date > 1949.12.1
 				has_global_flag = SOV_soviet_civil_war_over 
 			}
 		}
->>>>>>> origin/vse-po-novoy
 		
 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
@@ -9214,10 +8615,7 @@ date > 1949.12.1
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-=======
 				add_extra_state_shared_building_slots = 2
->>>>>>> origin/vse-po-novoy
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -9420,10 +8818,7 @@ date > 1949.12.1
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-=======
 				add_extra_state_shared_building_slots = 2
->>>>>>> origin/vse-po-novoy
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -9439,10 +8834,7 @@ date > 1949.12.1
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-=======
 				add_extra_state_shared_building_slots = 2
->>>>>>> origin/vse-po-novoy
 				add_building_construction = {
 					type = industrial_complex 
 					level = 2
@@ -9459,10 +8851,7 @@ date > 1949.12.1
 					}
 					is_coastal = yes 
 				}
-<<<<<<< HEAD
-=======
 				add_extra_state_shared_building_slots = 2
->>>>>>> origin/vse-po-novoy
 				add_building_construction = {
 					type = dockyard  
 					level = 2
@@ -9773,10 +9162,7 @@ date > 1949.12.1
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		allow_branch = { 
 			has_dlc = "No Step Back"
-<<<<<<< HEAD
-=======
 			always = no
->>>>>>> origin/vse-po-novoy
 			if = {
 				limit = {
 					has_game_rule = {
@@ -10026,11 +9412,7 @@ date > 1949.12.1
 				AND = {
 					country_exists = SPC
 					NOT = { has_war_with = SPC }
-<<<<<<< HEAD
-					
-=======
-					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
->>>>>>> origin/vse-po-novoy
+					# SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 				}
 			}
 			
@@ -10038,10 +9420,7 @@ date > 1949.12.1
 		allow_branch = {
 			has_dlc = "La Resistance"
 			has_dlc = "No Step Back"
-<<<<<<< HEAD
-=======
 			always = no
->>>>>>> origin/vse-po-novoy
 			if = {
 				limit = {
 					has_game_rule = {
@@ -10060,11 +9439,7 @@ date > 1949.12.1
 					AND = {
 						has_global_flag = SPR_anarchist_uprising_flag
 						OR = {
-<<<<<<< HEAD
-							
-=======
-							NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
->>>>>>> origin/vse-po-novoy
+							# NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
 							NOT = { country_exists = SPC }
 						}
 					}
@@ -10166,11 +9541,7 @@ date > 1949.12.1
 				tooltip = SOV_poum_exists_tt
 				SPC = { 
 					exists = yes 
-<<<<<<< HEAD
-					
-=======
-					has_completed_focus = SPR_the_anti_fascist_workers_revolution
->>>>>>> origin/vse-po-novoy
+					# has_completed_focus = SPR_the_anti_fascist_workers_revolution
 				}
 			}
 		}
@@ -10285,8 +9656,6 @@ date > 1949.12.1
 						days = 14
 						random_days = 7
 					}
-<<<<<<< HEAD
-=======
 					# Bring Exiled Characters back
 					hidden_effect = {
 						every_character = {
@@ -10297,7 +9666,6 @@ date > 1949.12.1
 							clr_character_flag = SOV_exiled_flag
 						}
 					}
->>>>>>> origin/vse-po-novoy
 				}
 			}
 			
@@ -10560,10 +9928,7 @@ date > 1949.12.1
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-=======
 				add_extra_state_shared_building_slots = 2
->>>>>>> origin/vse-po-novoy
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -10579,10 +9944,7 @@ date > 1949.12.1
 						include_locked = yes
 					}
 				}
-<<<<<<< HEAD
-=======
 				add_extra_state_shared_building_slots = 2
->>>>>>> origin/vse-po-novoy
 				add_building_construction = {
 					type = industrial_complex 
 					level = 2
@@ -11456,8 +10818,6 @@ date > 1949.12.1
 						small = "GFX_idea_SOV_aleksandr_shlyapnikov"
 					}
 				}
-<<<<<<< HEAD
-=======
 				IF = {
 					limit = { SOV_is_right_opposition = yes }
 					every_character = {
@@ -11478,7 +10838,6 @@ date > 1949.12.1
 						clr_character_flag = SOV_exiled_flag
 					}
 				}
->>>>>>> origin/vse-po-novoy
 			}
 		}
 	}
@@ -11585,11 +10944,7 @@ date > 1949.12.1
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-<<<<<<< HEAD
-		x = 24
-=======
 		x = 0
->>>>>>> origin/vse-po-novoy
 		y = 1
 		offset = {
 			x = -7
@@ -11598,20 +10953,6 @@ date > 1949.12.1
 				NOT = { has_dlc = "No Step Back" }
 			}
 		}
-<<<<<<< HEAD
-		offset = {
-			x = -19
-			y = 0
-			trigger = { #Trotskyist branch hides
-				NOT = { has_dlc = "No Step Back" }
-				has_completed_focus = SOV_the_centre 
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-=======
 		# offset = {
 		# 	x = -19
 		# 	y = 0
@@ -11624,7 +10965,6 @@ date > 1949.12.1
 		# 		}
 		# 	}
 		# }
->>>>>>> origin/vse-po-novoy
 		offset = {
 			x = -7
 			y = 0
@@ -11637,20 +10977,6 @@ date > 1949.12.1
 				}
 			}
 		}
-<<<<<<< HEAD
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = SOV_the_centre
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-=======
 		# offset = {
 		# 	x = -26
 		# 	y = 0
@@ -11663,7 +10989,6 @@ date > 1949.12.1
 		# 		}
 		# 	}
 		# }
->>>>>>> origin/vse-po-novoy
 		offset = {
 			x = -7
 			y = 0
@@ -12035,17 +11360,10 @@ date > 1949.12.1
 		x = 1
 		y = 1
 		relative_position_id = SOV_war_heroes
-<<<<<<< HEAD
-		cost = 1
-
-		available = {
-date > 1941.8.1
-=======
 		cost = 5
 
 		available = {
 
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -12210,11 +11528,7 @@ date > 1941.8.1
 		x = -1
 		y = 1
 		relative_position_id = SOV_war_measures_in_the_east
-<<<<<<< HEAD
-		cost = 3
-=======
 		cost = 1
->>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -12230,16 +11544,11 @@ date > 1941.8.1
 
 		completion_reward = {
 			TAN = {	country_event = { id = soviet.14 } }
-<<<<<<< HEAD
-		}
-	}
-=======
 			MON = {	country_event = { id = soviet.14 } }
 		}
 		}
 		
 
->>>>>>> origin/vse-po-novoy
 
 	focus = {
 		id = SOV_fortify_mongolian_border
@@ -12248,11 +11557,7 @@ date > 1941.8.1
 		x = 1
 		y = 1
 		relative_position_id = SOV_war_measures_in_the_east
-<<<<<<< HEAD
-		cost = 5
-=======
 		cost = 1
->>>>>>> origin/vse-po-novoy
 
 		ai_will_do = {
 			factor = 1
@@ -12262,35 +11567,17 @@ date > 1941.8.1
 			}	
 		}
 		
-<<<<<<< HEAD
-		available = {
-			MON = {
-				is_in_faction_with = ROOT
-				has_full_control_of_state = 330
-				has_full_control_of_state = 819
-				has_full_control_of_state = 817
-				has_full_control_of_state = 818
-
-			}
-			is_subject = no
-		}
-		
-=======
->>>>>>> origin/vse-po-novoy
 		search_filters = {}
 
 		completion_reward = {
 			MON = { country_event = { id = NSB_soviet_foreign_politics_events.12 hours = 2 random_hours = 1 } }
 			custom_effect_tooltip = if_they_accept
 			custom_effect_tooltip = SOV_fortify_mongolian_border_forts_tt
-<<<<<<< HEAD
-=======
 			818 = { add_compliance = 100 }	
 			817 = { add_compliance = 100 }	
 			820 = { add_compliance = 100 }	
 			819 = { add_compliance = 100 }	
 			330 = { add_compliance = 100 }	
->>>>>>> origin/vse-po-novoy
 		}
 	}
 
@@ -12312,20 +11599,12 @@ date > 1941.8.1
 		}
 		
 		available = {
-<<<<<<< HEAD
-date > 1936.9.1
-date < 1938.1.1
-=======
->>>>>>> origin/vse-po-novoy
 			has_civil_war = no
 			OR = {
 				has_completed_focus = SOV_the_centre
 				has_completed_focus = SOV_the_left_opposition
 				has_completed_focus = SOV_the_right_opposition
 			}
-<<<<<<< HEAD
-			
-=======
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -12371,84 +11650,14 @@ date < 1938.1.1
 			}
 			has_government = communism
 			is_subject = no
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {}
 
 		completion_reward = {
-<<<<<<< HEAD
-			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 365 }
-=======
-			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1095 }
->>>>>>> origin/vse-po-novoy
+			army_experience = 110
 			
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-					has_completed_focus = SOV_covert_support_for_spanish_poum
-					has_completed_focus = SOV_coup_detat
-					has_global_flag = SPR_anarchist_uprising_flag
-					country_exists = SPC
-<<<<<<< HEAD
-					
-				}
-				SPC = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1295 } }
-=======
-					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
-				}
-				SPC = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
->>>>>>> origin/vse-po-novoy
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					country_exists = SPD
-				}
-				SPD = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-<<<<<<< HEAD
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1295 } }
-=======
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
->>>>>>> origin/vse-po-novoy
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					NOT = { country_exists = SPD }
-				}
-				custom_effect_tooltip = SOV_aid_republican_spain_tt
-<<<<<<< HEAD
-				effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1295 } }
-=======
-				effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
->>>>>>> origin/vse-po-novoy
-			}
-			else = {
-				random_country = {
-					limit = {
-						original_tag = SPR
-						has_civil_war = yes
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-<<<<<<< HEAD
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1295 } }
-=======
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
->>>>>>> origin/vse-po-novoy
-				}
-			}
+		
 			# A Spanish General will join the USSR if his side loses the SCW
 			if = {
 				limit = {
@@ -12467,13 +11676,8 @@ date < 1938.1.1
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_comintern
-<<<<<<< HEAD
-		cost = 1
-
-=======
 		cost = 5
 		allow_branch = {always = no}
->>>>>>> origin/vse-po-novoy
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -12481,21 +11685,13 @@ date < 1938.1.1
 				has_civil_war = yes
 			}	
 		}
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 		mutually_exclusive = { focus = SOV_policy_of_individual_security }
 
 		available = {
 
 		}
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
@@ -12513,11 +11709,7 @@ date < 1938.1.1
 		y = 1
 		relative_position_id = SOV_policy_of_collective_security
 		cost = 5
-<<<<<<< HEAD
-		available = {date > 1949.12.1}
-=======
 
->>>>>>> origin/vse-po-novoy
 ai_will_do = {
 			factor = 1
 			modifier = {
@@ -12525,11 +11717,7 @@ ai_will_do = {
 				has_civil_war = yes
 			}	
 		}
-<<<<<<< HEAD
-				
-=======
 
->>>>>>> origin/vse-po-novoy
 		search_filters = {FOCUS_FILTER_PROPAGANDA}
 
 		completion_reward = {
@@ -12580,11 +11768,7 @@ ai_will_do = {
 				has_civil_war = yes
 			}	
 		}
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 		bypass = {
 			OR = {
 				NOT = { country_exists = FRA }
@@ -12599,18 +11783,10 @@ ai_will_do = {
 		}
 
 		available = {
-<<<<<<< HEAD
-date > 1949.12.1
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			is_subject = no
-		}
-		
-=======
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
 		}
 
->>>>>>> origin/vse-po-novoy
 		search_filters = {}
 
 		completion_reward = {
@@ -12697,21 +11873,13 @@ date > 1949.12.1
 				has_civil_war = yes
 			}	
 		}
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 		available = {
 			is_subject = no
 			country_exists = SAU
 			NOT = { has_war_with = SAU }
 		}
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 		search_filters = {}
 
 		completion_reward = {
@@ -12743,11 +11911,7 @@ date > 1949.12.1
 				has_civil_war = yes
 			}	
 		}
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			any_country = {
@@ -12762,20 +11926,12 @@ date > 1949.12.1
 			}
 			is_subject = no
 		}
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 		search_filters = {}
 
 		completion_reward = {
 			add_timed_idea = { idea = SOV_face_western_fascism_ns days = 365 }
-<<<<<<< HEAD
-			
-=======
 
->>>>>>> origin/vse-po-novoy
 			if = {
 				limit = {
 					ENG = {
@@ -12831,12 +11987,9 @@ date > 1949.12.1
 		id = SOV_policy_of_individual_security
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = SOV_the_comintern }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_comintern
@@ -12853,11 +12006,7 @@ date > 1949.12.1
 		mutually_exclusive = { focus = SOV_policy_of_collective_security }
 
 		available = {
-<<<<<<< HEAD
-date > 1949.12.1
-=======
 
->>>>>>> origin/vse-po-novoy
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -13207,12 +12356,9 @@ date > 1949.12.1
 		id = SOV_anti_capitalist_policies
 		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = SOV_the_comintern }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 2
 		y = 1
 		relative_position_id = SOV_policy_of_individual_security
@@ -13282,10 +12428,6 @@ date > 1949.12.1
 		}
 		
 		available = {
-<<<<<<< HEAD
-date > 1949.12.1
-=======
->>>>>>> origin/vse-po-novoy
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
 		}
@@ -13577,10 +12719,7 @@ date > 1949.12.1
 		y = -1
 		relative_position_id = SOV_anti_capitalist_policies
 		cost = 1
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/vse-po-novoy
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -13600,11 +12739,7 @@ date > 1949.12.1
 
 		available = {
 			OR = {
-<<<<<<< HEAD
-				NOT = { has_country_flag = SOV_paranoia_system_active_flag }  #TODO_Manu: Change for the inverse, "Political Paranoia has subsided"
-=======
 				NOT = { has_country_flag = SOV_paranoia_system_active_flag }
->>>>>>> origin/vse-po-novoy
 			}
 			is_subject = no
 		}
@@ -13685,12 +12820,9 @@ date > 1949.12.1
 		id = SOV_respect_baltic_self_determination
 		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = SOV_baltic_security }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = -1
 		y = 1
 		relative_position_id = SOV_baltic_security
@@ -13755,11 +12887,7 @@ date > 1949.12.1
 		mutually_exclusive = { focus = SOV_respect_baltic_self_determination }
 
 		available = {
-<<<<<<< HEAD
-date > 1939.12.1
-=======
 date > 1939.9.1
->>>>>>> origin/vse-po-novoy
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
 		}
@@ -13857,10 +12985,7 @@ date > 1939.9.1
 			add_state_claim = 146 # Karjala
 			146 = {
 				controller = {
-<<<<<<< HEAD
-=======
 					set_country_flag = SOV_ultimatum_sent_flag #Add it for AI strats reasons
->>>>>>> origin/vse-po-novoy
 					add_timed_idea = {
 						idea = communist_pressure
 						days = 365
@@ -13879,13 +13004,9 @@ date > 1939.9.1
 		y = 2
 		relative_position_id = SOV_secure_leningrad
 		cost = 10
-<<<<<<< HEAD
-
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -14092,12 +13213,9 @@ date > 1939.6.1
 		id = SOV_demand_eastern_poland
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = SOV_claims_on_poland }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = -1
 		y = 1
 		relative_position_id = SOV_claims_on_poland
@@ -14198,12 +13316,6 @@ date > 1939.9.1
 		}
 	}
 
-<<<<<<< HEAD
-	focus = { #TODO_Manu: Add either desire to join faction or actually invite them to faction
-		id = SOV_offer_poland_protection
-		icon = GFX_focus_generic_polish_deal
-		prerequisite = { focus = SOV_claims_on_poland }
-=======
 	focus = {
 		id = SOV_offer_poland_protection
 		icon = GFX_focus_generic_polish_deal
@@ -14211,7 +13323,6 @@ date > 1939.9.1
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 1
 		y = 1
 		relative_position_id = SOV_claims_on_poland
@@ -14251,11 +13362,7 @@ date > 1939.9.1
 		}
 
 		available = {
-<<<<<<< HEAD
-date > 1949.12.1
-=======
 		date > 1949.12.1
->>>>>>> origin/vse-po-novoy
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			country_exists = POL
 			NOT = { has_war_with = POL }
@@ -14434,12 +13541,9 @@ date > 1949.12.1
 		id = SOV_demand_balkan_submission
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = SOV_claim_on_bessarabia }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = -1
 		y = 1
 		relative_position_id = SOV_claim_on_bessarabia
@@ -14494,12 +13598,9 @@ date > 1949.12.1
 		id = SOV_seek_balkan_cooperation
 		icon = GFX_focus_BUL_free_balkan_states
 		prerequisite = { focus = SOV_claim_on_bessarabia }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 1
 		y = 1
 		relative_position_id = SOV_claim_on_bessarabia
@@ -14559,12 +13660,9 @@ date > 1949.12.1
 		id = SOV_middle_east_diplomacy
 		icon = GFX_focus_TUR_treaty_of_saadabad
 		prerequisite = { focus = SOV_the_comintern }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 4
 		y = 0
 		relative_position_id = SOV_baltic_security
@@ -14859,11 +13957,7 @@ date > 1949.12.1
 	focus = {
 		id = SOV_preemptive_invasion_of_iran
 		icon = GFX_focus_generic_attack_iran
-<<<<<<< HEAD
-		prerequisite = { focus = SOV_middle_east_diplomacy }
-=======
 		prerequisite = { focus = SOV_support_afghan_ideology }
->>>>>>> origin/vse-po-novoy
 		x = 0
 		y = 1
 		relative_position_id = SOV_support_afghan_ideology
@@ -14876,11 +13970,7 @@ date > 1949.12.1
 				has_civil_war = yes
 			}	
 		}
-<<<<<<< HEAD
-		
-=======
 		will_lead_to_war_with = PER
->>>>>>> origin/vse-po-novoy
 		available = {
 			country_exists = PER
 			NOT = { has_war_with = PER }
@@ -14916,12 +14006,9 @@ date > 1949.12.1
 		id = SOV_the_threat_from_the_land_of_the_rising_sun
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = SOV_the_comintern }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 5
 		y = 0
 		relative_position_id = SOV_middle_east_diplomacy
@@ -15553,12 +14640,9 @@ date > 1949.12.1
 		id = SOV_reconcile_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = SOV_the_comintern }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 3
 		y = 0
 		relative_position_id = SOV_the_threat_from_the_land_of_the_rising_sun
@@ -15578,12 +14662,7 @@ date > 1949.12.1
 			NOT = { country_exists = JAP }
 		}
 
-<<<<<<< HEAD
-		available = {	
-date > 1949.12.1		
-=======
 		available = {date > 1949.12.1			
->>>>>>> origin/vse-po-novoy
 			NOT = { has_war_with = JAP }
 			is_subject = no
 		}
@@ -15791,10 +14870,7 @@ date > 1949.12.1
 		}
 		allow_branch = { 
 			has_dlc = "No Step Back" 
-<<<<<<< HEAD
-=======
 			always = no
->>>>>>> origin/vse-po-novoy
 			if = {
 				limit = {
 					has_game_rule = {
@@ -16474,12 +15550,9 @@ date > 1949.12.1
 		ai_will_do = {
 			factor = 1
 		}
-<<<<<<< HEAD
-=======
 		available = {
 			has_global_flag = SOV_soviet_civil_war
 		}
->>>>>>> origin/vse-po-novoy
 
 		available_if_capitulated = yes
 		
@@ -18157,9 +17230,6 @@ date > 1949.12.1
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		available = {
-<<<<<<< HEAD
-			has_full_control_of_state = 408
-=======
 			IF = { 
 				limit = {
 					NOT = { 
@@ -18174,26 +17244,11 @@ date > 1949.12.1
 					has_full_control_of_state = 408
 				}
 			}
->>>>>>> origin/vse-po-novoy
 			has_full_control_of_state = 409
 			has_full_control_of_state = 657
 		}
 
 		completion_reward = {
-<<<<<<< HEAD
-			408 = {
-				if = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-=======
 			IF = {
 				limit = {
 					408 = { is_owned_and_controlled_by = ROOT }
@@ -18216,19 +17271,10 @@ date > 1949.12.1
 					}
 					add_building_construction = {
 						type = anti_air_building
->>>>>>> origin/vse-po-novoy
 						level = 2
 						instant_build = yes
 					}
 				}
-<<<<<<< HEAD
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-=======
->>>>>>> origin/vse-po-novoy
 			}
 			409 = {
 				if = {
@@ -18241,8 +17287,6 @@ date > 1949.12.1
 						instant_build = yes
 					}
 				}
-<<<<<<< HEAD
-=======
 				if = {
 					limit = {
 						free_building_slots = {
@@ -18259,7 +17303,6 @@ date > 1949.12.1
 						instant_build = yes
 					}
 				}
->>>>>>> origin/vse-po-novoy
 			}
 			657 = {
 				if = {
@@ -18671,11 +17714,6 @@ date > 1949.12.1
 				category = cv_tech
 				category = ss_tech
 			}
-<<<<<<< HEAD
-			add_timed_idea = {
-				idea = SOV_modernize_the_far_eastern_fleet
-				days = 730
-=======
 			if = { #Modifiers in this NS are MTG-locked
 				limit = {
 					has_dlc = "Man the Guns"
@@ -18690,7 +17728,6 @@ date > 1949.12.1
 					idea = SOV_modernize_the_far_eastern_fleet_vanilla
 					days = 730
 				}
->>>>>>> origin/vse-po-novoy
 			}
 		}
 	}

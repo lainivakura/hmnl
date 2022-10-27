@@ -6,18 +6,12 @@ state={
 	
 	state_category = rural
 	
-<<<<<<< HEAD
+
+##PUSTOI_SLOT
+	impassable = yes
+	history={
+		owner = VEN
 	
-
-	history={
-		owner = AFR
-
-		add_core_of = AFR
-=======
-
-	history={
->>>>>>> origin/vse-po-novoy
-
 	}
 
 	provinces={

@@ -5,13 +5,7 @@ state={
 
 	history={
 		owner = TUR
-<<<<<<< HEAD
-		victory_points = {
-			11853 3
-		}
-=======
 		
->>>>>>> origin/vse-po-novoy
 		victory_points = {
 			9860 1
 		}
@@ -25,33 +19,24 @@ state={
 			infrastructure = 1
 
 		}
-<<<<<<< HEAD
-		
-=======
 		if = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
 			}
-			add_core_of = KUR
+			add_core_of = TUR
 		}
 		if = {
 			limit = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
 			add_core_of = TUR
-			add_core_of = KUR
 		}
->>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={
 		876 9858 9860 9868 9954 10399 11797  
 	}
-<<<<<<< HEAD
-	manpower=1
-=======
 	manpower=523537
->>>>>>> origin/vse-po-novoy
 	buildings_max_level_factor=1.000
 	state_category=rural
 

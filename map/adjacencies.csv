@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
-=======
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
->>>>>>> origin/vse-po-novoy
 12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
 10141;1419;sea;5267;-1;-1;-1;-1;;Moluccas
@@ -133,10 +129,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
-<<<<<<< HEAD
-=======
 2666;2919;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
->>>>>>> origin/vse-po-novoy
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -182,86 +175,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
-<<<<<<< HEAD
-4923;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1840;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1840;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4845;12601;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10619;12601;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12529;12601;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12529;7866;impassable;-1;-1;-1;-1;-1;;pamir mountains
-13197;7866;impassable;-1;-1;-1;-1;-1;;pamir mountains
-13197;1708;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12662;1708;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10610;1708;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10610;1844;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10610;12590;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1818;7693;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1749;7693;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10713;7693;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4751;7693;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4751;4823;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4751;4849;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10539;4849;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1774;7737;impassable;-1;-1;-1;-1;-1;;pamir mountains
-7870;7737;impassable;-1;-1;-1;-1;-1;;pamir mountains
-7808;7737;impassable;-1;-1;-1;-1;-1;;pamir mountains
-7808;12671;impassable;-1;-1;-1;-1;-1;;pamir mountains
-7808;12598;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1855;12598;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10560;12598;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10560;4843;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1781;4843;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1781;1778;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1781;7727;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4786;7727;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4786;4783;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10689;10899;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10558;7803;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10558;12880;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12539;12880;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12539;10629;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1853;10629;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1853;12609;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1723;12609;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1723;12331;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4655;12331;impassable;-1;-1;-1;-1;-1;;pamir mountains
-7519;5087;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10689;4783;impassable;-1;-1;-1;-1;-1;;pamir mountains
-10558;10899;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4845;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
-1818;12590;impassable;-1;-1;-1;-1;-1;;pamir mountains
-5064;5105;impassable;-1;-1;-1;-1;-1;;pamir mountains
-5020;5105;impassable;-1;-1;-1;-1;-1;;pamir mountains
-5020;8013;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4949;8013;impassable;-1;-1;-1;-1;-1;;pamir mountains
-5075;2101;impassable;-1;-1;-1;-1;-1;;pamir mountains
-5014;1822;impassable;-1;-1;-1;-1;-1;;pamir mountains
-6826;1822;impassable;-1;-1;-1;-1;-1;;pamir mountains
-5075;4949;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12717;12831;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12717;10826;impassable;-1;-1;-1;-1;-1;;pamir mountains
-4849;1774;impassable;-1;-1;-1;-1;-1;;pamir mountains
-11753;3653;impassable;-1;-1;-1;-1;-1;;
-7454;3653;impassable;-1;-1;-1;-1;-1;;
-7454;3656;impassable;-1;-1;-1;-1;-1;;
-10403;3656;impassable;-1;-1;-1;-1;-1;;
-10403;6669;impassable;-1;-1;-1;-1;-1;;
-10403;12441;impassable;-1;-1;-1;-1;-1;;
-10472;12441;impassable;-1;-1;-1;-1;-1;;
-10472;3564;impassable;-1;-1;-1;-1;-1;;
-11753;3653;impassable;-1;-1;-1;-1;-1;;
-12376;3564;impassable;-1;-1;-1;-1;-1;;
-4583;3564;impassable;-1;-1;-1;-1;-1;;
-4583;12320;impassable;-1;-1;-1;-1;-1;;
-4583;1636;impassable;-1;-1;-1;-1;-1;;
-6935;1636;impassable;-1;-1;-1;-1;-1;;
-6935;7604;impassable;-1;-1;-1;-1;-1;;
-864;7604;impassable;-1;-1;-1;-1;-1;;
-1463;7604;impassable;-1;-1;-1;-1;-1;;
-1463;1822;impassable;-1;-1;-1;-1;-1;;
-3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
-=======
 611;3612;impassable;-1;-1;-1;-1;-1;;western alps
 11570;3612;impassable;-1;-1;-1;-1;-1;;western alps
 11570;9587;impassable;-1;-1;-1;-1;-1;;western alps
@@ -285,5 +198,24 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;OTRANTO STRAIT 
->>>>>>> origin/vse-po-novoy
+11647;9674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11647;6692;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11617;11664;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11617;6692;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+672;6674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+654;6674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+9632;6674;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+9632;685;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+9632;11614;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11645;4545;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11645;1450;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+6763;1450;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+6763;3711;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+7554;9645;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+7554;6689;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+11609;11614;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+3667;670;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+3667;666;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+1455;666;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
+1455;6689;impassable;-1;-1;-1;-1;-1;;kavkaz mountains
 -1;-1;;-1;-1;-1;-1;-1;-1

@@ -16,10 +16,6 @@ state = {
 		
 		add_core_of = SOV
 		
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 	}
 
 	provinces = {

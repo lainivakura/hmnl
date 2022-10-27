@@ -1,10 +1,7 @@
 ﻿capital = 16
 
-<<<<<<< HEAD
-=======
 give_guarantee = POL
 
->>>>>>> origin/vse-po-novoy
 if = {
 	limit = {
 		NOT = {
@@ -32,8 +29,6 @@ if = {
 	}
 }
 
-<<<<<<< HEAD
-=======
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "FRA_1936_air_bba"
@@ -62,15 +57,11 @@ if = {
 	}
 }
 
->>>>>>> origin/vse-po-novoy
 set_research_slots = 3
 set_stability = 0.5
 add_command_power = 20
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/vse-po-novoy
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -82,16 +73,6 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-<<<<<<< HEAD
-	early_fighter = 1
-	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	CAS1 = 1
-=======
->>>>>>> origin/vse-po-novoy
 	trench_warfare = 1
 	fleet_in_being = 1
 	fuel_silos = 1
@@ -167,18 +148,11 @@ if = {
 		basic_medium_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-<<<<<<< HEAD
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
-		basic_heavy_armor_scheme = 1
-		mtg_transport = 1
-=======
 		basic_heavy_armor_scheme = 1
 		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
 		basic_dp_light_battery = 1
 		cruiser_submarines = 1
->>>>>>> origin/vse-po-novoy
 	}
 	add_ideas = MTG_naval_treaty_adherent
 }
@@ -227,11 +201,7 @@ if = {
 	give_guarantee = POL
 	ENG = { add_to_faction = FRA }
 
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> origin/vse-po-novoy
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "FRA_1939_naval_mtg"
@@ -239,17 +209,6 @@ if = {
 			set_naval_oob = "FRA_1939_naval_legacy"
 		}
 	}
-<<<<<<< HEAD
-
-	set_technology = {
-		fighter1 = 1
-		fighter2 = 1
-		heavy_fighter1 = 1
-		tactical_bomber2 = 1
-		strategic_bomber1 = 1
-		cv_fighter1 = 1
-		cv_CAS1 = 1
-=======
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "FRA_1939_air_bba"
@@ -276,7 +235,6 @@ if = {
 	}
 
 	set_technology = {
->>>>>>> origin/vse-po-novoy
 		interwar_artillery = 1
 		interwar_antitank = 1
 		infantry_weapons2 = 1
@@ -289,11 +247,7 @@ if = {
 		fighter_baiting = 1
 		low_echelon_support = 1
 		dispersed_fighting = 1
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/vse-po-novoy
 			grand_battle_plan = 1
 
 		trench_warfare = 1
@@ -339,11 +293,7 @@ if = {
 		set_oob = "FRA_1939"
 	}
 	if = {
-<<<<<<< HEAD
-		limit = {		
-=======
 		limit = {
->>>>>>> origin/vse-po-novoy
 			has_dlc = "No Step Back"
 		}
 		set_technology = {
@@ -370,10 +320,6 @@ if = {
 			improved_heavy_armor_scheme = 1
 			improved_light_battery = 1
 			basic_heavy_battery = 1
-<<<<<<< HEAD
-			improved_secondary_battery = 1
-=======
->>>>>>> origin/vse-po-novoy
 			improved_ship_torpedo_launcher = 1
 		}
 		remove_ideas = MTG_naval_treaty_adherent
@@ -406,11 +352,7 @@ add_ideas = {
 	FRA_political_violence
 	FRA_inefficient_economy_2
 }
-<<<<<<< HEAD
-give_guarantee = POL
-=======
 
->>>>>>> origin/vse-po-novoy
 give_guarantee = CZE
 give_guarantee = YUG
 give_guarantee = ROM
@@ -579,9 +521,6 @@ if = {
 		}
 	}
 }
-<<<<<<< HEAD
-
-=======
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -695,7 +634,6 @@ if = {
 		obsolete = yes
 	}
 }
->>>>>>> origin/vse-po-novoy
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -752,11 +690,7 @@ if = {
 		icon = "GFX_FRA_basic_light_tank_medium"
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Char B1" 
-=======
 		name = "Char B1"
->>>>>>> origin/vse-po-novoy
 		type = heavy_tank_chassis_0
 		parent_version = 0
 		modules = {
@@ -776,11 +710,7 @@ if = {
 	}
 
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "SOUMUA S35" 
-=======
 		name = "SOUMUA S35"
->>>>>>> origin/vse-po-novoy
 		type = medium_tank_chassis_0
 		parent_version = 0
 		modules = {
@@ -862,11 +792,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Minerve Class"					
-=======
 		name = "Minerve Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -912,11 +838,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Le Fantasque Class"				
-=======
 		name = "Le Fantasque Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_light_1
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -932,30 +854,18 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Mogador Class"				
-=======
 		name = "Mogador Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_light_2
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-<<<<<<< HEAD
-			fixed_ship_battery_slot = ship_light_battery_2
-=======
 			fixed_ship_battery_slot = dp_light_battery_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_2
-<<<<<<< HEAD
-			mid_1_custom_slot = ship_light_battery_2
-=======
 			mid_1_custom_slot = dp_light_battery_2
->>>>>>> origin/vse-po-novoy
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
@@ -970,11 +880,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-=======
 			fixed_ship_engine_slot = cruiser_ship_engine_2
->>>>>>> origin/vse-po-novoy
 			mid_1_custom_slot = ship_torpedo_1
 			mid_2_custom_slot = ship_light_medium_battery_1
 			rear_1_custom_slot = ship_airplane_launcher_1
@@ -991,11 +897,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-=======
 			fixed_ship_engine_slot = cruiser_ship_engine_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_armor_slot = empty
 			mid_1_custom_slot = ship_anti_air_1
 			mid_2_custom_slot = ship_light_medium_battery_2
@@ -1003,11 +905,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "La Galissonnière Class"			
-=======
 		name = "La Galissonnière Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
@@ -1016,11 +914,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-=======
 			fixed_ship_engine_slot = cruiser_ship_engine_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_anti_air_1
 			mid_2_custom_slot = ship_light_medium_battery_2
@@ -1038,11 +932,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-=======
 			fixed_ship_engine_slot = cruiser_ship_engine_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_medium_battery_1
 			mid_2_custom_slot = ship_torpedo_1
@@ -1051,11 +941,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Algérie Class"				
-=======
 		name = "Algérie Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_cruiser_1
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
@@ -1064,11 +950,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-<<<<<<< HEAD
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-=======
 			fixed_ship_engine_slot = cruiser_ship_engine_2
->>>>>>> origin/vse-po-novoy
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_medium_battery_1
 			mid_2_custom_slot = ship_anti_air_1
@@ -1077,11 +959,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Courbet Class"		
-=======
 		name = "Courbet Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -1101,11 +979,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Bretagne Class"				
-=======
 		name = "Bretagne Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -1125,11 +999,7 @@ if = {
 	}
 	# Battlecruisers #
 	create_equipment_variant = {
-<<<<<<< HEAD
-		name = "Dunkerque Class"		
-=======
 		name = "Dunkerque Class"
->>>>>>> origin/vse-po-novoy
 		type = ship_hull_heavy_2
 		name_group = FRA_BC_HISTORICAL
 		parent_version = 0
@@ -1160,11 +1030,7 @@ if = {
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_secondaries_slot = ship_secondaries_2
-<<<<<<< HEAD
-				fixed_ship_armor_slot = ship_armor_bb_2
-=======
 				fixed_ship_armor_slot = ship_armor_bc_2
->>>>>>> origin/vse-po-novoy
 				front_1_custom_slot = ship_heavy_battery_2
 				mid_1_custom_slot = ship_secondaries_2
 				mid_2_custom_slot = ship_anti_air_1
@@ -1192,8 +1058,6 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-<<<<<<< HEAD
-=======
 		limit = {
 			has_dlc = "By Blood Alone"
 		}
@@ -1276,7 +1140,6 @@ if = {
 		}
 	}
 	if = {
->>>>>>> origin/vse-po-novoy
 		limit = { not = { has_dlc = "Man the Guns" } }
 		# Ship variants #
 		create_equipment_variant = {
@@ -1316,11 +1179,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
 		create_equipment_variant = {
-<<<<<<< HEAD
-			name = "Aurore Class"				
-=======
 			name = "Aurore Class"
->>>>>>> origin/vse-po-novoy
 			type = ship_hull_submarine_2
 			name_group = FRA_SS_HISTORICAL
 			parent_version = 0
@@ -1358,11 +1217,7 @@ if = {
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_2
-<<<<<<< HEAD
-				fixed_ship_secondaries_slot = dp_ship_secondaries
-=======
 				fixed_ship_secondaries_slot = dp_ship_secondaries_3
->>>>>>> origin/vse-po-novoy
 				front_1_custom_slot = empty
 			}
 		}
@@ -1372,11 +1227,7 @@ if = {
 			has_dlc = "No Step Back"
 		}
 		create_equipment_variant = {
-<<<<<<< HEAD
-			name = "Char B1bis" 
-=======
 			name = "Char B1bis"
->>>>>>> origin/vse-po-novoy
 			type = heavy_tank_chassis_1
 			parent_version = 0
 			modules = {
@@ -1396,11 +1247,7 @@ if = {
 		}
 
 		create_equipment_variant = {
-<<<<<<< HEAD
-			name = "FCM 36" 
-=======
 			name = "FCM 36"
->>>>>>> origin/vse-po-novoy
 			type = light_tank_chassis_2
 			parent_version = 0
 			modules = {
@@ -1409,13 +1256,8 @@ if = {
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
 				engine_type_slot = tank_diesel_engine
-<<<<<<< HEAD
-				special_type_slot_1 = sloped_armor	
-				
-=======
 				special_type_slot_1 = sloped_armor
 
->>>>>>> origin/vse-po-novoy
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 2
@@ -1425,11 +1267,7 @@ if = {
 		}
 
 		create_equipment_variant = {
-<<<<<<< HEAD
-			name = "AMC 35" 
-=======
 			name = "AMC 35"
->>>>>>> origin/vse-po-novoy
 			type = medium_tank_chassis_1
 			parent_version = 0
 			modules = {
@@ -1438,11 +1276,7 @@ if = {
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
 				engine_type_slot = tank_gasoline_engine
-<<<<<<< HEAD
-				
-=======
 
->>>>>>> origin/vse-po-novoy
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 4

@@ -6,20 +6,13 @@ state={
 	
 	state_category = city
 	
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-<<<<<<< HEAD
-		owner = AFR
-
-		add_core_of = AFR
-
+		owner = VEN
+	
 	}
 
-
-=======
-
-	}
-
->>>>>>> origin/vse-po-novoy
 	provinces={
 		2079 7936 7991 7993 10747 10790 10846 
 	}

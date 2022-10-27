@@ -6,21 +6,16 @@ state=
 	
 	state_category = town
 	
-<<<<<<< HEAD
-	
-	history={
-		owner = AFR
-
-		add_core_of = AFR
-=======
 	resources={
 		chromium=2 # was: 3
 	}
-	history=
-	{
->>>>>>> origin/vse-po-novoy
-
+##PUSTOI_SLOT
+	impassable = yes
+	history={
+		owner = VEN
 	}
+	
+
 	provinces={
 		1594 1635 4641
 	}

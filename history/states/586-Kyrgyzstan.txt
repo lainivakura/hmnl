@@ -10,10 +10,6 @@ state={
 
 	history={
 		owner = SOV
-<<<<<<< HEAD
-	
-=======
->>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3

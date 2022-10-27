@@ -5,11 +5,6 @@ state={
 	history={
 		owner = MEN
 		add_core_of = MEN
-<<<<<<< HEAD
-		add_core_of = CHI
-		
-=======
->>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 1
 

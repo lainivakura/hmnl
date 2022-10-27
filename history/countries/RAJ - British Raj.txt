@@ -1,9 +1,6 @@
 ﻿capital = 439
 
 oob = "RAJ_1936"
-<<<<<<< HEAD
-
-=======
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "RAJ_1936_air_bba"
@@ -21,7 +18,6 @@ if = {
 		}
 	}
 }
->>>>>>> origin/vse-po-novoy
 
 set_stability = 0.6
 set_war_support = 0.1
@@ -34,16 +30,8 @@ set_technology = {
 	tech_recon = 1
 	trench_warfare = 1
 	fleet_in_being = 1
-<<<<<<< HEAD
-	CAS1 = 1
-	early_fighter = 1
 	fuel_silos = 1
 	fuel_refining = 1
-basic_train = 1
-=======
-	fuel_silos = 1
-	fuel_refining = 1
->>>>>>> origin/vse-po-novoy
 }
 
 recruit_character = RAJ_lord_linlithgow
@@ -78,13 +66,9 @@ recruit_character = RAJ_anyang_bhula
 recruit_character = RAJ_john_edward_golightly
 recruit_character = RAJ_bhimrao_ramji_ambedkar
 recruit_character = RAJ_chakravarti_rajagopalachari
-<<<<<<< HEAD
-
+# recruit_character = RAJ_karam_singh_mann
 recruit_character = RAJ_agha_khan_iii
-
-=======
-recruit_character = RAJ_agha_khan_iii
->>>>>>> origin/vse-po-novoy
+# recruit_character = RAJ_subhas_chanda_bose
 recruit_character = RAJ_mahatma_mohandas_gandhi
 recruit_character = RAJ_sir_mohammed_iqbal
 recruit_character = RAJ_john_mathai
@@ -160,8 +144,6 @@ set_convoys = 20
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
-<<<<<<< HEAD
-=======
 640 = { #Mandalay
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
@@ -181,7 +163,6 @@ set_cosmetic_tag = RAJ_UK # British Raj
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
->>>>>>> origin/vse-po-novoy
 1939.1.1 = {
 	
 	if = {
@@ -202,9 +183,6 @@ set_cosmetic_tag = RAJ_UK # British Raj
 	add_political_power = 1198
 	add_command_power = 100
 	oob = "RAJ_1939"
-<<<<<<< HEAD
-
-=======
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "RAJ_1939_air_bba"
@@ -216,7 +194,6 @@ set_cosmetic_tag = RAJ_UK # British Raj
 			}
 		}
 	}
->>>>>>> origin/vse-po-novoy
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -237,11 +214,6 @@ set_cosmetic_tag = RAJ_UK # British Raj
 	
 	set_technology = {
 		
-<<<<<<< HEAD
-		early_fighter = 1
-		fighter1 = 1
-=======
->>>>>>> origin/vse-po-novoy
 		#doctrines
 		#Air
 		force_rotation = 1

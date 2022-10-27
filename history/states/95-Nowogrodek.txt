@@ -4,12 +4,9 @@ state={
 
 	history={
 		victory_points = {
-<<<<<<< HEAD
-=======
 			3393 3
 		}
 		victory_points = {
->>>>>>> origin/vse-po-novoy
 			9304 1
 		}
 		owner = POL
@@ -19,11 +16,6 @@ state={
 
 		}
 		add_core_of = POL
-<<<<<<< HEAD
-		add_core_of = SOV
-=======
-		add_core_of = BLR
->>>>>>> origin/vse-po-novoy
 
 	}
 
@@ -33,10 +25,6 @@ state={
 	manpower=1598900
 	buildings_max_level_factor=1.000
 	state_category=rural
-<<<<<<< HEAD
-local_supplies=6.0 
-=======
 
 	local_supplies=6.0 
->>>>>>> origin/vse-po-novoy
 }

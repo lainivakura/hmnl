@@ -19,9 +19,6 @@ state={
 			air_base = 2
 
 		}
-<<<<<<< HEAD
-		
-=======
 		if = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
@@ -33,17 +30,12 @@ state={
 			}
 			add_core_of = TUR
 		}
->>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={
 		4512 9823 11759 11871 12387 12416 
 	}
-<<<<<<< HEAD
-	manpower=1
-=======
 	manpower=571935
->>>>>>> origin/vse-po-novoy
 	state_category=town
 
 	local_supplies=0.0 

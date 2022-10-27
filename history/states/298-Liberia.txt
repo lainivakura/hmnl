@@ -5,14 +5,10 @@ state=
 	manpower = 1
 	
 	state_category = rural
-		
 	
-
-	history={
-		owner = AFR
-
-		add_core_of = AFR
-
+	impassable = yes
+	history= {
+		owner = VEN
 	}
 	provinces={
 		7959 8006

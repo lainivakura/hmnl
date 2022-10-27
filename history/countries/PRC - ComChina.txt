@@ -12,10 +12,6 @@ set_war_support = 0.7
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/vse-po-novoy
 save_global_event_target_as = WTT_communist_china
 
 
@@ -49,12 +45,6 @@ save_global_event_target_as = WTT_communist_china
 		set_research_slots = 3
 
 		add_ideas = {
-<<<<<<< HEAD
-			
-		}
-		remove_ideas = {
-			
-=======
 			PRC_revolutionary_military_commission
 			PRC_low_popular_support_3
 			PRC_the_long_march_2
@@ -64,7 +54,6 @@ save_global_event_target_as = WTT_communist_china
 		remove_ideas = {
 			PRC_low_popular_support_1
 			PRC_the_long_march_1
->>>>>>> origin/vse-po-novoy
 		}
 		else = {
 			#generic focuses
@@ -158,16 +147,6 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-<<<<<<< HEAD
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		
-	}
-=======
->>>>>>> origin/vse-po-novoy
 }
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }

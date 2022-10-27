@@ -280,11 +280,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-<<<<<<< HEAD
-  production_factory_max_efficiency_factor = -0.1
-=======
   production_factory_max_efficiency_factor = -0.6
->>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -305,11 +301,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = -0.05
-<<<<<<< HEAD
-  production_factory_max_efficiency_factor = -0.1
-=======
   production_factory_max_efficiency_factor = -0.6
->>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -331,11 +323,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.10
-<<<<<<< HEAD
-  production_factory_max_efficiency_factor = -0.1
-=======
   production_factory_max_efficiency_factor = -0.6
->>>>>>> origin/vse-po-novoy
 			}
 		}
 		
@@ -356,11 +344,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.15
 				industrial_capacity_factory = -0.15
-<<<<<<< HEAD
-  production_factory_max_efficiency_factor = -0.1
-=======
   production_factory_max_efficiency_factor = -0.6
->>>>>>> origin/vse-po-novoy
 			}
 		}
 		
@@ -381,11 +365,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.20
 				industrial_capacity_factory = -0.20
-<<<<<<< HEAD
-  production_factory_max_efficiency_factor = -0.1
-=======
   production_factory_max_efficiency_factor = -0.6
->>>>>>> origin/vse-po-novoy
 			}
 		}
 
@@ -406,11 +386,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.25
 				industrial_capacity_factory = -0.25
-<<<<<<< HEAD
-  production_factory_max_efficiency_factor = -0.1
-=======
   production_factory_max_efficiency_factor = -0.6
->>>>>>> origin/vse-po-novoy
 			}
 		}		
 

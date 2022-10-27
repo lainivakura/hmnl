@@ -9,10 +9,6 @@ state={
 	{
 		owner = JAP
 		add_core_of = CHI
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		victory_points = {
 			1150 1 
 		}

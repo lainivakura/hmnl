@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		add_core_of = AFR
+		add_core_of = PRC
 		owner = HOL
 		victory_points = {
 			153 1

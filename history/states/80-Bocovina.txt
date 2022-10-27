@@ -16,18 +16,10 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = ROM
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/vse-po-novoy
 	}
 	provinces={
 		577 9548
 	}
-<<<<<<< HEAD
-local_supplies=0.0 
-=======
 
 	local_supplies=0.0 
->>>>>>> origin/vse-po-novoy
 }

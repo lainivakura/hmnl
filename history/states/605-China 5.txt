@@ -8,10 +8,6 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 4
 			arms_factory = 3
@@ -41,11 +37,7 @@ state={
 		1367 1395 1893 2030 2091 4925 5048 6999 7240 7256 8026 10132 10144 11865 12274 12705 12767 
 	}
 	manpower=52963300
-<<<<<<< HEAD
-	buildings_max_level_factor=5.000
-=======
 	buildings_max_level_factor=1.000
->>>>>>> origin/vse-po-novoy
 	state_category=city
 
 	local_supplies=0.0 

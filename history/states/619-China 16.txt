@@ -5,20 +5,15 @@ state={
 	manpower = 1
 	
 	state_category = pastoral
-<<<<<<< HEAD
-	
 
-	history={
-		owner =AFR
-		
-		add_core_of = AFR
+##PUSTOI_SLOT
 	
-		
-=======
-
 	history={
->>>>>>> origin/vse-po-novoy
+		set_demilitarized_zone = yes
+		owner = VEN
 	}
+	
+
 
 
 	provinces={

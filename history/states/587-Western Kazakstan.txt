@@ -4,10 +4,6 @@ state={
 
 	history={
 		owner = SOV
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 1
 		}

@@ -1960,11 +1960,7 @@ SOV_propaganda_campaigns = {
 			original_tag = SOV
 		}
 
-<<<<<<< HEAD
-		available = { date > 1942.10.1		
-=======
 		available = { date > 1942.1.1		
->>>>>>> origin/vse-po-novoy
 			SOV_propaganda_poster_slot_available = yes
 
 			has_war = yes
@@ -1994,11 +1990,7 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_victory_at_hand_cost
 
 		modifier = {
-<<<<<<< HEAD
-			army_attack_factor = 0.05
-=======
 			army_attack_factor = 0.1
->>>>>>> origin/vse-po-novoy
 			army_speed_factor = 0.1
 			org_loss_when_moving = -0.05
 		}
@@ -3890,11 +3882,7 @@ SOV_propaganda_campaigns = {
 		}
 
 		remove_effect = {
-<<<<<<< HEAD
-			every_controlled_state = {
-=======
 			every_state = {
->>>>>>> origin/vse-po-novoy
 				limit = {
 					has_dynamic_modifier = { modifier = SOV_invaders_must_die }
 				}
@@ -7088,7 +7076,7 @@ SOV_diplomacy_asia_decision_category = {
 				has_full_control_of_state = 618 #DZUNGARIA
 			}
 			num_of_civilian_factories_available_for_projects > 0
-			has_equipment = { fighter_equipment > 39 }
+			has_equipment = { small_plane_airframe > 39 }
 			has_equipment = { infantry_equipment > 499 }
 			NOT = { has_country_flag = SOV_sinkiang_investment_ongoing_flag }
 		}
@@ -7155,7 +7143,7 @@ SOV_diplomacy_asia_decision_category = {
 				custom_effect_tooltip = SOV_sinikiang_influence_cg_tt_sov
 
 				send_equipment = {
-					type = fighter_equipment
+					type = small_plane_airframe
 					amount = 40
 					target = SIK
 				}
@@ -11939,26 +11927,17 @@ SOV_great_patriotic_war = {
 			}
 			else = {
 				custom_effect_tooltip = SOV_military_offensive_ongoing_not_holding_main_objective_tt
-				hidden_effect = {
-					add_war_support = -0.1
-					add_political_power = -75
-				}
+
 			}
 
 			custom_effect_tooltip = SOV_military_offensive_ongoing_failing_main_objective_tt
-			effect_tooltip = {
-				add_war_support = -0.1
-				add_political_power = -75
-			}
 
 			SOV_clean_military_offensive_effect = yes
 		}
 
 		complete_effect = { #SUCCESS
 			SOV_clean_military_offensive_effect = yes
-
-			add_war_support = 0.1
-			add_political_power = 50
+	
 		}
 	}
 
@@ -12112,37 +12091,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 
-		timeout_effect = {  #FAIL
-			custom_effect_tooltip = SOV_operation_iskra_ongoing_success_effects_tt
-			effect_tooltip = {
-				add_war_support = 0.1
-				add_political_power = 50
-			}
-			custom_effect_tooltip = SOV_operation_iskra_ongoing_failure_effects_tt
-			effect_tooltip = {
-				add_war_support = -0.1
-				add_political_power = -75
-			}
-
-			if = {
-				limit = {
-					195 = { is_in_home_area = yes }
-				}
-				custom_effect_tooltip = SOV_operation_iskra_ongoing_success_tt
-				hidden_effect = {
-					add_war_support = 0.1
-					add_political_power = 50
-				}
-			}
-			else = {
-				custom_effect_tooltip = SOV_operation_iskra_ongoing_failure_tt
-				hidden_effect = {
-					add_war_support = -0.1
-					add_political_power = -75
-				}
-			}
-			SOV_clean_military_offensive_effect = yes
-		}
+		
 
 		complete_effect = {
 			SOV_clean_military_offensive_effect = yes
@@ -14234,11 +14183,7 @@ SOV_soviet_civil_war_dec_cat = {
 			655 = { CONTROLLER = { original_tag = SOV } }
 			custom_trigger_tooltip = {
 				tooltip = SOV_not_has_conflict_with_japan
-<<<<<<< HEAD
-				NOT = { JAP = { } }
-=======
 				NOT = { JAP = { has_decision = JAP_test_the_soviets } }
->>>>>>> origin/vse-po-novoy
 				NOT = { has_border_war_with = JAP }
 				NOT = { has_war_with = JAP }
 			}

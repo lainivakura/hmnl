@@ -15,11 +15,7 @@ state={
 		}
 		owner = ROM
 		buildings = {
-<<<<<<< HEAD
-			infrastructure = 5
-=======
 			infrastructure = 3
->>>>>>> origin/vse-po-novoy
 			industrial_complex = 2
 		}
 		add_core_of = ROM
@@ -28,10 +24,6 @@ state={
 	provinces={
 		646 662 3649 9606 11592 11608 
 	}
-<<<<<<< HEAD
-local_supplies=11.0 
-=======
 
 	local_supplies=11.0 
->>>>>>> origin/vse-po-novoy
 }

@@ -9,7 +9,7 @@ state = {
 			2096 1 
 		}
 		owner = ENG
-		add_core_of = SUD
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 

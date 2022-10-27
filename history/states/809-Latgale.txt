@@ -6,17 +6,10 @@ state={
 	history={
 		owner = LAT
 		victory_points = {
-<<<<<<< HEAD
-			310 3 #Daugavpils
-		}
-		victory_points = {
-			222 1 #Rezekne
-=======
 			6222 3 #Jelgava
 		}
 		victory_points = {
 			3255 1 #Jekabpils
->>>>>>> origin/vse-po-novoy
 		}
 		buildings = {
 			infrastructure = 2
@@ -25,20 +18,12 @@ state={
 		}
 		add_core_of = LAT
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={
 		265 3255 3525 6222 6342 11358 
 	}
-<<<<<<< HEAD
-	manpower=64500
-=======
 	manpower=215500
->>>>>>> origin/vse-po-novoy
 	buildings_max_level_factor=1.000
 	state_category=town
 }

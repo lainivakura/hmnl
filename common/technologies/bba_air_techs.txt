@@ -936,7 +936,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1938
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -977,7 +977,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1938
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1023,10 +1023,10 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 1
-		start_year = 1940
+		research_cost = 1.5
+		start_year = 1943
 		allow = {
-			date > 1937.1.1 
+			date > 1941.1.1 
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -1196,7 +1196,7 @@ technologies = {
 			engine_3_6x	
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1940
 		allow = {
 			date > 1938.1.1 
@@ -1252,10 +1252,10 @@ technologies = {
 			engine_4_6x	
 		}
 		
-		research_cost = 1
-		start_year = 1943
+		research_cost = 1.5
+		start_year = 1944
 		allow = {
-			date > 1941.1.1 
+			date > 1942.1.1 
 		}
 		folder = {
 			name = bba_air_techs_folder

@@ -5,16 +5,12 @@ state={
 	manpower = 1
 	
 	state_category = rural
-<<<<<<< HEAD
-history={
-		owner = AFR
 
-		add_core_of = AFR
-=======
-
+##PUSTOI_SLOT
+	impassable = yes
 	history={
->>>>>>> origin/vse-po-novoy
-
+		owner = VEN
+	
 	}
 
 	provinces={

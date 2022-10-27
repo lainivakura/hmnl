@@ -4,16 +4,13 @@ state=
 	name="STATE_649"
 	state_category = tiny_island
 	manpower=1
-<<<<<<< HEAD
-	history={
-		owner = AFR
-
-		add_core_of = AFR
-
-	}
-=======
->>>>>>> origin/vse-po-novoy
 	provinces= { 5023 }
 
+	##PUSTOI_SLOT
+	impassable = yes
+	history={
+		owner = VEN
+	}
+	
 	local_supplies=0.0 
 }

@@ -6,19 +6,15 @@ state={
 	
 	state_category = rural
 
+##PUSTOI_SLOT
+	
 	history={
-<<<<<<< HEAD
-		owner = AFR
-
-		add_core_of = AFR
-
+		owner = VEN
+		set_demilitarized_zone = yes
 	}
+	
 
 
-=======
-	}
-
->>>>>>> origin/vse-po-novoy
 	provinces={
 		1948 1995 2017 2062 2078 2101 4893 4949 5020 5064 8053 8090 10789 12788 12871 
 	}

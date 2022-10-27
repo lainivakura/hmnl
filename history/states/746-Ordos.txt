@@ -7,35 +7,14 @@ state={
 	state_category = pastoral
 	
 	
-<<<<<<< HEAD
-	history=
-	{
-		owner = CHI
-		
-		add_core_of = CHI
-		
-		
-		buildings = {
-			infrastructure = 1
-		}
-
-		1938.10.25 = {
-			controller = JAP
-		}
-		
-		1939.1.1 = {
-			
-			owner = PRC
-			controller = MEN
-
-		}
-	}
-	manpower=500000
-=======
+##PUSTOI_SLOT
+	impassable = yes
 	history={
+		owner = VEN
 	}
+	
+
 	manpower=1
->>>>>>> origin/vse-po-novoy
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

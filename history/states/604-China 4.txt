@@ -2,37 +2,14 @@ state={
 	id=604
 	name="STATE_604"
 
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-<<<<<<< HEAD
-		owner = AFR
-		
-		add_core_of = AFR
-		
-		
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
-
-	}
-=======
-
+		owner = VEN
+	
 		}
 
 	
->>>>>>> origin/vse-po-novoy
 
 	provinces={
 		4914 4964 7940 8018 8037 12899 

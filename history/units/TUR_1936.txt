@@ -62,22 +62,6 @@ division_template = {
 }
 
 
-<<<<<<< HEAD
-	
-
-
-units = {
-	######## LAND UNITS ########
-	##### Türk Ordusu #####
-	
-}
-
-
-### Air Wings ###
-air_wings = {
-	##### Türk Hava Kuvvetleri #####
-	
-=======
 	division_template = {
 		name = "Zirhli Tümeni" 				# Armour Division
 	
@@ -100,7 +84,6 @@ air_wings = {
 
 
 units = {
->>>>>>> origin/vse-po-novoy
 }
 
 
@@ -115,16 +98,4 @@ instant_effect = {
 		progress = 0.43
 		efficiency = 100
 	}
-<<<<<<< HEAD
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "TUR"
-		}
-		requested_factories = 2
-		progress = 0.47
-		efficiency = 100
-	}
-=======
->>>>>>> origin/vse-po-novoy
 }

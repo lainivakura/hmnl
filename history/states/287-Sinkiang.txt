@@ -2,17 +2,14 @@ state={
 	id=287
 	name="STATE_287"
 
+##PUSTOI_SLOT
+	
 	history={
-<<<<<<< HEAD
-		owner =AFR
-	
-		add_core_of = AFR
-	
-		
-=======
-	
->>>>>>> origin/vse-po-novoy
+		set_demilitarized_zone = yes
+		owner = VEN
 	}
+	
+
 
 
 	provinces={

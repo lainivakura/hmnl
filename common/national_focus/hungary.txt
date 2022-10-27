@@ -171,12 +171,9 @@ focus_tree = {
 	focus = {
 		id = HUN_invite_the_habsburg_prince
 		icon = GFX_goal_generic_dangerous_deal
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		prerequisite = { focus = HUN_elect_a_king }
 		mutually_exclusive = { focus =  HUN_elect_a_democratic_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
@@ -750,12 +747,9 @@ date > 1949.12.1
 	focus = {
 		id = HUN_elect_a_democratic_king
 		icon = GFX_focus_generic_home_defense
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		prerequisite = { focus = HUN_elect_a_king }
 		mutually_exclusive = { focus =  HUN_elect_a_fascist_king }
 		mutually_exclusive = { focus =  HUN_invite_the_habsburg_prince }
@@ -788,7 +782,7 @@ date > 1949.12.1
 				remove_idea = HUN_hungarian_monarchy_2
 			}
 			add_ideas = HUN_dynastic_ties
-			unlock_decision_tooltip = HUN_call_in_sweden
+			# unlock_decision_tooltip = HUN_call_in_sweden
 			add_ideas = HUN_charles_v
 			add_relation_modifier = {
 				target = SWE
@@ -1502,12 +1496,9 @@ date > 1949.12.1
 		id = HUN_protect_austria
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = HUN_renew_the_rome_protocols }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		x = 2
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
@@ -2270,12 +2261,9 @@ add_state_core = 70
 		id = HUN_council_of_peoples_commissars
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = HUN_economic_intervention }
-<<<<<<< HEAD
-=======
 		allow_branch = {
 			always = no
 		}
->>>>>>> origin/vse-po-novoy
 		mutually_exclusive = { focus = HUN_strengthen_fascists }
 		relative_position_id = HUN_economic_intervention
 		x = 2
@@ -2964,7 +2952,7 @@ date > 1949.12.1
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_domestic_arms_industry }
+		
 		x = -1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -3032,7 +3020,7 @@ date > 1949.12.1
 		y = 1
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 70
@@ -3053,6 +3041,9 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = HUN_invite_foreign_investors
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -3064,7 +3055,7 @@ date > 1949.12.1
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 70
@@ -3135,7 +3126,7 @@ date > 1949.12.1
 		y = 2
 		relative_position_id = HUN_civilian_industry
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 70
@@ -3161,6 +3152,9 @@ date > 1949.12.1
 					amount = 16
 				}
 			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				}
 		}
 	}
 
@@ -3172,7 +3166,9 @@ date > 1949.12.1
 		x = -2
 		y = 3
 		relative_position_id = HUN_civilian_industry
-
+		allow_branch = {
+			always = no
+		}
 		cost = 10
 
 		ai_will_do = {
@@ -3205,7 +3201,7 @@ date > 1949.12.1
 		id = HUN_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_civilian_industry }
+		
 		x = 1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -4186,7 +4182,7 @@ date > 1949.12.1
 		id = HUN_mobile_focus
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_home_defense }
+		
 		x = -2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
@@ -4299,7 +4295,7 @@ date > 1949.12.1
 		id = HUN_develop_tanks
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = HUN_mobile_focus }
-		mutually_exclusive = { focus = HUN_assault_gun_focus }
+		
 		x = 0
 		y = 1
 		relative_position_id = HUN_mobile_focus
@@ -4326,11 +4322,7 @@ date > 1949.12.1
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-<<<<<<< HEAD
-				ahead_reduction = 0.3
-=======
 				ahead_reduction = 2
->>>>>>> origin/vse-po-novoy
 				uses = 1
 				category = armor
 			}
@@ -4341,7 +4333,7 @@ date > 1949.12.1
 		id = HUN_assault_gun_focus
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = HUN_mobile_focus focus = HUN_home_defense }
-		mutually_exclusive = { focus = HUN_develop_tanks }
+		
 		x = 2
 		y = 1
 		relative_position_id = HUN_mobile_focus
@@ -4491,7 +4483,7 @@ date > 1949.12.1
 		id = HUN_home_defense
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_mobile_focus }
+		
 		x = 2
 		y = 1
 		relative_position_id = HUN_army_maneuvers

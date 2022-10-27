@@ -8,10 +8,6 @@ state = {
 	history = {
 		owner = SOV
 		add_core_of = SOV
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 2
 			air_base = 1

@@ -2,11 +2,7 @@
 state={
 	id=290
 	name="STATE_290"
-<<<<<<< HEAD
-	manpower = 1
-=======
 	manpower = 744000
->>>>>>> origin/vse-po-novoy
 	
 	
 	state_category = rural
@@ -17,13 +13,7 @@ state={
 
 	history={
 		owner = SPR
-<<<<<<< HEAD
-		add_core_of = SPR
-		victory_points = {
-			9945 3
-		}
-=======
-		add_core_of = MOR
+		add_core_of = PRC
 		victory_points = {
 			9945 3
 		}
@@ -33,7 +23,6 @@ state={
 		victory_points = {
 			12087 1
 		}
->>>>>>> origin/vse-po-novoy
 		buildings = {
 			infrastructure = 2
 			air_base = 3
@@ -46,17 +35,9 @@ state={
 		}
 	}
 
-<<<<<<< HEAD
-	provinces={
-		4199 7215 9945 10113 12087 12100 
-	}
-
-	local_supplies=0.0 
-=======
 	provinces = {
 		4199 7215 9945 10113 12087 12100 
 	}
 
 	local_supplies = 0.0 
->>>>>>> origin/vse-po-novoy
 }

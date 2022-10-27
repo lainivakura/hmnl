@@ -16,11 +16,7 @@ equipments = {
 		group_by = archetype
 		interface_category = interface_category_armor
 		priority = 2000
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> origin/vse-po-novoy
 		
 
 		module_slots = {
@@ -447,7 +443,7 @@ equipments = {
 		
 		module_slots = inherit
 		maximum_speed = 4
-		build_cost_ic = 9
+		build_cost_ic = 8
 		reliability = 1.3
 		armor_value = 60
 		soft_attack = 3
@@ -456,22 +452,21 @@ equipments = {
 			steel = 1
 		}
 
-		module_slots = {
-			main_armament_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_medium_howitzer
-			tank_small_cannon_2
-			tank_close_support_gun
-			tank_medium_cannon
-			tank_auto_cannon
-			tank_anti_air_cannon
-			tank_high_velocity_cannon_m1
-			tank_medium_anti_air_cannon_1
-				}
-			}
-
-	}
+		# module_slots = {
+		# 	main_armament_slot = {
+		# 		required = yes
+		# 		allowed_module_categories = {
+		# 			tank_medium_howitzer
+		# 			tank_small_cannon_2
+		# 			tank_close_support_gun
+		# 			tank_medium_cannon
+		# 			tank_auto_cannon
+		# 			tank_anti_air_cannon
+		# 			tank_high_velocity_cannon_m1
+		# 			tank_medium_anti_air_cannon_1
+		# 		}
+		# 	}
+		# }
 }	
 	medium_tank_chassis_3 = {
 		abbreviation = "mt3"
@@ -696,10 +691,8 @@ equipments = {
 		maximum_speed = 3
 		reliability = 1.15
 		armor_value = 120
-				soft_attack = 5
-		hard_attack = 5
 		resources = {
-			steel = 2
+			steel = 1
 			chromium = 1
 		}
 	}
@@ -714,14 +707,14 @@ equipments = {
 		parent = heavy_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 23
-		maximum_speed = 2
+		build_cost_ic = 21
+		maximum_speed = 4
 		reliability = 1.3
 		armor_value = 150
 				soft_attack = 10
 		hard_attack = 10
 		resources = {
-			steel = 3
+			steel = 2
 			chromium = 2
 		}
 	}

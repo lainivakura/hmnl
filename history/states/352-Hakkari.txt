@@ -2,11 +2,7 @@
 state={
 	id=352
 	name="STATE_352" # Van
-<<<<<<< HEAD
-	manpower = 1
-=======
 	manpower = 262095
->>>>>>> origin/vse-po-novoy
 
 	state_category = rural
 
@@ -24,9 +20,6 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-<<<<<<< HEAD
-		
-=======
 		if = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
@@ -38,7 +31,6 @@ state={
 			}
 			add_core_of = TUR
 		}
->>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={

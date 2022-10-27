@@ -10,11 +10,6 @@ state=
 		victory_points = {
 			6727 1
 		}
-<<<<<<< HEAD
-		
-		
-=======
->>>>>>> origin/vse-po-novoy
 		owner = ROM
 		buildings = {
 			infrastructure = 2

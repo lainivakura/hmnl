@@ -1,24 +1,15 @@
 state={
 	id=322
 	name="STATE_322"
-<<<<<<< HEAD
+
+##PUSTOI_SLOT
 	
-
 	history={
-		owner = AFR
-
-		add_core_of = AFR
-
+		set_demilitarized_zone = yes
+		owner = VEN
+	
 	}
 
-
-=======
-
-	history={
-
-	}
-
->>>>>>> origin/vse-po-novoy
 	provinces={
 		2010 2093 4994 5011 7926 8068 10755 10918 
 	}
@@ -26,9 +17,5 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 
-<<<<<<< HEAD
-	local_supplies=2.0 
-=======
 	local_supplies=0.0
->>>>>>> origin/vse-po-novoy
 }

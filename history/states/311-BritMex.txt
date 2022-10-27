@@ -7,7 +7,7 @@ state=
 	state_category = pastoral
 	history=
 	{
-		add_core_of = AFR
+		add_core_of = VEN
 		owner = ENG
 		victory_points = {
 			2077 1 

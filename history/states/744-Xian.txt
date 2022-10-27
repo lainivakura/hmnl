@@ -7,21 +7,13 @@ state={
 
 	history={
 		owner = CHI
-<<<<<<< HEAD
-		
-=======
-		add_core_of = PRC
->>>>>>> origin/vse-po-novoy
 		add_core_of = CHI
 		victory_points = {
 			7418 1 
 		}
 		buildings = {
 			infrastructure = 2
-<<<<<<< HEAD
-=======
 			industrial_complex = 4
->>>>>>> origin/vse-po-novoy
 		}
 
 	}

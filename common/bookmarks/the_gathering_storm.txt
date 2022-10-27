@@ -95,7 +95,7 @@ available = { has_dlc = "No Step Back" }
 			ideology = fascism
 			ideas = {
 				vittoria_mutilata
-				victor_emmanuel
+				
 			}
 			focuses = {
 				ITA_pact_of_steel

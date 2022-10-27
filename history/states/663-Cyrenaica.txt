@@ -1,35 +1,12 @@
-<<<<<<< HEAD
-state={
-	id=663
-	name="STATE_663"
-	manpower = 8808
-	
-	state_category = wasteland
-=======
 
 state={
 	id=663
 	name="STATE_663"
->>>>>>> origin/vse-po-novoy
 
 	history={
 		owner = ITA
 		buildings = {
 			infrastructure = 1
-<<<<<<< HEAD
-		}
-		add_core_of = AFR
-victory_points = {
-            		1060 2
-        	}
-	}
-
-	provinces={
-		1060 11951 10785 1062 1186 4060 4063 4133 7063 7139 7206 9977 10049 12025 12079 13078 
-	}
-
-	local_supplies=0.0 
-=======
 
 		}
 		add_core_of = LBA
@@ -43,5 +20,4 @@ victory_points = {
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000
->>>>>>> origin/vse-po-novoy
 }

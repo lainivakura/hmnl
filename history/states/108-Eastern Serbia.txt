@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/vse-po-novoy
 state={
 	id=108
 	name="STATE_108"
@@ -11,11 +8,7 @@ state={
 
 	history={
 		victory_points = {
-<<<<<<< HEAD
-			9602 3
-=======
 			9602 3 
->>>>>>> origin/vse-po-novoy
 		}
 		owner = YUG
 		buildings = {
@@ -32,10 +25,6 @@ state={
 	manpower=707000
 	buildings_max_level_factor=1.000
 	state_category=town
-<<<<<<< HEAD
-local_supplies=5.0 
-=======
 
 	local_supplies=5.0 
->>>>>>> origin/vse-po-novoy
 }

@@ -5,11 +5,7 @@ state={
 	manpower = 1104000
 	
 	state_category = town
-resources={
-		
-		steel=10 # was: 32
-		aluminium = 5 
-	}
+
 	history={
 		owner = FRA
 		victory_points = {
@@ -24,7 +20,7 @@ resources={
 			}
 		}
 
-		add_core_of = AFR
+		add_core_of = PRC
 	}
 
 	provinces={

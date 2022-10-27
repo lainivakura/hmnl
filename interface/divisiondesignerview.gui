@@ -1,6 +1,4 @@
 guiTypes = {
-<<<<<<< HEAD
-=======
 
 	containerWindowType = 
 	{
@@ -53,7 +51,6 @@ guiTypes = {
 		}
 	}
 
->>>>>>> origin/vse-po-novoy
 	containerWindowType = {
 		name = "div_template_3d_model_entry"
 		position = { x=0 y=0 }
@@ -280,15 +277,9 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "support_grid"
-<<<<<<< HEAD
-				position = { x = 23 y = 57 }
-				size = { width = 85 height = 100%% }
-				slotsize = { width = 82 height = 42 }
-=======
 				position = { x = 23 y = 50 }
 				size = { width = 85 height = 100%% }
 				slotsize = { width = 32 height = 45 }
->>>>>>> origin/vse-po-novoy
 				format = "UPPER_LEFT"
 			}
 			
@@ -831,11 +822,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "support_header_label"
-<<<<<<< HEAD
-			position = { x = 0 y = 196 }
-=======
 			position = { x = 0 y = 490 }
->>>>>>> origin/vse-po-novoy
 			font = "hoi_18mbs"
 			text = "SUPPORT_HEADER"
 			maxWidth = 110
@@ -1118,11 +1105,8 @@ guiTypes = {
 				position = { x=5 y=235}	
 				size = { width=533 height=176 }
 				verticalScrollbar = "right_vertical_slider"
-<<<<<<< HEAD
-=======
 				scroll_wheel_factor = 42
 				smooth_scrolling = yes
->>>>>>> origin/vse-po-novoy
 				
 				background = {
 					name = "Background"
@@ -1152,11 +1136,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"		
-<<<<<<< HEAD
-			spriteType = "GFX_tiled_plain_bg_small"
-=======
 			spriteType = "GFX_mini_bg"
->>>>>>> origin/vse-po-novoy
 		}
 
 		buttonType = {
@@ -1210,13 +1190,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "designer_division_support_slot_entry"
-<<<<<<< HEAD
-		position = { x=0 y=0}	
-		size = { width=64 height=53 }
-=======
 		position = { x=0 y=-20}	
 		size = { width=64 height=50 }
->>>>>>> origin/vse-po-novoy
 		clipping = no
 
 		background = {
@@ -1448,43 +1423,24 @@ guiTypes = {
 			multiline = no
 		}
 	}
-<<<<<<< HEAD
-	
-	containerWindowType = {
-		name = "designer_adjuster_entry"	
-=======
 
 	containerWindowType = {
 		name = "designer_adjuster_entry"
->>>>>>> origin/vse-po-novoy
 		size = { width = 50 height = 70 }
 		clipping = no
 
 		iconType = {
-<<<<<<< HEAD
-			name ="terrain_mod_bg"
-=======
 			name ="background"
->>>>>>> origin/vse-po-novoy
 			spriteType = "GFX_adjuster_unknown_bg"
 			position = { x=18 y=11 }
 		}
 
 		iconType = {
-<<<<<<< HEAD
-			name ="terrain_mod_frame"
-=======
 			name ="frame"
->>>>>>> origin/vse-po-novoy
 			spriteType = "GFX_terrain_mod_frame"
 			position = { x=7 y=5 }
 		}
 
-<<<<<<< HEAD
-
-		iconType = {
-			name ="terrain_mod_attack_strip"
-=======
 		iconType = {
 			name ="movement"
 			spriteType = "GFX_terrain_mod_movement_strip"
@@ -1494,42 +1450,10 @@ guiTypes = {
 
 		iconType = {
 			name ="attack"
->>>>>>> origin/vse-po-novoy
 			spriteType = "GFX_terrain_mod_attack_strip"
 			position = { x=34 y=42 }
 			frame = 1
 		}
-<<<<<<< HEAD
-		
-		iconType = {
-			name ="terrain_mod_movement_strip"
-			spriteType = "GFX_terrain_mod_movement_strip"
-			position = { x=11 y=42 }
-			frame = 1
-		}
-
-		iconType = {
-			name ="terrain_mod_defense_strip"
-			spriteType = "GFX_terrain_mod_defense_strip"
-			position = { x=56 y=42 }
-			frame = 1
-		}		
-
-	}
-	
-	containerWindowType = {
-		name = "designer_adjuster_entry_with_modifier"	
-		size = { width = 84 height = 75 }
-		clipping = no
-
-		#background = {
-		#	name = "bg"
-		#	spriteType = "GFX_mini_tooltip"
-		#}
-
-		iconType = {
-			name ="terrain_mod_bg"
-=======
 
 		iconType = {
 			name ="defense"
@@ -1546,50 +1470,24 @@ guiTypes = {
 
 		iconType = {
 			name ="background"
->>>>>>> origin/vse-po-novoy
 			spriteType = "GFX_adjuster_unknown_bg"
 			position = { x=18 y=11 }
 		}
 
 		iconType = {
-<<<<<<< HEAD
-			name ="terrain_mod_frame"
-=======
 			name ="frame"
->>>>>>> origin/vse-po-novoy
 			spriteType = "GFX_terrain_mod_frame"
 			position = { x=7 y=5 }
 		}
 
-<<<<<<< HEAD
-
-		iconType = {
-			name ="terrain_mod_attack_defense_strip"
-			spriteType = "GFX_terrain_mod_attack_defense_strip"
-			position = { x=34 y=42 }
-			frame = 1
-		}
-		
-		iconType = {
-			name ="terrain_mod_movement_strip"
-=======
 		iconType = {
 			name ="movement"
->>>>>>> origin/vse-po-novoy
 			spriteType = "GFX_terrain_mod_movement_strip"
 			position = { x=11 y=42 }
 			frame = 1
 		}
 
 		iconType = {
-<<<<<<< HEAD
-			name ="terrain_mod_other_strip"
-			spriteType = "GFX_terrain_mod_other_strip"
-			position = { x=56 y=42 }
-			frame = 1
-		}		
-
-=======
 			name ="attack_defense"
 			spriteType = "GFX_terrain_mod_attack_defense_strip"
 			position = { x=34 y=42 }
@@ -1602,6 +1500,5 @@ guiTypes = {
 			position = { x=56 y=42 }
 			frame = 1
 		}
->>>>>>> origin/vse-po-novoy
 	}
 }

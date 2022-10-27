@@ -1,33 +1,22 @@
 state={
 	id=302
 	name="STATE_302"
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> origin/vse-po-novoy
 	
 	state_category = city
 
+##PUSTOI_SLOT
+	impassable = yes
 	history={
-<<<<<<< HEAD
-		owner = AFR
-
-		add_core_of = AFR
-=======
->>>>>>> origin/vse-po-novoy
-
+		owner = VEN
+	
 	}
 
 	provinces={
 		2174 5179 5229 5230 8157 8225 10938 10952 10987 12930 12979 13134 13174 13195 
 	}
 	manpower=1
-<<<<<<< HEAD
-	
-=======
 	buildings_max_level_factor=1.000
->>>>>>> origin/vse-po-novoy
 
 	local_supplies=0.0 
 }

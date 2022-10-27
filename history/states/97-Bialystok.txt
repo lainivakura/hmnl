@@ -7,13 +7,7 @@ state={
 		victory_points = {
 			11301 3
 		}
-<<<<<<< HEAD
-		victory_points = {
-			3393 3
-		}
-=======
 		
->>>>>>> origin/vse-po-novoy
 		victory_points = {
 			3254 1
 		}
@@ -24,12 +18,7 @@ state={
 
 		}
 		add_core_of = POL
-<<<<<<< HEAD
-		
-add_core_of = SOV
-=======
 
->>>>>>> origin/vse-po-novoy
 	}
 
 	provinces={
@@ -38,10 +27,6 @@ add_core_of = SOV
 	manpower=1157200
 	buildings_max_level_factor=1.000
 	state_category=rural
-<<<<<<< HEAD
-local_supplies=5.0 
-=======
 
 	local_supplies=5.0 
->>>>>>> origin/vse-po-novoy
 }
