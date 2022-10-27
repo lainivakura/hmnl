@@ -19,6 +19,8 @@ technologies = {
 		
 		category_all_armor = {
 			breakthrough = 0.1
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 		
 		planning_speed = 0.5
@@ -116,9 +118,7 @@ technologies = {
 			max_organisation = 2
 		}
 
-		category_all_armor = {
-			maximum_speed = 0.05
-		}
+		
 		category_all_infantry = {
 			defense = 0.10
 		}
@@ -462,8 +462,8 @@ technologies = {
 
 				category_all_armor = {
 					
-					soft_attack = 0.15
-					hard_attack = 0.10
+					soft_attack = 0.1
+					hard_attack = 0.05
 				}
 				
 				path = {
@@ -515,8 +515,8 @@ technologies = {
 				xp_unlock_cost = 100
 
 				category_all_armor = {
-					default_morale = 0.02
-				}
+					maximum_speed = 0.05
+					}
 				armored_car = {
 					default_morale = 0.1
 				}
@@ -578,7 +578,10 @@ technologies = {
 				}
 				# faster planning
 				planning_speed = 0.2
-				
+				category_all_armor = {
+					hard_attack = 0.05
+					soft_attack = 0.05
+					}
 				enable_tactic = tactic_overwhelming_fire
 				
 				path = {
@@ -690,8 +693,8 @@ technologies = {
 				enable_tactic = tactic_backhand_blow
 				
 				category_all_armor = {
-					soft_attack = 0.15
-					hard_attack = 0.10
+					soft_attack = 0.1
+					hard_attack = 0.05
 				}
 				
 				path = {
@@ -2845,6 +2848,10 @@ technologies = {
 		category_army = {
 			soft_attack = 0.05
 		}
+		category_all_armor = {
+					hard_attack = 0.05
+					soft_attack = 0.05
+					}
 		category_support_battalions = {
 			max_organisation = 10
 		}
@@ -2921,7 +2928,7 @@ technologies = {
 			max_organisation = 5
 		}
 		category_all_armor = {
-			soft_attack = 0.10
+			soft_attack = 0.05
 		}
 		enable_tactic = tactic_blitz
 		
@@ -3034,7 +3041,10 @@ technologies = {
 		category_front_line = {
 			max_organisation = 5
 		}
-		
+		category_all_armor = {
+					hard_attack = 0.05
+					breakthrough = 0.05
+					}
 		
 		enable_tactic = tactic_overwhelming_fire
 		
@@ -3147,6 +3157,7 @@ technologies = {
 		
 		category_all_armor = {
 			default_morale = 0.03
+			soft_attack = 0.05
 		}
 		armored_car = {
 			default_morale = 0.1
@@ -3213,8 +3224,8 @@ technologies = {
 		land_reinforce_rate = 0.05
 		
 		category_all_armor = {
-			soft_attack = 0.15
-			hard_attack = 0.15
+			soft_attack = 0.1
+			hard_attack = 0.05
 		}
 		
 		#enable_tactic = tactic_backhand_blow

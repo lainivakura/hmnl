@@ -5717,7 +5717,6 @@ focus_tree = {
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
 
-		mutually_exclusive = { focus = SOV_cohesion_first }
 
 		available = {
 
@@ -5788,7 +5787,6 @@ focus_tree = {
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
 
-		mutually_exclusive = { focus = SOV_restore_cossack_units }
 
 		available = {
 		}
@@ -5833,7 +5831,7 @@ date > 1941.10.1
 		x = 0
 		y = 2
 		relative_position_id = SOV_rehabilitated_military
-		cost = 10
+		cost = 17
 
 		select_effect = {
 			add_ideas = SOV_military_reorganization_ns
@@ -5851,17 +5849,24 @@ date > 1941.10.1
 			effect_tooltip = {
 				add_ideas = SOV_military_reorganization_ns
 			}
-
+			
 			#(Complete Effect)
 			custom_effect_tooltip = SOV_focus_complete_effect_tt
 			hidden_effect = {
 				remove_ideas = SOV_military_reorganization_ns
 			}
-
+			swap_ideas = {
+				remove_idea = SOV_politicized_military
+				add_idea = SOV_politicized_military_reorganization
+				}
 			add_to_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = -0.1 }
 			add_to_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = -0.1 }
 			custom_effect_tooltip = SOV_military_reorganization_ns_tt
-
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 			army_experience = 50
 			add_command_power = 25
 		}
@@ -5942,12 +5947,16 @@ date > 1941.10.1
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
-
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt
 
 			unlock_decision_tooltip = SOV_order_227
 			custom_effect_tooltip = SOV_lessons_of_war_unlock_military_operations_tt
-
+			
 			custom_effect_tooltip = SOV_lessons_of_war_cowed_trait_tt
 			hidden_effect = {
 				every_army_leader = {
@@ -6204,10 +6213,10 @@ date > 1941.10.1
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = SOV_politicized_military
+					has_idea = SOV_politicized_military_reorganization
 				}
 				swap_ideas = {
-					remove_idea = SOV_politicized_military
+					remove_idea = SOV_politicized_military_reorganization
 					add_idea = SOV_politicized_military_keep
 				}
 			}
@@ -6300,10 +6309,10 @@ date > 1941.10.1
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = SOV_politicized_military
+					has_idea = SOV_politicized_military_reorganization
 				}
 				swap_ideas = {
-					remove_idea = SOV_politicized_military
+					remove_idea = SOV_politicized_military_reorganization
 					add_idea = SOV_politicized_military_swap
 				}
 			}
@@ -6319,7 +6328,7 @@ date > 1941.10.1
 			else = { #To prevent the ugly "No current effects" tooltip if other focus taken
 				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = SOV_politicized_military
+						remove_idea = SOV_politicized_military_reorganization
 						add_idea = SOV_politicized_military_swap
 					}
 				}
@@ -6335,7 +6344,7 @@ date > 1941.10.1
 		y = 1
 		relative_position_id = SOV_keep_commissars_organization
 		cost = 10
-
+		
 		allow_branch = {
 			NOT = {
 				has_government = fascism
@@ -6347,7 +6356,7 @@ date > 1941.10.1
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			surrender_progress < 0.05
+			date > 1942.11.23
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6355,6 +6364,8 @@ date > 1941.10.1
 		completion_reward = {
 			add_to_variable = { SOV_the_red_army_special_forces_cap = 0.1 }
 			add_to_variable = { SOV_the_red_army_land_doctrine_cost_factor = -0.1 }
+			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
+			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
 			custom_effect_tooltip = SOV_the_glory_of_the_red_army_ns_tt
 
 			army_experience = 75
@@ -11644,54 +11655,9 @@ date > 1949.12.1
 		search_filters = {}
 
 		completion_reward = {
-			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1095 }
+			army_experience = 110
 			
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-					has_completed_focus = SOV_covert_support_for_spanish_poum
-					has_completed_focus = SOV_coup_detat
-					has_global_flag = SPR_anarchist_uprising_flag
-					country_exists = SPC
-					# SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
-				}
-				SPC = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					country_exists = SPD
-				}
-				SPD = {
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
-			else_if = {
-				limit = {
-					has_dlc = "La Resistance"
-					NOT = { country_exists = SPD }
-				}
-				custom_effect_tooltip = SOV_aid_republican_spain_tt
-				effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-			}
-			else = {
-				random_country = {
-					limit = {
-						original_tag = SPR
-						has_civil_war = yes
-						OR = {
-							has_government = communism
-							has_government = democratic
-						}
-					}
-					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
-					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
-				}
-			}
+		
 			# A Spanish General will join the USSR if his side loses the SCW
 			if = {
 				limit = {
