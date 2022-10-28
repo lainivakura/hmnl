@@ -6759,8 +6759,7 @@ date > 1941.10.1
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
-			add_stability = -0.05
-			add_war_support = -0.05
+			add_stability = -0.07
 
 			if = { #Target a rural state with no civs
 				limit = {
