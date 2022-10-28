@@ -110,11 +110,6 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = usa.4.b
-		USA = { country_event = { id = usa.5 days = 1 } }
-		ai_chance = { factor = 0 }
-	}
 
 }
 
