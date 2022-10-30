@@ -2905,7 +2905,7 @@ date > 1949.12.1
 		}
 		
 		available = {
-date > 1941.5.1
+date > 1941.6.21
 			is_subject = no
 		}
 		x = 0
@@ -2974,7 +2974,48 @@ date > 1941.5.1
 			}
 		}
 	}
-
+focus = {
+		id = GER_sloti_late
+		cost = 10
+		available = {
+				date >		1942.6.1
+			}		
+		prerequisite = { focus = GER_wunderwaffe }
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 7
+		completion_reward = {
+		55 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		54 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		60 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		52 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		59 = {
+			add_extra_state_shared_building_slots = 8
+			}
+	}
+}
+focus = {
+		id = GER_war_production
+		icon = GFX_goal_generic_production2
+		cost = 10
+		available = {
+				date >		1942.3.1
+			}		
+		prerequisite = { focus = GER_wunderwaffe }
+		x = 15
+		y = 7
+		completion_reward = {
+			add_ideas = ger_production_increase
+	}
+}
 
 	focus = {
 		id = GER_turkey_friend
@@ -8997,9 +9038,10 @@ focus = {
 		text = stainer_vperde
 		icon = GFX_goal_ger_stainer_davi
 		cost = 1
+		
 		x = 13
 		y = 0
-available = {
+		available = {
 					date > 1941.12.1
 					OR = {
 							SOV = {
@@ -9025,19 +9067,68 @@ available = {
 	}
 	focus = {
 		id = vtoroi_udar
+		prerequisite = { focus = GER_ussr_war_goal}
 		text = vtoroi_udar
 		icon = GFX_focus_hol_united_netherlands
 		cost = 1
-		x = 12
-		y = 1
-available = {
-					date > 1942.04.1
+		x = 22
+		y = 4
+		available = {
+				controls_state = 221
+				controls_state = 227
+				date > 1942.04.1
 				}
 			completion_reward = {
-					add_timed_idea = {
-							idea = GER_vtoroi
-							days = 120
-						}
+					228 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					245 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					218 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					234 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					217 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					238 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					235 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+				
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_0
 							amount = 150000
@@ -9051,7 +9142,7 @@ available = {
 		cost = 1
 		x = 14
 		y = 1
-available = {
+		available = {
 					date > 1941.11.1
 					OR = {
 							SOV = {

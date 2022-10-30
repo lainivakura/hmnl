@@ -10888,7 +10888,7 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 79 } #20 trains per factory
+			has_equipment = { train_equipment > 39 } #20 trains per factory
 		}
 
 		visible = {
@@ -10914,7 +10914,7 @@ SOV_industry_relocation = {
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = SOV_industrial_relocation_trains_decision_negative
+					amount = -40
 					producer = SOV
 				}
 			}
@@ -11021,7 +11021,7 @@ SOV_industry_relocation = {
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = SOV_industrial_relocation_trains_decision
+					amount = 40
 					producer = SOV
 				}
 			}
@@ -11152,6 +11152,81 @@ SOV_industry_relocation = {
 					add_resource = {
 						type = aluminium
 						amount = 12
+					}
+				}
+			}
+			custom_effect_tooltip = SOV_relocate_industry_from_leningrad_tt
+		}
+	}
+	move_harkov_steel_plant = { #221
+
+		icon = steel
+		highlight_states = {
+			highlight_state_targets = {
+				state = 221
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_full_control_of_state = 221
+			has_full_control_of_state = 572
+			has_equipment = { train_equipment > 19 } #20 trains per factory
+		}
+
+		visible = {
+			has_completed_focus = SOV_move_industry_to_the_urals
+			controls_state = 195
+			controls_state = 572
+			has_civil_war = no
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = SOV_industrial_relocation_days
+
+		modifier = {
+
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = -40
+					producer = SOV
+				}
+			}
+			221 = {
+				add_resource = {
+					type = steel
+					amount = -33
+				}
+			}
+			custom_effect_tooltip = SOV_industry_relocation_aluminium_plant_trains_tt
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 40
+					producer = SOV
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 572
+				}
+				572 = {
+					add_resource = {
+						type = steel
+						amount = 33
 					}
 				}
 			}
