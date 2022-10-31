@@ -1184,10 +1184,7 @@ focus_tree = {
 		}
 
 		available = {
-			CHI = {
-				surrender_progress > 0.3
-			}
-			has_war_with = USA
+
 		}
 
 		bypass = {
