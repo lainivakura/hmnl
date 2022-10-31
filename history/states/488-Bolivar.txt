@@ -5,15 +5,8 @@ state={
 	manpower = 1
 	
 	state_category = pastoral
-resources={
-		
-rubber=31
-		steel=25
-		tungsten=95 
-		aluminium = 4 
-oil = 48
-	}
 
+	impassable = yes
 	history={
 		owner = VEN
 		buildings = {
