@@ -2217,47 +2217,75 @@ country_event = { #SWI is neutral, and seeks trade agreement with neighbor.
 		}
 	}
 
-	option = { #Build weapon parts
-		name = BBA_switzerland_trade.1.a
+	# option = { #Build weapon parts
+	# 	name = BBA_switzerland_trade.1.a
+	# 	ai_chance = {
+	# 		base = 10
+	# 	}
+	# 	trigger = {
+	# 	}
+	# 	FROM = {
+	# 		add_ideas = {
+	# 			SWI_active_trade_agreement
+	# 		}
+	# 		hidden_effect = {
+	# 			country_event = { id = BBA_switzerland_trade.3 months = 12 }
+	# 		}		
+	# 	}
+	# 	add_ideas = {
+	# 		SWI_trading_with_switzerland_military
+	# 	}
+	# 	SWI_trade_agreement_apply_opinions = yes
+	# }
+	# option = { #Civilian stuff
+	# 	name = BBA_switzerland_trade.1.b
+	# 	ai_chance = {
+	# 		base = 10
+	# 	}
+	# 	trigger = {
+	# 	}
+	# 	FROM = {
+	# 		add_ideas = {
+	# 			SWI_active_trade_agreement
+	# 		}
+	# 		hidden_effect = {
+	# 			country_event = { id = BBA_switzerland_trade.3 months = 12 }
+	# 		}
+	# 	}
+	# 	add_ideas = {
+	# 		SWI_trading_with_switzerland_civilian
+	# 	}
+	# 	SWI_trade_agreement_apply_opinions = yes
+		
+	# }
+	option = { #We don't need help from neutrals
+		name = BBA_switzerland_trade.1.c
 		ai_chance = {
 			base = 10
+			modifier = {
+				factor = 0 
+				SWI_country_opinion_is_good = yes 
+			}
 		}
 		trigger = {
-		}
-		FROM = {
-			add_ideas = {
-				SWI_active_trade_agreement
-			}
-			hidden_effect = {
-				country_event = { id = BBA_switzerland_trade.3 months = 12 }
-			}		
-		}
-		add_ideas = {
-			SWI_trading_with_switzerland_military
-		}
-		SWI_trade_agreement_apply_opinions = yes
+			has_government = fascism  
 		}
 
-	option = { #Civilian stuff
-		name = BBA_switzerland_trade.1.b
+		FROM = { country_event = { id = BBA_switzerland_trade.7 hours = 3 } }
+	}
+	option = { #No thank you 
+		name = BBA_switzerland_trade.1.d
 		ai_chance = {
-			base = 10
+			base = 10 
+			modifier = {
+				factor = 0 
+				SWI_country_opinion_is_good = yes 
+			}
 		}
 		trigger = {
+			NOT = { has_government = fascism }
 		}
-		FROM = {
-			add_ideas = {
-				SWI_active_trade_agreement
-			}
-			hidden_effect = {
-				country_event = { id = BBA_switzerland_trade.3 months = 12 }
-			}
-		}
-		add_ideas = {
-			SWI_trading_with_switzerland_civilian
-		}
-		SWI_trade_agreement_apply_opinions = yes
-		
+		FROM = { country_event = { id = BBA_switzerland_trade.7 hours = 3 } }
 	}
 }
 
