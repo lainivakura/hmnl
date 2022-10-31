@@ -2,29 +2,12 @@ state={
 	id=112
 	name="STATE_112"
 	resources={
-		tungsten=50.000
+		# tungsten=50.000
 	}
-
+	impassable = yes
 	history={
-		owner = POR
-		victory_points = {
-			11805 20 
-		}
-		victory_points = {
-			3798 1 
-		}
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 2
-			air_base = 5
-			dockyard = 2
-			11805 = {
-				naval_base = 8
-			}
-		}
-		add_core_of = POR
-
+		owner = VEN
+		add_core_of = VEN
 	}
 
 	provinces={
