@@ -8,11 +8,8 @@ state=
 	
 	history=
 	{
-		add_dynamic_modifier = {
-			modifier = ASIA_PREWAR
-		}
-		set_demilitarized_zone = yes
-		owner = USA
+
+		owner = INS
 		buildings = {
 			infrastructure = 2
 			4429 = {

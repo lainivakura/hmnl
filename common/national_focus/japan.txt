@@ -1437,95 +1437,14 @@ focus_tree = {
 			news_event = {
 				id = atom_japan.1
 			}
-			327 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			334 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			335 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			623 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			624 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			625 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			626 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			627 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			628 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			667 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			668 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			669 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			672 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			673 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			738 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
+			USA = {
+				set_state_controller = 327
+				set_state_controller = 623
+				set_state_controller = 624
+				set_state_controller = 625
+				set_state_controller = 626
+				set_state_controller = 627
+				set_state_controller = 628
 			}
 		}
 	}
@@ -1562,7 +1481,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.6.1
+			date > 1941.5.1
 		}
 
 		bypass = {
@@ -1583,95 +1502,23 @@ focus_tree = {
 				idea = tora_japan2
 				days = 60
 			}
-			327 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
+			USA = {
+				set_state_controller = 327
+				set_state_controller = 623
+				set_state_controller = 624
+				set_state_controller = 625
+				set_state_controller = 626
+				set_state_controller = 627
+				set_state_controller = 628
 			}
-			334 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			335 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			623 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			624 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			625 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			626 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			627 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			628 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			667 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			668 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			669 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			672 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			673 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
-			}
-			738 = {
-				set_demilitarized_zone = no
-				remove_dynamic_modifier = {
-					modifier = ASIA_PREWAR
-				}
+			USA = {
+				set_state_owner = 327
+				set_state_owner = 623
+				set_state_owner = 624
+				set_state_owner = 625
+				set_state_owner = 626
+				set_state_owner = 627
+				set_state_owner = 628
 			}
 		}
 	}
