@@ -3,7 +3,10 @@ state={
 	name="STATE_738"
 
 	history={
-
+		add_dynamic_modifier = {
+			modifier = ASIA_PREWAR
+		}
+		set_demilitarized_zone = yes
 		owner = INS
 		add_core_of = INS
 		buildings = {

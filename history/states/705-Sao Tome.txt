@@ -3,11 +3,17 @@ state={
 	name="STATE_705"
 	manpower=24725	
 	state_category = tiny_island
-	impassable = yes
+
 	history={
-		owner = VEN
-		add_core_of = VEN
+		owner = POR
+		buildings = {
+			infrastructure = 1
+			13015 ={
+				naval_base = 1
+			}
+		}
 	}
+
 	provinces={
 		13015 
 	}

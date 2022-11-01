@@ -7,8 +7,11 @@ state=
 	state_category = rural
 	history=
 	{
-
-		owner = INS
+		add_dynamic_modifier = {
+			modifier = ASIA_PREWAR
+		}
+		set_demilitarized_zone = yes
+		owner = USA
 		buildings = {
 			infrastructure = 2
 		}

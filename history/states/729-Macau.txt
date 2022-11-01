@@ -4,10 +4,19 @@ state={
 	manpower = 1
 	
 	state_category = enclave
-	impassable = yes
+	
 	history={
-		owner = VEN
-		add_core_of = VEN
+		owner = POR
+		# add_core_of = CHI
+		victory_points = {
+			4189 1 
+		}
+		buildings = {
+			infrastructure = 2
+			4189 = {
+				naval_base = 1
+			}
+		}
 	}
 	
 	provinces={

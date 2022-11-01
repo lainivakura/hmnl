@@ -7,8 +7,11 @@ state=
 	state_category = town
 	history=
 	{
-
-		owner = INS
+		add_dynamic_modifier = {
+			modifier = ASIA_PREWAR
+		}
+		set_demilitarized_zone = yes
+		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

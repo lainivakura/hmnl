@@ -1,10 +1,18 @@
 state={
 	id=796
 	name="STATE_796"
-	impassable = yes
 	history={
-		owner = VEN
-		add_core_of = VEN
+		owner = POR
+		buildings = {
+			infrastructure = 1
+			2115 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			2115 1 
+		}
+		# add_core_of = PRC
 	}
 	provinces={
 		2115 

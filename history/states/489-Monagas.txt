@@ -9,7 +9,7 @@ state={
 	resources={
 		oil=35 # was: 126
 	}
-	impassable = yes
+
 	history={
 		owner = VEN
 		buildings = {
