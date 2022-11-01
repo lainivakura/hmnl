@@ -2072,7 +2072,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 10
+		cost = 5
 
 
 		
@@ -2097,7 +2097,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 10
+		cost = 5
 
 
 		
@@ -2125,7 +2125,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 10
+		cost = 5
 
 
 		
@@ -2189,7 +2189,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 10
+		cost = 5
 
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
