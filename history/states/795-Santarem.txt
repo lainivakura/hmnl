@@ -2,23 +2,12 @@ state={
 	id=795
 	name="STATE_795"
 	resources={
-		chromium=20.000 #added due to portugal setup
+		# chromium=20.000 #added due to portugal setup
 	}
+	impassable = yes
 	history={
-		owner = POR
-		victory_points = {
-			9869 1 
-		}
-		victory_points = {
-			924 1 
-		}
-		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 2
-
-		}
-		add_core_of = POR
-
+		owner = VEN
+		add_core_of = VEN
 	}
 
 	provinces={

@@ -5,15 +5,10 @@ state={
 	manpower = 455604
 	
 	state_category = pastoral
-
+	impassable = yes
 	history={
-		owner = POR
-		buildings = {
-			infrastructure = 2
-			12190 ={
-				naval_base = 1
-			}
-		}
+		owner = VEN
+		add_core_of = VEN
 	}
 
 	provinces={
