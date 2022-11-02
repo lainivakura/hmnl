@@ -7,8 +7,25 @@ state={
 	state_category = town
 
 ##PUSTOI_SLOT
-	
+	resources={
+				
+		rubber=31
+		steel=25
+		tungsten=95 
+		aluminium = 4 
+		oil = 48
+	}
+	resources={
+		steel=3 # was: 4
+		chromium=90 # was: 160
+		oil=41 # was: 58
+		rubber=6
+	}
 	history={
+		buildings = {
+			10886 = {naval_base = 1}
+			13085 = {naval_base = 1}
+		}
 		set_demilitarized_zone = yes
 		owner = VEN
 	}

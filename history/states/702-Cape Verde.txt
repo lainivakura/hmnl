@@ -4,17 +4,11 @@ state={
 	manpower = 150600
 	
 	state_category = small_island
-
+	impassable = yes
 	history={
-		owner = POR
-		buildings = {
-			infrastructure = 2
-			13014 ={
-				naval_base = 1
-			}
-		}
+		owner = VEN
+		add_core_of = VEN
 	}
-
 	provinces={
 		13014 
 	}

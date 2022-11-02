@@ -1,5 +1,5 @@
 ASIA_PREWAR = { #STATE MODIFIER
 	enable = { always = yes }
 	icon = GFX_modifiers_ETH_state_development
-	state_production_speed_buildings_factor = -9
+	state_production_speed_buildings_factor = -1
 }

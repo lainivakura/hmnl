@@ -113,7 +113,7 @@ GER_folcsturm= {
 
 				modifier = {
 				mobilization_speed = 0.5
-conscription = 0.01
+conscription = 0.1
 				
 }
 
