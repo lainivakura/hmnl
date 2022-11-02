@@ -2495,6 +2495,12 @@ add_tech_bonus = {
 				category = nuclear
 				category = rocketry
 			}
+			add_tech_bonus = {
+			name = GER_tank
+			bonus = 2.0
+			uses = 1
+			technology = advanced_medium_tank_chassis
+			}
 		}
 	}
 	
@@ -9012,22 +9018,6 @@ date > 1949.12.1
 		}
 	}
 
-focus = {
-      	id = tretiy_tank
-		text = tretiy_tank
-		icon = GFX_focus_wonderweapons
-		cost = 10
-		x = 10
-		y = 0
-		completion_reward = {
-	  	add_tech_bonus = {
-		name = GER_the_mannheim_project
-		bonus = 2.0
-		uses = 1
-		technology = medium_tank_chassis_3
-					} 
-    }
-	}
 
 
 focus = {
