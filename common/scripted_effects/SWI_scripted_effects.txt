@@ -1834,40 +1834,7 @@ SWI_angry_country_cleanup = { #MEant to clean up any leftover variables or flags
 	}
 }
 SWI_find_fascist_germany = { #Checks if fascist Germany still exists, and if it does, set a variable with it. If not, it sets a Country Flag to know there's no more fascist Germany. 
-	
-	if = {
-		limit = {
-			SWI_fascist_germany_exists = yes 
-		}
-		if = {
-			limit = {
-				# SWI_is_fasc_ger = no
-				any_other_country = {
-					original_tag = GER 
-					NOT = { has_government = fascism }
-				}
-			}
-			random_other_country = {
-				# limit = {
-				# 	SWI_is_fasc_ger = yes
-				# }
-				SWI = {
-					set_variable = { SWI_fascist_germany = PREV }
-				}				
-			}
-		}
-		SWI = {
-			if = {
-				limit = {
-					has_country_flag = SWI_fascist_germany_is_dead 
-				}
-				clr_country_flag = SWI_fascist_germany_is_dead
-			}
-		}
-	}
-	else = {
-		SWI = { set_country_flag = SWI_fascist_germany_is_dead }
-	}	
+
 }
 
 ########################################################################################
