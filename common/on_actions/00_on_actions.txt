@@ -424,7 +424,9 @@ on_actions = {
 						retire_country_leader = yes
 						set_country_flag = warlord_replaced
 					}
-					
+					FROM = {
+						warlord_rule_all_parties = yes
+					}
 				}
 			}
 			#make sure Dominions lose the dominion tag
@@ -666,6 +668,35 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = GER
+				}
+				8 = {
+					if = {
+						limit = { is_core_of = ROOT }
+						remove_core_of = ROOT
+					}
+				}
+				28 = {
+					if = {
+						limit = { is_core_of = ROOT }
+						remove_core_of = ROOT
+					}
+				}
+				807 = {
+					if = {
+						limit = { is_core_of = ROOT }
+						remove_core_of = ROOT
+					}
+				}
+				85 = {
+					if = {
+						limit = { is_core_of = ROOT }
+						remove_core_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
 					NOT = { original_tag = GER }
 					NOT = { has_government = fascism }
 					has_civil_war = no
@@ -745,6 +776,13 @@ on_actions = {
 					}
 				}
 				country_event = france.10
+			}
+			if = {
+				limit = {
+					original_tag = GER
+					has_government = fascism
+				}
+				set_global_flag = germany_lost_the_war
 			}
 		}
 	}
@@ -981,6 +1019,20 @@ on_actions = {
 				clr_country_flag = ideology_civil_war
 				set_country_flag = { flag = won_ideology_civil_war value = 1 days = 365 }
 				country_event = { id = generic.11 days = 1 }
+			}
+			if = {
+				limit = {
+					original_tag = BUL
+					has_focus_tree = generic_focus
+				}
+				if = {
+					limit = { has_idea = BUL_second_national_catastrophe }
+					remove_ideas = BUL_second_national_catastrophe
+				}
+				if = {
+					limit = { has_idea = BUL_second_national_catastrophe_02 }
+					remove_ideas = BUL_second_national_catastrophe_02
+				}
 			}
 		}
 	}
