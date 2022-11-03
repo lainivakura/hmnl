@@ -23,7 +23,7 @@
 		prerequisite = {}
 		mutually_exclusive = { }
 		
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -46,6 +46,8 @@
 				}
 				remove_ideas = { FRA_disjointed_government }
 			}
+			unlock_decision_category_tooltip = VIC_concessions_to_the_germans
+			add_political_power = 200
 		}
 	}
 	focus = {
@@ -369,7 +371,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST }
 		completion_reward = {
-			unlock_decision_category_tooltip = VIC_concessions_to_the_germans
+			# unlock_decision_category_tooltip = VIC_concessions_to_the_germans
 		}
 	}
 	focus = {
@@ -431,7 +433,7 @@
 			factor = 1
 		}
 		available = {
-			
+			always = no
 		}
 		
 		bypass = {

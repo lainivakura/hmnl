@@ -1,10 +1,5 @@
 ideas = {
-
-
-    
-
-
-country = {
+  country = {
      free_trade_for_ai = {
       picture = MONTOE
 
@@ -16,18 +11,18 @@ country = {
         min_export = 0.55
       }
     }
-
   }
 
-country = {
-	ger_production_increase = {
-		picture = man_five_year_plan_industry
-		modifier = {
-			production_factory_max_efficiency_factor = 0.1
-		}
-	}
-}
-country = {
+  country = {
+    ger_production_increase = {
+      picture = man_five_year_plan_industry
+      modifier = {
+        production_factory_max_efficiency_factor = 0.1
+      }
+    }
+  }
+
+  country = {
      special_forces_cap_exploit = {
       picture = escort_effort_focus
 
@@ -42,26 +37,23 @@ country = {
     }
 
   }
-  	country = {
+
+  country = {
 		Horrors_WW1 = {
-			picture = chi_war_of_resistance
+      picture = chi_war_of_resistance
       allowed = {
         is_ai = yes
       }
-			removal_cost = -1
+      removal_cost = -1
 			
-			modifier = {
+      modifier = {
         monthly_population = -1
         conscription_factor = -1
         consumer_goods_factor = 1
         political_power_gain = -2
-				industrial_capacity_dockyard = -2.5
-				industrial_capacity_factory = -2.5
-				# production_factory_max_efficiency_factor = -3
-				# line_change_production_efficiency_factor = -1
-				# production_factory_start_efficiency_factor = 0
-				# custom_modifier_tooltip = SPR_military_disloyalty_tt
-			}
-		}		
-	}	
+        industrial_capacity_dockyard = -2.5
+        industrial_capacity_factory = -2.5
+      }
+		}
+	}
 }
