@@ -91,6 +91,14 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipmen
 --Navy
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 0.9
 NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.9
+NDefines.NNavy.BASE_POSITIONING = 0.75
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- damage penalty at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.9  -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.9 -- AA penalty at 0% positioning
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.5 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO= 0.9  -- maximum penalty to get from larger fleets
+HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR	= 0.3  -- penalty if other side has stronger carrier air force
+MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.3  -- max penalty from stronger carrier air force
 
 --AI
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
