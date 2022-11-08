@@ -6,18 +6,20 @@ ideas = {
 				date > 1941.06.01 
 			}
 		}
+
 		attache_chi = {
 			modifier = {
-				experience_gain_army = 0.27
+				experience_gain_army = 0.18
 				war_support_factor = 0.1
 			}
 			cancel = {
 				date > 1939.01.01 
 			}
 		}
+
 		attache_JAP = {
 			modifier = {
-				experience_gain_army = 0.4
+				experience_gain_army = 0.35
 				experience_gain_air = 0.4
 				war_support_factor = 0.1
 			}

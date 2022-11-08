@@ -11,6 +11,7 @@ attache_decisions = {
 				original_tag = AST
 				original_tag = SAF
 				original_tag = CAN
+				original_tag = FRA
 			}
 		}
 		
@@ -28,6 +29,7 @@ attache_decisions = {
 				original_tag = AST
 				original_tag = SAF
 				original_tag = CAN
+				original_tag = FRA
 			}
 			date < 1939.1.1
 		}
