@@ -4085,7 +4085,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { is_subject_of = ROOT }
 		}
 
 		bypass = {
@@ -4121,8 +4120,6 @@ focus_tree = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = MAN }
-			MAN = { is_subject_of = ROOT }
 		}
 
 		bypass = {
@@ -4223,10 +4220,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { 
-				is_subject_of = ROOT 
-				controls_state = 716
-			}
 		}
 
 		bypass = {
@@ -4284,10 +4277,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 715
-			}
 		}
 
 		bypass = {
@@ -4326,10 +4315,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 716				
-			}
 		}
 
 		bypass = {
@@ -4369,12 +4354,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 715
-				has_full_control_of_state = 610
-				has_full_control_of_state = 328
-			}
 		}
 
 		bypass = {
@@ -4412,7 +4391,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { is_subject_of = ROOT }
 		}
 
 		bypass = {
