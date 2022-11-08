@@ -1808,6 +1808,7 @@ ideas = {
 			
 			allowed = {
 				original_TAG = ENG
+				ROOT = {has_war_with = jap}
 			}
 			
 
