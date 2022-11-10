@@ -1346,9 +1346,11 @@ global_building_slots_factor = 0.1
 			
 			allowed = {
 				original_tag = USA
-				ROOT = {has_war_with = jap}
+				
 			}
-			
+			available = {
+				date > 1941.6.1
+			}
 
 			
 			research_bonus = {

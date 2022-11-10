@@ -1808,9 +1808,10 @@ ideas = {
 			
 			allowed = {
 				original_TAG = ENG
-				ROOT = {has_war_with = jap}
 			}
-			
+			available = {
+				date > 1941.6.1
+			}
 
 			
 			research_bonus = {
