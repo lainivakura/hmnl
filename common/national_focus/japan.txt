@@ -1069,6 +1069,7 @@ focus_tree = {
 		cost = 1
 
 		available = { 
+			date > 1938.12.20	
 			is_puppet = no 
 			NOT = { has_war_with = CHI }
 		}
@@ -1120,8 +1121,8 @@ focus_tree = {
 			JAP = {annex_country = {target = CHI transfer_troops = yes}}
 			JAP = {annex_country = {target = SIA transfer_troops = yes}}
 			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
-			army_experience = 500
-			air_experience = 500
+			army_experience = 200
+			air_experience = 200
 
 
 			hidden_effect = {

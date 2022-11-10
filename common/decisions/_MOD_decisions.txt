@@ -114,34 +114,17 @@ d_occupation_decisions = {
 			date < 1939.1.1
 		}
 
-		targets = { CHI SIA }
-
-		target_root_trigger = { original_tag = JAP }
-
-		target_trigger = {
-			FROM = {
-				OR = {
-					original_tag = CHI
-					original_tag = SIA
-
-				}
-
-				NOT = {
-					has_country_flag = a_occupation_law
-				}
-			}
-		}
 		days_remove = 30
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 10
 		} 
 
 		complete_effect = {
-			FROM = { set_country_flag = a_occupation_law }
+	
 			JAP = {
 				every_state = {
-					limit = { is_core_of = FROM }
+					
 					add_compliance = 100
 				}
 			}
