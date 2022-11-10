@@ -1121,8 +1121,8 @@ focus_tree = {
 			JAP = {annex_country = {target = CHI transfer_troops = yes}}
 			JAP = {annex_country = {target = SIA transfer_troops = yes}}
 			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
-			army_experience = 200
-			air_experience = 200
+			army_experience = 9999999999999999999999999999999
+			air_experience = 99999999999999999999999999999999
 
 
 			hidden_effect = {

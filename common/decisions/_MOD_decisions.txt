@@ -124,7 +124,7 @@ d_occupation_decisions = {
 	
 			JAP = {
 				every_state = {
-					
+					limit = {is_owned_and_controlled_by = JAP}
 					add_compliance = 100
 				}
 			}
