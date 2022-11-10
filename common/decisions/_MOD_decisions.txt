@@ -96,3 +96,55 @@ attache_decisions = {
 		}
 	}
 }
+d_occupation_decisions = {
+	JAP_occupation_law_FROM = {
+		icon = generic_operation
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = JAP
+		}
+		
+		available = {
+			JAP = {has_completed_focus = JAP_intervene_in_china}
+			date < 1939.1.1
+		}
+
+		visible = {
+			date < 1939.1.1
+		}
+
+		targets = { CHI SIA }
+
+		target_root_trigger = { original_tag = JAP }
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CHI
+					original_tag = SIA
+
+				}
+
+				NOT = {
+					has_country_flag = a_occupation_law
+				}
+			}
+		}
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 5
+		} 
+
+		complete_effect = {
+			FROM = { set_country_flag = a_occupation_law }
+			JAP = {
+				every_state = {
+					limit = { is_core_of = FROM }
+					add_compliance = 100
+				}
+			}
+		}
+	}
+}
