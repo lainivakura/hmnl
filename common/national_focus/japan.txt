@@ -1118,7 +1118,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			JAP = {annex_country = {target = CHI transfer_troops = yes}}
+			JAP = {annex_country = {target = SIA transfer_troops = yes}}
 			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
+			army_experience = 500
+			air_experience = 500
 
 
 			hidden_effect = {
