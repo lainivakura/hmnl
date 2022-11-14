@@ -97,7 +97,7 @@ attache_decisions = {
 	}
 }
 d_occupation_decisions = {
-	JAP_occupation_law_FROM = {
+	JAP_occupation_law = {
 		icon = generic_operation
 		fire_only_once = yes
 
@@ -124,7 +124,12 @@ d_occupation_decisions = {
 	
 			JAP = {
 				every_state = {
-					limit = {is_owned_and_controlled_by = JAP}
+					limit = { 
+						OR = {
+							is_core_of = CHI
+							is_core_of = SIA
+						} 
+					}
 					add_compliance = 100
 				}
 			}
