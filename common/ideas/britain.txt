@@ -1810,7 +1810,14 @@ ideas = {
 				original_TAG = ENG
 			}
 			available = {
-				date > 1941.6.1
+				OR = {
+					ENG = {has_war_with = JAP}
+					ENG = {
+						NOT = {
+							has_full_control_of_state = 118
+						}
+					}
+				}
 			}
 
 			
