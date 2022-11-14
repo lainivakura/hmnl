@@ -19,8 +19,8 @@ ideas = {
 
 		attache_JAP = {
 			modifier = {
-				experience_gain_army = 0.35
-				experience_gain_air = 0.4
+				experience_gain_army = 0.27
+				experience_gain_air = 0.27
 				war_support_factor = 0.1
 			}
 			cancel = {
