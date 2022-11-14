@@ -228,19 +228,20 @@ country_event = {
 	picture = GFX_report_event_yugoslavia_partisans
 	
 	trigger = {
-		tag = YUG
-		has_idea = YUG_idea_croatian_opposition
-		has_war_with = GER
-		GER = {
-			has_government = fascism
-		}
-		OR = {
-			AND = {
-				CRO = { exists = yes }
-				CRO = { is_subject_of = YUG }
-			}
-			109 = { is_owned_and_controlled_by = YUG }
-		}
+		# tag = YUG
+		# has_idea = YUG_idea_croatian_opposition
+		# has_war_with = GER
+		# GER = {
+		# 	has_government = fascism
+		# }
+		# OR = {
+		# 	AND = {
+		# 		CRO = { exists = yes }
+		# 		CRO = { is_subject_of = YUG }
+		# 	}
+		# 	109 = { is_owned_and_controlled_by = YUG }
+		# }
+		always = no
 	}
 	mean_time_to_happen = {
 		days = 4
