@@ -181,7 +181,6 @@
 		}
 
 		available = {
-date > 1949.12.1
 			is_in_faction = no
 			SOV = {
 				exists = yes
@@ -526,7 +525,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			834 = {
 				is_owned_by = SOV
 				is_controlled_by = SOV
@@ -568,7 +566,7 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
+
 			POL = { 
 				exists = yes 
 				is_puppet = no
@@ -1186,10 +1184,10 @@ date > 1949.12.1
 				limit = {
 					has_state_flag = ROM_malaxa_IC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1202,14 +1200,14 @@ date > 1949.12.1
 					ROOT = { has_full_control_of_state = PREV } 
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = ROM_malaxa_IC
@@ -1351,10 +1349,10 @@ date > 1949.12.1
 				limit = {
 					has_state_flag = ROM_invest_in_the_iar_AF1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1367,14 +1365,14 @@ date > 1949.12.1
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = ROM_invest_in_the_iar_AF1
@@ -1450,9 +1448,6 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				}
 		}
 	}
 
@@ -1483,12 +1478,6 @@ date > 1949.12.1
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				}
 			add_ideas = ROM_exploit_the_baita_mines
 		}
 	}
@@ -1513,7 +1502,7 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
+
 		}
 
 		bypass = {
@@ -2281,7 +2270,10 @@ date > 1949.12.1
 					}
 					promote_leader = yes
 }
+				remove_advisor_role = { slot = army_chief }
+				remove_unit_leader_role = yes
 }					
+		
 			set_party_name = { 
 			    ideology = fascism
 			    long_name = ROM_fascism_party_long
@@ -2621,7 +2613,7 @@ date > 1949.12.1
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ROM_air_defense
-				cost_reduction = 0.25
+				cost_reduction = 0.50
 				uses = 2
 				category = cat_operational_integrity
 			}
@@ -2658,7 +2650,7 @@ date > 1949.12.1
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ROM_ground_support
-				cost_reduction = 0.25
+				cost_reduction = 0.50
 				uses = 2
 				category = battlefield_support_tree
 			}
@@ -2844,7 +2836,7 @@ date > 1949.12.1
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = ROM_air_superiority
-				cost_reduction = 0.25
+				cost_reduction = 0.50
 				uses = 2
 				category = strategic_destruction_tree
 			}
@@ -3649,6 +3641,10 @@ date > 1949.12.1
 						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
 						owner = ROM
 					}
+					create_unit = {
+						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
+						owner = ROM
+					}
 				}
 			}			
 		}
@@ -3798,7 +3794,7 @@ date > 1949.12.1
 		}
 
 		completion_reward = {
-			navy_experience = 50
+			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 46 }
 				limit = {
@@ -4024,7 +4020,6 @@ date > 1949.12.1
 		available_if_capitulated = no
 
 		completion_reward = {			
-			navy_experience = 25
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_black_sea_dominance_designer
 		}
