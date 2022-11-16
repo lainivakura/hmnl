@@ -188,7 +188,6 @@ focus_tree = {
 		}
 
 		available = {
-date > 1949.12.1
 			has_government = neutrality
 		}
 
@@ -235,6 +234,8 @@ date > 1949.12.1
 
 		cost = 10
 
+		cancel_if_invalid = yes
+
 		ai_will_do = {
 			factor = 70
 		}
@@ -243,17 +244,16 @@ date > 1949.12.1
 			NOT = { has_war_with = AUS }
 			is_subject = no
 			AUS = {
-				OR = {
 					exists = yes
 					is_subject = no
 				}
 			}
-		}
 
 		bypass = {
 			OR = {
 				AND = {
 					owns_state = 4
+					owns_state = 848
 					owns_state = 153
 					owns_state = 152
 				}
@@ -319,12 +319,13 @@ date > 1949.12.1
 						type = take_state_focus
 						target = PREV
 						expire = 0
-						generator = { 4 152 153 }
+						generator = { 4 152 153 848 }
 					}
 				}
 			}
 			add_state_claim = 152
 			add_state_claim = 153
+			add_state_claim = 848
 			add_state_claim = 4
 		}
 	}
@@ -346,6 +347,7 @@ date > 1949.12.1
 		available = {
 			controls_state = 152
 			controls_state = 153
+			controls_state = 848
 			controls_state = 4
 			is_subject = no
 		}
@@ -364,6 +366,7 @@ date > 1949.12.1
 			hidden_effect = { AUS = { set_cosmetic_tag = AUS_NOT_WHITE } }
 			152 = { add_core_of = ROOT }
 			153 = { add_core_of = ROOT }
+			848 = { add_core_of = ROOT }
 			4 = { add_core_of = ROOT }
 			69 = { add_core_of = ROOT }
 			9 = { add_core_of = ROOT }
@@ -419,6 +422,7 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			CZE = { country_event = { id = DOD_hungary.10 } }
+			custom_effect_tooltip = HUN_protect_czechoslovakia_tt
 		}
 	}
 
@@ -510,6 +514,7 @@ date > 1949.12.1
 
 		bypass = {
 			controls_state = 102
+			controls_state = 853
 			controls_state = 103
 			controls_state = 109
 			controls_state = 104
@@ -526,6 +531,7 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_state_claim = 102
+			add_state_claim = 853
 			add_state_claim = 103
 			add_state_claim = 109
 			add_state_claim = 104
@@ -572,8 +578,10 @@ date > 1949.12.1
 		bypass = {
 			is_subject = no
 			controls_state = 736
+			controls_state = 852
 			controls_state = 160
 			controls_state = 39
+			controls_state = 850
 		}
 
 		cancel_if_invalid = yes
@@ -583,8 +591,10 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_state_claim = 736
+			add_state_claim = 852
 			add_state_claim = 160
 			add_state_claim = 39
+			add_state_claim = 850
 			if = {
 				limit = {
 					160 = { is_controlled_by = ITA }
@@ -764,7 +774,7 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
+
 		}
 
 		bypass = {
@@ -1510,7 +1520,7 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
+
 		}
 
 		bypass = {
@@ -1521,6 +1531,9 @@ date > 1949.12.1
 				NOT = { is_owned_by = AUS }
 			}
 			153 = {
+				NOT = { is_owned_by = AUS }
+			}
+			848 = {
 				NOT = { is_owned_by = AUS }
 			}
 		}
@@ -1551,7 +1564,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			NOT = { has_war_with = ITA }
 			is_subject = no
 			is_in_faction = no
@@ -1814,9 +1826,9 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_state_core = 76
-add_state_core = 70
-    add_state_core = 73
-		    add_state_core = 71
+			 add_state_core = 70
+   			 add_state_core = 73
+		     add_state_core = 71
 			add_state_core = 83
 			add_state_core = 84
 			add_state_core = 664
@@ -2276,7 +2288,7 @@ add_state_core = 70
 		}
 
 		available = {
-date > 1949.12.1
+
 		}
 
 		bypass = {
@@ -2448,7 +2460,7 @@ date > 1949.12.1
 		}
 
 		bypass = {
-
+			is_in_faction_with = SOV
 		}
 
 		cancel_if_invalid = yes
@@ -2869,6 +2881,11 @@ date > 1949.12.1
 				}
 				43 = {
 					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -3041,9 +3058,6 @@ date > 1949.12.1
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = HUN_invite_foreign_investors
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			}
 		}
 	}
 
@@ -3152,9 +3166,6 @@ date > 1949.12.1
 					amount = 16
 				}
 			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				}
 		}
 	}
 
@@ -3768,8 +3779,7 @@ date > 1949.12.1
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				
-				technology = heavy_fighter3
+				category = cat_heavy_fighter
 			}
 		}
 	}
@@ -3808,9 +3818,7 @@ date > 1949.12.1
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				technology = early_fighter
-				
-				technology = fighter3
+				category = light_fighter
 			}
 		}
 	}
@@ -3849,9 +3857,7 @@ date > 1949.12.1
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				technology = CAS1
-				technology = CAS2
-				technology = CAS3
+				category = cas_bomber
 			}
 		}
 	}
@@ -3943,9 +3949,22 @@ date > 1949.12.1
 		}
 
 		available = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
 			NOT = {
 				has_tech = fighter3
 				has_tech = heavy_fighter3
+				}
+			}
+			else = {
+				NOT = {
+					has_tech = advanced_small_airframe
+					has_tech = advanced_medium_airframe
+				}
 			}
 			OR = {
 				GER = {
@@ -4025,9 +4044,22 @@ date > 1949.12.1
 		}
 
 		available = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
 			NOT = {
 				has_tech = CAS3
 				has_tech = tactical_bomber3
+				}
+			}
+			else = {
+				NOT = {
+					has_tech = advanced_small_airframe
+					has_tech = advanced_medium_airframe
+				}
 			}
 			OR = {
 				GER = {
@@ -4469,7 +4501,7 @@ date > 1949.12.1
 			add_doctrine_cost_reduction = {
 				name = HUN_mobile_corps_doctrine
 				cost_reduction = 0.25
-				uses = 1
+				uses = 2
 				category = cat_mobile_warfare
 			}
 		}

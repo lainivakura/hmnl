@@ -1,0 +1,7 @@
+﻿l_russian:
+ attache_decisions: "Атташе в Азию"
+ attache_chi_decision: "Атташе в Китай"
+ attache_JAP_decision: "Атташе в Японию"
+ d_occupation_decisions: "Коллаборанты"
+ GER_occupation_law_FROM: "Установить оккупационный режим в [FROM.GetName]"
+ JAP_occupation_law: "Установить оккупационный режим в Китае"

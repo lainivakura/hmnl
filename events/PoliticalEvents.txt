@@ -1627,6 +1627,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = neutrality
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1638,6 +1639,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = fascism
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 		if = {
@@ -1649,6 +1651,7 @@ country_event = {
 				ruling_party = democratic
 				ideology = communism
 				size = 0.5
+				keep_political_leader = yes
 			}
 		}
 	}
@@ -2078,6 +2081,27 @@ country_event = {
 				random_hours = 8 
 			}
 		}
+	}
+}
+	
+country_event = {
+	id = political.33
+	title = political.33.t
+	desc = political.33.desc
+
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = political.33.a
+		add_war_support = 0.1
 	}
 }
 	

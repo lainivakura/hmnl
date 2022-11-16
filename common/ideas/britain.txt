@@ -1809,7 +1809,16 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			available = {
+				OR = {
+					ENG = {has_war_with = JAP}
+					ENG = {
+						NOT = {
+							has_full_control_of_state = 118
+						}
+					}
+				}
+			}
 
 			
 			research_bonus = {

@@ -507,7 +507,7 @@ country_event = {
 						size = 0.05
 						stockpile_ratio = 0.05
 						army_ratio = 0.05
-						navy_ratio = 0.05
+						navy_ratio = 1
 						air_ratio = 0.05
 					}
 				}

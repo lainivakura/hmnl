@@ -1,9 +1,33 @@
 ideas = {
 	country = {
 		warm_blood = {
+			picture = SOV_the_road_of_life
 			modifier = {acclimatization_cold_climate_gain_factor = -9}
 			cancel = {
 				date > 1941.06.01 
+			}
+		}
+
+		attache_chi = {
+			picture = received_attache
+			modifier = {
+				experience_gain_army = 0.18
+				war_support_factor = 0.1
+			}
+			cancel = {
+				date > 1939.01.01 
+			}
+		}
+
+		attache_JAP = {
+			picture = received_attache
+			modifier = {
+				experience_gain_army = 0.27
+				experience_gain_air = 0.27
+				war_support_factor = 0.1
+			}
+			cancel = {
+				date > 1939.01.01 
 			}
 		}
 	}

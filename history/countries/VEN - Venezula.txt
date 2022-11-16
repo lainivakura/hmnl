@@ -2,7 +2,7 @@
 
 oob = "VEN_1936"
 
-
+set_research_slots = 0
 set_country_flag = monroe_doctrine
 add_ideas = {free_trade_for_ai Horrors_WW1}
 set_politics = {

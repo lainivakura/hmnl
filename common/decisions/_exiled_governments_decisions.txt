@@ -389,6 +389,7 @@ governments_in_exile = {
 
 		visible = {
 			FROM = { is_exiled_in = ROOT }
+			NOT = {original_tag = FRA}
 		}
 
 		

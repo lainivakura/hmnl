@@ -88,13 +88,21 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-
+		hidden_effect = {
 		every_character = {
 			limit = {
 				is_character_slot = political_advisor
 				has_character_flag = SOV_targeted_for_purge_flag
 			}
 			SOV_purge_character_effect = yes
+		}
+		}
+
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+		character_list_tooltip = {
+			limit = {
+				has_character_flag = SOV_targeted_for_purge_flag
+			}
 		}
 
 		#Update purged portraits in UI
@@ -245,18 +253,37 @@ country_event = {
 			limit = {
 				has_idea = SOV_genrikh_yagoda
 			}
+			hidden_effect = {
 			SOV_genrikh_yagoda = {
 				SOV_purge_character_effect = yes
 			}
+			}
+
+			custom_effect_tooltip = SOV_characters_will_be_purged_tt
+			character_list_tooltip = {
+				limit = {
+					is_character = SOV_genrikh_yagoda
+				}
+			}
+
 			activate_advisor = SOV_nikolay_yezhov
 		}
 		else_if = {
 			limit = {
 				has_idea = SOV_nikolay_yezhov
 			}
+			hidden_effect = {
 			SOV_nikolay_yezhov = {
 				SOV_purge_character_effect = yes
 			}
+			}
+			custom_effect_tooltip = SOV_characters_will_be_purged_tt
+			character_list_tooltip = {
+				limit = {
+					is_character = SOV_nikolay_yezhov
+				}
+			}
+
 			activate_advisor = SOV_lavrenty_beriya
 		}
 
@@ -459,7 +486,14 @@ unit_leader_event = {
 				SOV_purge_character_effect = yes
 			}
 		}
-		custom_effect_tooltip = SOV_retire_purged_character_tt
+		#custom_effect_tooltip = SOV_retire_purged_character_tt
+
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+		character_list_tooltip = {
+			limit = {
+				has_character_flag = SOV_targeted_for_purge_flag
+			}
+		}
 
 		#Update purged portraits in UI
 		hidden_effect = {
@@ -682,7 +716,13 @@ unit_leader_event = {
 				SOV_purge_character_effect = yes
 			}
 		}
-		custom_effect_tooltip = SOV_retire_accused_character_tt
+		#custom_effect_tooltip = SOV_retire_accused_character_tt
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+		character_list_tooltip = {
+			limit = {
+				has_character_flag = SOV_purge_accused_flag
+			}
+		}
 
 		#Update purged portraits in UI
 		hidden_effect = {
@@ -739,7 +779,13 @@ unit_leader_event = {
 				SOV_purge_character_effect = yes
 			}
 		}
-		custom_effect_tooltip = SOV_retire_accuser_character_tt
+		#custom_effect_tooltip = SOV_retire_accuser_character_tt
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+		character_list_tooltip = {
+			limit = {
+				has_character_flag = SOV_purge_accuser_flag
+			}
+		}
 
 		#RANDOM GENERALS COWED
 		SOV_paranoia_daunt_generals_minor_effect = yes
@@ -857,7 +903,6 @@ country_event = {
 				has_idea = SOV_purged_junior_army_officers_3
 			}
 			#NOTHING HAPPENS, but this should not be a possibility
-			log = "I CAN'T MAKE THIS WORSE FOR GODS SAKE!"
 		}
 		else_if = {
 			limit = {
@@ -964,7 +1009,7 @@ country_event = {
 					has_character_flag = SOV_targeted_for_purge_flag
 				}
 				SOV_purge_character_effect = yes	
-				log = "Hey I am [THIS.GetName] I am in the Event!"
+				#log = "Hey I am [THIS.GetName] I am in the Event!"
 			}
 
 			#Purge any Marshals/Generals #This is a duplicate as a workaround for tooltip purposes
@@ -977,7 +1022,7 @@ country_event = {
 					has_character_flag = SOV_targeted_for_purge_flag
 				}
 				SOV_purge_character_effect = yes	
-				log = "Hey I am [THIS.GetName] I am in the Event!"
+				#log = "Hey I am [THIS.GetName] I am in the Event!"
 			}
 		}
 
@@ -1081,7 +1126,13 @@ unit_leader_event = {
 				SOV_purge_character_effect = yes
 			}
 		}
-		custom_effect_tooltip = SOV_retire_purged_character_tt
+		#custom_effect_tooltip = SOV_retire_purged_character_tt
+		custom_effect_tooltip = SOV_characters_will_be_purged_tt
+		character_list_tooltip = {
+			limit = {
+				has_character_flag = SOV_targeted_for_purge_flag
+			}
+		}
 
 		#Update purged portraits in UI
 		hidden_effect = {
@@ -1309,7 +1360,6 @@ country_event = {
 				has_idea = SOV_purged_junior_navy_officers_3
 			}
 			# NOTHING HAPPENS, but this should not be a possibility
-			log = "I CAN'T MAKE THIS WORSE FOR GODS SAKE!"
 		}
 		else_if = {
 			limit = {
@@ -2007,23 +2057,14 @@ country_event = {
 ##       ##     ## ##    ##  ##        ##  ##    ##  ##   ###    ##        ##     ## ##        ##     ##     ##  ##    ## ##    ## 
 ##        #######  ##     ## ######## ####  ######   ##    ##    ##         #######  ######## ####    ##    ####  ######   ######  
 
-# SOV is pressuring our government - Event for Targeted country
+# SOV is pressuring our government - Event for Targeted country ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.1
 	title = NSB_soviet_foreign_politics_events.1.t
 	desc = NSB_soviet_foreign_politics_events.1.desc
-	picture = GFX_report_event_SOV_demands
+	picture = "[GetPressureGovernmentGFX]"
 
 	is_triggered_only = yes
-
-	#immediate = { #Debug
-	#	log = "FROM is [FROM.GetName]"
-	#	log = "FROM.FROM [FROM.FROM.GetName]"
-	#	log = "FROM.PREV [FROM.PREV.GetName]"
-	#	log = "FROM.FROM.PREV [FROM.FROM.PREV.GetName]"
-	#	log = "ROOT.FROM [ROOT.FROM.GetName]"
-	#	log = "ROOT.PREV [ROOT.PREV.GetName]"
-	#}
 
 	option = { #Join Faction - Keep government
 		name = NSB_soviet_foreign_politics_events.1.a
@@ -2053,7 +2094,13 @@ country_event = {
 			}
 			modifier = { #Appropriate PC for Foreign Affairs
 				factor = 2
-				SOV = { has_idea = SOV_maksim_litvinov }
+				OR = {
+					FROM = {
+						original_tag = SOV
+						has_idea = SOV_maksim_litvinov
+					}
+					FROM = { ITA_has_foreign_affairs_or_nice_guy_hired = yes }
+				}
 			}
 			modifier = {
 				factor = 0
@@ -2113,7 +2160,13 @@ country_event = {
 			}
 			modifier = { #Appropriate PC for Foreign Affairs
 				factor = 2
-				SOV = { has_idea = SOV_vyacheslav_molotov }
+				OR = {	
+					FROM = {
+						original_tag = SOV
+						has_idea = SOV_vyacheslav_molotov
+					}
+					FROM = { ITA_has_foreign_affairs_or_nice_guy_hired = yes }
+				}
 			}
 			modifier = {
 				factor = 0
@@ -2173,23 +2226,14 @@ country_event = {
 	}
 }
 
-# SOV is promoting ideology rallies - Event for Targeted country
+# SOV is promoting ideology rallies - Event for Targeted country ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.2
 	title = NSB_soviet_foreign_politics_events.2.t
 	desc = NSB_soviet_foreign_politics_events.2.desc
-	picture = GFX_report_event_soviet_purge_speech
+	picture = "[GetPromotingIdeologyGFX]"
 
 	is_triggered_only = yes
-
-	immediate = {
-		log = "FROM is [FROM.GetName]"
-		log = "FROM.FROM [FROM.FROM.GetName]"
-		log = "FROM.PREV [FROM.PREV.GetName]"
-		log = "FROM.FROM.PREV [FROM.FROM.PREV.GetName]"
-		log = "ROOT.FROM [ROOT.FROM.GetName]"
-		log = "ROOT.PREV [ROOT.PREV.GetName]"
-	}
 
 	option = { #OK
 		name = NSB_soviet_foreign_politics_events.2.a
@@ -2226,11 +2270,23 @@ country_event = {
 			}
 			modifier = { #Appropriate PC for Foreign Affairs
 				factor = 2
-				SOV = { has_idea = SOV_maksim_litvinov }
+				OR = {
+					FROM = {
+						original_tag = SOV
+						has_idea = SOV_maksim_litvinov
+					}
+					FROM = { ITA_has_foreign_affairs_or_nice_guy_hired = yes }
+				}
 			}
 		}
 
 		hidden_effect = { #Country is slightly more willing to cooperate with Soviets
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+					}
+				}
 			add_ai_strategy = {
 				type = befriend
 				id = SOV			
@@ -2240,6 +2296,24 @@ country_event = {
 				type = alliance
 				id = SOV			
 				value = 10
+			}
+		}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ITA
+					}
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = ITA			
+					value = 10
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = ITA			
+					value = 10
+				}
 			}
 		}
 
@@ -2759,12 +2833,12 @@ country_event = {
 	}
 }
 
-# Country becomes a puppet - Event for SOV
+# Country becomes a puppet - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.150
 	title = NSB_soviet_foreign_politics_events.150.t
 	desc = NSB_soviet_foreign_politics_events.150.desc
-	picture = GFX_report_event_stalin_propaganda
+	picture = "[GetCountryBecomesPuppetGFX]"
 
 	is_triggered_only = yes
 			
@@ -2778,12 +2852,12 @@ country_event = {
 	}
 }
 
-# Country joins faction - Event for SOV
+# Country joins faction - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.151
 	title = NSB_soviet_foreign_politics_events.151.t
 	desc = NSB_soviet_foreign_politics_events.151.desc
-	picture = GFX_report_event_stalin_propaganda
+	picture = "[GetCountryBecomesPuppetGFX]"
 
 	is_triggered_only = yes
 			
@@ -2801,12 +2875,12 @@ country_event = {
 	}
 }
 
-# Country changes government - Event for SOV
+# Country changes government - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.158
 	title = NSB_soviet_foreign_politics_events.158.t
 	desc = NSB_soviet_foreign_politics_events.158.desc
-	picture = GFX_report_event_stalin_propaganda
+	picture = "[GetCountryChangesGovernmentGFX]"
 
 	is_triggered_only = yes
 
@@ -2824,7 +2898,7 @@ country_event = {
 	}
 }
 
-# Country refuses - Event for SOV
+# Country refuses - Event for SOV ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.152
 	title = NSB_soviet_foreign_politics_events.152.t
@@ -2841,14 +2915,39 @@ country_event = {
 		}
 
 		trigger = {
-			NOT = { FROM = { original_tag = PER } }
+			NOT = {
+				FROM = { original_tag = PER }
+				ROOT = { original_tag = SOV }
+			}
 		}
 
-		effect_tooltip = {
+		if = {
+			limit = {
+				NOT = {
+					is_in_faction_with = FROM
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = FROM
+				}
+			}
+			else = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = FROM
 			}
+			} 
+		}
+
+		effect_tooltip = {
 			FROM = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -2866,6 +2965,7 @@ country_event = {
 			modifier = {
 				add = 1
 				FROM = { original_tag = PER }
+				original_tag = SOV
 			}
 		}
 	}
@@ -2875,6 +2975,7 @@ country_event = {
 
 		trigger = {
 			FROM = { original_tag = PER }
+			original_tag = SOV
 			is_subject = no
 		}
 
@@ -2916,6 +3017,7 @@ country_event = {
 
 		trigger = {
 			FROM = { original_tag = PER }
+			original_tag = SOV
 			is_subject = no
 			country_exists = ENG
 			NOT = { has_war_with = ENG }
@@ -3199,24 +3301,15 @@ country_event = {
 	}
 }
 
-# Generic Ultimatum - Event for target
+# Generic Ultimatum - Event for target ### (ITA uses this too)
 country_event = {
 	id = NSB_soviet_foreign_politics_events.200
 	title = NSB_soviet_foreign_politics_events.200.t
 	desc = NSB_soviet_foreign_politics_events.200.desc
-	picture = GFX_report_event_SOV_demands
+	picture = "[GetUltimatumGFX]"
 
 	is_triggered_only = yes
 
-	immediate = {
-		log = "FROM is [FROM.GetName]"
-		log = "FROM.FROM [FROM.FROM.GetName]"
-		log = "FROM.PREV [FROM.PREV.GetName]"
-		log = "FROM.FROM.PREV [FROM.FROM.PREV.GetName]"
-		log = "ROOT.FROM [ROOT.FROM.GetName]"
-		log = "ROOT.PREV [ROOT.PREV.GetName]"
-	}
-			
 	option = { # Become a puppet
 		name = NSB_soviet_foreign_politics_events.200.a
 
@@ -3285,7 +3378,13 @@ country_event = {
 			}
 			modifier = { #Appropriate PC for Foreign Affairs
 				factor = 1.5
-				SOV = { has_idea = SOV_vyacheslav_molotov }
+				OR = {
+					FROM = {
+						original_tag = SOV
+						has_idea = SOV_vyacheslav_molotov
+					}
+					FROM = { ITA_has_foreign_affairs_or_nice_guy_hired = yes }
+				}
 			}
 			modifier = {
 				factor = 0
@@ -3303,7 +3402,12 @@ country_event = {
 		}
 
 		trigger = {
+			OR = {
 			has_government = FROM
+				FROM = {	
+					original_tag = ITA
+				}
+			}
 		}
 
 		set_politics = { ruling_party = FROM }
@@ -3314,7 +3418,6 @@ country_event = {
 				country_event = { id = NSB_soviet_foreign_politics_events.150 hours = 1 }
 			}
 		}
-		#TODO_Manu: Handle wars, civil wars and all that stuff
 	}
 
 	option = { #Join Faction - Keep government
@@ -3322,6 +3425,10 @@ country_event = {
 
 		ai_chance = {
 			base = 0
+		}
+
+		trigger = {
+			FROM = { is_in_faction = yes }
 		}
 
 		FROM = {
@@ -3343,12 +3450,47 @@ country_event = {
 
 		ai_chance = {
 			base = 10
+
+			modifier = {
+				factor = 0.1
+				FROM = {
+					original_tag = ITA
+					NOT = {
+						has_government = ROOT
+		}
+				}
+				is_in_faction = no
+			}
 		}
 
+
 		FROM = {
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							is_in_faction_with = ROOT
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = fascism
+								has_government = neutrality
+							}
+						}
+						create_wargoal = {
+							type = annex_everything
+							target = ROOT
+						}
+					}
+				}
+				else = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ROOT
+			}
+				} 
 			}
 			hidden_effect = {
 				country_event = { id = NSB_soviet_foreign_politics_events.152 hours = 1 }
@@ -3458,7 +3600,6 @@ country_event = {
 				country_event = { id = NSB_soviet_foreign_politics_events.150 hours = 1 }
 			}
 		}
-		#TODO_Manu: Handle wars, civil wars and all that stuff
 	}
 
 	option = { #REFUSE
@@ -3856,7 +3997,7 @@ country_event = {
 			}
 			modifier = { #Is going non-aligned (kill SOV in focus branch)
 				factor = 0
-				
+				has_completed_focus = JAP_support_the_kodoha_faction
 			}
 		}
 
@@ -8989,7 +9130,10 @@ country_event = {
 			}
 		}
 		trigger = {
-			219 = { is_owned_by = ROOT }
+			219 = { 
+				is_owned_by = ROOT 
+				is_controlled_by = ROOT
+			}
 		}
 		set_capital = { state = 219 }
 
@@ -9005,7 +9149,10 @@ country_event = {
 			}
 		}
 		trigger = {
-			195 = { is_owned_by = ROOT }
+			195 = { 
+				is_owned_by = ROOT 
+				is_controlled_by = ROOT
+			}
 			NOT = { SOV_is_exiles = yes }
 		}
 		set_capital = { state = 195 }
@@ -9021,7 +9168,10 @@ country_event = {
 			}
 		}
 		trigger = {
-			195 = { is_owned_by = ROOT }
+			195 = { 
+				is_owned_by = ROOT 
+				is_controlled_by = ROOT
+			}
 			NOT = { SOV_is_exiles = yes }
 		}
 		195 = { set_state_name = SOV_petrograd }
@@ -9049,7 +9199,10 @@ country_event = {
 			base = 2
 		}
 		trigger = {
-			408 = { is_owned_by = ROOT }
+			408 = { 
+				is_owned_by = ROOT 
+				is_controlled_by = ROOT
+			}
 			SOV_is_exiles = yes
 		}
 		set_capital = { state = 408 }
@@ -9061,7 +9214,10 @@ country_event = {
 			base = 10
 		}
 		trigger = {
-			195 = { is_owned_by = ROOT }
+			195 = { 
+				is_owned_by = ROOT 
+				is_controlled_by = ROOT
+			}
 			SOV_is_exiles = yes
 		}
 		195 = { set_state_name = SOV_StPetersburg }
@@ -10952,6 +11108,11 @@ country_event = {
 
 	option = {
 		name = NSB_soviet_civil_war_common.122.a
+		# Get Ideology Support
+		set_variable = { SOV_communist_support_before_puppet = party_popularity_100@communism }
+		set_variable = { SOV_democratic_support_before_puppet = party_popularity_100@democratic }
+		set_variable = { SOV_fascist_support_before_puppet = party_popularity_100@fascism }
+		set_variable = { SOV_neutrality_support_before_puppet = party_popularity_100@neutrality }
 		JAP = {
 			add_to_war = { 
 			    targeted_alliance = ROOT 
@@ -10968,6 +11129,8 @@ country_event = {
 				set_autonomy = {
 					target = ROOT
 					autonomous_state = autonomy_integrated_puppet
+					end_wars  = no 
+					end_civil_wars = no
 				}
 			}
 		}
@@ -10982,6 +11145,8 @@ country_event = {
 				set_autonomy = {
 					target = ROOT
 					autonomous_state = autonomy_puppet
+					end_wars  = no 
+					end_civil_wars = no
 				}
 			}
 		}
@@ -10993,6 +11158,8 @@ country_event = {
 				set_autonomy = {
 					target = ROOT
 					autonomous_state = autonomy_wtt_imperial_protectorate
+					end_wars  = no 
+					end_civil_wars = no
 				}
 			}
 		}
@@ -11003,6 +11170,17 @@ country_event = {
 					ruling_party = neutrality
 				}
 			}
+			# Reset popluarities to what they were before puppeting 
+			set_popularities = {
+				communism = SOV.SOV_communist_support_before_puppet
+				democratic = SOV.SOV_democratic_support_before_puppet
+				fascism = SOV.SOV_fascist_support_before_puppet
+				neutrality = SOV.SOV_neutrality_support_before_puppet
+			}
+			clear_variable = SOV.SOV_communist_support_before_puppet
+			clear_variable = SOV.SOV_democratic_support_before_puppet
+			clear_variable = SOV.SOV_fascist_support_before_puppet
+			clear_variable = SOV.SOV_neutrality_support_before_puppet
 		}	
 	}
 }

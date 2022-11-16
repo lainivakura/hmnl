@@ -1346,8 +1346,11 @@ global_building_slots_factor = 0.1
 			
 			allowed = {
 				original_tag = USA
+				
 			}
-			
+			available = {
+				USA = {has_war = yes}
+			}
 
 			
 			research_bonus = {

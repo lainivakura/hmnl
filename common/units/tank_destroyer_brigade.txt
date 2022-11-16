@@ -102,7 +102,7 @@ sub_units = {
 		supply_consumption = 0.22
 
 		breakthrough = -0.95
-
+        soft_attack = -0.25
 		suppression = 1.25
 
 		forest = {
@@ -172,7 +172,7 @@ sub_units = {
 		supply_consumption = 0.3
 
 		breakthrough = -0.95
-        soft_attack = -0.3
+        soft_attack = -0.5
 		suppression = 1.25
 		
 		forest = {

@@ -737,7 +737,7 @@ equipment_modules = {
 				attack_logistics
 			}
 			add_stats = {
-				air_agility = -15
+				air_agility = -20
 				weight = 4
 				air_ground_attack = 6
 			}
@@ -793,7 +793,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 3
-			air_agility = -20
+			air_agility = -15
 			weight = 5
 		}
 		xp_cost = 0
@@ -958,7 +958,7 @@ equipment_modules = {
 		allow_mission_type = {
 			naval_bomber
 			port_strike
-			# naval_patrol
+			naval_patrol
 		}
 		mission_type_stats = {
 			limit = {
@@ -1020,7 +1020,7 @@ equipment_modules = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = naval_bomber
+		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {	
 			build_cost_ic = 15
@@ -1029,7 +1029,7 @@ equipment_modules = {
 		allow_mission_type = {
 			naval_bomber
 			port_strike
-			# naval_patrol
+			naval_patrol
 		}
 		mission_type_stats = {
 			limit = {
@@ -1144,6 +1144,9 @@ equipment_modules = {
 		add_stats = {
 			air_defence = -6
 			build_cost_ic = 0
+		}
+		multiply_stats = {
+			build_cost_ic = -0.075
 		}
 		build_cost_resources = {
 			aluminium = -2
@@ -1281,6 +1284,9 @@ equipment_modules = {
 			build_cost_ic = 0
 			weight = 0
 		}
+		multiply_stats = {
+			build_cost_ic = -0.075
+		}
 		build_cost_resources = {
 			aluminium = -2
 		}
@@ -1395,6 +1401,9 @@ equipment_modules = {
 			build_cost_ic = 0
 			weight = 0
 		}
+		multiply_stats = {
+			build_cost_ic = -0.075
+		}
 		build_cost_resources = {
 			aluminium = -3
 		}
@@ -1507,7 +1516,7 @@ equipment_modules = {
 				naval_bomber
 				port_strike
 				strategic_bomber
-				# naval_patrol
+				naval_patrol
 			}
 			add_stats = {
 				air_bombing = 4
@@ -1536,7 +1545,7 @@ equipment_modules = {
 				naval_bomber
 				port_strike
 				strategic_bomber
-				# naval_patrol
+				naval_patrol
 			}
 			add_stats = {
 				air_bombing = 6

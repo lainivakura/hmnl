@@ -108,62 +108,62 @@ operations_atom = {
 		}
 	}
 
-	ITA_grind_ETH = {
+	# ITA_grind_ETH = {
 
-		icon = generic_army_support
+	# 	icon = generic_army_support
 
-		available = {
-			not = {has_war_with = ETH}
-		}
+	# 	available = {
+	# 		not = {has_war_with = ETH}
+	# 	}
 
-		fire_only_once = yes
+	# 	fire_only_once = yes
 	
-		activation = {
-			original_tag = ITA
-			has_war_with = ETH
+	# 	activation = {
+	# 		original_tag = ITA
+	# 		has_war_with = ETH
 						
-		}
+	# 	}
 	
-		is_good = yes
-		days_mission_timeout = 150
+	# 	is_good = yes
+	# 	days_mission_timeout = 150
 
-		timeout_effect = {
-			annex_country = { target = ETH }
-			air_experience = 10
-		}
+	# 	timeout_effect = {
+	# 		annex_country = { target = ETH }
+	# 		air_experience = 10
+	# 	}
 	
-		complete_effect = {
-			air_experience = 10
-		}
-	}
-	jap_grind_chi = {
+	# 	complete_effect = {
+	# 		air_experience = 10
+	# 	}
+	# }
+	# jap_grind_chi = {
 
-		icon = generic_army_support
+	# 	icon = generic_army_support
 
-		available = {
-			not = {has_war_with = CHI}
-		}
+	# 	available = {
+	# 		not = {has_war_with = CHI}
+	# 	}
 
-		fire_only_once = yes
+	# 	fire_only_once = yes
 	
-		activation = {
-			original_tag = JAP
-			has_war_with = CHI
+	# 	activation = {
+	# 		original_tag = JAP
+	# 		has_war_with = CHI
 						
-		}
+	# 	}
 	
-		is_good = yes
-		days_mission_timeout = 550
+	# 	is_good = yes
+	# 	days_mission_timeout = 550
 
-		timeout_effect = {
-			annex_country = { target = CHI }
-			air_experience = 30
-		}
+	# 	timeout_effect = {
+	# 		annex_country = { target = CHI }
+	# 		air_experience = 30
+	# 	}
 	
-		complete_effect = {
-			air_experience = 30
-		}
-	}
+	# 	complete_effect = {
+	# 		air_experience = 30
+	# 	}
+	# }
 
 	SOV_grind_FIN = {
 
@@ -447,57 +447,57 @@ ENG_annex_HOL = {
 
 
 
-ENG_annex_frafr = {
+# ENG_annex_frafr = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 
-		available = {
-			FRA = { 
+# 		available = {
+# 			FRA = { 
 				
-				has_capitulated = yes 
-			}
+# 				has_capitulated = yes 
+# 			}
 			
-		}
+# 		}
 			
-		cost = 0
+# 		cost = 0
 			
-		visible = {
-			has_war_with = GER	
-		}
+# 		visible = {
+# 			has_war_with = GER	
+# 		}
 			
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		complete_effect = {
-				ENG = { 
-				set_state_owner = 268
-				set_state_owner = 713
-				set_state_owner = 706
-				set_state_owner = 708
-				set_state_owner = 543
-				set_state_owner = 557
-				set_state_owner = 272
-				set_state_owner = 780 
-				set_state_owner = 779
-				set_state_owner = 785 
-				set_state_owner = 556
-				set_state_owner = 781
-				set_state_owner = 778
-				set_state_owner = 777
-				set_state_owner = 776
-				set_state_owner = 660
-				set_state_owner = 539
-				set_state_owner = 772
-				set_state_owner = 773
-				set_state_owner = 774
-			}
-			annex_country = {target = FRA transfer_troops = yes}
+# 		complete_effect = {
+# 				ENG = { 
+# 				set_state_owner = 268
+# 				set_state_owner = 713
+# 				set_state_owner = 706
+# 				set_state_owner = 708
+# 				set_state_owner = 543
+# 				set_state_owner = 557
+# 				set_state_owner = 272
+# 				set_state_owner = 780 
+# 				set_state_owner = 779
+# 				set_state_owner = 785 
+# 				set_state_owner = 556
+# 				set_state_owner = 781
+# 				set_state_owner = 778
+# 				set_state_owner = 777
+# 				set_state_owner = 776
+# 				set_state_owner = 660
+# 				set_state_owner = 539
+# 				set_state_owner = 772
+# 				set_state_owner = 773
+# 				set_state_owner = 774
+# 			}
+# 			annex_country = {target = FRA transfer_troops = yes}
 
-	}
-}
+# 	}
+# }
 
 
 

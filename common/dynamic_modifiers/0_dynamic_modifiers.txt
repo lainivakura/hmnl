@@ -101,6 +101,18 @@ dense_rural_infrastructure = { #State Modifier
 	local_non_core_supply_impact_factor = 0.35
 }
 
+yellow_river_blown = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+	
+	local_supply_impact_factor = 0.5
+	disable_strategic_redeployment = 1
+	state_resources_factor = -0.25
+	local_manpower = -0.5
+	army_speed_factor_for_controller = -0.25
+}
+
 kurdish_rebellion = {
 	enable = { always = yes }
 
@@ -347,13 +359,7 @@ military_appeasement = {
 	
 	resistance_growth = -0.5
 }
-GER_blau = {
-	enable = { always = yes }
-	icon = GFX_modifiers_generic_military_plans
-	army_attack_factor = 0.15
-	army_defence_factor = 0.15
-	supply_node_range = 0.5
-	}
+
 POL_plan_modifier = {
 	enable = { always = yes }
 
@@ -1213,4 +1219,19 @@ SOV_capital_of_the_tsars = {
 	icon = GFX_modifiers_SOV_capital_of_the_tsars
 
 	state_production_speed_buildings_factor = 0.25
+}
+
+RAJ_agrarian_society_dynamic = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_agrarian_society
+	
+	conscription_factor = RAJ_agrarian_society_value
+}
+
+RAJ_industrialized_personnel = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	state_resources_factor = 0.15
+	state_production_speed_buildings_factor = 0.15
 }

@@ -1069,6 +1069,7 @@ focus_tree = {
 		cost = 1
 
 		available = { 
+			date > 1937.12.20	
 			is_puppet = no 
 			NOT = { has_war_with = CHI }
 		}
@@ -1101,7 +1102,7 @@ focus_tree = {
 			}
 		}
 
-		will_lead_to_war_with = CHI
+		# will_lead_to_war_with = CHI
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1117,51 +1118,165 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			if = {
-				limit = {
-					CHI = { #if CHI owns one of these states, they get the event
-						OR = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
-						}
+			JAP = {annex_country = {target = CHI transfer_troops = yes}}
+			JAP = {annex_country = {target = SIA transfer_troops = yes}}
+			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
+			army_experience = 666
+			air_experience = 666
+
+			hidden_effect = {
+				division_template = {
+					name = "CHEREP"
+					priority = 2
+					division_names_group = ROM_ARM_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						infantry = { x = 2 y = 3 }
+						infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
 					}
 				}
-				CHI = {
-					country_event = china.1
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 282 }
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
+				}
+				create_unit = {
+					division = "name = \"CHEREP\" division_template = \"CHEREP\" start_experience_factor = 1.0" 
+					owner = jap
 				}
 			}
-			if = {
-				limit = {
-					PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						AND = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
-						}
-					}
-				}
-				PRC = {
-					country_event = china.1
-				}
-			}
-			if = {
-				limit = {
-					SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						AND = {
-							controls_state = 608
-							controls_state = 597
-							controls_state = 614
-						}
-					}
-				}
-				SHX = {
-					country_event = china.1
-				}
-			}
-			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
-			add_ideas = JAP_intervene_in_china_5
-			unlock_decision_tooltip = JAP_china_step_up_war_effort
 		}
 	}
 
@@ -1200,8 +1315,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			JAP_intervene_in_china_remove = yes
-			add_named_threat = { threat = 15 name = JAP_secure_china }		
+			JAP_intervene_in_china_remove = yes		
 			USA = { add_war_support = 0.05 }	
 			unlock_decision_tooltip = JAP_ichi_go
 		}
@@ -1236,6 +1350,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_named_threat = { threat = 21 name = JAP_secure_china }
 			add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 150000
@@ -3973,7 +4088,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { is_subject_of = ROOT }
 		}
 
 		bypass = {
@@ -4009,8 +4123,6 @@ focus_tree = {
 		}
 
 		available = {
-			716 = { is_fully_controlled_by = MAN }
-			MAN = { is_subject_of = ROOT }
 		}
 
 		bypass = {
@@ -4111,10 +4223,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { 
-				is_subject_of = ROOT 
-				controls_state = 716
-			}
 		}
 
 		bypass = {
@@ -4172,10 +4280,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 715
-			}
 		}
 
 		bypass = {
@@ -4214,10 +4318,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 716				
-			}
 		}
 
 		bypass = {
@@ -4257,12 +4357,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_subject_of = ROOT
-				has_full_control_of_state = 715
-				has_full_control_of_state = 610
-				has_full_control_of_state = 328
-			}
 		}
 
 		bypass = {
@@ -4300,7 +4394,6 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = { is_subject_of = ROOT }
 		}
 
 		bypass = {

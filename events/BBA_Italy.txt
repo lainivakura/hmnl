@@ -5541,7 +5541,7 @@ country_event = {
 	option = { 
 		name = BBA_italy_bop.1.a
 
-		ITA_bop_high_decrease_effect = yes
+		ITA_bop_medium_decrease_effect = yes
 		ITA_bop_increase_lost_core_modifier = yes
 		custom_effect_tooltip = ITA_losing_cores_tt
 	}
@@ -5581,7 +5581,7 @@ country_event = {
 	option = { 
 		name = BBA_italy_bop.3.a
 
-		ITA_bop_high_increase_effect = yes	
+		ITA_bop_medium_increase_effect = yes	
 		custom_effect_tooltip = ITA_reclaiming_cores_tt	
 	}
 }
@@ -10406,11 +10406,18 @@ country_event = {
 	option = { 
 		name = BBA_italy_interaction_events.13.a
 
+		if = {
+			limit = {
+				NOT = {
+					is_in_faction_with = FROM
+				}
+			}
 		ITA = {
 			create_wargoal = {
 				type = take_state_focus
 				target = FROM
 				generator = { 105 }
+				}
 			}
 		}
 	}
@@ -12718,6 +12725,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		hidden_effect = {
 		if = {
 			limit = {
 				ROOT = {
@@ -12729,6 +12737,7 @@ country_event = {
 					is_in_faction_with = ROOT
 				}
 				set_country_flag = ITA_add_to_the_stresa_front
+				}
 			}
 		}
 	}
@@ -12741,6 +12750,25 @@ country_event = {
 			base = 100
 		}
 
+		every_country = { #If Italy has any wargoal on other countries, remove them so they can join the faction
+			limit = {
+				OR = {
+					is_in_faction_with = ROOT
+					tag = ROOT
+				}
+				FROM = {
+					has_wargoal_against = PREV
+				}
+			}
+			FROM = {
+				remove_wargoal = {
+					type = all
+					target = PREV
+				}
+			}
+		}
+
+		effect_tooltip = {
 		if = {
 			limit = {
 				ENG = {
@@ -12758,11 +12786,21 @@ country_event = {
 			}
 			every_other_country = {
 				limit = {
+						NOT = {
+							original_tag = ENG
+						}
 					has_country_flag = ITA_add_to_the_stresa_front
 				}
 				ROOT = {
 					add_to_faction = PREV #Add already existing faction members to the new faction
 				}
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = BBA_italy_interaction_events.411
+				days = 2
 			}
 		}
 	}
@@ -12776,6 +12814,51 @@ country_event = {
 		}
 
 		add_war_support = -0.3
+
+	}
+}
+
+
+country_event = { #Hidden event
+	id = BBA_italy_interaction_events.411
+	
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = no
+
+	#Italy joins the faction
+	option = { 
+		name = BBA_italy_interaction_events.41.a 
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				ENG = {
+					is_faction_leader = yes
+				}
+			}
+			ENG = { add_to_faction = FRA }
+			ENG = { add_to_faction = ITA }
+		}
+		else = {
+			ROOT = {
+				create_faction = stresa_front_ita
+				ROOT = { add_to_faction = ITA }
+				ROOT = { add_to_faction = ENG }
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						original_tag = ENG
+					}
+					has_country_flag = ITA_add_to_the_stresa_front
+				}
+				ROOT = {
+					add_to_faction = PREV #Add already existing faction members to the new faction
+				}
+			}
+		}
 	}
 }
 
