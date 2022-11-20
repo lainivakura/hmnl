@@ -4929,7 +4929,7 @@ date > 1949.12.1
 		x = 1
 		y = 3
 		relative_position_id = GER_naval_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5002,7 +5002,7 @@ date > 1949.12.1
 		x = 0
 		y = 1
 		relative_position_id = GER_u_boat_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -5027,7 +5027,7 @@ date > 1949.12.1
 		x = 0
 		y = 1
 		relative_position_id = GER_trade_interdiction
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -6704,7 +6704,7 @@ date > 1949.12.1
 		x = -2
 		y = 1
 		relative_position_id = GER_break_the_anglo_french_colonial_hegemony
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
