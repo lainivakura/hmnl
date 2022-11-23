@@ -2987,7 +2987,7 @@ focus = {
 				date >		1942.6.1
 			}		
 		prerequisite = { focus = GER_wunderwaffe }
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 13
 		y = 7
 		completion_reward = {
@@ -3010,7 +3010,7 @@ focus = {
 }
 focus = {
 		id = GER_war_production
-		icon = GFX_goal_generic_production2
+		icon = GFX_focus_SOV_organize_wreckers
 		cost = 10
 		available = {
 				date >		1942.3.1
@@ -9025,7 +9025,7 @@ date > 1949.12.1
 focus = {
 		id = stainer_vperde
 		text = stainer_vperde
-		icon = GFX_goal_ger_stainer_davi
+		icon = GFX_focus_generic_military_mission
 		cost = 1
 		
 		x = 13
@@ -9127,7 +9127,7 @@ focus = {
 	focus = {
 		id = Folcsturm
 		text = Folcsturm
-		icon = GFX_goal_GER_folks
+		icon = GFX_focus_generic_infiltration
 		cost = 1
 		x = 14
 		y = 1
