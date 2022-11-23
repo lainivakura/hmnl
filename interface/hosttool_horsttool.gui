@@ -156,8 +156,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "statetransfer"  
-			position = {x=250 y=80}
-			Orientation = "CENTER"
+			position = {x=280 y=85}
+			Orientation = UPPER_LEFT
 			font = "hoi_24header"
 			text = "st_state_id_tt"
 			maxWidth = 250
