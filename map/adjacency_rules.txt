@@ -144,6 +144,9 @@ adjacency_rule =
 adjacency_rule =
 {
 	name = "PANAMA_CANAL"
+	is_friend = {
+		is_friend_for_panama = yes
+	}
 
 	contested =
 	{
@@ -169,20 +172,13 @@ adjacency_rule =
 	neutral =
 	{
 		army = no
-		navy = yes
+		navy = no
 		submarine = no
 		trade = yes
 	}
 	
 	required_provinces = { 4624 7617 }
 
-	is_disabled = {
-		OR = {
-			has_global_flag = PANAMA_CANAL_BLOCKED
-			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
-		}
-		tooltip = disable_canal_tt
-	}
 		
 	icon = 7617
 	offset = { -3 0 -2 }
@@ -191,9 +187,11 @@ adjacency_rule =
 #Marmara Strait
 adjacency_rule =
 {
-	
 	name = "BOSPHORUS_STRAIT"
 
+	is_friend = {
+		TUR_is_friend_for_bosphorus = yes
+	}
 	contested =
 	{
 		army = no
@@ -218,17 +216,13 @@ adjacency_rule =
 	neutral =
 	{
 		army = no
-		navy = yes
+		navy = no
 		submarine = no
 		trade = yes
 	}
+	
 	required_provinces = { 9833 11829 }
 
-	is_disabled = {
-		has_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY
-		tooltip = bosporus_strait_blocked_tt
-	}
-	
 	icon = 9833
 	offset = { -2 0 -9 }
 }
