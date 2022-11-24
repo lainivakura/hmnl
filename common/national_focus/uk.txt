@@ -85,19 +85,10 @@ focus_tree = {
 				NOT = { has_government = democratic }
 				num_of_factories > 30
 			}
-			NOt = {
+			not = {
 				has_war_with = USA
 			}
-			USA = { 
-				has_government = ROOT
-				has_war = no
-				NOT = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-					}
-				}
-			}
+			
 			
 		} 
 		prerequisite = { focus = crypto_bomb_focus }
@@ -106,7 +97,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -125,7 +116,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = tizard_mission_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1346,7 +1337,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1446,7 +1437,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1513,7 +1504,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1537,7 +1528,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1566,7 +1557,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1592,7 +1583,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = uk_convoy_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1617,7 +1608,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1631,6 +1622,15 @@ focus_tree = {
 				uses = 3
 				category = naval_doctrine
 			}
+			133 = {
+				
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1641,7 +1641,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1667,7 +1667,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1691,7 +1691,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1721,7 +1721,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1774,7 +1774,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = uk_battleship_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1809,7 +1809,7 @@ focus_tree = {
 					fixed_ship_secondaries_slot = dp_ship_secondaries_3
 					fixed_ship_armor_slot = ship_armor_bb_3
 					front_1_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_anti_air_4
+					mid_1_custom_slot = empty
 					mid_2_custom_slot = dp_ship_secondaries_3
 					mid_3_custom_slot = ship_airplane_launcher_2
 					rear_1_custom_slot = ship_heavy_battery_3
@@ -5551,7 +5551,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 

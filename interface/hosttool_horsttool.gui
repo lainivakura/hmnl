@@ -2,8 +2,10 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "hosttool_open_container"
-		position = { x = -593 y = 4 }
-		Orientation = UPPER_RIGHT
+		position = { x = -100 y = -275 }
+		moveable = yes
+		Orientation = LOWER_RIGHT
+		
 		buttonType = {
 			name = "tool_open"
 			#quadTextureSprite = "GFX_generic_bg"
@@ -13,6 +15,7 @@ guiTypes = {
 			pdx_tooltip = "[ST_TOOLTIP]"
 			clicksound = click_ok
 			oversound = ui_menu_over
+			
 		}
 		
 		instantTextboxType = {
@@ -153,8 +156,8 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "statetransfer"  
-			position = {x=250 y=80}
-			Orientation = "CENTER"
+			position = {x=280 y=85}
+			Orientation = UPPER_LEFT
 			font = "hoi_24header"
 			text = "st_state_id_tt"
 			maxWidth = 250
