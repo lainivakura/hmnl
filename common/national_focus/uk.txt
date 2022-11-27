@@ -5915,13 +5915,6 @@ focus_tree = {
 			# AST = {
 				# add_opinion_modifier = { target = ENG modifier = aided_industry }
 				285 = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -5931,13 +5924,6 @@ focus_tree = {
 					set_state_flag = ENG_uk_australia_focus_1IC
 				}
 				285 = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -5947,14 +5933,6 @@ focus_tree = {
 					set_state_flag = ENG_uk_australia_focus_1IC
 				}
 				285 = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -5964,14 +5942,7 @@ focus_tree = {
 					set_state_flag = ENG_uk_australia_focus_2dockyards
 				}
 				285 = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6171,13 +6142,7 @@ focus_tree = {
 			# CAN = {
 				# add_opinion_modifier = { target = ENG modifier = aided_industry }
 				468 = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -6187,13 +6152,7 @@ focus_tree = {
 					set_state_flag = ENG_uk_canada_focus_2IC
 				}
 				468 = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -6203,14 +6162,7 @@ focus_tree = {
 					set_state_flag = ENG_uk_canada_focus_1IC
 				}
 				468 = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6220,14 +6172,7 @@ focus_tree = {
 					set_state_flag = ENG_uk_canada_focus_1dockyard
 				}
 				468 = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6330,13 +6275,7 @@ focus_tree = {
 			# SAF = {
 			# 	add_opinion_modifier = { target = ENG modifier = aided_industry }
 				719 = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -6346,13 +6285,7 @@ focus_tree = {
 					set_state_flag = ENG_uk_south_africa_focus_2IC
 				}
 				719 = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -6362,14 +6295,7 @@ focus_tree = {
 					set_state_flag = ENG_uk_south_africa_focus_1IC
 				}
 				719 = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6379,14 +6305,7 @@ focus_tree = {
 					set_state_flag = ENG_uk_south_africa_focus_1dockyard
 				}
 				719 = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
+
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard

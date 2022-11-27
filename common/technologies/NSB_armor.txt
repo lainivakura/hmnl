@@ -607,10 +607,6 @@ technologies = {
 		}
 		research_cost = 2
 		start_year = 1943
-
-		allow = {
-			date > 1940.1.1
-		}
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 0 y = @1943 }
