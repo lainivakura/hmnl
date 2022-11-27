@@ -5,3 +5,6 @@
  d_occupation_decisions: "Коллаборанты"
  GER_occupation_law_FROM: "Установить оккупационный режим в [FROM.GetName]"
  JAP_occupation_law: "Установить оккупационный режим в Китае"
+ ENG_annex_FROM: "Аннекс [FROM.GetName]"
+ ENG_free_FROM: "Освободить [FROM.GetName]"
+ ENG_annex_ISL: "Аннексировать Исландию"
