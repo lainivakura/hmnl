@@ -4375,18 +4375,18 @@ focus_tree = {
 
 				if = {
 					limit = {
-						has_tech = tech_engineers2
+						has_tech = tech_engineers3
 					}
 					#L3/35 lf Flamethrower
 					ITA_add_basic_light_flamethrower_template = yes
 				}
-				else = {
-					custom_effect_tooltip = ITA_italian_tankettes_flamethrower_tt
-					effect_tooltip = {
-						#L3/35 lf Flamethrower
-						ITA_add_basic_light_flamethrower_template = yes
-					}
-				}
+				# else = {
+				# 	custom_effect_tooltip = ITA_italian_tankettes_flamethrower_tt
+				# 	effect_tooltip = {
+				# 		#L3/35 lf Flamethrower
+				# 		ITA_add_basic_light_flamethrower_template = yes
+				# 	}
+				# }
 			}
 		}
 	}

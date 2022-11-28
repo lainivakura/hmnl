@@ -1158,253 +1158,253 @@ JAP_annex_MEN = {
 			}
 		
 }
-ENG_annex_RAJ = {
+# ENG_annex_RAJ = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
+# 		allowed = {
+# 			original_tag = ENG
 		
 
-			}
-		available = {
-			NOT = {
-					has_war_with = JAP
-					}
-		RAJ = { 
-				is_ai = yes 
-			}
-			date > 1939.9.1
-		}
+# 			}
+# 		available = {
+# 			NOT = {
+# 					has_war_with = JAP
+# 					}
+# 		RAJ = { 
+# 				is_ai = yes 
+# 			}
+# 			date > 1939.9.1
+# 		}
 		
-		fire_only_once = yes
+# 		fire_only_once = yes
 		
-		cost = 0
+# 		cost = 0
 			
-		visible = {
-			country_exists = RAJ
-		}
+# 		visible = {
+# 			country_exists = RAJ
+# 		}
 	
-		complete_effect = {
-			annex_country = {target = RAJ transfer_troops = yes}
-							every_controlled_state = {
-	add_compliance = 100
-	}
-	}
-}
+# 		complete_effect = {
+# 			annex_country = {target = RAJ transfer_troops = yes}
+# 							every_controlled_state = {
+# 	add_compliance = 100
+# 	}
+# 	}
+# }
 
-ENG_annex_NZL = {
+# ENG_annex_NZL = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
+# 		allowed = {
+# 			original_tag = ENG
 
-		}
-		available = {
-			NOT = {
-					has_war_with = JAP
-					}
-			NZL = { 
-				is_ai = yes 
-			}
-		}
+# 		}
+# 		available = {
+# 			NOT = {
+# 					has_war_with = JAP
+# 					}
+# 			NZL = { 
+# 				is_ai = yes 
+# 			}
+# 		}
 		
-		fire_only_once = yes
+# 		fire_only_once = yes
 		
-		cost = 0
+# 		cost = 0
 			
-		visible = {
-			country_exists = NZL
-		}
+# 		visible = {
+# 			country_exists = NZL
+# 		}
 	
-		complete_effect = {
-			annex_country = {target = NZL transfer_troops = yes}
-							every_controlled_state = {
-	add_compliance = 100
-	}
-	}
-}
-ENG_annex_AST = {
+# 		complete_effect = {
+# 			annex_country = {target = NZL transfer_troops = yes}
+# 							every_controlled_state = {
+# 	add_compliance = 100
+# 	}
+# 	}
+# }
+# ENG_annex_AST = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
+# 		allowed = {
+# 			original_tag = ENG
 
-					}
+# 					}
 
-		available = {
-		NOT = {
-					has_war_with = JAP
-					}
-			AST = { 
-				is_ai = yes 
-			}
-			date > 1939.9.1
-		}
+# 		available = {
+# 		NOT = {
+# 					has_war_with = JAP
+# 					}
+# 			AST = { 
+# 				is_ai = yes 
+# 			}
+# 			date > 1939.9.1
+# 		}
 			
 		
-		fire_only_once = yes
+# 		fire_only_once = yes
 		
-		cost = 0
+# 		cost = 0
 			
-		visible = {
-			country_exists = AST
-		}
+# 		visible = {
+# 			country_exists = AST
+# 		}
 			
 	
-		complete_effect = {
-			annex_country = {target = AST transfer_troops = yes}
-			every_controlled_state = {
-				add_compliance = 100
-			}
-	}
-}
+# 		complete_effect = {
+# 			annex_country = {target = AST transfer_troops = yes}
+# 			every_controlled_state = {
+# 				add_compliance = 100
+# 			}
+# 	}
+# }
 	
 
 
-ENG_annex_minors = {
+# ENG_annex_minors = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 
-		available = {
-			RAJ = { 
-				is_ai = yes 
-			}
-			AST = { 
-							is_ai = yes 
-						}
-			NZL = { 
-							is_ai = yes 
-						}
-			SAF = { 
-							is_ai = yes 
-						}
+# 		available = {
+# 			RAJ = { 
+# 				is_ai = yes 
+# 			}
+# 			AST = { 
+# 							is_ai = yes 
+# 						}
+# 			NZL = { 
+# 							is_ai = yes 
+# 						}
+# 			SAF = { 
+# 							is_ai = yes 
+# 						}
 						
-			date < 1937.1.1
-					}
-					cost = 0
+# 			date < 1937.1.1
+# 					}
+# 					cost = 0
 						
-					visible = {
-						country_exists = RAJ
-					}
-			visible = {
-						country_exists = AST
-					}
-						visible = {
-						country_exists = NZL
-					}
-			visible = {
-						country_exists = SAF
-					}
-		fire_only_once = yes
+# 					visible = {
+# 						country_exists = RAJ
+# 					}
+# 			visible = {
+# 						country_exists = AST
+# 					}
+# 						visible = {
+# 						country_exists = NZL
+# 					}
+# 			visible = {
+# 						country_exists = SAF
+# 					}
+# 		fire_only_once = yes
 	
-		complete_effect = {
-				add_ideas = ENG_bezminors
-							annex_country = {target = RAJ transfer_troops = yes}
-				annex_country = {target = SAF transfer_troops = yes}
-				annex_country = {target = AST transfer_troops = yes}
-				annex_country = {target = NZL transfer_troops = yes}
-							every_controlled_state = {
-					add_compliance = 100			 }
-				add_state_core = 521
-				add_state_core = 285
-				add_state_core = 517
-				add_state_core = 518
-				add_state_core = 674
-				add_state_core = 520
-				add_state_core = 519
-				add_state_core = 522
-				add_state_core = 723
-				add_state_core = 284	
-					army_experience = 50
-							add_research_slot = 1
+# 		complete_effect = {
+# 				add_ideas = ENG_bezminors
+# 							annex_country = {target = RAJ transfer_troops = yes}
+# 				annex_country = {target = SAF transfer_troops = yes}
+# 				annex_country = {target = AST transfer_troops = yes}
+# 				annex_country = {target = NZL transfer_troops = yes}
+# 							every_controlled_state = {
+# 					add_compliance = 100			 }
+# 				add_state_core = 521
+# 				add_state_core = 285
+# 				add_state_core = 517
+# 				add_state_core = 518
+# 				add_state_core = 674
+# 				add_state_core = 520
+# 				add_state_core = 519
+# 				add_state_core = 522
+# 				add_state_core = 723
+# 				add_state_core = 284	
+# 					army_experience = 50
+# 							add_research_slot = 1
 
-				add_offsite_building = {
-									type = arms_factory
-									level = 10
-								}
+# 				add_offsite_building = {
+# 									type = arms_factory
+# 									level = 10
+# 								}
 
 													
 													
 												
 
-				add_equipment_to_stockpile = {
-								type = convoy
-								amount = 500
+# 				add_equipment_to_stockpile = {
+# 								type = convoy
+# 								amount = 500
 								
-							}
-				add_doctrine_cost_reduction = {
-											name = land_doc_bonus
-											cost_reduction = 0.5
-											uses = 3
-											category = land_doctrine
-										}
+# 							}
+# 				add_doctrine_cost_reduction = {
+# 											name = land_doc_bonus
+# 											cost_reduction = 0.5
+# 											uses = 3
+# 											category = land_doctrine
+# 										}
 
-		}
-}
+# 		}
+# }
 
 
 
-ENG_annex_CAN_bezigrokov = {
+# ENG_annex_CAN_bezigrokov = {
 
-		icon = generic_operation
+# 		icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
-		}
+# 		allowed = {
+# 			original_tag = ENG
+# 		}
 
-		available = {
-			CAN = { 
-				is_ai = yes 
-			}
+# 		available = {
+# 			CAN = { 
+# 				is_ai = yes 
+# 			}
 			
-			date < 1937.1.1
-		}
+# 			date < 1937.1.1
+# 		}
 			
-		cost = 0
+# 		cost = 0
 			
-		visible = {
-			country_exists = CAN
-		}
+# 		visible = {
+# 			country_exists = CAN
+# 		}
 			
-		fire_only_once = yes
+# 		fire_only_once = yes
 	
-		complete_effect = {
-			annex_country = {target = CAN transfer_troops = yes}
-							add_state_core = 465
-				add_state_core = 464
-				add_state_core = 468
-				add_state_core = 466
-				add_state_core = 276
-				add_state_core = 682
-				add_state_core = 683
-				add_state_core = 467
-				add_state_core = 469
-				add_state_core = 472
-				add_state_core = 470
-				add_state_core = 471
-				add_state_core = 473
-				add_state_core = 740
-				add_state_core = 739
-				add_state_core = 332
-				add_state_core = 331
-				set_technology = {
-													improved_decimetric_radar = 1
-												}
-				set_technology = {
-													centimetric_radar = 1
-												}
-				set_technology = {
-													decimetric_radar = 1
-												}
-		}
-}
+# 		complete_effect = {
+# 			annex_country = {target = CAN transfer_troops = yes}
+# 							add_state_core = 465
+# 				add_state_core = 464
+# 				add_state_core = 468
+# 				add_state_core = 466
+# 				add_state_core = 276
+# 				add_state_core = 682
+# 				add_state_core = 683
+# 				add_state_core = 467
+# 				add_state_core = 469
+# 				add_state_core = 472
+# 				add_state_core = 470
+# 				add_state_core = 471
+# 				add_state_core = 473
+# 				add_state_core = 740
+# 				add_state_core = 739
+# 				add_state_core = 332
+# 				add_state_core = 331
+# 				set_technology = {
+# 													improved_decimetric_radar = 1
+# 												}
+# 				set_technology = {
+# 													centimetric_radar = 1
+# 												}
+# 				set_technology = {
+# 													decimetric_radar = 1
+# 												}
+# 		}
+# }
 
 
 
@@ -1414,67 +1414,38 @@ ENG_annex_CAN_bezigrokov = {
 
 
 
-ENG_annex_SAF = {
-			icon = generic_operation
+# ENG_annex_SAF = {
+# 			icon = generic_operation
 
-			allowed = {
-				original_tag = ENG
-			}
+# 			allowed = {
+# 				original_tag = ENG
+# 			}
 				
-			available = {
-			SAF = { 
-					is_ai = yes 
-				}
-				date > 1939.9.1
-			}
+# 			available = {
+# 			SAF = { 
+# 					is_ai = yes 
+# 				}
+# 				date > 1939.9.1
+# 			}
 		
 
-			fire_only_once = yes
+# 			fire_only_once = yes
 
-			cost = 0
+# 			cost = 0
 				
-			visible = {
-				country_exists = SAF
-			}
+# 			visible = {
+# 				country_exists = SAF
+# 			}
 
-			complete_effect = {
-				annex_country = {target = SAF transfer_troops = yes}
-								every_controlled_state = {
-				add_compliance = 100
-				}
-			}
-}
+# 			complete_effect = {
+# 				annex_country = {target = SAF transfer_troops = yes}
+# 								every_controlled_state = {
+# 				add_compliance = 100
+# 				}
+# 			}
+# }
 
-ENG_annex_CAN = {
 
-		icon = generic_operation
-
-		allowed = {
-			original_tag = ENG
-		}
-
-		available = {
-			CAN = { 
-				is_ai = yes 
-			}
-			date > 1939.9.1
-		}
-			
-		cost = 0
-			
-		visible = {
-			country_exists = CAN
-		}
-			
-		fire_only_once = yes
-	
-		complete_effect = {
-			annex_country = {target = CAN transfer_troops = yes}
-							every_controlled_state = {
-			add_compliance = 100
-			}
-		}
-}
 
 
 
@@ -1518,39 +1489,7 @@ FIN_clear_all = {
 
 
 
-ENG_annex_MAL = {
 
-			icon = generic_operation
-
-			allowed = {
-				original_tag = ENG
-
-	}
-
-		available = {
-			NOT = {
-					has_war_with = JAP
-					}
-			MAL = { 
-				is_ai = yes 
-			}
-			date > 1939.9.1
-		}	
-		cost = 300
-			
-		visible = {
-			country_exists = MAL
-		}
-			
-		fire_only_once = yes
-	
-		complete_effect = {
-			annex_country = {target = MAL transfer_troops = yes}
-							every_controlled_state = {
-	add_compliance = 100
-		}
-				}
-}
 # USA_annex_PHI = {
 
 # 	icon = generic_operation
@@ -1581,178 +1520,178 @@ ENG_annex_MAL = {
 # }
 	
 
-ENG_interim_leadership_of_the_French_regions = {
-		icon = generic_operation
+# ENG_interim_leadership_of_the_French_regions = {
+# 		icon = generic_operation
 
-	allowed = {
-		original_tag = ENG
-	}
+# 	allowed = {
+# 		original_tag = ENG
+# 	}
 
-	visible = {
-		country_exists = FRA
-	}
+# 	visible = {
+# 		country_exists = FRA
+# 	}
 
-	cost = 0
+# 	cost = 0
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	available = {
-	FRA = {
-	is_ai = yes 
-		}
-		FRA = { 				has_capitulated = yes }
-	}
-	visible = {
-		country_exists = FRA
-	}
-	complete_effect = { 
-		ENG = { 
-			set_state_owner = 15 
-			set_state_owner = 14 
-			set_state_owner = 785 
-			set_state_owner = 29
-			set_state_owner = 30
-			set_state_owner = 23
-			set_state_owner = 19
-			set_state_owner = 16
-			set_state_owner = 18
-			set_state_owner = 24
-			set_state_owner = 27
-			set_state_owner = 17
-			set_state_owner = 806
-		}
-	}
-}
-FRA_Capital_Alg = {
+# 	available = {
+# 	FRA = {
+# 	is_ai = yes 
+# 		}
+# 		FRA = { 				has_capitulated = yes }
+# 	}
+# 	visible = {
+# 		country_exists = FRA
+# 	}
+# 	complete_effect = { 
+# 		ENG = { 
+# 			set_state_owner = 15 
+# 			set_state_owner = 14 
+# 			set_state_owner = 785 
+# 			set_state_owner = 29
+# 			set_state_owner = 30
+# 			set_state_owner = 23
+# 			set_state_owner = 19
+# 			set_state_owner = 16
+# 			set_state_owner = 18
+# 			set_state_owner = 24
+# 			set_state_owner = 27
+# 			set_state_owner = 17
+# 			set_state_owner = 806
+# 		}
+# 	}
+# }
+# FRA_Capital_Alg = {
 
-	icon = generic_political_actions
+# 	icon = generic_political_actions
 
-	allowed = {
-		original_tag = FRA
-	}
-	visible = {
-		always = yes
-	}
+# 	allowed = {
+# 		original_tag = FRA
+# 	}
+# 	visible = {
+# 		always = yes
+# 	}
 
-	cost = 0
-	fire_only_once = no
-	available = {
-		has_war = yes
-		FRA = { 				has_capitulated = yes }
-		NOT = {
-		controls_state = 16
-		}
-		controls_state = 459
-	}
-	complete_effect = {
-			if = { 
-				limit = { 459 = { is_controlled_by = FRA } } 
-				set_capital = { state = 459}
-			}
-	}
+# 	cost = 0
+# 	fire_only_once = no
+# 	available = {
+# 		has_war = yes
+# 		FRA = { 				has_capitulated = yes }
+# 		NOT = {
+# 		controls_state = 16
+# 		}
+# 		controls_state = 459
+# 	}
+# 	complete_effect = {
+# 			if = { 
+# 				limit = { 459 = { is_controlled_by = FRA } } 
+# 				set_capital = { state = 459}
+# 			}
+# 	}
 
-	ai_will_do = {
-		factor = 0
-	}
-}
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# }
 
-FRA_Capital_Brazzavil = {
+# FRA_Capital_Brazzavil = {
 
-	icon = generic_political_actions
+# 	icon = generic_political_actions
 
-	allowed = {
-		original_tag = FRA
-	}
-	visible = {
-		always = yes
-	}
+# 	allowed = {
+# 		original_tag = FRA
+# 	}
+# 	visible = {
+# 		always = yes
+# 	}
 
-	cost = 0
-	fire_only_once = no
-	available = {
-		has_war = yes
-		FRA = { 				has_capitulated = yes }
-					NOT = {
-		controls_state = 459
-		controls_state = 16
-		}
-		controls_state = 772
-	}
+# 	cost = 0
+# 	fire_only_once = no
+# 	available = {
+# 		has_war = yes
+# 		FRA = { 				has_capitulated = yes }
+# 					NOT = {
+# 		controls_state = 459
+# 		controls_state = 16
+# 		}
+# 		controls_state = 772
+# 	}
 
-	complete_effect = {
-			if = { 
-				limit = { 772 = { is_controlled_by = FRA } } 
-				set_capital = { state = 772}
-			}
-	}
+# 	complete_effect = {
+# 			if = { 
+# 				limit = { 772 = { is_controlled_by = FRA } } 
+# 				set_capital = { state = 772}
+# 			}
+# 	}
 
-	ai_will_do = {
-		factor = 0
-	}
-}
-FRA_Capital_Caledonia = {
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# }
+# FRA_Capital_Caledonia = {
 
-	icon = generic_political_actions
+# 	icon = generic_political_actions
 
-	allowed = {
-		original_tag = FRA
-	}
-	visible = {
-		always = yes
-	}
+# 	allowed = {
+# 		original_tag = FRA
+# 	}
+# 	visible = {
+# 		always = yes
+# 	}
 
-	cost = 0
-	fire_only_once = no
-	available = {
-		has_war = yes
-		FRA = { 				has_capitulated = yes }
-		NOT = {
-		controls_state = 459
-		controls_state = 16
-		controls_state = 772
-		}
-	}
+# 	cost = 0
+# 	fire_only_once = no
+# 	available = {
+# 		has_war = yes
+# 		FRA = { 				has_capitulated = yes }
+# 		NOT = {
+# 		controls_state = 459
+# 		controls_state = 16
+# 		controls_state = 772
+# 		}
+# 	}
 
-	complete_effect = {
-			if = { 
-				limit = { 635 = { is_controlled_by = FRA } } 
-				set_capital = { state = 635}
-			}
-	}
+# 	complete_effect = {
+# 			if = { 
+# 				limit = { 635 = { is_controlled_by = FRA } } 
+# 				set_capital = { state = 635}
+# 			}
+# 	}
 
-	ai_will_do = {
-		factor = 0
-	}
-}
-USA_autonomy_integrated_puppet_INS = {
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# }
+# USA_autonomy_integrated_puppet_INS = {
 
-	icon = generic_operation
+# 	icon = generic_operation
 
-	allowed = {
-		original_tag = USA
-	}
+# 	allowed = {
+# 		original_tag = USA
+# 	}
 
-	available = {
-		INS = { 
-			is_ai = yes
-							has_capitulated = yes 
-		}
-	}
+# 	available = {
+# 		INS = { 
+# 			is_ai = yes
+# 							has_capitulated = yes 
+# 		}
+# 	}
 		
-	cost = 20
+# 	cost = 20
 		
-	visible = {
-		has_war_with = JAP
-	}
+# 	visible = {
+# 		has_war_with = JAP
+# 	}
 		
-	fire_only_once = yes
-	complete_effect = {
-		set_autonomy = {
-			target = INS
-			autonomous_state = autonomy_integrated_puppet
-		}
-	}
-}
+# 	fire_only_once = yes
+# 	complete_effect = {
+# 		set_autonomy = {
+# 			target = INS
+# 			autonomous_state = autonomy_integrated_puppet
+# 		}
+# 	}
+# }
 }
 
 

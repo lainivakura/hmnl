@@ -136,3 +136,113 @@ d_occupation_decisions = {
 		}
 	}
 }
+z_annex_d = {
+	ENG_annex_FROM = {
+		icon = generic_operation
+		fire_only_once = no
+
+		allowed = {
+			original_tag = ENG
+		}
+		
+		available = {
+			date > 1939.09.01
+		}
+
+		visible = {
+			always = yes
+		}
+
+		targets = { CAN SAF AST RAJ }
+
+		target_root_trigger = { original_tag = ENG }
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = AST
+					original_tag = RAJ
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {country_event = ENG_annex.1}
+		}
+
+	}
+	ENG_annex_MAL = {
+
+		icon = generic_operation
+	
+		allowed = {
+			original_tag = ENG
+	
+		}
+	
+		available = {
+			NOT = {
+					has_war_with = JAP
+					}
+			MAL = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}	
+		cost = 300
+			
+		visible = {
+			country_exists = MAL
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = MAL transfer_troops = yes}
+			every_controlled_state = {
+				add_compliance = 100
+			}
+		}
+	}
+}
+z_annex_d = {
+	ENG_free_FROM = {
+		icon = generic_operation
+		fire_only_once = no
+
+		allowed = {
+			original_tag = ENG
+		}
+		
+		available = {
+			ENG = {has_war_with = jap}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		targets = { CAN SAF AST RAJ }
+
+		target_root_trigger = { original_tag = ENG }
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = AST
+					original_tag = RAJ
+				}
+			}
+		}
+		complete_effect = {
+			set_autonomy = {
+				target = FROM
+				autonomous_state = autonomy_free
+			}
+		}
+
+	}
+}
