@@ -1,3 +1,9 @@
 attache_decisions = {
 	icon = military_operation
 }
+d_occupation_decisions = {
+	icon = military_operation
+}
+z_annex_d = {
+	icon = military_operation
+}

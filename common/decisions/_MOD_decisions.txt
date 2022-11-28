@@ -136,7 +136,7 @@ d_occupation_decisions = {
 		}
 	}
 }
-d_occupation_decisions = {
+z_annex_d = {
 	ENG_annex_FROM = {
 		icon = generic_operation
 		fire_only_once = no
@@ -206,7 +206,7 @@ d_occupation_decisions = {
 		}
 	}
 }
-d_occupation_decisions = {
+z_annex_d = {
 	ENG_free_FROM = {
 		icon = generic_operation
 		fire_only_once = no
