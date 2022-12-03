@@ -9,3 +9,6 @@
  ENG_free_FROM: "Освободить [FROM.GetName]"
  ENG_annex_ISL: "Аннексировать Исландию"
  z_annex_d: "Миноры"
+ z_annex_bot_d: "Боты"
+ ENG_annex_ISL: "Аннекс Исландии"
+ ENG_bot_FROM: "Контроль терок при высадке в [FROM.GetName]"
