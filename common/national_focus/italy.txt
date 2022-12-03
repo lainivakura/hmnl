@@ -14763,7 +14763,7 @@ focus_tree = {
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = ITA_foreign_affairs }
 		mutually_exclusive = { focus = ITA_potential_allies_in_the_balkans }
-
+		allow_branch = {always = no}
 		x = -1
 		y = 1
 		relative_position_id = ITA_foreign_affairs
@@ -14890,12 +14890,12 @@ focus_tree = {
 			}
 
 
-			activate_targeted_decision = { target = YUG decision = ITA_pressure_country_government_balkan }
-			activate_targeted_decision = { target = ROM decision = ITA_pressure_country_government_balkan }
-			activate_targeted_decision = { target = BUL decision = ITA_pressure_country_government_balkan }
-			activate_targeted_decision = { target = YUG decision = ITA_promote_ideology_rallies_balkan }
-			activate_targeted_decision = { target = ROM decision = ITA_promote_ideology_rallies_balkan }
-			activate_targeted_decision = { target = BUL decision = ITA_promote_ideology_rallies_balkan }
+			# activate_targeted_decision = { target = YUG decision = ITA_pressure_country_government_balkan }
+			# activate_targeted_decision = { target = ROM decision = ITA_pressure_country_government_balkan }
+			# activate_targeted_decision = { target = BUL decision = ITA_pressure_country_government_balkan }
+			# activate_targeted_decision = { target = YUG decision = ITA_promote_ideology_rallies_balkan }
+			# activate_targeted_decision = { target = ROM decision = ITA_promote_ideology_rallies_balkan }
+			# activate_targeted_decision = { target = BUL decision = ITA_promote_ideology_rallies_balkan }
 		}
 	}
 
@@ -16568,49 +16568,49 @@ focus_tree = {
 		y = 2
 		relative_position_id = ITA_corpo_di_truppe_volontarie
 		cost = 5
-		available = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				any_other_country = {
-					original_tag = SPR
-					has_government = fascism
-					has_war = no
-					owns_state = 177
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				SPA = {
-					has_war = no
-					owns_state = 177
-				}
-			}
-			is_puppet = no
-		}
-		cancel = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				any_other_country = {
-					original_tag = SPR
-					has_government = fascism
-					has_war_with = ROOT
-					owns_state = 177
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				has_war_with = ROOT
-				owns_state = 177
-			}
-		}
+		# available = {
+		# 	if = {
+		# 		limit = {
+		# 			NOT = { has_dlc = "La Resistance" }
+		# 		}
+		# 		any_other_country = {
+		# 			original_tag = SPR
+		# 			has_government = fascism
+		# 			has_war = no
+		# 			owns_state = 177
+		# 		}
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "La Resistance"
+		# 		}
+		# 		SPA = {
+		# 			has_war = no
+		# 			owns_state = 177
+		# 		}
+		# 	}
+		# 	is_puppet = no
+		# }
+		# cancel = {
+		# 	if = {
+		# 		limit = {
+		# 			NOT = { has_dlc = "La Resistance" }
+		# 		}
+		# 		any_other_country = {
+		# 			original_tag = SPR
+		# 			has_government = fascism
+		# 			has_war_with = ROOT
+		# 			owns_state = 177
+		# 		}
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			has_dlc = "La Resistance"
+		# 		}
+		# 		has_war_with = ROOT
+		# 		owns_state = 177
+		# 	}
+		# }
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
