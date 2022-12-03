@@ -7,3 +7,6 @@ d_occupation_decisions = {
 z_annex_d = {
 	icon = military_operation
 }
+z_annex_bot_d = {
+	icon = military_operation
+}
