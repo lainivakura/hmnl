@@ -11,3 +11,4 @@
  z_annex_d: "Миноры"
  z_annex_bot_d: "Боты"
  ENG_bot_FROM: "Контроль терок при высадке в [FROM.GetName]"
+ USA_bot_FROM: "Аннексировать [FROM.GetName]"

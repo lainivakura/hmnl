@@ -318,4 +318,35 @@ z_annex_bot_d = {
 			}
 		}
 	}
+	USA_bot_FROM = {
+		icon = generic_operation
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = USA
+		}
+		
+		available = {
+			has_war_with = JAP
+		}
+
+		visible = {
+			always = yes
+		}
+
+		targets = { INS }
+
+		target_root_trigger = { original_tag = USA }
+
+		target_trigger = {
+			FROM = {
+				original_tag = INS
+			}
+		}
+		complete_effect = {
+			annex_country = {
+				target = FROM
+			}
+		}
+	}
 }
