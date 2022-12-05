@@ -1817,6 +1817,11 @@ ideas = {
 							has_full_control_of_state = 118
 						}
 					}
+					ENG = {
+						NOT = {
+							has_full_control_of_state = 446
+						}
+					}
 				}
 			}
 
