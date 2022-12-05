@@ -52,7 +52,7 @@ debug_decisions = { #TODO_Manu: Comment these out
 		}
 	}
 
-	SOV_TEST_CONTINENTS = {
+	SOV_TEST_ULTIMATE_CONTINENTS = {
 		priority = 200
 
 		icon = generic_prepare_civil_war
@@ -72,46 +72,7 @@ debug_decisions = { #TODO_Manu: Comment these out
 		cost = 0
 
 		complete_effect = {
-			if = {
-				limit = {
-					
-				}
-				log = "HIDE obsolete focus branches"
-			}
-			else = {
-				log = "SHOW obsolete focus branches"
-			}
-			every_owned_state = {
-				limit = {
-					is_on_continent = asia
-				}
-				log = "[THIS.GetName]"
-				URG = { transfer_state = PREV }
-
-			}
-		}
-	}
-	SOV_TEST_ULTIMATE_CONTINENTS_SHOW = {
-		priority = 200
-
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		available = {
-			always = yes
-		}
-
-		visible = {
-			always = yes
-		}
-
-		cost = 0
-
-		complete_effect = {
-			log = "WARNING: This takes a while"
+			#log = "WARNING: This takes a while"
 			every_state = {
 				limit = {
 					is_on_continent = asia
@@ -712,7 +673,7 @@ SOV_paranoia_system = {
 				remove_ideas = SOV_purged_junior_navy_officers_1
 			}
 			else = {
-				log = "I CANNOT REMOVE A NS THAT DOESN'T EXIST!"
+				#log = "I CANNOT REMOVE A NS THAT DOESN'T EXIST!"
 			}
 		}
 	}
@@ -1708,7 +1669,7 @@ SOV_paranoia_system = {
 					subtract_from_temp_variable = { SOV_generic_portrait_frame = 6 }
 				}
 				add_to_temp_variable = { SOV_generic_portrait_frame = 1 }
-				log = "Final FRAME is [?SOV_generic_portrait_frame]"
+				#log = "Final FRAME is [?SOV_generic_portrait_frame]"
 
 				add_to_array = {
 					array = SOV_paranoia_generic_portraits_array
@@ -1718,7 +1679,7 @@ SOV_paranoia_system = {
 
 				add_to_variable = { SOV_paranoia_portrait_index = 1 }
 				add_to_temp_variable = { i = 1 }
-				log = "New index is [?SOV_paranoia_portrait_index]"
+				#log = "New index is [?SOV_paranoia_portrait_index]"
 			}
 		}
 	}
@@ -13063,6 +13024,8 @@ SOV_soviet_civil_war_dec_cat = {
 		}
 		cancel_if_not_visible = yes
 
+		fixed_random_seed = no
+
 		complete_effect = {
 			#random_list = {
 			#	50 = { SOV_paranoia_very_low_increase_effect = yes }
@@ -13325,29 +13288,29 @@ SOV_soviet_civil_war_dec_cat = {
 				hidden_effect = {
 					random_controlled_state = {
 						damage_building = {
-							type = railway
+							type = rail_way
 							damage = 1
 						}
 						set_state_flag = railway_damaged_flag
-						LOG = "Damage Railway 1 in [THIS.GetName]"
+						#LOG = "Damage Railway 1 in [THIS.GetName]"
 					}
 					random_controlled_state = {
 						limit = { NOT = { has_state_flag = railway_damaged_flag }}
 						damage_building = {
-							type = railway
+							type = rail_way
 							damage = 1
 						}
 						set_state_flag = railway_damaged_flag
-						LOG = "Damage Railway 2 in [THIS.GetName]"
+						#LOG = "Damage Railway 2 in [THIS.GetName]"
 					}
 					random_controlled_state = {
 						limit = { NOT = { has_state_flag = railway_damaged_flag }}
 						damage_building = {
-							type = railway
+							type = rail_way
 							damage = 1
 						}
 						set_state_flag = railway_damaged_flag
-						LOG = "Damage Railway 2 in [THIS.GetName]"
+						#LOG = "Damage Railway 2 in [THIS.GetName]"
 					}
 					every_owned_state = {
 						limit = { has_state_flag = railway_damaged_flag }
@@ -13517,7 +13480,7 @@ SOV_soviet_civil_war_dec_cat = {
 						NOT = { has_trait = trait_SOV_stalinist }
 					}
 					set_character_flag = SOV_potential_target_flag
-					log = "targeted leader = [THIS.GetName]"
+					#log = "targeted leader = [THIS.GetName]"
 				}
 
 			}
@@ -13596,7 +13559,7 @@ SOV_soviet_civil_war_dec_cat = {
 						NOT = { has_trait = trait_SOV_stalinist }
 					}
 					set_character_flag = SOV_potential_target_flag
-					log = "targeted leader = [THIS.GetName]"
+					#log = "targeted leader = [THIS.GetName]"
 				}
 			}
 			custom_effect_tooltip = SOV_navy_framejob_tt
@@ -14665,7 +14628,14 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					#region = 155 # Manchuria
 					region = 151
+					region = 261 
+					region = 262 
 					region = 149
+					region = 256
+					region = 257
+					region = 258
+					region = 259
+					region = 260
 					region = 152
 				}
 			}
@@ -15336,8 +15306,16 @@ SOV_soviet_civil_war_dec_cat = {
 			FROM = {
 				OR = {
 					region = 147
+					region = 263
 					region = 151
+					region = 261 
+					region = 262 
 					region = 149
+					region = 256
+					region = 257
+					region = 258
+					region = 259
+					region = 260
 				}
 			}
 		}
@@ -15447,7 +15425,10 @@ SOV_soviet_civil_war_dec_cat = {
 
 		target_trigger = {
 			FROM = {
+				OR = {
 				region = 148
+					region = 255
+				}
 			}
 		}
 		available = {
@@ -15585,8 +15566,8 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					region = 12
 					region = 150
-					state = 215
-					state = 216
+					region = 264
+					region = 265
 				}
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
@@ -15849,7 +15830,10 @@ SOV_soviet_civil_war_dec_cat = {
 			FROM = {
 				OR = {
 					region = 136
-					# region = 137
+					region = 267
+					region = 268
+					region = 269
+					region = 270
 				}
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
@@ -16217,7 +16201,13 @@ SOV_soviet_civil_war_dec_cat = {
 
 		visible = {
 			any_owned_state = {
+				OR = {
 				region = 136
+					region = 267
+					region = 268
+					region = 269
+					region = 270
+				}
 				SOV_is_unaligned_state = yes
 			}
 		}
@@ -16232,7 +16222,13 @@ SOV_soviet_civil_war_dec_cat = {
 						NOT = { has_state_flag = SOV_is_aligning_right }
 						NOT = { has_state_flag = SOV_is_aligning_exiles	}
 						SOV_is_unaligned_state = yes
+						OR = {
 						region = 136
+							region = 267
+							region = 268
+							region = 269
+							region = 270
+						}
 					}
 					set_state_flag = SOV_stalinist_state
 				}
@@ -16271,6 +16267,8 @@ SOV_soviet_civil_war_dec_cat = {
 				OR = {
 					region = 12
 					region = 150
+					region = 264
+					region = 265
 					state = 215
 					state = 216
 				}
@@ -16291,8 +16289,8 @@ SOV_soviet_civil_war_dec_cat = {
 						OR = {
 							region = 12
 							region = 150
-							state = 215
-							state = 216
+							region = 264
+							region = 265
 						}
 					}
 					set_state_flag = SOV_stalinist_state
@@ -16331,8 +16329,16 @@ SOV_soviet_civil_war_dec_cat = {
 			any_owned_state = {
 				OR = {
 					region = 147
+					region = 263
 					region = 151
+					region = 261 
+					region = 262 
 					region = 149
+					region = 256
+					region = 257
+					region = 258
+					region = 259
+					region = 260
 				}
 				NOT = { SOV_is_unaligned_state = yes  }
 			}
@@ -16347,8 +16353,16 @@ SOV_soviet_civil_war_dec_cat = {
 						SOV_is_unaligned_state = yes
 						OR = {
 							region = 147
+							region = 263
 							region = 151
+							region = 261 
+							region = 262 
 							region = 149
+							region = 256
+							region = 257
+							region = 258
+							region = 259
+							region = 260
 						}
 					}
 					set_state_flag = SOV_stalinist_state
@@ -16950,7 +16964,6 @@ SOV_soviet_civil_war_dec_cat = {
 		cancel_if_not_visible = yes
 
 		timeout_effect = {
-			custom_effect_tooltip = "TODO: Lock still neutral Advisors. Prevent Bloodless Coup" # TODO_THOMAS FIX EFFECT
 			add_political_power = -25
 			SOV_opposition_support_low_decrease_effect = yes
 			set_country_flag = SOV_secure_the_administration_completed_flag
@@ -17101,7 +17114,7 @@ SOV_soviet_civil_war_dec_cat = {
 		cancel_if_not_visible = yes
 
 		timeout_effect = {
-			custom_effect_tooltip = "TODO: Trigger Trotsky event" # TODO_THOMAS FIX EFFECT
+			ROOT = { news_event = { id = news.37 } } #SUCCESS - Kill Trotsky
 			SOV_opposition_support_low_decrease_effect = yes
 			set_country_flag = SOV_behead_the_snake_completed_flag
 		}
@@ -17828,9 +17841,13 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 108
 			has_full_control_of_state = 107
 			has_full_control_of_state = 102
+			has_full_control_of_state = 853
 			has_full_control_of_state = 803
 			has_full_control_of_state = 45
 			has_full_control_of_state = 764
+			has_full_control_of_state = 736
+			has_full_control_of_state = 852
+			has_full_control_of_state = 163
 		}
 
 		visible = {
@@ -17855,9 +17872,13 @@ SOV_panslavic_nationalism = {
 			add_state_core = 108
 			add_state_core = 107
 			add_state_core = 102
+			add_state_core = 853
 			add_state_core = 803
 			add_state_core = 45
 			add_state_core = 764
+			add_state_core = 736
+			add_state_core = 852
+			add_state_core = 163
 			set_country_flag = SOV_integrated_yugoslavia_flag
 		}
 
@@ -17914,6 +17935,7 @@ SOV_panslavic_nationalism = {
 			has_full_control_of_state = 108
 			has_full_control_of_state = 107
 			has_full_control_of_state = 102
+			has_full_control_of_state = 853
 			has_full_control_of_state = 803
 			has_full_control_of_state = 45
 			has_full_control_of_state = 764
