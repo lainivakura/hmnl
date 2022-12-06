@@ -19,4 +19,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_cannon_3.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
 }

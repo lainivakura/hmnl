@@ -228,7 +228,9 @@ focus_tree = {
 		icon = GFX_focus_ITA_ministry_of_italian_africa
 		prerequisite = { focus = ITA_italian_highways_bba }
 		prerequisite = { focus = ITA_ethiopian_war_logistics_bba }
-
+		allow_branch = {
+			always = no
+		}
 		x = -5
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
