@@ -5943,7 +5943,7 @@ date > 1941.10.1
 		x = 0
 		y = 2
 		relative_position_id = SOV_rehabilitated_military
-		cost = 17
+		cost = 10
 
 		select_effect = {
 			add_ideas = SOV_military_reorganization_ns
