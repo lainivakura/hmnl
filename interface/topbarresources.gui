@@ -26,29 +26,38 @@ guiTypes = {
   }
 
   containerWindowType = {
+    size = { width=360 height=30} 
     name = "top_bar_resource_container"
     orientation = UPPER_LEFT
-    position = { x=0 y=4 }
-
+    position = { x=960 y=4 }
+    moveable = yes
+    # clipping = yes
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_transparent_equipment_bg"
+			# alwaystransparent = yes
+		}
     iconType ={
       name = "aluminium_value_bg"
       spriteType = "GFX_generic_box_smallest"
-      position = { x=967 y=0 }
+      position = { x=2 y=0 }
       Orientation = "UPPER_LEFT"
+      alwaystransparent = yes
     }
 
     iconType = {
       name = "aluminium_icon"
-      position = { x=970 y=1 }
+      position = { x=2 y=1 }
       spriteType = "GFX_resources_strip"
       frame = 2
       scale = 0.9
+      alwaystransparent = yes
       #pdx_tooltip = "PRODUCTION_MATERIALS_aluminium"
     }
 
     instantTextboxType = {
       name = "aluminium_value"
-      position = { x = 980 y = 4 }
+      position = { x = 15 y = 4 }
       textureFile = ""
       font = "hoi_18mbs"
       borderSize = {x = 0 y = 0}
@@ -63,22 +72,24 @@ guiTypes = {
     iconType = {
       name ="rubber_value_bg"
       spriteType = "GFX_generic_box_smallest"
-      position = { x=1039 y=0 }
+      position = { x=74 y=0 }
       Orientation = "UPPER_LEFT"
+      alwaystransparent = yes
     }
 
     iconType = {
       name = "rubber_icon"
-      position = { x=1039 y=1 }
+      position = { x=74 y=1 }
       spriteType = "GFX_resources_strip"
       frame = 3
       scale = 0.9
       pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+      alwaystransparent = yes
     }
 
     instantTextboxType = {
       name = "rubber_value"
-      position = { x = 1052 y = 4 }#x = 995
+      position = { x = 87 y = 4 }#x = 995
       textureFile = ""
       font = "hoi_18mbs"
       borderSize = {x = 0 y = 0}
@@ -93,22 +104,24 @@ guiTypes = {
     iconType = {
       name ="tungsten_value_bg"
       spriteType = "GFX_generic_box_smallest"
-      position = { x=1111 y=0 }#abstand jeweils 73
+      position = { x=146 y=0 }#abstand jeweils 73
       Orientation = "UPPER_LEFT"
+      alwaystransparent = yes
     }
 
     iconType = {
       name = "tungsten_icon"
-      position = { x=1111 y=1 }
+      position = { x=146 y=1 }
       spriteType = "GFX_resources_strip"
       frame = 4
       scale=0.9
       pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+      alwaystransparent = yes
     }
 
     instantTextboxType = {
       name = "tungsten_value"
-      position = { x = 1124 y = 4 }#x = 995
+      position = { x = 159 y = 4 }#x = 995
       textureFile = ""
       font = "hoi_18mbs"
       borderSize = {x = 0 y = 0}
@@ -124,22 +137,24 @@ guiTypes = {
     iconType ={
       name ="steel_value_bg"
       spriteType = "GFX_generic_box_smallest"
-      position = { x=1183 y=0 }#abstand jeweils 73
+      position = { x=218 y=0 }#abstand jeweils 73
       Orientation = "UPPER_LEFT"
+      alwaystransparent = yes
     }
 
     iconType = {
       name = "steel_icon"
-      position = { x=1183 y=1 }
+      position = { x=218 y=1 }
       spriteType = "GFX_resources_strip"
       frame = 5
       scale = 0.9
       pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+      alwaystransparent = yes
     }
 
     instantTextboxType = {
       name = "steel_value"
-      position = { x = 1196 y = 4 }#x = 995
+      position = { x = 231 y = 4 }#x = 995
       textureFile = ""
       font = "hoi_18mbs"
       borderSize = {x = 0 y = 0}
@@ -154,22 +169,24 @@ guiTypes = {
     iconType ={
       name ="chromium_value_bg"
       spriteType = "GFX_generic_box_smallest"
-      position = { x=1255 y=0 }#abstand jeweils 73
+      position = { x=290 y=0 }#abstand jeweils 73
       Orientation = "UPPER_LEFT"
+      alwaystransparent = yes
     }
 
     iconType = {
       name = "chromium_icon"
-      position = { x=1255 y=1 }
+      position = { x=290 y=1 }
       spriteType = "GFX_resources_strip"
       frame = 6
       scale=0.9
       pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+      alwaystransparent = yes
     }
 
     instantTextboxType = {
       name = "chromium_value"
-      position = { x = 1268 y = 4 }#x = 995
+      position = { x = 303 y = 4 }#x = 995
       textureFile = ""
       font = "hoi_18mbs"
       borderSize = {x = 0 y = 0}
