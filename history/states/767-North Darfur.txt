@@ -9,7 +9,7 @@ state=
 	
 	history= {
 		add_core_of = PRC
-		owner = ENG
+		owner = VEN
 		buildings = {
 			infrastructure = 0
 		}

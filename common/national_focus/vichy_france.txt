@@ -23,7 +23,7 @@
 		prerequisite = {}
 		mutually_exclusive = { }
 		
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -46,8 +46,7 @@
 				}
 				remove_ideas = { FRA_disjointed_government }
 			}
-			unlock_decision_category_tooltip = VIC_concessions_to_the_germans
-			add_political_power = 200
+
 		}
 	}
 	focus = {

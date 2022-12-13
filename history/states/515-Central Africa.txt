@@ -6,7 +6,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = FRA
+		owner = VEN
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
