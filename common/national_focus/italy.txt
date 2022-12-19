@@ -6661,7 +6661,6 @@ focus_tree = {
 
 			show_unit_leaders_tooltip = ITA_junio_valerio_borghese
 
-			unlock_decision_tooltip = ITA_human_torpedo_raid
 
 			#TODO_Manu: Nice to have -> New Operation for damaging enemy ships docked in nearby docks with human torpedoes
 		}

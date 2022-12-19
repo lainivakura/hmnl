@@ -14674,36 +14674,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = { has_state_flag = POL_develop_polish_ship_building_1 }
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 807 }
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 3
-						include_locked = yes
-					}
-					NOT = { state = 85 }
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = dockyard
-					level = 4
-					instant_build = yes
-				}
-				set_state_flag = POL_develop_polish_ship_building_1
-			}
+			
 			#Add 4 Dockyards at Gdynia			
 		}
 	}
@@ -14806,22 +14779,7 @@ focus_tree = {
 					add_manpower = 15000
 				}
 			}
-			random_owned_controlled_state = {
-				prioritize = { 807 }
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
+			
 			#Add 2 Dockyards at Gdynia	
 			add_victory_points = {
 			  province = 9263
@@ -14941,18 +14899,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 85 }
-				limit = {
-					is_coastal = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
+			
 			#Add 2 Dockyards at Gdansk			
 		}
 	}
@@ -14970,48 +14917,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			any_owned_state = {
-				is_coastal = yes 
-				NOT = { state = 85 }
-				is_controlled_by = ROOT
-			}
-		}
-
-		available_if_capitulated = yes
-		complete_tooltip = {
-			random_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+		
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = uncontrolled_exports
-				}
-				swap_ideas = {
-					remove_idea = uncontrolled_exports
-					add_idea = export_focus
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 807 }
-				limit = {
-					is_coastal = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
+		
 			807 = {
 				add_building_construction = { type = bunker province = 9263 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 334 level = 2 instant_build = yes }
