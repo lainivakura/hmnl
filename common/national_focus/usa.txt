@@ -5856,6 +5856,12 @@ focus_tree = {
 				limit = { has_idea = bureau_of_ordnance_spirit }
 				remove_ideas = bureau_of_ordnance_spirit
 			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cl_tech	
+				category = ca_tech	
+			}
 		}
 	}
 	
