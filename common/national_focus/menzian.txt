@@ -765,7 +765,6 @@ focus_tree = {
 			completion_reward = {
 					add_research_slot = 1
 						}
-				}
-
 	}
+
 }
