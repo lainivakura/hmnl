@@ -4,7 +4,7 @@ state={
 	name="STATE_191"
 
 	history={
-		owner = EST
+		owner = VEN
 		victory_points = {
 			9221 1 
 		}
@@ -13,9 +13,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
-
+			arms_factory = 1
 		}
-		add_core_of = EST
+		add_core_of = VEN
 
 	}
 
@@ -25,5 +25,5 @@ state={
 	manpower=225840
 	buildings_max_level_factor=1.000
 	local_supplies=0.0 
-	state_category=rural
+	state_category=town
 }

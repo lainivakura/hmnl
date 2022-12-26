@@ -4,7 +4,7 @@ state={
 	name="STATE_813"
 
 	history={
-		owner = EST
+		owner = VEN
 		victory_points = {
 			4640 1 #Narva
 		}
@@ -17,9 +17,9 @@ state={
 				naval_base = 1
 
 			}
-
+			industrial_complex = 2
 		}
-		add_core_of = EST
+		add_core_of = VEN
 
 	}
 

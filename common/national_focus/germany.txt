@@ -3325,17 +3325,21 @@ date > 1949.12.1
 			86 = { add_claim_by = GER }
 			762 = { add_claim_by = GER }
 			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
-			if = {
-				limit = {
-					LIT = { 
-						owns_state = 188
-						controls_state = 188 
-					}
-				}
-				LIT = {
-					country_event = { id = baltic.4 }
-				}
+			GER = {
+				transfer_state = 188
+				add_state_core = 188
 			}
+			# if = {
+			# 	limit = {
+			# 		LIT = { 
+			# 			owns_state = 188
+			# 			controls_state = 188 
+			# 		}
+			# 	}
+			# 	LIT = {
+			# 		country_event = { id = baltic.4 }
+			# 	}
+			# }
 		}
 	}
 

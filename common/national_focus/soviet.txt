@@ -13036,62 +13036,53 @@ date > 1939.9.1
 			is_subject = no
 		}
 
-		bypass = {
-			all_state = {
-				OR = {
-					is_core_of = EST
-					is_core_of = LAT
-					is_core_of = LIT
-				}
-				NOT = { state = 188 }
-				is_controlled_by = ROOT
-			}
-		}
+		# bypass = {
+		# 	all_state = {
+		# 		OR = {
+		# 			is_core_of = EST
+		# 			is_core_of = LAT
+		# 			is_core_of = LIT
+		# 		}
+		# 		NOT = { state = 188 }
+		# 		is_controlled_by = ROOT
+		# 	}
+		# }
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			# Estonia
-			custom_effect_tooltip = SOV_estonian_claimed_states_tt
-			hidden_effect = {
-				EST = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Latvia
-			custom_effect_tooltip = SOV_latvian_claimed_states_tt
-			hidden_effect = {
-				LAT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Lithuania
-			custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
-			hidden_effect = {
-				LIT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			#Activate targeted decisions
-			activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
 
+				transfer_state = 812
+				transfer_state = 813
+				transfer_state = 811
+				transfer_state = 13
+				transfer_state = 12
+				transfer_state = 810
+				transfer_state = 808
+				transfer_state = 809
+				transfer_state = 815
+				transfer_state = 11
+				transfer_state = 189
+				transfer_state = 190
+				transfer_state = 191
+				transfer_state = 814
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 115000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 4500
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 1000
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 150
+				}
+			
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
 	}

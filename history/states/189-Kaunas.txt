@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = LIT
+		owner = VEN
 		victory_points = {
 			9483 3
 		}
@@ -15,14 +15,15 @@ state={
 			6314 1
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 4 #was: 5
 			6314 = {
 				naval_base = 1
 
 			}
-
+			arms_factory = 1
+			industrial_complex = 2
 		}
-		add_core_of = LIT
+		add_core_of = VEN
 
 	}
 
