@@ -8,10 +8,7 @@ state={
 	impassable = yes
 
 	history={
-		history={
-			owner = VEN
-		}
-
+		owner = VEN
 	}
 
 	provinces={
