@@ -1,0 +1,71 @@
+atom_spain_war = {
+	name = "ATOM_SPAIN_WAR"
+	group = "ATOM_GROUPKEY"
+	
+	default = {
+		name = "ATOM_SPAIN_WAR_DISABLED"
+		text = "ATOM_RULE_OPTION_SPAIN_WAR_DISABLED"
+		desc = "ATOM_RULE_OPTION_SPAIN_WAR_DISABLED_DESC"
+	}
+	option = {
+		name = "ATOM_SPAIN_WAR_ALLOWED"
+		text = "ATOM_RULE_OPTION_SPAIN_WAR_ALLOWED"
+		desc = "ATOM_RULE_OPTION_SPAIN_WAR_ALLOWED_DESC"
+	}
+}
+
+
+atom_vic_options = {
+	name = "ATOM_VIC_OPTIONS"
+	group = "ATOM_GROUPKEY"
+
+	option = {
+		name = "ATOM_VIC_DISABLED"
+		text = "ATOM_RULE_OPTION_VIC_DISABLED"
+		desc = "ATOM_RULE_OPTION_VIC_DISABLED_DESC"
+	}
+
+	default = {
+		name = "ATOM_VIC_ALLOWED"
+		text = "ATOM_RULE_OPTION_VIC_ALLOWED"
+		desc = "ATOM_RULE_OPTION_VIC_ALLOWED_DESC"
+	}
+}
+
+#
+# FREEFRANCE
+#
+
+atom_freefrance_options = {
+	name = "ATOM_FREEFRANCE_OPTIONS"
+	group = "ATOM_GROUPKEY"
+
+	default = {
+		name = "ATOM_FREEFRANCE_DISABLED"
+		text = "ATOM_RULE_OPTION_FREEFRANCE_DISABLED"
+		desc = "ATOM_RULE_OPTION_FREEFRANCE_DISABLED_DESC"
+	}
+
+	option = {
+		name = "ATOM_FREEFRANCE_ENABLED"
+		text = "ATOM_RULE_OPTION_FREEFRANCE_ENABLED"
+		desc = "ATOM_RULE_OPTION_FREEFRANCE_ENABLED_DESC"
+	}
+}
+atom_frankobritish_options = {
+	name = "ATOM_FRANKOBRITISH_OPTIONS"
+	group = "ATOM_GROUPKEY"
+
+	option = {
+		name = "ATOM_FRANKOBRITISH_DISABLED"
+		text = "ATOM_RULE_OPTION_FRANKOBRITISH_DISABLED"
+		desc = "ATOM_RULE_OPTION_FRANKOBRITISH_DISABLED_DESC"
+		
+	}
+
+	default = {
+		name = "ATOM_FRANKOBRITISH_ALLOWED"
+		text = "ATOM_RULE_OPTION_FRANKOBRITISH_ALLOWED"
+		desc = "ATOM_RULE_OPTION_FRANKOBRITISH_ALLOWED_DESC"
+	}
+}
