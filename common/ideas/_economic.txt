@@ -333,20 +333,17 @@ ideas = {
 			picture = new_economic_policy
 			
 			allowed = {
-				always = no
+				is_ai = yes
 			}
 			allowed_to_remove = {
-				OR = {
-					surrender_progress > 0.75
-					NOT = { has_government = communism }				
-				}
+				always = no
 			}
 	
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.15	
-				production_speed_buildings_factor = -0.15 
+				consumer_goods_factor = 1.0	
+				# production_speed_buildings_factor = -0.15 
 				
 			}
 			

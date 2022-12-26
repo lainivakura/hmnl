@@ -1,7 +1,7 @@
 ﻿capital = 266
 
 oob = "PER_1936"
-add_ideas = {Horrors_WW1}
+add_ideas = {Horrors_WW1 new_economic_policy}
 set_research_slots = 0
 set_politics = {
 	ruling_party = neutrality
