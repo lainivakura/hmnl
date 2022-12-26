@@ -1,0 +1,17 @@
+state=
+{
+	id=124
+	name="STATE_124"
+	manpower = 56988
+	
+	state_category = small_island
+	impassable = yes
+	history={
+		owner = VEN
+	}
+	provinces={
+		408 6258
+	}
+
+	local_supplies=0.0 
+}
