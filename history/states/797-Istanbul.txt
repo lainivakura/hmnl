@@ -4,7 +4,7 @@ state={
 	provinces={
 		9833 11829 
 	}
-	manpower = 1042276
+	manpower = 1
 	resources={
 		#chromium=45 # was: 84
 		#steel = 10 # was: 20
@@ -14,6 +14,7 @@ state={
 		chromium=25		
 		steel=24 # was: 40
 		aluminium=2 # was: 4
+		steel=7 # was: 10
 		steel=6 # was: 10
 		steel=40 # was: 62
 		tungsten=40 # was: 70
@@ -22,23 +23,10 @@ state={
 	}
 	
 	state_category = city
-
 	history= {
 		owner = SWE
-		victory_points = {
-			9833 25
-		}
-		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
-			arms_factory = 2
-			air_base = 4
-			9833 = {
-				naval_base = 8
-			}
-		}
+		set_demilitarized_zone = yes
 		add_core_of = SWE
-
 	}
 
 	local_supplies=0.0 

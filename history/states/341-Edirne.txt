@@ -2,26 +2,15 @@
 state= {
 	id=341
 	name="STATE_341"
-	manpower = 363947
+	manpower = 1
 	resources={
 
 	}
 	
 	state_category = town
-
 	history= {
 		owner = SWE
-		victory_points = {
-			11842 5
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			849 = {
-				naval_base = 3
-				coastal_bunker = 2
-			}
-		}
+		set_demilitarized_zone = yes
 		add_core_of = SWE
 	}
 	provinces=

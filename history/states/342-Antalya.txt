@@ -2,7 +2,7 @@
 state={
 	id=342
 	name="STATE_342" # Antalya
-	manpower = 362689
+	manpower = 1
 
 	state_category = rural
 	impassable = yes
