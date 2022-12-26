@@ -313,7 +313,13 @@ z_annex_bot_d = {
 		}
 		complete_effect = {
 			every_state = {
-				limit = { is_core_of = FROM }
+				limit = {
+					AND = {
+						NOT = {is_owned_and_controlled_by = FROM}
+						is_core_of = FROM
+					} 
+					 
+				}
 				set_state_owner_to = ROOT
 			}
 		}

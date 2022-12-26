@@ -1618,22 +1618,13 @@ focus_tree = {
 				days = 60
 			}
 			USA = {
-				set_state_controller = 327
-				set_state_controller = 623
-				set_state_controller = 624
-				set_state_controller = 625
-				set_state_controller = 626
-				set_state_controller = 627
-				set_state_controller = 628
-			}
-			USA = {
-				set_state_owner = 327
-				set_state_owner = 623
-				set_state_owner = 624
-				set_state_owner = 625
-				set_state_owner = 626
-				set_state_owner = 627
-				set_state_owner = 628
+				transfer_state = 327
+				transfer_state = 623
+				transfer_state = 624
+				transfer_state = 625
+				transfer_state = 626
+				transfer_state = 627
+				transfer_state = 628
 			}
 		}
 	}
