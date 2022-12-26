@@ -8,6 +8,7 @@ add_ideas = {
 	en_svensk_tiger
 	neutrality_idea
 	Horrors_WW1
+	free_trade_for_ai
 }
 
 
