@@ -462,7 +462,7 @@ technologies = {
 		}
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 0 y = @1938 }
 		}
 		ai_will_do = {
 			factor = 2
@@ -680,7 +680,7 @@ technologies = {
 			heavy_tank_aa_chassis_1
 		}
 		enable_equipment_modules = {
-			tank_heavy_howitzer
+			
 			tank_small_cannon_2
 			tank_close_support_gun
 			secondary_turret_close_support_gun
@@ -689,9 +689,9 @@ technologies = {
 			tank_petrol_electric_engine_H
 			tank_auto_cannon
 			tank_anti_air_cannon
-			tank_high_velocity_cannon_h1
+			# tank_high_velocity_cannon_h1
 			tank_heavy_cannon
-			tank_super_heavy_cannon_1
+			# tank_super_heavy_cannon_1
 		}
 		enable_subunits = {
 			heavy_armor
@@ -728,7 +728,7 @@ technologies = {
 		}
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 4 y = @1939 }
+			position = { x = 4 y = @1938 }
 		}
 		ai_will_do = {
 			factor = 0.8
@@ -764,14 +764,12 @@ technologies = {
 			heavy_tank_aa_chassis_2
 		}
 		enable_equipment_modules = {
-			tank_heavy_howitzer2
-			tank_super_heavy_cannon_2
+			# tank_super_heavy_cannon_2
 			tank_rocket_launcher
 			tank_auto_cannon_2
 			tank_heavy_cannon_2
 			tank_anti_air_cannon_2
-			tank_high_velocity_cannon_h2
-			tank_heavy_close_support_gun1
+			# tank_high_velocity_cannon_h2
 		}
 		path = {
 			leads_to_tech = advanced_heavy_tank_chassis
@@ -835,10 +833,10 @@ technologies = {
 			tank_heavy_close_support_gun2
 			tank_heavy_cannon_3
 			tank_super_heavy_cannon_3
-			tank_heavy_howitzer3
 			tank_rocket_launcher_2
 			tank_high_velocity_cannon_h3
 			tank_anti_air_cannon_3
+			tank_heavy_howitzer
 		}
 		path = {
 			leads_to_tech = main_battle_tank_chassis
