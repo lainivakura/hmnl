@@ -1,4 +1,53 @@
 --NGame
+--Аутпут
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4 -- 4.5
+
+
+--пирсинг
+NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		1.00,
+		0.99,
+		0.98,
+		0.97,
+		0.96,
+		0.95,
+		0.9,
+		0.85,
+		0.80,
+		0.75,
+		0.65,
+		0.6,
+		0.55,
+		0.50,
+		0.40,
+		0.30,
+		0.20,
+		0.10,
+		0.00, --there isn't much point setting this higher than 0
+	}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.95,
+		0.929,
+		0.913,
+		0.90,
+		0.888,
+		0.84,
+		0.806,
+		0.776,
+		0.75,
+		0.726,
+		0.704,
+		0.684,
+		0.665,
+		0.646,
+		0.61,
+		0.58,
+		0.55,
+		0.53,
+		0.50,
+	}
+
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 290
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 290
@@ -8,6 +57,8 @@ NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0            -- XP cost fo
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0        -- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0        -- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0         -- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+
+
 
 
 --ОПЫТ
@@ -66,7 +117,7 @@ NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 72 --24
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 96 --24
 
---вырезали кач 
+--Кач
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00 --0.1
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.00
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
@@ -83,7 +134,7 @@ NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0
-NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipment for every year of equipment after 1936
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0					-- IC cost equipment for every year of equipment after 1936
 
 
 
@@ -93,13 +144,13 @@ NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 0.9
 NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.9
 NDefines.NNavy.BASE_POSITIONING = 0.75
 
-NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- damage penalty at 0% positioning
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.9  -- screening efficiency (screen to capital ratio) at 0% positioning
-NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.9 -- AA penalty at 0% positioning
-NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.5 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO= 0.9  -- maximum penalty to get from larger fleets
-NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR	= 0.3  -- penalty if other side has stronger carrier air force
-NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.3  -- max penalty from stronger carrier air force
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- 0.5 damage penalty at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.9  -- 0.5 screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.9 -- 0.7 AA penalty at 0% positioning
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.5 -- 2.0 if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.9  -- 0.75 maximum penalty to get from larger fleets
+NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR	= 0.3  -- 0.2 penalty if other side has stronger carrier air force
+NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.3  -- 0.2 max penalty from stronger carrier air force
 
 --AI
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
