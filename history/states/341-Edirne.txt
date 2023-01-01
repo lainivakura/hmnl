@@ -12,6 +12,12 @@ state= {
 		owner = SWE
 		set_demilitarized_zone = yes
 		add_core_of = SWE
+		buildings = {
+			849 = {
+				naval_base = 1
+			}
+		}
+		
 	}
 	provinces=
 	{
