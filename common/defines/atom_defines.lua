@@ -22,6 +22,7 @@ NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 7
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 7
 NDefines.NDiplomacy.TROOP_FEAR = 0
 NDefines.NDiplomacy.FLEET_FEAR = 0
+NDefines.NDiplomacy.EMBARGO_COST = 9999
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 ---Воздух с мультифлекса	
