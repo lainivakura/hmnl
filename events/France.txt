@@ -190,23 +190,9 @@ country_event = {
 	}
 	option = { # Ask for British Union
 		name = france.10.c
-		trigger = { has_game_rule = { rule = atom_frankobritish_options option = ATOM_FRANKOBRITISH_ALLOWED }  }
-		if = {
-			limit = {
-				has_game_rule = { rule = atom_vic_options option = ATOM_VIC_ALLOWED } 
-			}
-			GER = { country_event = france.14 }
-		}
-		else = {
-			ENG = { country_event = france.11 
-		}
-		}
+		GER = { country_event = france.14 }
 		ai_chance = {
 			factor = 100
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
@@ -366,13 +352,13 @@ country_event = {
 		save_global_event_target_as = vichy_france
 		set_global_flag = fall_of_france
 		ai_chance = {
-			factor = 50
+			factor = 100
 		}
-		trigger = {
-			has_government = fascism
-			has_dlc = "La Resistance"
-			has_game_rule = { rule = atom_vic_options option = ATOM_VIC_ALLOWED }
-		}
+		# trigger = {
+		# 	has_government = fascism
+		# 	has_dlc = "La Resistance"
+		# 	has_game_rule = { rule = atom_vic_options option = ATOM_VIC_ALLOWED }
+		# }
 		FRA = {
 			set_cosmetic_tag = FRA_FREE
 			add_ideas = FRA_defeatism
@@ -380,7 +366,7 @@ country_event = {
 
 			set_capital = { state = 553 }
 			
-			country_event = france.20
+			# country_event = france.20
 			every_owned_state = {
 				limit = {
 					is_controlled_by = ITA
