@@ -1244,7 +1244,7 @@ leader_traits = {
 	}
 
 	adaptable = { 
-		type = all
+		type = land
 		gain_xp = {
 			always = no # not gainable
 		}
@@ -1254,7 +1254,9 @@ leader_traits = {
 			# acclimatization_cold_climate_gain_factor = 0.1
 			# acclimatization_hot_climate_gain_factor = 0.1
 		}
-		
+		new_commander_weight = {
+			factor = 0
+		}
 		
 		trait_type = personality_trait
 		# gui_row = 3
