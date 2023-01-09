@@ -764,8 +764,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			completion_reward = {
 					add_research_slot = 1
-						}
-				}
+			}
 
 	}
 }
