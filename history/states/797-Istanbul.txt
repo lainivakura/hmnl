@@ -25,7 +25,7 @@ state={
 	state_category = city
 	history= {
 		owner = SWE
-		set_demilitarized_zone = yes
+		# set_demilitarized_zone = yes
 		add_core_of = SWE
 	}
 

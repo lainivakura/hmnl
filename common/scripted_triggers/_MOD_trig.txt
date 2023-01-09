@@ -2,10 +2,10 @@ TUR_is_friend_for_bosphorus = { #Scripted Trigger for handling the Bosphorus acc
 	hidden_trigger = {
 		OR = { 
 			AND = { #Bosphorus Compromise. As long as Turkey controls the Bosphorus and they're not at war with them, any country that owns a state bordering the Black Sea is treated as a "Friend"
-				TUR = {
+				SWE = {
 					controls_state = 797
 				}
-				NOT = { has_war_with = TUR }  	
+				NOT = { has_war_with = SWE }  	
 				TUR_owns_state_in_black_sea = yes
 			}
 			797 = { #This so countries allied to the controller of the Bosphorus can cross it. 
