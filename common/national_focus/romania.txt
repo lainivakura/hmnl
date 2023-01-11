@@ -4135,4 +4135,8 @@
 			}
 		}
 	}
+	focus = {
+		id = ROM_his_majestys_loyal_government
+		allow_branch = { always = no }
+	}
 }
