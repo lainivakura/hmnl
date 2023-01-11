@@ -353,6 +353,14 @@ z_annex_bot_d = {
 			annex_country = {
 				target = FROM
 			}
+			USA = {
+				every_state = {
+					limit = { 
+						is_core_of = FROM
+					}
+					add_compliance = 100
+				}
+			}
 		}
 	}
 }
