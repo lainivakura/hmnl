@@ -331,12 +331,12 @@ ideas = {
 		new_economic_policy = {
 
 			picture = new_economic_policy
-			
+				
 			allowed = {
-				is_ai = yes
+				FROM = {is_ai = yes}
 			}
 			allowed_to_remove = {
-				always = no
+				FROM = {is_ai = no}
 			}
 	
 			removal_cost = -1
