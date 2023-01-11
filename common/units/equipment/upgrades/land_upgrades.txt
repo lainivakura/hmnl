@@ -30,8 +30,8 @@ upgrades = {
 				steel = 1
 			}
 		}
-
-		maximum_speed = 0.15
+ы
+		maximum_speed = 0.5 #Ванильное значение армора + движка
 		reliability = -0.03 #@5Mort - Ванильное значение армора + движка
 		add_stats = {
 			fuel_consumption = 0.05
