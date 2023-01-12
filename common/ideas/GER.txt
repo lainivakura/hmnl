@@ -960,9 +960,11 @@ send_volunteer_divisions_required = -1
 			modifier = {
 				# tag = SOV
 				max_planning = 0.15
-				defense_bonus = 0.05
 			}
-
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.05
+			}
 		}
 		GER_dismantle_maginot = {
 			allowed = {
