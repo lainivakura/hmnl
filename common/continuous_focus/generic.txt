@@ -80,6 +80,7 @@ continuous_focus_palette = {
 		
 		modifier = {
 			resistance_target = -0.05
+			compliance_gain = 0.04
 		}
 		
 		ai_will_do = {
@@ -226,4 +227,28 @@ continuous_focus_palette = {
 		available_if_capitulated = yes
 	}
 
+	focus = {
+		id = extra_trade
+		
+		icon = GFX_goal_generic_trade
+		
+		available = {
+		}
+		enable = {
+			date > 1942.01.01
+		}
+		modifier = {
+			min_export = 0.35
+		}
+		
+		ai_will_do = {
+			factor = 0
+
+		}
+		
+		daily_cost = 1
+		
+		available_if_capitulated = yes
+	}
+	
 }
