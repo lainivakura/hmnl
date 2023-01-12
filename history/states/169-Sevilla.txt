@@ -1,4 +1,3 @@
-
 state={
 	id=169
 	name="STATE_169"
@@ -6,13 +5,13 @@ state={
 	history={
 		owner = SPR
 		victory_points = {
-			1048 3 
+			1048 3
 		}
 		victory_points = {
-			7183 10 
+			7183 10
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 3 #was: 6
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 3
@@ -32,5 +31,6 @@ state={
 	manpower=1746650
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	local_supplies=7.000
+
+	local_supplies=7.0 
 }
