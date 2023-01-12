@@ -28,11 +28,11 @@ ideas = {
 			always = no # Added via event
 		}
 
-			targeted_modifier = {
-			tag = GER
-			max_planning = 0.1
+			modifier = {
+			# tag = GER
+			max_planning = 0.05
 		    planning_speed = 0.1
-		    river_crossing_factor = -0.15
+		    river_crossing_factor = -0.05
 
 
 }
@@ -957,10 +957,10 @@ send_volunteer_divisions_required = -1
 
 			picture = generic_acquire_tanks
 
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.05
+			modifier = {
+				# tag = SOV
+				max_planning = 0.15
+				defense_bonus = 0.05
 			}
 
 		}
