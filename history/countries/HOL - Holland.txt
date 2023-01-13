@@ -105,6 +105,7 @@ if = {
 
 add_ideas = {
 	HOL_wilhelmina
+	free_trade_for_ai
 }
 
 if = {
