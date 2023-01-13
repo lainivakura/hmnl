@@ -171,7 +171,7 @@ local_police_force_garrison = {
 	state_modifier = {
 		resistance_target 				= -0.15
 		compliance_gain 				= -0.025
-		required_garrison_factor 		= -0.25
+		required_garrison_factor 		= -0.35
 		resistance_damage_to_garrison	= -0.5
 		local_factories 				= 0.00
 		local_resources 				= 0.00
@@ -207,7 +207,7 @@ secret_police_oversight = {
 
 	state_modifier = {
 		resistance_target 				= -0.30
-		compliance_gain 				= -0.04
+		compliance_gain 				= -0.025
 		required_garrison_factor 		= -0.15
 		resistance_damage_to_garrison 	= -0.15
 		local_factories 				= 0.05
