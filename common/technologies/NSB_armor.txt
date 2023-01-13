@@ -888,9 +888,7 @@ technologies = {
 
 	}
 	super_heavy_tank_chassis = { #Maus
-	allow = { 
-		date > 1942.1.1
-	}
+		allow_branch = { always = no }
 		enable_equipments = {
 			super_heavy_tank_chassis_1
 			super_heavy_tank_destroyer_chassis_1
@@ -1283,9 +1281,7 @@ technologies = {
 	}
 
 	engine_tech_4 = {
-		allow_branch = {
-			always = no
-		} #############
+
 		research_cost = 1
 		start_year = 1943
 		categories = {
@@ -1303,6 +1299,7 @@ technologies = {
 			custom_effect_tooltip = engine_tech_4_tt
 		}
 		show_effect_as_desc = yes
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
