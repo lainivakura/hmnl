@@ -17,7 +17,7 @@ upgrades = {
 			8 = { 
 				has_tech = engine_tech_2
 			}
-			13 = { date > 1949.1.1
+			13 = {
 				has_tech = engine_tech_3
 			}
 			15 = { 
@@ -30,7 +30,7 @@ upgrades = {
 				steel = 1
 			}
 		}
-		maximum_speed = 0.5 #Ванильное значение армора + движка
+		maximum_speed = 0.05 #Ванильное значение армора + движка
 		reliability = -0.03 #@5Mort - Ванильное значение армора + движка
 		add_stats = {
 			fuel_consumption = 0.05
