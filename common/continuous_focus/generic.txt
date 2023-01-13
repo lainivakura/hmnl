@@ -80,7 +80,7 @@ continuous_focus_palette = {
 		
 		modifier = {
 			resistance_target = -0.05
-			compliance_gain = 0.04
+			compliance_gain = 0.02
 		}
 		
 		ai_will_do = {

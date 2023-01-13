@@ -248,7 +248,7 @@ military_governor_occupation = {
 	
 	state_modifier = {
 		resistance_target 			= -0.35
-		compliance_gain 			= -0.045
+		compliance_gain 			= -0.025
 		required_garrison_factor 	= 0.0
 		#local_factories 			= 0.00
 		local_resources 			= 0.10
@@ -282,7 +282,7 @@ martial_law_occupation = {
 
 	state_modifier = {
 		resistance_target 				= -0.60
-		compliance_gain 				= -0.055
+		compliance_gain 				= -0.035
 		#required_garrison_factor 		= 0.0
 		#resistance_damage_to_garrison 	= 0.0
 		#local_factories 				= 0.0
@@ -316,7 +316,7 @@ forced_labor_occupation = {
 
 	state_modifier = {
 		resistance_target 					= -0.40
-		compliance_gain 					= -0.08
+		compliance_gain 					= -0.06
 		resistance_damage_to_garrison 		= 0.3
 		required_garrison_factor 			= 0.15
 		local_resources 					= 0.40
@@ -403,7 +403,7 @@ harsh_quotas_occupation = {
 
 	state_modifier = {
 		resistance_target 				= -0.40
-		compliance_gain 				= -0.08
+		compliance_gain 				= -0.06
 		required_garrison_factor 		= 0.15
 		resistance_damage_to_garrison 	= 0.50
 
