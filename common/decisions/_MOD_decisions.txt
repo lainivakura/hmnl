@@ -277,53 +277,53 @@ z_annex_bot_d = {
 		}
 	}
 
-	ENG_bot_FROM = {
-		icon = generic_operation
-		fire_only_once = yes
+	# ENG_bot_FROM = {
+	# 	icon = generic_operation
+	# 	fire_only_once = yes
 
-		allowed = {
-			original_tag = ENG
-		}
+	# 	allowed = {
+	# 		original_tag = ENG
+	# 	}
 		
-		available = {
-			FROM = { has_capitulated = yes }
-			date > 1941.01.01
-		}
+	# 	available = {
+	# 		FROM = { has_capitulated = yes }
+	# 		date > 1941.01.01
+	# 	}
 
-		visible = {
-			always = yes
-		}
+	# 	visible = {
+	# 		always = yes
+	# 	}
 
-		targets = { HOL BEL NOR LUX DEN GRE YUG }
+	# 	targets = { HOL BEL NOR LUX DEN GRE YUG }
 
-		target_root_trigger = { original_tag = ENG }
+	# 	target_root_trigger = { original_tag = ENG }
 
-		target_trigger = {
-			FROM = {
-				OR = {
-					original_tag = HOL
-					original_tag = BEL
-					original_tag = NOR
-					original_tag = LUX
-					original_tag = GRE
-					original_tag = DEN
-					original_tag = YUG
-				}
-			}
-		}
-		complete_effect = {
-			every_state = {
-				limit = {
-					AND = {
-						NOT = {is_owned_and_controlled_by = FROM}
-						is_core_of = FROM
-					} 
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			OR = {
+	# 				original_tag = HOL
+	# 				original_tag = BEL
+	# 				original_tag = NOR
+	# 				original_tag = LUX
+	# 				original_tag = GRE
+	# 				original_tag = DEN
+	# 				original_tag = YUG
+	# 			}
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		every_state = {
+	# 			limit = {
+	# 				AND = {
+	# 					NOT = {is_owned_and_controlled_by = FROM}
+	# 					is_core_of = FROM
+	# 				} 
 					 
-				}
-				set_state_owner_to = ROOT
-			}
-		}
-	}
+	# 			}
+	# 			set_state_owner_to = ROOT
+	# 		}
+	# 	}
+	# }
 	USA_bot_FROM = {
 		icon = generic_operation
 		fire_only_once = yes

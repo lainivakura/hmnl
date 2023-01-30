@@ -4,5 +4,5 @@ tags={
 }
 name="HMNL FIX"
 picture="thumbnail.jpg"
-supported_version="1.12.8"
+supported_version="1.12.9"
 remote_file_id="2871204976"
