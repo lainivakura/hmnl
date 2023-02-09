@@ -4754,7 +4754,7 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = cat_air_engine
-				}
+			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
 				bonus = 1.0
@@ -4878,9 +4878,15 @@ focus_tree = {
 					set_technology = { cv_fighter2 = 1 } 
 				}
 				else = {
+					# set_technology = { improved_small_airframe = 1 }
+					# set_technology = { aa_cannon_1 = 1 }
+					# set_technology = { range_improvements = 1 }
+					# set_technology = { engines_3 = 1 }
+
 					create_equipment_variant = {
 						name = "A6M Zero-Sen"
 						type = cv_small_plane_airframe_2
+						allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_main_weapon_slot = light_mg_2x
 							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x

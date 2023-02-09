@@ -147,6 +147,5 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-}
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }

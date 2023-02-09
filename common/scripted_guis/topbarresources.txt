@@ -14,7 +14,7 @@ scripted_gui = {
       cb_toggle_resources_click = {
         if = {
           limit = {
-            check_variable = { resources_visible?1 = 1 }
+            check_variable = { resources_visible = 1 }
           }
           set_variable = { resources_visible = 2 }
         }
