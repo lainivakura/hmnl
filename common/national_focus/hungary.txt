@@ -792,7 +792,7 @@ focus_tree = {
 				remove_idea = HUN_hungarian_monarchy_2
 			}
 			add_ideas = HUN_dynastic_ties
-			# unlock_decision_tooltip = HUN_call_in_sweden
+			unlock_decision_tooltip = HUN_call_in_sweden
 			add_ideas = HUN_charles_v
 			add_relation_modifier = {
 				target = SWE
@@ -1573,6 +1573,7 @@ focus_tree = {
 					is_faction_leader = yes
 				}
 				is_subject = no
+				ITA_is_kinda_fascist = yes
 			}
 		}
 
@@ -4909,6 +4910,7 @@ focus_tree = {
 				name = "Viribus Unitis Class"
 				type = ship_hull_heavy_2
 				parent_version = 0
+				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 				modules = {
 					fixed_ship_battery_slot = ship_heavy_battery_1
 					fixed_ship_anti_air_slot = ship_anti_air_2
@@ -4918,7 +4920,7 @@ focus_tree = {
 					fixed_ship_secondaries_slot = dp_ship_secondaries_1
 					fixed_ship_armor_slot = ship_armor_bb_1
 					front_1_custom_slot = ship_heavy_battery_1
-					mid_1_custom_slot = ship_anti_air_2
+					mid_1_custom_slot = empty
 					mid_2_custom_slot = dp_ship_secondaries_1
 					rear_1_custom_slot = ship_heavy_battery_1
 				}

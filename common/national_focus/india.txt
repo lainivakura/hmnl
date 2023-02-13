@@ -923,6 +923,9 @@ focus_tree = {
 						ideology = neutrality
 						popularity = 0.15
 					}
+					set_variable = { RAJ_agrarian_society_increment = RAJ.RAJ_agrarian_society_increment }
+					set_variable = { RAJ_agrarian_society_value = RAJ.RAJ_agrarian_society_value }
+					add_dynamic_modifier = { modifier = RAJ_agrarian_society_dynamic }
 					ENG = { add_to_faction = PREV }
 				}					
 			}
@@ -1417,6 +1420,7 @@ focus_tree = {
 						type = ship_hull_cruiser_2
 						name_group = RAJ_CL_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_battery_slot = ship_light_medium_battery_2
 							fixed_ship_anti_air_slot = ship_anti_air_1
@@ -1698,7 +1702,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_lessons_of_the_great_war
 		icon = GFX_goal_generic_small_arms
-		x = 20
+		x = 16
 		y = 0
 
 		cost = 10
@@ -1922,6 +1926,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
+			army_experience = 30
 			custom_effect_tooltip = RAJ_create_unit_sikh_tt
 			hidden_effect = {
 
@@ -2605,7 +2610,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_great_indian_peninsula_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 31
+		x = 28
 		y = 0
 
 		cost = 10
@@ -3372,7 +3377,7 @@ focus_tree = {
 		id = RAJ_integrate_princely_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RAJ_east_india_railways }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
@@ -3428,7 +3433,7 @@ focus_tree = {
 		id = RAJ_ishapore_arsenal
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = RAJ_east_india_railways }
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
@@ -3501,6 +3506,14 @@ focus_tree = {
 		}
 
 		available = {
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {

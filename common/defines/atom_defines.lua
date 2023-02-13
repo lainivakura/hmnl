@@ -29,9 +29,9 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 
 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
- 	
- 
 
+ 
+-- NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
@@ -90,8 +90,8 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipmen
 
 
 --Navy
-NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 0.9
-NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.9
+NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1
+NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 1
 NDefines.NNavy.BASE_POSITIONING = 0.75
 
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- damage penalty at 0% positioning
