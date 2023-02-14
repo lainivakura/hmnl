@@ -248,6 +248,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = atom_spain_war  
+						option = ATOM_SPAIN_WAR_DISABLED 
+					} 
+				}
+				add_threat = 1
+			}
+				
+				
 			custom_effect_tooltip = SPA_secure_the_northern_garrisons_tt
 			hidden_effect = {
 				every_owned_state = {
