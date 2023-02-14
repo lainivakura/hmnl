@@ -2911,6 +2911,7 @@ add_tech_bonus = {
 		}
 		
 		available = {
+			date > 1941.06.21
 			is_subject = no
 		}
 		x = 0
