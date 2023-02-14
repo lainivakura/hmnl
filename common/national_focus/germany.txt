@@ -2043,6 +2043,8 @@ add_tech_bonus = {
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = ritter_von_greim
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = hugo_sperrle
 		}
 	}
 
@@ -2186,6 +2188,8 @@ add_tech_bonus = {
 			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = walther_von_brauchitsch			
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = erwin_rommel 
 		}
 	}
 	
@@ -2460,14 +2464,14 @@ add_tech_bonus = {
 			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
 				name = GER_rocketry_focus
-				bonus = 3.0
-				uses = 3
+				bonus = 1.0
+				uses = 2
 				category = rocketry
 			}
 			add_tech_bonus = {
 				name = GER_rocketry_focus
-				bonus = 3.0
-				uses = 3
+				bonus = 1.0
+				uses = 2
 				category = jet_technology
 			}
 		}
@@ -2490,8 +2494,8 @@ add_tech_bonus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 2.0
-				uses = 2
+				bonus = 1.0
+				uses = 1
 				category = nuclear
 				category = rocketry
 			}
@@ -2565,7 +2569,6 @@ add_tech_bonus = {
 		}
 		available = {
 			is_subject = no
-date > 1949.12.1
 			has_government = fascism
 			has_war = no
 			SOV = {
@@ -2617,9 +2620,7 @@ date > 1949.12.1
 		id = GER_turkey_puppet
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_soviet_ally }
-		
 		available = {
-date > 1949.12.1
 			is_subject = no
 			has_government = fascism
 			OR = {
@@ -2749,7 +2750,6 @@ date > 1949.12.1
 		prerequisite = { focus = GER_rhineland }
 		mutually_exclusive = { focus = GER_japan_friend }
 		available = {
-date > 1949.12.1
 			is_subject = no
 			AND = {
 				country_exists = CHI
@@ -2911,7 +2911,6 @@ date > 1949.12.1
 		}
 		
 		available = {
-date > 1941.6.21
 			is_subject = no
 		}
 		x = 0
@@ -3033,7 +3032,6 @@ focus = {
 			always = no
 		}
 		available = { 
-date > 1949.12.1
 			is_subject = no 
 			NOT = { has_war_with = TUR }
 			TUR = {
@@ -3165,6 +3163,7 @@ date > 1949.12.1
 					owns_state = 4
 					owns_state = 152
 					owns_state = 153
+					owns_state = 848
 				}
 			}
 		}
@@ -3183,12 +3182,45 @@ date > 1949.12.1
 							owns_state = 848
 						}
 					}
+					ITA = {
+						NOT = {
+							has_completed_focus = ITA_guarantee_austrian_independence
+						}
+					}
+					
 				}
 
 				AUS = {
-					country_event = germany.28
+					country_event = {
+						id = germany.28
+						days = 1
+					}
 				}				
 				custom_effect_tooltip = anschluss_mefo_bills_tt
+			}
+			if = {
+				limit = {
+					country_exists = AUS
+					AUS = {
+						has_civil_war = no
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848 #Vorarlberg 
+						}
+					}
+					ITA = {
+						has_completed_focus = ITA_guarantee_austrian_independence
+					}
+				}
+ 
+				ITA = {
+					country_event = {
+						id = BBA_italy_interaction_events.24
+						days = 1
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -3200,6 +3232,12 @@ date > 1949.12.1
 							owns_state = 152
 							owns_state = 153
 							owns_state = 848
+						}
+						
+					}
+					ITA = {
+						NOT = {
+							has_completed_focus = ITA_guarantee_austrian_independence
 						}
 					}
 				}
@@ -3228,6 +3266,7 @@ date > 1949.12.1
 								}
 							}							
 						}
+						
 					}
 					country_event = { id = germany.126 days = 1 }
 				}
@@ -4302,7 +4341,6 @@ date > 1949.12.1
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = GER_italy_ally }
 		available = {
-date > 1949.12.1
 			if = {
 				limit = {
 					NOT = { has_dlc = "La Resistance" }
@@ -4324,7 +4362,7 @@ date > 1949.12.1
 					has_civil_war = no
 					NOT = { has_war_with = GER }
 					NOT = { is_in_faction_with = GER }
-					
+					NOT = { has_completed_focus = SPA_join_the_allies }
 				}
 			}
 			FRA = {
@@ -4415,7 +4453,6 @@ date > 1949.12.1
 			always = no
 		}
 		available = {
-date > 1949.12.1
 			is_subject = no
 			OR = {
 				SLO = {
@@ -4450,7 +4487,6 @@ date > 1949.12.1
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_danzig_vs_slovakia }
 		available = {
-date > 1949.12.1
 			NOT = { has_global_flag = sov_yes_pact }
 			NOT = { has_war_with = POL }
 			POL = {
@@ -5067,8 +5103,6 @@ date > 1949.12.1
 			always = no
 		}
 		available = {
-
-date > 1949.12.1
 			has_government = fascism
 			country_exists = DEN
 			NOT = {
@@ -5133,7 +5167,6 @@ date > 1949.12.1
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = GER_denmark_friend }
 		available = {
-date > 1949.12.1
 			has_government = fascism
 			NOT = { has_war_with = NOR }
 			NOR = {
@@ -5203,7 +5236,6 @@ date > 1949.12.1
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = GER_denmark_friend }
 		available = {
-date > 1949.12.1
 			has_government = fascism
 			NOT = { has_war_with = HOL }
 			HOL = {
@@ -5266,7 +5298,6 @@ date > 1949.12.1
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_norway_friend }
 		available = {
-date > 1949.12.1
 			has_government = fascism
 			NOT = { has_war_with = SWE }
 			SWE = {
@@ -5719,7 +5750,6 @@ date > 1940.1.1
 		}
 		icon = GFX_goal_generic_territory_or_war
 		available = {
-date > 1949.12.1
 			is_subject = no
 			NOT = { has_war_with = YUG }
 			NOT = { is_in_faction_with = YUG }
@@ -5755,7 +5785,6 @@ date > 1949.12.1
 		prerequisite = { focus = GER_fate_of_yugoslavia }
 		icon = GFX_goal_generic_forceful_treaty
 		available = {
-date > 1949.12.1
 			is_subject = no
 			GRE = { 
 				has_war = no 
@@ -5841,6 +5870,7 @@ date > 1949.12.1
 					ITA = {
 						NOT = { has_war_with = GRE }
 						country_exists = ITA
+						has_completed_focus = ITA_war_with_greece
 						OR = {
 							is_in_faction_with = GER
 							is_in_faction = no							
@@ -5931,7 +5961,6 @@ date > 1940.1.1
 		prerequisite = { focus = GER_second_ljubljana_award }
 		icon = GFX_goal_demand_sudetenland
 		available = {
-date > 1949.12.1
 			country_exists = GRE
 			NOT = { has_war_with = GRE }
 			GRE = {
@@ -5949,7 +5978,6 @@ date > 1949.12.1
 			GRE = { country_event = { id = greece.3 hours = 6 } }
 		}
 	}
-	
 
     focus = {
 		id = GER_oppose_hitler
@@ -5962,7 +5990,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			is_subject = no
 			has_government = fascism
 		}
@@ -6899,6 +6926,9 @@ date > 1949.12.1
 		available = {
 			is_subject = no
 			NOT = { has_war_with = ITA }
+			ITA = {
+				has_government = fascism
+			}
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -6907,6 +6937,16 @@ date > 1949.12.1
 		cost = 10
 		ai_will_do = {
 			factor = 10
+		}
+
+		select_effect = {
+			ITA = {
+				country_event = {
+				    id = wtt_germany.1006
+				    days = 1
+				    random = 2
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -6931,6 +6971,12 @@ date > 1949.12.1
 			NOT = { has_war_with = ITA }
 			ITA = { has_country_leader = { ruling_only = yes character = ITA_benito_mussolini } }
 			NOT = {	ITA = {	has_completed_focus = ITA_banda_carita } }
+			custom_trigger_tooltip = {
+				tooltip = GER_italy_declined_assassination_tt
+				NOT = {
+					has_country_flag = GER_italy_declined_assassination_of_mussolini_flag
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -7284,7 +7330,7 @@ date > 1949.12.1
 		
 		completion_reward = {
 			188 = { add_claim_by = GER }
-			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
+			add_named_threat = { threat = 4 name = GER_demand_memel_threat }
 			random_other_country = {
 				limit = {
 					owns_state = 188
@@ -7838,7 +7884,11 @@ date > 1949.12.1
 		available = {
 			is_subject = no
 			has_war = no
-			SOV = { has_government = communism }
+			SOV = { 
+				NOT = {
+					has_government = democratic 
+				}
+			}
 			has_added_tension_amount < 15
 		}
 		cancel_if_invalid = yes
@@ -7899,6 +7949,10 @@ date > 1949.12.1
 		available = {
 			is_subject = no
 			has_war = no
+		}
+
+		bypass = {
+			is_faction_leader = yes
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -7961,7 +8015,7 @@ date > 1949.12.1
 						limit = {
 							original_tag = SPR
 							has_government = communism
-							
+							NOT = { has_completed_focus = SPR_hinder_nkvd_interference }
 						}
 						add_ai_strategy = {
 							type = befriend
@@ -8031,23 +8085,28 @@ date > 1949.12.1
 		prerequisite = { focus = GER_central_european_alliance }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = AUS }
 			NOT = { has_war_with = CZE }
 			NOT = { has_war_with = HUN }
 		}
 		bypass = {
 			OR = {
-				AND = {
+				NOT = { country_exists = AUS }
+				AUS = { is_subject = yes }
 					is_in_faction_with = AUS
-					is_in_faction_with = CZE
-					is_in_faction_with = HUN
 				}
-				AND = {
-					NOT = { country_exists = AUS }
+			OR = {
 					NOT = { country_exists = CZE }
-					NOT = { country_exists = HUN }
-				}
+				CZE = { is_subject = yes }
+				is_in_faction_with = HUN
 			}
+			OR = {
+					NOT = { country_exists = HUN }
+				HUN = { is_subject = yes }
+				is_in_faction_with = HUN
+				}
+
 		}
 		cancel_if_invalid = yes
 		x = -2
@@ -8067,8 +8126,10 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
-					}
 					exists = yes
+						is_subject = no
+					}
+					
 				}
 				AUS = {
 					country_event = { id = generic.5 }
@@ -8081,8 +8142,9 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
-					}
 					exists = yes
+						is_subject = no
+					}					
 				}
 				CZE = {
 					country_event = { id = generic.5 }
@@ -8095,8 +8157,10 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
-					}
 					exists = yes
+						is_subject = no
+					}
+					
 				}
 				HUN = {
 					country_event = { id = generic.5 }
@@ -8111,19 +8175,20 @@ date > 1949.12.1
 		prerequisite = { focus = GER_danubian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = YUG }
 			NOT = { has_war_with = ROM }
 		}
 		bypass = {
 			OR = {
-				AND = {
+				NOT = { country_exists = YUG }
+				YUG = { is_subject = yes }
 					is_in_faction_with = YUG
-					is_in_faction_with = ROM
 				}
-				AND = {
-					NOT = { country_exists = YUG }
+			OR = {
 					NOT = { country_exists = ROM }
-				}
+				ROM = { is_subject = yes }
+				is_in_faction_with = ROM
 			}
 		}
 		cancel_if_invalid = yes
@@ -8146,6 +8211,7 @@ date > 1949.12.1
 						}
 						is_in_faction = no
 						exists = yes
+						is_subject = no
 					}
 				}
 				YUG = {
@@ -8159,9 +8225,10 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
-					}
 					is_in_faction = no
 					exists = yes
+						is_subject = no
+					}
 				}
 				ROM = {
 					country_event = { id = generic.5 }
@@ -8310,22 +8377,26 @@ date > 1949.12.1
 		prerequisite = { focus = GER_central_european_alliance }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = HOL }
 			NOT = { has_war_with = BEL }
 			NOT = { has_war_with = LUX }
 		}
 		bypass = {
 			OR = {
-				AND = {
+				NOT = { country_exists = HOL }
+				HOL = { is_subject = yes }
 					is_in_faction_with = HOL
-					is_in_faction_with = BEL
-					is_in_faction_with = LUX
 				}
-				AND = {
-					NOT = { country_exists = HOL }
+			OR = {
 					NOT = { country_exists = BEL }
+				BEL = { is_subject = yes }
+				is_in_faction_with = BEL
+			}
+			OR = {
 					NOT = { country_exists = LUX }
-				}
+				LUX = { is_subject = yes }
+				is_in_faction_with = LUX
 			}
 		}
 		cancel_if_invalid = yes
@@ -8346,6 +8417,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				HOL = {
@@ -8359,6 +8431,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				BEL = {
@@ -8372,6 +8445,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				LUX = {
@@ -8521,22 +8595,26 @@ date > 1949.12.1
 		prerequisite = { focus = GER_central_european_alliance }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = NOR }
 			NOT = { has_war_with = SWE }
 			NOT = { has_war_with = DEN }
 		}
 		bypass = {
 			OR = {
-				AND = {
+				NOT = { country_exists = NOR }
+				NOR = { is_subject = yes }
 					is_in_faction_with = NOR
-					is_in_faction_with = SWE
-					is_in_faction_with = DEN
 				}
-				AND = {
-					NOT = { country_exists = NOR }
+			OR = {
 					NOT = { country_exists = SWE }
+				SWE = { is_subject = yes }
+				is_in_faction_with = SWE
+			}
+			OR = {
 					NOT = { country_exists = DEN }
-				}
+				DEN = { is_subject = yes }
+				is_in_faction_with = DEN
 			}
 		}
 		cancel_if_invalid = yes
@@ -8557,6 +8635,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				NOR = {
@@ -8570,6 +8649,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				SWE = {
@@ -8583,6 +8663,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				DEN = {
@@ -8598,6 +8679,7 @@ date > 1949.12.1
 		prerequisite = { focus = GER_scandinavian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = EST }
 			NOT = { has_war_with = LAT }
 			NOT = { has_war_with = LIT }
@@ -8616,6 +8698,7 @@ date > 1949.12.1
 					is_in_faction_with = SOV
 					exists = no
 					has_war_with = SOV
+					is_subject = yes
 				}
 			}
 			LAT = {
@@ -8624,6 +8707,7 @@ date > 1949.12.1
 					is_in_faction_with = SOV
 					exists = no
 					has_war_with = SOV
+					is_subject = yes
 				}
 			}
 			LIT = {
@@ -8632,6 +8716,7 @@ date > 1949.12.1
 					is_in_faction_with = SOV
 					exists = no
 					has_war_with = SOV
+					is_subject = yes
 				}
 			}
 		}
@@ -8654,6 +8739,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				EST = {
@@ -8672,6 +8758,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				LAT = {
@@ -8690,6 +8777,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				LIT = {
@@ -8725,6 +8813,7 @@ date > 1949.12.1
 		prerequisite = { focus = GER_scandinavian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = POL }
 			SOV = { NOT = { has_war_with = POL } }
 		}
@@ -8732,6 +8821,7 @@ date > 1949.12.1
 			OR = {
 				is_in_faction_with = POL
 				NOT = { country_exists = POL }
+				POL = { is_subject = yes }
 				SOV = { 
 					OR = {
 						is_in_faction_with = POL
@@ -8759,6 +8849,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				POL = {
@@ -8808,6 +8899,7 @@ date > 1949.12.1
 		prerequisite = { focus = GER_scandinavian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = FIN }
 			SOV = { NOT = { has_war_with = FIN } }
 		}
@@ -8815,6 +8907,7 @@ date > 1949.12.1
 			OR = {
 				is_in_faction_with = FIN
 				NOT = { country_exists = FIN }
+				is_subject = yes
 				SOV = { 
 					OR = { 
 						is_in_faction_with = FIN
@@ -8842,6 +8935,7 @@ date > 1949.12.1
 							has_government = communism
 							has_government = fascism
 						}
+						is_subject = no
 					}
 				}
 				FIN = {
