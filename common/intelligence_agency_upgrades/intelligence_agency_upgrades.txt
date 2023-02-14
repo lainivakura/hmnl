@@ -148,14 +148,14 @@ branch_defense = {
 		level = {
 			modifier = {
 				root_out_resistance_effectiveness_factor = 0.25
-				compliance_gain = 0.01
+				# compliance_gain = 0.01
 			}
 		}
 
 		level = {
 			modifier = {
 				root_out_resistance_effectiveness_factor = 0.25
-				compliance_gain = 0.01
+				# compliance_gain = 0.01
 			}
 		}
 	}
