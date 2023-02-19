@@ -1799,29 +1799,29 @@ on_actions = {
 				}
 				#log = "Medium Paranoia days = [?SOV_medium_paranoia_days] // High Paranoia days = [?SOV_high_paranoia_days]" #Debug
 			}
-			else = {
-				#log = "NOT A PURGE WEEK" #Debug
-			}
+			# else = {
+			# 	#log = "NOT A PURGE WEEK" #Debug
+			# }
 
-			### SOVIET CIVIL WAR TRIGGER
-			IF = {
-				limit = { 
-					SOV_is_opposition = yes # Don't test for Stalin
-					SOV_soviet_civil_war_not_started = yes # Only test before the war has started 
-					check_variable = { SOV_paranoia > 89}
-					is_ai = no # Slight cheat, but the ai needs some support
-				}
-				random_list = {
-					80 = { } # No effect
-					20 = { 
-						set_country_flag = SOV_civil_war_triggered_flag 
-						country_event = {
-							id = NSB_soviet_civil_war_common.003
-							hours = 0
-						}
-					}
-				}
-			}
+			# ### SOVIET CIVIL WAR TRIGGER
+			# IF = {
+			# 	limit = { 
+			# 		SOV_is_opposition = yes # Don't test for Stalin
+			# 		SOV_soviet_civil_war_not_started = yes # Only test before the war has started 
+			# 		check_variable = { SOV_paranoia > 89}
+			# 		is_ai = no # Slight cheat, but the ai needs some support
+			# 	}
+			# 	random_list = {
+			# 		80 = { } # No effect
+			# 		20 = { 
+			# 			set_country_flag = SOV_civil_war_triggered_flag 
+			# 			country_event = {
+			# 				id = NSB_soviet_civil_war_common.003
+			# 				hours = 0
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 	}
 
@@ -1970,16 +1970,16 @@ on_actions = {
 		}
 	}
 
-	on_startup = {
-		effect = {
-			#Set Iranian initial states (for Anglo-Soviet invasion of Iran)
-			PER = {
-				every_owned_state = {
-					add_to_array = { SOV_iranian_initial_states = PREV }
-				}
-			}
-		}
-	}
+	# on_startup = {
+	# 	effect = {
+	# 		#Set Iranian initial states (for Anglo-Soviet invasion of Iran)
+	# 		PER = {
+	# 			every_owned_state = {
+	# 				add_to_array = { SOV_iranian_initial_states = PREV }
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {

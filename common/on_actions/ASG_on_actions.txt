@@ -33,18 +33,18 @@ on_actions = {
 				set_variable = {
 					GLOBAL.ASG_number_of_executed_ticks = 0
 				}
-				set_variable = {
-					GLOBAL.ASG_civilian_rendering_scale_factor = 1
-				}
+				# set_variable = {
+				# 	GLOBAL.ASG_civilian_rendering_scale_factor = 1
+				# }
 				set_variable = {
 					GLOBAL.ASG_military_rendering_scale_factor = 1
 				}
-				set_variable = {
-					GLOBAL.ASG_manpower_rendering_scale_factor = 1
-				}
-				set_variable = {
-					GLOBAL.ASG_casualties_rendering_scale_factor = 1
-				}
+				# set_variable = {
+				# 	GLOBAL.ASG_manpower_rendering_scale_factor = 1
+				# }
+				# set_variable = {
+				# 	GLOBAL.ASG_casualties_rendering_scale_factor = 1
+				# }
 				set_variable = {
 					GLOBAL.ASG_graph_pixel_y_maximum_value = 390
 				}
@@ -54,18 +54,18 @@ on_actions = {
 				set_variable = {
 					GLOBAL.ASG_graph_pixel_y_offset_value = 4
 				}
-				set_variable = {
-					GLOBAL.ASG_manpower_amount_to_pixel_scale_factor = 0.04
-				}
+				# set_variable = {
+				# 	GLOBAL.ASG_manpower_amount_to_pixel_scale_factor = 0.04
+				# }
 				set_variable = {
 					GLOBAL.ASG_military_amount_to_pixel_scale_factor = 0.60
 				}
-				set_variable = {
-					GLOBAL.ASG_civilian_amount_to_pixel_scale_factor = 0.60
-				}
-				set_variable = {
-					GLOBAL.ASG_casualties_amount_to_pixel_scale_factor = 0.030
-				}
+				# set_variable = {
+				# 	GLOBAL.ASG_civilian_amount_to_pixel_scale_factor = 0.60
+				# }
+				# set_variable = {
+				# 	GLOBAL.ASG_casualties_amount_to_pixel_scale_factor = 0.030
+				# }
 
 				set_variable = {
 					GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset = GLOBAL.ASG_graph_pixel_y_maximum_value
@@ -83,11 +83,11 @@ on_actions = {
 				#military
 				ASG_calculate_initial_graph_point_military = yes
 				#civilian
-				ASG_calculate_initial_graph_point_civilian = yes
+				# ASG_calculate_initial_graph_point_civilian = yes
 				#manpower
-				ASG_calculate_initial_graph_point_manpower = yes
+				# ASG_calculate_initial_graph_point_manpower = yes
 				#casualties
-				ASG_calculate_initial_graph_point_casualties = yes
+				# ASG_calculate_initial_graph_point_casualties = yes
 			}
 		}
 	}
