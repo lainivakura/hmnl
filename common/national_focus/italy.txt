@@ -8287,10 +8287,10 @@ focus_tree = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ITA_solid_progress_completion_tt
-				always = no
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = ITA_solid_progress_completion_tt
+			# 	always = no
+			# }
 		}
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
@@ -8306,7 +8306,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { allow_branch = { always = no }
 		id = ITA_struggle_in_ethiopia
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = ITA_the_abyssinian_fiasco focus = ITA_solid_progress }
