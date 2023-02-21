@@ -5255,7 +5255,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_legislative_elections focus = BUL_liberalization_of_trade_policies }
 		icon = GFX_focus_chi_british_cooperation
 		relative_position_id = BUL_legislative_elections
-		x = 3
+		x = -9
 		y = 1
 		cost = 10
 
@@ -5379,7 +5379,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { allow_branch = { always = no }
 		id = BUL_join_the_allies
 
 		prerequisite = { focus = BUL_approach_the_united_kingdom }
@@ -6136,7 +6136,7 @@ focus_tree = {
 
 		icon = GFX_focus_BUL_power_to_the_tsar
 		relative_position_id = BUL_oppose_the_royal_dictatorship
-		x = 5
+		x = 0
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = BUL_oppose_the_royal_dictatorship }
@@ -6171,7 +6171,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_power_to_the_tsar focus = BUL_oppose_the_royal_dictatorship }
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		relative_position_id = BUL_power_to_the_tsar
-		x = -11
+		x = 0
 		y = 1
 		cost = 5
 		mutually_exclusive = { focus = BUL_support_macedonian_organizations }
@@ -6393,7 +6393,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_the_tsars_regime focus = BUL_democratic_principles }
 		icon = GFX_goal_demand_sudetenland
 		relative_position_id = BUL_the_tsars_regime
-		x = -4
+		x = 8
 		y = 1
 		cost = 10
 
@@ -8120,8 +8120,8 @@ focus_tree = {
 
 		icon = GFX_focus_chi_mission_to_germany
 		relative_position_id = BUL_bulgarian_irredentism
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 
 		bypass = {
@@ -8386,7 +8386,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		relative_position_id = BUL_approach_germany
 		x = 0
-		y = 4
+		y = 2
 		cost = 5
 		mutually_exclusive = { focus = BUL_the_fate_of_the_balkans focus = BUL_join_the_allies }
 

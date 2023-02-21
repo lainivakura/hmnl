@@ -322,7 +322,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SPA_sin_paquito
 		available = {
 		}
@@ -673,7 +673,7 @@ focus_tree = {
 #  # #  #  #   #  #  # #  # #  # #    #    #  #    #            #   #  #   # #  #  #    #  #    # 
 #  # #  #  #  ###  ##  #  # #  # ### ### ##   #  ##             #   #  # ##   ##  ### ##   #  ##  
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SPA_the_phalanx_ascendant
 		available = {
 			has_global_flag = spanish_civil_war
@@ -2727,7 +2727,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SPA_join_the_axis
 		available = {
 			has_global_flag = scw_over
@@ -3883,7 +3883,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SPA_portuguese_aid
 		available = {
 			NOT = { has_war_with = POR }
@@ -4120,7 +4120,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SPA_join_the_allies
 		available = {
 			has_global_flag = scw_over
@@ -5132,7 +5132,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SPA_demand_french_north_africa
 		available = {
 			any_country = {
@@ -5345,7 +5345,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = {allow_branch = {always = no}
 		id = SPA_retake_gibraltar
 		available = {
 			NOT = {
@@ -5473,7 +5473,7 @@ focus_tree = {
 #  # #  #  #   #  #  # #  # #  # #    #    #  #    #            #  # #  # #  # #    #    #  #    # 
 #  # #  #  #  ###  ##  #  # #  # ### ### ##   #  ##              ##  #  # #  # ### ### ##   #  ##  
 
-	focus = {
+	focus = { allow_branch = { always = no }
 		id = SPA_supremacy_of_the_communion
 		available = {
 			has_global_flag = spanish_civil_war

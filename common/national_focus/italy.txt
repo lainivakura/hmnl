@@ -8345,6 +8345,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no
 			has_dlc = "By Blood Alone"
 			if = {
 				limit = {
