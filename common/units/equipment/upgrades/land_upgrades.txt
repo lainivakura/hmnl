@@ -11,31 +11,31 @@ upgrades = {
 		}
 
 		level_requirements = {
-			4 = {
+			5 = {
 				has_tech = engine_tech_1
 			}
-			8 = { 
+			10 = {
 				has_tech = engine_tech_2
 			}
-			13 = {
+			15 = {
 				has_tech = engine_tech_3
 			}
-			15 = { 
+			18 = { 
 				has_tech = engine_tech_4
 			}
 		}
 
 		resource_cost_thresholds = {
-			14 = { #higher level engines do require more strategic resources
-				steel = 1
+			10 = { #higher level engines do require more strategic resources
+				#chromium = 1
 			}
 		}
-		maximum_speed = 0.05 #Ванильное значение армора + движка
-		reliability = -0.03 #@5Mort - Ванильное значение армора + движка
+
+		maximum_speed = 0.1
+		reliability = -0.015
 		add_stats = {
 			fuel_consumption = 0.05
-			build_cost_ic = 0.3 #@5Mort - Ванильное значение армора + движка
-			breakthrough = 1.25 #@5Mort - Ванильное значение армора
+			build_cost_ic = 0.1
 		}
 	}
 
@@ -50,42 +50,42 @@ upgrades = {
 		}
 
 		level_requirements = {
-			6 = {
+			5 = {
 				has_tech = armor_tech_1
 			}
-			9 = {
+			10 = {
 				has_tech = armor_tech_2
 			}
-			12 = {
+			15 = {
 				has_tech = armor_tech_3
 			}
-			16 = {
+			18 = {
 				has_tech = armor_tech_4
 			}
 		}
 
-	# 	resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
-	# 		7 = { #more armor requires more resources
-	# 			steel = 1 
-	# 		}
-	# 		12 = {
-	# 			steel = 1
-				
-	# 		}
-	# 		16 = {
-	# 			steel = 1
-	# 			chromium = 1
-	# 		}
-	# 	}
+		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
+			5 = { #more armor requires more resources
+				steel = 1 
+			}
+			10 = {
+				steel = 1
+				#chromium = 1
+			}
+			15 = {
+				steel = 1
+				#chromium = 2
+			}
+		}
 
-	# 	maximum_speed = -0.03
-	# 	reliability = -0.015
-	# 	armor_value = 0.075
-	# 	add_stats = {
-	# 		breakthrough = 1.25
-	# 		build_cost_ic = 0.1
+		maximum_speed = -0.05
+		reliability = -0.02
+		# armor_value = 0.085
+		add_stats = {
+			breakthrough = 1.25
+			build_cost_ic = 0.2
 
-	# 	}
+		}
 	}
 
 	tank_gun_upgrade = {
