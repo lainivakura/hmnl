@@ -3514,6 +3514,7 @@ focus_tree = {
 			# 	limit = { has_government = fascism }
 			# 	compare_autonomy_state > autonomy_reichsprotectorate
 			# }
+			is_subject = no
 		}
 
 		bypass = {
