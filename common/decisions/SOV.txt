@@ -10849,6 +10849,7 @@ SOV_industry_relocation = {
 				infrastructure > 2
 			}
 			has_equipment = { train_equipment > 39 } #20 trains per factory
+			FROM = { has_war_with = GER }
 		}
 
 		visible = {
@@ -11023,6 +11024,7 @@ SOV_industry_relocation = {
 			has_full_control_of_state = 195
 			has_full_control_of_state = 569
 			has_equipment = { train_equipment > 19 } #20 trains per factory
+			FROM = { has_war_with = GER }
 		}
 
 		visible = {
@@ -11135,6 +11137,7 @@ SOV_industry_relocation = {
 			has_full_control_of_state = 221
 			has_full_control_of_state = 572
 			has_equipment = { train_equipment > 19 } #20 trains per factory
+			FROM = { has_war_with = GER }
 		}
 
 		visible = {
