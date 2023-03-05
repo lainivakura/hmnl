@@ -10849,7 +10849,7 @@ SOV_industry_relocation = {
 				infrastructure > 2
 			}
 			has_equipment = { train_equipment > 39 } #20 trains per factory
-			FROM = { has_war_with = GER }
+			ROOT = { has_war_with = GER }
 		}
 
 		visible = {
