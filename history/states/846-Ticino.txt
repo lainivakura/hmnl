@@ -1,0 +1,24 @@
+
+state={
+	id=846
+	name="STATE_846"
+	manpower = 1
+	state_category = town
+	# resources={
+	# 	aluminium=15 # was: 24 
+	# }
+	impassable = yes
+	history={
+		owner = VEN
+		# victory_points = { 9600 1 }
+		# buildings = {
+		# 	infrastructure = 2 
+		# 	industrial_complex = 1
+		# }
+		add_core_of = VEN
+	}
+	provinces={
+		9600 3641 
+	}
+	local_supplies=0.0  
+}
