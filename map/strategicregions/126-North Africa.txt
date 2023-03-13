@@ -1,14 +1,14 @@
 
 strategic_region={
-	id=225
-	name="STRATEGICREGION_225"
+	id=126
+	name="STRATEGICREGION_126"
 	provinces={
-		1037 1046 1105 1118 1149 1174 1189 3987 4051 4061 4117 4129 4163 4176 4194 4992 7005 7066 7077 7154 7162 7180 7194 7209 9980 9983 9994 10026 10037 10067 10082 10091 11921 11935 11940 11957 11969 12000 12009 12039 13145 13179 
+		1013 1058 1126 1128 1141 1145 1160 1967 3991 4018 4046 4116 4131 4146 4150 4970 5053 7008 7033 7040 7065 7081 7132 7149 7166 9943 9960 9964 9976 10045 10059 10078 11923 11939 11953 12018 12020 12034 12051 12760 12888 13074 13077 
 	}
 	weather={
 		period={
 			between={ 0.0 30.0 }
-			temperature={ 6.0 22.0 }
+			temperature={ -2.0 15.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -21,7 +21,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.1 27.1 }
-			temperature={ 8.0 23.0 }
+			temperature={ -2.0 15.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -34,7 +34,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.2 30.2 }
-			temperature={ 9.0 25.0 }
+			temperature={ 2.0 18.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -47,7 +47,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.3 29.3 }
-			temperature={ 13.0 27.0 }
+			temperature={ 5.0 20.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -60,7 +60,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.4 30.4 }
-			temperature={ 15.0 30.0 }
+			temperature={ 7.0 23.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -73,7 +73,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.5 29.5 }
-			temperature={ 17.0 32.0 }
+			temperature={ 13.0 29.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -86,7 +86,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.6 30.6 }
-			temperature={ 19.0 32.0 }
+			temperature={ 16.0 31.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -99,7 +99,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.7 30.7 }
-			temperature={ 19.0 34.0 }
+			temperature={ 17.0 31.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -112,7 +112,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.8 29.8 }
-			temperature={ 18.0 33.0 }
+			temperature={ 13.0 28.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -125,7 +125,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.9 30.9 }
-			temperature={ 15.0 31.0 }
+			temperature={ 7.0 24.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -138,7 +138,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.10 29.10 }
-			temperature={ 12.0 26.0 }
+			temperature={ 4.0 18.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
@@ -151,7 +151,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.11 30.11 }
-			temperature={ 7.0 22.0 }
+			temperature={ 0.0 16.0 }
 			no_phenomenon=0.600
 			rain_light=0.000
 			rain_heavy=0.000
