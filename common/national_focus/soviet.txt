@@ -1712,7 +1712,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_eastern_development
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -3960,7 +3960,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 		
 		available = {
 			if = {
@@ -4127,7 +4127,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_superior_war_machines
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -5312,7 +5312,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_move_industry_to_the_urals
-		cost = 5
+		cost = 1
 
 		available = {
 			219 = {
@@ -6007,6 +6007,7 @@ date > 1941.10.1
 				days = 250
 				
 			}
+			
 			add_ideas = tot_economic_mobilisation
 			add_ideas = extensive_conscription
 			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
@@ -6705,7 +6706,7 @@ date > 1941.10.1
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_centre
-		cost = 10
+		cost = 5
 
 		available = {
 
