@@ -32,6 +32,7 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 
  
 -- NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
+NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 20
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
