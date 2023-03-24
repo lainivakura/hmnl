@@ -4,7 +4,7 @@ state = {
 	name = "STATE_256"
 	manpower = 786030 #Was 1572061 but was divided by 2 due to the state being split in half
 	
-	state_category = town
+	state_category = city
 
 	history = {
 		victory_points = {

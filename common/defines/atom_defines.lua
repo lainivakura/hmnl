@@ -4,13 +4,13 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 290
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 290
 
 
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.25
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0        -- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0        -- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0         -- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 
 
---ОПЫТ
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,	0.04,	0.06,	0.08,	0.1,	0.14,	0.18,	0.22,	0.26,	0.3,	0.39,	0.48,	0.57,	0.66,	0.75,	0.78,	0.81,	0.84,	0.87,	0.9}		-- Experience needed to progress to the next level
@@ -88,7 +88,9 @@ NDefines.NProduction.BASE_LICENSE_IC_COST = 0
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipment for every year of equipment after 1936
 
 
-
+NDefines.NSupply.RAILWAY_BASE_FLOW = 7.0
+NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 3.5
+NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 3.5
 
 --Navy
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1

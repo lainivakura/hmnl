@@ -16,7 +16,6 @@ ideas = {
 				consumer_goods_factor = 0.50
 				production_speed_industrial_complex_factor = -0.5
 				production_speed_arms_factory_factor = -0.5
-				production_speed_dockyard_factor = -0.5
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -247,10 +246,12 @@ ideas = {
 				any_enemy_country = {
 					OR = {			
                     original_tag = JAP
-                    GER = {
-                    has_offensive_war_with = SOV
-                    }					
+					original_tag = SOV
+                    	
                     }
+					OR = {
+						original_tag = GER
+						date > 1942.6.1
 				}
 
 
@@ -313,7 +314,7 @@ ideas = {
 					}
 				}
    			}
-
+			}
 			cost = 150
 			removal_cost = -1
 			

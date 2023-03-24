@@ -214,8 +214,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				command_power_gain_mult = 0.1	
-global_building_slots_factor = 0.1
+				command_power_gain_mult = 0.2	
+				global_building_slots_factor = 0.2
 
 			}
 		}
@@ -658,6 +658,7 @@ global_building_slots_factor = 0.1
 
 			modifier = {
 				conversion_cost_civ_to_mil_factor= -0.5
+				production_speed_arms_factory_factor = 0.15
 			}
 		}
 	
@@ -1685,7 +1686,7 @@ global_building_slots_factor = 0.1
 			traits = { industrial_concern }
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.08
 			}
 		}
 	}

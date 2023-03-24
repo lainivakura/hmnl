@@ -159,7 +159,7 @@ conscription = 0.1
 				planning_speed = 0.25
 				operative_slot = 2
 				conscription = 0.005
-send_volunteer_divisions_required = -1
+				compliance_growth = 0.1
 			}
 		}
 
