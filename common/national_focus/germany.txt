@@ -2331,10 +2331,20 @@ add_tech_bonus = {
 				# 	}
 				# }
 				add_tech_bonus = {
+					name = HUN_develop_tanks
+					ahead_reduction = 1.5
+					# bonus = 2.0
+					uses = 1
+					# technology = improved_medium_tank_chassis
+					technology = advanced_medium_tank_chassis
+				}
+				add_tech_bonus = {
 					name = armor_bonus
+					# ahead_reduction = 1.5
 					bonus = 1.0
 					uses = 2
-					category = armor
+					technology = improved_light_tank_chassis
+					technology = advanced_medium_tank_chassis
 				}
 			}
 			else = {
@@ -2436,9 +2446,9 @@ add_tech_bonus = {
 					bonus = 1.0
 					uses = 1
 					name = mech_army_bonus
-					technology = basic_medium_tank_chassis
-					technology = improved_medium_tank_chassis
-					technology = advanced_medium_tank_chassis
+					# technology = basic_medium_tank_chassis
+					# technology = improved_medium_tank_chassis
+					# technology = advanced_medium_tank_chassis
 					technology = mechanised_infantry
 				}
 			}
@@ -2502,8 +2512,9 @@ add_tech_bonus = {
 			add_tech_bonus = {
 			name = GER_tank
 			bonus = 2.0
-			uses = 1
-			technology = advanced_medium_tank_chassis
+			uses = 2
+			technology = improved_heavy_tank_chassis
+			technology = advanced_heavy_tank_chassis
 			}
 		}
 	}
@@ -2956,7 +2967,7 @@ add_tech_bonus = {
 		completion_reward = {
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
-						days = 100
+						days = 150
 					}
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
