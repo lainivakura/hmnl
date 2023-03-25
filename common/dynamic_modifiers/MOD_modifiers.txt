@@ -10,3 +10,19 @@ GER_blau = {
 	army_defence_factor = 0.15
 	supply_node_range = 0.1
 }
+GER_сitadel = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.13
+	army_defence_factor = 0.1
+	supply_node_range = 0.15
+}
+
+GER_counterattack = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.07
+	breakthrough_factor  = 0.1
+	supply_node_range = 0.1
+	max_planning = 0.05
+}

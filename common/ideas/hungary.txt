@@ -2,6 +2,21 @@ ideas = {
 
 	country = {
 
+		HUN_hueta= {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+			}
+
+			modifier = {
+				army_armor_attack_factor = 0.05
+			}
+		}
+
+
+
 		HUN_treaty_of_triannon = {
 			allowed = {
 				original_tag = HUN

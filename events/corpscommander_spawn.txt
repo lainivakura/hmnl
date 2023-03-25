@@ -167,6 +167,99 @@ country_event = {
 	
 	
 	
+country_event = {
+	id = corps.102
+	title = corps.102.t
+	desc = corps.102.d
+	picture = GFX_report_event_worker_protests
+	trigger = {
+		date > 1941.06.01
+	}	
+	mean_time_to_happen = {
+	days = 1
+	}
+	fire_only_once = yes
+	hidden = yes
+	immediate = {	
+		hidden_effect = {
+
+			ROM = {	
+				country_event = { id = corps.1 }
+				army_experience = 20
+				add_ideas = { empty_spirit }						
+				create_corps_commander = {
+					name = "A.R. Murugadoss"
+					gfx = GFX_portrait_SPA_jose_millan_astray
+					traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster trait_engineer}
+					skill=5
+					attack_skill=6
+					defense_skill=4
+					planning_skill=3
+					logistics_skill=5
+					legacy_id=4
+					}
+				create_corps_commander = {
+					name = "S.P. Isfaahan"
+					gfx = GFX_portrait_bul_asen_nikolov
+			traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster trait_engineer}
+			skill=5
+			attack_skill=6
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=4
+				}		
+		}
+					
+		
+				
+		
+		
+			HUN = {
+				country_event = { id = corps.1 }
+				army_experience = 20
+				add_ideas = { empty_spirit }	
+				create_corps_commander = {
+					name = "Sydney Fairbairn Rowell"
+					gfx = GFX_portrait_SPR_janos_galicz
+					traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster trait_engineer}
+					skill=5
+					attack_skill=6
+					defense_skill=4
+					planning_skill=3
+					logistics_skill=5
+					legacy_id=4
+					}
+				create_corps_commander = {
+					name = "M. T. Ball"
+					gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
+					traits={ brilliant_strategist armor_officer panzer_leader trickster trait_engineer organizer}
+					skill=4
+					attack_skill=6
+					defense_skill=3
+					planning_skill=5
+					logistics_skill=5
+					legacy_id=5
+					}			
+		}
+							
+			}
+		}	
+}
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

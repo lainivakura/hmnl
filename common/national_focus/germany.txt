@@ -2331,10 +2331,20 @@ add_tech_bonus = {
 				# 	}
 				# }
 				add_tech_bonus = {
+					name = HUN_develop_tanks
+					ahead_reduction = 1.5
+					# bonus = 2.0
+					uses = 1
+					# technology = improved_medium_tank_chassis
+					technology = advanced_medium_tank_chassis
+				}
+				add_tech_bonus = {
 					name = armor_bonus
+					# ahead_reduction = 1.5
 					bonus = 1.0
 					uses = 2
-					category = armor
+					technology = improved_light_tank_chassis
+					technology = advanced_medium_tank_chassis
 				}
 			}
 			else = {
@@ -2436,9 +2446,9 @@ add_tech_bonus = {
 					bonus = 1.0
 					uses = 1
 					name = mech_army_bonus
-					technology = basic_medium_tank_chassis
-					technology = improved_medium_tank_chassis
-					technology = advanced_medium_tank_chassis
+					# technology = basic_medium_tank_chassis
+					# technology = improved_medium_tank_chassis
+					# technology = advanced_medium_tank_chassis
 					technology = mechanised_infantry
 				}
 			}
@@ -2502,8 +2512,9 @@ add_tech_bonus = {
 			add_tech_bonus = {
 			name = GER_tank
 			bonus = 2.0
-			uses = 1
-			technology = advanced_medium_tank_chassis
+			uses = 2
+			technology = improved_heavy_tank_chassis
+			technology = advanced_heavy_tank_chassis
 			}
 		}
 	}
@@ -2956,7 +2967,7 @@ add_tech_bonus = {
 		completion_reward = {
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
-						days = 100
+						days = 150
 					}
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
@@ -2986,10 +2997,10 @@ focus = {
 		available = {
 				date >		1942.6.1
 			}		
-		prerequisite = { focus = GER_wunderwaffe }
+		prerequisite = { focus = GER_war_production }
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 13
-		y = 7
+		y = 8
 		completion_reward = {
 		55 = {
 			add_extra_state_shared_building_slots = 8
@@ -3008,21 +3019,271 @@ focus = {
 			}
 	}
 }
+
+	focus = {
+		id = Folcsturm
+		text = Folcsturm
+		prerequisite = { focus = GER_wunderwaffe }
+		icon = GFX_focus_generic_infiltration
+		cost = 1
+		x = 11
+		y = 7
+		available = {
+					date > 1941.11.1
+								OR = {
+						any_core_state  = {
+						is_controlled_by = SOV
+						}
+						}
+					OR = {	
+						SOV = {
+									controls_state = 79
+						}
+					}						
+				}
+			completion_reward = {
+					add_ideas = GER_folcsturm
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 200000
+						}
+					
+				}
+	}
+
+focus = {
+		id = stainer_vperde
+		text = stainer_vperde
+		prerequisite = { focus = Folcsturm }
+		icon = GFX_focus_generic_military_mission
+		cost = 1
+		
+		x = 11
+		y = 8
+		available = {
+					date > 1941.12.1
+					OR = {
+						any_core_state  = {
+						is_controlled_by = SOV
+						}
+						}
+					OR = {	
+						SOV = {
+									controls_state = 79
+						}
+					}						
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = GER_stiner
+							days = 100
+						}
+				}
+	}
 focus = {
 		id = GER_war_production
 		icon = GFX_focus_SOV_organize_wreckers
 		cost = 10
 		available = {
-				date >		1942.3.1
+				date > 1942.3.1
 			}		
 		prerequisite = { focus = GER_wunderwaffe }
-		x = 15
+		x = 13
 		y = 7
 		completion_reward = {
 			add_ideas = ger_production_increase
 	}
 }
 
+	focus = {
+		id = vtoroi_udar
+		prerequisite = { focus = GER_wunderwaffe}
+		text = vtoroi_udar
+		icon = GFX_focus_hol_united_netherlands
+		cost = 1
+		x = 15
+		y = 7
+		available = {
+				controls_state = 221
+				controls_state = 227
+				date > 1942.04.1
+				}
+			completion_reward = {
+					228 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					245 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					218 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					234 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					217 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					238 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+					235 = {
+						add_dynamic_modifier = {
+						modifier = GER_blau
+						scope = GER
+						days = 100
+					}
+					}
+				
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 150000
+						}
+				}
+	}
+
+		focus = {
+		id = tretiy_udar
+		prerequisite = { focus = vtoroi_udar}
+		text = tretiy_udar
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 1
+		x = 15
+		y = 8
+		available = {
+				controls_state = 225
+				controls_state = 221
+				controls_state = 224
+				controls_state = 240
+				SOV = {
+									controls_state = 220
+						}
+				date > 1943.07.1
+				}
+			completion_reward = {
+					220 = {
+						add_dynamic_modifier = {
+						modifier = GER_сitadel
+						scope = GER
+						days = 60
+					}
+
+					222 = {
+						add_dynamic_modifier = {
+						modifier = GER_сitadel
+						scope = GER
+						days = 60
+					}
+					}
+				}
+	}
+}
+
+		focus = {
+		id = kharkov_nastup
+		prerequisite = { focus = tretiy_udar}
+		prerequisite = { focus = GER_sloti_late}
+		prerequisite = { focus = stainer_vperde}
+		text = kharkov_nastup
+		icon = GFX_focus_attack_germany
+		cost = 1
+		x = 14
+		y = 9
+		available = {
+				controls_state = 259
+				controls_state = 226
+				controls_state = 227
+								SOV = {
+									controls_state = 221
+						}
+				date > 1943.02.1
+				}
+			completion_reward = {
+					240 = {
+						add_dynamic_modifier = {
+						modifier = GER_counterattack
+						scope = GER
+						days = 35
+					}
+
+					221 = {
+						add_dynamic_modifier = {
+						modifier = GER_counterattack
+						scope = GER
+						days = 35
+					}
+					}
+				}
+			}
+		}
+
+		focus = {
+		id = pribaltika_nastup
+		prerequisite = { focus = tretiy_udar}
+		prerequisite = { focus = GER_sloti_late}
+		prerequisite = { focus = stainer_vperde}
+		text = pribaltika_nastup
+		icon = GFX_focus_attack_germany
+		cost = 1
+		x = 12
+		y = 9
+		available = {
+				controls_state = 763
+								SOV = {
+									controls_state = 206
+						}
+				date > 1944.06.1
+				}
+			completion_reward = {
+					189 = {
+						add_dynamic_modifier = {
+						modifier = GER_counterattack
+						scope = GER
+						days = 35
+					}
+
+					815 = {
+						add_dynamic_modifier = {
+						modifier = GER_counterattack
+						scope = GER
+						days = 35
+					}
+
+					11 = {
+						add_dynamic_modifier = {
+						modifier = GER_counterattack
+						scope = GER
+						days = 35
+					}
+					}
+				}
+			}
+		}
+	}
 	focus = {
 		id = GER_turkey_friend
 		icon = GFX_goal_generic_improve_relations
@@ -9135,142 +9396,6 @@ date > 1940.1.1
 	}
 
 
-
-focus = {
-		id = stainer_vperde
-		text = stainer_vperde
-		icon = GFX_focus_generic_military_mission
-		cost = 1
-		
-		x = 13
-		y = 0
-		available = {
-					date > 1941.12.1
-					OR = {
-							SOV = {
-									controls_state = 10
-								}
-							SOV = {
-									controls_state = 46
-								}
-							SOV = {
-									controls_state = 43
-								}
-							SOV = {
-									controls_state = 88
-								}
-						}
-				}
-			completion_reward = {
-					add_timed_idea = {
-							idea = GER_stiner
-							days = 100
-						}
-				}
-	}
-	focus = {
-		id = vtoroi_udar
-		prerequisite = { focus = GER_ussr_war_goal}
-		text = vtoroi_udar
-		icon = GFX_focus_hol_united_netherlands
-		cost = 1
-		x = 22
-		y = 4
-		available = {
-				controls_state = 221
-				controls_state = 227
-				date > 1942.04.1
-				}
-			completion_reward = {
-					228 = {
-						add_dynamic_modifier = {
-						modifier = GER_blau
-						scope = GER
-						days = 100
-					}
-					}
-					245 = {
-						add_dynamic_modifier = {
-						modifier = GER_blau
-						scope = GER
-						days = 100
-					}
-					}
-					218 = {
-						add_dynamic_modifier = {
-						modifier = GER_blau
-						scope = GER
-						days = 100
-					}
-					}
-					234 = {
-						add_dynamic_modifier = {
-						modifier = GER_blau
-						scope = GER
-						days = 100
-					}
-					}
-					217 = {
-						add_dynamic_modifier = {
-						modifier = GER_blau
-						scope = GER
-						days = 100
-					}
-					}
-					238 = {
-						add_dynamic_modifier = {
-						modifier = GER_blau
-						scope = GER
-						days = 100
-					}
-					}
-					235 = {
-						add_dynamic_modifier = {
-						modifier = GER_blau
-						scope = GER
-						days = 100
-					}
-					}
-				
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 150000
-						}
-				}
-	}
-	focus = {
-		id = Folcsturm
-		text = Folcsturm
-		icon = GFX_focus_generic_infiltration
-		cost = 1
-		x = 14
-		y = 1
-		available = {
-					date > 1941.11.1
-					OR = {
-							SOV = {
-									controls_state = 763
-								}
-							SOV = {
-									controls_state = 87
-								}
-							SOV = {
-									controls_state = 71
-								}
-							SOV = {
-									controls_state = 46
-								}
-						}
-}
-			completion_reward = {
-					add_ideas = GER_folcsturm
-					add_equipment_to_stockpile = {
-							type = infantry_equipment_0
-							amount = 200000
-						}
-					
-				}
-	}
 
 focus = {
 		id = GER_war_iraq
