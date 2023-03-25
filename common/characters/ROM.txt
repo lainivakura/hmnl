@@ -598,6 +598,7 @@ characters={
 		}
 	}
 
+	
 	ROM_mihail_sturdza={
 		name=ROM_mihail_sturdza
 		portraits={

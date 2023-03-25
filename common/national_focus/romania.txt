@@ -89,6 +89,7 @@
 
 		completion_reward = {
 			add_ideas = ROM_preserve_greater_romania
+			add_ideas = ROM_oborona
 		}
 	}
 
@@ -1156,7 +1157,6 @@
 		id = ROM_malaxa
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ROM_danubian_transport_network }
-		mutually_exclusive = { focus = ROM_invite_foreign_motor_companies }
 		x = 0
 		y = 3
 		relative_position_id = ROM_civil_works
@@ -1219,12 +1219,11 @@
 		id = ROM_invite_foreign_motor_companies
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = ROM_danubian_transport_network }
-		mutually_exclusive = { focus = ROM_malaxa }
 		x = 2
 		y = 3
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -1466,7 +1465,7 @@
 		}
 
 		available = {
-
+			date > 1942.06.01
 		}
 
 		bypass = {
@@ -1478,7 +1477,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = ROM_exploit_the_baita_mines
+			add_ideas = ROM_hueta
 		}
 	}
 
@@ -2239,7 +2238,7 @@
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
 
-		cost = 10
+		cost = 10000
 
 		ai_will_do = {
 			factor = 1
@@ -2320,7 +2319,7 @@
 		y = 1
 		relative_position_id = ROM_iron_guard
 
-		cost = 10
+		cost = 10000
 
 		ai_will_do = {
 			factor = 9
@@ -2395,8 +2394,7 @@
 				news_event = { id = news.323 days = 1 }
 			}
 		}
-	}
-
+	} 
 	focus = {
 		id = ROM_king_michaels_coup
 		icon = GFX_focus_rom_coup
@@ -3191,7 +3189,7 @@
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 9
 
 		ai_will_do = {
 			factor = 1
@@ -3825,7 +3823,7 @@
 		y = 1
 		relative_position_id = ROM_expand_the_galati_shipyards
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 9
@@ -3894,7 +3892,7 @@
 		y = 1
 		relative_position_id = ROM_coastal_defense_navy
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -4001,7 +3999,7 @@
 		y = 1
 		relative_position_id = ROM_expand_the_galati_shipyards
 
-		cost = 10
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -4033,7 +4031,7 @@
 		y = 1
 		relative_position_id = ROM_black_sea_dominance
 
-		cost = 10
+		cost = 9
 
 		ai_will_do = {
 			factor = 1

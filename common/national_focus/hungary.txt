@@ -2652,7 +2652,10 @@ focus_tree = {
 				name = HUN_industrial_revitalization
 				bonus = 1.0
 				uses = 1
-				category = industry
+				technology = concentrated_industry4
+				technology = dispersed_industry4
+				technology = concentrated_industry3
+				technology = dispersed_industry3
 			}
 		}
 	}
@@ -2957,7 +2960,11 @@ focus_tree = {
 				name = HUN_announce_the_gyor_program
 				bonus = 1.0
 				uses = 2
-				category = industry
+				technology = concentrated_industry4
+				technology = dispersed_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry5
+				technology	= assembly_line_production
 			}
 		}
 	}
@@ -3575,7 +3582,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 70
@@ -4411,7 +4418,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction = yes
+			date > 1941.06.21
 		}
 
 		bypass = {
@@ -4424,6 +4431,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+
+			add_ideas = HUN_hueta
+			
 			add_to_tech_sharing_group = HUN_joint_tank_development_group
 			every_other_country = {
 				limit = {
@@ -4454,7 +4464,6 @@ focus_tree = {
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -4546,7 +4555,7 @@ focus_tree = {
 				name = HUN_home_defense
 				cost_reduction = 0.25
 				uses = 1
-				category = cat_grand_battle_plan
+				category = cat_mobile_warfare
 			}
 		}
 	}
@@ -4763,7 +4772,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
