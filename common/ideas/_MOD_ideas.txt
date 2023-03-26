@@ -36,8 +36,21 @@ ideas = {
 		}
 		no_cap_uk = {
 			picture = generic_victors_of_ww1
-			modifier = { surrender_limit = 1 }
+			modifier = { surrender_limit = 1
+operative_slot = 1			}
 		}
+		lack_of_aluminium = {
+			picture = generic_supply_depot
+			modifier = {air_defence_factor = -0.2}}
+		lack_of_ammunition = {
+			picture = generic_supply_lines
+			modifier = {army_artillery_attack_factor = -0.2}}
+		steel_wings = {
+			picture = generic_air_bonus
+			modifier = {air_defence_factor = 0.05}}
+		synth_rubber = {
+			picture= man_five_year_plan_industry
+			modifier ={production_speed_synthetic_refinery_factor = 0.3}}
 	}
 	
 }

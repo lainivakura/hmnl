@@ -733,7 +733,7 @@ characters={
 				}
 			}
 			traits = {
-				army_regrouping_2
+				army_armored_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -1430,7 +1430,7 @@ characters={
 			}
 		}
 	}
-
+	
 	ENG_sholto_douglas={
 		name=ENG_sholto_douglas
 		portraits={

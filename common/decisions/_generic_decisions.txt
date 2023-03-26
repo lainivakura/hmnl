@@ -1162,6 +1162,7 @@ operations = {
 		available = {
 			controls_state = 446
 			controls_state = 453
+			date > 1940.3.1
 			# OR = {
 			# 	NOT = {
 			# 		owns_state = 446
@@ -1193,9 +1194,9 @@ operations = {
 	
 		fire_only_once = no
 	
-		days_remove = 30
+		days_remove = 14
 	
-		cost = 75
+		cost = 50
 	
 		modifier = {
 			civilian_factory_use = 5

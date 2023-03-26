@@ -363,4 +363,159 @@ z_annex_bot_d = {
 			}
 		}
 	}
+
+	
+}
+usa_help_ussr = {
+	USA_aluminium = {
+		icon = generic_operation
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = USA
+		}
+		cost = 30
+		available = {
+			date > 1941.10.1
+		}
+		days_remove = 56
+		visible = {
+			SOV = {has_war_with = GER}
+		}
+		complete_effect = {
+			USA ={military_factory_donations = -5}
+			SOV = { remove_ideas = lack_of_aluminium}
+			# здесь должен быть -32 алюма в техасе и +у совка, и снижение дебаффов на воздух у совка
+			375 = {add_resource = {
+					type = aluminium
+					amount = -32
+				}}
+			
+			572 = {add_resource = {
+					type = aluminium
+					amount = 32
+				}}
+			
+		}
+
+		
+
+		
+		
+	}
+	USA_artiilery = {
+		icon = generic_operation
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = USA
+		}
+		cost = 30
+		available = {
+			date > 1942.2.1
+		}
+		days_remove = 56
+		visible = {
+			SOV = {has_war_with = GER}
+		}
+		complete_effect = {
+			USA ={military_factory_donations = -6}
+			SOV = {remove_ideas = lack_of_ammunition}
+			# а здесь открывается фокус на арту у совка(дает скидки на арту + -кост)
+			
+			
+		}
+
+		
+
+		
+		
+	}
+	USA_studebakker = {
+		icon = generic_operation
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = USA
+		}
+		cost = 30
+		available = {
+			date > 1942.3.1
+		}
+		days_remove = 56
+		visible = {
+			SOV = {has_war_with = GER}
+		}
+		complete_effect = {
+			USA ={military_factory_donations = -2}
+			# -кост на грузовички,калтюши
+			
+			
+		}
+
+		
+
+		
+		
+	}
+	USA_continue_support = {
+		icon = generic_operation
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = USA
+		}
+		cost = 30
+		available = {
+			date > 1942.11.23
+		}
+		days_remove = 36
+		visible = {
+			SOV = {has_war_with = GER}
+		}
+		complete_effect = {
+			USA ={military_factory_donations = -8}
+			SOV = {add_ideas = steel_wings}
+			# -кост на грузовички,калтюши
+			
+			
+		}
+
+		
+
+		
+		
+	}
+}
+eng_saf_can = {
+	ENG_aluminium_company = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = {
+			original_tag = ENG}
+		cost = 70
+		available = { 
+			date > 1942.1.1}
+		days_remove = 35
+		complete_effect = {
+			682 = {
+				add_resource = {
+					type = aluminium
+					amount = 20
+				}
+			}
+			863 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+			468 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}}
+}
 }

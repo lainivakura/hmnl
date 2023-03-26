@@ -1595,6 +1595,7 @@ focus_tree = {
 				technology = advanced_rubber_processing
 				technology = modern_rubber_processing
 			}
+			add_ideas = synth_rubber
 		}
 	}
 #   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  # 
