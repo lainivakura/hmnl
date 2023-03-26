@@ -244,7 +244,7 @@
 		id = SAF_outlaw_strikes
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = SAF_work_for_all_poor }
-		mutually_exclusive = { focus = SAF_expand_the_cape_corps }
+		# mutually_exclusive = { focus = SAF_expand_the_cape_corps }
 		x = 2
 		y = 5
 		relative_position_id = SAF_war_measures_act
