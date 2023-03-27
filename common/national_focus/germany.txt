@@ -2690,6 +2690,10 @@ add_tech_bonus = {
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 15000
+				}
 		}		
 	}
 
@@ -2967,7 +2971,7 @@ add_tech_bonus = {
 		completion_reward = {
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
-						days = 150
+						days = 120
 					}
 			IF = {
 				limit = { SOV = { has_civil_war = no } }

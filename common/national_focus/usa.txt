@@ -2150,40 +2150,7 @@ focus_tree = {
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 10
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
+			add_offsite_building = { type = arms_factory level= 6 }
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2338,36 +2305,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			army_experience = 10
-			random_owned_controlled_state = {
-				limit = {
-					arms_factory > 0
-					free_building_slots = {
-						building = arms_factory
-						size > 4
-						include_locked = yes
-					}
-					OR = {
-						region = 117
-						region = 118
-						region = 119
-						region = 120
-						region = 199
-						region = 219
-						region = 218
-						region = 211
-						region = 214
-						region = 198
-						region = 197
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-				set_state_flag = USA_military_construction_5MF
-			}
+			add_offsite_building = { type = arms_factory level= 5 }
 			if = {
 				limit = {
 					any_owned_state = {
@@ -2618,29 +2556,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					arms_factory > 0
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-					OR = {
-						region = 117
-						region = 118
-						region = 119
-						region = 120
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_USACE_projects_3AF
-			}
+			add_offsite_building = { type = arms_factory level= 5 }
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

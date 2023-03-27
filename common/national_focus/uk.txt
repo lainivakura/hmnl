@@ -921,7 +921,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = general_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -5876,7 +5876,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -6007,7 +6007,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_australia_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -8050,7 +8050,6 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			remove_ideas = ENG_the_war_to_end_all_wars
 			set_rule = { can_send_volunteers = yes }
 		}
 	}

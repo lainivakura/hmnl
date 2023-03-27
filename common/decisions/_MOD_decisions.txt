@@ -383,8 +383,12 @@ usa_help_ussr = {
 			SOV = {has_war_with = GER}
 		}
 		complete_effect = {
-			USA ={military_factory_donations = -5}
-			SOV = { remove_ideas = lack_of_aluminium}
+			USA ={add_offsite_building = { type = arms_factory level= -6 }}}
+			
+		remove_effect = {
+			SOV = { swap_ideas = {
+						remove_idea = severe_lack_of_aluminium
+						add_idea = lack_of_aluminium}}
 			# здесь должен быть -32 алюма в техасе и +у совка, и снижение дебаффов на воздух у совка
 			375 = {add_resource = {
 					type = aluminium
@@ -412,14 +416,16 @@ usa_help_ussr = {
 		}
 		cost = 30
 		available = {
-			date > 1942.2.1
+			date > 1942.3.12
 		}
 		days_remove = 56
 		visible = {
 			SOV = {has_war_with = GER}
 		}
 		complete_effect = {
-			USA ={military_factory_donations = -6}
+			USA ={add_offsite_building = { type = arms_factory level= -6 }}}
+		remove_effect = {
+			
 			SOV = {remove_ideas = lack_of_ammunition}
 			# а здесь открывается фокус на арту у совка(дает скидки на арту + -кост)
 			
@@ -431,7 +437,7 @@ usa_help_ussr = {
 		
 		
 	}
-	USA_studebakker = {
+	USA_studebaker = {
 		icon = generic_operation
 		fire_only_once = yes
 
@@ -440,14 +446,17 @@ usa_help_ussr = {
 		}
 		cost = 30
 		available = {
-			date > 1942.3.1
+			date > 1942.5.1
 		}
 		days_remove = 56
 		visible = {
 			SOV = {has_war_with = GER}
 		}
 		complete_effect = {
-			USA ={military_factory_donations = -2}
+			USA ={add_offsite_building = { type = arms_factory level = -5 }}}
+		remove_effect = {
+			
+			SOV = {add_ideas = lend_lease_studebaker}
 			# -кост на грузовички,калтюши
 			
 			
@@ -474,19 +483,20 @@ usa_help_ussr = {
 			SOV = {has_war_with = GER}
 		}
 		complete_effect = {
-			USA ={military_factory_donations = -8}
-			SOV = {add_ideas = steel_wings}
+			USA ={add_offsite_building = { type = arms_factory level= -9 }}}
+		remove_effect = {
+			SOV = {swap_ideas ={
+					remove_idea = lend_lease_studebaker
+					add_idea = lend_lease}}}
+			SOV = {remove_ideas = lack_of_aluminium}
+			
 			# -кост на грузовички,калтюши
 			
 			
 		}
-
-		
-
-		
-		
+	
 	}
-}
+
 eng_saf_can = {
 	ENG_aluminium_company = {
 		icon = generic_operation
@@ -497,7 +507,7 @@ eng_saf_can = {
 		available = { 
 			date > 1942.1.1}
 		days_remove = 35
-		complete_effect = {
+		remove_effect = {
 			682 = {
 				add_resource = {
 					type = aluminium
@@ -517,5 +527,4 @@ eng_saf_can = {
 				}
 			}
 		}}
-}
 }

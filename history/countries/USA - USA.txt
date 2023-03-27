@@ -38,7 +38,7 @@ if = {
 		}
 	}
 }
-
+add_offsite_building = { type = arms_factory level= 10 }
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0

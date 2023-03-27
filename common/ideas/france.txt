@@ -52,8 +52,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
 			}
 		}
 		FRA_inefficient_economy_2 = {
@@ -71,8 +71,27 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.4
+			}
+		}
+		FRA_inefficient_economy_3 = {
+			picture = generic_local_self_management
+			name = FRA_inefficient_economy_3
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 			}
 		}
 		FRA_political_violence = {
