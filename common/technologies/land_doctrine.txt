@@ -117,7 +117,7 @@ technologies = {
 
 		
 		category_all_infantry = {
-			defense = 0.05
+			defense = 0.1
 		}
 		
 	
@@ -641,7 +641,7 @@ technologies = {
 				category_support_battalions = {
 					soft_attack = 0.05
 					hard_attack = 0.1
-					max_organisation = 10
+					max_organisation = 15
 				}
 				
 				path = {

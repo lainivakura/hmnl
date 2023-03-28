@@ -643,22 +643,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = uk_extra_tech_slot
-		text = extra_tech_slot
-		icon = GFX_focus_research
-		prerequisite = { focus = uk_industrial_focus }
-		x = 0
-		y = 1
-		relative_position_id = uk_industrial_focus
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+	
 	
 	focus = {
 		id = general_rearmament_focus
@@ -700,6 +685,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
 			add_ideas = british_austerity_idea
+			add_research_slot = 1
+		
 		}
 	}
 
@@ -766,8 +753,8 @@ focus_tree = {
 		} #at war with major or ger in rhineland or high threat
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = uk_industrial_focus
 		cost = 10
 		ai_will_do = {
@@ -884,7 +871,7 @@ focus_tree = {
 		prerequisite = { focus = maud_focus }
 		icon = GFX_goal_generic_secret_weapon
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = royal_ordinance_focus
 		cost = 10
 		ai_will_do = {
@@ -914,6 +901,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = air_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
@@ -11276,5 +11264,21 @@ focus_tree = {
 			add_ideas = ENG_spirit_of_the_industrial_revolution_idea
 		}
 	}
-
+	focus = {
+		id = ENG_hobart_funnies
+		available = {
+			date > 1943.1.1}
+		prerequisite = { focus = ENG_tank_focus }
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = ENG_tank_focus
+		cost = 5
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			hidden_effect = { set_technology = { ENG_hobart_toys = 1 } }
+		}
+	}
 }

@@ -9273,12 +9273,16 @@ ideas = {
 					NOT = { has_country_flag = SOV_merge_materiel_gaz_3_flag }
 				}
 			}
-
+			available = {
+				NOT ={
+					has_idea = lack_of_ammunition}}
 			research_bonus = {
 				motorized_equipment = 0.15
 				mot_rockets = 0.50
 			}
-
+			equipment_bonus ={
+				motorized_rocket_equipment ={
+					soft_attack = 0.12}}
 			traits = { motorized_equipment_manufacturer }
 
 			modifier = {
