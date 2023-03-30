@@ -77,6 +77,13 @@ operative_slot = 1			}
 		obligations = {
 			picture = generic_goods_red_bonus
 			modifier = {consumer_goods_factor = -0.05}}
+		tank_corps = {
+			picture = generic_armor
+			equipment_bonus = {
+				cat_light_armor = {
+					build_cost_ic = -0.05
+					hard_attack = 0.05}
+				}}
 		
 	}
 	

@@ -250,6 +250,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			add_ideas = tank_corps
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
