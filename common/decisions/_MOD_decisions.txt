@@ -376,7 +376,7 @@ usa_help_ussr = {
 		}
 		cost = 30
 		available = {
-			date > 1941.10.1
+			date > 1941.10.1  #1941.10.1 
 		}
 		days_remove = 56
 		visible = {
@@ -416,7 +416,7 @@ usa_help_ussr = {
 		}
 		cost = 30
 		available = {
-			date > 1942.3.12
+			date > 1942.3.12 #1942.3.12
 		}
 		days_remove = 56
 		visible = {
@@ -446,7 +446,7 @@ usa_help_ussr = {
 		}
 		cost = 30
 		available = {
-			date > 1942.5.1
+			date > 1942.5.1 #1942.5.1
 		}
 		days_remove = 56
 		visible = {
@@ -476,7 +476,7 @@ usa_help_ussr = {
 		}
 		cost = 30
 		available = {
-			date > 1942.11.23
+			date > 1942.11.23 # 1942.11.23
 		}
 		days_remove = 36
 		visible = {
@@ -487,8 +487,8 @@ usa_help_ussr = {
 		remove_effect = {
 			SOV = {swap_ideas ={
 					remove_idea = lend_lease_studebaker
-					add_idea = lend_lease}}}
-			SOV = {remove_ideas = lack_of_aluminium}
+					add_idea = lend_lease}
+					remove_ideas = lack_of_aluminium}}
 			
 			# -кост на грузовички,калтюши
 			
