@@ -77,6 +77,7 @@ operative_slot = 1			}
 		obligations = {
 			picture = generic_goods_red_bonus
 			modifier = {consumer_goods_factor = -0.05}}
+		
 	}
 	
 }

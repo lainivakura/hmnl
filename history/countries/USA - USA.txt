@@ -313,8 +313,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 99
-	communism = 1
+	democratic = 100
 }
 
 add_ideas = {
