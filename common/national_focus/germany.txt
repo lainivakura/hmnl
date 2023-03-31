@@ -3049,7 +3049,7 @@ focus = {
 					add_ideas = GER_folcsturm
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_0
-							amount = 200000
+							amount = 120000
 						}
 					
 				}
@@ -3165,7 +3165,7 @@ focus = {
 				
 					add_equipment_to_stockpile = {
 							type = infantry_equipment_0
-							amount = 150000
+							amount = 70000
 						}
 				}
 	}

@@ -1353,7 +1353,7 @@ focus_tree = {
 			add_named_threat = { threat = 21 name = JAP_secure_china }
 			add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 150000
+					amount = 70000
 				}
 			605 = {
 					add_resource = {
