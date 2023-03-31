@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		GER_stiner= {
+		GER_stiner = {
 
 			picture = idea_chi_forced_conscription
 
@@ -19,7 +19,7 @@ ideas = {
 
 }
 
-	GER_voina_s_sovkom= {
+	GER_voina_s_sovkom = {
 
 		picture = generic_manpower_bonus
 
@@ -40,11 +40,86 @@ ideas = {
 }
 
 
+GER_naval_war = {
+
+			picture = idea_chi_forced_conscription
+
+			allowed = {
+				always = no # Added via event
+			}
+
+				modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_dockyard = 0.12
+				industrial_capacity_factory = -0.06
+		}
+	}
+
+
+	GER_endsieg = {
+
+		picture = idea_chi_forced_conscription
+
+		allowed = {
+			always = no # Added via event
+		}
+
+			modifier = {
+				army_core_attack_factor  = 0.2
+				army_core_defence_factor = 0.1
+				cas_damage_reduction = 0.2
+				terrain_penalty_reduction  = 0.12
+				army_defence_against_major_factor = 0.1
+	}
+}
+
+
+GER_jagernotprogramm = {
+
+			picture = idea_chi_forced_conscription
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			targeted_modifier = {
+				tag = GER
+				war_stability_factor  = 0.05
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.08 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.12 instant = yes
+				}			
+		}
+	}
+
+
+	GER_tank_production = {
+
+		picture = idea_chi_forced_conscription
+
+		allowed = {
+			always = no # Added via event
+		}
+		targeted_modifier = {
+			tag = GER
+			conversion_cost_civ_to_mil_factor  = -0.3
+		} 
+		equipment_bonus = {			
+				armor = {
+				build_cost_ic = -0.07  instant = yes
+				}
+			}		
+	}
 
 
 
 
-GER_vtoroi= {
+GER_vtoroi = {
 
 			picture = idea_chi_forced_conscription
 
