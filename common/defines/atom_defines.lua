@@ -52,6 +52,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 	0.0, -- RECON
 	0.0, -- NAVAL_PATROL
 }
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
 --Military
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0
