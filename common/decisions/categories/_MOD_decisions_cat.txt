@@ -10,7 +10,7 @@ z_annex_d = {
 z_annex_bot_d = {
 	icon = military_operation
 }
-usa_help_ussr = 
+usa_help_ussr = {
 	icon = generic_political_discourse
 }
 eng_saf_can = {
