@@ -1,4 +1,4 @@
-﻿l_russian:
+l_russian:
 ITA_LARGE_tt: "\nКогда изучена технология §Y$improved_large_airframe$§!:\n"
  ITA_MEDIUM_tt: "\nКогда изучена технология §Y$improved_medium_airframe$§!:\n"
  ITA_FIGHTER_tt: "\nКогда изучена технология §Y$advanced_small_airframe$§!:\n"
@@ -17,4 +17,5 @@ ITA_LARGE_tt: "\nКогда изучена технология §Y$improved_lar
  jagernotprogramm: "Срочная истребительная программа"
  mass_tank_production: "Массовое производство танков"
  endsieg: "ENDSIEG"
+ ENG_hobart_funnies: "Игрушки Хобарта"
  

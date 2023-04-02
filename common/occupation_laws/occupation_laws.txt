@@ -226,7 +226,7 @@ liberate_workers_occupation = {
 
 	state_modifier = {
 		resistance_target 				= -0.15
-		compliance_gain 				= -0.025
+		compliance_gain 				= 0.01
 		required_garrison_factor 		= -0.15
 		resistance_damage_to_garrison 	= 0.25
 		local_factories 				= 0.2

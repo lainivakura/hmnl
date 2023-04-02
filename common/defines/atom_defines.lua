@@ -3,7 +3,7 @@
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 290
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 290
 
-
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.25
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0        -- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0        -- XP cost for converting one equipment module to a related module when creating an equipment variant.
@@ -32,7 +32,6 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 
  
 -- NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
-NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 20
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
@@ -183,5 +182,13 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
+
+NDefines.NSupply.RAILWAY_BASE_FLOW = 7.0
+NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 3.5
+NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 3.5
+NDefines.NSupply.FLOATING_HARBOR_BASE_SUPPLY = 10.0
+NDefines.NSupply.NAVAL_BASE_FLOW = 3.0
+NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 2.0
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10

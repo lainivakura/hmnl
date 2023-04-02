@@ -106,6 +106,7 @@ ideas = {
 
 			modifier = {
 				drift_defence_factor = 0.5
+				consumer_goods_factor = -0.05
 			}
 			rule = {
 				can_create_factions = yes
@@ -1104,6 +1105,14 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 				rocket_artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -9264,12 +9273,16 @@ ideas = {
 					NOT = { has_country_flag = SOV_merge_materiel_gaz_3_flag }
 				}
 			}
-
+			available = {
+				NOT ={
+					has_idea = lack_of_ammunition}}
 			research_bonus = {
 				motorized_equipment = 0.15
 				mot_rockets = 0.50
 			}
-
+			equipment_bonus ={
+				motorized_rocket_equipment ={
+					soft_attack = 0.12}}
 			traits = { motorized_equipment_manufacturer }
 
 			modifier = {
