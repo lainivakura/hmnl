@@ -3670,14 +3670,14 @@ focus = {
 			completion_reward = {
 					220 = {
 						add_dynamic_modifier = {
-						modifier = GER_сitadel
+						modifier = GER_citadel
 						scope = GER
 						days = 60
 					}
 
 					222 = {
 						add_dynamic_modifier = {
-						modifier = GER_сitadel
+						modifier = GER_citadel
 						scope = GER
 						days = 60
 					}
