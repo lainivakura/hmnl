@@ -28,7 +28,7 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 ---Воздух с мультифлекса	
 
 
--- NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2
 
  
 -- NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
