@@ -9,4 +9,3 @@ z_annex_d = {
 }
 z_annex_bot_d = {
 	icon = military_operation
-}
