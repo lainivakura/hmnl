@@ -8,17 +8,17 @@ ideas = {
 			allowed = {
 				always = no # Added via event
 			}
-
+				targeted_modifier = {
+				tag = GER
+				industrial_capacity_factory = 0.15
+			}
 				targeted_modifier = {
 				tag = SOV
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
-
-
-}
-
-}
-
+			}
+		}
+	
 	GER_voina_s_sovkom = {
 
 		picture = generic_manpower_bonus
@@ -35,9 +35,10 @@ ideas = {
 		    river_crossing_factor = -0.05
 			ground_attack_factor  = 0.1
 			army_speed_factor = 0.05
-}
+			}
 
-}
+		}
+
 
 
 GER_naval_war = {
@@ -47,6 +48,13 @@ GER_naval_war = {
 			allowed = {
 				always = no # Added via event
 			}
+
+				targeted_modifier = {
+				tag = ITA
+				naval_damage_factor = 0.15
+				naval_night_attack = 0.1
+				}	
+
 
 				modifier = {
 				consumer_goods_factor = -0.03
@@ -70,20 +78,72 @@ GER_naval_war = {
 				cas_damage_reduction = 0.2
 				terrain_penalty_reduction  = 0.12
 				army_defence_against_major_factor = 0.1
+				}
+		}
+
+		GER_minor_production_increase = {
+
+		picture = idea_chi_forced_conscription
+
+		allowed = {
+			always = no # Added via event
+				}
+
+			targeted_modifier = {
+			tag = ROM
+			industrial_capacity_factory = 0.1
+				}
+
+			targeted_modifier = {
+			tag = HUN
+			industrial_capacity_factory = 0.1
+				}
+
+			targeted_modifier = {
+			tag = ITA
+			industrial_capacity_factory = 0.05
+				}
+		}
+
+		GER_minor_production_increase1 = {
+
+		picture = idea_chi_forced_conscription
+
+		allowed = {
+			always = no # Added via event
+		}
+
+			
+			targeted_modifier = {
+				tag = ROM
+				production_factory_max_efficiency_factor = 0.1
+				naval_invasion_penalty = -0.1	
+			}
+
+
+			targeted_modifier = {
+				tag = ITA
+				production_factory_max_efficiency_factor = 0.05
+				naval_night_attack = 0.05
+				
+			}
+			targeted_modifier = {
+				tag = HUN
+				production_factory_max_efficiency_factor = 0.1
+				land_night_attack  = 0.05
+				
+			}	
 	}
-}
 
+	GER_aviaprogramm = {
 
-GER_jagernotprogramm = {
-
-			picture = idea_chi_forced_conscription
+			picture = idea_generic_bomber_production_diverted
 
 			allowed = {
 				always = no # Added via event
 			}
 
-			targeted_modifier = {
-				tag = GER
+			modifier = {
 				war_stability_factor  = 0.05
 			}
 
@@ -94,8 +154,10 @@ GER_jagernotprogramm = {
 				small_plane_cas_airframe = {
 					build_cost_ic = -0.12 instant = yes
 				}			
-		}
+			}
 	}
+
+
 
 
 	GER_tank_production = {
@@ -127,15 +189,13 @@ GER_vtoroi = {
 				always = no # Added via event
 			}
 
-				targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.05
+			targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.05
+			}
+	}
 
-
-}
-
-}
 
 
 
@@ -176,8 +236,8 @@ GER_winterwar= {
 				acclimatization_cold_climate_gain_factor = -0.8
 				
 }
-
 }
+
 GER_folcsturm= {
 
 			picture = generic_manpower_bonus
@@ -193,11 +253,7 @@ conscription = 0.1
 }
 
 }
-
-
-
-
-               sour_loser = {
+	sour_loser = {
 			
 			allowed = {
 				always = no
@@ -235,6 +291,7 @@ conscription = 0.1
 				operative_slot = 2
 				conscription = 0.005
 				compliance_growth = 0.1
+
 			}
 		}
 
@@ -1812,6 +1869,7 @@ conscription = 0.1
 
 		}
 		
+		
 		henschel = {
 
 			
@@ -2127,11 +2185,11 @@ conscription = 0.1
 			
 			modifier = {
 				fascism_drift = 0.2
-			}
-
+				}
+			}	
 		}
-
 	}
 
-}
+
+
 
