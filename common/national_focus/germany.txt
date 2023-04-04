@@ -3171,26 +3171,7 @@ focus = {
 	}
 
 	
-	focus = {
-		id = naval_storng
-		text = naval_strong
-		prerequisite = { focus = GER_sloti_late }
-		mutually_exclusive = { focus = jagernotprogramm }
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 4
-		
-		x = 11
-		y = 9
-		available = {
-					date > 1942.9.1						
-				}
-			completion_reward = {
-					add_timed_idea = {
-							idea = GER_naval_war
-							days = 180
-						}
-					}
-	}
+	
 
 
 		focus = {
@@ -3202,7 +3183,7 @@ focus = {
 		icon = GFX_goal_generic_air_fighter
 		cost = 4
 		
-		x = 13
+		x = 11
 		y = 9
 		available = {
 					date > 1942.9.1						
@@ -4745,6 +4726,7 @@ focus = {
 				limit = { NOT = { country_exists = CZE } }
 				country_event = { id = germany.55 hours = 6 }
 			}
+			add_ideas = {GER_skoda_works}
 			add_named_threat = { threat = 5 name = GER_end_of_czechoslovakia }
 			custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		}

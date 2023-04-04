@@ -3815,7 +3815,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 			traits = { light_aircraft_manufacturer }
 		}
 		
@@ -3846,6 +3846,7 @@ ideas = {
 
 			modifier = {
 				air_superiority_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -3870,6 +3871,7 @@ ideas = {
 
 			modifier = {
 				air_equipment_upgrade_xp_cost = -0.1
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			research_bonus = {
@@ -3901,6 +3903,7 @@ ideas = {
 			modifier = {
 				air_equipment_upgrade_xp_cost = -0.25
 				air_mission_efficiency = 0.03
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			research_bonus = {
@@ -3932,7 +3935,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 			traits = { CAS_manufacturer }
 		}
 
@@ -3963,6 +3966,7 @@ ideas = {
 
 			modifier = {
 				air_cas_efficiency = 0.1
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -3988,7 +3992,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 			traits = { heavy_aircraft_manufacturer }
 		}
 
@@ -4019,6 +4023,7 @@ ideas = {
 
 			modifier = {
 				air_strategic_bomber_bombing_factor = 0.1
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4046,7 +4051,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 			traits = { medium_aircraft_manufacturer }
 		}
 
@@ -4078,6 +4083,7 @@ ideas = {
 			modifier = {
 				air_training_xp_gain_factor = 0.15
 				air_ace_bonuses_factor = 0.1
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4110,7 +4116,7 @@ ideas = {
 			}
 
 			cost = 75
-						
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -4148,6 +4154,7 @@ ideas = {
 
 			modifier = {
 				naval_strike_targetting_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4184,7 +4191,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 			traits = { fuel_efficient_aircraft_manufacturer }
 		}
 
@@ -4221,6 +4228,7 @@ ideas = {
 
 			modifier = {
 				air_fuel_consumption_factor = -0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 	}

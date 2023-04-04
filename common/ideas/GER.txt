@@ -1784,6 +1784,7 @@ conscription = 0.1
 				}
 			}
 		}
+		
 	}
 
 	# TECHNOLOGY
@@ -1807,6 +1808,7 @@ conscription = 0.1
 			ai_will_do = {
 				factor = 10
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6}
 
 		}
 		
@@ -1826,6 +1828,7 @@ conscription = 0.1
 			ai_will_do = {
 				factor = 1
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6}
 		}
 		
 		GER_MAN = {
@@ -1845,6 +1848,7 @@ conscription = 0.1
 			ai_will_do = {
 				factor = 1
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6}
 		}
 	}
 	
@@ -1914,6 +1918,7 @@ conscription = 0.1
 			ai_will_do = {
 				factor = 1
 			}
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 		}
 		
 		junkers = { 
@@ -1954,6 +1959,7 @@ conscription = 0.1
 			ai_will_do = {
 				factor = 1
 			}
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 		}
 		
 		heinkel = {
@@ -1973,6 +1979,7 @@ conscription = 0.1
 			ai_will_do = {
 				factor = 1
 			}
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 		}
 		
 		dornier = {
@@ -1991,6 +1998,7 @@ conscription = 0.1
 			ai_will_do = {
 				factor = 1
 			}
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 		}	
 
 

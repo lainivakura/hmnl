@@ -4489,7 +4489,7 @@ ideas = {
 
 			traits = { fast_tank_manufacturer }
 
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4520,6 +4520,8 @@ ideas = {
 				armor = {
 					maximum_speed = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4554,6 +4556,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_morozov_design_bureau_3 = {
@@ -4583,6 +4587,8 @@ ideas = {
 				armor = {
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4615,6 +4621,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_morozov_design_bureau_1_3 = {
@@ -4645,6 +4653,8 @@ ideas = {
 					maximum_speed = 0.03
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4677,6 +4687,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_morozov_design_bureau_final = {
@@ -4708,6 +4720,8 @@ ideas = {
 					build_cost_ic = -0.05
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4743,7 +4757,7 @@ ideas = {
 
 			traits = { medium_tank_manufacturer }
 
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4808,6 +4822,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_astrov_design_bureau_3 = {
@@ -4837,6 +4853,8 @@ ideas = {
 				armor = {
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4869,6 +4887,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_astrov_design_bureau_1_3 = {
@@ -4899,6 +4919,8 @@ ideas = {
 					maximum_speed = 0.03
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4931,6 +4953,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_astrov_design_bureau_final = {
@@ -4962,6 +4986,8 @@ ideas = {
 					build_cost_ic = -0.05
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -4999,6 +5025,8 @@ ideas = {
 
 			modifier = {
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_okmo_1 = {
@@ -5028,6 +5056,8 @@ ideas = {
 				armor = {
 					maximum_speed = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5062,6 +5092,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_okmo_3 = {
@@ -5091,6 +5123,8 @@ ideas = {
 				armor = {
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5123,6 +5157,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_okmo_1_3 = {
@@ -5153,6 +5189,8 @@ ideas = {
 					maximum_speed = 0.03
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5185,6 +5223,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_okmo_final = {
@@ -5216,6 +5256,8 @@ ideas = {
 					build_cost_ic = -0.05
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5254,7 +5296,9 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+				tank_manufacturer_cost_factor = -0.6
 			}
+
 		}
 
 		SOV_mytishchy_machine_building_plant_1 = {
@@ -5546,7 +5590,7 @@ ideas = {
 
 			traits = { heavy_tank_manufacturer }
 
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5577,6 +5621,8 @@ ideas = {
 				armor = {
 					maximum_speed = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5611,6 +5657,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_kirov_3 = {
@@ -5640,6 +5688,8 @@ ideas = {
 				armor = {
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5672,6 +5722,8 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_kirov_1_3 = {
@@ -5702,6 +5754,8 @@ ideas = {
 					maximum_speed = 0.03
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -5734,6 +5788,8 @@ ideas = {
 					soft_attack = 0.03
 				}
 			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
+			}
 		}
 
 		SOV_kirov_final = {
@@ -5765,6 +5821,8 @@ ideas = {
 					build_cost_ic = -0.05
 					soft_attack = 0.03
 				}
+			}
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 	}
@@ -7586,8 +7644,9 @@ ideas = {
 
 			traits = { light_aircraft_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
+			
 		}
 
 		SOV_mig_design_bureau_1 = {
@@ -7617,7 +7676,7 @@ ideas = {
 
 			traits = { light_aircraft_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -7656,6 +7715,7 @@ ideas = {
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -7689,6 +7749,7 @@ ideas = {
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -7721,6 +7782,7 @@ ideas = {
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -7760,6 +7822,7 @@ ideas = {
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -7800,6 +7863,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -7834,6 +7898,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -7878,9 +7943,9 @@ ideas = {
 				air_equipment = 0.15
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -7909,9 +7974,9 @@ ideas = {
 				air_equipment = 0.15
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -7946,10 +8011,11 @@ ideas = {
 				air_equipment = 0.15
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -7979,10 +8045,11 @@ ideas = {
 				radar_tech = 0.1
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -8011,10 +8078,11 @@ ideas = {
 				air_equipment = 0.15
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8050,10 +8118,11 @@ ideas = {
 				radar_tech = 0.1
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8089,10 +8158,11 @@ ideas = {
 				radar_tech = 0.1
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 				air_mission_efficiency = 0.05
 			}
 		}
@@ -8123,11 +8193,12 @@ ideas = {
 				radar_tech = 0.1
 			}
 
-			traits = { medium_aircraft_manufacturer }
+			traits = { CAS_manufacturer }
 
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8175,7 +8246,7 @@ ideas = {
 
 			traits = { heavy_aircraft_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -8206,7 +8277,7 @@ ideas = {
 
 			traits = { heavy_aircraft_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8244,6 +8315,7 @@ ideas = {
 			traits = { heavy_aircraft_manufacturer }
 
 			modifier = {
+				aircraft_manufacturer_cost_factor = -0.6
 				air_agility_factor = 0.05
 			}
 		}
@@ -8278,6 +8350,7 @@ ideas = {
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -8310,6 +8383,7 @@ ideas = {
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8349,6 +8423,7 @@ ideas = {
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8389,6 +8464,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -8423,6 +8499,7 @@ ideas = {
 			modifier = {
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8469,7 +8546,7 @@ ideas = {
 
 			traits = { naval_aircraft_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -8500,7 +8577,7 @@ ideas = {
 
 			traits = { naval_aircraft_manufacturer }
 
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8539,6 +8616,7 @@ ideas = {
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -8572,6 +8650,7 @@ ideas = {
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -8604,6 +8683,7 @@ ideas = {
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8643,6 +8723,7 @@ ideas = {
 
 			modifier = {
 				air_mission_efficiency = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 			}
 
 			equipment_bonus = {
@@ -8682,6 +8763,7 @@ ideas = {
 
 			modifier = {
 				air_agility_factor = 0.05
+				aircraft_manufacturer_cost_factor = -0.6
 				air_mission_efficiency = 0.05
 			}
 		}
@@ -8715,6 +8797,7 @@ ideas = {
 			traits = { naval_aircraft_manufacturer }
 
 			modifier = {
+				aircraft_manufacturer_cost_factor = -0.6
 				air_agility_factor = 0.05
 				air_mission_efficiency = 0.05
 			}

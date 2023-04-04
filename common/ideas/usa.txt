@@ -786,10 +786,7 @@ ideas = {
 			
 			equipment_bonus = {
 				large_plane_airframe = {
-					air_range = 0.1 instant = yes
-					air_defence = 0.2
-					air_attack = 0.1
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05 instant=yes
 				}	
 			}
 		}
@@ -1229,7 +1226,7 @@ ideas = {
 			
 			traits = { fast_tank_manufacturer }
 			
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -1248,7 +1245,7 @@ ideas = {
 			
 			traits = { medium_tank_manufacturer }
 			
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}
 		detroit_arsenal = {
@@ -1277,7 +1274,7 @@ ideas = {
 				}
 			}
 
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 
 			}
 		}
@@ -1316,7 +1313,7 @@ ideas = {
 				}
 			}
 
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 
 			}
 		}
@@ -1336,7 +1333,7 @@ ideas = {
 			
 			traits = { heavy_tank_manufacturer }
 			
-			modifier = {
+			modifier = {tank_manufacturer_cost_factor = -0.6
 			}
 		}	
 	}
@@ -1444,7 +1441,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -1482,7 +1479,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -1493,7 +1490,7 @@ ideas = {
 				original_tag = USA
 			}
 			
-
+			
 			
 			research_bonus = {
 				air_equipment = 0.15
@@ -1501,7 +1498,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 
@@ -1511,17 +1508,25 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
+				
 			}
 			
 
-			
+			available = {has_idea = combined_bomber_offensive}
 			research_bonus = {
 				air_equipment = 0.15
 			}
 			
 			traits = { heavy_aircraft_manufacturer }
-			
-			modifier = {
+			equipment_bonus = {
+				large_plane_airframe = {
+						air_range = 0.1 instant = yes
+						air_defence = 0.2
+						air_attack = 0.1
+						build_cost_ic = -0.1
+				}
+				}
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -1558,7 +1563,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}		
 	}

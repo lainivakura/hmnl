@@ -1852,7 +1852,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -1870,7 +1870,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer } 
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}	
 		de_havilland = {
@@ -1887,7 +1887,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -1905,7 +1905,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}
 		
@@ -1923,7 +1923,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {
+			modifier = {aircraft_manufacturer_cost_factor = -0.6
 			}
 		}			
 	}
