@@ -1183,7 +1183,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_west_wall
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1209,19 +1209,19 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province =  11790 
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province =  9794 
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province =  6862
 							instant_build = yes
 						}
@@ -2730,7 +2730,7 @@ add_tech_bonus = {
 
 	focus = {
 		id = GER_wunderwaffe
-		icon = GFX_focus_GER_New_Missile_Designs
+		icon = GFX_goal_continuous_research
 		prerequisite = { focus = GER_rocketry_focus }
 		x = 0
 		y = 1
@@ -2755,12 +2755,12 @@ add_tech_bonus = {
 	
 	focus = {
 		id = GER_tank_project
-		icon = GFX_focus_GER_peenemunde_research_facility
+		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = GER_rocketry_focus }
 		x = 2
 		y = 1
 		relative_position_id = GER_rocketry_focus
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -2781,12 +2781,12 @@ add_tech_bonus = {
 
 	focus = {
 		id = GER_avia_project
-		icon = GFX_focus_GER_peenemunde_research_jet_engine
+		icon = GFX_focus_generic_multi_role_aircraft
 		prerequisite = { focus = GER_rocketry_focus }
 		x = -2
 		y = 1
 		relative_position_id = GER_rocketry_focus
-		cost = 10
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -3286,7 +3286,7 @@ focus = {
 				date >		1942.6.1
 			}		
 		prerequisite = { focus = GER_war_production }
-		icon = GFX_focus_GER_The_Genius_Organizer
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 		x = 12
 		y = 8
 		completion_reward = {
@@ -3312,7 +3312,7 @@ focus = {
 		id = Folcsturm
 		text = Folcsturm
 		prerequisite = { focus = GER_wunderwaffe }
-		icon = GFX_focus_GER_the_new_draft
+		icon = GFX_goal_continuous_def_against_influence
 		cost = 1
 		x = 9
 		y = 7
@@ -3393,23 +3393,38 @@ focus = {
 		id = stainer_vperde
 		text = stainer_vperde
 		prerequisite = { focus = Folcsturm }
-		icon = GFX_GER_total_war
+		icon = GFX_focus_generic_tankette
 		cost = 1
 		
 		x = 10
 		y = 8
 		available = {
-					date > 1941.12.1
+					
 					OR = {
+						date > 1941.12.1
 						any_core_state  = {
 						is_controlled_by = SOV
 						}
-						}
-					OR = {	
 						SOV = {
 									controls_state = 79
 						}
-					}						
+						}
+
+					OR = {	
+						date > 1943.09.1
+						SOV = {
+									controls_state = 220
+									controls_state = 260
+						}
+					}	
+
+					OR = {	
+						date > 1941.12.1
+						SOV = {
+									controls_state = 88
+									controls_state = 92
+						}
+					}					
 				}
 			completion_reward = {
 					add_timed_idea = {
@@ -3421,7 +3436,7 @@ focus = {
 focus = {
 		id = GER_war_production
 		prerequisite = { focus = GER_tank_project focus = GER_wunderwaffe focus = GER_avia_project }
-		icon = GFX_focus_GER_underground_industry
+		icon = GFX_focus_SOV_organize_wreckers
 		cost = 10
 		available = {
 				date > 1942.3.1
@@ -3435,7 +3450,7 @@ focus = {
 
 	focus = {
 		id = GER_specnaz
-		icon = GFX_focus_GER_vampir
+		icon = GFX_focus_generic_paratrooper
 		prerequisite = { focus = GER_war_production }
 		x = 1
 		y = 3
@@ -3480,7 +3495,7 @@ focus = {
 
 focus = {
 		id = GER_war_minors
-		icon = GFX_focus_GER_balkan_initiative
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		cost = 7
 		available = {
 				date > 1942.6.1
@@ -3495,7 +3510,7 @@ focus = {
 
 focus = {
 		id = GER_war_minors2
-		icon = GFX_focus_GER_german_war_economy
+		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 7
 		available = {
 				date > 1943.6.1
@@ -3515,7 +3530,7 @@ focus = {
 		id = vtoroi_udar
 		prerequisite = { focus = GER_wunderwaffe}
 		text = vtoroi_udar
-		icon = GFX_focus_GER_Manstein
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 1
 		x = 17
 		y = 7
@@ -3588,7 +3603,7 @@ focus = {
 		text = naval_strong
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
 		mutually_exclusive = { focus = jagernotprogramm }
-		icon = GFX_focus_GER_plan_z
+		icon = GFX_focus_generic_refit_civilian_ships
 		cost = 4
 		
 		x = 11
@@ -3611,7 +3626,7 @@ focus = {
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
 		mutually_exclusive = { focus = naval_strong }
 		mutually_exclusive = { focus = mass_tank_production }
-		icon = GFX_focus_GER_Amerika_Bomber
+		icon = GFX_focus_generic_copy_plane_designs
 		cost = 4
 		
 		x = 13
@@ -3632,7 +3647,7 @@ focus = {
 		text = mass_tank_production
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
 		mutually_exclusive = { focus = jagernotprogramm }
-		icon = GFX_focus_GER_Standardpanzer
+		icon = GFX_focus_generic_tank_production
 		cost = 4
 		
 		x = 15
@@ -3653,7 +3668,7 @@ focus = {
 		id = tretiy_udar
 		prerequisite = { focus = vtoroi_udar}
 		text = tretiy_udar
-		icon = GFX_focus_GER_moscow
+		icon = GFX_focus_ger_strike_at_the_source
 		cost = 1
 		x = 16
 		y = 8
@@ -3690,7 +3705,7 @@ focus = {
 		id = kharkov_nastup
 		prerequisite = { focus = stainer_vperde focus = GER_sloti_late focus = tretiy_udar }
 		text = kharkov_nastup
-		icon = GFX_focus_GER_winter_of_1941
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
 		cost = 1
 		x = 14
 		y = 10
@@ -3702,14 +3717,18 @@ focus = {
 									controls_state = 221
 						}
 				date > 1943.02.1
+				date < 1943.06.1
 				}
+
 			completion_reward = {
+
 					240 = {
 						add_dynamic_modifier = {
 						modifier = GER_counterattack
 						scope = GER
 						days = 35
 					}
+
 
 					221 = {
 						add_dynamic_modifier = {
@@ -3726,7 +3745,7 @@ focus = {
 		id = pribaltika_nastup
 		prerequisite = { focus = stainer_vperde focus = GER_sloti_late focus = tretiy_udar }
 		text = pribaltika_nastup
-		icon = GFX_focus_GER_Schwerer_Panzer
+		icon = GFX_focus_generic_women_in_military
 		cost = 1
 		x = 12
 		y = 10
@@ -3786,8 +3805,8 @@ focus = {
 		id = endsieg
 		prerequisite = { focus = GER_wunderwaffe }
 		text = endsieg
-		icon = GFX_GER_hitlers_meddling
-		cost = 1
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 2
 		x = 13
 		y = 11
 		available = {
@@ -3798,16 +3817,37 @@ focus = {
 				controls_state = 206
 				controls_state = 808
 			}
+
 			OR = {
 			 surrender_progress > 0.36
 			 ROM = {
-							surrender_progress > 0.3
-						}
+				surrender_progress > 0.03
+			}
+		}
+
+			
+			OR = {
+			 surrender_progress > 0.07
+			 ROM = {
+				surrender_progress > 0.72
+			}
+		}
+
+		OR = {
+			 surrender_progress > 0.07
 			 ENG = {
 				controls_state = 16 
 				controls_state = 24
+				controls_state = 15
+				controls_state = 14
 			}
+		}
 
+		OR = {
+			 surrender_progress > 0.2
+			ITA = {
+				surrender_progress > 0.4
+			}
 		}
 	}
 	
@@ -3829,6 +3869,38 @@ focus = {
 		}
 		custom_effect_tooltip = "Явит на свет последние резервы Рейха"
 		custom_effect_tooltip = "ПОБЕДУ ОПРЕДЕЛЯЕТ ВОЛЯ А НЕ СИТУАЦИЯ НА ФРОНТЕ"
+
+		hidden_effect = {
+					64 = {
+						add_building_construction = {
+							type = bunker
+							level = 10
+							province = 6521 
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 19
+							province =  13274
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 10
+							province =  13272
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 10
+							province =  13273
+							instant_build = yes
+						}
+					}
+				}
+
+
+
 		hidden_effect ={
 			division_template = {
 				name = "SS-Panzergrenadier"
@@ -3944,6 +4016,7 @@ focus = {
 		}
 	}
 }
+
 
 	focus = {
 		id = GER_turkey_friend
