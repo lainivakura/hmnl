@@ -19,25 +19,48 @@ ideas = {
 			}
 		}
 	
-	GER_voina_s_sovkom = {
+		GER_voina_s_sovkom = {
 
-		picture = generic_manpower_bonus
+			picture = generic_manpower_bonus
 
 
-		allowed = {
-			always = no # Added via event
+			allowed = {
+				always = no # Added via event
+			}
+
+				modifier = {
+				# tag = GER
+				max_planning = 0.05
+				planning_speed = 0.1
+				river_crossing_factor = -0.05
+			}
 		}
 
-			modifier = {
-			# tag = GER
-			max_planning = 0.05
-		    planning_speed = 0.1
-		    river_crossing_factor = -0.05
+
+		GER_naval_war = {
+
+				picture = idea_chi_forced_conscription
+
+				allowed = {
+					always = no # Added via event
+				}
+
+					targeted_modifier = {
+					tag = ITA
+					naval_damage_factor = 0.15
+					naval_night_attack = 0.1
+					}	
+
+
+					modifier = {
+					consumer_goods_factor = -0.03
+					industrial_capacity_dockyard = 0.12
+					industrial_capacity_factory = -0.06
+			}
 		}
-	}
 
 
-GER_naval_war = {
+		GER_endsieg = {
 
 			picture = idea_chi_forced_conscription
 
@@ -45,69 +68,46 @@ GER_naval_war = {
 				always = no # Added via event
 			}
 
-				targeted_modifier = {
-				tag = ITA
-				naval_damage_factor = 0.15
-				naval_night_attack = 0.1
-				}	
-
-
 				modifier = {
-				consumer_goods_factor = -0.03
-				industrial_capacity_dockyard = 0.12
-				industrial_capacity_factory = -0.06
+					army_core_attack_factor  = 0.2
+					army_core_defence_factor = 0.1
+					cas_damage_reduction = 0.2
+					terrain_penalty_reduction  = 0.12
+					army_defence_against_major_factor = 0.1
+				}
 		}
-	}
-
-
-	GER_endsieg = {
-
-		picture = idea_chi_forced_conscription
-
-		allowed = {
-			always = no # Added via event
-		}
-
-			modifier = {
-				army_core_attack_factor  = 0.2
-				army_core_defence_factor = 0.1
-				cas_damage_reduction = 0.2
-				terrain_penalty_reduction  = 0.12
-				army_defence_against_major_factor = 0.1
-	}
-}
 
 		GER_minor_production_increase = {
 
-		picture = idea_chi_forced_conscription
+			picture = idea_chi_forced_conscription
 
-		allowed = {
-			always = no # Added via event
+			allowed = {
+				always = no # Added via event
+			}
+
+			targeted_modifier = {
+				tag = ROM
+				industrial_capacity_factory = 0.1
+			}
+
+			targeted_modifier = {
+				tag = HUN
+				industrial_capacity_factory = 0.1
+			}
+
+			targeted_modifier = {
+				tag = ITA
+				industrial_capacity_factory = 0.05
+			}
 		}
-
-			targeted_modifier = {
-			tag = ROM
-			industrial_capacity_factory = 0.1
-	}
-
-			targeted_modifier = {
-			tag = HUN
-			industrial_capacity_factory = 0.1
-	}
-
-			targeted_modifier = {
-			tag = ITA
-			industrial_capacity_factory = 0.05
-	}
-}
 
 		GER_minor_production_increase1 = {
 
-		picture = idea_chi_forced_conscription
+			picture = idea_chi_forced_conscription
 
-		allowed = {
-			always = no # Added via event
-		}
+			allowed = {
+				always = no # Added via event
+			}
 
 			
 			targeted_modifier = {
@@ -127,11 +127,10 @@ GER_naval_war = {
 				tag = HUN
 				production_factory_max_efficiency_factor = 0.1
 				land_night_attack  = 0.05
-				
 			}	
-	}
+		}
 
-	GER_aviaprogramm = {
+		GER_aviaprogramm = {
 
 			picture = idea_generic_bomber_production_diverted
 
@@ -151,33 +150,33 @@ GER_naval_war = {
 					build_cost_ic = -0.12 instant = yes
 				}			
 			}
-	}
-
-
-
-
-	GER_tank_production = {
-
-		picture = idea_chi_forced_conscription
-
-		allowed = {
-			always = no # Added via event
 		}
-		targeted_modifier = {
-			tag = GER
-			conversion_cost_civ_to_mil_factor  = -0.3
-		} 
-		equipment_bonus = {			
+
+
+
+
+		GER_tank_production = {
+
+			picture = idea_chi_forced_conscription
+
+			allowed = {
+				always = no # Added via event
+			}
+			targeted_modifier = {
+				tag = GER
+				conversion_cost_civ_to_mil_factor  = -0.3
+			} 
+			equipment_bonus = {			
 				armor = {
 				build_cost_ic = -0.07  instant = yes
 				}
 			}		
-	}
+		}
 
 
 
 
-GER_vtoroi = {
+		GER_vtoroi = {
 
 			picture = idea_chi_forced_conscription
 
@@ -186,41 +185,41 @@ GER_vtoroi = {
 			}
 
 			targeted_modifier = {
-			tag = SOV
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.05
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
 			}
-	}
-
-
-
-
-
-
-
-GER_bezminors = { name =GER_bezminors
-allowed = {
-				original_tag = GER
-			}
-			
-			picture = generic_wall_line
-			modifier = {
-				consumer_goods_factor = -0.01
-global_building_slots_factor = 0.1
-research_speed_factor = 0.07
-training_time_factor = -0.15
-operative_slot = 2
-special_forces_attack_factor = 0.05
-	    special_forces_defence_factor = 0.05
-army_artillery_attack_factor = 0.05
-		army_artillery_defence_factor = 0.05
-		}	
 		}
 
 
 
 
-GER_winterwar= {
+
+
+
+		GER_bezminors = { name =GER_bezminors
+			allowed = {
+				original_tag = GER
+			}
+					
+			picture = generic_wall_line
+			modifier = {
+				consumer_goods_factor = -0.01
+				global_building_slots_factor = 0.1
+				research_speed_factor = 0.07
+				training_time_factor = -0.15
+				operative_slot = 2
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}	
+		}
+
+
+
+
+		GER_winterwar= {
 
 			picture = generic_manpower_bonus
 
@@ -228,13 +227,12 @@ GER_winterwar= {
 				always = no # Added via event
 			}
 
-				modifier = {
+			modifier = {
 				acclimatization_cold_climate_gain_factor = -0.8
-				
-}
-}
+			}
+		}
 
-GER_folcsturm= {
+		GER_folcsturm= {
 
 			picture = generic_manpower_bonus
 
@@ -242,14 +240,13 @@ GER_folcsturm= {
 				always = no # Added via event
 			}
 
-				modifier = {
+			modifier = {
 				mobilization_speed = 0.5
-conscription = 0.1
-				
-}
+			conscription = 0.1
+			}
+		}
 
-}
-	sour_loser = {
+		sour_loser = {
 			
 			allowed = {
 				always = no
@@ -286,7 +283,7 @@ conscription = 0.1
 				planning_speed = 0.25
 				operative_slot = 2
 				conscription = 0.005
-		send_volunteer_divisions_required = -1
+				send_volunteer_divisions_required = -1
 			}
 		}
 
