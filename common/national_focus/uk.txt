@@ -644,7 +644,23 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = uk_extra_tech_slot
+		text = extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = uk_industrial_focus }
+		allow_branch = { always = no }
+		x = 0
+		y = 1
+		relative_position_id = uk_industrial_focus
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 	
 	focus = {
 		id = general_rearmament_focus

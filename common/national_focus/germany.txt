@@ -3595,7 +3595,7 @@ focus = {
 		id = jagernotprogramm
 		text = jagernotprogramm
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
-		mutually_exclusive = { focus = naval_strong }
+		# mutually_exclusive = { focus = naval_strong }
 		mutually_exclusive = { focus = mass_tank_production }
 		icon = GFX_focus_GER_Amerika_Bomber
 		cost = 4

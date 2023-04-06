@@ -252,9 +252,7 @@ ideas = {
 						original_tag = GER
 						date > 1942.6.1
 					}
-
-
-
+					if = {
 						limit = {
 							original_tag = HUN
 							has_dlc = "Death or Dishonor"
@@ -262,6 +260,7 @@ ideas = {
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
 				}
+			}
 			
 			ai_will_do = {
    				factor = 1
