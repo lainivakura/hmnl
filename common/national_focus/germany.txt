@@ -5143,6 +5143,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			add_ideas = GER_skoda_works
 			if = {
 				limit = { 
 					country_exists = CZE 
