@@ -3,14 +3,14 @@ ideas = {
 	country = {
 		GER_stiner = {
 
-			picture = idea_chi_forced_conscription
+			picture = generic_purge
 
 			allowed = {
 				always = no # Added via event
 			}
 				targeted_modifier = {
 				tag = GER
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.2
 			}
 				targeted_modifier = {
 				tag = SOV
@@ -43,7 +43,7 @@ ideas = {
 
 GER_naval_war = {
 
-			picture = idea_chi_forced_conscription
+			picture = generic_sea_focused_navy
 
 			allowed = {
 				always = no # Added via event
@@ -66,7 +66,7 @@ GER_naval_war = {
 
 	GER_endsieg = {
 
-		picture = idea_chi_forced_conscription
+		picture = tur_arctic_wolves
 
 		allowed = {
 			always = no # Added via event
@@ -83,7 +83,7 @@ GER_naval_war = {
 
 		GER_minor_production_increase = {
 
-		picture = idea_chi_forced_conscription
+		picture = SOV_third_five_year_plan_military
 
 		allowed = {
 			always = no # Added via event
@@ -107,7 +107,7 @@ GER_naval_war = {
 
 		GER_minor_production_increase1 = {
 
-		picture = idea_chi_forced_conscription
+		picture = generic_central_management
 
 		allowed = {
 			always = no # Added via event
@@ -137,8 +137,7 @@ GER_naval_war = {
 
 	GER_aviaprogramm = {
 
-			picture = idea_generic_bomber_production_diverted
-
+			picture = generic_bomber_production_diverted
 			allowed = {
 				always = no # Added via event
 			}
@@ -162,7 +161,7 @@ GER_naval_war = {
 
 	GER_tank_production = {
 
-		picture = idea_chi_forced_conscription
+		picture = man_five_year_plan_tank
 
 		allowed = {
 			always = no # Added via event
@@ -183,7 +182,7 @@ GER_naval_war = {
 
 GER_vtoroi = {
 
-			picture = idea_chi_forced_conscription
+			picture = spr_masters_of_our_own_fate
 
 			allowed = {
 				always = no # Added via event
