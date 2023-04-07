@@ -3,19 +3,19 @@ ideas = {
 	country = {
 		GER_stiner = {
 
-			picture = generic_purge
+			picture = idea_chi_forced_conscription
 
 			allowed = {
 				always = no # Added via event
 			}
 				targeted_modifier = {
 				tag = GER
-				industrial_capacity_factory = 0.2
+				industrial_capacity_factory = 0.15
 			}
-				modifier = {
+				targeted_modifier = {
 				tag = SOV
-				army_core_attack_factor = 0.15
-				army_artillery_defence_factor = 0.15
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 	
@@ -39,7 +39,7 @@ ideas = {
 
 GER_naval_war = {
 
-			picture = generic_sea_focused_navy
+			picture = idea_chi_forced_conscription
 
 			allowed = {
 				always = no # Added via event
@@ -62,7 +62,7 @@ GER_naval_war = {
 
 	GER_endsieg = {
 
-		picture = tur_arctic_wolves
+		picture = idea_chi_forced_conscription
 
 		allowed = {
 			always = no # Added via event
@@ -74,14 +74,12 @@ GER_naval_war = {
 				cas_damage_reduction = 0.2
 				terrain_penalty_reduction  = 0.12
 				army_defence_against_major_factor = 0.1
-				fuel_gain_from_states = 0.25
-				air_defence_factor = 0.13
 	}
 }
 
 		GER_minor_production_increase = {
 
-		picture = SOV_third_five_year_plan_military
+		picture = idea_chi_forced_conscription
 
 		allowed = {
 			always = no # Added via event
@@ -105,7 +103,7 @@ GER_naval_war = {
 
 		GER_minor_production_increase1 = {
 
-		picture = generic_central_management	
+		picture = idea_chi_forced_conscription
 
 		allowed = {
 			always = no # Added via event
@@ -135,7 +133,7 @@ GER_naval_war = {
 
 	GER_aviaprogramm = {
 
-			picture = generic_bomber_production_diverted
+			picture = idea_generic_bomber_production_diverted
 
 			allowed = {
 				always = no # Added via event
@@ -160,7 +158,7 @@ GER_naval_war = {
 
 	GER_tank_production = {
 
-		picture = man_five_year_plan_tank
+		picture = idea_chi_forced_conscription
 
 		allowed = {
 			always = no # Added via event
@@ -181,7 +179,7 @@ GER_naval_war = {
 
 GER_vtoroi = {
 
-			picture = spr_masters_of_our_own_fate
+			picture = idea_chi_forced_conscription
 
 			allowed = {
 				always = no # Added via event

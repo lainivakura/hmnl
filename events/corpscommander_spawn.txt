@@ -192,10 +192,10 @@ country_event = {
 					gfx = GFX_portrait_SPA_jose_millan_astray
 					traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster trait_engineer}
 					skill=5
-					attack_skill=4
-					defense_skill=1
-					planning_skill=1
-					logistics_skill=1
+					attack_skill=6
+					defense_skill=4
+					planning_skill=3
+					logistics_skill=5
 					legacy_id=4
 					}
 				create_corps_commander = {
