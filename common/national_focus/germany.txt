@@ -2730,7 +2730,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_wunderwaffe
-		icon = GFX_focus_GER_New_Missile_Designs
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_rocketry_focus }
 		x = 0
 		y = 1
@@ -2755,7 +2755,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_tank_project
-		icon = GFX_focus_GER_peenemunde_research_facility
+		icon = GFX_focus_generic_army_tanks2
 		prerequisite = { focus = GER_rocketry_focus }
 		x = 2
 		y = 1
@@ -2781,7 +2781,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_avia_project
-		icon = GFX_focus_GER_peenemunde_research_jet_engine
+		icon = GFX_focus_generic_armored_air_support
 		prerequisite = { focus = GER_rocketry_focus }
 		x = -2
 		y = 1
