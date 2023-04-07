@@ -1183,7 +1183,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_west_wall
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1209,19 +1209,19 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province =  11790 
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province =  9794 
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province =  6862
 							instant_build = yes
 						}
@@ -3286,7 +3286,7 @@ focus_tree = {
 					date >		1942.6.1
 				}		
 			prerequisite = { focus = GER_war_production }
-			icon = GFX_focus_GER_The_Genius_Organizer
+			icon = GFX_focus_POL_develop_polish_shipbuilding
 			x = 12
 			y = 8
 			completion_reward = {
@@ -3312,7 +3312,7 @@ focus_tree = {
 		id = Folcsturm
 		text = Folcsturm
 		prerequisite = { focus = GER_wunderwaffe }
-		icon = GFX_focus_GER_the_new_draft
+		icon = GFX_goal_continuous_def_against_influence
 		cost = 1
 		x = 9
 		y = 7
@@ -3393,7 +3393,7 @@ focus_tree = {
 			id = stainer_vperde
 			text = stainer_vperde
 			prerequisite = { focus = Folcsturm }
-			icon = GFX_GER_total_war
+			icon = GFX_focus_generic_tankette
 			cost = 1
 			
 			x = 10
@@ -3423,7 +3423,7 @@ focus_tree = {
 	focus = {
 			id = GER_war_production
 			prerequisite = { focus = GER_tank_project focus = GER_wunderwaffe focus = GER_avia_project }
-			icon = GFX_focus_GER_underground_industry
+			icon = GFX_focus_SOV_organize_wreckers
 			cost = 10
 			available = {
 					date > 1942.3.1
@@ -3437,7 +3437,7 @@ focus_tree = {
 
 	focus = {
 			id = GER_specnaz
-			icon = GFX_focus_GER_vampir
+			icon = GFX_focus_generic_paratrooper
 			prerequisite = { focus = GER_war_production }
 			x = 1
 			y = 3
@@ -3482,7 +3482,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_war_minors
-		icon = GFX_focus_GER_balkan_initiative
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		cost = 7
 		available = {
 				date > 1942.6.1
@@ -3497,7 +3497,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_war_minors2
-		icon = GFX_focus_GER_german_war_economy
+		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 7
 		available = {
 				date > 1943.6.1
@@ -3517,7 +3517,7 @@ focus_tree = {
 		id = vtoroi_udar
 		prerequisite = { focus = GER_wunderwaffe}
 		text = vtoroi_udar
-		icon = GFX_focus_GER_Manstein
+		icon = GFX_focus_ger_reichskommisariats
 		cost = 1
 		x = 17
 		y = 7
@@ -3589,7 +3589,7 @@ focus_tree = {
 		text = naval_strong
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
 		mutually_exclusive = { focus = jagernotprogramm }
-		icon = GFX_focus_GER_plan_z
+		icon = GFX_focus_generic_refit_civilian_ships
 		cost = 4
 		
 		x = 11
@@ -3611,7 +3611,7 @@ focus_tree = {
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
 		mutually_exclusive = { focus = naval_strong }
 		mutually_exclusive = { focus = mass_tank_production }
-		icon = GFX_focus_GER_Amerika_Bomber
+		icon = GFX_focus_generic_copy_plane_designs
 		cost = 4
 		
 		x = 13
@@ -3633,7 +3633,7 @@ focus_tree = {
 		text = mass_tank_production
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
 		mutually_exclusive = { focus = jagernotprogramm }
-		icon = GFX_focus_GER_Standardpanzer
+		icon = GFX_focus_generic_tank_production
 		cost = 4
 		
 		x = 15
@@ -3654,7 +3654,7 @@ focus_tree = {
 		id = tretiy_udar
 		prerequisite = { focus = vtoroi_udar}
 		text = tretiy_udar
-		icon = GFX_focus_GER_moscow
+		icon = GFX_focus_ger_strike_at_the_source
 		cost = 1
 		x = 16
 		y = 8
@@ -3692,7 +3692,7 @@ focus_tree = {
 		id = kharkov_nastup
 		prerequisite = { focus = stainer_vperde focus = GER_sloti_late focus = tretiy_udar }
 		text = kharkov_nastup
-		icon = GFX_focus_GER_winter_of_1941
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
 		cost = 1
 		x = 14
 		y = 10
@@ -3704,6 +3704,7 @@ focus_tree = {
 									controls_state = 221
 						}
 				date > 1943.02.1
+				date < 1943.06.1
 		}
 		completion_reward = {
 					240 = {
@@ -3729,7 +3730,7 @@ focus_tree = {
 		id = pribaltika_nastup
 		prerequisite = { focus = stainer_vperde focus = GER_sloti_late focus = tretiy_udar }
 		text = pribaltika_nastup
-		icon = GFX_focus_GER_Schwerer_Panzer
+		icon = GFX_focus_generic_women_in_military
 		cost = 1
 		x = 12
 		y = 10
@@ -3788,8 +3789,8 @@ focus_tree = {
 		id = endsieg
 		prerequisite = { focus = GER_wunderwaffe }
 		text = endsieg
-		icon = GFX_GER_hitlers_meddling
-		cost = 1
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 2
 		x = 13
 		y = 11
 		available = {
@@ -3800,152 +3801,206 @@ focus_tree = {
 				controls_state = 206
 				controls_state = 808
 			}
-			OR = {
-				surrender_progress > 0.36
-				ROM = {
-								surrender_progress > 0.3
-							}
-				ENG = {
-					controls_state = 16 
-					controls_state = 24
-				}
 
+			OR = {
+			 surrender_progress > 0.36
+			 ROM = {
+				surrender_progress > 0.03
 			}
 		}
+
+			
+			OR = {
+			 surrender_progress > 0.07
+			 ROM = {
+				surrender_progress > 0.72
+			}
+		}
+
+		OR = {
+			 surrender_progress > 0.07
+			 ENG = {
+				controls_state = 16 
+				controls_state = 24
+				controls_state = 15
+				controls_state = 14
+			}
+		}
+
+		OR = {
+			 surrender_progress > 0.2
+			ITA = {
+				surrender_progress > 0.4
+			}
+		}
+	}
 	
 
-		completion_reward = {
-			create_corps_commander = {
-				name = "Felix Steiner1"
-				picture = "GFX_portrait_ger_felix_steiner"
-				traits = {brilliant_strategist trickster trait_engineer panzer_leader urban_assault_specialist panzer_expert}
-			skill=8
-			attack_skill=10
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=9
+	completion_reward = {
+		create_corps_commander = {
+			name = "Felix Steiner1"
+			picture = "GFX_portrait_ger_felix_steiner"
+			traits = {brilliant_strategist trickster trait_engineer panzer_leader urban_assault_specialist panzer_expert}
+		   skill=8
+		   attack_skill=10
+		   defense_skill=6
+		   planning_skill=6
+		   logistics_skill=9
+	}
+		add_timed_idea = {
+			idea = GER_endsieg
+			days = 90
+		}
+		custom_effect_tooltip = "Явит на свет последние резервы Рейха"
+		custom_effect_tooltip = "ПОБЕДУ ОПРЕДЕЛЯЕТ ВОЛЯ А НЕ СИТУАЦИЯ НА ФРОНТЕ"
+
+		hidden_effect = {
+					64 = {
+						add_building_construction = {
+							type = bunker
+							level = 10
+							province = 6521 
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 19
+							province =  13274
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 10
+							province =  13272
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 10
+							province =  13273
+							instant_build = yes
+						}
+					}
+				}
+
+
+
+		hidden_effect ={
+			division_template = {
+				name = "SS-Panzergrenadier"
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					heavy_armor = { x = 0 y = 1 }
+					heavy_armor = { x = 0 y = 2 }
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 1 y = 0 }
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }
+					heavy_armor = { x = 1 y = 3 }
+					heavy_armor = { x = 2 y = 0 }
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					motorized = { x = 4 y = 0 }
+					motorized = { x = 4 y = 1 }
+				}
+				support = {
+					light_tank_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					anti_air = {x = 0 y = 3}
+					anti_tank = {x = 0 y = 4}
+					rocket_artillery = {x = 0 y = 5}
+				}
 			}
-			add_timed_idea = {
-				idea = GER_endsieg
-				days = 90
+			64 = {
+				for_loop_effect = {
+					end = 3
+					create_unit = {
+						division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
+						owner = GER
+					}
+				}
 			}
-			custom_effect_tooltip = "Явит на свет последние резервы Рейха"
-			custom_effect_tooltip = "ПОБЕДУ ОПРЕДЕЛЯЕТ ВОЛЯ А НЕ СИТУАЦИЯ НА ФРОНТЕ"
-			hidden_effect ={
-				division_template = {
-					name = "SS-Panzergrenadier"
-					regiments = {
-						heavy_armor = { x = 0 y = 0 }
-						heavy_armor = { x = 0 y = 1 }
-						heavy_armor = { x = 0 y = 2 }
-						heavy_armor = { x = 0 y = 3 }
-						heavy_armor = { x = 1 y = 0 }
-						heavy_armor = { x = 1 y = 1 }
-						heavy_armor = { x = 1 y = 2 }
-						heavy_armor = { x = 1 y = 3 }
-						heavy_armor = { x = 2 y = 0 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-						rocket_artillery = {x = 0 y = 5}
+			division_template = {
+				name = "Panzergrenadiere"
+				regiments = {
+					mechanized = { x = 0 y = 0 }
+					mechanized = { x = 0 y = 1 }
+					mechanized = { x = 0 y = 2 }
+					mechanized = { x = 0 y = 3 }
+					mechanized = { x = 1 y = 0 }
+					mechanized = { x = 1 y = 1 }
+					mechanized = { x = 1 y = 2 }
+					mechanized = { x = 1 y = 3 }
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mot_anti_air_brigade = { x = 3 y = 0 }
+					mot_anti_tank_brigade = { x = 3  y = 1}
+					mot_artillery_brigade = { x = 3 y = 2}
+					mot_artillery_brigade = { x = 4 y = 0 }
+					mot_artillery_brigade = { x = 4 y = 1 }
+					mot_artillery_brigade = { x = 4 y = 2 }
+				}
+				support = {
+					light_tank_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					anti_air = {x = 0 y = 3}
+					anti_tank = {x = 0 y = 4}
+					rocket_artillery = {x = 0 y = 5}
+				}
+			}
+			64 = {
+				for_loop_effect = {
+					end = 15
+					create_unit = {
+						division = "name = \"Panzergrenadiere\" division_template = \"Panzergrenadiere\" start_experience_factor = 0.5"
+						owner = GER
 					}
 				}
-				64 = {
-					for_loop_effect = {
-						end = 3
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
-							owner = GER
-						}
-					}
+			}
+			division_template = {
+				name = "Panzerjagd-Division"
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+					medium_armor = { x = 2 y = 0 }
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					motorized = { x = 4 y = 0 }
+					motorized = { x = 4 y = 1 }
 				}
-				division_template = {
-					name = "Panzergrenadiere"
-					regiments = {
-						mechanized = { x = 0 y = 0 }
-						mechanized = { x = 0 y = 1 }
-						mechanized = { x = 0 y = 2 }
-						mechanized = { x = 0 y = 3 }
-						mechanized = { x = 1 y = 0 }
-						mechanized = { x = 1 y = 1 }
-						mechanized = { x = 1 y = 2 }
-						mechanized = { x = 1 y = 3 }
-						mechanized = { x = 2 y = 0 }
-						mechanized = { x = 2 y = 1 }
-						mot_anti_air_brigade = { x = 3 y = 0 }
-						mot_anti_tank_brigade = { x = 3  y = 1}
-						mot_artillery_brigade = { x = 3 y = 2}
-						mot_artillery_brigade = { x = 4 y = 0 }
-						mot_artillery_brigade = { x = 4 y = 1 }
-						mot_artillery_brigade = { x = 4 y = 2 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-						rocket_artillery = {x = 0 y = 5}
-					}
+				support = {
+					light_tank_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					anti_air = { x = 0 y = 3 }
+					anti_tank = { x = 0 y = 4 }
 				}
-				64 = {
-					for_loop_effect = {
-						end = 15
-						create_unit = {
-							division = "name = \"Panzergrenadiere\" division_template = \"Panzergrenadiere\" start_experience_factor = 0.5"
-							owner = GER
-						}
-					}
-				}
-				division_template = {
-					name = "Panzerjagd-Division"
-					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-						medium_armor = { x = 1 y = 3 }
-						medium_armor = { x = 2 y = 0 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = { x = 0 y = 3 }
-						anti_tank = { x = 0 y = 4 }
-					}
-				}
-				64 = {
-					for_loop_effect = {
-						end = 9
-						create_unit = {
-							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 0.5"
-							owner = GER
-						}
+			}
+			64 = {
+				for_loop_effect = {
+					end = 9
+					create_unit = {
+						division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 0.5"
+						owner = GER
 					}
 				}
 			}
 		}
 	}
+}
+
 
 	focus = {
 		id = GER_turkey_friend
