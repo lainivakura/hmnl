@@ -4000,10 +4000,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 1.8
-				date < 1939.1.1
-			}
 		}
 	}
 
@@ -5944,10 +5940,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -5960,10 +5952,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -5976,10 +5964,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -5993,10 +5977,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6009,10 +5989,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6025,10 +6001,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6038,11 +6010,7 @@ leader_traits = {
 		max_command_power = 10
 
 		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
+			factor = 1
 		}
 	}
 
@@ -6055,10 +6023,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6071,10 +6035,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6087,10 +6047,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6104,10 +6060,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6120,10 +6072,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6136,10 +6084,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6153,10 +6097,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6169,10 +6109,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6185,10 +6121,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6201,10 +6133,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6217,10 +6145,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6233,10 +6157,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6249,10 +6169,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6265,10 +6181,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6281,10 +6193,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6298,10 +6206,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6314,10 +6218,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6330,10 +6230,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6347,10 +6243,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6363,11 +6255,7 @@ leader_traits = {
 		command_cap = @tier2
 
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
+			factor = 1
 		}
 	}
 
@@ -6380,11 +6268,7 @@ leader_traits = {
 		command_cap = @tier3
 
 		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
+			factor = 1
 		}
 	}
 
@@ -6398,10 +6282,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6414,10 +6294,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6430,10 +6306,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6448,10 +6320,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6465,10 +6333,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6482,10 +6346,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6500,10 +6360,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6517,10 +6373,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6534,10 +6386,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6552,10 +6400,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6569,10 +6413,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6586,10 +6426,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 4
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6604,10 +6440,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6621,10 +6453,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6638,10 +6466,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6656,10 +6480,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6673,10 +6493,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6690,10 +6506,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6709,10 +6521,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6728,10 +6536,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6747,10 +6551,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 4
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6764,10 +6564,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6780,10 +6576,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6796,10 +6588,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6813,10 +6601,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6829,10 +6613,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6845,10 +6625,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6862,10 +6638,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6878,10 +6650,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 4
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6894,10 +6662,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 6
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6911,10 +6675,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6927,10 +6687,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6943,10 +6699,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -6960,10 +6712,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -6976,10 +6724,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -6992,10 +6736,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7005,11 +6745,7 @@ leader_traits = {
 		max_command_power = 10
 
 		ai_will_do = {
-			factor = 0.25
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
+			factor = 1
 		}
 	}
 
@@ -7022,10 +6758,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7038,10 +6770,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7054,10 +6782,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7071,10 +6795,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7087,10 +6807,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7103,10 +6819,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7121,10 +6833,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7137,10 +6845,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7153,10 +6857,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7170,10 +6870,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7186,10 +6882,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7202,10 +6894,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7221,10 +6909,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7239,10 +6923,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7257,10 +6937,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7276,10 +6952,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7294,10 +6966,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7312,10 +6980,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7331,10 +6995,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7349,10 +7009,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7367,10 +7023,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7386,10 +7038,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7404,10 +7052,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7422,10 +7066,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7442,10 +7082,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7461,10 +7097,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7480,10 +7112,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7497,10 +7125,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7513,10 +7137,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7529,10 +7149,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7548,10 +7164,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7566,10 +7178,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7584,10 +7192,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7600,10 +7204,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 	air_pilot_training_2 = {
@@ -7615,10 +7215,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 	air_pilot_training_3 = {
@@ -7630,10 +7226,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7649,10 +7241,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7667,10 +7255,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7685,10 +7269,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7705,10 +7285,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7724,10 +7300,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7743,10 +7315,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7760,10 +7328,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7776,10 +7340,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7792,10 +7352,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7806,11 +7362,7 @@ leader_traits = {
 		max_command_power = 10
 
 		ai_will_do = {
-			factor = 0.25
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
+			factor = 1
 		}
 	}
 
@@ -7823,10 +7375,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7839,10 +7387,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7855,10 +7399,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7871,10 +7411,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7887,10 +7423,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7903,10 +7435,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7920,10 +7448,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7936,10 +7460,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -7952,10 +7472,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -7969,10 +7485,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -7985,10 +7497,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -8001,10 +7509,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -8018,10 +7522,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -8034,10 +7534,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -8050,10 +7546,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -8067,10 +7559,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -8083,10 +7571,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -8099,10 +7583,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -8117,10 +7597,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -8134,10 +7610,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -8151,10 +7623,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -8169,10 +7637,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -8186,10 +7650,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -8203,10 +7663,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -8221,10 +7677,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -8238,10 +7690,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -8255,10 +7703,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 3
-			modifier = {
-				factor = 0
-				command_power < @tier3
-			}
 		}
 	}
 
@@ -8271,10 +7715,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				command_power < @tier1
-			}
 		}
 	}
 
@@ -8287,10 +7727,6 @@ leader_traits = {
 
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				factor = 0
-				command_power < @tier2
-			}
 		}
 	}
 
@@ -8306,10 +7742,6 @@ leader_traits = {
 			modifier = {
 				factor = 0
 				has_navy_size = { unit = carrier size < 1 }
-			}
-			modifier = {
-				factor = 0
-				command_power < @tier3
 			}
 		}
 	}
@@ -8343,12 +7775,12 @@ leader_traits = {
 	cockatoo_trait = { #at end for save compat
 		random = no
 		equipment_bonus = {
-			ship_hull_cruiser = { #CLs & CAs
+			heavy_cruiser = {
 				naval_range = 0.3 
 				sub_detection = 0.1 
 				naval_speed = 0.1
 			}
-			ship_hull_light = { #DDs
+			screen_ship = {
 				naval_range = 0.3 
 				sub_detection = 0.1 
 				naval_speed = 0.1

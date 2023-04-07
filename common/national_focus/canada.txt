@@ -277,6 +277,15 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+								random_owned_controlled_state = {
+				prioritize = { 468 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				}
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -346,6 +355,15 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+								random_owned_controlled_state = {
+				prioritize = { 276 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				}
 			build_railway = { #Montreal - Halifax
 				path = {
 					4345 4417 10320 7433 1284 12291 4362 7379 4432 1424 7304 7644 7361
@@ -364,14 +382,14 @@
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 0
 						include_locked = yes
 					}
 				}
 
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -420,10 +438,10 @@
 				limit = {
 					has_state_flag = CAN_retool_angus_shops_AF
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -435,14 +453,14 @@
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 0
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = CAN_retool_angus_shops_AF
@@ -484,25 +502,32 @@
 			470 = {
 				add_resource = {
 					type = oil
+
 					amount = 2
+
+					amount = 4
 				}
 			}
 			471 = {
 				add_resource = {
 					type = oil
 					amount = 4
+					amount = 8
 				}
 			}
 			472 = {
 				add_resource = {
 					type = oil
+
 					amount = 4
+					amount = 6
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
 					amount = 4
+					amount = 6
 				}
 			}
 		}
@@ -855,6 +880,7 @@
 				add_resource = {
 					type = steel
 					amount = 2
+					amount = 10
 				}
 			}
 			random_owned_controlled_state = {
@@ -864,7 +890,11 @@
 				}
 				add_resource = {
 					type = steel
+
 					amount = 2
+
+					amount = 5
+
 				}
 			}
 			random_owned_controlled_state = {
@@ -874,7 +904,11 @@
 				}
 				add_resource = {
 					type = chromium
+
 					amount = 3
+
+					amount = 10
+
 				}
 			}
 		}
@@ -912,16 +946,9 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			if = {
-				limit = { has_idea = CAN_great_depression_1 }
 			swap_ideas = {
 				remove_idea = CAN_great_depression_1
 				add_idea = CAN_great_depression_2		
-			}
-		}
-			else_if = {
-				limit = { has_idea = CAN_great_depression_2 }
-				remove_ideas = CAN_great_depression_2
 			}
 		}
 	}
@@ -1392,6 +1419,7 @@
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
+
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1810,6 +1838,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
+			remove_ideas = CAN_great_depression_2
 			random_state = {
 				limit = {
 					has_state_flag = CAN_war_fueled_economy_AF1
@@ -1846,22 +1875,7 @@
 		}
 
 		completion_reward = {
-			if = {
-				limit = { 
-					OR = {
-						has_idea = CAN_great_depression_1
-						has_idea = CAN_great_depression_2
-					}
-				}
 			remove_ideas = CAN_great_depression_2
-				custom_effect_tooltip = if_no_depression_get_stuff_TT
-			}
-			else = {
-				add_timed_idea = {
-					idea = CAN_booming_economy
-					days = 1095
-				}
-			}
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -2147,7 +2161,7 @@
 			add_tech_bonus = {
 				name = CAN_a_motorized_army
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = motorized_equipment
 				technology = tech_field_hospital
 				technology = tech_field_hospital2
@@ -2353,14 +2367,8 @@
 				name = CAN_the_valentine_tank
 				ahead_reduction = 2
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = cat_light_armor
-			}
-			add_tech_bonus = {
-				name = CAN_the_valentine_tank
-				bonus = 1.0
-				uses = 1
-				technology = improved_medium_tank_chassis
 			}
 		}
 	}
@@ -4688,10 +4696,10 @@
 				limit = {
 					has_state_flag = CAN_united_shipyards_DY
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -4704,14 +4712,14 @@
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 3
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_united_shipyards_DY

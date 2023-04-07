@@ -640,24 +640,6 @@ ideas = {
 			}
 		}
 		
-		CAN_booming_economy = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_exploit_mines
-
-			modifier = {
-				production_speed_buildings_factor = 0.20
-			}
-		}
-		
 	}
 
 	# TECHNOLOGY
@@ -667,11 +649,8 @@ ideas = {
 
 		vickers_armstrong_can = {
 
-			picture = generic_tank_manufacturer_2
-
 			allowed = {
 				original_tag = CAN
-				has_dlc = "Together for Victory"
 			}
 
 			research_bonus = {

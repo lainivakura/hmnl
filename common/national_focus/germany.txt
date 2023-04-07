@@ -2170,7 +2170,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {
 			air_experience = 25
-			add_tech_bonus = {
+add_tech_bonus = {
 							name = fighter_command_focus
 							bonus = 3
 							uses = 2
@@ -2585,7 +2585,7 @@ focus_tree = {
 					bonus = 1.0
 					uses = 2
 					technology = improved_light_tank_chassis
-					technology = improved_medium_tank_chassis
+					technology = advanced_medium_tank_chassis
 				}
 			}
 			else = {
@@ -3283,16 +3283,56 @@ focus_tree = {
 			}
 		}
 	}
+focus = {
+		id = GER_sloti_late
+		cost = 8
+		available = {
+				date >		1942.6.1
+			}		
+		prerequisite = { focus = GER_war_production }
+		icon = GFX_focus_GER_The_Genius_Organizer
+		x = 12
+		y = 8
+		completion_reward = {
+		55 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		54 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		60 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		52 = {
+			add_extra_state_shared_building_slots = 8
+			}
+		59 = {
+			add_extra_state_shared_building_slots = 8
+			}
+	}
+}
+
 	focus = {
-			id = GER_sloti_late
-			cost = 8
-			available = {
-					date >		1942.6.1
-				}		
-			prerequisite = { focus = GER_war_production }
-			icon = GFX_focus_GER_The_Genius_Organizer
-			x = 12
-			y = 8
+		id = Folcsturm
+		text = Folcsturm
+		prerequisite = { focus = GER_wunderwaffe }
+		icon = GFX_focus_GER_the_new_draft
+		cost = 1
+		x = 9
+		y = 7
+		available = {
+					date > 1941.11.1
+								OR = {
+						any_core_state  = {
+						is_controlled_by = SOV
+						}
+						}
+					OR = {	
+						SOV = {
+									controls_state = 79
+						}
+					}						
+				}
 			completion_reward = {
 					add_ideas = GER_folcsturm
 
@@ -3408,209 +3448,70 @@ focus = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-
-		}
-	}
-
-		focus = {
-			id = Folcsturm
-			text = Folcsturm
-			prerequisite = { focus = GER_wunderwaffe }
-			icon = GFX_focus_GER_the_new_draft
-			cost = 1
-			x = 9
-			y = 7
-			available = {
-						date > 1941.11.1
-									OR = {
-							any_core_state  = {
-							is_controlled_by = SOV
-							}
-							}
-						OR = {	
-							SOV = {
-										controls_state = 79
-							}
-						}						
-					}
-				completion_reward = {
-						add_ideas = GER_folcsturm
-			custom_effect_tooltip = "Будет заспавнено 100дивок в регах, ближайших к Висле"
-			
-			hidden_effect ={
-				division_template = {
-					name = "Vata Ebanaia"
-					regiments = {
-						infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
-						infantry = { x = 1 y = 3 }
-						infantry = { x = 2 y = 0 }
-					}
-					support = {
-						light_tank_recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3}
-						anti_tank = {x = 0 y = 4}
-					}
-				}
-				86 = {
-					for_loop_effect = {
-						end = 35
-						create_unit = {
-							division = "name = \"Vata Ebanaia\" division_template = \"Vata Ebanaia\" start_experience_factor = 0.1"
-							owner = GER
-						}
-					}
-				}
-
-				87 = {
-					for_loop_effect = {
-						end = 35
-						create_unit = {
-							division = "name = \"Vata Ebanaia\" division_template = \"Vata Ebanaia\" start_experience_factor = 0.1"
-							owner = GER
-						}
-					}
-				}
-
-					70 = {
-					for_loop_effect = {
-						end = 30
-						create_unit = {
-							division = "name = \"Vata Ebanaia\" division_template = \"Vata Ebanaia\" start_experience_factor = 0.1"
-							owner = GER
-						}
-					}
-				}
-						
-					}
-					}
 		}
 
-	focus = {
-			id = stainer_vperde
-			text = stainer_vperde
-			prerequisite = { focus = Folcsturm }
-			icon = GFX_GER_total_war
-			cost = 1
-			
-			x = 10
-			y = 8
-			available = {
-						date > 1941.12.1
-						OR = {
-							any_core_state  = {
-							is_controlled_by = SOV
-							}
-							}
-						OR = {	
-							SOV = {
-										controls_state = 79
-							}
-						}						
-					}
-				completion_reward = {
-						add_timed_idea = {
-								idea = GER_stiner
-								days = 90
-							}
-					}
-		}
-	focus = {
-			id = GER_war_production
-			prerequisite = { focus = GER_tank_project focus = GER_wunderwaffe focus = GER_avia_project }
-			icon = GFX_focus_GER_underground_industry
-			cost = 10
-			available = {
-					date > 1942.3.1
-				}		
-			x = 13
-			y = 7
-			completion_reward = {
-				add_ideas = ger_production_increase
-		}
-	}
-
-		focus = {
-			id = GER_specnaz
-			icon = GFX_focus_GER_vampir
-			prerequisite = { focus = GER_war_production }
-			x = 1
-			y = 3
-			relative_position_id = GER_rocketry_focus
-			cost = 10
-			ai_will_do = {
-				factor = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+			name = GER_specnaz
+			bonus = 1.0
+			uses = 1
+			technology = night_vision 
+			technology = tech_special_forces
+			}
+			add_tech_bonus = {
+			name = GER_specnaz
+			bonus = 1.0
+			uses = 2
+			technology = infantry_at 
+			technology = infantry_at2
 			}
 
-			available_if_capitulated = yes
-			search_filters = { FOCUS_FILTER_RESEARCH }
-			completion_reward = {
-				add_tech_bonus = {
-				name = GER_specnaz
-				bonus = 1.0
-				uses = 1
-				technology = night_vision 
-				technology = tech_special_forces
-				}
-				add_tech_bonus = {
-				name = GER_specnaz
-				bonus = 1.0
-				uses = 2
-				technology = infantry_at 
-				technology = infantry_at2
-				}
 
-
-				add_tech_bonus = {
-				name = GER_specnaz
-				bonus = 5.0
-				uses = 3
-				technology = armored_car1
-				technology = armored_car2
-				technology = armored_car3
-				}
-
-				
+			add_tech_bonus = {
+			name = GER_specnaz
+			bonus = 5.0
+			uses = 3
+			technology = armored_car1
+			technology = armored_car2
+			technology = armored_car3
 			}
-		}
 
-
-	focus = {
-			id = GER_war_minors
-			icon = GFX_focus_GER_balkan_initiative
-			cost = 7
-			available = {
-					date > 1942.6.1
-				}		
-			prerequisite = { focus = GER_wunderwaffe }
-			x = 11
-			y = 7
-			completion_reward = {
-				add_ideas = ger_minor_production_increase
+			
 		}
 	}
 
-	focus = {
-			id = GER_war_minors2
-			icon = GFX_focus_GER_german_war_economy
-			cost = 7
-			available = {
-					date > 1943.6.1
-				}		
-			prerequisite = { focus = GER_wunderwaffe }
-			x = 15
-			y = 7
-			completion_reward = {
-				add_ideas = ger_minor_production_increase1
-		}
+
+focus = {
+		id = GER_war_minors
+		icon = GFX_focus_GER_balkan_initiative
+		cost = 7
+		available = {
+				date > 1942.6.1
+			}		
+		prerequisite = { focus = GER_wunderwaffe }
+		x = 11
+		y = 7
+		completion_reward = {
+			add_ideas = ger_minor_production_increase
 	}
+}
+
+focus = {
+		id = GER_war_minors2
+		icon = GFX_focus_GER_german_war_economy
+		cost = 7
+		available = {
+				date > 1943.6.1
+			}		
+		prerequisite = { focus = GER_wunderwaffe }
+		x = 15
+		y = 7
+		completion_reward = {
+			add_ideas = ger_minor_production_increase1
+	}
+}
 
 
 
@@ -3686,9 +3587,11 @@ focus = {
 				}
 	}
 
+	
 
 
-	focus = {
+
+		focus = {
 		id = jagernotprogramm
 		text = jagernotprogramm
 		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
@@ -3700,15 +3603,14 @@ focus = {
 		x = 11
 		y = 9
 		available = {
-			date > 1942.9.1						
-		}
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = GER_aviaprogramm
-				days = 180
-			}
-		}
+					date > 1942.9.1						
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = GER_aviaprogramm
+							days = 180
+						}
+				}
 	}
 
 	focus = {
@@ -3722,18 +3624,18 @@ focus = {
 		x = 15
 		y = 9
 		available = {
-			date > 1942.9.1						
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = GER_tank_production
-				days = 180
-			}
-		}
+					date > 1942.9.1						
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = GER_tank_production
+							days = 180
+						}
+					}
 	}
 
 
-	focus = {
+		focus = {
 		id = tretiy_udar
 		prerequisite = { focus = vtoroi_udar}
 		text = tretiy_udar
@@ -3742,33 +3644,31 @@ focus = {
 		x = 16
 		y = 8
 		available = {
-			controls_state = 225
-			controls_state = 221
-			controls_state = 224
-			controls_state = 240
-			SOV = {
-				controls_state = 220
-			}
-			date > 1943.07.1
-		}
-
-		completion_reward = {
-			220 = {
-				add_dynamic_modifier = {
-					modifier = GER_citadel
-					scope = GER
-					days = 60
+				controls_state = 225
+				controls_state = 221
+				controls_state = 224
+				controls_state = 240
+				SOV = {
+									controls_state = 220
+						}
+				date > 1943.07.1
 				}
-			}
+			completion_reward = {
+					220 = {
+						add_dynamic_modifier = {
+						modifier = GER_citadel
+						scope = GER
+						days = 60
+					}
 
-			222 = {
-				add_dynamic_modifier = {
-					modifier = GER_citadel
-					scope = GER
-					days = 60
+					222 = {
+						add_dynamic_modifier = {
+						modifier = GER_citadel
+						scope = GER
+						days = 60
+					}
+					}
 				}
-			}
-		}
 	}
 }
 
@@ -3822,8 +3722,8 @@ focus = {
 									controls_state = 206
 						}
 				date > 1943.01.1
-		}
-		completion_reward = {
+				}
+			completion_reward = {
 					189 = {
 						add_dynamic_modifier = {
 						modifier = GER_counterattack
@@ -3865,7 +3765,7 @@ focus = {
 		}
 	}
 }
-}
+}  
 
 
 	focus = {
@@ -6429,521 +6329,521 @@ focus = {
 		prerequisite = { focus = GER_anschluss }
 		icon = GFX_goal_generic_political_pressure
 		available = {
-		date > 1940.1.1
-					is_subject = no
-					controls_state = 4
-					controls_state = 152
-					has_army_manpower = { size > 749999 } #ca 80 div
-				}
-				bypass = {
+date > 1940.1.1
+			is_subject = no
+			controls_state = 4
+			controls_state = 152
+			has_army_manpower = { size > 749999 } #ca 80 div
+		}
+		bypass = {
+			OR = {
+				NOT = {
 					OR = {
-						NOT = {
-							OR = {
-								YUG = { owns_state = 102 }
-								102 = { owner = { is_subject_of = YUG } }
-							}
-						}
-						has_war_with = YUG
-						is_in_faction_with = YUG
-						YUG = { is_subject_of = GER }
-						YUG = { has_non_aggression_pact_with = GER }
-						YUG = { has_opinion_modifier = tripartite_pact_opinion }
+						YUG = { owns_state = 102 }
+						102 = { owner = { is_subject_of = YUG } }
 					}
 				}
-				cancel_if_invalid = yes
-				x = 3
-				y = 1
-				relative_position_id = GER_anschluss
-				cost = 1
-				ai_will_do = {
-					factor = 1
-				}	
-				search_filters = { FOCUS_FILTER_ANNEXATION }
-				completion_reward = {
-					add_named_threat = { threat = 2 name = GER_demand_slovenia_threat }
-					YUG = { add_opinion_modifier = { target = GER modifier = GER_demand_slovenia_YUG } }
-					if = {
-						limit = {
-							NOT = { has_war_with = ENG }
-							YUG = { 
-								is_subject = no
-								NOT = { has_war_with = ENG }
-							}
-						}
-						ENG = {
-							country_event = { id = britain.14 }
-						}
+				has_war_with = YUG
+				is_in_faction_with = YUG
+				YUG = { is_subject_of = GER }
+				YUG = { has_non_aggression_pact_with = GER }
+				YUG = { has_opinion_modifier = tripartite_pact_opinion }
+			}
+		}
+		cancel_if_invalid = yes
+		x = 3
+		y = 1
+		relative_position_id = GER_anschluss
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			add_named_threat = { threat = 2 name = GER_demand_slovenia_threat }
+			YUG = { add_opinion_modifier = { target = GER modifier = GER_demand_slovenia_YUG } }
+			if = {
+				limit = {
+					NOT = { has_war_with = ENG }
+					YUG = { 
+						is_subject = no
+						NOT = { has_war_with = ENG }
 					}
-					if = {
-						limit = {
-							OR = {
-								YUG = { is_puppet = yes }
-								YUG = { has_war_with = ENG }
-								has_war_with = ENG
-							}
+				}
+				ENG = {
+					country_event = { id = britain.14 }
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						YUG = { is_puppet = yes }
+						YUG = { has_war_with = ENG }
+						has_war_with = ENG
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = YUG
+					expire = 0
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_first_ljubljana_award
+		prerequisite = { focus = GER_demand_slovenia }
+		icon = GFX_goal_generic_military_deal
+		available = {
+			is_subject = no
+			NOT = { is_in_faction_with = YUG }
+			NOT = { YUG = { has_non_aggression_pact_with = GER } }
+			NOT = { YUG = { has_opinion_modifier = tripartite_pact_opinion } }
+			OR = {
+				AND = {
+					country_exists = YUG
+					NOT = { has_war_with = YUG }
+					OR = {
+						owns_state = 102
+						102 = { owner = { is_subject_of = YUG } }
+						owns_state = 853
+						853 = { owner = { is_subject_of = YUG } }
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = GER_first_ljubljana_award_tt
+					AND = {
+						NOT = { country_exists = YUG }
+						OR = {
+							owns_state = 102
+							102 = { owner = { is_subject_of = YUG } }
 						}
-						create_wargoal = {
-							type = annex_everything
-							target = YUG
-							expire = 0
+						OR = {
+							owns_state = 853
+							853 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 45
+							45 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #Macedonia
+							owns_state = 106
+							106 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #New Southern Serbia state
+							owns_state = 803
+							803 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #Herzegovina
+							owns_state = 804
+							804 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #Kosovo
+							owns_state = 802
+							802 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 103
+							103 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 105
+							105 = { owner = { is_subject_of = YUG } }
 						}
 					}
 				}
 			}
-
-			focus = {
-				id = GER_first_ljubljana_award
-				prerequisite = { focus = GER_demand_slovenia }
-				icon = GFX_goal_generic_military_deal
-				available = {
+			OR = {
+				YUG = {
 					is_subject = no
-					NOT = { is_in_faction_with = YUG }
-					NOT = { YUG = { has_non_aggression_pact_with = GER } }
-					NOT = { YUG = { has_opinion_modifier = tripartite_pact_opinion } }
-					OR = {
-						AND = {
-							country_exists = YUG
-							NOT = { has_war_with = YUG }
-							OR = {
-								owns_state = 102
-								102 = { owner = { is_subject_of = YUG } }
-								owns_state = 853
-								853 = { owner = { is_subject_of = YUG } }
-							}
-						}
-						custom_trigger_tooltip = {
-							tooltip = GER_first_ljubljana_award_tt
-							AND = {
-								NOT = { country_exists = YUG }
-								OR = {
-									owns_state = 102
-									102 = { owner = { is_subject_of = YUG } }
-								}
-								OR = {
-									owns_state = 853
-									853 = { owner = { is_subject_of = YUG } }
-								}
-								OR = {
-									owns_state = 45
-									45 = { owner = { is_subject_of = YUG } }
-								}
-								OR = { #Macedonia
-									owns_state = 106
-									106 = { owner = { is_subject_of = YUG } }
-								}
-								OR = { #New Southern Serbia state
-									owns_state = 803
-									803 = { owner = { is_subject_of = YUG } }
-								}
-								OR = { #Herzegovina
-									owns_state = 804
-									804 = { owner = { is_subject_of = YUG } }
-								}
-								OR = { #Kosovo
-									owns_state = 802
-									802 = { owner = { is_subject_of = YUG } }
-								}
-								OR = {
-									owns_state = 103
-									103 = { owner = { is_subject_of = YUG } }
-								}
-								OR = {
-									owns_state = 105
-									105 = { owner = { is_subject_of = YUG } }
-								}
-							}
-						}
-					}
+				}
+				YUG = {
+					is_puppet_of = GER
+				}
+			}
+		}
+
+		bypass = {
+			OR = {	
+				is_in_faction_with = YUG
+				YUG = { has_non_aggression_pact_with = GER }
+				YUG = { has_opinion_modifier = tripartite_pact_opinion }
+				NOT = { country_exists = YUG }
+				NOT = {
 					OR = {
 						YUG = {
-							is_subject = no
+							owns_state = 45
 						}
+						45 = { owner = { is_subject_of = YUG } }
+						
 						YUG = {
-							is_puppet_of = GER
+							owns_state = 106
 						}
+						106 = { owner = { is_subject_of = YUG } }
 					}
 				}
+				AND = {
+					HUN = { is_friend_or_potential_friend_of_GER = no }
+					BUL = { is_friend_or_potential_friend_of_GER = no }
+					ITA = { is_friend_or_potential_friend_of_GER = no }
+				}
+			}
+		}
 
-				bypass = {
-					OR = {	
-						is_in_faction_with = YUG
-						YUG = { has_non_aggression_pact_with = GER }
-						YUG = { has_opinion_modifier = tripartite_pact_opinion }
-						NOT = { country_exists = YUG }
-						NOT = {
+		x = 0
+		y = 1
+		relative_position_id = GER_demand_slovenia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					HUN = {
+						is_friend_or_potential_friend_of_GER = yes
+						NOT = { is_in_faction_with = YUG }
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = { 
 							OR = {
-								YUG = {
-									owns_state = 45
-								}
-								45 = { owner = { is_subject_of = YUG } }
-								
-								YUG = {
-									owns_state = 106
-								}
-								106 = { owner = { is_subject_of = YUG } }
+								45 = { is_owned_by = YUG }
+								45 = { is_owned_by = GER }
 							}
 						}
-						AND = {
-							HUN = { is_friend_or_potential_friend_of_GER = no }
-							BUL = { is_friend_or_potential_friend_of_GER = no }
-							ITA = { is_friend_or_potential_friend_of_GER = no }
-						}
-					}
-				}
-
-				x = 0
-				y = 1
-				relative_position_id = GER_demand_slovenia
-				cost = 10
-				ai_will_do = {
-					factor = 10
-				}
-				completion_reward = {
-					if = {
-						limit = {
-							HUN = {
-								is_friend_or_potential_friend_of_GER = yes
-								NOT = { is_in_faction_with = YUG }
-							}
-						}
-						hidden_effect = {
-							if = {
-								limit = { 
-									OR = {
-										45 = { is_owned_by = YUG }
-										45 = { is_owned_by = GER }
-									}
-								}
-								HUN = {
-									country_event = { id = hungary.6 days = 1 }
-									add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-									set_country_flag = GER_first_ljubljana_award
-								}
-							}
-						}
-						effect_tooltip = {
-							if = {
-								limit = {
-										OR = {
-											45 = { is_owned_by = YUG }
-											45 = { is_owned_by = GER }
-										}
-								}
-								HUN = {
-									add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-									transfer_state = 45
-								}
-							}
-						}
-						every_other_country = {
-							limit = { 
-								is_faction_leader = yes
-								NOT = { tag = GER }
-							}
-							reverse_add_opinion_modifier = { target = HUN modifier = GER_first_ljubljana_award_other }
-						}				
-					}
-					if = {
-						limit = {
-							BUL = {
-								is_friend_or_potential_friend_of_GER = yes
-								NOT = { is_in_faction_with = YUG }
-							}
-						}
-						hidden_effect = {
-							if = {
-								limit = {
-									OR = {
-										106 = { is_owned_by = YUG }
-										106 = { is_owned_by = GER }
-										803 = { is_owned_by = YUG }
-										803 = { is_owned_by = GER }
-									}
-								}
-								BUL = { 
-									country_event = { id = bulgaria.3 days = 1 } 
-									add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-									set_country_flag = GER_first_ljubljana_award
-								}
-							}
-						}
-						effect_tooltip = {
-							if = {
-								limit = {
-									OR = {
-										106 = { is_owned_by = YUG }
-										106 = { is_owned_by = GER }
-										803 = { is_owned_by = YUG }
-										803 = { is_owned_by = GER }
-									}
-								}
-								BUL = {
-									add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-									if = {
-										limit = {
-											106 = { is_owned_by = YUG }
-											106 = { is_owned_by = GER }
-										}
-										transfer_state = 106
-									}
-									if = {
-										limit = {
-											803 = { is_owned_by = YUG }
-											803 = { is_owned_by = GER }
-										}
-										transfer_state = 803
-									}
-								}
-							}
-						}
-						every_other_country = {
-							limit = { 
-								is_faction_leader = yes
-								NOT = { tag = GER }
-							}
-							reverse_add_opinion_modifier = { target = BUL modifier = GER_first_ljubljana_award_other }
-						}				
-					}
-					if = {
-						limit = {
-							ITA = {
-								OR = {
-									has_completed_focus = ITA_balkan_ambition
-									owns_state = 44
-								}
-								is_friend_or_potential_friend_of_GER = yes
-								NOT = { is_in_faction_with = YUG }
-							}
-						}
-						hidden_effect = {
-							ITA = { country_event = { id = italy.13 days = 1 } 
-								add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-							}
+						HUN = {
+							country_event = { id = hungary.6 days = 1 }
+							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 							set_country_flag = GER_first_ljubljana_award
 						}
-						effect_tooltip = {
-							ITA = {
-								add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
-								if = {
-									limit = { has_completed_focus = ITA_balkan_ambition }
-									transfer_state = 103
+					}
+				}
+				effect_tooltip = {
+					if = {
+						limit = {
+								OR = {
+									45 = { is_owned_by = YUG }
+									45 = { is_owned_by = GER }
 								}
-								if = {
-									limit = { owns_state = 44 }
-									transfer_state = 105
-								}
-								if = {
-									limit = { owns_state = 44 }
-									transfer_state = 802
-								}
+						}
+						HUN = {
+							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+							transfer_state = 45
+						}
+					}
+				}
+				every_other_country = {
+					limit = { 
+						is_faction_leader = yes
+						NOT = { tag = GER }
+					}
+					reverse_add_opinion_modifier = { target = HUN modifier = GER_first_ljubljana_award_other }
+				}				
+			}
+			if = {
+				limit = {
+					BUL = {
+						is_friend_or_potential_friend_of_GER = yes
+						NOT = { is_in_faction_with = YUG }
+					}
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							OR = {
+								106 = { is_owned_by = YUG }
+								106 = { is_owned_by = GER }
+								803 = { is_owned_by = YUG }
+								803 = { is_owned_by = GER }
 							}
 						}
-						every_other_country = {
-							limit = { 
-								is_faction_leader = yes
-								NOT = { tag = GER }
-							}
-							reverse_add_opinion_modifier = { target = ITA modifier = GER_first_ljubljana_award_other }
-						}				
+						BUL = { 
+							country_event = { id = bulgaria.3 days = 1 } 
+							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+							set_country_flag = GER_first_ljubljana_award
+						}
 					}
-					#hidden_effect = {
-					#	news_event = { hours = 6 id = news.208 }
-					#}
+				}
+				effect_tooltip = {
+					if = {
+						limit = {
+							OR = {
+								106 = { is_owned_by = YUG }
+								106 = { is_owned_by = GER }
+								803 = { is_owned_by = YUG }
+								803 = { is_owned_by = GER }
+							}
+						}
+						BUL = {
+							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+							if = {
+								limit = {
+									106 = { is_owned_by = YUG }
+									106 = { is_owned_by = GER }
+								}
+								transfer_state = 106
+							}
+							if = {
+								limit = {
+									803 = { is_owned_by = YUG }
+									803 = { is_owned_by = GER }
+								}
+								transfer_state = 803
+							}
+						}
+					}
+				}
+				every_other_country = {
+					limit = { 
+						is_faction_leader = yes
+						NOT = { tag = GER }
+					}
+					reverse_add_opinion_modifier = { target = BUL modifier = GER_first_ljubljana_award_other }
+				}				
+			}
+			if = {
+				limit = {
+					ITA = {
+						OR = {
+							has_completed_focus = ITA_balkan_ambition
+							owns_state = 44
+						}
+						is_friend_or_potential_friend_of_GER = yes
+						NOT = { is_in_faction_with = YUG }
+					}
+				}
+				hidden_effect = {
+					ITA = { country_event = { id = italy.13 days = 1 } 
+						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+					}
+					set_country_flag = GER_first_ljubljana_award
+				}
+				effect_tooltip = {
+					ITA = {
+						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
+						if = {
+							limit = { has_completed_focus = ITA_balkan_ambition }
+							transfer_state = 103
+						}
+						if = {
+							limit = { owns_state = 44 }
+							transfer_state = 105
+						}
+						if = {
+							limit = { owns_state = 44 }
+							transfer_state = 802
+						}
+					}
+				}
+				every_other_country = {
+					limit = { 
+						is_faction_leader = yes
+						NOT = { tag = GER }
+					}
+					reverse_add_opinion_modifier = { target = ITA modifier = GER_first_ljubljana_award_other }
+				}				
+			}
+			#hidden_effect = {
+			#	news_event = { hours = 6 id = news.208 }
+			#}
+		}
+	}
+
+	focus = {
+		id = GER_fate_of_yugoslavia
+		prerequisite = { focus = GER_first_ljubljana_award }
+		allow_branch = {
+			always = no
+		}
+		icon = GFX_goal_generic_territory_or_war
+		available = {
+			is_subject = no
+			NOT = { has_war_with = YUG }
+			NOT = { is_in_faction_with = YUG }
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = YUG }
+				any_other_country = {
+					is_in_faction_with = ROOT
+					YUG = {
+						is_puppet_of = PREV
+					}
 				}
 			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_first_ljubljana_award
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }	
+		completion_reward = {
+			country_event = { id = germany.98 }
+			custom_effect_tooltip = yugoslavia_mefo_bills_tt
+		}
+	}
 
-			focus = {
-				id = GER_fate_of_yugoslavia
-				prerequisite = { focus = GER_first_ljubljana_award }
-				allow_branch = {
-					always = no
+	focus = {
+		id = GER_second_ljubljana_award
+		mutually_exclusive = { focus = GER_war_with_greece } 
+		prerequisite = { focus = GER_fate_of_yugoslavia }
+		icon = GFX_goal_generic_forceful_treaty
+		available = {
+			is_subject = no
+			GRE = { 
+				has_war = no 
+				owns_state = 731
+				owns_state = 186
+				owns_state = 185
+				owns_state = 47 
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_fate_of_yugoslavia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		#bypass = {
+		#	OR = {
+		#		GRE = {
+		#			NOT = { owns_state = 731 }
+		#			NOT = { owns_state = 186 }
+		#			NOT = { owns_state = 185 }
+		#			NOT = { owns_state = 47 }
+		#		}
+		#		AND = {
+		#			OR = {
+		#				NOT = { country_exists = ITA }
+		#				ITA = { has_war_with = GRE }
+		#				NOT = { has_completed_focus = ITA_greece_war_goal }
+		#				AND = {
+		#					ITA = {
+		#						NOT = { is_in_faction_with = GER }
+		#						is_in_faction = yes
+		#					}
+		#				}
+		#			}
+		#			OR = {
+		#				NOT = { country_exists = BUL }
+		#				BUL = { has_war_with = GRE }
+		#				AND = {
+		#					BUL = {
+		#						NOT = { is_in_faction_with = GER }
+		#						is_in_faction = yes
+		#					}
+		#				}
+		#			}
+		#			AND = {
+		#				731 = {
+		#					OR = {
+		#						NOT = { any_neighbor_state = { is_owned_by = GER } }
+		#						NOT = { is_owned_by = GRE }
+		#					}
+		#				}
+		#				47 = {
+		#					OR = {
+		#						NOT = { any_neighbor_state = { is_owned_by = GER } }
+		#						NOT = { is_owned_by = GRE }
+		#					}
+		#				}
+		#				185 = {
+		#					OR = {
+		#						NOT = { any_neighbor_state = { is_owned_by = GER } }
+		#						NOT = { is_owned_by = GRE }
+		#					}
+		#				}
+		#			}
+		#		}
+		#	}
+		#}
+
+		completion_reward = {
+			add_named_threat = { threat = 2 name = GER_second_ljubljana_award }
+			if = {
+				limit = {
+					GRE = {
+						OR = {
+							owns_state = 185
+							owns_state = 186
+							owns_state = 47
+						} 
+					}
+					ITA = {
+						NOT = { has_war_with = GRE }
+						country_exists = ITA
+						has_completed_focus = ITA_war_with_greece
+						OR = {
+							is_in_faction_with = GER
+							is_in_faction = no							
+						}
+					}
 				}
-				icon = GFX_goal_generic_territory_or_war
-				available = {
-					is_subject = no
-					NOT = { has_war_with = YUG }
-					NOT = { is_in_faction_with = YUG }
+				set_global_flag = GER_second_ljubljana_award_ITA_event
+				country_event = { id = germany.99 }
+			}
+			if = {
+				limit = {
+					GRE = { owns_state = 184 }
+					BUL = {
+						NOT = { has_war_with = GRE }
+						country_exists = BUL
+						OR = {
+							is_in_faction_with = GER
+							is_in_faction = no							
+						}
+					}
 				}
-				bypass = {
+				set_global_flag = GER_second_ljubljana_award_BUL_event
+				country_event = { id = germany.100 }
+			}
+			if = {
+				limit = {
+					any_neighbor_country = {
+						tag = GRE
+					}
 					OR = {
-						NOT = { country_exists = YUG }
-						any_other_country = {
-							is_in_faction_with = ROOT
-							YUG = {
-								is_puppet_of = PREV
-							}
-						}
-					}
-				}
-				x = 0
-				y = 1
-				relative_position_id = GER_first_ljubljana_award
-				cost = 10
-				ai_will_do = {
-					factor = 10
-				}
-				search_filters = { FOCUS_FILTER_ANNEXATION }	
-				completion_reward = {
-					country_event = { id = germany.98 }
-					custom_effect_tooltip = yugoslavia_mefo_bills_tt
-				}
-			}
-
-			focus = {
-				id = GER_second_ljubljana_award
-				mutually_exclusive = { focus = GER_war_with_greece } 
-				prerequisite = { focus = GER_fate_of_yugoslavia }
-				icon = GFX_goal_generic_forceful_treaty
-				available = {
-					is_subject = no
-					GRE = { 
-						has_war = no 
-						owns_state = 731
-						owns_state = 186
-						owns_state = 185
-						owns_state = 47 
-					}
-				}
-				x = 0
-				y = 1
-				relative_position_id = GER_fate_of_yugoslavia
-				cost = 10
-				ai_will_do = {
-					factor = 10
-				}
-
-				#bypass = {
-				#	OR = {
-				#		GRE = {
-				#			NOT = { owns_state = 731 }
-				#			NOT = { owns_state = 186 }
-				#			NOT = { owns_state = 185 }
-				#			NOT = { owns_state = 47 }
-				#		}
-				#		AND = {
-				#			OR = {
-				#				NOT = { country_exists = ITA }
-				#				ITA = { has_war_with = GRE }
-				#				NOT = { has_completed_focus = ITA_greece_war_goal }
-				#				AND = {
-				#					ITA = {
-				#						NOT = { is_in_faction_with = GER }
-				#						is_in_faction = yes
-				#					}
-				#				}
-				#			}
-				#			OR = {
-				#				NOT = { country_exists = BUL }
-				#				BUL = { has_war_with = GRE }
-				#				AND = {
-				#					BUL = {
-				#						NOT = { is_in_faction_with = GER }
-				#						is_in_faction = yes
-				#					}
-				#				}
-				#			}
-				#			AND = {
-				#				731 = {
-				#					OR = {
-				#						NOT = { any_neighbor_state = { is_owned_by = GER } }
-				#						NOT = { is_owned_by = GRE }
-				#					}
-				#				}
-				#				47 = {
-				#					OR = {
-				#						NOT = { any_neighbor_state = { is_owned_by = GER } }
-				#						NOT = { is_owned_by = GRE }
-				#					}
-				#				}
-				#				185 = {
-				#					OR = {
-				#						NOT = { any_neighbor_state = { is_owned_by = GER } }
-				#						NOT = { is_owned_by = GRE }
-				#					}
-				#				}
-				#			}
-				#		}
-				#	}
-				#}
-
-				completion_reward = {
-					add_named_threat = { threat = 2 name = GER_second_ljubljana_award }
-					if = {
-						limit = {
-							GRE = {
-								OR = {
-									owns_state = 185
-									owns_state = 186
-									owns_state = 47
-								} 
-							}
+						NOT = { country_exists = ITA }
+						AND = {
 							ITA = {
-								NOT = { has_war_with = GRE }
-								country_exists = ITA
-								has_completed_focus = ITA_war_with_greece
-								OR = {
-									is_in_faction_with = GER
-									is_in_faction = no							
-								}
+								NOT = { is_in_faction_with = GER }
+								is_in_faction = yes
 							}
 						}
-						set_global_flag = GER_second_ljubljana_award_ITA_event
-						country_event = { id = germany.99 }
 					}
-					if = {
-						limit = {
-							GRE = { owns_state = 184 }
+					OR = {
+						NOT = { country_exists = BUL }
+						AND = {
 							BUL = {
-								NOT = { has_war_with = GRE }
-								country_exists = BUL
-								OR = {
-									is_in_faction_with = GER
-									is_in_faction = no							
-								}
+								NOT = { is_in_faction_with = GER }
+								is_in_faction = yes
 							}
 						}
-						set_global_flag = GER_second_ljubljana_award_BUL_event
-						country_event = { id = germany.100 }
 					}
-					if = {
-						limit = {
-							any_neighbor_country = {
-								tag = GRE
-							}
-							OR = {
-								NOT = { country_exists = ITA }
-								AND = {
-									ITA = {
-										NOT = { is_in_faction_with = GER }
-										is_in_faction = yes
-									}
-								}
-							}
-							OR = {
-								NOT = { country_exists = BUL }
-								AND = {
-									BUL = {
-										NOT = { is_in_faction_with = GER }
-										is_in_faction = yes
-									}
-								}
-							}
-						}
-						set_global_flag = GER_second_ljubljana_award_GER_event
-						country_event = { id = germany.101 }
-					}
-					custom_effect_tooltip = GER_second_ljubljana_award_tt
 				}
+				set_global_flag = GER_second_ljubljana_award_GER_event
+				country_event = { id = germany.101 }
 			}
+			custom_effect_tooltip = GER_second_ljubljana_award_tt
+		}
+	}
 
-			focus = {
-				id = GER_war_with_greece
-				prerequisite = { focus = GER_fate_of_yugoslavia }
-				mutually_exclusive = { focus = GER_second_ljubljana_award } 
-				icon = GFX_goal_generic_occupy_states_ongoing_war
-				will_lead_to_war_with = GRE
-				available = {
-		date > 1940.1.1
+	focus = {
+		id = GER_war_with_greece
+		prerequisite = { focus = GER_fate_of_yugoslavia }
+		mutually_exclusive = { focus = GER_second_ljubljana_award } 
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		will_lead_to_war_with = GRE
+		available = {
+date > 1940.1.1
 			GRE = { 
 				exists = yes
 				has_war = yes
@@ -10145,7 +10045,7 @@ focus = {
 
 
 
-	focus = {
+focus = {
 		id = GER_war_iraq
 		text = GER_war_iraq
 		icon = GFX_focus_ger_oppose_hitler
@@ -10155,30 +10055,31 @@ focus = {
 		}
 		x = 25
 		y = 10
-		available = {
-			has_war_with = ENG
-			ENG = {
-				NOT = {
-					controls_state = 447
-					controls_state = 446
+available = {
+					has_war_with = ENG
+					ENG = {
+							NOT = {
+									controls_state = 447
+									controls_state = 446
+								}
+						}
 				}
-			}
-		}
+			bypass = {
+					IRQ = {
+							exists = no
+						}
+				}
+			will_lead_to_war_with = IRQ
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = IRQ
+						}
+				}
 
-		bypass = {
-			IRQ = {
-				exists = no
-			}
-		}
-		will_lead_to_war_with = IRQ
-
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = IRQ
-			}
-		}
 	}
 
 	focus = {
@@ -10207,4 +10108,5 @@ focus = {
 			}
 		}
 	}
+}
 }
