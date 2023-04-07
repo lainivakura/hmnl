@@ -1992,7 +1992,7 @@ conscription = 0.1
 			equipment_bonus = {
 				
 			}
-			
+			modifier = {aircraft_manufacturer_cost_factor = -0.6}
 			ai_will_do = {
 				factor = 1
 			}
