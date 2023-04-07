@@ -2585,7 +2585,7 @@ add_tech_bonus = {
 					bonus = 1.0
 					uses = 2
 					technology = improved_light_tank_chassis
-					technology = advanced_medium_tank_chassis
+					technology = improved_medium_tank_chassis
 				}
 			}
 			else = {
@@ -3582,27 +3582,6 @@ focus = {
 				}
 	}
 
-	
-	focus = {
-		id = naval_strong
-		text = naval_strong
-		prerequisite = { focus = GER_sloti_late focus = GER_specnaz }
-		mutually_exclusive = { focus = jagernotprogramm }
-		icon = GFX_focus_GER_plan_z
-		cost = 4
-		
-		x = 11
-		y = 9
-		available = {
-					date > 1942.9.1						
-				}
-			completion_reward = {
-					add_timed_idea = {
-							idea = GER_naval_war
-							days = 180
-						}
-					}
-	}
 
 
 		focus = {
@@ -10121,5 +10100,4 @@ available = {
 			}
 		}
 	}
-}
 }

@@ -1848,7 +1848,7 @@
 		x = 15
 		y = 0
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -1920,7 +1920,7 @@
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 5
@@ -1944,15 +1944,6 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-					random_owned_controlled_state = {
-				prioritize = { 285 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				}
 			build_railway = {
 				path = { 1652 2157 10983 1526 10949 8200 10969 2191 12948 5197 8165 10927 8186 }
 			}
@@ -2303,7 +2294,7 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-				random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				prioritize = { 517 }
 				limit = {
 					free_building_slots = {
@@ -2311,7 +2302,7 @@
 						size > 0
 					}
 				}
-				}
+			}
 			build_railway = {
 				level = 2
 				path = { 7669 1431 12104 1454 }
@@ -2471,7 +2462,7 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2601,7 +2592,7 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2973,7 +2964,7 @@
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
