@@ -1,5 +1,130 @@
 add_namespace = Atomevents
 
+country_event = {
+	id = Atomevents.1488
+	title = Atomevents.1488.t
+	desc =  Atomevents.1488.d
+	picture = GFX_report_event_stalin_propaganda
+
+    trigger = {
+        tag = SOV
+		date > 1941.11.1
+		date < 1942.03.1
+		GER = {
+		controls_state = 246
+		controls_state = 205
+		controls_state = 242
+		controls_state = 243
+
+			}
+    }
+		mean_time_to_happen = {
+		days = 7
+	}
+	option = { 
+	219 = {	
+	add_dynamic_modifier = {
+	modifier = SOV_counterattack_moskva
+	scope =  SOV
+	days = 90
+}
+}
+	
+	223 = {	
+	add_dynamic_modifier = {
+	modifier = SOV_counterattack_moskva
+	scope =  SOV
+	days = 60
+}
+}
+
+	247 = {	
+	add_dynamic_modifier = {
+	modifier = SOV_counterattack_moskva
+	scope =  SOV
+	days = 60
+}
+}
+}
+}
+
+
+
+country_event = {
+	id = Atomevents.1489
+	title = Atomevents.1489.t
+	desc =  Atomevents.1489.d
+	picture = GFX_report_event_stalin_propaganda
+
+    trigger = {
+        tag = SOV
+		date > 1941.11.1
+		date < 1942.03.1
+		GER = {
+		controls_state = 227
+		controls_state = 228
+			}
+    }
+		mean_time_to_happen = {
+		days = 7
+	}
+	option = { 
+	218 = {	
+	add_dynamic_modifier = {
+	modifier = SOV_counterattack_rostov
+	scope =  SOV
+	days = 35
+}
+}
+	245 = {	
+	add_dynamic_modifier = {
+	modifier = SOV_counterattack_rostov
+	scope =  SOV
+	days = 35
+}
+}
+}
+}
+
+
+country_event = {
+	id = Atomevents.1490
+	title = Atomevents.1490.t
+	desc =  Atomevents.1490.d
+	picture = GFX_report_event_stalin_propaganda
+
+    trigger = {
+        tag = SOV
+		date > 1941.11.1
+		date < 1942.03.1
+		GER = {
+		controls_state = 263
+		controls_state = 208
+			}
+    }
+		mean_time_to_happen = {
+		days = 7
+	}
+	option = { 
+	244 = {	
+	add_dynamic_modifier = {
+	modifier = SOV_counterattack_tikhvin
+	scope =  SOV
+	days = 35
+}
+}
+	264 = {	
+	add_dynamic_modifier = {
+	modifier = SOV_counterattack_tikhvin
+	scope =  SOV
+	days = 35
+}
+}
+}
+}
+
+
+
 
 
 country_event = {
