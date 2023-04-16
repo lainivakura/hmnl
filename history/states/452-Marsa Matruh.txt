@@ -15,6 +15,22 @@ state={
 		victory_points = {
 			9989 1 
 		}
+		victory_points = {
+			7079 1 
+		}
+		victory_points = {
+			11910 1 
+		}
+		victory_points = {
+			12091 1 
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			10061 = {
+				naval_base = 1
+			}
+		}
 		add_core_of = PRC
 
 	}

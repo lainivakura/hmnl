@@ -1,5 +1,162 @@
 add_namespace = Atomevents
 
+
+
+country_event = {
+	id = Atomevents.1487
+	title = Atomevents.1487.t
+	desc =  Atomevents.1487.d
+	picture = GFX_report_event_german_troops
+
+    trigger = {
+        tag = ENG
+		FRA = { has_capitulated = yes }
+    }
+		mean_time_to_happen = {
+		days = 7
+	}
+	option = { 
+	451 = {	
+	add_dynamic_modifier = {
+	modifier = ENG_africa_offencive
+	scope =  ENG 
+	days = 150
+	}	
+}
+	663 = {	
+	add_dynamic_modifier = {
+	modifier = ENG_africa_offencive
+	scope =  ENG 
+	days = 150
+	}	
+}	
+
+
+451 = {	
+	add_dynamic_modifier = {
+	modifier = ENG_africa_offencive
+	scope =  AST
+	days = 150
+	}	
+}
+	663 = {	
+	add_dynamic_modifier = {
+	modifier = ENG_africa_offencive
+	scope =  AST
+	days = 150
+	}	
+}	
+
+451 = {	
+	add_dynamic_modifier = {
+	modifier = ENG_africa_offencive
+	scope =  RAJ
+	days = 150
+	}	
+}
+	663 = {	
+	add_dynamic_modifier = {
+	modifier = ENG_africa_offencive
+	scope =  RAJ
+	days = 150
+	}	
+}	
+	}
+}
+
+country_event = {
+	id = Atomevents.1486
+	title = Atomevents.1486.t
+	desc =  Atomevents.1486.d
+	picture = GFX_report_event_german_troops
+
+    trigger = {
+        tag = GER
+		date > 1940.03.1
+		FRA = { has_capitulated = yes }
+    }
+		mean_time_to_happen = {
+		days = 7
+	}
+	option = { 
+	452 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  GER
+	days = 120
+	}	
+}
+	447 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  GER
+	days = 90
+	}	
+}	
+
+    907 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  GER
+	days = 90
+	}	
+}
+
+
+452 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  HUN
+	days = 120
+	}	
+}
+	447 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  HUN
+	days = 90
+	}	
+}	
+
+    907 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  HUN
+	days = 90
+	}	
+}
+
+
+
+452 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  ROM
+	days = 120
+	}	
+}
+	447 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  ROM
+	days = 90
+	}	
+}	
+
+    907 = {	
+	add_dynamic_modifier = {
+	modifier = GER_africa_offencive
+	scope =  ROM
+	days = 90
+	}	
+}
+
+
+	}
+}
+
+
+
 country_event = {
 	id = Atomevents.1488
 	title = Atomevents.1488.t

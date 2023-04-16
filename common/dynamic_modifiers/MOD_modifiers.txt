@@ -26,3 +26,19 @@ GER_counterattack = {
 	supply_node_range = 0.1
 	max_planning = 0.05
 }
+
+GER_africa_offencive = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	breakthrough_factor  = 0.25
+	supply_node_range = 0.3
+	max_planning = 0.2
+}
+
+ENG_africa_offencive = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	breakthrough_factor  = 0.3
+	supply_node_range = 0.15
+	max_planning = 0.2
+}
