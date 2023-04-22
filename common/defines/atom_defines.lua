@@ -25,14 +25,16 @@ NDefines.NDiplomacy.FLEET_FEAR = 0
 NDefines.NDiplomacy.EMBARGO_COST = 9999
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
----Воздух с мультифлекса	
+
+---Воздух
 
 
 -- NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
 
- 
--- NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
-NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 20
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.1
+-- NDefines.NAir.PORT_STRIKE_ENEMY_SUPERIORITY_LIMIT = 0.3			-- Min air superiority for performing of naval strike ( не работает ? )
+NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
+NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 20 -- урон по самолетам на филдах
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
