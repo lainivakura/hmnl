@@ -1,0 +1,123 @@
+Air_frames_limit = {
+	name = "Air_frames_limit"
+	group = "Ограничение исследований"
+
+	option = {
+		name = vanilla
+		text = "vanilla"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_0
+		text = "years_0"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_1
+		text = "years_1"
+		allow_achievements = yes
+	}	
+	default = {
+		name = years_2
+		text = "years_2"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_3
+		text = "years_3"
+		allow_achievements = yes
+	}
+}
+
+Air_tech_limit = {
+	name = "Air_tech_limit"
+	group = "Ограничение исследований"
+
+	option = {
+		name = vanilla
+		text = "vanilla"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_0
+		text = "years_0"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_1
+		text = "years_1"
+		allow_achievements = yes
+	}
+	default = {
+		name = years_2
+		text = "years_2"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_3
+		text = "years_3"
+		allow_achievements = yes
+	}
+}
+
+tank_frame_medium_limit = {
+	name = "tank_frame_medium_limit"
+	group = "Ограничение исследований"
+
+	option = {
+		name = vanilla
+		text = "vanilla"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_0
+		text = "years_0"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_1
+		text = "years_1"
+		allow_achievements = yes
+	}	
+	default = {
+		name = years_2
+		text = "years_2"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_3
+		text = "years_3"
+		allow_achievements = yes
+	}
+}
+
+tank_frame_heavy_limit = {
+	name = "tank_frame_heavy_limit"
+	group = "Ограничение исследований"
+
+	option = {
+		name = vanilla
+		text = "vanilla"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_0
+		text = "years_0"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_1
+		text = "years_1"
+		allow_achievements = yes
+	}	
+	default = {
+		name = years_2
+		text = "years_2"
+		allow_achievements = yes
+	}
+	option = {
+		name = years_3
+		text = "years_3"
+		allow_achievements = yes
+	}
+}

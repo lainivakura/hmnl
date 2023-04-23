@@ -512,8 +512,43 @@ technologies = {
 
 	}
 	improved_medium_tank_chassis = {	#Panzer IV
-			allow = { 
-			date > 1939.1.1
+		allow = {
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_0 
+					} 
+				}
+				date > 1941.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_1 
+					} 
+				}
+				date > 1940.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_2 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_3 
+					} 
+				}
+				date > 1938.1.1 
+			}
 		}
 		
 		enable_equipments = {
@@ -593,8 +628,43 @@ technologies = {
 		}
 	}
 	advanced_medium_tank_chassis = {	#Panther
-			allow = { 
-			date > 1942.1.1
+		allow = {
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_0 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_1 
+					} 
+				}
+				date > 1942.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_2 
+					} 
+				}
+				date > 1941.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_medium_limit  
+						option = years_3 
+					} 
+				}
+				date > 1940.1.1 
+			}
 		}
 		enable_equipments = {
 			medium_tank_chassis_3
@@ -810,9 +880,44 @@ technologies = {
 			armor
 			cat_heavy_armor
 		}
-		allow = { 
-			date > 1939.1.1
-		}	
+		allow = {
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_0 
+					} 
+				}
+				date > 1941.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_1 
+					} 
+				}
+				date > 1940.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_2 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_3 
+					} 
+				}
+				date > 1938.1.1 
+			}
+		}
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 6 y = @1941 }
@@ -869,8 +974,43 @@ technologies = {
 			armor
 			cat_heavy_armor
 		}
-		allow = { 
-			date > 1942.1.1
+		allow = {
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_0 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_1 
+					} 
+				}
+				date > 1942.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_2 
+					} 
+				}
+				date > 1941.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = tank_frame_heavy_limit  
+						option = years_3 
+					} 
+				}
+				date > 1940.1.1 
+			}
 		}
 		folder = {
 			name = nsb_armour_folder
