@@ -447,7 +447,7 @@ GER_reichskommissariats = {
 	GER_reichskommissariat_norwegen = {
 
 		icon = ger_reichskommissariats
-	fire_only_once = yes
+		fire_only_once = yes
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -472,17 +472,17 @@ GER_reichskommissariats = {
 		}
 
 		complete_effect = {
-						110 = { add_compliance = 50}
-						142 = {add_compliance = 50}
-						143 = {add_compliance = 50 }
-						144 = {add_compliance = 50 }
-					}
-				}
+			110 = { add_compliance = 50}
+			142 = {add_compliance = 50}
+			143 = {add_compliance = 50 }
+			144 = {add_compliance = 50 }
+		}
+	}
 
 	GER_reichskommissariat_niederlande = {
 
 		icon = ger_reichskommissariats
-	fire_only_once = yes
+		fire_only_once = yes
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -507,16 +507,16 @@ GER_reichskommissariats = {
 		}
 
 		complete_effect = {
-					7 = {add_compliance = 50 }
-					35 = {add_compliance = 50 }
-					36 = {add_compliance = 50 }		                        
-					}
-				}
+			7 = {add_compliance = 50 }
+			35 = {add_compliance = 50 }
+			36 = {add_compliance = 50 }		                        
+		}
+	}
 
 	GER_reichskommissariat_belgien_nordfrankreich = {
 
 		icon = ger_reichskommissariats
-	fire_only_once = yes
+		fire_only_once = yes
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
@@ -542,36 +542,36 @@ GER_reichskommissariats = {
 
 		complete_effect = {
 			
-					6 = {add_compliance = 50 }
-					34 = {add_compliance = 50 }
+			6 = {add_compliance = 50 }
+			34 = {add_compliance = 50 }
 		}
 	}
 
-GER_reichskommissariat_danemark = {
+	GER_reichskommissariat_danemark = {
 		icon = ger_reichskommissariats
 
 		fire_only_once = yes
 
 		available = {
-			has_completed_focus = GER_form_the_reichskommissariats
-			has_government = fascism
-			controls_state = 37
-			controls_state = 99
+				has_completed_focus = GER_form_the_reichskommissariats
+				has_government = fascism
+				controls_state = 37
+				controls_state = 99
 		}
 
 		cost = 0
 
-        visible = {
+		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-}
-		complete_effect = {
-		            37 = {add_compliance = 50 }
-					99 = {add_compliance = 50 }
-			}
 		}
-			
-			GER_reichskommissariat_iraq = {
+		complete_effect = {
+			37 = {add_compliance = 50 }
+			99 = {add_compliance = 50 }
+		}
+	}
+
+	GER_reichskommissariat_iraq = {
 		icon = ger_reichskommissariats
 
 		fire_only_once = yes
@@ -586,16 +586,16 @@ GER_reichskommissariat_danemark = {
 
 		cost = 0
 
-        visible = {
+		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
-}
-		complete_effect = {
-		            676 = {add_compliance = 50 }
-					675 = {add_compliance = 50 }
-					291 = {add_compliance = 50 }
-			}
 		}
+		complete_effect = {
+			676 = {add_compliance = 50 }
+			675 = {add_compliance = 50 }
+			291 = {add_compliance = 50 }
+		}
+	}
 		
 	GER_reichskommissariat_ostland = {
 
@@ -646,25 +646,25 @@ GER_reichskommissariat_danemark = {
 		}
 
 		complete_effect = {
-				11 = {add_compliance = 50 }
-				784 = {add_compliance = 50 }
-				189 = {add_compliance = 50 }
-				12 = {add_compliance = 50 }
-				190 = {add_compliance = 50 }
-				13 = {add_compliance = 50 }
-				191 = {add_compliance = 50 }
-				97 = {add_compliance = 50 }
-				94 = {add_compliance = 50 }
-				95 = {add_compliance = 50 }
-				96 = {add_compliance = 50 }
-				194 = {add_compliance = 50 }
-				204 = {add_compliance = 50 }
-				206 = {add_compliance = 50 }
-				207 = {add_compliance = 50 }
-				241 = {add_compliance = 50 }
-				784 = {add_compliance = 50 }
-					}
-				}
+			11 = {add_compliance = 50 }
+			784 = {add_compliance = 50 }
+			189 = {add_compliance = 50 }
+			12 = {add_compliance = 50 }
+			190 = {add_compliance = 50 }
+			13 = {add_compliance = 50 }
+			191 = {add_compliance = 50 }
+			97 = {add_compliance = 50 }
+			94 = {add_compliance = 50 }
+			95 = {add_compliance = 50 }
+			96 = {add_compliance = 50 }
+			194 = {add_compliance = 50 }
+			204 = {add_compliance = 50 }
+			206 = {add_compliance = 50 }
+			207 = {add_compliance = 50 }
+			241 = {add_compliance = 50 }
+			784 = {add_compliance = 50 }
+		}
+	}
 
 	GER_reichskommissariat_ukraine = {
 
@@ -711,24 +711,24 @@ GER_reichskommissariat_danemark = {
 
 		complete_effect = {
 			93 = {add_compliance = 50 }
-				91 = {add_compliance = 50 }
-				89 = {add_compliance = 50 }
-				199 = {add_compliance = 50 }
-				201 = {add_compliance = 50 }
-				198 = {add_compliance = 50 }
-				202 = {add_compliance = 50 }
-				193 = {add_compliance = 50 }
-				192 = {add_compliance = 50 }
-				203 = {add_compliance = 50 }
-				197 = {add_compliance = 50 }
-				225 = {add_compliance = 50 }
-				259 = {add_compliance = 50 }
-				226 = {add_compliance = 50 }
-				196 = {add_compliance = 50 }
-				200 = {add_compliance = 50 }
-				221 = {add_compliance = 50 }
-				228 = {add_compliance = 50 }
-				227 = {add_compliance = 50 }
+			91 = {add_compliance = 50 }
+			89 = {add_compliance = 50 }
+			199 = {add_compliance = 50 }
+			201 = {add_compliance = 50 }
+			198 = {add_compliance = 50 }
+			202 = {add_compliance = 50 }
+			193 = {add_compliance = 50 }
+			192 = {add_compliance = 50 }
+			203 = {add_compliance = 50 }
+			197 = {add_compliance = 50 }
+			225 = {add_compliance = 50 }
+			259 = {add_compliance = 50 }
+			226 = {add_compliance = 50 }
+			196 = {add_compliance = 50 }
+			200 = {add_compliance = 50 }
+			221 = {add_compliance = 50 }
+			228 = {add_compliance = 50 }
+			227 = {add_compliance = 50 }
 			
 		}
 	}
@@ -1002,6 +1002,7 @@ GER_military_buildup = {
 		icon = generic_air
 
 		available = {
+			always = no
 			has_war = yes
 			AND = {
 				has_deployed_air_force_size = {
