@@ -140,7 +140,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 		allow = {
-			date > 1938.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1937.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -217,7 +252,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1944
 		allow = {
-			date > 1942.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1944.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1942.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1941.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -283,7 +353,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1945
 		allow = {
-			date > 1943.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1945.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1944.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1942.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -418,7 +523,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 		allow = {
-			date > 1938.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1937.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -477,7 +617,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1944
 		allow = {
-			date > 1942.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1944.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1942.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1941.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -529,7 +704,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1945
 		allow = {
-			date > 1943.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1945.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1944.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1942.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -647,7 +857,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 		allow = {
-			date > 1938.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1937.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -690,7 +935,42 @@ technologies = {
 		research_cost = 2
 		start_year = 1944
 		allow = {
-			date > 1942.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1944.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1942.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1941.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -726,9 +1006,44 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1950
+		start_year = 1945
 		allow = {
-			date > 1948.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_0 
+					} 
+				}
+				date > 1945.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_1 
+					} 
+				}
+				date > 1944.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_2 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_frames_limit  
+						option = years_3 
+					} 
+				}
+				date > 1942.1.1 
+			}
 		}
 		dependencies = {
 			jet_engines = 1
@@ -937,6 +1252,44 @@ technologies = {
 		research_cost = 1
 		start_year = 1939
 
+		allow = {
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_0 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_1 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_2 
+					} 
+				}
+				date > 1937.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_3 
+					} 
+				}
+				date > 1936.1.1 
+			}
+		}
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 5 }
@@ -977,7 +1330,44 @@ technologies = {
 		
 		research_cost = 1
 		start_year = 1939
-
+		allow = {
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_0 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_1 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_2 
+					} 
+				}
+				date > 1937.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_3 
+					} 
+				}
+				date > 1936.1.1 
+			}
+		}
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 5 }
@@ -1025,7 +1415,42 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1943
 		allow = {
-			date > 1941.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_0 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_1 
+					} 
+				}
+				date > 1942.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_2 
+					} 
+				}
+				date > 1941.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_3 
+					} 
+				}
+				date > 1940.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -1198,7 +1623,42 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1940
 		allow = {
-			date > 1938.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_0 
+					} 
+				}
+				date > 1940.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_1 
+					} 
+				}
+				date > 1939.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_2 
+					} 
+				}
+				date > 1938.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_3 
+					} 
+				}
+				date > 1937.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
@@ -1254,7 +1714,42 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1944
 		allow = {
-			date > 1942.1.1 
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_0 
+					} 
+				}
+				date > 1944.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_1 
+					} 
+				}
+				date > 1943.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_2 
+					} 
+				}
+				date > 1942.1.1 
+			}
+			if = {
+				limit = {
+					has_game_rule =  { 
+						rule = Air_tech_limit  
+						option = years_3 
+					} 
+				}
+				date > 1941.1.1 
+			}
 		}
 		folder = {
 			name = bba_air_techs_folder
