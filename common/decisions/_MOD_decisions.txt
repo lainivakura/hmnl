@@ -364,3 +364,24 @@ z_annex_bot_d = {
 		}
 	}
 }
+
+d_occupation_decisions = {
+	SPR_player = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = {
+			original_tag = SPR
+		}
+		
+		available = {
+		}
+	
+		visible = {
+			original_tag = SPR
+		}
+
+		complete_effect = {
+			ROOT = {remove_ideas = Horrors_WW1}
+		}
+	}
+}
