@@ -18,6 +18,15 @@ state={
 		victory_points = {
 			6420 1 
 		}
+		victory_points = {
+			3479 1 
+		}
+		victory_points = {
+			3491 1 
+		}
+		victory_points = {
+			3466 1 
+		}
 		add_core_of = SOV
 	}
 
