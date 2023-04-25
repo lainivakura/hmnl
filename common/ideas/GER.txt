@@ -250,8 +250,22 @@ GER_folcsturm= {
 conscription = 0.1
 				
 }
-
 }
+
+GER_prom = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				always = no # Added via event
+			}
+
+				modifier = {
+				industrial_capacity_factory  = 0.1	
+				compliance_growth  = 0.05		
+  	}
+}
+
 	sour_loser = {
 			
 			allowed = {
@@ -293,6 +307,120 @@ conscription = 0.1
 
 			}
 		}
+
+		podgotovka_k_voine = {
+			
+			picture = man_five_year_plan_tank
+
+
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.3 instant = yes
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				light_tank_artillery_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				train_equipment = {
+					build_cost_ic = -0.1
+				}
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+
+		}
+
+		more_more_more = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+		
+			modifier = {
+				
+			}
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.3
+			}
+		}	
+ 
+			air_defence1 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+		
+			modifier = {
+				
+			}
+			
+			modifier = {
+				air_defence_factor = 0.15
+			}
+		}
+
+
+
+
+         fall_gelb =  {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+			
+			targeted_modifier = {
+			tag = ENG
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+			}
+
+			targeted_modifier = {
+			tag = FRA
+			attack_bonus_against = 0.05
+			defense_bonus_against = 0.05
+			}
+		}	
 
 		triumphant_will = {
 			
