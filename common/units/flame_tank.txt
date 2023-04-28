@@ -74,6 +74,9 @@ sub_units = {
 		river = {
 			attack = 0.1
 		}
+		large_town = {
+			attack = 0.05
+		}
 		amphibious = {
 			attack = 0.1
 		}

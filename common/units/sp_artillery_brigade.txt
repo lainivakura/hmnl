@@ -40,6 +40,11 @@ category_artillery
 		    attack = -0.2
 			movement = -0.4
 		}
+		large_town = {
+		    attack = -0.15
+			movement = -0.4
+			defence = -0.5
+		}
 		mountain = 	{
 		    attack = -0.1
 		}

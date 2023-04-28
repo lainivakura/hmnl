@@ -42,6 +42,11 @@ sub_units = {
 		    attack = -0.2
 			movement = -0.4
 		}
+		large_town = {
+		    attack = -0.3
+			movement = -0.4
+			defence = -0.1
+		}
 		mountain = 	{
 		    attack = -0.1
 		}
