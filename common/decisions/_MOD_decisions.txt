@@ -326,42 +326,6 @@ z_annex_bot_d = {
 	# }
 
 
-		GER_air_defence = {
-
-		icon = generic_air
-
-		cost = 10
-		fire_only_once = no
-
-		available = {
-			has_war = yes
-			date > 1942.1.1 
-			OR = {
-			ENG = { controls_state = 14 }
-			}
-			OR = {
-			ENG = { controls_state = 15 }
-			}
-			OR = {
-			ENG = { controls_state = 6  }
-			}
-			OR = {
-			ENG = { controls_state = 7 }
-			}
-		}
-		
-		visible = {
-			has_war = yes
-			}
-
-		complete_effect = {
-			
-			add_timed_idea = { idea = air_defence1 days = 150 }
-		}
-	}
-
-
-
 	GER_annex_ROM = {
 
 		icon = ger_reichskommissariats

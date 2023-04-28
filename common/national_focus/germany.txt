@@ -2964,10 +2964,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }	
 		completion_reward = {
-			add_timed_idea = {
-				idea = more_more_more
-				days = 900
-			}
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			set_global_flag = rhineland_remilitarized
@@ -4688,10 +4684,6 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-				add_timed_idea = {
-				idea = fall_gelb
-				days = 90
-			}
 			ENG = {add_to_faction = BEL}
 			ENG = {add_to_faction = HOL}
 			ENG = {add_to_faction = LUX}

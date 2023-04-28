@@ -14,6 +14,27 @@ state={
 		victory_points = {
 			6380 50 
 		}
+		victory_points = {
+			13258 1
+		}
+		victory_points = {
+			13262 1
+		}
+		victory_points = {
+			13259 1
+		}
+		victory_points = {
+			13260 1
+		}
+		victory_points = {
+			13261 1
+		}
+		victory_points = {
+			6290 1
+		}
+		victory_points = {
+			3358 1
+		}
 		buildings = {
 			infrastructure = 4 #was: 8
 			arms_factory = 7
