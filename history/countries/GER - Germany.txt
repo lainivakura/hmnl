@@ -1,5 +1,6 @@
-﻿capital = 64
-add_ideas = warm_blood
+﻿capital = 6
+add_ideas = razgon
+add_ideas = warm_blood 
 if = {
 	limit = {
 		NOT = {

@@ -1,5 +1,5 @@
 ﻿capital = 361
-
+add_ideas = razgon
 oob = "USA_1936"
 
 starting_train_buffer = 5

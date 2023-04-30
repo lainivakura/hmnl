@@ -1,5 +1,5 @@
 ﻿capital = 155
-
+add_ideas = razgon
 oob = "HUN_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }

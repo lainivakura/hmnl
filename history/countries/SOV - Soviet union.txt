@@ -2,7 +2,7 @@
 ####
 #### NO STEP BACK
 ####
-
+add_ideas = razgon
 
 #You don't want Russian party names? Just remove these lines
 set_party_name = {

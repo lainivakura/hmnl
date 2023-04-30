@@ -1,5 +1,16 @@
 ideas = {
 	country = {
+			razgon = {
+				picture = generic_infantry_bonus
+				modifier = {
+					production_factory_start_efficiency_factor = 0.5 
+				}
+				cancel = {
+					date > 1936.01.02
+				}
+			}
+
+
 		warm_blood = {
 			picture = SOV_the_road_of_life
 			modifier = {acclimatization_cold_climate_gain_factor = -9}

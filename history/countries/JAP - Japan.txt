@@ -1,5 +1,5 @@
 ﻿capital = 282
-
+add_ideas = razgon
 
 
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
