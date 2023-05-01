@@ -10,10 +10,10 @@ country_event = {
 
     trigger = {
         tag = ENG
-		FRA = { has_capitulated = yes }
+		date > 1939.12.1
     }
 		mean_time_to_happen = {
-		days = 7
+		days = 2
 	}
 	option = { 
 	451 = {	
@@ -73,10 +73,9 @@ country_event = {
     trigger = {
         tag = GER
 		date > 1940.03.1
-		FRA = { has_capitulated = yes }
     }
 		mean_time_to_happen = {
-		days = 7
+		days = 2
 	}
 	option = { 
 	452 = {	
