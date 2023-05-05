@@ -34,7 +34,7 @@ NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2
 -- NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
 -- NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.1
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.25 --1
 
 NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1
@@ -91,6 +91,8 @@ NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 500000
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipment for every year of equipment after 1936
+
+
 
 
 
