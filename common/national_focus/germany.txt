@@ -3002,7 +3002,7 @@ focus_tree = {
 			}
 		}
 		x = 1
-		y = 9
+		y = 7
 		relative_position_id = GER_rhineland
 		cost = 1
 
@@ -3064,7 +3064,7 @@ focus_tree = {
 			}
 		}
 		x = 3
-		y = 9
+		y = 7
 		relative_position_id = GER_rhineland
 		cost = 10
 		ai_will_do = {
@@ -3093,7 +3093,7 @@ focus_tree = {
 		id = GER_anti_comitern_pact
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_rhineland  }
-		x = 5
+		x = -3
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 1
@@ -3254,6 +3254,8 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
+			add_ideas = GER_dalnost
+
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
 						days = 150
@@ -3831,6 +3833,21 @@ focus_tree = {
 				surrender_progress > 0.8
 			}
 		}
+		OR = {
+			ROM = {
+				has_capitulated = yes
+		   }
+	   }
+	   OR = {
+		HUN = {
+			has_capitulated = yes
+	   }
+   }
+   OR = {
+	ITA = {
+		has_capitulated = yes
+   }
+}
 	}
 	
 
@@ -4113,7 +4130,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -4421,7 +4438,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		x = 0
-		y = 3
+		y = 1
 		relative_position_id = GER_demand_memel
 		cost = 1
 		ai_will_do = {
@@ -4558,7 +4575,7 @@ focus_tree = {
 		}
 		
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = GER_danzig_or_war
 		cost = 4
 		ai_will_do = {
@@ -4665,7 +4682,7 @@ focus_tree = {
 		will_lead_to_war_with = LUX
 		will_lead_to_war_with = FRA
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = GER_danzig_or_war
 		cost = 4
 		ai_will_do = {
@@ -4916,7 +4933,7 @@ focus_tree = {
 			is_puppet = yes
 		}
 		cancel_if_invalid = yes
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -5212,7 +5229,7 @@ focus_tree = {
 		id = GER_second_vienna_award
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = GER_czech_friend focus = GER_end_of_czechoslovakia }
-		x = 2
+		x = 0
 		y = 3
 		relative_position_id = GER_czech_friend
 		cost = 1
@@ -6340,7 +6357,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_improve_national_spirit
-		prerequisite = { focus = GER_anschluss }
+		prerequisite = { focus = GER_war_with_france }
 		icon = GFX_goal_support_fascism
 		available = {
 			custom_trigger_tooltip = {
@@ -6380,7 +6397,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		x = 5
-		y = 1
+		y = 5
 		relative_position_id = GER_anschluss
 		cost = 10
 		ai_will_do = {
@@ -6398,7 +6415,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_demand_slovenia
-		prerequisite = { focus = GER_anschluss }
+		prerequisite = { focus = GER_war_with_france }
 		icon = GFX_goal_generic_political_pressure
 		available = {
 		date > 1940.1.1
@@ -6424,7 +6441,7 @@ focus_tree = {
 				}
 				cancel_if_invalid = yes
 				x = 3
-				y = 1
+				y = 5
 				relative_position_id = GER_anschluss
 				cost = 1
 				ai_will_do = {
@@ -10125,8 +10142,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_war_with_france
 		}
-		x = 25
-		y = 10
+		x = 24
+		y = 6
 		available = {
 			has_war_with = ENG
 			ENG = {

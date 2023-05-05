@@ -1,0 +1,52 @@
+d_occupation_decisions = {
+	ITA_occupation_law_FROM = {
+		icon = generic_operation
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = ITA
+		}
+		
+		available = {
+			FROM = {
+				has_defensive_war = yes
+				has_capitulated = yes
+				is_ai = yes
+			}
+			date < 1941.06.1
+		}
+
+		visible = {
+			date < 1941.06.1
+		}
+
+		targets = { ALB IRQ }
+
+		target_root_trigger = { original_tag = ITA }
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = IRQ
+					original_tag = ALB
+				}        
+					NOT = {
+					has_country_flag = d_occupation_law
+				}
+			}
+		}
+		days_remove = 30
+		modifier = {
+			civilian_factory_use = 5
+		} 
+		remove_effect = {
+			FROM = { set_country_flag = d_occupation_law }
+			ITA = {
+				every_state = {
+					limit = { is_core_of = FROM }
+					add_compliance = 100
+				}
+			}
+		}
+	}
+}

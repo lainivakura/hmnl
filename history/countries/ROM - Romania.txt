@@ -88,7 +88,6 @@ if = {
 	}
 	set_technology = {
 		gwtank = 1
-		basic_light_tank = 1
 	}
 }
 if = {
@@ -98,6 +97,7 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
 	}
 }
 if = {

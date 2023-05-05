@@ -13,7 +13,7 @@ ITA_LARGE_tt: "\nКогда изучена технология §Y$improved_lar
  tretiy_udar: "Операция Цитадель"
  kharkov_nastup: "Харьковское контрнаступление"
  pribaltika_nastup: "Операция Цезарь" 
-#  naval_strong: "Фокусирование на морском владычестве"
+ GER_naval_strong: "Фокусирование на морском владычестве"
  jagernotprogramm: "Срочная истребительная программа"
  mass_tank_production: "Массовое производство танков"
  endsieg: "ENDSIEG"
@@ -24,3 +24,4 @@ ITA_LARGE_tt: "\nКогда изучена технология §Y$improved_lar
  GER_avia_project: "Проекты реактивной авиации"
  GER_tank_project: "Проекты тяжелых танков"
  GER_gothic_line: "Готическая Линия"
+ 

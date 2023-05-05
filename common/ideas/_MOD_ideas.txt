@@ -58,6 +58,11 @@ ideas = {
 		severe_lack_of_aluminium = {
 			picture = generic_supply_depot
 			modifier = {air_defence_factor = -0.2}
+			equipment_bonus = {
+			small_plane_airframe = {
+				build_cost_ic = 0.05 instant = yes
+			}
+		}
 		}
 
 		lack_of_aluminium = {
@@ -120,7 +125,7 @@ ideas = {
 		}
 		
 		GER_skoda_works = {
-			picture = cze_skoda_works
+			picture = FRA_motorized_focus
 			allowed = {
 				original_tag = GER
 				always = no

@@ -1,4 +1,4 @@
-﻿capital = 6
+﻿capital = 64
 add_ideas = razgon
 add_ideas = warm_blood 
 if = {

@@ -35,13 +35,26 @@ ideas = {
 		    river_crossing_factor = -0.05
 			ground_attack_factor  = 0.1
 			army_speed_factor = 0.05
+			supply_node_range = 0.2
 			}
 
 		}
 
+		GER_dalnost = {
 
+			picture = generic_manpower_bonus
+	
+			allowed = {
+				always = no # Added via event
+			}
 
-GER_naval_war = {
+			modifier = {
+				air_range_factor  = 0.1
+			}
+		}
+		
+
+		GER_naval_war = {
 
 			picture = generic_sea_focused_navy
 
@@ -254,7 +267,7 @@ conscription = 0.1
 
 GER_prom = {
 
-			picture = generic_manpower_bonus
+			picture = generic_production_bonus
 
 			allowed = {
 				always = no # Added via event
