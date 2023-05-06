@@ -9,8 +9,6 @@ d_occupation_decisions = {
 		
 		available = {
 			FROM = {
-				has_defensive_war = yes
-				has_capitulated = yes
 				is_ai = yes
 			}
 			date < 1941.06.1
