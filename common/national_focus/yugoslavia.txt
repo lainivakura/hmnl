@@ -5225,9 +5225,6 @@ focus_tree = {
 	focus = {
 		id = YUG_modernize_the_air_force
 		icon = GFX_goal_generic_air_doctrine
-		allow_branch = {
-			always = no
-		}
 		x = 27
 		y = 0
 
