@@ -209,6 +209,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6635;9587;impassable;-1;-1;-1;-1;-1;;western alps
 3612;11570;impassable;-1;-1;-1;-1;-1;;western alps
 185;6201;sea;1885;-1;-1;-1;-1;;Ösel-Dagö
+6771;13289;sea;8282;-1;-1;-1;-1;;Crimea
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5382;5407;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
