@@ -2888,7 +2888,7 @@
 		y = 1
 		relative_position_id = ROM_air_superiority
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -2936,26 +2936,6 @@
 				if = {
 					limit = {
 						has_tech = improved_small_airframe
-					}
-					create_equipment_variant = {
-						name = "IAR 80"
-						type = small_plane_airframe_2
-						modules = {
-							fixed_main_weapon_slot = light_mg_4x
-							fixed_auxiliary_weapon_slot_1 = light_mg_2x
-							engine_type_slot = engine_2_1x
-							special_type_slot_1 = empty
-						}
-						icon = "GFX_ROM_fighter2_medium"
-					}
-					else = {
-						add_tech_bonus = {
-							name = ROM_iar_80
-							bonus = 1.0
-							ahead_reduction = 2
-							uses = 1
-							technology = improved_small_airframe
-						}
 					}
 				}
 			}
