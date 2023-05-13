@@ -123,6 +123,23 @@ ideas = {
 				}
 			}
 		}
+
+		GER_resourses = {
+			picture = generic_flexible_foreign_policy
+			modifier = {
+			production_lack_of_resource_penalty_factor = -0.25	
+			production_factory_efficiency_gain_factor = -0.2
+		}
+		}
+
+		GER_spain = {
+			picture = generic_agrarian_reform
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+		
+		
 		
 		GER_skoda_works = {
 			picture = FRA_motorized_focus

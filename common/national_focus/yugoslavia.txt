@@ -5266,7 +5266,6 @@ focus_tree = {
 		id = YUG_local_developers
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = YUG_modernize_the_air_force }
-		mutually_exclusive = { focus = YUG_purchase_foreign }
 		x = -2
 		y = 1
 		relative_position_id = YUG_modernize_the_air_force
@@ -5539,7 +5538,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 
 		available = {
@@ -5570,7 +5569,6 @@ focus_tree = {
 		id = YUG_purchase_foreign
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = YUG_modernize_the_air_force }
-		mutually_exclusive = { focus = YUG_local_developers }
 		x = 2
 		y = 1
 		relative_position_id = YUG_modernize_the_air_force
@@ -5582,7 +5580,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			date >	1938.3.1
 		}
 
 		bypass = {

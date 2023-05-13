@@ -1,0 +1,39 @@
+﻿	division_template = {
+
+		name = "Infanterie-Division 1"
+		regiments = {
+			infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+		    	   		 	infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 2 y = 3 }
+		}
+
+
+		support = {
+
+		}
+	}
+
+	units = {
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 11343  division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 11316 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 11260 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 9252 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 9386 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 6236 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  
+  
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 11478 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 444 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 9470 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } } 
+  division = { start_equipment_factor = 1 start_experience_factor = 0.3 location = 3510 division_template = "Infanterie-Division 1" force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } } }    
+  
+	}
