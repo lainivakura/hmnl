@@ -658,6 +658,7 @@
 
 	focus = {
 		id = AST_expand_the_raaf
+		allow_branch = { always = no }
 		icon = GFX_goal_generic_build_airforce
 		x = 7
 		y = 0

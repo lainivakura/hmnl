@@ -836,7 +836,7 @@ add_ideas = {
 	home_of_revolution
 	trotskyite_plot_nsb
 	SOV_politicized_military
-	free_trade
+	sov_trade
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 	severe_lack_of_aluminium
 	lack_of_ammunition

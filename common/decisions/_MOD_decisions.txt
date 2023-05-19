@@ -461,12 +461,20 @@ z_annex_bot_d = {
 
 	GER_resourse = {
 
-	icon = ger_reichskommissariats
+	icon = generic_scorched_earth
 
 		fire_only_once = yes
 			
 		cost = 0
 		
+		available = {																					
+			GER = {has_completed_focus = GER_sloti_late}
+		}
+
+		visible = {
+			GER = {has_completed_focus = GER_sloti_late}
+		}
+
 		allowed = {
 			original_tag = GER
 		}
@@ -480,12 +488,20 @@ z_annex_bot_d = {
 
 	GER_spain = {
 
-		icon = ger_reichskommissariats
+		icon = generic_industry
 	
 			fire_only_once = yes
 				
 			cost = 0
 			
+			available = {																					
+				GER = {has_completed_focus = GER_sloti_late}
+			}
+
+			visible = {
+				GER = {has_completed_focus = GER_sloti_late}
+			}
+	
 			allowed = {
 				original_tag = GER
 			}
@@ -496,6 +512,45 @@ z_annex_bot_d = {
 				}
 			}
 		}
+
+
+		GER_yuga = {
+
+			icon = tungsten
+		
+				fire_only_once = yes
+					
+				cost = 0
+				
+				available = {																					
+					GER = {has_completed_focus = GER_sloti_late}
+				}
+	
+				visible = {
+					GER = {has_completed_focus = GER_sloti_late}
+				}
+		
+				allowed = {
+					original_tag = GER
+				}
+				
+				complete_effect = {
+					105 = {add_resource = {
+						type = tungsten
+						amount = 32
+					}
+				}
+
+				
+				804 = {	add_resource = {
+					
+						type = tungsten
+						amount = 32
+					}
+				}
+
+				}
+			}
 
 
 

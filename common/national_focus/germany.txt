@@ -1734,7 +1734,6 @@ focus_tree = {
 		id = GER_german_war_economy
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = GER_autobahn }
-		mutually_exclusive = { focus = GER_integrate_war_economies }
 		x = 0
 		y = 1
 		relative_position_id = GER_autobahn
@@ -1745,7 +1744,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			has_war_support > 0.49
+			ENG = {has_completed_focus = GER_sloti_late}
 		}
 		complete_tooltip = {
 			every_state = {
@@ -1753,7 +1752,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1765,7 +1764,6 @@ focus_tree = {
 					NOT = { has_idea = war_economy }
 					NOT = { has_idea = tot_economic_mobilisation }
 				}
-				add_ideas = war_economy
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -1778,7 +1776,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = GER_german_war_economy
@@ -1794,7 +1792,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = GER_german_war_economy
@@ -1810,7 +1808,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = GER_german_war_economy
@@ -1843,7 +1841,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 1
+		cost = 0
 		
 		ai_will_do = {
 			factor = 1
@@ -1907,7 +1905,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 1
+		cost = 0
 		
 		ai_will_do = {
 			factor = 1
@@ -1969,7 +1967,6 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = GER_align_hungary }
 		prerequisite = { focus = GER_align_romania }
-		mutually_exclusive = { focus = GER_german_war_economy }
 		x = 0
 		y = 1
 		relative_position_id = GER_align_hungary
@@ -3288,8 +3285,6 @@ focus_tree = {
 			available = {
 			OR = {
 				date > 1942.3.1
-			}
-			OR = {
 				surrender_progress > 0.30
 			}	
 		}	
@@ -3329,9 +3324,9 @@ focus_tree = {
 		y = 7
 		available = {
 			date > 1941.12.1
-			surrender_progress > 0.10
-						OR = {
-			surrender_progress > 0.25		
+			OR = {
+				surrender_progress > 0.15
+				SOV = { controls_state  = 46 }
 			}
 		}
 
@@ -3366,15 +3361,9 @@ focus_tree = {
 			available = {
 				date > 1941.12.1
 				OR = {
-					any_core_state  = {
-						is_controlled_by = SOV
-					}
-				}
-				OR = {	
-					SOV = {
-								controls_state = 79
-					}
-				}
+				surrender_progress > 0.25
+				SOV = { controls_state  = 46 }
+			}
 			}
 
 			completion_reward = {
@@ -3391,10 +3380,9 @@ focus_tree = {
 			icon = GFX_focus_SOV_organize_wreckers
 			cost = 10
 			available = {
+
 				OR = {
 					date > 1942.3.1
-				}
-				OR = {
 					surrender_progress > 0.20
 				}
 				}		
@@ -3457,27 +3445,23 @@ focus_tree = {
 		available = {
 			OR = {
 				date > 1942.6.1
-		   }
-				
-				OR = {
-					ROM = {
+
+				ROM = {
 					   surrender_progress > 0.10
 					   NOT = { country_exists = ROM }
 				   }
-			   }
-			   OR = {
+
 				HUN = {
 				   surrender_progress > 0.10
 				   NOT = { country_exists = HUN }
-			   }
-		   }
-		   OR = {
+			   }  
+			
 			ITA = {
 			   surrender_progress > 0.15
 			   NOT = { country_exists = ITA }
 		   }
-	   }
-			}		
+		   }
+		}			
 		prerequisite = { focus = GER_wunderwaffe }
 		x = 11
 		y = 7
@@ -3486,34 +3470,31 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = GER_war_minors2
 		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 7
 		available = {
 			OR = {
-				date > 1943.6.1
-		   }
-				
-				OR = {
-					ROM = {
-					   surrender_progress > 0.25
+				date > 1942.6.1
+
+				ROM = {
+					   surrender_progress > 0.10
 					   NOT = { country_exists = ROM }
 				   }
-			   }
-			   OR = {
+
 				HUN = {
-				   surrender_progress > 0.25
+				   surrender_progress > 0.10
 				   NOT = { country_exists = HUN }
-			   }
-		   }
-		   OR = {
+			   }  
+			
 			ITA = {
-			   surrender_progress > 0.35
+			   surrender_progress > 0.15
 			   NOT = { country_exists = ITA }
 		   }
-	   }
-			}		
+		   }
+		}			
 		prerequisite = { focus = GER_wunderwaffe }
 		x = 15
 		y = 7
@@ -3521,9 +3502,6 @@ focus_tree = {
 			add_ideas = ger_minor_production_increase1
 		}
 	}
-
-
-
 
 	focus = {
 		id = vtoroi_udar
@@ -3534,10 +3512,15 @@ focus_tree = {
 		x = 17
 		y = 7
 		available = {
+			count_triggers = {
+				amount = 3
+			date > 1942.04.1
 			controls_state = 221
 			controls_state = 227
-			date > 1942.04.1
+			controls_state = 207
+			controls_state = 209
 		}
+	}
 		completion_reward = {
 			228 = {
 				add_dynamic_modifier = {
@@ -3671,16 +3654,15 @@ focus_tree = {
 		x = 16
 		y = 8
 		available = {
+			count_triggers = {
+				amount = 4
 			controls_state = 225
 			controls_state = 221
 			controls_state = 224
 			controls_state = 240
-			SOV = {
-				controls_state = 220
-			}
 			date > 1943.07.1
 		}
-
+	}
 		completion_reward = {
 			220 = {
 				add_dynamic_modifier = {
@@ -3806,8 +3788,8 @@ focus_tree = {
 		x = 13
 		y = 11
 		available = {
-			date > 1942.1.1
-			surrender_progress > 0.15
+			date > 1941.12.1
+			surrender_progress > 0.25
 			SOV = {
 				controls_state = 202
 				controls_state = 206
@@ -3818,41 +3800,25 @@ focus_tree = {
 			 ROM = {
 				surrender_progress > 0.90
 			}
-		}
-
-			OR = {
 			ITA = {
 				surrender_progress > 0.90
 			}
-		}
-
-
-		OR = {
-			 ENG = {
+			ENG = {
 				controls_state = 16 
 				controls_state = 24
 				controls_state = 15
 				controls_state = 14
 			}
-		}
-
-		OR = {
-			ITA = {
-				surrender_progress > 0.8
+			HUN = {
+				surrender_progress > 0.90
 			}
-		}
-		OR = {
 			ROM = {
 				has_capitulated = yes
 		   }
-	   }
-	   OR = {
 		HUN = {
 			has_capitulated = yes
 	   }
-   }
-   OR = {
-	ITA = {
+		ITA = {
 		has_capitulated = yes
    }
 }

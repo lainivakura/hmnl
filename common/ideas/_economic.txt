@@ -699,6 +699,107 @@ ideas = {
 				}
    			}
 		}
+
+		sov_trade = {
+
+			available = { tag = SOV }
+
+			
+						
+			cost = 9999
+			removal_cost = 9999
+			
+			modifier = {
+				min_export = 0.3
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.15
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 300
+
+					OR = {
+						tag = PER
+						tag = IRQ
+					}
+					is_in_faction = no
+				}
+
+				modifier = {
+					factor = 300
+
+					tag = BRA
+					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
+				}
+
+				# Oil for hitlers oil throne!
+				modifier = {
+					factor = 600
+					tag = ROM
+					is_in_faction_with = GER
+				}
+   			}
+		}
+
+		jap_trade = {
+
+			
+
+			available = { tag = JAP }
+		
+			cost = 9999
+			removal_cost = 9999
+			
+			modifier = {
+				min_export = 0.3
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.2
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 300
+
+					OR = {
+						tag = PER
+						tag = IRQ
+					}
+					is_in_faction = no
+				}
+
+				modifier = {
+					factor = 300
+
+					tag = BRA
+					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
+				}
+
+				# Oil for hitlers oil throne!
+				modifier = {
+					factor = 600
+					tag = ROM
+					is_in_faction_with = GER
+				}
+   			}
+		}
 	
 		
 	}
