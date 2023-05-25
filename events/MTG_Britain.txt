@@ -89,7 +89,7 @@ country_event = {
 		create_country_leader = {
 			name = "Fallen Government"
 			desc = "POLITICS_FALLEN_GOVERNMENT_DESC"
-			picture = "portrait_eng_fallen_government.dds"
+			picture = GFX_portrait_Fallen_Government
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -1250,7 +1250,7 @@ country_event = {
 		create_country_leader = {
 			name = "Winston Churchill"
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = "Portrait_Britain_Winston_Churchill.dds"
+			picture = GFX_portrait_Winston_Churchill
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -2415,6 +2415,12 @@ country_event = {
 				has_full_control_of_state = 538
 				owns_state = 718
 				has_full_control_of_state = 718
+				owns_state = 888
+				has_full_control_of_state = 888
+				owns_state = 889
+				has_full_control_of_state = 889
+				owns_state = 890
+				has_full_control_of_state = 890
 			}
 			release = COG
 		}
@@ -2938,6 +2944,10 @@ country_event = {
 				NOT = { original_tag = ANG }
 				owns_state = 540
 				has_full_control_of_state = 540
+				owns_state = 891
+				has_full_control_of_state = 891
+				owns_state = 892
+				has_full_control_of_state = 892
 			}
 			release = ANG
 		}
@@ -2972,6 +2982,10 @@ country_event = {
 				NOT = { original_tag = MZB }
 				owns_state = 544
 				has_full_control_of_state = 544
+				owns_state = 896
+				has_full_control_of_state = 896
+				owns_state = 897
+				has_full_control_of_state = 897
 			}
 			release = MZB
 		}
@@ -3532,7 +3546,7 @@ country_event = {
 				create_country_leader = {
 					name = "Harry Pollitt"
 					desc = "POLITICS_HARRY_POLLITT_DESC"
-					picture = "portrait_eng_harry_pollitt.dds"
+					picture = GFX_portrait_Harry_Pollitt
 					expire = "1965.1.1"
 					ideology = leninism
 					traits = {
@@ -3547,7 +3561,7 @@ country_event = {
 				create_country_leader = {
 					name = "Rajani Palme Dutt"
 					desc = "POLITICS_PALME_DUTT_DESC"
-					picture = "Portrait_Britain_Palme_Dutt.dds"
+					picture = GFX_portrait_Rajani_Palme_Dutt
 					expire = "1965.1.1"
 					ideology = leninism
 					traits = {
@@ -7014,7 +7028,7 @@ country_event = {
 		create_country_leader = {
 			name = "George VI"
 			desc = "POLITICS_GEORGE_VI_DESC"
-			picture = "gfx/leaders/PAL/Portrait_Britain_George_VI.dds"
+			picture = GFX_portrait_George_VI
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
