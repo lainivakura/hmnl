@@ -29,13 +29,15 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 ---Воздух
 
 
--- NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 --3 уменьшено для компенсации частоты влета касов
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.1
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.3
 -- NDefines.NAir.PORT_STRIKE_ENEMY_SUPERIORITY_LIMIT = 0.3			-- Min air superiority for performing of naval strike ( не работает ? )
 NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
 NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 20 -- урон по самолетам на филдах
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1
+NDefines.NAir.HOURS_DELAY_AFTER_EACH_COMBAT = 3 -- (4) для влета касов (и любых других самолетов) каждые 4 часа
+NDefines.NAir.ESCORT_FACTOR = 3.0				-- (2) для влета касов (и любых других самолетов) в любом желтом воздухе
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
 	0.0, -- CAS
