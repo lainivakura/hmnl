@@ -1,5 +1,8 @@
 ﻿capital = 282
-
+add_collaboration = {
+	target = CHI
+	value = 1
+}
 
 
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
