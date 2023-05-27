@@ -1005,3 +1005,7 @@ add_collaboration = {
 	target = NOR
 	value = 1
 }
+add_collaboration = {
+	target = CZE
+	value = 1
+}
