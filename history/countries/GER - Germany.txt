@@ -969,3 +969,39 @@ if = {
 	}
 }
 
+add_collaboration = {
+	target = GRE
+	value = 1
+}
+add_collaboration = {
+	target = POL
+	value = 1
+}
+add_collaboration = {
+	target = YUG
+	value = 1
+}
+add_collaboration = {
+	target = BUL
+	value = 1
+}
+add_collaboration = {
+	target = HOL
+	value = 1
+}
+add_collaboration = {
+	target = BEL
+	value = 1
+}
+add_collaboration = {
+	target = LUX
+	value = 1
+}
+add_collaboration = {
+	target = DEN
+	value = 1
+}
+add_collaboration = {
+	target = NOR
+	value = 1
+}
