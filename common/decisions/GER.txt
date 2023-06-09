@@ -603,31 +603,6 @@ GER_reichskommissariats = {
 
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
-			has_government = fascism
-			controls_state = 97
-			controls_state = 94
-			controls_state = 95
-			controls_state = 96
-			controls_state = 194
-			controls_state = 204
-			controls_state = 206
-			controls_state = 207
-			controls_state = 241
-			controls_state = 11
-			controls_state = 784
-			controls_state = 189
-			controls_state = 12
-			controls_state = 190
-			controls_state = 13
-			controls_state = 191
-			controls_state = 814
-			controls_state = 815
-			controls_state = 809
-			controls_state = 808
-			controls_state = 810
-			controls_state = 813
-			controls_state = 812
-			controls_state = 811
 		}
 
 		cost = 0
@@ -672,64 +647,29 @@ GER_reichskommissariats = {
 
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
-			has_government = fascism
-			controls_state = 93
-			controls_state = 91
-			controls_state = 89
-			controls_state = 199
-			controls_state = 201
-			controls_state = 198
-			controls_state = 202
-			controls_state = 193
-			controls_state = 192
-			controls_state = 203
-			controls_state = 197
-			controls_state = 225
-			controls_state = 259
-			controls_state = 226
-			controls_state = 196
-			controls_state = 200
-			controls_state = 221
-			controls_state = 228
-			controls_state = 227
+			has_war_with = sov
 		}
 
 		cost = 0
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				SOV = { has_capitulated = yes }
-			}
-		}
+
 
 		visible = {
 			has_completed_focus = GER_form_the_reichskommissariats
 			has_government = fascism
 		}
-
-		complete_effect = {
-			93 = {add_compliance = 50 }
-			91 = {add_compliance = 50 }
-			89 = {add_compliance = 50 }
-			199 = {add_compliance = 50 }
-			201 = {add_compliance = 50 }
-			198 = {add_compliance = 50 }
-			202 = {add_compliance = 50 }
-			193 = {add_compliance = 50 }
-			192 = {add_compliance = 50 }
-			203 = {add_compliance = 50 }
-			197 = {add_compliance = 50 }
-			225 = {add_compliance = 50 }
-			259 = {add_compliance = 50 }
-			226 = {add_compliance = 50 }
-			196 = {add_compliance = 50 }
-			200 = {add_compliance = 50 }
-			221 = {add_compliance = 50 }
-			228 = {add_compliance = 50 }
-			227 = {add_compliance = 50 }
-			
+		days_remove = 30
+		remove_effect = {
+			hidden_effect = {
+				activate_mission = GER_reichskommissariat_ukraine
+			}
+			FROM = { set_country_flag = s_occupation_law }
+			GER = {
+				every_state = {
+					limit = { is_core_of = SOV }
+					add_compliance = 10
+				}
+			}
 		}
 	}
 }
