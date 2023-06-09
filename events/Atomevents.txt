@@ -6,46 +6,50 @@ country_event = {
 	desc =  Atomevents.1488.d
 	picture = GFX_report_event_stalin_propaganda
 
-    trigger = {
-        tag = SOV
+	trigger = {
+		tag = SOV
 		date > 1941.11.1
 		date < 1942.03.1
+		has_game_rule =  { 
+			rule = counterattack
+			option = true 
+		} 
 		GER = {
-		controls_state = 246
-		controls_state = 205
-		controls_state = 242
-		controls_state = 243
+			controls_state = 246
+			controls_state = 205
+			controls_state = 242
+			controls_state = 243
+		}
+	}
 
-			}
-    }
-		mean_time_to_happen = {
+	mean_time_to_happen = {
 		days = 7
 	}
 	option = { 
-	219 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_moskva
-	scope =  SOV
-	days = 90
-}
-}
-	
-	223 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_moskva
-	scope =  SOV
-	days = 60
-}
-}
+		219 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_moskva
+				scope =  SOV
+				days = 90
+			}
+		}
+		
+		223 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_moskva
+				scope =  SOV
+				days = 60
+			}
+		}
 
-	247 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_moskva
-	scope =  SOV
-	days = 60
-}
-}
-}
+		247 = {	
+			add_dynamic_modifier = {
+			modifier = SOV_counterattack_moskva
+			scope =  SOV
+			days = 60
+			}
+		}
+	}
 }
 
 
@@ -56,34 +60,38 @@ country_event = {
 	desc =  Atomevents.1489.d
 	picture = GFX_report_event_stalin_propaganda
 
-    trigger = {
-        tag = SOV
+	trigger = {
+		tag = SOV
 		date > 1941.11.1
 		date < 1942.03.1
+		has_game_rule =  { 
+			rule = counterattack
+			option = true 
+		} 
 		GER = {
-		controls_state = 227
-		controls_state = 228
-			}
-    }
-		mean_time_to_happen = {
+			controls_state = 227
+			controls_state = 228
+		}
+	}
+	mean_time_to_happen = {
 		days = 7
 	}
 	option = { 
-	218 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_rostov
-	scope =  SOV
-	days = 35
-}
-}
-	245 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_rostov
-	scope =  SOV
-	days = 35
-}
-}
-}
+		218 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_rostov
+				scope =  SOV
+				days = 35
+			}
+		}
+		245 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_rostov
+				scope =  SOV
+				days = 35
+			}
+		}
+	}
 }
 
 
@@ -93,34 +101,38 @@ country_event = {
 	desc =  Atomevents.1490.d
 	picture = GFX_report_event_stalin_propaganda
 
-    trigger = {
-        tag = SOV
+	trigger = {
+		tag = SOV
 		date > 1941.11.1
 		date < 1942.03.1
+		has_game_rule =  { 
+			rule = counterattack
+			option = true 
+		} 
 		GER = {
-		controls_state = 263
-		controls_state = 208
-			}
-    }
-		mean_time_to_happen = {
+			controls_state = 263
+			controls_state = 208
+		}
+	}
+	mean_time_to_happen = {
 		days = 7
 	}
 	option = { 
-	244 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_tikhvin
-	scope =  SOV
-	days = 35
-}
-}
-	264 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_tikhvin
-	scope =  SOV
-	days = 35
-}
-}
-}
+		244 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_tikhvin
+				scope =  SOV
+				days = 35
+			}
+		}
+		264 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_tikhvin
+				scope =  SOV
+				days = 35
+			}
+		}
+	}
 }
 
 
@@ -137,7 +149,6 @@ country_event = {
 	
 	option = { 
 		name =  Atomevents.1002.a
-                
-				GER = { puppet = D02 }		
-}
+			GER = { puppet = D02 }		
+		}
 }
