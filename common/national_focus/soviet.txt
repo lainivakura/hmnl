@@ -13054,48 +13054,7 @@ date > 1949.12.1
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			812 = {
-				add_compliance = 100
-			}
-			813 = {
-				add_compliance = 100
-			}
-			811 = {
-				add_compliance = 100
-			}
-			13 = {
-				add_compliance = 100
-			}
-			12 = {
-				add_compliance = 100
-			}
-			810 = {
-				add_compliance = 100
-			}
-			808 = {
-				add_compliance = 100
-			}
-			809 = {
-				add_compliance = 100
-			}
-			815 = {
-				add_compliance = 100
-			}
-			11 = {
-				add_compliance = 100
-			}
-			189 = {
-				add_compliance = 100
-			}
-			190 = {
-				add_compliance = 100
-			}
-			191 = {
-				add_compliance = 100
-			}
-			814 = {
-				add_compliance = 100
-			}
+			
 				transfer_state = 812
 				transfer_state = 813
 				transfer_state = 811
@@ -13126,7 +13085,48 @@ date > 1949.12.1
 					type = artillery_equipment_1
 					amount = 150
 				}
-			
+				812 = {
+					add_compliance = 100
+				}
+				813 = {
+					add_compliance = 100
+				}
+				811 = {
+					add_compliance = 100
+				}
+				13 = {
+					add_compliance = 100
+				}
+				12 = {
+					add_compliance = 100
+				}
+				810 = {
+					add_compliance = 100
+				}
+				808 = {
+					add_compliance = 100
+				}
+				809 = {
+					add_compliance = 100
+				}
+				815 = {
+					add_compliance = 100
+				}
+				11 = {
+					add_compliance = 100
+				}
+				189 = {
+					add_compliance = 100
+				}
+				190 = {
+					add_compliance = 100
+				}
+				191 = {
+					add_compliance = 100
+				}
+				814 = {
+					add_compliance = 100
+				}
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
 	}
