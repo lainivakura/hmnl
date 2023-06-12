@@ -1,4 +1,38 @@
 d_occupation_decisions = {
+	SOV_compl_mission = {
+		icon = generic_operation
+		allowed = {
+			original_tag = GER
+		}
+		available = {not = {has_war_with = SOV}}
+		activation = { 
+			has_war_with = SOV
+		}
+		# visible = { always = no }
+		is_good = yes
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			every_controlled_state = {
+				if = {
+					limit = { is_core_of = SOV }
+					add_compliance = 10
+				}
+			}
+			activate_decision = SOV_compl_mission
+		}
+		# days_remove = 5
+		# remove_effect = {
+		# 	every_controlled_state = {
+		# 		if = {
+		# 			limit = { is_core_of = SOV }
+		# 			add_compliance = 10
+		# 		}
+		# 	}
+		# 	activate_decision = SOV_compl_mission
+		# }
+
+	}
 	# GER_occupation_law_FROM = {
 	# 	icon = generic_operation
 	# 	fire_only_once = yes
