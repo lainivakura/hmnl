@@ -1,0 +1,15 @@
+counterattack = {
+	name = "counterattack"
+	group = "Ограничение контратак совка "
+
+	default = {
+		name = vanilla
+		text = "vanilla"
+		allow_achievements = yes
+	}
+	option = {
+		name = true
+		text = "nagovnomogeno"
+		allow_achievements = yes
+	}
+} 

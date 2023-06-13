@@ -1,62 +1,96 @@
 d_occupation_decisions = {
-	GER_occupation_law_FROM = {
+	SOV_compl_mission = {
 		icon = generic_operation
-		fire_only_once = yes
-
 		allowed = {
 			original_tag = GER
 		}
-		
-		available = {
-			FROM = {
-				has_defensive_war = yes
-				has_capitulated = yes
-				is_ai = yes
-			}
-			date < 1941.1.1
+		available = {not = {has_war_with = SOV}}
+		activation = { 
+			has_war_with = SOV
 		}
+		# visible = { always = no }
+		is_good = yes
+		days_mission_timeout = 30
 
-		visible = {
-			date < 1941.1.1
-		}
-
-		targets = { POL YUG BUL GRE HOL BEL LUX DEN NOR SWI }
-
-		target_root_trigger = { original_tag = GER }
-
-		target_trigger = {
-			FROM = {
-				OR = {
-					original_tag = HOL
-					original_tag = BEL
-					original_tag = NOR
-					original_tag = DEN
-					original_tag = GRE
-					original_tag = YUG
-					original_tag = LUX
-					original_tag = POL
-					original_tag = BUL
-					original_tag = SWI
-
-
-				}        
-					NOT = {
-					has_country_flag = d_occupation_law
+		timeout_effect = {
+			every_controlled_state = {
+				if = {
+					limit = { is_core_of = SOV }
+					add_compliance = 10
 				}
 			}
+			activate_decision = SOV_compl_mission
 		}
-		days_remove = 30
-		modifier = {
-			civilian_factory_use = 5
-		} 
-		remove_effect = {
-			FROM = { set_country_flag = d_occupation_law }
-			GER = {
-				every_state = {
-					limit = { is_core_of = FROM }
-					add_compliance = 100
-				}
-			}
-		}
+		# days_remove = 5
+		# remove_effect = {
+		# 	every_controlled_state = {
+		# 		if = {
+		# 			limit = { is_core_of = SOV }
+		# 			add_compliance = 10
+		# 		}
+		# 	}
+		# 	activate_decision = SOV_compl_mission
+		# }
+
 	}
+	# GER_occupation_law_FROM = {
+	# 	icon = generic_operation
+	# 	fire_only_once = yes
+
+	# 	allowed = {
+	# 		original_tag = GER
+	# 	}
+		
+	# 	available = {
+	# 		FROM = {
+	# 			has_defensive_war = yes
+	# 			has_capitulated = yes
+	# 			is_ai = yes
+	# 		}
+	# 		date < 1941.1.1
+	# 	}
+
+	# 	visible = {
+	# 		date < 1941.1.1
+	# 	}
+
+	# 	targets = { POL YUG BUL GRE HOL BEL LUX DEN NOR SWI }
+
+	# 	target_root_trigger = { original_tag = GER }
+
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			OR = {
+	# 				original_tag = HOL
+	# 				original_tag = BEL
+	# 				original_tag = NOR
+	# 				original_tag = DEN
+	# 				original_tag = GRE
+	# 				original_tag = YUG
+	# 				original_tag = LUX
+	# 				original_tag = POL
+	# 				original_tag = BUL
+	# 				original_tag = SWI
+
+
+	# 			}        
+	# 				NOT = {
+	# 				has_country_flag = d_occupation_law
+	# 			}
+	# 		}
+	# 	}
+	# 	days_remove = 30
+	# 	modifier = {
+	# 		civilian_factory_use = 5
+	# 	} 
+	# 	remove_effect = {
+	# 		FROM = { set_country_flag = d_occupation_law }
+	# 		GER = {
+	# 			every_state = {
+	# 				limit = { is_core_of = FROM }
+	# 				add_compliance = 100
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
