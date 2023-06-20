@@ -1,6 +1,18 @@
 spriteTypes = {
+
     spriteType = {
         name = "ANDREY"
         texturefile = gfx/interface/ideas/ANDREY.dds
     }
+
+    spriteType = {
+        name = "GFX_idea_jap_eco_1"
+        texturefile = gfx/interface/ideas/idea_jap_militarism_shogun.dds
+    }
+
+     spriteType = {
+        name = "GFX_idea_sov_eco"
+        texturefile = gfx/interface/ideas/idea_SOV_organize_wreckers.dds
+    }
+
 }

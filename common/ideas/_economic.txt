@@ -700,7 +700,7 @@ ideas = {
    			}
 		}
 
-		sov_trade = {
+		sov_eco = {
 
 			available = { tag = SOV }
 
@@ -711,8 +711,6 @@ ideas = {
 			
 			modifier = {
 				min_export = 0.3
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.15
 				civilian_intel_to_others = 40.0
@@ -750,7 +748,7 @@ ideas = {
    			}
 		}
 
-		jap_trade = {
+		jap_eco_1 = {
 
 			
 
@@ -800,6 +798,7 @@ ideas = {
 				}
    			}
 		}
+		
 	
 		
 	}

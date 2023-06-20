@@ -432,7 +432,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.03 }
 			add_to_variable = { SOV_fyp_line_change_production_efficiency_factor = 0.1 }
 			custom_effect_tooltip = SOV_industrial_modernization_ns_tt
 
@@ -646,6 +646,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			has_war_with = GER 
 			any_owned_state = {
 				has_resources_amount = {
 					resource = steel
@@ -660,6 +661,7 @@ focus_tree = {
 			SOV_third_five_year_plan_available = yes
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
+		
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -736,6 +738,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 
 	focus = {
 		id = SOV_synthetic_rubber
@@ -5886,8 +5889,17 @@ date > 1941.10.1
 			add_timed_idea = {
 				idea = SOV_desperate_measures_ns
 				days = 250
-				
 			}
+
+			add_timed_idea = {
+			idea = SOV_war_debuff
+			days = 150
+			}
+
+			add_timed_idea = {
+			idea = SOV_air_debuff
+			days = 150
+			}	
 			
 			add_ideas = tot_economic_mobilisation
 			add_ideas = extensive_conscription

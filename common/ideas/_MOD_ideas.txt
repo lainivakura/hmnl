@@ -127,6 +127,22 @@ ideas = {
 			}
 		}
 
+		SOV_air_debuff = {
+			picture = generic_flexible_foreign_policy
+			modifier = {
+			air_night_penalty = 0.25
+			air_range_factor = -0.1
+		}
+		}
+
+		SOV_war_debuff = {
+			picture = generic_flexible_foreign_policy
+			modifier = {
+			production_factory_efficiency_gain_factor = -0.5
+			industrial_capacity_factory = -0.3 
+		}
+		}
+
 		GER_resourses = {
 			picture = generic_flexible_foreign_policy
 			modifier = {

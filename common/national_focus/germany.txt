@@ -1744,7 +1744,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		available = {
-			ENG = {has_completed_focus = GER_sloti_late}
+			GER = {has_completed_focus = GER_war_with_france}
 		}
 		complete_tooltip = {
 			every_state = {
@@ -3257,6 +3257,29 @@ focus_tree = {
 						idea = GER_voina_s_sovkom
 						days = 150
 					}
+
+
+				ROM = {	
+				add_timed_idea = {
+						idea = GER_voina_s_sovkom
+						days = 150
+					}
+				}
+
+				HUN = {	
+				add_timed_idea = {
+						idea = GER_voina_s_sovkom
+						days = 150
+					}
+				}
+
+				ITA = {	
+				add_timed_idea = {
+						idea = GER_voina_s_sovkom
+						days = 150
+					}
+				}
+
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
 				create_wargoal = {

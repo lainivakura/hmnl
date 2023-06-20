@@ -29,13 +29,14 @@ ideas = {
 		}
 
 			modifier = {
-			# tag = GER
+			tag = GER
 			max_planning = 0.05
 		    planning_speed = 0.1
 		    river_crossing_factor = -0.05
 			ground_attack_factor  = 0.1
 			army_speed_factor = 0.05
 			supply_node_range = 0.2
+			army_fuel_consumption_factor = -0.15
 			}
 
 		}

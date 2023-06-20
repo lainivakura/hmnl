@@ -18,3 +18,5 @@
  GER_tank_production: "Танкопром"
  GER_naval_war: "Война на море"
  GER_endsieg: "ENDISEG"
+ SOV_air_debuff: "Нагрузка на аэродроммы"
+ SOV_war_debuff: "Переход промышленности к тотальной войне"
