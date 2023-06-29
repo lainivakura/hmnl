@@ -3843,7 +3843,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 5
+		cost = 2
 		
 		available = {
 			if = {
@@ -5834,7 +5834,7 @@ date > 1941.10.1
 		}
 
 		available = {
-
+			has_completed_focus = SOV_desperate_measures
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}

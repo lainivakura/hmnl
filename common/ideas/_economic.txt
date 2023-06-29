@@ -246,10 +246,13 @@ ideas = {
 				any_enemy_country = {
 					OR = {			
 						original_tag = JAP
-						original_tag = SOV
 					}
 					OR = {
 						original_tag = GER
+						date > 1942.6.1
+					}
+					OR = {
+						original_tag = SOV
 						date > 1942.6.1
 					}
 					if = {
@@ -702,13 +705,13 @@ ideas = {
 
 		sov_eco = {
 
-			available = { tag = SOV }
+			allowed = { original_tag = SOV }
 
 			
 						
 			cost = 9999
 			removal_cost = 9999
-			
+			visible = { tag = SOV}
 			modifier = {
 				min_export = 0.3
 				production_speed_buildings_factor = 0.15
@@ -751,7 +754,7 @@ ideas = {
 		jap_eco_1 = {
 
 			
-
+			allowed = { original_tag = JAP}
 			available = { tag = JAP }
 		
 			cost = 9999

@@ -4,5 +4,5 @@ tags={
 	"Historical"
 }
 name="HMNL Chumba FIX"
-supported_version="1.12.11"
+supported_version="1.12.14"
 remote_file_id="2953139279"
