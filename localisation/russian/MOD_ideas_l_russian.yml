@@ -20,3 +20,5 @@
  GER_endsieg: "ENDISEG"
  SOV_air_debuff: "Нагрузка на аэродроммы"
  SOV_war_debuff: "Переход промышленности к тотальной войне"
+ SOV_kharkov_success: "Предприятия эвакуированы"
+ SOV_fall_of_kharkov: "Генерал предатель сдал Харьков раньше времени"

@@ -12301,7 +12301,7 @@ SOV_great_patriotic_war = {
 			NOT = { controls_state = 217 }
 		}
 
-		days_mission_timeout = 180
+		days_mission_timeout = 365
 
 		fire_only_once = yes
 
@@ -12309,19 +12309,6 @@ SOV_great_patriotic_war = {
 
 		activation = {
 			has_war = yes
-			has_civil_war = no
-			217 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
 		}
 
 		#Success
@@ -12415,18 +12402,6 @@ SOV_great_patriotic_war = {
 		activation = {
 			has_war = yes
 			has_civil_war = no
-			219 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
 		}
 
 		#Success
@@ -12442,7 +12417,42 @@ SOV_great_patriotic_war = {
 			country_event = wtt_soviet_hold_city.6
 		}
 	}
+	SOV_hold_kharkov = {
 
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 221 }
+		}
+
+		days_mission_timeout = 100
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war = yes
+		}
+
+		#Success
+		timeout_effect = {
+			add_timed_idea = { idea = SOV_kharkov_success days = 90 }
+			221 = { save_event_target_as = state }
+			country_event = wtt_soviet_hold_city.8
+		}
+		#Fail
+		complete_effect = {
+			add_timed_idea = { idea = SOV_fall_of_kharkov days = 90 }
+			221 = { save_event_target_as = state }
+			country_event = wtt_soviet_hold_city.7
+		}
+	}
 	##########################
 	##### SCORCHED EARTH #####
 	##########################
