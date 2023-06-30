@@ -1595,6 +1595,9 @@ focus_tree = {
 				technology = advanced_rubber_processing
 				technology = modern_rubber_processing
 			}
+			ENG = {
+				add_ideas = synth_rubber
+				}
 			add_ideas = synth_rubber
 		}
 	}
