@@ -10869,7 +10869,7 @@ SOV_industry_relocation = {
 
 		cost = 20
 
-		days_remove = SOV_industrial_relocation_days
+		days_remove = 45
 
 		complete_effect = {  #Attempt to remove 2 CIVS & 2 MILS
 			hidden_effect = {

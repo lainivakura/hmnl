@@ -40,7 +40,7 @@ if = {
 }
 add_offsite_building = { type = arms_factory level= 10 }
 set_research_slots = 4
-set_stability = 0.75
+set_stability = 0.74
 set_war_support = 0
 add_command_power = 20
 set_variable = { var = senators_support value = 48 }

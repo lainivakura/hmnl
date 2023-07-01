@@ -16,7 +16,7 @@ d_occupation_decisions = {
 			every_controlled_state = {
 				if = {
 					limit = { is_core_of = SOV }
-					add_compliance = 10
+					add_compliance = 1
 				}
 			}
 			activate_decision = SOV_compl_mission
