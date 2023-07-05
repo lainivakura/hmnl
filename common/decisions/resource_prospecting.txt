@@ -81,7 +81,7 @@ prospect_for_resources = {
 		}
 	}
 
-	develop_suiyuan_steel_deposits = { #621
+	develop_suiyuan_steel_deposits = { #614
 
 		icon = steel
 
@@ -90,19 +90,19 @@ prospect_for_resources = {
 		}
 		highlight_states = {
 			highlight_state_targets = {
-				state = 621
+				state = 614
 			}
 		}
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 621
-			controls_state = 621
+			owns_state = 614
+			controls_state = 614
 		}
 
 		visible = {
-			owns_state = 621
-			controls_state = 621
+			owns_state = 614
+			controls_state = 614
 			621 = {
 				NOT = {
 					has_state_flag = suiyuan_steel_developed
@@ -151,8 +151,8 @@ prospect_for_resources = {
 			}
 		}
 		remove_effect = {
-			621 = { set_state_flag = suiyuan_steel_developed }
-			621 = {
+			614 = { set_state_flag = suiyuan_steel_developed }
+			614 = {
 				add_resource = {
 					type = steel
 					amount = 8
