@@ -249,7 +249,7 @@ ideas = {
 			ledger = army
 			modifier = {
 				experience_gain_artillery_combat_factor = 0.1
-				artillery_attack = 0.1
+				army_artillery_attack_factor = 0.1
 			}
 			ai_will_do = {
 				factor = 1
