@@ -2240,7 +2240,7 @@ focus_tree = {
 		x = 6
 		y = 0
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -2287,7 +2287,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			195 = { #LENINGRAD
@@ -2431,7 +2431,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			OR = {
@@ -2520,7 +2520,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			OR = {
@@ -2647,7 +2647,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			OR = {
@@ -2734,7 +2734,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_reinforce_northern_naval_bases
-		cost = 10
+		cost = 3
 
 		available = {
 
@@ -4490,15 +4490,7 @@ focus_tree = {
 		relative_position_id = SOV_leningrad_polytechnical_institute
 		cost = 10
 
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_national_academies_of_sciences_available_tt
-				set_temp_variable = { SOV_current_academies = SOV_academy_of_sciences_research_speed_factor } #This is a factor (0.X value)
-				multiply_temp_variable = { SOV_current_academies = 100 } #Now it is possible to track the current number of civs
-				check_variable = { SOV_current_academies = SOV_academies_required_for_atomic_bomb_project compare = greater_than_or_equals }
-			}
-			is_subject = no
-		}
+
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 

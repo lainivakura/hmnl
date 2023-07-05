@@ -26,6 +26,7 @@ NDefines.NDiplomacy.EMBARGO_COST = 9999
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
 
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.2           -- how to weight in highest armor & pen vs the division average
 ---Воздух
 
 
