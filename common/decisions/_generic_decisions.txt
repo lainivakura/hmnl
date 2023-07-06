@@ -1402,7 +1402,8 @@ special_projects = {
 		available = {
 			has_full_control_of_state = 446
 			has_full_control_of_state = 453
-			num_of_civilian_factories > 20
+			num_of_civilian_factories > 30
+			original_tag = ENG
 		}
 	
 		visible = {
@@ -1411,12 +1412,12 @@ special_projects = {
 	
 		fire_only_once = no
 	
-		days_remove = 200
+		days_remove = 100
 	
 		cost = 120
 	
 		modifier = {
-			civilian_factory_use = 20
+			civilian_factory_use = 30
 		}
 	
 		remove_effect = {
