@@ -214,7 +214,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5382;5407;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 2400;5407;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2800;2776;;-1;-1;-1;-1;-1;TEARS_STRAIT;TEARS_STRAIT
 2666;2919;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 2408;2729;sea;6257;2949;1598;2962;1612;KIEL_CANAL;Kiel
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;OTRANTO STRAIT 
