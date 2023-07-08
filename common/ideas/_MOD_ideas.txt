@@ -138,8 +138,8 @@ ideas = {
 		SOV_war_debuff = {
 			picture = generic_flexible_foreign_policy
 			modifier = {
-			production_factory_efficiency_gain_factor = -0.5
-			industrial_capacity_factory = -0.15
+			production_factory_efficiency_gain_factor = -0.1
+			industrial_capacity_factory = -0.05
 		}
 		}
 

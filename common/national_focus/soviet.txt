@@ -646,7 +646,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war_with = GER 
 			any_owned_state = {
 				has_resources_amount = {
 					resource = steel
