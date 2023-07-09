@@ -229,8 +229,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 1.5
+				uses = 2
 				category = motorized_equipment
 			}
 		}
@@ -11280,7 +11280,7 @@ focus_tree = {
 	focus = {
 		id = ENG_hobart_funnies
 		available = {
-			date > 1943.1.1}
+			date > 1942.1.1}
 		prerequisite = { focus = ENG_tank_focus }
 		icon = GFX_goal_generic_army_tanks
 		x = 0

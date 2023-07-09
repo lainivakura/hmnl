@@ -646,7 +646,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war_with = GER 
 			any_owned_state = {
 				has_resources_amount = {
 					resource = steel
@@ -2240,7 +2239,7 @@ focus_tree = {
 		x = 6
 		y = 0
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -2287,7 +2286,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			195 = { #LENINGRAD
@@ -2431,7 +2430,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			OR = {
@@ -2520,7 +2519,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			OR = {
@@ -2647,7 +2646,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
+		cost = 1.5
 
 		available = {
 			OR = {
@@ -2734,7 +2733,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_reinforce_northern_naval_bases
-		cost = 10
+		cost = 3
 
 		available = {
 
@@ -3843,7 +3842,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 5
+		cost = 2
 		
 		available = {
 			if = {
@@ -4490,15 +4489,7 @@ focus_tree = {
 		relative_position_id = SOV_leningrad_polytechnical_institute
 		cost = 10
 
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_national_academies_of_sciences_available_tt
-				set_temp_variable = { SOV_current_academies = SOV_academy_of_sciences_research_speed_factor } #This is a factor (0.X value)
-				multiply_temp_variable = { SOV_current_academies = 100 } #Now it is possible to track the current number of civs
-				check_variable = { SOV_current_academies = SOV_academies_required_for_atomic_bomb_project compare = greater_than_or_equals }
-			}
-			is_subject = no
-		}
+
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -4806,243 +4797,79 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_the_molotov_line
+		id = SOV_the_mozhaisk_line
 		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = SOV_military_engineering_university }
 		x = -1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 2
 
-		mutually_exclusive = { focus = SOV_improve_the_stalin_line }
 
 		available = {
+			has_defensive_war = yes
 			OR = {
-				has_full_control_of_state = 188
-				has_full_control_of_state = 189
-				has_full_control_of_state = 814
-				has_full_control_of_state = 97
-				has_full_control_of_state = 94
-				has_full_control_of_state = 93
-				has_full_control_of_state = 91
-				has_full_control_of_state = 89
-				has_full_control_of_state = 80
-				has_full_control_of_state = 78
-				has_full_control_of_state = 766
+				has_full_control_of_state = 242
+				has_full_control_of_state = 205
+				
 			}
 		}
 		
 		search_filters = {}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_the_molotov_line_tt
 
-			### LITHUANIA ###
-			if = { #If Memel is controlled, then add forts in Memel, if not, then go to Zemaitija
-				limit = {
-					188 = { is_fully_controlled_by = ROOT }
-				}
-				custom_effect_tooltip = SOV_molotov_line_forts_3
-				hidden_effect = {
-					188 = {
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = {
-								id = 3288
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			else = {
-				189 = { #ZEMAITIJA
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						custom_effect_tooltip = SOV_molotov_line_forts_3
-						hidden_effect = {
-							add_building_construction = {
-								type = bunker
-								level = 1
-								province = {
-									id = 6314
-									id = 9499
-									id = 3337
-								}
-								instant_build = yes
-							}
-						}
-					}
-				}
-			}
-			814 = { #Suduva
+			army_experience = 10
+			242 = { #Smolensk
 				if = {
 					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 6407
-								id = 11312
-							}
-							instant_build = yes
+					
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = {
+							id = 382
+							id = 11300
 						}
+						instant_build = yes
 					}
+					
+				}
+			}
+			205 = { #Kaluga
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = {
+							id = 6407
+							id = 11312
+							id = 274
+						}
+						instant_build = yes
+					}
+					
+				}
+			}
+			219 = { #Moscow
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = {
+							id = 401
+							id = 366
+						}
+						instant_build = yes
+					}
+					
 				}
 			}
 
-			### POLAND ###
-			97 = { #Bialystok
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_6
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3254
-								id = 400
-								id = 11357
-								id = 11329
-								id = 11274
-								id = 290
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			94 = { #Polesie
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3392
-								id = 6546
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			93 = { #Wolyn
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 11441
-								id = 422
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			91 = { #Lwow
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 536
-								id = 9468
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			89 = { #Stanislawow
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 6431
-								id = 6460
-								id = 9425
-								id = 3743
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-
-			### ROMANIA ###
-			80 = { #Bucovina
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 9548
-								id = 577
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			### ROMANIA ###
-			78 = { #Bessarabia
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_5
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3407
-								id = 3577
-								id = 565
-								id = 3707
-								id = 3724
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			766 = { #Southern Bessarabia
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3704
-								id = 3701
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
 		}
 	}
 
@@ -5055,7 +4882,6 @@ focus_tree = {
 		relative_position_id = SOV_military_engineering_university
 		cost = 3
 
-		mutually_exclusive = { focus = SOV_the_molotov_line }
 
 		available = {
 			OR = {
@@ -5192,7 +5018,7 @@ focus_tree = {
 	focus = {
 		id = SOV_the_defense_of_moscow
 		icon = GFX_focus_SOV_the_defense_of_moscow
-		prerequisite = { focus = SOV_move_industry_to_the_urals focus = SOV_improve_the_stalin_line focus = SOV_the_molotov_line }
+		prerequisite = { focus = SOV_move_industry_to_the_urals focus = SOV_improve_the_stalin_line focus = SOV_the_mozhaisk_line }
 		x = 1
 		y = 1
 		relative_position_id = SOV_move_industry_to_the_urals
@@ -5313,7 +5139,7 @@ focus_tree = {
 						}
 						add_building_construction = {
 							type = bunker
-							level = 4
+							level = 6
 							province = 6380
 							instant_build = yes
 						}
@@ -5326,7 +5152,7 @@ focus_tree = {
 	focus = {
 		id = SOV_impregnable_forts
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SOV_improve_the_stalin_line focus = SOV_the_molotov_line }
+		prerequisite = { focus = SOV_improve_the_stalin_line focus = SOV_the_mozhaisk_line }
 		x = -1
 		y = 1
 		relative_position_id = SOV_improve_the_stalin_line
