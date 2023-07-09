@@ -12430,7 +12430,7 @@ SOV_great_patriotic_war = {
 			NOT = { controls_state = 221 }
 		}
 
-		days_mission_timeout = 100
+		days_mission_timeout = 60
 
 		fire_only_once = yes
 

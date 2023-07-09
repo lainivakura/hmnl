@@ -266,3 +266,32 @@ country_event = {
 				GER = { puppet = D02 }		
 }
 }
+
+country_event = {
+	id = Atomevents.1003
+	title = Atomevents.1003.t
+	desc =  Atomevents.1003.d
+	picture = GFX_report_event_usa_election_roosevelt_macarthur
+
+    trigger = {
+		tag = SOV
+        JAP = {
+			controls_state = 435
+			controls_state = 672
+			controls_state = 335
+			controls_state = 334
+			controls_state = 336
+			controls_state = 327
+			
+		}
+    }
+	fire_only_once = yes
+
+	option = {
+		name = every_friday
+		SOV = {
+			add_ideas = SOV_synth_rubber
+			
+			}	
+	}	
+}
