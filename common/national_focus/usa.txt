@@ -1595,9 +1595,6 @@ focus_tree = {
 				technology = advanced_rubber_processing
 				technology = modern_rubber_processing
 			}
-			ENG = {
-				add_ideas = synth_rubber
-				}
 			add_ideas = synth_rubber
 		}
 	}
@@ -5428,7 +5425,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5457,7 +5454,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
-		cost = 3
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5545,7 +5542,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -5620,7 +5617,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_strategic_bombing
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}

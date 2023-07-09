@@ -4022,6 +4022,16 @@ leader_traits = {
 		}
 	}
 
+	jap_economist = {
+		sprite = 10
+		random = yes
+		production_factory_max_efficiency_factor = 0.1
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
 	editor = {
 		sprite = 10
 		random = yes

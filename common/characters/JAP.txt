@@ -1440,17 +1440,11 @@ characters={
 				original_tag = JAP
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				has_completed_focus = JAP_greater_east_asian_co_prosperity_sphere
 			}
 			traits = {
-				fascist_demagogue 
+				fascist_demagogue
+				jap_economist
 			}
 			do_effect = {
 				NOT = {

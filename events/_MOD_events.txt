@@ -1,3 +1,27 @@
+add_namespace = ragzon_delete
+
+country_event = {
+	id = ragzon_delete.1
+	title = ragzon_delete.1.t
+	desc = ragzon_delete.1.d
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		date > 1936.01.02
+
+	}
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = ragzon_delete.1.YES
+		remove_ideas = razgon
+	}
+}
+
+
+
 add_namespace = ENG_annex
 
 country_event = {
@@ -24,3 +48,62 @@ country_event = {
 		name = ENG_annex.1.NO
 	}
 }
+
+add_namespace = JAP_annex
+
+country_event = {
+	id = JAP_annex.1
+	title = JAP_annex.1.t
+	desc = JAP_annex.1.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MAN
+		MAN = { has_completed_focus = MAN_industry_for_japan }
+
+	}
+	
+	option = {
+		ai_chance = {
+			base = 100
+		}
+		name = JAP_annex.1.YES
+		JAP = {
+			annex_country = {target = MAN transfer_troops = yes}
+			every_state = {
+				limit = { is_core_of = MAN }
+				add_compliance = 100
+			}
+		}
+	}
+}
+	country_event = {
+		id = JAP_annex.2
+		title = JAP_annex.2.t
+		desc = JAP_annex.2.d
+		picture = GFX_report_event_generic_read_write
+		fire_only_once = yes
+		hidden = yes
+		
+		trigger = {
+			JAP = { has_completed_focus = JAP_liaison_conference}
+	
+		}
+		
+		option = {
+			ai_chance = {
+				base = 100
+			}
+			name = JAP_annex.2.YES
+			JAP = {
+				every_state = {
+					limit = { is_core_of = CHI }
+					add_compliance = 100
+				}
+			}
+		}
+}
+
+
+
