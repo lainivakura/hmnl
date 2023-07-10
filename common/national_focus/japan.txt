@@ -1138,6 +1138,9 @@ focus_tree = {
 			transfer_state = 599
 			transfer_state = 600
 			transfer_state = 749
+			transfer_state = 602
+			transfer_state = 607
+			transfer_state = 620
 
 
 			army_experience = 500

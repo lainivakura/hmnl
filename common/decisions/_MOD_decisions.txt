@@ -96,46 +96,7 @@ attache_decisions = {
 		}
 	}
 }
-d_occupation_decisions = {
-	JAP_occupation_law = {
-		icon = generic_operation
-		fire_only_once = yes
 
-		allowed = {
-			original_tag = JAP
-		}
-		
-		available = {
-			JAP = {has_completed_focus = JAP_intervene_in_china}
-			date < 1939.1.1
-		}
-
-		visible = {
-			date < 1939.1.1
-		}
-
-		days_remove = 30
-
-		modifier = {
-			civilian_factory_use = 10
-		} 
-
-		complete_effect = {
-	
-			JAP = {
-				every_state = {
-					limit = { 
-						OR = {
-							is_core_of = CHI
-							is_core_of = SIA
-						} 
-					}
-					add_compliance = 100
-				}
-			}
-		}
-	}
-}
 z_annex_d = {
 	ENG_annex_FROM = {
 		icon = generic_operation
