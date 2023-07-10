@@ -763,7 +763,6 @@ ideas = {
 				min_export = 0.3
 				industrial_capacity_factory = 0.25
 				industrial_capacity_dockyard = 0.25
-				production_factory_max_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.2
 				civilian_intel_to_others = 40.0
