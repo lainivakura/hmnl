@@ -220,6 +220,27 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;OTRANTO STRAIT 
 2284;8857;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;Panama
 803;5388;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
-4335;2170;impassable;-1;-1;-1;-1;-1;;kalimantan mountains
-5226;2047;impassable;-1;-1;-1;-1;-1;;kalimantan mountains
+1335;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+10269;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+8091;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+2117;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+2117;5226;impassable;-1;-1;-1;-1;-1;;kalimantan
+2117;7424;impassable;-1;-1;-1;-1;-1;;kalimantan
+7443;7424;impassable;-1;-1;-1;-1;-1;;kalimantan
+2222;7424;impassable;-1;-1;-1;-1;-1;;kalimantan
+4335;2170;impassable;-1;-1;-1;-1;-1;;kalimantan
+12955;2170;impassable;-1;-1;-1;-1;-1;;kalimantan
+8221;2170;impassable;-1;-1;-1;-1;-1;;kalimantan
+2184;2170;impassable;-1;-1;-1;-1;-1;;kalimantan
+5176;7424;impassable;-1;-1;-1;-1;-1;;kalimantan
+7299;5226;impassable;-1;-1;-1;-1;-1;;kalimantan
+4236;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+1404;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+7415;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+12243;2047;impassable;-1;-1;-1;-1;-1;;kalimantan
+5176;5226;impassable;-1;-1;-1;-1;-1;;kalimantan
+4236;5226;impassable;-1;-1;-1;-1;-1;;kalimantan
+2222;2170;impassable;-1;-1;-1;-1;-1;;kalimantan
+2184;7424;impassable;-1;-1;-1;-1;-1;;kalimantan
+1230;2170;impassable;-1;-1;-1;-1;-1;;kalimantan
 -1;-1;;-1;-1;-1;-1;-1;-1
