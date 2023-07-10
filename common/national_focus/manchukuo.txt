@@ -58,7 +58,7 @@
 	x = 6
 	y = 0	
 
-	cost = 10
+	cost = 52
 
 	ai_will_do = {
 		factor = 5
