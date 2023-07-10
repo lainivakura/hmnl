@@ -47,61 +47,7 @@ ideas = {
 				global_building_slots_factor = 0.3
 			}
 		}
-	tora_japan2 = {
-			allowed = {
-				always = no
-			}
-
-			
-			
-			removal_cost = -1
-	picture = jap_interservice_rivalry_navy_dominant
-
-			
-			targeted_modifier = {
-				tag = USA
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = ENG
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = MAL
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = PHI
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = AST
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.15
-			}
-			targeted_modifier = {
-				tag = SAF
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.15
-			}
-			targeted_modifier = {
-				tag = CAN
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.15
-			}
-			modifier = {
-				army_morale_factor = 0.1
-			}
-		}
+	
 	
 		main_focus_set_idea = {
 			allowed = {
@@ -430,6 +376,32 @@ max_command_power = 20
 				production_speed_industrial_complex_factor = -0.1
 			}
 		}
+
+		JAP_militarism2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = warrior_traditions_idea
+			
+			modifier = {
+				war_support_factor = 0.2
+				mobilization_laws_cost_factor = -0.25
+				justify_war_goal_time = -0.2
+				research_speed_factor = -0.05
+				production_speed_industrial_complex_factor = -0.25
+				industrial_capacity_factory = -0.16
+				industrial_capacity_dockyard = -0.13
+				production_speed_dockyard_factor = 0.5 
+			}
+		}
+
 
 		JAP_militarism_shogunate = {
 

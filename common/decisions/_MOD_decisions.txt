@@ -774,6 +774,36 @@ eng_saf_can = {
 				}
 			}
 		}}
+	}
+
+    
+
+
+		jap_desc  = {
+		JAP_recovery_navy = {
+
+			icon = generic_naval
+	
+			available = { 
+				has_completed_focus = JAP_navy_recover
+			}
+			visible = {
+				has_completed_focus = JAP_navy_recover
+			}
+			cost = 50
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 1
+			}
+			
+			complete_effect = {
+				swap_ideas = {
+					remove_idea = JAP_militarism
+					add_idea = JAP_militarism2
+				}
+			}
+		}	
+
 
 	JAP_close = {
 		icon = generic_operation
@@ -795,6 +825,7 @@ eng_saf_can = {
 			add_ideas = closed_economy
 		}
 	}
+
 
 	SOV_close = {
 		icon = generic_operation

@@ -16,3 +16,7 @@ usa_help_ussr = {
 eng_saf_can = {
 	icon = generic_political_discourse
 	}
+jap_desc = {
+	icon = generic_political_discourse
+	}	
+	
