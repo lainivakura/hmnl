@@ -1,5 +1,5 @@
 ideas = {
-	country = {
+	hidden_ideas={
 			razgon = {
 				picture = generic_infantry_bonus
 				modifier = {
@@ -9,8 +9,8 @@ ideas = {
 					date > 1936.01.02
 				}
 			}
-
-
+		}	
+			country = {
 		warm_blood = {
 			picture = SOV_the_road_of_life
 			modifier = {acclimatization_cold_climate_gain_factor = -9}
