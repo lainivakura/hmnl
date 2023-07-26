@@ -954,7 +954,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_purge_the_kodoha_faction
-		icon = GFX_focus_JAP_kal
+		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = JAP_the_unthinkable_option focus = JAP_support_the_kodoha_faction focus = JAP_strengthen_civilian_government }
 		x = 3
 		y = 0
@@ -995,7 +995,7 @@ focus_tree = {
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-		x = -4
+		x = -1
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
@@ -1018,7 +1018,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = JAP_liaison_conference
 			every_army_leader = {
 				add_planning = 1
 			}
@@ -1027,13 +1027,13 @@ focus_tree = {
 
 	focus = {
 		id = JAP_greater_east_asian_co_prosperity_sphere
-		icon = GFX_focus_JAP_geacps_shine
-		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-		x = 3
-		y = 0
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = JAP_liaison_conference }
+		x = -1
+		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 2
@@ -1052,19 +1052,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = kingoro_hashimoto
-			custom_effect_tooltip = JAP_economist
 		}
 	}
 
 	focus = {
 		id = JAP_intervene_in_china
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = JAP_liaison_conference }
+		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere }
 		will_lead_to_war_with = CHI
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
 
@@ -1120,7 +1118,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			JAP = {annex_country = {target = CHI transfer_troops = yes}}
+			JAP = {annex_country = {target = SIA transfer_troops = yes}}
 			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
+<<<<<<< HEAD
 			custom_effect_tooltip = JAP_CHINA
 			hidden_effect = {
 			transfer_state = 608
@@ -1147,6 +1148,10 @@ focus_tree = {
 			air_experience = 500
 			}
 
+=======
+			army_experience = 666
+			air_experience = 666
+>>>>>>> parent of 8192ca9 (япа и по хуйне)
 
 			hidden_effect = {
 				division_template = {
@@ -1176,7 +1181,7 @@ focus_tree = {
 						artillery = { x = 0 y = 1 }
 					}
 				}
-			
+			}
 			random_owned_controlled_state = {
 				limit = { ROOT = { has_full_control_of_state = PREV } }
 				prioritize = { 282 }
@@ -1301,13 +1306,12 @@ focus_tree = {
 					owner = jap
 				}
 			}
-			}
 		}
 	}
 
 	focus = {
 		id = JAP_secure_china
-		icon = GFX_focus_attack_japan
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = 0
 		y = 1
@@ -1324,9 +1328,15 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1939.01.01
+
 		}
 
+		bypass = {
+			OR = {
+				NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
+				CHI = { has_capitulated = yes }
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1334,17 +1344,15 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			JAP = {annex_country = {target = CHI transfer_troops = yes}}
-			add_war_support = 0.05
-			hidden_effect = {		
-			USA = { add_war_support = 0.05 }
-		}	
+			JAP_intervene_in_china_remove = yes		
+			USA = { add_war_support = 0.05 }	
+			unlock_decision_tooltip = JAP_ichi_go
 		}
 	}
 
 	focus = {
 		id = JAP_develop_chinese_resources
-		icon = GFX_focus_SOV_south_manchuria_railway
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = JAP_secure_china }
 		x = 0
 		y = 2
@@ -1371,10 +1379,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_named_threat = { threat = 20 name = JAP_secure_china }
+			add_named_threat = { threat = 21 name = JAP_secure_china }
 			add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 40000
+					amount = 70000
 				}
 			605 = {
 					add_resource = {
@@ -1388,12 +1396,6 @@ focus_tree = {
 							amount = 25
 						}
 				}
-			594 = {
-					add_resource = {
-							type = steel
-							amount = 45
-						}
-				}
 			if = {
 					limit = {
 							has_dlc = "Waking the Tiger"
@@ -1405,9 +1407,10 @@ focus_tree = {
 
 	focus = {
 		id = JAP_strike_south_doctrine
-		icon = GFX_JAP_harbor
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere }
 		prerequisite = { focus = JAP_sign_tripartite_pact }
-		x = 4
+		x = 0
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
@@ -1448,19 +1451,20 @@ focus_tree = {
 	focus = {
 		id = JAP_non_aggression_pact_with_the_soviet_union
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = JAP_strike_south_doctrine focus = JAP_national_defense_state }
-		x = -1
+		prerequisite = { focus = JAP_strike_south_doctrine }
+		x = 0
 		y = 2
- 
 		relative_position_id = JAP_strike_south_doctrine
-		cost = 10
+		dynamic = yes  
+
+		cost = 1
 
 		ai_will_do = {
 			factor = 2
 		}
 
 		available = {
-			GER = { has_completed_focus = GER_mol_rib_pact } 
+
 		}
 
 		bypass = {
@@ -1475,22 +1479,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		custom_effect_tooltip = JAP_SOV
-		hidden_effect={	
 			SOV = { country_event = { id = wtt_japan.11 } }
-		give_resource_rights = { receiver = JAP state = 655 }
-			}
-		}	
+		}
 	}
-
 
 	focus = {
 		id = JAP_bypass_the_philippines
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = JAP_strike_south_doctrine }
-		x = 4
-		y = 4
-
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
+		mutually_exclusive = { focus = JAP_secure_the_philippines }
+		x = -1
+		y = 1
+		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
 		cost = 5
 
@@ -1521,14 +1521,92 @@ focus_tree = {
 		}
 	}
 
-	
+	focus = {
+		id = JAP_secure_the_philippines
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
+		mutually_exclusive = { focus = JAP_bypass_the_philippines }
+		x = 1
+		y = 1
+		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
+
+		will_lead_to_war_with = PHI
+
+		cost = 1
+		allow_branch = {always = no}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				"PHI" = {
+					has_war = yes
+					NOT = { has_war_with = JAP }
+				}
+			}
+			modifier = {
+				has_war_with = SOV
+				factor = 0
+			}
+			modifier = {
+				has_War_with = event_target:WTT_current_china_leader
+				event_target:WTT_current_china_leader = {
+					surrender_progress < 0.2
+				}
+				factor = 0
+			}
+		}
+
+		available = {
+			date > 1941.5.1
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = ENG
+				has_wargoal_against = ENG
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			add_timed_idea = {
+				idea = tora_japan2
+				days = 60
+			}
+			custom_effect_tooltip = tooltip_jap_war
+			news_event = {
+				id = atom_japan.1
+			}
+			USA = {
+				set_state_controller = 327
+				set_state_controller = 623
+				set_state_controller = 624
+				set_state_controller = 625
+				set_state_controller = 626
+				set_state_controller = 627
+				set_state_controller = 628
+			}
+		}
+	}
+
 	focus = {
 		id = JAP_strike_on_the_southern_resource_area
-		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
-		x = 10
-		y = 5
-		prerequisite = { focus = JAP_coal_liquification focus = JAP_national_defense_state }
-		cost = 0.1
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = JAP_secure_the_philippines focus = JAP_bypass_the_philippines }
+		x = 1
+		y = 1
+		relative_position_id = JAP_bypass_the_philippines
+
+		will_lead_to_war_with = ENG
+		will_lead_to_war_with = MAL
+		will_lead_to_war_with = INS
+
+		cost = 1
+
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1545,47 +1623,40 @@ focus_tree = {
 				factor = 0
 			}
 		}
+
 		available = {
-			date > 1940.12.31
+			date > 1941.1.1
 		}
+
 		bypass = {
-			OR = {
-				has_wargoal_against = ENG
-				has_war_with = ENG
-			}
-		}   
+			has_war_with = ENG
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-	   hidden_effect = {
-				JAP = { clear_variable = getting_annexed }
-	   }
-
-
-		custom_effect_tooltip = tooltip_jap_war
-		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
-		hidden_effect={
-				sound_effect = sp_jap_banzai
-				if=	{	limit={USA= {	has_war=no	}	
-				}
-					ENG= { add_to_faction=USA }
-					JAP= { declare_war_on = { target = USA type = annex_everything }}
-				}
-				USA= {	add_to_war = {
-						targeted_alliance = ENG
-						enemy = ROOT
-						}
-					}
-				every_country={
-					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
-				}
-			}	
-
+			custom_effect_tooltip = tooltip_jap_war
+			news_event = {
+				id = atom_japan.1
+			}
+			add_timed_idea = {
+				idea = tora_japan2
+				days = 60
+			}
+			USA = {
+				transfer_state = 327
+				transfer_state = 623
+				transfer_state = 624
+				transfer_state = 625
+				transfer_state = 626
+				transfer_state = 627
+				transfer_state = 628
+			}
 		}
 	}
-
 
 	focus = {
 		id = JAP_alliance_with_siam
@@ -1626,710 +1697,100 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_navy_recover
-		icon = GFX_focus_generic_destroyer
+		id = JAP_exploit_the_southern_resource_area
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
+		prerequisite = { focus = JAP_coal_liquification }
 		x = 1
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			custom_effect_tooltip="Unlocks multiple decisions to gain Dockyard Output and Construction Speed at the cost of Factory Output"
-		}
-	}
-	focus = {
-		id = JAP_build_escorts
-		icon = GFX_focus_generic_destroyer
-		prerequisite = { focus = JAP_navy_recover focus = JAP_strike_on_the_southern_resource_area }
-		x = 2
-		y = 2
-		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_tech = improved_ship_hull_light
-			has_tech = improved_sonar
-			has_tech = improved_depth_charges
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_ideas = CAN_degauss_ship_hulls
-			set_technology = {
-				improved_sonar = 1
-				advanced_depth_charges = 1
-			}
-			create_equipment_variant = {
-				name = "ASW Class"
-				type = ship_hull_light_3
-				name_group = JAP_DD_HISTORICAL
-				parent_version = 0
-				modules={
-					fixed_ship_battery_slot=ship_light_battery_2
-					fixed_ship_fire_control_system_slot=ship_sonar_2
-					fixed_ship_engine_slot=light_ship_engine_3
-					fixed_ship_torpedo_slot=ship_torpedo_2
-					mid_1_custom_slot=ship_depth_charge_3
-					rear_1_custom_slot=ship_depth_charge_3
-					front_1_custom_slot=ship_depth_charge_3
-					fixed_ship_anti_air_slot=ship_anti_air_2
-				}
-			}
-			custom_effect_tooltip="Builds twenty ASW destroyers in Nagasaki"
-			hidden_effect = {
-				load_oob = "JAP_asw_destroyers"
-			}
-		}
-	}
-	focus = {
-		id = JAP_fighter3
-		icon = GFX_focus_generic_multi_role_aircraft
-		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = 2
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			date>1941.6.1
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_jet_prototypes
-				bonus = 1.0
-				uses = 2
-				technology = advanced_small_airframe
-				technology = advanced_medium_airframe
-			}
-		}
-	}
-	focus = {
-		id = JAP_jet_prototypes
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = JAP_fighter3 }
-		x = 0
-		y = 1
-		relative_position_id = JAP_fighter3
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			date>1942.1.1
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_jet_prototypes
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
-			}
-		}
-	}
 
-	focus = {
-		id = JAP_eastern_expansion
-		icon = GFX_JAP_army2_shine
-		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = -6
-		y = 1
-		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 2
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect={add_timed_idea={idea=main_focus_set_idea days=35}}
-			every_state = {
-				limit={
-				OR={state=627 state=625 state=628 state=624 state=327 state=626 state=623 state=638 state=632 }
-			}
-				add_dynamic_modifier = { modifier = JAP_attack days= 90  }
-			}
-		}
-	}
-	focus = {
-		id = JAP_japanese_settlement
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = -1
-		y = 1
-		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_political_power = 35
-			525 = { add_extra_state_shared_building_slots = 2 }
-			527 = { add_extra_state_shared_building_slots = 2 }
-		}
-	}
-	focus = {
-		id = JAP_burma_attack
-		icon = GFX_goal_jap_imperialiasm
-		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = 5
-		y = 1
-		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 2
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-			custom_trigger_tooltip = {
-				tooltip = JAP_RAJ
-				RAJ = {has_army_manpower = { size > 70000 }} # +- 70 дивок
-				RAJ = { has_equipment = { infantry_equipment_0 < 10000 } }
-			}
-		}	
-		bypass = {
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect= {	
-			add_timed_idea= { idea= main_focus_set_idea days= 35 }
-		}
-		every_state = {
-			limit= { 
-			OR= { state = 288 state = 640 state = 432 state = 434 } 
-		}
-			add_dynamic_modifier = { 
-			modifier = JAP_attack days = 90  
-			}
-		}	
-	}
-}
-	
-	focus = {
-		id = JAP_go_westward
-		icon = GFX_goal_jap_officer
-		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = 3
-		y = 1
-		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 2
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-			custom_trigger_tooltip = {
-				tooltip = JAP_RAJ
-				RAJ = {has_army_manpower = { size > 70000 }} # +- 70 дивок
-				RAJ = { has_equipment = { infantry_equipment_0 < 10000 } }
-			}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
-			every_state = {
-				limit = {  
-				OR={state=423 state=269 state = 561 state=628 state=630 } 
-				}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
-		id = JAP_its_time_for_africa
-		icon = GFX_goal_jap_glory
-		prerequisite = { focus = JAP_go_westward }
-		x = 1
-		y =  1
-		relative_position_id = JAP_go_westward
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT = { has_idea = main_focus_set_idea }
-			RAJ = { is_controlled_by_ROOT_or_ally = yes }
-			672 = { is_controlled_by_ROOT_or_ally = yes }
-			334 = { is_controlled_by_ROOT_or_ally = yes }
-			335 = { is_controlled_by_ROOT_or_ally = yes }
-			
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect=	{	add_timed_idea = { idea=main_focus_set_idea days = 35} 
-			}
-			every_state = {
-				limit = {OR = {state= 559 state=903 state = 905 state=546 state= 719 state= 681  state= 275 state= 269 } }
-				add_dynamic_modifier = { modifier = JAP_attack days = 90  } }
-		}
-	}
-	focus = {
-		id = JAP_dacca_offensive
-		icon = GFX_focus_JAP_small_arms
-		prerequisite = { focus = JAP_burma_attack }
-		x = 0
-		y = 2
-		relative_position_id = JAP_burma_attack
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT= { has_idea=main_focus_set_idea }
-			432= { is_controlled_by_ROOT_or_ally = yes }
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect={	add_timed_idea= {idea=main_focus_set_idea days=35
-			} 
-		}
-			every_state = {
-				limit=	{ OR = {state=430 state=431 state = 435 } 
-			}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }
-			}
-		}
-	}
-	focus = {
-		id = JAP_volunteer_workers_in_burma
-		icon = GFX_goal_jap_foreign_sub
-		prerequisite = { focus = JAP_burma_attack focus = JAP_go_westward }
-		x = 1
-		y = 1
-		relative_position_id = JAP_burma_attack
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			288= {is_controlled_by_ROOT_or_ally=yes}
-			640= {is_controlled_by_ROOT_or_ally=yes}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			288 = {
-				add_manpower = -1000000
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_buildings_factor = 0.75
-					}
-				}
-			}
-			640 = { add_manpower = -1000000
-				add_state_modifier = {
-					modifier = {
-						state_production_speed_buildings_factor = 0.75
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_korean_guest_workers
-		icon = GFX_goal_jap_foreign_sub
-		prerequisite = { focus = JAP_japanese_settlement }
-		x = -1
-		y = 1
-		relative_position_id = JAP_japanese_settlement
-		cost = 4
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			date>1941.6.1
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			525 = { add_manpower = -100000}
-			527 = { add_manpower = -100000}
-		}
-	}
-	focus = {
-		id = JAP_heavy_industry_development
-		icon = GFX_goal_japanese_instructors
-		prerequisite = { focus = JAP_japanese_settlement }
-		x = 1
-		y = 1
-		relative_position_id = JAP_japanese_settlement
-		cost = 4
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			date>1941.6.1
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			524 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_southern_expansion
-		icon = GFX_Japanese_Combined
-		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		x = -4
-		y = 1
-		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 2
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
-			every_state = {
-				limit={OR={state=669 state=523 state=737 state=634 state=635 state=734 state=636 state=643 state=639 state=725 state=284 state=723 state=726 state=642}}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
-		id = JAP_hawaii
-		icon = GFX_Japanese_Fleet
-		prerequisite = { focus = JAP_eastern_expansion }
-		x = 0
-		y = 2
-		relative_position_id = JAP_eastern_expansion
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
-			every_state = {
-				limit={OR={state=629 state=650}}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
-		id = JAP_australia
-		icon = GFX_goal_jap_navy
-		prerequisite = { focus = JAP_southern_expansion }
-		x = 0
-		y = 2
-		relative_position_id = JAP_southern_expansion
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-			669= {is_controlled_by_ROOT_or_ally=yes}
-			523= {is_controlled_by_ROOT_or_ally=yes}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			every_state = {
-				limit={is_core_of=AST}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
-		id = JAP_fortify_dei
-		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = JAP_eastern_expansion focus = JAP_southern_expansion}
-		x = 1
-		y = 1
-		relative_position_id = JAP_eastern_expansion
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-		336= {is_controlled_by_ROOT_or_ally=yes}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			every_state = {
-				limit={OR={is_core_of=INS state=672 state=333 state=334 state=335 state=673 state=668 state=667 state=669 state = 736}}
-				add_state_modifier={
-					modifier={
-						local_supplies=0.5
-						state_production_speed_buildings_factor = 0.50
-					}
-					}}
-		}
-	}
-	focus = {
-		id = JAP_reconquest_of_dei
-		icon = GFX_focus_spr_masters_of_our_own_fate
-		prerequisite = { focus = JAP_fortify_dei }
-		x = 0
-		y = 2
-		relative_position_id = JAP_fortify_dei
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			NOT={has_idea=main_focus_set_idea}
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
-			every_state = {
-				limit={OR={state=672 state=333 state=334 state=335 state=673 state=668 state=667 state=669 state = 736 }}
-				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
-		}
-	}
-	focus = {
-		id = JAP_develop_the_bejing_area
-		icon = GFX_focus_JAP_army_expansion
-		prerequisite = { focus = JAP_korean_guest_workers focus = JAP_heavy_industry_development}
-		x = 1
-		y = 1
-		relative_position_id = JAP_korean_guest_workers
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			date>1942.6.1
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			608 = {
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = JAP_ussr_war_goal
-		icon = GFX_focus_jap_hokushin
-		prerequisite = { focus = JAP_develop_the_bejing_area}
-		x = 0
-		y = 1
-		available = {OR={
-				date>1944.1.1
-				AND={date > 1942.1.1
-					count_triggers = {
-						amount = 2
-						Or={AST={has_capitulated=yes} AST={exists=no}}
-						Or={RAJ={has_capitulated=yes} RAJ={exists=no}}
-						Or={SAF={has_capitulated=yes} SAF={exists=no}}
-						}}
-			}
-		}
-		relative_position_id = JAP_develop_the_bejing_area
-		cost = 2
-		bypass = {
-			has_war_with = SOV
-		}
-		completion_reward = {
-			SOV = {
-		division_template = {
-		name = "Siberian Tanks"
-		regiments = {
-			medium_armor = { x = 0 y = 0 }
-			medium_armor = { x = 0 y = 1 }
-			medium_armor = { x = 0 y = 2 }
-			medium_armor = { x = 0 y = 3 }
-			medium_armor = { x = 1 y = 0 }
-			medium_armor = { x = 1 y = 1 }
-			medium_armor = { x = 1 y = 2 }
-			medium_armor = { x = 1 y = 3 }
-			medium_armor = { x = 2 y = 0 }
-			medium_armor = { x = 2 y = 1 }
-			medium_armor = { x = 2 y = 2 }
-			medium_sp_anti_air_brigade = { x = 2 y = 3 }
-			medium_sp_anti_air_brigade = { x = 2 y = 4 }
-			motorized = { x = 3 y = 0 }
-			motorized = { x = 3 y = 1 }
-			motorized = { x = 3 y = 2 }
-			motorized = { x = 3 y = 3 }
-			motorized = { x = 4 y = 0 }
-			motorized = { x = 4 y = 1 }
-			motorized = { x = 4 y = 2 }
-			motorized = { x = 4 y = 3 }
-			}
-			support = {
-			light_tank_recon = { x = 0 y = 0 }
-			engineer = { x = 0 y = 1 }
-			artillery = { x = 0 y = 2 }
-			logistics_company = { x = 0 y = 3 }
-			signal_company = { x = 0 y = 4 }
-			}
-		}
-	division_template = {
-		name = "Siberian Divisions"
-		regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		artillery_brigade = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		artillery_brigade = { x = 1 y = 4 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		artillery_brigade = { x = 2 y = 3 }
-		artillery_brigade = { x = 2 y = 4 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		anti_tank_brigade = { x = 3 y = 2 }
-		anti_air_brigade = { x = 3 y = 4 }
-		artillery_brigade = { x = 3 y = 3 }
-		artillery_brigade = { x = 3 y = 4 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-	}
-	}
-	load_oob = "sov_spawn"
-	}
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
-		}
-	}
+		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			OR = {
+				has_full_control_of_state = 333
+				has_full_control_of_state = 672
+				has_full_control_of_state = 334
+			}
+			has_full_control_of_state = 336
+			has_full_control_of_state = 671
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			336 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			333 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			672 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			334 = {
+				if = {
+					limit = { is_fully_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			671 = {
+				add_resource = {
+					type = aluminium
+					amount = 6
+				}
+			}
+			if = {
+				limit = { has_dlc = "Waking the Tiger" }
+				unlock_decision_category_tooltip = prospect_for_resources
+			}
+		}
+	}
 
 	focus = {
 		id = JAP_sign_tripartite_pact
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere }
-		x = 3
+		prerequisite = { focus = JAP_liaison_conference }
+		x = 1
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
@@ -2344,6 +1805,16 @@ focus_tree = {
 		}
 
 		available = {
+			any_country = {
+				original_tag = GER
+				has_government = fascism
+				NOT = { has_war_with = ROOT }
+			}
+			any_country = {
+				original_tag = ITA
+				has_government = fascism
+				NOT = { has_war_with = ROOT }
+			}
 		}
 
 		bypass = {
@@ -2382,11 +1853,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = state_shintoism
-				add_idea = state_shintoism2
-			}
-			
 			random_country = {
 				limit = {
 					original_tag = GER
@@ -2401,8 +1867,7 @@ focus_tree = {
 		id = JAP_guide_the_zaibatsus
 		icon = GFX_focus_jap_zaibatsu
 		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
@@ -2478,9 +1943,10 @@ focus_tree = {
 	focus = {
 		id = JAP_nationalize_war_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = JAP_national_mobilization_law focus = JAP_national_research_policy }
-		x = 2
-		y = 1
+		prerequisite = { focus = JAP_guide_the_zaibatsus }
+		prerequisite = { focus = JAP_national_mobilization_law }
+		x = 0
+		y = 2
 		relative_position_id = JAP_guide_the_zaibatsus
 
 		cost = 10
@@ -2579,103 +2045,12 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = JAP_industrialize_north
-		icon = GFX_focus_generic_hydroelectric_energy
-		prerequisite = { focus = JAP_national_mobilization_law focus = JAP_national_research_policy }
-		x = 2
-		y = 2
-		relative_position_id = JAP_guide_the_zaibatsus
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			custom_effect_tooltip = JAP_INFRA
-			hidden_effect = {
-				282 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				532 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				531 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				528 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				529 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-			}				
-		}
-	}
-
-
-
-
-
-
 	focus = {
 		id = JAP_coal_liquification
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = JAP_strike_south_doctrine }
+		prerequisite = { focus = JAP_nationalize_war_industry }
 		x = 0
-		y = 4
+		y = 6
 		relative_position_id = JAP_guide_the_zaibatsus
 
 		cost = 10
@@ -2732,9 +2107,9 @@ focus_tree = {
 	focus = {
 		id = JAP_national_mobilization_law
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = JAP_purge_the_kodoha_faction }
-		x = 0
-		y = 0
+		prerequisite = { focus = JAP_guide_the_zaibatsus focus = JAP_challenge_the_zaibatsus }
+		x = 2
+		y = 1
 		relative_position_id = JAP_guide_the_zaibatsus
 
 		cost = 10
@@ -2917,7 +2292,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_national_defense_state
-		icon = GFX_focus_JAP_total_mob_shine
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = JAP_nationalize_war_industry focus = JAP_imperial_arsenals }
 		x = -2
 		y = 1
@@ -3040,6 +2415,48 @@ focus_tree = {
 					has_dlc = "Waking the Tiger"
 				}
 				custom_effect_tooltip = cost_reduced_last_stand 
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_strengthen_the_divine_wind
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = JAP_spiritual_mobilization }
+		prerequisite = { focus = JAP_warrior_spirit }
+		x = 1
+		y = 1
+		relative_position_id = JAP_spiritual_mobilization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_tech = rocket_engines
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
+				hidden_effect = { set_technology = { suicide_craft = 1 } }
+			}
+			else = {
+				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect_bba
+				hidden_effect = { set_technology = { suicide_charge = 1 popup = no} }
 			}
 		}
 	}
@@ -3525,7 +2942,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_join_the_london_naval_treaty }
 		x = 0
 		y = 1
-		relative_position_id = JAP_bypass_the_philippines
+		relative_position_id = JAP_join_the_london_naval_treaty
 
 		cost = 10
 
@@ -4660,9 +4077,6 @@ focus_tree = {
 	}
 
 	focus = {
-		allow_branch = {
-			always = no
-		}
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
 		x = -4
@@ -4871,12 +4285,173 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = JAP_light_industry_development
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = JAP_expand_manchurian_railways }
+		x = -1
+		y = 1
+		relative_position_id = JAP_expand_manchurian_railways
 
+		cost = 1
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			715 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_heavy_industry_development
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = JAP_expand_manchurian_railways }
+		x = 1
+		y = 1
+		relative_position_id = JAP_expand_manchurian_railways
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			716 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_japanese_settlement
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = JAP_heavy_industry_development }
+		prerequisite = { focus = JAP_light_industry_development }
+		x = 0
+		y = 2
+		relative_position_id = JAP_expand_manchurian_railways
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			715 = { add_extra_state_shared_building_slots = 1 }
+			610 = { add_extra_state_shared_building_slots = 1 }
+			328 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+
+	focus = {
+		id = JAP_fortify_the_border
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = JAP_the_manchurian_project }
+		x = 0
+		y = 1
+		relative_position_id = JAP_the_manchurian_project 
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_completed_focus = JAP_technological_exchange
+			}
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			MAN = {
+				every_owned_state = {
+					limit = {
+						is_fully_controlled_by = PREV
+						any_neighbor_state = {
+							is_controlled_by = SOV
+						}
+					}
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+							level < 2
+						}
+					}
+				}				
+			}
+		}
+	}
 
 	focus = {
 		id = JAP_army_expansion_law
-		icon = GFX_jap_officer_hat
-		x = -25
+		icon = GFX_goal_generic_army_doctrines
+		x = 6
 		y = 0
 		relative_position_id = JAP_the_manchurian_project 
 
@@ -4910,7 +4485,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_small_arms_modernization
-		icon = GFX_focus_focus_fra_maquis
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = JAP_army_expansion_law }
 		x = -1
 		y = 1
@@ -4944,7 +4519,7 @@ focus_tree = {
 				name = JAP_small_arms_modernization
 				bonus = 1.0
 				uses = 1
-				technology = improved_infantry_weapons
+				category = infantry_weapons	
 			}
 		}
 	}
@@ -5015,8 +4590,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_artillery
-				bonus = 1.2
-				uses = 3
+				bonus = 1.0
+				uses = 2
 				category = artillery	
 			}
 		}
@@ -5024,7 +4599,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_armored_divisions
-		icon = GFX_focus_JAP_armor
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = JAP_supremacy_of_technology }
 		x = 0
 		y = 2
@@ -5052,16 +4627,16 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.5
-				uses = 3
+				bonus = 1.0
+				uses = 1
 				category = armor	
 			}
 		}
 	}
 
 	focus = {
-		id = JAP_at_guns
-		icon = GFX_goal_generic_army_artillery
+		id = JAP_bicycle_battalions
+		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = JAP_supremacy_of_technology focus = JAP_supremacy_of_will }
 		x = 1
 		y = 1
@@ -5087,12 +4662,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_small_arms_modernization
- 				bonus = 1.2
- 				uses = 3
- 				category = cat_anti_tank
-			}
+			set_technology = { bicycle_infantry = 1 }
 		}
 	}
 
@@ -5135,7 +4705,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_supremacy_of_will
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = JAP_army_expansion }
 		x = 0
 		y = 1
@@ -5171,9 +4741,9 @@ focus_tree = {
 
 	focus = {
 		id = JAP_fighter_modernization
-		icon = GFX_JAP_bomber
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = JAP_army_expansion_law focus = JAP_new_naval_estimates }
-		x = 3
+		x = 4
 		y = 2
 		relative_position_id = JAP_army_expansion_law
 
@@ -5258,7 +4828,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_agility_focus
-		icon = GFX_goal_JAP_agility_focus
+		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = JAP_fighter_modernization }
 		x = 1
 		y = 1
@@ -5375,7 +4945,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1942.01.01
+
 		}
 
 		bypass = {
@@ -5389,10 +4959,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-				name = JAP_engines
-				bonus = 2.0
+				name = JAP_bomber_modernization
+				bonus = 1.0
 				uses = 1
-				category = cat_air_engine
+				category = cas_bomber
+				category = tactical_bomber					
 			}
 		}
 	}
@@ -5406,7 +4977,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5428,8 +4999,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strategic_bomber_effort
-				bonus = 5.0
-				uses = 1
+				bonus = 1.0
+				uses = 2
 				category = cat_strategic_bomber	
 			}
 		}
@@ -5437,14 +5008,14 @@ focus_tree = {
 
 	focus = {
 		id = JAP_unified_fighter_development
-		icon = GFX_goal_japanese_airforce
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = JAP_agility_focus }
 		prerequisite = { focus = JAP_the_zero }
 		x = 1
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -5469,9 +5040,46 @@ focus_tree = {
 	}
 
 	focus = {
+		id = JAP_jet_prototypes
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = JAP_unified_fighter_development focus = JAP_strategic_bomber_effort }
+		x = 0
+		y = 4
+		relative_position_id = JAP_fighter_modernization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_jet_prototypes
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
 		id = JAP_new_naval_estimates
-		icon = GFX_JAP_navy
-		x = 7
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 8
 		y = 0
 		relative_position_id = JAP_army_expansion_law
 
@@ -5623,7 +5231,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = JAP_carrier_warfare_experiments
-				cost_reduction = 1
+				cost_reduction = 0.25
 				uses = 2
 				category = cat_base_strike
 			}
@@ -5665,9 +5273,9 @@ focus_tree = {
 			add_ideas = JAP_expand_the_snlf
 			add_tech_bonus = {
 				name = JAP_expand_the_snlf
-				bonus = 0.75
-				uses = 2
-				category = cat_special_forces_generic
+				bonus = 1.0
+				uses = 1
+				category = marine_tech	
 			}
 		}
 	}
@@ -5786,7 +5394,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_the_ultimate_battleship
-		icon = GFX_focus_JAP_new_naval
+		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = JAP_supremacy_of_the_battlefleet }
 		x = 0
 		y = 2
@@ -5889,10 +5497,10 @@ focus_tree = {
 	focus = {
 		id = JAP_cruiser_modernization
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = JAP_the_ultimate_battleship focus = JAP_new_naval_estimates }
-		x = 1
+		prerequisite = { focus = JAP_new_naval_estimates }
+		x = 3
 		y = 1
-		relative_position_id = JAP_the_ultimate_battleship
+		relative_position_id = JAP_new_naval_estimates
 
 		cost = 5
 
@@ -5927,10 +5535,10 @@ focus_tree = {
 	focus = {
 		id = JAP_long_lance_torpedoes
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = JAP_the_ultimate_battleship }
+		prerequisite = { focus = JAP_cruiser_modernization }
 		x = 0
-		y = 2
-		relative_position_id = JAP_the_ultimate_battleship
+		y = 1
+		relative_position_id = JAP_cruiser_modernization
 
 		cost = 5
 
@@ -5959,9 +5567,10 @@ focus_tree = {
 	focus = {
 		id = JAP_torpedo_cruisers
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = JAP_long_lance_torpedoes focus = JAP_first_air_fleet }
-		x = -5
-		y = 6
+		prerequisite = { focus = JAP_long_lance_torpedoes }
+		x = 0
+		y = 1
+		relative_position_id = JAP_long_lance_torpedoes
 
 		cost = 5
 
@@ -5995,5 +5604,44 @@ focus_tree = {
 		}
 	}
 
-
+	focus = {
+		id = JAP_the_great_march_north
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 1
+		relative_position_id =  JAP_strike_on_the_southern_resource_area
+		prerequisite = {
+			focus = JAP_strike_on_the_southern_resource_area
+		}
+		x = -1
+		y = 1
+		available = {
+			JAP = {
+				controls_state = 439
+				controls_state = 430
+				controls_state = 427
+				controls_state = 336
+				controls_state = 335
+				controls_state = 333
+				controls_state = 672
+				controls_state = 327
+				controls_state = 627
+			}
+		}
+		bypass = {
+			SOV = {
+				OR = {
+					exists = no
+					is_in_faction_with = JAP
+					has_war_with = ROOT
+				}
+			}
+		}
+		will_lead_to_war_with = SOV
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SOV
+			}
+		}
+	}
 }

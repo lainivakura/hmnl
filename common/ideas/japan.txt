@@ -23,30 +23,6 @@ ideas = {
 				compliance_growth = 0.1
 			}
 		}
-
-
-		state_shintoism2 = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			removal_cost = -1
-	
-
-			modifier = {
-				industry_air_damage_factor = -0.1
-				army_morale_factor = 0.1
-				compliance_growth = 0.1
-				operative_slot  = 2
-				global_building_slots_factor = 0.3
-			}
-		}
 	tora_japan2 = {
 			allowed = {
 				always = no
@@ -103,18 +79,6 @@ ideas = {
 			}
 		}
 	
-		main_focus_set_idea = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			removal_cost = -1
-			picture = generic_infantry_bonus
-		}
 		# POLITICAL
 		student_mobilization_idea = {
 			
@@ -287,6 +251,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
+				consumer_goods_factor = 0.01
 max_command_power = 20
 			}
 		}
@@ -406,7 +371,7 @@ max_command_power = 20
 
 			picture = jap_duplicate_research
 			
-			research_bonus = { air_equipment = -0.30 }
+			research_bonus = { air_equipment = -0.10 }
 		}
 
 		JAP_militarism = {
@@ -775,7 +740,8 @@ max_command_power = 20
 
 			picture = jap_supremacy_of_technology
 			modifier = { 
-			}
+global_building_slots_factor = 0.3
+}
 			research_bonus = {
 				infantry_weapons = 0.05
 				armor = 0.05
@@ -796,7 +762,7 @@ max_command_power = 20
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				army_core_defence_factor = 0.1
+				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_morale_factor = 0.1
 			}

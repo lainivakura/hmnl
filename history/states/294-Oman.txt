@@ -7,8 +7,9 @@ state={
 	state_category = rural
 
 ##PUSTOI_SLOT
+	impassable = yes
 	history={
-		owner = ENG
+		owner = VEN
 	}
 	
 

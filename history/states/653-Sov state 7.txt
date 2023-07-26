@@ -13,7 +13,11 @@ state={
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
+<<<<<<< HEAD
 
+=======
+			industrial_complex = 1
+>>>>>>> parent of 8192ca9 (япа и по хуйне)
 			air_base = 1
 
 		}

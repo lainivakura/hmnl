@@ -1,5 +1,5 @@
 ideas = {
-	hidden_ideas={
+	country = {
 			razgon = {
 				picture = generic_infantry_bonus
 				modifier = {
@@ -9,8 +9,13 @@ ideas = {
 					date > 1936.01.02
 				}
 			}
+<<<<<<< HEAD
 		}	
 			country = {
+=======
+
+
+>>>>>>> parent of 8192ca9 (япа и по хуйне)
 		warm_blood = {
 			picture = SOV_the_road_of_life
 			modifier = {acclimatization_cold_climate_gain_factor = -9}

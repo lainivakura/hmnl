@@ -29,7 +29,7 @@ state = {
 			13242 2 
 		}
 		
-		owner = ITA
+		owner = ETH
 		add_core_of = ETH
 		add_core_of = PRC
 

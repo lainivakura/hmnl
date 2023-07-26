@@ -5,9 +5,10 @@ state={
 	manpower = 1
 
 	state_category = enclave
+	impassable = yes
 	history={
-		owner = RAJ
-		add_core_of = RAJ
+		owner = VEN
+		add_core_of = VEN
 	}
 
 	provinces={

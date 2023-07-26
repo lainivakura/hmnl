@@ -2133,7 +2133,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			has_completed_focus = JAP_exploit_the_southern_resource_area
 			623 = {
 				NOT = {
 					has_state_flag = luzon_chromium_developed
@@ -2184,7 +2184,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			has_completed_focus = JAP_exploit_the_southern_resource_area
 			627 = {
 				NOT = {
 					has_state_flag = mindanao_steel_developed
@@ -2235,7 +2235,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			has_completed_focus = JAP_exploit_the_southern_resource_area
 			625 = {
 				NOT = {
 					has_state_flag = samar_steel_developed
@@ -2286,7 +2286,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			has_completed_focus = JAP_exploit_the_southern_resource_area
 			725 = {
 				NOT = {
 					has_state_flag = nauru_tungsten_developed
@@ -2330,7 +2330,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			has_completed_focus = JAP_exploit_the_southern_resource_area
 			671 = {
 				NOT = {
 					has_state_flag = tonkin_aluminium_developed
@@ -2374,7 +2374,7 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			has_completed_focus = JAP_exploit_the_southern_resource_area
 			336 = {
 				NOT = {
 					has_state_flag = singapore_aluminium_developed

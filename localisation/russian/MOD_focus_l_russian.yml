@@ -27,6 +27,7 @@ ITA_LARGE_tt: "\nКогда изучена технология §Y$improved_lar
  USA_civs_1: "Строительство новых фабрик"
  USA_civs_2: "Промышленная экспансия"
  USA_civs_3: "Формирование новых производств"
+<<<<<<< HEAD
  JAP_fighter3: "Разработка новых истребителей"
  JAP_dacca_offensive: "Битва за Дакку"
  JAP_burma_attack: "Вторжение в Бирму"
@@ -48,3 +49,6 @@ ITA_LARGE_tt: "\nКогда изучена технология §Y$improved_lar
  JAP_industrialize_north: "Индустриализация Севера"
  SOV_the_mozhaisk_line: "Можайская линия"
  
+=======
+ SOV_the_mozhaisk_line: "Можайская линия"
+>>>>>>> parent of 8192ca9 (япа и по хуйне)

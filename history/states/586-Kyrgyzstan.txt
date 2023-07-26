@@ -12,6 +12,10 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 2
+<<<<<<< HEAD
+=======
+			
+>>>>>>> parent of 8192ca9 (япа и по хуйне)
 
 		}
 		victory_points = {

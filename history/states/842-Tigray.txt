@@ -33,7 +33,7 @@ state={
 		victory_points = {
 			13238 1 
 		}
-		owner = ITA
+		owner = ETH
 		add_core_of = ETH
 		add_core_of = PRC
 

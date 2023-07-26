@@ -3,6 +3,7 @@ state={
 	name="STATE_604"
 
 ##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
 	
