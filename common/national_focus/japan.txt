@@ -1121,37 +1121,8 @@ focus_tree = {
 			JAP = {annex_country = {target = CHI transfer_troops = yes}}
 			JAP = {annex_country = {target = SIA transfer_troops = yes}}
 			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
-<<<<<<< HEAD
-			custom_effect_tooltip = JAP_CHINA
-			hidden_effect = {
-			transfer_state = 608
- 			transfer_state = 614
- 			transfer_state = 597
- 			transfer_state = 598
- 			transfer_state = 613
- 			transfer_state = 596
- 			transfer_state = 595
- 			transfer_state = 593
- 			transfer_state = 592
- 			transfer_state = 594
- 			transfer_state = 591
-			transfer_state = 743
-			transfer_state = 599
-			transfer_state = 600
-			transfer_state = 749
-			transfer_state = 602
-			transfer_state = 607
-			transfer_state = 620
-
-
-			army_experience = 500
-			air_experience = 500
-			}
-
-=======
 			army_experience = 666
 			air_experience = 666
->>>>>>> parent of 8192ca9 (япа и по хуйне)
 
 			hidden_effect = {
 				division_template = {

@@ -14,10 +14,8 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
-<<<<<<< HEAD
-=======
 			arms_factory = 2
->>>>>>> parent of 8192ca9 (япа и по хуйне)
+
 		}
 		add_core_of = SOV
 	}

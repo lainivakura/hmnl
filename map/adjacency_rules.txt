@@ -60,11 +60,6 @@ adjacency_rule =
 	offset = { 1 0 -6 }
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> parent of 8192ca9 (япа и по хуйне)
 #Gibraltar Strait
 adjacency_rule =
 {
