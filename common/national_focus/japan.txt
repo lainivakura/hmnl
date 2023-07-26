@@ -1632,7 +1632,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1642,7 +1642,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			unlock_decision_category_tooltip = JAP_pacific_guardian
+			custom_effect_tooltip="Unlocks multiple decisions to gain Dockyard Output and Construction Speed at the cost of Factory Output"
 		}
 	}
 	focus = {
@@ -1825,7 +1825,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = JAP_RAJ
 				RAJ = {has_army_manpower = { size > 70000 }} # +- 70 дивок
-				RAJ = { has_equipment = { infantry_equipment_0 < 10000 } } #проверка на абуз
+				RAJ = { has_equipment = { infantry_equipment_0 < 10000 } }
 			}
 		}	
 		bypass = {
@@ -1862,7 +1862,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = JAP_RAJ
 				RAJ = {has_army_manpower = { size > 70000 }} # +- 70 дивок
-				RAJ = { has_equipment = { infantry_equipment_0 < 10000 } } #проверка на абуз
+				RAJ = { has_equipment = { infantry_equipment_0 < 10000 } }
 			}
 		}
 		bypass = {
@@ -1875,7 +1875,7 @@ focus_tree = {
 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
 			every_state = {
 				limit = {  
-				OR={state=423 state=422 state = 281 state=320 state=733 } 
+				OR={state=423 state=269 state = 561 state=628 state=630 } 
 				}
 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
 		}
@@ -1897,7 +1897,6 @@ focus_tree = {
 			672 = { is_controlled_by_ROOT_or_ally = yes }
 			334 = { is_controlled_by_ROOT_or_ally = yes }
 			335 = { is_controlled_by_ROOT_or_ally = yes }
-			date>1944.01.1
 			
 		}
 		bypass = {
