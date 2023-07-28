@@ -394,8 +394,8 @@ LAO = {
 }
 
 INS = {
-	color = rgb { 40  50  120 }
-	color_ui = rgb { 40  50  120 }
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 255 73 121 }
 }
 
 VIN = {
@@ -423,8 +423,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 255 120 71 }
-	color_ui = rgb { 255 120 71 }
+	color = rgb { 220 220 220 }
+	color_ui = rgb { 220 220 220 }
 }
 ANG = {
 	color = rgb { 37 140 61 }
