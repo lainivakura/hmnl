@@ -1,0 +1,211 @@
+﻿division_template = {
+	name = "30 cw"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+	}
+	}
+	
+	division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2  }
+	}
+}
+
+
+division_template = {
+	name = "Panzer-Division"
+
+	division_names_group = GER_Arm_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
+	}
+}
+division_template = {
+	name = "Infanterie-Division (mot.)" 			# Used to be SS division -> New system for SS. Also messed up the civil war by refusing to move to the fascists, and immersion-breaking to have them around as royalists
+
+	division_names_group = GER_MOT_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
+	}
+}
+division_template = {
+	name = "Kavallerie-Brigade"
+
+	division_names_group = GER_Cav_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	##### Oberkommando des Heeres #####
+	### 1. Armee (Wehrmacht-Gruppenkommando) ###
+	# II. Armeekorps
+	division= {	
+		division_name = {
+		}
+		location = 6521
+		division_template = "30 cw"
+		start_experience_factor = 0.55
+	}
+
+	division= {	
+		division_name = {
+		}
+		location = 6521
+		division_template = "30 cw"
+		start_experience_factor = 0.55
+	}
+
+	division= {	
+		division_name = {
+		}
+		location = 6521
+		division_template = "30 cw"
+		start_experience_factor = 0.55
+	}
+	
+}
+
+### Air oob in its own file
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GER"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_2
+			creator = "GER" 
+			version_name = "Panzer II Ausf. a"
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+}
+
+#####################
