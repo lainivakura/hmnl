@@ -180,7 +180,11 @@ save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
 
-
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 100000
+	producer = CHI
+}
 
 set_politics = {
 	ruling_party = neutrality
