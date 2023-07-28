@@ -7,9 +7,10 @@ state=
 	state_category = town
 	
 ##PUSTOI_SLOT
-	impassable = yes
+	
 	history={
-		owner = VEN
+		owner = CHI
+		add_core_of = CHI
 	}
 	
 

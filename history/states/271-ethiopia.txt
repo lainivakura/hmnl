@@ -7,7 +7,7 @@ state=
 		# rubber=2 # was: 2
 	}
 	
-	state_category = town
+	state_category =  large_city 
 
 	history = {
 		set_variable = { ETH_state_development_production_speed = -0.1 }
