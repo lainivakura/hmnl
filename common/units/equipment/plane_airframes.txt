@@ -37,7 +37,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0.05
-		build_cost_ic = 4
+		build_cost_ic = 6
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -205,9 +205,9 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 300
-		maximum_speed = 400
-		air_agility = 35
+		air_range = 500
+		maximum_speed = 0
+		air_agility = 45
 		air_defence = 7
 		weight = 3
 		naval_strike_attack = 1
@@ -223,14 +223,14 @@ equipments = {
 		parent = small_plane_airframe_0
 		priority = 5
 
-		air_range = 450
-		maximum_speed = 425
-		air_agility = 40
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
 		air_defence = 9
 		weight = 4
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 5
+		build_cost_ic = 7
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -300,14 +300,14 @@ equipments = {
 		parent = small_plane_airframe_1
 		priority = 5
 
-		air_range = 550
-		maximum_speed = 450
-		air_agility = 45
+		air_range = 900
+		maximum_speed = 0
+		air_agility = 65
 		air_defence = 11
-		weight = 4
+		weight = 5
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 6
+		build_cost_ic = 8
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -404,14 +404,14 @@ equipments = {
 		parent = small_plane_airframe_2
 		priority = 5
 
-		air_range = 650
-		maximum_speed = 475
-		air_agility = 50
+		air_range = 1100
+		maximum_speed = 0
+		air_agility = 80
 		air_defence = 12
-		weight = 4
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 7
+		build_cost_ic = 9
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -493,18 +493,6 @@ equipments = {
 				}
 			}
 			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
-				}
-			}
-
-			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
@@ -527,14 +515,14 @@ equipments = {
 		parent = small_plane_airframe_3
 		priority = 5
 
-		air_range = 800
-		maximum_speed = 500
-		air_agility = 55
+		air_range = 2000
+		maximum_speed = 0
+		air_agility = 85
 		air_defence = 18
-		weight = 4
+		weight = 7
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 10
+		build_cost_ic = 12
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -619,18 +607,6 @@ equipments = {
 				}
 			}
 			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					plane_special_module_small
-					plane_special_module_bomb_sights
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_defense_turret
-				}
-			}
-
-			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_small
@@ -683,7 +659,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0.05
-		build_cost_ic = 6
+		build_cost_ic = 8
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -852,11 +828,11 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 300
-		maximum_speed = 400
-		air_agility = 30
+		air_range = 450
+		maximum_speed = 0
+		air_agility = 40
 		air_defence = 7
-		weight = 4
+		weight = 5
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 	}
@@ -870,14 +846,14 @@ equipments = {
 		parent = cv_small_plane_airframe_0
 		priority = 5
 
-		air_range = 450
-		maximum_speed = 425
-		air_agility = 35
+		air_range = 570
+		maximum_speed = 0
+		air_agility = 45
 		air_defence = 9
-		weight = 5
+		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 8.5
+		build_cost_ic = 10.5
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -946,14 +922,14 @@ equipments = {
 		parent = cv_small_plane_airframe_1
 		priority = 5
 
-		air_range = 550
-		maximum_speed = 450
-		air_agility = 40
+		air_range = 750
+		maximum_speed = 0
+		air_agility = 60
 		air_defence = 11
-		weight = 5
+		weight = 7
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 9.5
+		build_cost_ic = 11.5
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -1049,14 +1025,14 @@ equipments = {
 		parent = cv_small_plane_airframe_2
 		priority = 5
 
-		air_range = 650
-		maximum_speed = 475
-		air_agility = 45
+		air_range = 900
+		maximum_speed = 0
+		air_agility = 75
 		air_defence = 12
-		weight = 5
+		weight = 8
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 11
+		build_cost_ic = 13
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1158,14 +1134,14 @@ equipments = {
 		parent = cv_small_plane_airframe_3
 		priority = 5
 
-		air_range = 800
-		maximum_speed = 500
-		air_agility = 50
+		air_range = 1700
+		maximum_speed = 0
+		air_agility = 80
 		air_defence = 18
-		weight = 5
+		weight = 9
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 14.5
+		build_cost_ic = 16.5
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1296,7 +1272,7 @@ equipments = {
 		lend_lease_cost = 10
 		manpower = 40
 		fuel_consumption = 0
-		build_cost_ic = 6
+		build_cost_ic = 8
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -1365,7 +1341,6 @@ equipments = {
 					plane_special_module_air_air_radar
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 				}
 			}
 
@@ -1374,7 +1349,6 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_defense
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1388,7 +1362,6 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_defense
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1402,7 +1375,6 @@ equipments = {
 				allowed_module_categories = {
 					mine_warfare_defense
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1515,9 +1487,9 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 650
-		maximum_speed = 200
-		air_agility = 25
+		air_range = 1200
+		maximum_speed = 0
+		air_agility = 15
 		air_defence = 15
 		weight = 8
 		naval_strike_attack = 1
@@ -1533,14 +1505,14 @@ equipments = {
 		parent = medium_plane_airframe_0
 		priority = 5
 
-		air_range = 800
-		maximum_speed = 325
+		air_range = 2200
+		maximum_speed = 0
 		air_agility = 30
 		air_defence = 18
-		weight = 8
+		weight = 10
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 8
+		build_cost_ic = 10
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -1603,7 +1575,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1617,7 +1588,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1630,7 +1600,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1644,7 +1613,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_medium
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1664,14 +1632,14 @@ equipments = {
 		parent = medium_plane_airframe_1
 		priority = 5
 
-		air_range = 1000
-		maximum_speed = 375
+		air_range = 2400
+		maximum_speed = 0
 		air_agility = 35
 		air_defence = 20
-		weight = 8
+		weight = 12
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 10
+		build_cost_ic = 12
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1736,7 +1704,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1750,7 +1717,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1763,7 +1729,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1777,7 +1742,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1791,7 +1755,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1812,14 +1775,14 @@ equipments = {
 		parent = medium_plane_airframe_2
 		priority = 5
 
-		air_range = 1200
-		maximum_speed = 425
+		air_range = 2800
+		maximum_speed = 0
 		air_agility = 40
 		air_defence = 24
-		weight = 8
+		weight = 14
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 13
+		build_cost_ic = 15
 		resources = {
 			aluminium = 5
 			rubber = 1
@@ -1896,7 +1859,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1910,7 +1872,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1923,7 +1884,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1937,7 +1897,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1951,7 +1910,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -1972,14 +1930,14 @@ equipments = {
 		parent = medium_plane_airframe_3
 		priority = 5
 
-		air_range = 1400
-		maximum_speed = 500
-		air_agility = 45
+		air_range = 3000
+		maximum_speed = 0
+		air_agility = 50
 		air_defence = 24
-		weight = 8
+		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 14
+		build_cost_ic = 16
 		resources = {
 			aluminium = 5
 			rubber = 1
@@ -2060,7 +2018,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2074,7 +2031,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2087,7 +2043,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2101,7 +2056,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2115,7 +2069,6 @@ equipments = {
 					plane_special_module_air_ground_radar
 					plane_special_module_air_air_radar
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_medium
 					mine_warfare_defense
 				}
@@ -2156,7 +2109,7 @@ equipments = {
 		lend_lease_cost = 10
 		manpower = 80
 		fuel_consumption = 0.16
-		build_cost_ic = 16
+		build_cost_ic = 18
 		resources = {
 			aluminium = 3
 			rubber = 2
@@ -2212,7 +2165,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2226,7 +2178,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2240,7 +2191,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2254,7 +2204,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2268,7 +2217,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2349,11 +2297,6 @@ equipments = {
 			count < 2
 		}
 
-		module_count_limit = {
-			category = plane_special_module_defense_turret
-			count < 7
-		}
-
 		default_modules = {
 			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
@@ -2371,9 +2314,9 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 
-		air_range = 900
-		maximum_speed = 200
-		air_agility = 20
+		air_range = 2000
+		maximum_speed = 0
+		air_agility = 25
 		air_defence = 20
 		weight = 20
 		naval_strike_attack = 1
@@ -2389,14 +2332,14 @@ equipments = {
 		parent = large_plane_airframe_0
 		priority = 5
 
-		air_range = 1300
-		maximum_speed = 225
-		air_agility = 25
+		air_range = 2500
+		maximum_speed = 0
+		air_agility = 30
 		air_defence = 25
-		weight = 20
+		weight = 25
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 18
+		build_cost_ic = 20
 		resources = {
 			aluminium = 3
 			rubber = 2
@@ -2454,7 +2397,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2468,7 +2410,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2481,7 +2422,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2495,7 +2435,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2509,7 +2448,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2529,14 +2467,14 @@ equipments = {
 		parent = large_plane_airframe_1
 		priority = 5
 
-		air_range = 1600
-		maximum_speed = 300
-		air_agility = 30
+		air_range = 3500
+		maximum_speed = 0
+		air_agility = 35
 		air_defence = 35
-		weight = 20
+		weight = 30
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 20
+		build_cost_ic = 22
 		resources = {
 			aluminium = 4
 			rubber = 2
@@ -2606,7 +2544,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2620,7 +2557,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2633,7 +2569,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2647,7 +2582,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2661,7 +2595,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2675,7 +2608,6 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_large
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
 					plane_special_module_air_ground_radar
@@ -2695,14 +2627,14 @@ equipments = {
 		parent = large_plane_airframe_2
 		priority = 5
 
-		air_range = 1900
-		maximum_speed = 350
-		air_agility = 35
+		air_range = 5000
+		maximum_speed = 0
+		air_agility = 45
 		air_defence = 50
-		weight = 20
+		weight = 35
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 22
+		build_cost_ic = 24
 		resources = {
 			aluminium = 5
 			rubber = 2
@@ -2771,7 +2703,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2785,7 +2716,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2798,7 +2728,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2812,7 +2741,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2826,7 +2754,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2840,7 +2767,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2861,14 +2787,14 @@ equipments = {
 		parent = large_plane_airframe_3
 		priority = 5
 
-		air_range = 2500
-		maximum_speed = 400
-		air_agility = 40
+		air_range = 7000
+		maximum_speed = 0
+		air_agility = 55
 		air_defence = 54
-		weight = 20
+		weight = 42
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 23
+		build_cost_ic = 25
 		resources = {
 			aluminium = 6
 			rubber = 2
@@ -2937,7 +2863,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2951,7 +2876,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2964,7 +2888,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2978,7 +2901,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -2992,7 +2914,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
@@ -3006,7 +2927,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					plane_special_module_defense_turret_x2
 					plane_special_module_large
 					plane_special_module_bomb_sights
 					plane_special_module_radio_navigation
