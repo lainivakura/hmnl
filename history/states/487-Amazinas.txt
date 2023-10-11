@@ -1,0 +1,18 @@
+
+state={
+	id=487
+	name="STATE_487"
+	state_category = wasteland
+	history={
+		owner = VEN
+		add_core_of = VEN
+	}
+	manpower=1
+
+	provinces={
+		2160 5188 8211 8240 10924 10982 10996 12902 12916 12917 12973 
+	}
+	
+
+	local_supplies=0.0 
+}

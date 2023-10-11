@@ -1,0 +1,18 @@
+
+state={
+	id=301
+	name="STATE_301"
+	state_category = wasteland
+	history={
+		owner = VEN
+		add_core_of = VEN
+	}
+	manpower=1
+
+	provinces={
+		2152 2173 2194 11023 12901 
+	}
+	
+
+	local_supplies=0.0 
+}

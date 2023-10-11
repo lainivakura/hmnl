@@ -1,0 +1,23 @@
+
+state={
+	id=313
+	name="STATE_313"
+
+	resources={
+		chromium=4 # was: 6
+	}
+	
+	state_category = wasteland
+	history={
+		owner = VEN
+		add_core_of = VEN
+	}
+	manpower=1
+
+	provinces={
+		4991 10842 10886 13085 
+	}
+	
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,18 @@
+
+state={
+	id=306
+	name="STATE_306" # Cundinamarca
+	state_category = wasteland
+	history={
+		owner = VEN
+		add_core_of = VEN
+	}
+	manpower=1
+
+
+	provinces={
+		2079 7936 7991 7993 10747 10790 10846 
+	}
+
+	local_supplies=4.0 
+}
