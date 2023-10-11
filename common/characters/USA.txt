@@ -1225,11 +1225,11 @@ characters={
 			cost = 100.000
 			# TODO [AB] add support for equipment bonuses
 			#equipment_bonus = {
-			#	small_plane_airframe = {
+			#	fighter_equipment = {
 			#		instant = yes
 			#		fuel_consumption = -0.100
 			#	}
-			#	medium_plane_fighter_airframe = {
+			#	heavy_fighter_equipment = {
 			#		instant = yes
 			#		fuel_consumption = -0.100
 			#	}
@@ -1410,15 +1410,24 @@ characters={
 			slot = political_advisor
 			idea_token = victor_perlo
 			allowed  = {
-				always = no
-				original_tag  = USA
+				OR = {
+					original_tag  = USA
+					original_tag = SWE
+				}
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
+				OR = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						has_completed_focus  = USA_reach_out_to_the_ware_group 
 					}
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
+
+					AND = {
+						SWE_refuge_for_revolutionaries_trigger = yes
+						USA = { has_completed_focus = USA_america_first }
+					}
 				}
 			}
 			visible  = {
@@ -1450,15 +1459,23 @@ characters={
 			slot = political_advisor
 			idea_token = whittaker_chambers
 			allowed  = {
-				always = no
-				original_tag  = USA
+				OR = {
+					original_tag  = USA
+					original_tag = SWE
+				}
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
+				OR = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						has_completed_focus  = USA_reach_out_to_the_ware_group 
 					}
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
+					AND = {
+						SWE_refuge_for_revolutionaries_trigger = yes
+						USA = { has_completed_focus = USA_america_first }
+					}
 				}
 			}
 			visible  = {
@@ -1650,24 +1667,31 @@ characters={
 					has_government  = fascism 
 				}
 			}
-			# ai_will_do  = {
-			# 	factor  = 10.000
-			# 	modifier  = {
-			# 		is_historical_focus_on  = yes 
-			# 		has_game_rule  = {
-			# 			rule  = USA_ai_behavior 
-			# 			option  = default 
-			# 		}
-			# 		factor  = 0.000
-			# 	}
-			# 	modifier  = {
-			# 		is_historical_focus_on  = yes 
-			# 		NOT  = {
-			# 			has_dlc = "Man the Guns"
-			# 		}
-			# 		factor  = 0.000
-			# 	}
-			# }
+			ai_will_do  = {
+				factor  = 10.000
+				modifier  = {
+					is_historical_focus_on  = yes 
+					has_game_rule  = {
+						rule  = USA_ai_behavior 
+						option  = default 
+					}
+					factor  = 0.000
+				}
+				modifier  = {
+					is_historical_focus_on  = yes 
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					factor  = 0.000
+				}
+				modifier  = {
+					NOT  = {
+						has_dlc = "Man the Guns"
+					}
+					has_idea_with_trait = communist_revolutionary
+					factor  = 0.000
+				}
+			}
 		}
 	}
 

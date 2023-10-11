@@ -204,7 +204,7 @@ air_intercept_efficiency = 0.04
 	fighter_sweeps = {
 
 		# EFFECT ########
-		air_intercept_efficiency = 0.05
+		air_intercept_efficiency = 0.2
 		air_mission_xp_gain_factor = 0.05
 		###########
 		
@@ -253,9 +253,8 @@ air_intercept_efficiency = 0.04
 	dogfighting_experience = {
 
 		# EFFECT ########
-		air_superiority_efficiency = 0.04
-
-		air_mission_xp_gain_factor = 0.07
+		air_superiority_efficiency = 0.2
+		air_mission_xp_gain_factor = 0.05
 		###########
 		
 		xor={

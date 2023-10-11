@@ -85,10 +85,19 @@ focus_tree = {
 				NOT = { has_government = democratic }
 				num_of_factories > 30
 			}
-			not = {
+			NOt = {
 				has_war_with = USA
 			}
-			
+			USA = { 
+				has_government = ROOT
+				has_war = no
+				NOT = {
+					OR = {
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+					}
+				}
+			}
 			
 		} 
 		prerequisite = { focus = crypto_bomb_focus }
@@ -717,6 +726,33 @@ focus_tree = {
 			add_ideas = ENG_special_air_service_idea
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
+		}
+	}
+
+	focus = {
+		id = ENG_parachute_regiments
+		prerequisite = { focus = ENG_special_air_service }
+		allow_branch = {
+			has_dlc = "Arms Against Tyranny"
+		}
+		continue_if_invalid = yes
+
+		icon = GFX_focus_generic_paratrooper
+		x = 0
+		y = 1
+		relative_position_id = ENG_special_air_service
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_potential_special_forces_tree = yes
+			add_doctrine_cost_reduction = {
+				name = ENG_parachute_regiments
+				cost_reduction = 0.25
+				uses = 2
+				category = special_forces_doctrine
+			}
 		}
 	}
 	
@@ -1864,6 +1900,21 @@ focus_tree = {
 			NOT = { has_government = communism }
 			num_subjects > 0
 		} 
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_revisit_colonial_policy
+				}
+			}
+		}
+
 		icon = GFX_goal_generic_national_unity
 		x = 28
 		y = 0
@@ -1871,7 +1922,16 @@ focus_tree = {
 			x = -2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				OR = {
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+						has_completed_focus = uk_empire_focus
+					}
+				}
 			}
 		}
 		cost = 10
@@ -1888,6 +1948,18 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1903,7 +1975,16 @@ focus_tree = {
 			x = 2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				OR = {
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					has_completed_focus = uk_empire_focus
+					}
+				}
 			}
 		}
 		relative_position_id = uk_empire_focus
@@ -2522,6 +2603,17 @@ focus_tree = {
 		allow_branch = {
 			always = no
 			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = uk_empire_focus
+				}
+			}
 		}
 
 		available = { 
@@ -2558,6 +2650,17 @@ focus_tree = {
 			add_political_power = 80
 			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
 			hidden_effect = { news_event = { id = mtg_news.14 days = 1 } }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
