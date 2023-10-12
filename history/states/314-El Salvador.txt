@@ -2,16 +2,17 @@ state=
 {
 	id=314
 	name="STATE_314"
-
-	resources={
-		chromium=1 # was: 1
-	}
-	state_category = wasteland
+	manpower = 1
+	
+	
+	state_category = town
+	
+##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
-		add_core_of = VEN
 	}
-	manpower=1
+	
 
 	provinces={
 		12823 13093 

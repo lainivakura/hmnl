@@ -2,16 +2,17 @@
 state={
 	id=279
 	name="STATE_279" # Santiago
+	manpower = 1
+	
+	state_category = large_city
 
-	resources={
-		steel=16 # was: 24
-	}
-	state_category = wasteland
+
+##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
-		add_core_of = VEN
+	
 	}
-	manpower=1
 
 	provinces={
 		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 

@@ -7,11 +7,12 @@ state=
 	state_category = town
 	history=
 	{
+
 		owner = INS
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 1
 			air_base = 6
 			10265 = {
 				naval_base = 5
@@ -23,7 +24,7 @@ state=
 		victory_points = {
 			1221 1 
 		}
-		add_core_of = INS
+		add_core_of = PRC
 	}
 
 	provinces={

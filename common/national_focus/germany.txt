@@ -1498,6 +1498,10 @@ focus_tree = {
 				}
 				set_state_flag = GER_industrial_effort_2IC
 			}
+				add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 35
+			}
 		}
 	}
 
@@ -1992,24 +1996,21 @@ focus_tree = {
 							
 						}
 				}
+
 			available_if_capitulated = no
 			complete_tooltip = {
-					every_state = {
-							limit = {
-									has_state_flag = GER_integrate_war_economies_1
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
-					every_state = {
-							limit = {
-									has_state_flag = GER_integrate_war_economies_2
-								}
-							add_extra_state_shared_building_slots = 2
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_1 }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				every_state = {
+					limit = { has_state_flag = GER_integrate_war_economies_2 }
+					add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = arms_factory
 									level = 2
@@ -4608,6 +4609,8 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { hours = 6 id = news.233 }
 			}	
+
+			custom_effect_tooltip = GER_weserubung_tt
 		}
 	}
 	
@@ -5832,6 +5835,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
+					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 2
@@ -5850,6 +5854,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
+					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
 						size > 2
@@ -7977,7 +7982,7 @@ focus_tree = {
 					add_popularity = { ideology = neutrality popularity = 0.1 }
 					effect_tooltip = {
 						create_country_leader = {
-							name = "vittorio Emanuele III"
+							name = "Vittorio Emanuele III"
 							desc = "POLITICS_VITTORIO_EMANUELE_III_DESC"
 							picture = "GFX_portrait_italy_vittorio_emanuele_iii"
 							expire = "1965.1.1"

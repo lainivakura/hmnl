@@ -2,12 +2,16 @@
 state={
 	id=301
 	name="STATE_301"
-	state_category = wasteland
+	manpower = 1
+	
+	state_category = town
+	
+##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
-		add_core_of = VEN
+	
 	}
-	manpower=1
 
 	provinces={
 		2152 2173 2194 11023 12901 

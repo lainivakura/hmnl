@@ -420,7 +420,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
+				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.10 }
 			}
 			if = {
 				limit = {
@@ -1712,7 +1712,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_eastern_development
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -1867,7 +1867,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 4
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1892,8 +1892,18 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 10
 
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -1909,10 +1919,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 2
 					instant_build = yes
 				}
 				if = {
@@ -1951,7 +1961,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -1984,7 +1994,22 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_merge_aircraft_plants_tt
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				every_military_industrial_organization = {
+					limit = {
+						has_mio_trait = SOV_mio_trait_merge_plant_no_28 #All Aircraft MIOs have this trait
+					}
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_28
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_150
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_vef_plant
+				}
+			}
+			else = {
+				custom_effect_tooltip = SOV_merge_aircraft_plants_tt
+			}
 		}
 	}
 
@@ -2023,10 +2048,13 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 4
+		cost = 10
 
 		mutually_exclusive = { focus = SOV_intensify_pilot_training_program }
 
+		available = {
+			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
+		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
@@ -2072,9 +2100,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 4
+		cost = 10
 
+		available = {
 
+		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2097,10 +2127,15 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 4
+		cost = 10
 
-
-		
+		available = {
+			OR = {
+				has_completed_focus = SOV_the_path_of_marxism_leninism
+				has_completed_focus = SOV_womens_fascist_movement
+			}
+		}
+			
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
@@ -2125,9 +2160,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 4
+		cost = 10
 
-
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			has_full_control_of_state = 219 #MOSCOW
+		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2156,6 +2196,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Pe-2" #
 						type = small_plane_cas_airframe_2
+						allow_without_tech = yes
 						modules = {
 							fixed_main_weapon_slot = small_bomb_bay
 							fixed_auxiliary_weapon_slot_1 = light_mg_2x
@@ -2206,11 +2247,13 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 4
+		cost = 10
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
 
-
+		available = {
+			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
+		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2235,8 +2278,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 4
+		cost = 10
 
+		available = {
+
+		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2257,7 +2303,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_increase_aircraft_production
-		cost = 4
+		cost = 10
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
 
@@ -2289,7 +2335,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 4
+		cost = 10
 
 		mutually_exclusive = { focus = SOV_ground_support }
 
@@ -2322,7 +2368,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_ground_support
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -2917,7 +2963,64 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_merge_naval_plants_tt
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					mio:SOV_nevskoye_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_5
+					}
+
+					mio:SOV_rubin_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_363
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_190
+					}
+
+					mio:SOV_black_sea_shipyard_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_340
+					}
+
+					mio:SOV_sevastopol_marine_plant_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_200
+					}
+				}
+				else = {
+					mio:SOV_nevskoye_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_5
+					}
+
+					mio:SOV_rubin_design_bureau_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_370_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_363
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_190
+					}
+
+					mio:SOV_black_sea_shipyard_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_leninskaya_kuznitsa_plant
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_340
+					}
+
+					mio:SOV_sevastopol_marine_plant_organization = {
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_mariupol_plant_no_mtg
+						unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_200
+					}
+				}
+				
+			}
+			else = {
+				custom_effect_tooltip = SOV_merge_naval_plants_tt
+			}
 		}
 	}
 
@@ -3147,6 +3250,7 @@ focus_tree = {
 					type = ship_hull_heavy_2
 					name_group = SOV_BC_HISTORICAL
 					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 					modules = {
 						fixed_ship_battery_slot = ship_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_1
@@ -3251,6 +3355,7 @@ focus_tree = {
 					type = ship_hull_super_heavy_1
 					name_group = SOV_STATES
 					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 					modules = {
 						fixed_ship_battery_slot = ship_super_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_2
@@ -3393,6 +3498,7 @@ focus_tree = {
 					type = ship_hull_cruiser_submarine
 					name_group = SOV_SS_HISTORICAL
 					parent_version = 0
+					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 					modules = {
 						fixed_ship_torpedo_slot = ship_torpedo_sub_2
 						fixed_ship_engine_slot = sub_ship_engine_2
@@ -3437,6 +3543,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "K Class"
 						type = submarine_3
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						upgrades = {
 							ship_reliability_upgrade = 3
 							sub_engine_upgrade = 3
@@ -3469,6 +3576,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "K Class"
 						type = submarine_2
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						upgrades = {
 							ship_reliability_upgrade = 2
 							sub_engine_upgrade = 2
@@ -3573,6 +3681,7 @@ focus_tree = {
 						type = ship_hull_carrier_3
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space
@@ -3606,6 +3715,7 @@ focus_tree = {
 						type = ship_hull_carrier_2
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space
@@ -3639,6 +3749,7 @@ focus_tree = {
 						type = ship_hull_carrier_1
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space
@@ -3675,6 +3786,7 @@ focus_tree = {
 						type = ship_hull_carrier_conversion_ca
 						name_group = SOV_CV_HISTORICAL
 						parent_version = 0
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_ship_deck_slot_1 = ship_deck_space
 							fixed_ship_deck_slot_2 = ship_deck_space
@@ -3710,6 +3822,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Project 71 Class"
 						type = carrier_4
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						upgrades = {
 							ship_deckspace_upgrade = 4
 							carrier_armor_upgrade = 4
@@ -3735,6 +3848,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Project 71 Class"
 						type = carrier_3
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						upgrades = {
 							ship_deckspace_upgrade = 3
 							carrier_armor_upgrade = 3
@@ -3760,6 +3874,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Project 71 Class"
 						type = carrier_2
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						upgrades = {
 							ship_deckspace_upgrade = 2
 							carrier_armor_upgrade = 2
@@ -3788,6 +3903,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Project 71 Class"
 						type = carrier_1
+						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 						upgrades = {
 							ship_deckspace_upgrade = 2
 							carrier_armor_upgrade = 1
@@ -3827,13 +3943,23 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			set_variable = { SOV_red_fleet_naval_invasion_capacity = 10 }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_potential_special_forces_tree = yes
+				add_doctrine_cost_reduction = {
+					name = SOV_naval_infantry
+					cost_reduction = 0.25
+					uses = 2
+					category = special_forces_doctrine
+				}
+			}
+			else = {
+				set_variable = { SOV_red_fleet_naval_invasion_capacity = 10 }
 			set_variable = { SOV_red_fleet_invasion_preparation = -0.1 }
 			set_variable = { SOV_red_fleet_special_forces_cap = 0.1 }
 			custom_effect_tooltip = SOV_naval_infantry_ns_tt
-
-			navy_experience = 25
-			army_experience = 25
 
 			add_tech_bonus = {
 				name = SOV_naval_infantry
@@ -3841,6 +3967,10 @@ focus_tree = {
 				uses = 1
 				category = marine_tech
 			}
+		}
+
+			navy_experience = 25
+			army_experience = 25
 		}
 	}
 
@@ -3960,7 +4090,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 5
+		cost = 10
 		
 		available = {
 			if = {
@@ -4127,7 +4257,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_superior_war_machines
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -4523,7 +4653,41 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_merge_tank_and_materiel_plants_tt
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				#TANKS
+				every_military_industrial_organization = {
+					limit = {
+						has_mio_trait = SOV_mio_trait_merge_plant_no_174 #All Tank MIOs have this trait
+					}
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_174
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_112
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_ural_heavy_machine_building_plant
+				}
+
+				#MATERIEL
+				every_military_industrial_organization = {
+					limit = {
+						has_mio_trait = SOV_mio_trait_merge_nkmz_plant #All Materiel MIOs have this trait
+					}
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_nkmz_plant
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant
+				}
+				mio:SOV_grabin_design_bureau_organization = {
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_172
+				}
+				mio:SOV_tula_arms_plant_organization = {
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_plant_no_622
+				}
+				mio:SOV_gaz_organization = {
+					unlock_mio_trait_tooltip = SOV_mio_trait_merge_automobile_tool_plant
+				}
+			}
+			else = {
+				custom_effect_tooltip = SOV_merge_tank_and_materiel_plants_tt
+			}
 		}
 	}
 
@@ -4653,7 +4817,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 5
+		cost = 10
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -5919,10 +6083,10 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 5
+		cost = 8
 
 		available = {
-date > 1941.10.1
+			has_war_with = GER
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 		}
 		
@@ -5967,18 +6131,11 @@ date > 1941.10.1
 			hidden_effect = {
 				remove_ideas = SOV_military_reorganization_ns
 			}
-			swap_ideas = {
-				remove_idea = SOV_politicized_military
-				add_idea = SOV_politicized_military_reorganization
-				}
+			
 			add_to_variable = { SOV_the_red_army_unit_infantry_design_cost_factor = -0.1 }
 			add_to_variable = { SOV_the_red_army_unit_artillery_brigade_design_cost_factor = -0.1 }
 			custom_effect_tooltip = SOV_military_reorganization_ns_tt
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
+			
 			army_experience = 50
 			add_command_power = 25
 		}
@@ -6064,11 +6221,7 @@ date > 1941.10.1
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.25
-				uses = 1
-				category = land_doctrine
-			}
+			
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt
 
 			unlock_decision_tooltip = SOV_order_227
@@ -6111,7 +6264,7 @@ date > 1941.10.1
 			#Spawn Penal divisions
 			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
 			hidden_effect = {
-				set_technology = { penal_infantry = 1 popup = no }
+				#set_technology = { penal_infantry = 1 popup = no } #Note: Granting tech will make the penal battalion available for any template
 
 				division_template = {
 					name = "Shtrafnaya Chast"
@@ -6330,10 +6483,10 @@ date > 1941.10.1
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = SOV_politicized_military_reorganization
+					has_idea = SOV_politicized_military
 				}
 				swap_ideas = {
-					remove_idea = SOV_politicized_military_reorganization
+					remove_idea = SOV_politicized_military
 					add_idea = SOV_politicized_military_keep
 				}
 			}
@@ -6398,6 +6551,9 @@ date > 1941.10.1
 					add_idea = SOV_politicized_military_battle_priests
 				}
 			}
+			else = {	
+				add_ideas = SOV_politicized_military_battle_priests
+			}
 		}
 	}
 
@@ -6426,10 +6582,10 @@ date > 1941.10.1
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = SOV_politicized_military_reorganization
+					has_idea = SOV_politicized_military
 				}
 				swap_ideas = {
-					remove_idea = SOV_politicized_military_reorganization
+					remove_idea = SOV_politicized_military
 					add_idea = SOV_politicized_military_swap
 				}
 			}
@@ -6445,7 +6601,7 @@ date > 1941.10.1
 			else = { #To prevent the ugly "No current effects" tooltip if other focus taken
 				effect_tooltip = {
 					swap_ideas = {
-						remove_idea = SOV_politicized_military_reorganization
+						remove_idea = SOV_politicized_military
 						add_idea = SOV_politicized_military_swap
 					}
 				}
@@ -6473,7 +6629,7 @@ date > 1941.10.1
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			date > 1942.11.23
+			surrender_progress > 0.30
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6482,7 +6638,7 @@ date > 1941.10.1
 			add_to_variable = { SOV_the_red_army_special_forces_cap = 0.1 }
 			add_to_variable = { SOV_the_red_army_land_doctrine_cost_factor = -0.1 }
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
+			# add_to_variable = { SOV_the_red_army_terrain_penalty_reduction = 0.05 }
 			custom_effect_tooltip = SOV_the_glory_of_the_red_army_ns_tt
 
 			army_experience = 75
@@ -6706,7 +6862,7 @@ date > 1941.10.1
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_centre
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -6834,7 +6990,7 @@ date > 1941.10.1
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -6876,7 +7032,8 @@ date > 1941.10.1
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
-			add_stability = -0.07
+			add_stability = -0.05
+			add_war_support = -0.05
 
 			if = { #Target a rural state with no civs
 				limit = {
@@ -8036,7 +8193,6 @@ date > 1941.10.1
 		cost = 5
 
 		available = {
-date > 1949.12.1
 			SOV_soviet_civil_war_not_started = yes 
 			custom_trigger_tooltip = {
 				tooltip = SOV_no_major_purge_tt		
@@ -9296,7 +9452,6 @@ date > 1949.12.1
 		relative_position_id = SOV_the_left_opposition
 		cost = 5
 		available = {
-date > 1949.12.1
 			SOV_soviet_civil_war_not_started = yes 
 			custom_trigger_tooltip = {
 				tooltip = SOV_no_major_purge_tt		
@@ -13195,7 +13350,6 @@ date > 1949.12.1
 		}
 		
 		available = {
-date > 1949.12.1
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
 		}
@@ -13541,7 +13695,6 @@ date > 1939.9.1
 		}
 
 		available = {
-		date > 1949.12.1
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			country_exists = POL
 			NOT = { has_war_with = POL }
@@ -13739,7 +13892,6 @@ date > 1939.9.1
 		mutually_exclusive = { focus = SOV_seek_balkan_cooperation }
 		
 		available = {
-date > 1949.12.1
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			any_other_country = {
 				BUL_is_balkan_nation = yes
@@ -13796,7 +13948,6 @@ date > 1949.12.1
 		mutually_exclusive = { focus = SOV_demand_balkan_submission }
 		
 		available = {
-date > 1949.12.1
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			any_other_country = {
 				BUL_is_balkan_nation = yes
@@ -14016,7 +14167,6 @@ ai_will_do = {
 		}
 
 		available = {
-date > 1949.12.1
 			OR = {
 				country_exists = IRQ
 				country_exists = PER
@@ -14120,7 +14270,6 @@ date > 1949.12.1
 		}
 
 		available = {
-date > 1949.12.1
 			NOT = { has_war_with = AFG }
 			is_subject = no
 		}
@@ -14204,7 +14353,6 @@ date > 1949.12.1
 		mutually_exclusive = { focus = SOV_reconcile_japan }
 
 		available = {
-date > 1949.12.1
 			any_country = {
 				SOV_is_free_chinese_tag = yes
 				has_war_with = JAP
@@ -14269,7 +14417,6 @@ date > 1949.12.1
 		mutually_exclusive = { focus = SOV_two_red_flags focus = SOV_support_the_kuomintang }
 
 		available = {
-date > 1949.12.1
 			#SOV controls the states in which railway lines will be built
 			controls_state = 405 #TASHKENT
 			controls_state = 404 #KYZYL ORDA
@@ -14508,7 +14655,7 @@ date > 1949.12.1
 			}	
 		}
 		
-		available = {date > 1949.12.1
+		available = {
 			is_subject = no
 		}
 		
@@ -15067,7 +15214,6 @@ date > 1949.12.1
 			factor = 1
 		}
 		available = {
-date > 1949.12.1
 			custom_trigger_tooltip = {
 				tooltip = SOV_no_major_purge_tt		
 				check_variable = { SOV_great_purge_counter < 1 }

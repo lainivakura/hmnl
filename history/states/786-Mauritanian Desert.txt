@@ -1,15 +1,14 @@
 state={
 	id=786
 	name="STATE_786" # Mauritanian Desert
-
+	manpower = 1
+	
+	state_category = wasteland
 	impassable = yes
 
-	state_category = wasteland
 	history={
 		owner = VEN
-		add_core_of = VEN
 	}
-	manpower=1
 
 	provinces={
 		1897 1962 7943 8035 10771 10779 10838

@@ -2,12 +2,17 @@
 state={
 	id=507
 	name="STATE_507" # Magallanes
-	state_category = wasteland
+	manpower = 1
+	
+	state_category = pastoral
+
+##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
-		add_core_of = VEN
 	}
-	manpower=1
+	
+
 
 	provinces={
 		2161 5118 5159 5201 5209 5215 8198 8218 8913 10961 

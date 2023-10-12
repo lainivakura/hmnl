@@ -2,12 +2,17 @@
 state={
 	id=486
 	name="STATE_486"
-	state_category = wasteland
+	manpower = 1
+	
+	state_category = pastoral
+
+##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
-		add_core_of = VEN
 	}
-	manpower=1
+	
+
 
 	provinces={
 		1887 2007 5026 10792 12729 12770 12825 

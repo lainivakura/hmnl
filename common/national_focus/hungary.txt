@@ -912,20 +912,45 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				NOT = { has_idea = HUN_treaty_of_triannon }
-				AND = {
-					ROM = {
-						OR = {
-							exists = no
-							is_puppet = yes
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				OR = {
+					NOT = { has_idea = HUN_treaty_of_triannon_aat }
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
-					FRA = {
-						OR = {
-							exists = no
-							is_puppet = yes
-							NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+				}
+			}
+			else = {
+				OR = {
+					NOT = { has_idea = HUN_treaty_of_triannon }
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
 				}
@@ -1316,10 +1341,22 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = {
-				has_idea = HUN_treaty_of_triannon
-				has_idea = HUN_treaty_of_triannon_2
-				has_idea = HUN_treaty_of_triannon_3
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = HUN_treaty_of_triannon_aat
+					has_idea = HUN_treaty_of_triannon_2
+					has_idea = HUN_treaty_of_triannon_3
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = HUN_treaty_of_triannon
+					has_idea = HUN_treaty_of_triannon_2
+					has_idea = HUN_treaty_of_triannon_3
+				}
 			}
 		}
 
@@ -2368,8 +2405,18 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = HUN_treaty_of_triannon
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = HUN_treaty_of_triannon_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = HUN_treaty_of_triannon
+				}
 			}
 		}
 
@@ -2420,8 +2467,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group
-			SOU = { add_to_tech_sharing_group = HUN_soviet_hungarian_military_academy_tech_group }
+			add_doctrine_cost_reduction = {
+				name = HUN_soviet_hungarian_military_academy
+			    cost_reduction = 0.35
+			    uses = 2
+			    category = land_doctrine
+			}
 		}
 	}
 
@@ -3529,7 +3580,19 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = { has_idea = HUN_treaty_of_triannon }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = HUN_treaty_of_triannon_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = HUN_treaty_of_triannon
+				}
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3630,24 +3693,53 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				AND = {
-					NOT = { has_idea = HUN_treaty_of_triannon }
-					NOT = { has_idea = HUN_treaty_of_triannon_2 }
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
 				}
-				has_idea = HUN_treaty_of_triannon_3
-				AND = {
-					ROM = {
-						OR = {
-							exists = no
-							is_puppet = yes
+				OR = {
+					AND = {
+						NOT = { has_idea = HUN_treaty_of_triannon_aat }
+						NOT = { has_idea = HUN_treaty_of_triannon_2 }
+					}
+					has_idea = HUN_treaty_of_triannon_3
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
-					FRA = {
-						OR = {
-							exists = no
-							is_puppet = yes
-							NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+				}
+			}
+			else = {		
+				OR = {
+					AND = {
+						NOT = { has_idea = HUN_treaty_of_triannon }
+						NOT = { has_idea = HUN_treaty_of_triannon_2 }
+					}
+					has_idea = HUN_treaty_of_triannon_3
+					AND = {
+						ROM = {
+							OR = {
+								exists = no
+								is_puppet = yes
+							}
+						}
+						FRA = {
+							OR = {
+								exists = no
+								is_puppet = yes
+								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
+							}
 						}
 					}
 				}
@@ -4169,6 +4261,16 @@ focus_tree = {
 				}
 				add_to_tech_sharing_group = HUN_joint_air_development_group
 			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 1000
+					equipment_type = small_plane_airframe
+					seller_trigger = is_allied_seller_trigger
+				}
+			}
 		}
 	}
 
@@ -4431,9 +4533,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-
-			add_ideas = HUN_hueta
-			
 			add_to_tech_sharing_group = HUN_joint_tank_development_group
 			every_other_country = {
 				limit = {
@@ -4441,7 +4540,21 @@ focus_tree = {
 				}
 				add_to_tech_sharing_group = HUN_joint_tank_development_group
 			}
-			
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = light_tank_chassis
+					seller_trigger = is_allied_seller_trigger
+				}
+				add_equipment_subsidy = {
+					cic = 500
+					equipment_type = medium_tank_chassis
+					seller_trigger = is_allied_seller_trigger
+				}
+			}
 		}
 	}
 
@@ -4555,7 +4668,7 @@ focus_tree = {
 				name = HUN_home_defense
 				cost_reduction = 0.25
 				uses = 1
-				category = cat_mobile_warfare
+				category = cat_grand_battle_plan
 			}
 		}
 	}
@@ -4797,8 +4910,28 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 15
 			add_ideas = HUN_naval_warfare
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HUN_ganz_danubius
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = invites_mio_tt
+				show_mio_tooltip = HUN_ganz_danubius_organization
+				mio:HUN_ganz_danubius_organization = {
+					add_mio_funds = 2500
+				}
+#					unlock_mio_trait_tooltip  = {
+#						department = HUN_mio_department_design_ship_capital_screen_weapons
+#						trait = HUN_mio_trait_naval_warfare
+#					}
+#				}
+
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = HUN_ganz_danubius
+			}
 		}
 	}
 

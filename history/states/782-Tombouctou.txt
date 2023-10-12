@@ -2,15 +2,14 @@
 state={
 	id=782
 	name="STATE_782" # Tombouctou
-
+	manpower = 1
+	
+	state_category = wasteland
 	impassable = yes
 
-	state_category = wasteland
 	history={
 		owner = VEN
-		add_core_of = VEN
 	}
-	manpower=1
 
 	provinces={
 		1115 2068 10725 10868

@@ -1,0 +1,17 @@
+state={
+	id=796
+	name="STATE_796"
+	impassable = yes
+	history={
+		owner = VEN
+		add_core_of = VEN
+	}
+	provinces={
+		2115 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

@@ -2,17 +2,19 @@
 state={
 	id=300
 	name="STATE_300"
-
-	resources={
-		oil=1 # was: 2
-		steel=1 # was: 2
-	}
-	state_category = wasteland
+	manpower = 1
+	
+	state_category = large_city
+	
+##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
-		add_core_of = VEN
 	}
-	manpower=1
+	
+
+
+	
 
 	provinces={
 		1613 1626 1641 1654 4457 10347 10362 10502 12336 12440 12468 12481 12496 

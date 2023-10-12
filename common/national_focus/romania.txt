@@ -359,8 +359,12 @@
 					active = yes
 				}
 			}
-			add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group
-			GER = { add_to_tech_sharing_group = ROM_invite_german_advisors_tech_group }
+			add_doctrine_cost_reduction = {
+				name = ROM_invite_german_advisors
+			    cost_reduction = 0.35
+			    uses = 2
+			    category = land_doctrine
+			}
 		}
 	}
 
@@ -567,7 +571,6 @@
 		}
 
 		available = {
-
 			POL = { 
 				exists = yes 
 				is_puppet = no
@@ -872,13 +875,11 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group
-			ENG = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
-			if = {
-				limit = {
-					FRA = { is_in_faction_with = ENG }
-				}
-				FRA = { add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group }
+			add_doctrine_cost_reduction = {
+				name = ROM_joint_allied_staff_college
+			    cost_reduction = 0.35
+			    uses = 2
+			    category = land_doctrine
 			}
 		}
 	}
@@ -1379,8 +1380,22 @@
 				}
 				set_state_flag = ROM_invest_in_the_iar_AF1
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_iar
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_iar_organization
+				mio:ROM_iar_organization = {
+					complete_mio_trait = generic_mio_trait_heavily_armed_aircraft
+					add_mio_funds = 2500
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_iar
+			}
 		}
 	}
 
@@ -2553,6 +2568,40 @@
 	}
 
 	focus = {
+		id = ROM_white_squadron_focus
+		icon = GFX_goal_generic_build_airforce
+		x = 0
+		y = 1
+		prerequisite = { focus = ROM_expand_the_air_force }
+		relative_position_id = ROM_expand_the_air_force
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = yes
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			add_ideas = ROM_white_squadron
+		}
+
+		completion_reward = {
+			add_ideas = ROM_white_squadron
+		}
+	}
+
+	focus = {
 		id = ROM_acquire_licenses
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_expand_the_air_force }
@@ -3352,12 +3401,6 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_tech_bonus = {
-				name = HROM_rocketry_focus
-				bonus = 1.0
-				uses = 1
-				category = rocketry
-			}
 			custom_effect_tooltip = ROM_mountain_artillery_tech_tt
 			hidden_effect = { set_technology = { mountain_gun = 1 } }
 		}
@@ -3710,8 +3753,21 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_leonidas_works
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_leonidas_works_organization
+				mio:ROM_leonidas_works_organization = {
+					add_mio_funds = 2500
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_leonidas_works
+			}
 		}
 	}
 
@@ -3845,9 +3901,26 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-				navy_experience = 25
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_coastal_defense_navy_designer
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_galati_shipyard_organization
+				mio:ROM_galati_shipyard_organization = {
+					add_mio_funds = 2500
+				}
+#					unlock_mio_trait_tooltip  = {
+#						department = ROM_mio_department_design_ship_capital_screen_weapons
+#						trait = ROM_mio_trait_coastal_defense_weapons
+#					}
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_coastal_defense_navy_designer
+			}
 		}
 	}
 
@@ -4021,8 +4094,24 @@
 		available_if_capitulated = no
 
 		completion_reward = {			
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_black_sea_dominance_designer
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_Braila_organization
+				mio:ROM_Braila_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_black_sea_dominance_designer
+			}
 		}
 	}
 

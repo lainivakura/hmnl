@@ -1,0 +1,19 @@
+
+state={
+	id=321
+	name="STATE_321"
+	manpower = 1
+
+	state_category = enclave
+	impassable = yes
+	history={
+		owner = VEN
+		add_core_of = VEN
+	}
+
+	provinces={
+		1273 
+	}
+
+	local_supplies=0.0 
+}

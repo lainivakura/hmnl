@@ -2,16 +2,16 @@
 state={
 	id=303
 	name="STATE_303" # Lima
-	resources={
-		oil=14 # was: 18
-	}
-	state_category = wasteland
+	manpower = 1
+	
+	state_category = large_city
+
+##PUSTOI_SLOT
+	impassable = yes
 	history={
 		owner = VEN
-		add_core_of = VEN
+	
 	}
-	manpower=1
-
 
 	provinces={
 		2156 2162 5190 8199 12969 12983 12997 
