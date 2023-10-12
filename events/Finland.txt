@@ -4,7 +4,7 @@
 
 add_namespace = finland
 
-# Soviet Ultimatum
+# Soviet Ultimatum - Event for FIN
 country_event = {
 	id = finland.1
 	title = finland.1.t
@@ -12,11 +12,17 @@ country_event = {
 	picture = GFX_report_event_soviet_tanks_snow
 	
 	is_triggered_only = yes
-
+	
 	option = { # Refuse
 		name = finland.1.b
-		ai_chance = { factor = 75 }
-		SOV = {
+		ai_chance = {
+			base = 75
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		FROM = {
 			country_event = { days = 5 id = soviet.13 }
 			effect_tooltip = {
 				create_wargoal = {
@@ -29,38 +35,43 @@ country_event = {
 	}
 }
 
-# Request Swedish Assistance?
-country_event = {
-	id = finland.2
-	title = finland.2.t
-	desc = finland.2.d
-	picture = GFX_report_event_soviet_finnish_pact
-	
-	fire_only_once = yes
+# Request Swedish Assistance? - Event for FIN -> Used before AAT now it is triggered via Finnish Focus
+#country_event = {
+#	id = finland.2
+#	title = finland.2.t
+#	desc = finland.2.d
+#	picture = GFX_report_event_soviet_finnish_pact
+#	
+#	fire_only_once = yes
+#
+#	trigger = {
+#		NOT = { has_dlc = "Arms Against Tyranny" } #Equivalent event triggered via focus with AAT
+#		tag = FIN
+#		has_war_with = SOV
+#		SWE = {
+#			NOT = { has_war_with = FIN }
+#			NOT = { is_in_faction_with = SOV }
+#			exists = yes
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = finland.2.a
+#		SWE = {
+#			country_event = { id = finland.3 }
+#		}
+#	}
+#
+#	option = {
+#		name = finland.2.b
+#	}
+#}
 
-	trigger = {
-		tag = FIN
-		has_war_with = SOV
-		SWE = {
-			NOT = { has_war_with = FIN }
-			NOT = { is_in_faction_with = SOV }
-			exists = yes
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = finland.2.a
-		SWE = {
-			country_event = { id = finland.3 }
-		}
-	}
-}
-
-# Swedish Support in Winter War
+# Swedish Support in Winter War - Event for SWE
 country_event = {
 	id = finland.3
 	title = finland.3.t
@@ -99,6 +110,10 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 5							
+				has_government = democratic
+				FIN = {
+				 has_government = democratic
+				}
 			}
 		}
 
@@ -111,55 +126,31 @@ country_event = {
 			}	
 			has_manpower > 8402
 		}
-				add_manpower = -8402
-				if = {
-					limit = {
-						has_equipment = {
-							infantry_equipment > 5000
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = infantry_equipment
-						amount = 5000
-					}
+		add_manpower = -8402
+		if = {
+			limit = {
+				has_equipment = {
+					infantry_equipment > 500
 				}
-				if = {
-					limit = {
-						has_equipment = {
-							artillery_equipment > 1000
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = artillery_equipment
-						amount = 1000
-					}
+			}
+			send_equipment = {
+				target = FIN
+				type = infantry_equipment
+				amount = 500
+			}
+		}
+		if = {
+			limit = {
+				has_equipment = {
+					artillery_equipment > 250
 				}
-				if = {
-					limit = {
-						has_equipment = {
-							support_equipment > 1000
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = support_equipment
-						amount = 1000
-					}
-				}
-				if = {
-					limit = {
-						has_equipment = {
-							anti_air_equipment > 1000
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = anti_air_equipment
-						amount = 1000
-					}
-				}
+			}
+			send_equipment = {
+				target = FIN
+				type = artillery_equipment
+				amount = 250
+			}
+		}
 		add_ai_strategy = {
 			type = support
 			id = FIN
@@ -170,8 +161,64 @@ country_event = {
 		}
 	}
 
+	option = {
+		name = finland.3.c
+
+		ai_chance = {
+
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 100
+				has_war = no
+				has_government = democratic
+				strength_ratio = {
+					tag = SOV
+					ratio > 0.2
+				}
+				FIN = {
+					has_government = democratic
+					strength_ratio = {
+						tag = SOV 
+						ratio > 0.3
+					}
+				}
+			}			
+		}
+
+		declare_war_on = {
+			target = SOV
+			type = take_state
+			generator = { 195 208 } # Leningrand and Luga
+		}
+		FIN = {
+			country_event = { id = finland.6 days = 3 }
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = took_stand_for_us
+			}
+		}
+	}
 }
 
+# SWE won't help us - Event for FIN
+country_event = {
+	id = finland.4
+	title = finland.4.t
+	desc = finland.4.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+	option = {
+		name = finland.4.a
+	}
+}
+
+#SWE sends volunteers - Event for FIN
 country_event = {
 	id = finland.5
 	title = finland.5.t
@@ -189,49 +236,25 @@ country_event = {
 				if = {
 					limit = {
 						has_equipment = {
-							infantry_equipment > 5000
+							infantry_equipment > 500
 						}
 					}
 					send_equipment = {
 						target = FIN
 						type = infantry_equipment
-						amount = 5000
+						amount = 500
 					}
 				}
 				if = {
 					limit = {
 						has_equipment = {
-							artillery_equipment > 1000
+							artillery_equipment > 250
 						}
 					}
 					send_equipment = {
 						target = FIN
 						type = artillery_equipment
-						amount = 1000
-					}
-				}
-				if = {
-					limit = {
-						has_equipment = {
-							support_equipment > 1000
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = support_equipment
-						amount = 1000
-					}
-				}
-				if = {
-					limit = {
-						has_equipment = {
-							anti_air_equipment > 1000
-						}
-					}
-					send_equipment = {
-						target = FIN
-						type = anti_air_equipment
-						amount = 1000
+						amount = 250
 					}
 				}
 			}
@@ -239,8 +262,21 @@ country_event = {
 	}
 }
 
+#SWE joins the Winter War - Event for FIN
+country_event = {
+	id = finland.6
+	title = finland.6.t
+	desc = finland.6.d
+	picture = GFX_report_event_swedish_soldier
+	
+	is_triggered_only = yes
 
-#Surrender when Soviet has taken too much land
+	option = {
+		name = finland.6.a
+	}
+}
+
+#Surrender when Soviet has taken too much land - Event for FIN
 country_event = {
 	id = finland.7
 	title = finland.7.t
@@ -253,6 +289,7 @@ country_event = {
 		surrender_progress > 0.25
 		has_civil_war = no
 		is_in_faction = no
+		NOT = { has_country_flag = FIN_reached_out_to_soviets_to_surrender_flag }
 	}
 
 	mean_time_to_happen = { days = 20 }
@@ -266,7 +303,7 @@ country_event = {
 			base = 8
 		}
 		SOV = {
-			country_event = { id = finland.8 }
+			country_event = { id = finland.8 hours = 1 }
 		}
 		custom_effect_tooltip = finland.7.a_tt
 		effect_tooltip = {
@@ -276,17 +313,35 @@ country_event = {
 					message = FIN_agree_peace 
 				} 
 			}
+			### TRANSFER STATES
+			#KARJALA
 			transfer_state = 146
-			transfer_state = 147
+			#SALLA
 			if = {
 				limit = {
-					722 = {
-						is_claimed_by = SOV
-					}
+					owns_state = 147
 				}
-				SOV = { remove_state_claim = 722 }
+				transfer_state = 147
 			}
+			#PETSAMO
+			if = {
+				limit = {
+					owns_state = 722
+				}
+				transfer_state = 722
+			}
+			#TODO_Manu: Old content removed claim on Petsamo. Pending removal
+			#if = {
+			#	limit = {
+			#		722 = {
+			#			is_claimed_by = SOV
+			#		}
+			#	}
+			#	SOV = { remove_state_claim = 722 }
+			#}
 		}
+
+		set_country_flag = FIN_reached_out_to_soviets_to_surrender_flag
 	}
 
 	#Never give up!
@@ -299,10 +354,13 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
+
+		set_country_flag = FIN_available_decision_to_surrender_to_soviets_flag
+		unlock_decision_tooltip = FIN_surrender_to_the_soviet_union
 	}
 }
 
-#Soviet response to Finish surrender
+#Soviet response to Finish surrender - Event for SOV
 country_event = {
 	id = finland.8
 	title = finland.8.t
@@ -318,8 +376,29 @@ country_event = {
 			base = 9
 		}
 		white_peace = FIN
+
+		### TRANSFER STATES ###
+		#KARJALA
 		transfer_state = 146
-		transfer_state = 147
+
+		#SALLA
+		if = {
+			limit = {
+				FROM = { owns_state = 147 }
+			}
+			transfer_state = 147
+		}
+
+		# JA - MM: Brought back petsamo included in the deal since this was missing custom tooltip loc rework in the previous event. Will fix properly at a later date.
+		##PETSAMO
+		if = {
+			limit = {
+				FROM = { owns_state = 722 }
+			}
+			transfer_state = 722
+		}
+
+		# JA
 		if = {
 			limit = {
 				722 = {
@@ -328,6 +407,22 @@ country_event = {
 			}
 			remove_state_claim = 722
 		}
+		if = {
+			limit = {
+				213 = {
+					is_owned_by = SOV
+				}
+			}
+			213 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province =  6117
+				}	
+			}
+		}
+
 		FIN = {
 			add_ai_strategy = {
 				type = antagonize
@@ -335,6 +430,7 @@ country_event = {
 				value = 200
 			}
 		}
+
 		if = {
 			limit = {
 				GER = {
@@ -342,24 +438,33 @@ country_event = {
 					not = { is_in_faction_with = SOV}
 				}
 			}
-			add_ai_strategy = {
-				type = alliance
-				id = "GER"			
-				value = 200
-			}
-			add_ai_strategy = {
-				type = befriend
-				id = "GER"			
-				value = 200
+			FIN = {
+				add_ai_strategy = {
+					type = befriend
+					id = "GER"			
+					value = 200
+				}
 			}
 			GER = {
 				add_ai_strategy = {
-					type = alliance
+					type = befriend #Previously "alliance" -> Don't want Finland in the Axis for now
 					id = "FIN"			
 					value = 200
 				}
 			}
 		}
+
+		if = {
+			limit = {
+				SWE = {
+					has_war_with = ROOT
+					has_idea = SWE_gateway_to_peace
+				}
+			}
+			white_peace = SWE
+		}
+		add_political_power = 75 #Good Propaganda to win "fast"
+		SOV_paranoia_medium_decrease_effect = yes #Stalin likes this has been dealt with in a timely fashion
 	}
 
 	#Take it all
@@ -376,7 +481,7 @@ country_event = {
 	}
 }
 
-#Soviet says no!
+#Soviet says no! - Event for FIN
 country_event = {
 	id = finland.9
 	title = finland.9.t
@@ -387,5 +492,23 @@ country_event = {
 
 	option = {
 		name = finland.9.a
+	}
+}
+
+# WINTER WAR STARTS! -> (NSB Barbarossa free patch)
+country_event = {
+	id = finland.10
+	title = finland.10.t
+	desc = finland.10.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+
+	option = {
+		name = finland.10.a
+
+		add_ideas = winter_war_ns
+
+		custom_effect_tooltip = FIN_winter_war_push_back_tt
 	}
 }

@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = germany
+add_namespace = AAT_germany
 
 # Austrian Anschluss Completed
 country_event = {
@@ -207,18 +208,18 @@ country_event = {
 			}
 			add_state_claim = 146 #KARELIA (FIN)
 		}
-		if = {
-			limit = {
-				NOT = { owns_state = 147 }
-			}
-			add_state_claim = 147 #SALLA (FIN)
-		}
-		if = {
-			limit = {
-				NOT = { owns_state = 722 }
-			}
-			add_state_claim = 722 #PETSAMO (FIN)
-		}
+		#if = { #Removed with AAT (Makes no sense really)
+		#	limit = {
+				#		NOT = { owns_state = 147 }
+			#	}
+		#	add_state_claim = 147 #SALLA (FIN)
+		#}
+		#if = {
+			#	limit = {
+				#		NOT = { owns_state = 722 }
+			#	}
+		#	add_state_claim = 722 #PETSAMO (FIN)
+		#}
 		if = {
 			limit = {
 				NOT = { owns_state = 13 }
@@ -799,18 +800,18 @@ country_event = {
 					}
 					add_state_claim = 146 #KARELIA (FIN)
 				}
-				if = {
-					limit = {
-						NOT = { owns_state = 147 }
-					}
-					add_state_claim = 147 #SALLA (FIN)
-				}
-				if = {
-					limit = {
-						NOT = { owns_state = 722 }
-					}
-					add_state_claim = 722 #PETSAMO (FIN)
-				}
+				#if = { #Removed with AAT (Makes no sense really)
+				#	limit = {
+						#		NOT = { owns_state = 147 }
+					#	}
+				#	add_state_claim = 147 #SALLA (FIN)
+				#}
+				#if = {
+					#	limit = {
+						#		NOT = { owns_state = 722 }
+					#	}
+				#	add_state_claim = 722 #PETSAMO (FIN)
+				#}
 				if = {
 					limit = {
 						NOT = { owns_state = 13 }
@@ -1120,9 +1121,9 @@ country_event = {
 			transfer_state = 188
 			add_state_core = 188
 		}
-		hidden_effect = {
-			country_event = { days = 1 id = news.19 }
-		}
+		#hidden_effect = {
+			#	country_event = { days = 1 id = news.19 }
+		#}
 	}
 }
 
@@ -1139,12 +1140,12 @@ country_event = {
 		name = germany.23.a
 		create_wargoal = {
 			type = take_state_focus
-			target = LIT
+			target = FROM
 			generator = { 188 }
 		}
-		hidden_effect = {
-			country_event = { days = 1 id = news.20 }
-		}
+		#hidden_effect = {
+			#	country_event = { days = 1 id = news.20 }
+		#}
 	}
 }
 
@@ -1361,10 +1362,11 @@ country_event = {
 		add_state_claim = 4
 		add_state_claim = 152
 		add_state_claim = 153
+add_state_claim = 848
 		create_wargoal = {
 			type = take_state_focus
 			target = AUS
-			generator = { 4 152 153 }
+			generator = { 4 152 153 848}
 		}
 	}
 }
@@ -2999,7 +3001,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		has_country_leader = { name = "Adolf Hitler" }
+		has_country_leader = { character = GER_adolf_hitler ruling_only = yes }
 		tag = GER
 		AND = {
 			CZE = { has_capitulated = no }
@@ -3843,9 +3845,11 @@ country_event = {
 	option = {
 		name = germany.87.a
 		transfer_state = 85
+add_state_core = 85
 		transfer_state = 807
 		add_state_core = 807
 		remove_state_claim = 86
+remove_state_claim = 762
 		if = {
 			limit = {
 				ENG = {
@@ -6094,3 +6098,147 @@ country_event = { #Handed Over.. NOT
 		}
 	}
 }
+
+
+#country_event = {
+#	id = germany.1050
+#	title = germany.1050.t
+#	desc = germany.1050.desc
+#	picture = GFX_report_event_german_reichstag_gathering
+#
+#	is_triggered_only = yes
+#	option = { #Admiral Dönitz
+#		name = germany.1050.a
+#		retire_country_leader = yes
+#		news_event = {
+#			id = bba_news.200
+#			hours = 1
+#		}		
+#	}
+#	option = { #Albert Speer
+#		name = germany.1050.b
+#		retire_country_leader = yes
+#		news_event = {
+#			id = bba_news.200
+#			hours = 1
+#		}
+#	}
+#	option = { #Heinz Guderian
+#		name = germany.1050.c
+#		retire_country_leader = yes
+#		news_event = {
+#			id = bba_news.200
+#			hours = 1
+#		}
+#	}
+#}
+
+country_event = { #Germany wants resource rights for Sweden
+	id = AAT_germany.1
+	title = AAT_germany.1.t
+	desc = AAT_germany.1.desc
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = { #No
+		name = AAT_germany.1.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				date > 1942.12.1
+				OR = {
+					is_historical_focus_on = yes
+					has_government = democratic
+				}
+				factor = 3
+			} 
+
+			modifier = {
+				FROM = {
+					surrender_progress > 0.2
+				}
+				factor = 10
+			}
+
+			modifier = {
+				FROM = {
+					is_ai = no
+					surrender_progress < 0.03
+				}
+				factor = 0
+			}
+		}
+
+		add_political_power = -25
+		FROM = {
+			country_event = { id = AAT_germany.2 hours = 2 }
+		}
+	}
+
+	option = { #Yes
+		ai_chance = {
+			base = 9
+		}
+		name = AAT_germany.1.b
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+
+		add_timed_idea = {
+			idea = GER_german_swedish_trade_agreement
+			days = 480
+		}
+
+		give_resource_rights = {
+			receiver = FROM 
+			state = 918 #Västerbotten 
+		}
+
+		add_opinion_modifier = {
+			target = FROM # target of the relation
+			modifier = GER_SWE_historic_trade_Partners
+		}
+
+		FROM = {
+			add_opinion_modifier = {
+				target = PREV # target of the relation
+				modifier = GER_SWE_historic_trade_Partners
+			}
+			country_event = { id = AAT_germany.3 hours = 2 }
+		}
+	}
+}
+
+country_event = { #Rejects deal
+	id = AAT_germany.2
+	title = AAT_germany.2.t
+	desc = AAT_germany.2.desc
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+
+	option = { #NOPE
+		name = AAT_germany.2.a
+	}
+}
+
+
+country_event = { #Accepts deal
+	id = AAT_germany.3
+	title = AAT_germany.3.t
+	desc = AAT_germany.3.desc
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = { #NOPE
+		name = AAT_germany.3.a
+	}
+}
+

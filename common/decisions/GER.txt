@@ -387,6 +387,7 @@ GER_case_anton_category = {
 			divisions_in_state = { state = 25 size < 1 }
 			divisions_in_state = { state = 22 size < 1 }
 			divisions_in_state = { state = 21 size < 1 }
+divisions_in_state = { state = 851 size < 1 }
 			divisions_in_state = { state = 32 size < 1 }
 			divisions_in_state = { state = 22 size < 1 }
 			divisions_in_state = { state = 26 size < 1 }
@@ -822,6 +823,9 @@ political_actions = {
 				has_country_leader = { ruling_only = yes character = GER_wilhelm_iii }
 				has_country_leader = { ruling_only = yes character = GER_victoria }
 			}
+hidden_trigger = {
+				NOT = { has_global_flag = von_lettow_is_in_a_country }
+			}
 		}
 		cost = 25
 		fire_only_once = yes
@@ -829,6 +833,9 @@ political_actions = {
 			factor = 1
 		}
 		complete_effect = {
+hidden_effect = {
+				set_global_flag = von_lettow_is_in_a_country
+			}
 			create_corps_commander = {
 				name = "Paul von Lettow-Vorbeck"
 				gfx = GFX_portrait_ger_von_lettow_vorbeck
