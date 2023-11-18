@@ -78,7 +78,6 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
-
 		# POLITICAL
 		student_mobilization_idea = {
 			
