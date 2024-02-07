@@ -97,234 +97,46 @@ attache_decisions = {
 	}
 }
 d_occupation_decisions = {
-	JAP_occupation_law = {
-		icon = generic_operation
-		fire_only_once = yes
+	 JAP_occupation_law = {
+	 	icon = generic_operation
+	 	fire_only_once = yes
 
-		allowed = {
-			original_tag = JAP
-		}
+	 	allowed = {
+	 		original_tag = JAP
+	 	}
 		
 		available = {
-			JAP = {has_completed_focus = JAP_intervene_in_china}
-			date < 1939.1.1
-		}
+	 		JAP = {has_completed_focus = JAP_intervene_in_china}
+	 		date < 1939.1.1
+	 	}
 
-		visible = {
-			date < 1939.1.1
-		}
+	 	visible = {
+	 		date < 1939.1.1
+	 	}
 
-		days_remove = 30
+	 	days_remove = 30
 
-		modifier = {
-			civilian_factory_use = 10
-		} 
+	 	modifier = {
+	 		civilian_factory_use = 10
+	 	} 
 
-		complete_effect = {
+	 	complete_effect = {
 	
-			JAP = {
-				every_state = {
-					limit = { 
-						OR = {
-							is_core_of = CHI
+	 		JAP = {
+	 			every_state = {
+	 				limit = { 
+	 					OR = {
+	 						is_core_of = CHI
 							is_core_of = SIA
 						} 
-					}
-					add_compliance = 100
-				}
-			}
-		}
-	}
+	 				}
+	 				add_compliance = 100
+	 			}
+	 		}
+	 	}
+	 }
 }
 z_annex_d = {
-	ENG_annex_FROM = {
-		icon = generic_operation
-		fire_only_once = no
-
-		allowed = {
-			original_tag = ENG
-		}
-		
-		available = {
-			date > 1939.09.01
-		}
-
-		visible = {
-			always = yes
-		}
-
-		targets = { CAN SAF AST RAJ }
-
-		target_root_trigger = { original_tag = ENG }
-
-		target_trigger = {
-			FROM = {
-				OR = {
-					original_tag = CAN
-					original_tag = SAF
-					original_tag = AST
-					original_tag = RAJ
-				}
-			}
-		}
-		complete_effect = {
-			FROM = {country_event = ENG_annex.1}
-		}
-
-	}
-	ENG_annex_MAL = {
-
-		icon = generic_operation
-	
-		allowed = {
-			original_tag = ENG
-	
-		}
-	
-		available = {
-			NOT = {
-					has_war_with = JAP
-					}
-			MAL = { 
-				is_ai = yes 
-			}
-			date > 1939.9.1
-		}	
-		cost = 300
-			
-		visible = {
-			country_exists = MAL
-		}
-			
-		fire_only_once = yes
-	
-		complete_effect = {
-			annex_country = {target = MAL transfer_troops = yes}
-			every_controlled_state = {
-				add_compliance = 100
-			}
-		}
-	}
-}
-z_annex_d = {
-	ENG_free_FROM = {
-		icon = generic_operation
-		fire_only_once = YES
-
-		allowed = {
-			original_tag = ENG
-		}
-		
-		available = {
-			ENG = {has_war_with = jap}
-		}
-
-		visible = {
-			always = yes
-		}
-
-		targets = { CAN SAF AST RAJ }
-
-		target_root_trigger = { original_tag = ENG }
-
-		target_trigger = {
-			FROM = {
-				OR = {
-					original_tag = CAN
-					original_tag = SAF
-					original_tag = AST
-					original_tag = RAJ
-				}
-			}
-		}
-		complete_effect = {
-			set_autonomy = {
-				target = FROM
-				autonomous_state = autonomy_free
-			}
-		}
-
-	}
-}
-z_annex_bot_d = {
-	ENG_annex_ISL = {
-
-		icon = generic_operation
-
-		allowed = {
-			original_tag = ENG
-		}
-
-		available = {
-			DEN = { 
-				has_war_with = GER	
-
-			}
-			date > 1939.9.1
-		}	
-		cost = 25
-			
-		visible = {
-			
-		}
-			
-		fire_only_once = yes
-
-		complete_effect = {
-			ENG = {
-				annex_country = { target = ICE transfer_troops = yes }
-			}
-		}
-	}
-
-	# ENG_bot_FROM = {
-	# 	icon = generic_operation
-	# 	fire_only_once = yes
-
-	# 	allowed = {
-	# 		original_tag = ENG
-	# 	}
-		
-	# 	available = {
-	# 		FROM = { has_capitulated = yes }
-	# 		date > 1941.01.01
-	# 	}
-
-	# 	visible = {
-	# 		always = yes
-	# 	}
-
-	# 	targets = { HOL BEL NOR LUX DEN GRE YUG }
-
-	# 	target_root_trigger = { original_tag = ENG }
-
-	# 	target_trigger = {
-	# 		FROM = {
-	# 			OR = {
-	# 				original_tag = HOL
-	# 				original_tag = BEL
-	# 				original_tag = NOR
-	# 				original_tag = LUX
-	# 				original_tag = GRE
-	# 				original_tag = DEN
-	# 				original_tag = YUG
-	# 			}
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		every_state = {
-	# 			limit = {
-	# 				AND = {
-	# 					NOT = {is_owned_and_controlled_by = FROM}
-	# 					is_core_of = FROM
-	# 				} 
-					 
-	# 			}
-	# 			set_state_owner_to = ROOT
-	# 		}
-	# 	}
-	# }
-
 
 	GER_annex_ROM = {
 
@@ -554,6 +366,193 @@ z_annex_bot_d = {
 
 
 
+	ENG_annex_FROM = {
+		icon = generic_operation
+		fire_only_once = no
+
+		allowed = {
+			original_tag = ENG
+		}
+		
+		available = {
+			date > 1939.09.01
+		}
+
+		visible = {
+			always = yes
+		}
+
+		targets = { CAN SAF AST RAJ }
+
+		target_root_trigger = { original_tag = ENG }
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = AST
+					original_tag = RAJ
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {country_event = ENG_annex.1}
+		}
+
+	}
+	ENG_annex_MAL = {
+
+		icon = generic_operation
+	
+		allowed = {
+			original_tag = ENG
+	
+		}
+	
+		available = {
+			NOT = {
+					has_war_with = JAP
+					}
+			MAL = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}	
+		cost = 300
+			
+		visible = {
+			country_exists = MAL
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = MAL transfer_troops = yes}
+			every_controlled_state = {
+				add_compliance = 100
+			}
+		}
+	}
+}
+z_annex_d = {
+	ENG_free_FROM = {
+		icon = generic_operation
+		fire_only_once = YES
+
+		allowed = {
+			original_tag = ENG
+		}
+		
+		available = {
+			ENG = {has_war_with = jap}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		targets = { CAN SAF AST RAJ }
+
+		target_root_trigger = { original_tag = ENG }
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+					original_tag = SAF
+					original_tag = AST
+					original_tag = RAJ
+				}
+			}
+		}
+		complete_effect = {
+			set_autonomy = {
+				target = FROM
+				autonomous_state = autonomy_free
+			}
+		}
+
+	}
+}
+z_annex_bot_d = {
+	ENG_annex_ISL = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			DEN = { 
+				has_war_with = GER	
+
+			}
+			date > 1939.9.1
+		}	
+		cost = 25
+			
+		visible = {
+			
+		}
+			
+		fire_only_once = yes
+
+		complete_effect = {
+			ENG = {
+				annex_country = { target = ICE transfer_troops = yes }
+			}
+		}
+	}
+
+	# ENG_bot_FROM = {
+	# 	icon = generic_operation
+	# 	fire_only_once = yes
+
+	# 	allowed = {
+	# 		original_tag = ENG
+	# 	}
+		
+	# 	available = {
+	# 		FROM = { has_capitulated = yes }
+	# 		date > 1941.01.01
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	# 	}
+
+	# 	targets = { HOL BEL NOR LUX DEN GRE YUG }
+
+	# 	target_root_trigger = { original_tag = ENG }
+
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			OR = {
+	# 				original_tag = HOL
+	# 				original_tag = BEL
+	# 				original_tag = NOR
+	# 				original_tag = LUX
+	# 				original_tag = GRE
+	# 				original_tag = DEN
+	# 				original_tag = YUG
+	# 			}
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		every_state = {
+	# 			limit = {
+	# 				AND = {
+	# 					NOT = {is_owned_and_controlled_by = FROM}
+	# 					is_core_of = FROM
+	# 				} 
+					 
+	# 			}
+	# 			set_state_owner_to = ROOT
+	# 		}
+	# 	}
+	# }
 	USA_bot_FROM = {
 		icon = generic_operation
 		fire_only_once = yes
@@ -593,8 +592,6 @@ z_annex_bot_d = {
 			}
 		}
 	}
-
-	
 }
 usa_help_ussr = {
 	USA_aluminium = {
@@ -637,7 +634,10 @@ usa_help_ussr = {
 		
 		
 	}
-	USA_artiilery = {
+
+USA_artiilery = {
+
+	
 		icon = generic_operation
 		fire_only_once = yes
 
@@ -651,6 +651,7 @@ usa_help_ussr = {
 		days_remove = 56
 		visible = {
 			SOV = {has_war_with = GER}
+			original_tag = SPR
 		}
 		complete_effect = {
 			USA ={add_offsite_building = { type = arms_factory level= -6 }}}
@@ -789,10 +790,12 @@ eng_saf_can = {
 
 		visible = {
 			has_war_with = USA
+			
 		}
 
 		complete_effect = {
 			add_ideas = closed_economy
+			
 		}
 	}
 
@@ -818,3 +821,4 @@ eng_saf_can = {
 	}	
 	
 }
+

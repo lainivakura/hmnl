@@ -470,8 +470,7 @@ brutally_oppressive_occupation = {
 		}
 	}
 }
-
-    axis_occupation = {
+axis_occupation = {
 	icon = 13
 	sound_effect = "Martial_Law_Interface_Brutally_Oppressive_Occupation_Unique_FAS"
 

@@ -6,6 +6,8 @@ autonomy_state = {
 	manpower_influence = 0.5
 
 	rule = {
+		desc = "RULE_DESC_IS_A_SUBJECT"
+		
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
 		can_be_spymaster = yes
@@ -33,8 +35,19 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_dlc = "Death or Dishonor"
-		has_government = fascism
+		OR = {
+			has_dlc = "Death or Dishonor"
+			AND = {
+				OR = {
+					original_tag = POL
+					original_tag = LIT
+					original_tag = LAT
+					original_tag = EST
+				}
+				has_dlc = "No Step Back"
+			}
+		}
+		OVERLORD = { has_government = fascism }
 		if = {
 			limit = { has_dlc = "Waking the Tiger" }
 			NOT = { OVERLORD = { original_tag = JAP } }

@@ -39,11 +39,17 @@ country_event = {
 				add_idea = vittorio_emanuele_albania_ethiopia
 			}
 		}
+
+		if = {
+			limit = {
+				has_character = ITA_vittorio_emanuele_iii
+			}
 		ITA_vittorio_emanuele_iii = { add_country_leader_trait = king_of_albania }
 			
 		hidden_effect = {
 			ITA_vittorio_emanuele_iii = { set_character_flag = ITA_king_of_albania_flag } #Used to add the NS of the king back after having removed it (Christian Democracy)
 		}
+}
 
 		USA = {
 			set_country_flag = { flag = USA_albania_window days = 60 value = 1 }

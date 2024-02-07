@@ -169,7 +169,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 		
@@ -686,7 +686,7 @@ ideas = {
 			picture = eng_for_the_good_of_the_revolution
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -1810,21 +1810,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			available = {
-				OR = {
-					ENG = {has_war_with = JAP}
-					ENG = {
-						NOT = {
-							has_full_control_of_state = 118
-						}
-					}
-					ENG = {
-						NOT = {
-							has_full_control_of_state = 446
-						}
-					}
-				}
-			}
+			
 
 			
 			research_bonus = {
@@ -1853,7 +1839,7 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
+			modifier = {
 			}
 		}
 		
@@ -1871,7 +1857,7 @@ ideas = {
 			
 			traits = { CAS_manufacturer } 
 			
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
+			modifier = {
 			}
 		}	
 		de_havilland = {
@@ -1888,7 +1874,7 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
+			modifier = {
 			}
 		}
 		
@@ -1906,7 +1892,7 @@ ideas = {
 			
 			traits = { heavy_aircraft_manufacturer }
 			
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
+			modifier = {
 			}
 		}
 		
@@ -1924,7 +1910,7 @@ ideas = {
 			
 			traits = { naval_aircraft_manufacturer }
 			
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
+			modifier = {
 			}
 		}			
 	}

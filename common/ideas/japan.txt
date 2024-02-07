@@ -78,6 +78,7 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
+	
 		# POLITICAL
 		student_mobilization_idea = {
 			
@@ -117,7 +118,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 		spiritual_mobilization_idea = {
@@ -250,8 +251,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
-				consumer_goods_factor = 0.01
-max_command_power = 20
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -273,8 +273,7 @@ max_command_power = 20
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
-				max_command_power = 20
-			}
+							}
 		}
 
 		JAP_guide_the_zaibatsus = {
@@ -300,10 +299,11 @@ max_command_power = 20
 				production_speed_dockyard_factor = 0.05
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				consumer_goods_factor = 0.01
+			
 				max_command_power = 20
 				production_factory_efficiency_gain_factor = 0.3
 				line_change_production_efficiency_factor = 0.1
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -323,13 +323,12 @@ max_command_power = 20
 			
 			modifier = {
 				political_power_cost = 0.5
-max_command_power = 20
 				trade_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.01
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -352,8 +351,7 @@ max_command_power = 20
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
-max_command_power = 20
+				consumer_goods_factor = 0.10
 			}
 		}
 
@@ -392,6 +390,7 @@ max_command_power = 20
 				justify_war_goal_time = -0.2
 				research_speed_factor = -0.05
 				production_speed_industrial_complex_factor = -0.1
+				ai_desired_divisions_factor = 0.25
 			}
 		}
 
@@ -739,8 +738,8 @@ max_command_power = 20
 
 			picture = jap_supremacy_of_technology
 			modifier = { 
-global_building_slots_factor = 0.3
-}
+				global_building_slots_factor = 0.3
+			}
 			research_bonus = {
 				infantry_weapons = 0.05
 				armor = 0.05
@@ -1391,7 +1390,7 @@ global_building_slots_factor = 0.3
 			
 			traits = { light_aircraft_manufacturer_2 }
 
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
+			modifier = {
 
 			}
 		}
@@ -1409,9 +1408,7 @@ global_building_slots_factor = 0.3
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
-
-			}
+			
 			traits = { fuel_efficient_aircraft_manufacturer }
 		}
 		
@@ -1424,9 +1421,7 @@ global_building_slots_factor = 0.3
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
-
-			}
+			
 			traits = { heavy_aircraft_manufacturer }
 
 		}
@@ -1440,9 +1435,7 @@ global_building_slots_factor = 0.3
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			modifier = {aircraft_manufacturer_cost_factor = -0.6
-
-			}
+			
 			traits = { naval_aircraft_manufacturer }
 		}
 	}

@@ -252,12 +252,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = tank_corps
 			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
-			add_tech_bonus = {
 				name = CAN_the_valentine_tank
 				ahead_reduction = 2
 				bonus = 1.0
@@ -649,7 +643,6 @@ focus_tree = {
 		text = extra_tech_slot
 		icon = GFX_focus_research
 		prerequisite = { focus = uk_industrial_focus }
-		allow_branch = { always = no }
 		x = 0
 		y = 1
 		relative_position_id = uk_industrial_focus
@@ -703,7 +696,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = british_austerity_idea
 			add_research_slot = 1
-		
 		}
 	}
 
@@ -730,6 +722,8 @@ focus_tree = {
 			show_ideas_tooltip = ENG_david_stirling
 		}
 	}
+
+	
 	
 	focus = {
 		id = royal_ordinance_focus
@@ -770,8 +764,8 @@ focus_tree = {
 		} #at war with major or ger in rhineland or high threat
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 0
-		y = 1
+		x = -1
+		y = 2
 		relative_position_id = uk_industrial_focus
 		cost = 10
 		ai_will_do = {
@@ -888,7 +882,7 @@ focus_tree = {
 		prerequisite = { focus = maud_focus }
 		icon = GFX_goal_generic_secret_weapon
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = royal_ordinance_focus
 		cost = 10
 		ai_will_do = {
@@ -918,7 +912,6 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = air_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
@@ -1876,6 +1869,21 @@ focus_tree = {
 			NOT = { has_government = communism }
 			num_subjects > 0
 		} 
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = ENG_revisit_colonial_policy
+				}
+			}
+		}
+
 		icon = GFX_goal_generic_national_unity
 		x = 28
 		y = 0
@@ -1883,7 +1891,16 @@ focus_tree = {
 			x = -2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				OR = {
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+						has_completed_focus = uk_empire_focus
+					}
+				}
 			}
 		}
 		cost = 10
@@ -1900,6 +1917,18 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1915,7 +1944,16 @@ focus_tree = {
 			x = 2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				OR = {
+					NOT = { has_dlc = "Man the Guns" }
+					AND = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					has_completed_focus = uk_empire_focus
+					}
+				}
 			}
 		}
 		relative_position_id = uk_empire_focus
@@ -2540,6 +2578,17 @@ focus_tree = {
 		allow_branch = {
 			always = no
 			has_dlc = "Man the Guns"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = uk_empire_focus
+				}
+			}
 		}
 
 		available = { 
@@ -2576,6 +2625,17 @@ focus_tree = {
 			add_political_power = 80
 			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
 			hidden_effect = { news_event = { id = mtg_news.14 days = 1 } }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 
@@ -5569,7 +5629,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -5619,7 +5679,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -5670,7 +5730,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -6108,7 +6168,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -6241,7 +6301,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -6364,6 +6424,10 @@ focus_tree = {
 			#}
 		}	
 		completion_reward = {
+			set_autonomy = {
+				target = RAJ
+				autonomy_state = autonomy_dominion
+			}
 			RAJ = { add_timed_idea = { idea = ENG_indian_autonomy_RAJ_idea days = 730 } }
 			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
@@ -8051,6 +8115,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			
 			set_rule = { can_send_volunteers = yes }
 		}
 	}

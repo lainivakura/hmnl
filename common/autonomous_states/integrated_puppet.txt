@@ -8,6 +8,8 @@ autonomy_state = {
 	manpower_influence = 1.0
 
 	rule = {
+		desc = "RULE_DESC_IS_A_SUBJECT"
+		
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
 		can_be_spymaster = yes
@@ -42,7 +44,13 @@ autonomy_state = {
 
 		if = {
 			limit = { has_dlc = "Death or Dishonor" }
-			NOT = { has_government = fascism }
+			NOT = {
+				AND = {
+					OVERLORD = { has_government = fascism } 
+					ROOT = { has_government = fascism }
+}
+			}
+			
 		}
 		if = {
 			limit = {

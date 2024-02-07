@@ -25,20 +25,19 @@ NDefines.NDiplomacy.FLEET_FEAR = 0
 NDefines.NDiplomacy.EMBARGO_COST = 9999
 
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0;
-
-NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.2           -- how to weight in highest armor & pen vs the division average
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.2   
 ---Воздух
 
 
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2
- 
--- NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
--- NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.5 --3
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 --3 уменьшено для компенсации частоты влета касов
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.25 --1
-
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.3
+-- NDefines.NAir.PORT_STRIKE_ENEMY_SUPERIORITY_LIMIT = 0.3			-- Min air superiority for performing of naval strike ( не работает ? )
 NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
+NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 20 -- урон по самолетам на филдах
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1
+NDefines.NAir.HOURS_DELAY_AFTER_EACH_COMBAT = 3 -- (4) для влета касов (и любых других самолетов) каждые 4 часа
+NDefines.NAir.ESCORT_FACTOR = 3.0				-- (2) для влета касов (и любых других самолетов) в любом желтом воздухе
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 	0.0, -- AIR_SUPERIORITY
 	0.0, -- CAS
@@ -96,8 +95,6 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5					-- IC cost equipmen
 
 
 
-
-
 --Navy
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 20
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50
@@ -114,7 +111,6 @@ NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.5 -- if one side
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO= 0.9  -- maximum penalty to get from larger fleets
 NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR	= 0.3  -- penalty if other side has stronger carrier air force
 NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.3  -- max penalty from stronger carrier air force
-
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
 		0.0, -- HOLD
 		1.0, -- PATROL
@@ -127,7 +123,6 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.0, -- RESERVE_FLEET
 		0.5, -- NAVAL_INVASION_SUPPORT 1
 	}
-
 --AI
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0
@@ -205,8 +200,6 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
-
-
 NDefines.NSupply.RAILWAY_BASE_FLOW = 7.0
 NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 3.5
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 3.5

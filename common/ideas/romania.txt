@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		ROM_hueta = {
+	ROM_hueta = {
 
 			picture = anti_soviet_pact
 			
@@ -32,6 +32,7 @@ ideas = {
 			}
 		}	
 		ROM_revenge_against_soviet = {
+				ROM_revenge_against_soviet = {
 
 			picture = anti_soviet_pact
 			
@@ -137,8 +138,7 @@ ideas = {
 			
 			modifier = {
 				improve_relations_maintain_cost_factor = -0.5
-				
-			}
+							}
 		}
 
 		ROM_flexible_foreign_policy_2 = {
@@ -218,7 +218,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.4
 			}
 		}
 
@@ -305,7 +305,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.06
 			}
 		}
 
@@ -406,7 +406,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.30
 				political_power_gain = -0.25
 			}
 		}
@@ -560,7 +560,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -846,7 +846,7 @@ ideas = {
 
 			}
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 		
@@ -986,6 +986,7 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
+				has_dlc = "Death or Dishonor"
 			}
 
 			available = {
@@ -1023,6 +1024,7 @@ ideas = {
 
 			allowed = {		
 				original_tag = ROM
+				has_dlc = "Death or Dishonor"
 			}
 
 			available = {

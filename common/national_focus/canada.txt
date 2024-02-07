@@ -277,15 +277,6 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-								random_owned_controlled_state = {
-				prioritize = { 468 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				}
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -355,15 +346,6 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-								random_owned_controlled_state = {
-				prioritize = { 276 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				}
 			build_railway = { #Montreal - Halifax
 				path = {
 					4345 4417 10320 7433 1284 12291 4362 7379 4432 1424 7304 7644 7361
@@ -382,14 +364,14 @@
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 0
+						size > 1
 						include_locked = yes
 					}
 				}
 
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -438,10 +420,10 @@
 				limit = {
 					has_state_flag = CAN_retool_angus_shops_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -453,14 +435,14 @@
 				limit = {
 					free_building_slots = {
 						building = arms_factory
-						size > 0
+						size > 1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_retool_angus_shops_AF
@@ -502,32 +484,25 @@
 			470 = {
 				add_resource = {
 					type = oil
-
 					amount = 2
-
-					amount = 4
 				}
 			}
 			471 = {
 				add_resource = {
 					type = oil
 					amount = 4
-					amount = 8
 				}
 			}
 			472 = {
 				add_resource = {
 					type = oil
-
 					amount = 4
-					amount = 6
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
 					amount = 4
-					amount = 6
 				}
 			}
 		}
@@ -880,7 +855,6 @@
 				add_resource = {
 					type = steel
 					amount = 2
-					amount = 10
 				}
 			}
 			random_owned_controlled_state = {
@@ -890,11 +864,7 @@
 				}
 				add_resource = {
 					type = steel
-
 					amount = 2
-
-					amount = 5
-
 				}
 			}
 			random_owned_controlled_state = {
@@ -904,11 +874,7 @@
 				}
 				add_resource = {
 					type = chromium
-
 					amount = 3
-
-					amount = 10
-
 				}
 			}
 		}
@@ -946,9 +912,16 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			if = {
+				limit = { has_idea = CAN_great_depression_1 }
 			swap_ideas = {
 				remove_idea = CAN_great_depression_1
 				add_idea = CAN_great_depression_2		
+			}
+		}
+			else_if = {
+				limit = { has_idea = CAN_great_depression_2 }
+				remove_ideas = CAN_great_depression_2
 			}
 		}
 	}
@@ -1419,7 +1392,6 @@
 		id = CAN_national_steel_car
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CAN_alberta_coal_towns }
-
 		x = 1
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1838,7 +1810,6 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
-			remove_ideas = CAN_great_depression_2
 			random_state = {
 				limit = {
 					has_state_flag = CAN_war_fueled_economy_AF1
@@ -1875,7 +1846,22 @@
 		}
 
 		completion_reward = {
+			if = {
+				limit = { 
+					OR = {
+						has_idea = CAN_great_depression_1
+						has_idea = CAN_great_depression_2
+					}
+				}
 			remove_ideas = CAN_great_depression_2
+				custom_effect_tooltip = if_no_depression_get_stuff_TT
+			}
+			else = {
+				add_timed_idea = {
+					idea = CAN_booming_economy
+					days = 1095
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -2161,7 +2147,7 @@
 			add_tech_bonus = {
 				name = CAN_a_motorized_army
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = motorized_equipment
 				technology = tech_field_hospital
 				technology = tech_field_hospital2
@@ -2367,8 +2353,14 @@
 				name = CAN_the_valentine_tank
 				ahead_reduction = 2
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = cat_light_armor
+			}
+			add_tech_bonus = {
+				name = CAN_the_valentine_tank
+				bonus = 1.0
+				uses = 1
+				technology = improved_medium_tank_chassis
 			}
 		}
 	}
@@ -3349,11 +3341,21 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_wargoal = {
-				type = annex_everything
-				target = USA
-				expire = 0
+			if = {
+				limit = { has_government = fascism }
+				set_rule = { can_create_factions = yes }
+				create_wargoal = {
+					type = annex_everything
+					target = USA
+					expire = 0
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = topple_government
+					target = USA
+					expire = 0
+				}
 			}
 		}
 	}
@@ -3375,6 +3377,10 @@
 
 		available = {
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			ENG = {
+				owns_state = 331
+				owns_state = 332
+			}
 		}
 		
 		bypass = {
@@ -3415,6 +3421,10 @@
 			473 = {
 				is_owned_by = CAN
 				is_controlled_by = CAN
+			}
+			ENG = {
+				owns_state = 331
+				owns_state = 332
 			}
 		}
 		
@@ -3519,6 +3529,214 @@
 			swap_ideas = {
 				remove_idea = CAN_communist_ideals
 				add_idea = CAN_communist_ideals_2
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_mend_relations_with_the_trotskyites
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = CAN_communist_labor_total_war_committee }
+		mutually_exclusive = { focus = CAN_supply_the_red_army focus = CAN_defence_scheme_no_2 }
+		x = -2
+		y = 2
+		relative_position_id = CAN_burn_the_royal_portraits
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CAN_unified_communist_party
+			
+			if = {
+				limit = { 
+					SOV = {
+						has_government = communism
+					} 
+				}
+				SOV = {
+					if = {
+						limit = { has_country_leader = { character = SOV_lev_trotsky } }
+						add_opinion_modifier = {
+							target = ROOT 
+							modifier = CAN_trotsky_loves_us
+						}
+					}
+					else = {
+						add_opinion_modifier = {
+							target = ROOT 
+							modifier = CAN_stalin_and_friends_hate_us_now
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = CAN_reject_authoritarianism
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = CAN_mend_relations_with_the_trotskyites }
+		x = 0
+		y = 1
+		relative_position_id = CAN_mend_relations_with_the_trotskyites
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_war = no
+					is_in_faction = yes
+				}
+				leave_faction = yes
+			}
+			set_rule = {
+				can_join_factions = no
+			}
+			swap_ideas = {
+				remove_idea = CAN_communist_ideals_2
+				add_idea = CAN_communist_ideals_4
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_liberate_the_workers_of_the_world
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_reject_authoritarianism }
+		x = 0
+		y = 1
+		relative_position_id = CAN_reject_authoritarianism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CAN_true_revolution
+		}
+	}
+	
+	focus = {
+		id = CAN_reactivate_farmers_unity_league
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = CAN_mend_relations_with_the_trotskyites }
+		x = -2
+		y = 1
+		relative_position_id = CAN_mend_relations_with_the_trotskyites
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			has_war = yes
+			has_civil_war = no
+			469 = { is_fully_controlled_by = ROOT }
+			470 = { is_fully_controlled_by = ROOT }
+			467 = { is_fully_controlled_by = ROOT }
+		}
+		
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			469 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT 
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			470 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT 
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			467 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT 
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = { has_idea = CAN_great_depression_1 }
+				swap_ideas = {
+					remove_idea = CAN_great_depression_1
+					add_idea = CAN_great_depression_2		
+				}
+				custom_effect_tooltip = if_no_depression_get_stuff_TT
+			}
+			else_if = {
+				limit = { has_idea = CAN_great_depression_2 }
+				remove_ideas = CAN_great_depression_2
+				custom_effect_tooltip = if_no_depression_get_stuff_TT
+			}
+			else = {
+				add_timed_idea = {
+					idea = CAN_booming_economy
+					days = 1095
+				}
 			}
 		}
 	}
@@ -4227,8 +4445,22 @@
 				category = tactical_bomber
 				category = cas_bomber
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = CAN_fairchild_aircraft_ltd
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = CAN_fairchild_aircraft_ltd_organization
+				mio:CAN_fairchild_aircraft_ltd_organization = {
+					add_mio_funds = 2500
+				}
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = CAN_fairchild_aircraft_ltd
+			}
 		}
 	}
 
@@ -4270,8 +4502,28 @@
 				uses = 1
 				category = cat_strategic_bomber
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = CAN_handley_page
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = CAN_handley_page_organization
+				mio:CAN_handley_page_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+
+				#	unlock_mio_trait_tooltip  = {
+				#		department = CAN_mio_department_design_plane_heavy_combat
+				#		trait = CAN_mio_trait_cookie_carriers
+				#	}
+				}
+			}
+
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = CAN_handley_page
+			}
 		}
 	}
 
@@ -4696,10 +4948,10 @@
 				limit = {
 					has_state_flag = CAN_united_shipyards_DY
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -4712,14 +4964,14 @@
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = CAN_united_shipyards_DY

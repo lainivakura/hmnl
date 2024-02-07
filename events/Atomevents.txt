@@ -1,176 +1,55 @@
 add_namespace = Atomevents
 
-
-
-country_event = {
-	id = Atomevents.1487
-	title = Atomevents.1487.t
-	desc =  Atomevents.1487.d
-	picture = GFX_report_event_german_troops
-
-    trigger = {
-        tag = ENG
-		date > 1939.12.1
-    }
-
-	is_triggered_only = yes
-	 
-	option = { 
-	451 = {	
-	add_dynamic_modifier = {
-	modifier = ENG_africa_offencive
-	scope =  ENG 
-	days = 150
-	}	
-}
-	663 = {	
-	add_dynamic_modifier = {
-	modifier = ENG_africa_offencive
-	scope =  ENG 
-	days = 150
-	}	
-}	
-}	
-}
-
-country_event = {
-	id = Atomevents.1486
-	title = Atomevents.1486.t
-	desc =  Atomevents.1486.d
-	picture = GFX_report_event_german_troops
-
-    trigger = {
-        tag = GER
-		date > 1940.03.1
-    }
-
-	is_triggered_only = yes
-
-	option = { 
-	452 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  GER
-	days = 120
-	}	
-}
-	447 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  GER
-	days = 90
-	}	
-}	
-
-    907 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  GER
-	days = 90
-	}	
-}
-
-
-452 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  HUN
-	days = 120
-	}	
-}
-	447 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  HUN
-	days = 90
-	}	
-}	
-
-    907 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  HUN
-	days = 90
-	}	
-}
-
-
-
-452 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  ROM
-	days = 120
-	}	
-}
-	447 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  ROM
-	days = 90
-	}	
-}	
-
-    907 = {	
-	add_dynamic_modifier = {
-	modifier = GER_africa_offencive
-	scope =  ROM
-	days = 90
-	}	
-}
-
-
-	}
-}
-
-
-
 country_event = {
 	id = Atomevents.1488
 	title = Atomevents.1488.t
 	desc =  Atomevents.1488.d
 	picture = GFX_report_event_stalin_propaganda
 
-    trigger = {
-        tag = SOV
+	trigger = {
+		tag = SOV
 		date > 1941.11.1
 		date < 1942.03.1
+		has_game_rule =  { 
+			rule = counterattack
+			option = true 
+		} 
 		GER = {
-		controls_state = 246
-		controls_state = 205
-		controls_state = 242
-		controls_state = 243
+			controls_state = 246
+			controls_state = 205
+			controls_state = 242
+			controls_state = 243
+		}
+	}
 
-			}
-    }
-
-	is_triggered_only = yes
-
+	mean_time_to_happen = {
+		days = 7
+	}
 	option = { 
-	219 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_moskva
-	scope =  SOV
-	days = 90
-}
-}
-	
-	223 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_moskva
-	scope =  SOV
-	days = 60
-}
-}
+		219 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_moskva
+				scope =  SOV
+				days = 90
+			}
+		}
+		
+		223 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_moskva
+				scope =  SOV
+				days = 60
+			}
+		}
 
-	247 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_moskva
-	scope =  SOV
-	days = 60
-}
-}
-}
+		247 = {	
+			add_dynamic_modifier = {
+			modifier = SOV_counterattack_moskva
+			scope =  SOV
+			days = 60
+			}
+		}
+	}
 }
 
 
@@ -181,34 +60,38 @@ country_event = {
 	desc =  Atomevents.1489.d
 	picture = GFX_report_event_stalin_propaganda
 
-    trigger = {
-        tag = SOV
+	trigger = {
+		tag = SOV
 		date > 1941.11.1
 		date < 1942.03.1
+		has_game_rule =  { 
+			rule = counterattack
+			option = true 
+		} 
 		GER = {
-		controls_state = 227
-		controls_state = 228
-			}
-    }
-
-	is_triggered_only = yes
-
+			controls_state = 227
+			controls_state = 228
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
 	option = { 
-	218 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_rostov
-	scope =  SOV
-	days = 35
-}
-}
-	245 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_rostov
-	scope =  SOV
-	days = 35
-}
-}
-}
+		218 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_rostov
+				scope =  SOV
+				days = 35
+			}
+		}
+		245 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_rostov
+				scope =  SOV
+				days = 35
+			}
+		}
+	}
 }
 
 
@@ -218,34 +101,38 @@ country_event = {
 	desc =  Atomevents.1490.d
 	picture = GFX_report_event_stalin_propaganda
 
-    trigger = {
-        tag = SOV
+	trigger = {
+		tag = SOV
 		date > 1941.11.1
 		date < 1942.03.1
+		has_game_rule =  { 
+			rule = counterattack
+			option = true 
+		} 
 		GER = {
-		controls_state = 263
-		controls_state = 208
-			}
-    }
-
-	is_triggered_only = yes
-
+			controls_state = 263
+			controls_state = 208
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
 	option = { 
-	244 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_tikhvin
-	scope =  SOV
-	days = 35
-}
-}
-	264 = {	
-	add_dynamic_modifier = {
-	modifier = SOV_counterattack_tikhvin
-	scope =  SOV
-	days = 35
-}
-}
-}
+		244 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_tikhvin
+				scope =  SOV
+				days = 35
+			}
+		}
+		264 = {	
+			add_dynamic_modifier = {
+				modifier = SOV_counterattack_tikhvin
+				scope =  SOV
+				days = 35
+			}
+		}
+	}
 }
 
 
@@ -262,36 +149,6 @@ country_event = {
 	
 	option = { 
 		name =  Atomevents.1002.a
-                
-				GER = { puppet = D02 }		
-}
-}
-
-country_event = {
-	id = Atomevents.1003
-	title = Atomevents.1003.t
-	desc =  Atomevents.1003.d
-	picture = GFX_report_event_usa_election_roosevelt_macarthur
-
-    trigger = {
-		tag = SOV
-        JAP = {
-			controls_state = 435
-			controls_state = 672
-			controls_state = 335
-			controls_state = 334
-			controls_state = 336
-			controls_state = 327
-			
+			GER = { puppet = D02 }		
 		}
-    }
-	fire_only_once = yes
-
-	option = {
-		name = every_friday
-		SOV = {
-			add_ideas = SOV_synth_rubber
-			
-			}	
-	}	
 }
