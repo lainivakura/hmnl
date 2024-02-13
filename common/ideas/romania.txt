@@ -32,7 +32,7 @@ ideas = {
 			}
 		}	
 		ROM_revenge_against_soviet = {
-				ROM_revenge_against_soviet = {
+	
 
 			picture = anti_soviet_pact
 			

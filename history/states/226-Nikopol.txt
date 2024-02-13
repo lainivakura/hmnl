@@ -1,13 +1,9 @@
 
 state={
 	id=226
-	name="STATE_226" # Dnipropertovsk
-	manpower = 2391047
-	
-	state_category = town
-	
+	name="STATE_226"
 	resources={
-		oil=4 # was: 6
+		oil=4.000
 	}
 
 	history={
@@ -16,26 +12,30 @@ state={
 			11437 10 
 		}
 		victory_points = {
-			11561 1
+			11561 1 
 		}
 		victory_points = {
-			9419 1
+			9419 1 
 		}
 		victory_points = {
-			9479 1
+			9479 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
 			air_base = 2
+
 		}
 		add_core_of = SOV
+
 	}
 
 	provinces={
-		453 472 486 6423 9419 9433 9463 9479 11422 11437 11452 11561 13266 13285
+		453 472 486 6423 9419 9433 9463 9479 11422 11437 11452 11561 13266 13285 
 	}
-
-	local_supplies=0.0 
+	manpower=2391047
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

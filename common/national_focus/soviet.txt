@@ -3809,7 +3809,7 @@ focus_tree = {
 				category = marine_tech
 			}
 		}
-	}
+	}}
 
 
 
@@ -5751,7 +5751,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-date > 1941.10.1
+			date > 1941.10.1
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 		}
 		
