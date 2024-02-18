@@ -10,13 +10,9 @@ state={
 		owner = SOV
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
 		}
 		victory_points = {
-			6474 10 
-		}
-		victory_points = {
-			6420 1 
+			6474 10
 		}
 		victory_points = {
 			3479 1 
@@ -31,7 +27,7 @@ state={
 	}
 
 	provinces={
-		502 3421 3449 3466 3479 3491 6420 6474 6493 6776 13290 13293
+		502 3421 3449 3466 3479 3491 6420 6474 6493 6776 
 	}
 
 	local_supplies=10.0 
