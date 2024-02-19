@@ -1,11 +1,11 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 80 79 88 }
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
+	color = rgb { 175 15 15 }
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
@@ -182,7 +182,7 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = rgb { 220 220 220 }
+	color = rgb { 255 250 205 }
 	color_ui = rgb { 220 220 220 }
 }
 LIB = {
@@ -299,7 +299,7 @@ SLO = {
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
-	color = rgb { 240 133 30 }
+	color = rgb { 175 43 30 }
 	color_ui = rgb { 255 128 0 }
 }
 

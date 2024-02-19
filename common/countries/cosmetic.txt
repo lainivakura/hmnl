@@ -4,7 +4,7 @@ MAL_UK = {
 }
 
 RAJ_UK = {
-	color = rgb { 240 133 30 }
+	color = rgb { 175 43 30 }
 	color_ui = rgb { 255 128 0 }
 }
 
@@ -217,7 +217,7 @@ MAN_restored = {
 	color_ui = rgb { 224 139 5 }
 }
 JAP_showa_restoration = {
-	color = rgb { 230 230 230 }
+	color = rgb { 255 237 192 }
 	color_ui = rgb { 230 230 230 }
 }
 
