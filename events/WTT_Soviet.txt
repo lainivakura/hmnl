@@ -148,3 +148,33 @@ country_event = {
 		name = wtt_soviet_hold_city_o_success
 	}
 }
+
+#def tula failed
+country_event = {
+	id = wtt_soviet_hold_city.9
+	title = wtt_soviet_hold_city_tula_fail
+	desc = wtt_soviet_hold_city_d_fail
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+
+	immediate = { hidden_effect = { 223 = { CONTROLLER = { save_event_target_as = controller } } } }
+	
+	option = {
+		name = wtt_soviet_hold_city_o_fail
+	}
+}
+
+#def tula success
+country_event = {
+	id = wtt_soviet_hold_city.10
+	title = wtt_soviet_hold_city_tula_success
+	desc = wtt_soviet_hold_city_d_success
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_soviet_hold_city_o_success
+	}
+}
