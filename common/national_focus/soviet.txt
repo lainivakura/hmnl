@@ -5904,7 +5904,7 @@ focus_tree = {
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.25
-				uses = 1
+				uses = 3
 				category = land_doctrine
 			}
 			custom_effect_tooltip = SOV_lessons_of_war_ns_tt

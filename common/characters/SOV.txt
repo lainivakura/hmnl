@@ -198,7 +198,25 @@ characters = {
 			traits = {
 				mass_assault_expert
 			}
-		}		
+		}
+	advisor={
+				slot = army_chief
+				idea_token = georgy_zhukov
+				allowed = {
+					original_tag = SOV
+				}
+				available = {
+					NOT = { SOV = { owns_state = 219} }
+					
+				}
+				traits = {
+					army_chief_offensive_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 2.000
+				}
+			}		
 	}
 
 	SOV_konstantin_rokossovsky = {

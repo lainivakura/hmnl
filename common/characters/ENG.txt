@@ -733,7 +733,6 @@ characters={
 				}
 			}
 			traits = {
-				army_regrouping_2
 				army_armored_2
 			}
 			cost = 100

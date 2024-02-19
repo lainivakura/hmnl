@@ -253,7 +253,7 @@ leader_traits = {
 		political_power_factor = -0.1
 		stability_factor = 0.05
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.15
+		consumer_goods_expected_value = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -284,7 +284,7 @@ leader_traits = {
 	humble = {
 		random = no
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.15
+		consumer_goods_expected_value = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -5329,7 +5329,7 @@ leader_traits = {
 	financial_expert = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = -0.15
+		consumer_goods_expected_value = -0.05
 
 		ai_will_do = {
 			factor = 2
@@ -8265,7 +8265,8 @@ leader_traits = {
 	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
 		sprite = 5
 		special_forces_attack_factor = 0.05
-	    special_forces_cap_flat = 3
+		special_forces_defence_factor = 0.05
+		
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8281,8 +8282,8 @@ leader_traits = {
 
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.10
-	    special_forces_cap_flat = 6
+		special_forces_attack_factor = 0.15
+		special_forces_defence_factor = 0.15
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8298,8 +8299,8 @@ leader_traits = {
 
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.15
-	    special_forces_cap_flat = 10
+		special_forces_attack_factor = 0.2
+		special_forces_defence_factor = 0.2
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
