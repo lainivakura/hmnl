@@ -111,7 +111,7 @@ ideas = {
 
 		obligations = {
 			picture = generic_goods_red_bonus
-			modifier = {consumer_goods_factor = -0.05}
+			modifier = {consumer_goods_expected_value = -0.05}
 		}
 		
 		tank_corps = {
