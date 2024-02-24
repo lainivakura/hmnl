@@ -74,8 +74,8 @@ ideas = {
 		lack_of_ammunition = {
 			picture = generic_supply_lines
 			modifier = {
-				army_artillery_attack_factor = -0.2
-				army_strength_factor = -0.1
+				army_attack_factor = -0.03
+				army_strength_factor = -0.15
 			}
 		}
 
@@ -138,6 +138,7 @@ ideas = {
 			modifier = {
 			production_factory_efficiency_gain_factor = -0.1
 			industrial_capacity_factory = -0.05
+			production_factory_max_efficiency_factor = -0.2
 		}
 		}
 

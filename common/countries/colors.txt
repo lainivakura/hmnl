@@ -1,11 +1,11 @@
 #reload countrycolors
 
 GER = {
-	color = rgb { 80 79 88 }
+	color = rgb { 28 28 28}
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 175 15 15 }
+	color = rgb { 185 15 15 }
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
@@ -13,11 +13,11 @@ SOV = {
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
-	color = rgb { 0 0 0 }
+	color = rgb { 36 132 247 }
 	color_ui = rgb { 0 0 0 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
+	color = rgb { 57 113 165 }
 	color_ui = rgb { 74 147 255 }
 }
 LUX = {
@@ -182,7 +182,7 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = rgb { 255 250 205 }
+	color = rgb { 255 255 255 }   #255 250 205
 	color_ui = rgb { 220 220 220 }
 }
 LIB = {
@@ -254,7 +254,7 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 20 133 237 }
+	color = rgb { 20 47 150 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
