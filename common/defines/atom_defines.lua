@@ -13,6 +13,9 @@ NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0        -- XP cost fo
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0         -- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 
 
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.06 -- ванила -0.12
+
+
 --ОПЫТ
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5

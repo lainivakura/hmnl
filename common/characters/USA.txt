@@ -594,6 +594,7 @@ characters={
 			allowed = {
 				original_tag = USA
 			}
+			available = {date > 1942.11.7 }
 			traits = {
 				army_commando_2
 			}
@@ -684,8 +685,8 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist trait_reckless armor_officer }
-			skill=3
+			traits={ brilliant_strategist trait_reckless armor_officer panzer_leader }
+			skill=4
 			attack_skill=4
 			defense_skill=1
 			planning_skill=2

@@ -32,7 +32,7 @@ GER_porsche_organization = {
 			position = { x=0 y=0 }
 			
 
-			-available = { date > 1941.6.1 }
+			available = { date > 1941.6.1 }
 			
 			limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
 

@@ -255,5 +255,6 @@ ideas = {
 			picture = man_five_year_plan_industry
 			modifier = {production_speed_synthetic_refinery_factor = 1.75}
 		}
+	
 	}
 }

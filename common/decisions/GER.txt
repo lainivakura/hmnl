@@ -1073,6 +1073,7 @@ special_projects = {
 					}
 				}
 			}
+			date > 1942.1.1
 		}
 		visible = { has_tech = atomic_research }
 		cost = 0
@@ -1086,7 +1087,7 @@ special_projects = {
 				name = GER_heavy_water
 				category = nuclear
 				uses = 2
-				bonus = 2
+				bonus = 3
 			}
 		}
 		complete_effect = { set_global_flag = GER_heavy_water_production_underway }

@@ -71,8 +71,8 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 170
-		per_level_extra_cost = 130
+		base_cost = 200
+		per_level_extra_cost = 150
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 16
@@ -142,7 +142,7 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 2500
+		base_cost = 2000
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
@@ -185,7 +185,7 @@ buildings = {
 
 	radar_station = {
 		show_on_map = 1
-		base_cost = 3375
+		base_cost = 2500
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5
