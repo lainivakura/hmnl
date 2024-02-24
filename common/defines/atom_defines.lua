@@ -3,6 +3,8 @@
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 290
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 290
 
+NDefines.NMarket.IC_TO_CIC_FACTOR = 0.01
+NDefines.NMarket.PURCHASE_CONTRACT_DELIVERY_TOTAL_DAYS = 99
 
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.25
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.

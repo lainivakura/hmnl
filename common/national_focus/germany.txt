@@ -2655,6 +2655,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 20
 			add_doctrine_cost_reduction = {
@@ -2757,7 +2758,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GER_rocketry_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2765,6 +2766,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			mio:GER_porsche_organization = {
+					add_mio_size = 3
+				}
 			add_tech_bonus = {
 			name = GER_tank
 			bonus = 2.0

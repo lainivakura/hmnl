@@ -5708,6 +5708,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+
+			mio:USA_boeing_organization = {
+				add_mio_size = 4
+			}
 			air_experience = 25
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
