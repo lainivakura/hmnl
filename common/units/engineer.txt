@@ -36,7 +36,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment = 7
+		entrenchment =8
 		
 		battalion_mult = {
 			category = category_light_infantry
@@ -133,7 +133,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment = 5
+		entrenchment = 2
 		
 		battalion_mult = {
 			category = category_marines

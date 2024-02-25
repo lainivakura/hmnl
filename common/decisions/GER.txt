@@ -1080,7 +1080,7 @@ special_projects = {
 		ai_will_do = {
 			factor = 5
 		}
-		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
+		cancel_trigger = { 110 = {NOT = {is_controlled_by = ger}} } #can be removed via intelligence ops
 		days_remove = 365
 		remove_effect = {
 			add_tech_bonus = {

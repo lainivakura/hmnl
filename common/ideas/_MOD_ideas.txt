@@ -74,7 +74,7 @@ ideas = {
 		lack_of_ammunition = {
 			picture = generic_supply_lines
 			modifier = {
-				army_attack_factor = -0.03
+				army_attack_factor = -0.02
 				army_strength_factor = -0.15
 			}
 		}

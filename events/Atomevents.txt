@@ -179,4 +179,19 @@ country_event = {
 
 			}	
 	}
+}
+
+country_event = {
+	id = Atomevents.123
+	title = Atomevents.123.t
+	desc = Atomevents.123.d
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	trigger = { 
+		tag = ENG
+		has_global_flag = GER_heavy_water_production_underway 
+		}
+	option = {
+		name = Atomevents.123.ok
+	}
 }	

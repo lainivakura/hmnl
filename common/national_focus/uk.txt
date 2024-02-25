@@ -638,22 +638,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = uk_extra_tech_slot
-		text = extra_tech_slot
-		icon = GFX_focus_research
-		prerequisite = { focus = uk_industrial_focus }
-		x = 0
-		y = 1
-		relative_position_id = uk_industrial_focus
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 	
 	focus = {
 		id = general_rearmament_focus
@@ -764,8 +748,8 @@ focus_tree = {
 		} #at war with major or ger in rhineland or high threat
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = uk_industrial_focus
 		cost = 10
 		ai_will_do = {
@@ -882,7 +866,7 @@ focus_tree = {
 		prerequisite = { focus = maud_focus }
 		icon = GFX_goal_generic_secret_weapon
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = royal_ordinance_focus
 		cost = 10
 		ai_will_do = {
@@ -1140,10 +1124,16 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			army_experience = 10
+			army_experience = 25
 			navy_experience = 10
 			air_experience = 10
 			add_ideas = ENG_chiefs_of_staff_committee_idea
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -8120,33 +8110,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ENG_embargo_germany
-		available = {
-			GER = {
-				ENG_focus_available_embargo_sanction = yes
-			}
-		}
-		bypass = {
-			has_war_with = GER
-		}
-
-		available_if_capitulated = yes
-
-		prerequisite = { focus = ENG_military_training_act }
-		icon = GFX_goal_generic_trade
-		x = 0
-		y = 1
-		relative_position_id = ENG_military_training_act
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			send_embargo = GER
-			custom_effect_tooltip = embargo_relation_tt
-		}
-	}
+	
 
 	focus = {allow_branch = {always = no}
 		id = ENG_war_with_germany

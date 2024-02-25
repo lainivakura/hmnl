@@ -1,4 +1,4 @@
-﻿capital = 155
+﻿capital = 43
 add_ideas = razgon
 oob = "HUN_1936"
 if = {
