@@ -1123,15 +1123,10 @@ country_event = {
 
 	option = { #Excellent!
 		name = DOD_hungary.42.a
-if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			remove_ideas = HUN_treaty_of_triannon_aat
-		}
-		else = {
+
+		
 		remove_ideas = HUN_treaty_of_triannon
-}
+
 		news_event = { id = news.298 days = 1 }
 	}
 

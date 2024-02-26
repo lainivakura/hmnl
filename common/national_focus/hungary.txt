@@ -1341,23 +1341,14 @@ focus_tree = {
 		}
 
 		bypass = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				NOT = {
-					has_idea = HUN_treaty_of_triannon_aat
-					has_idea = HUN_treaty_of_triannon_2
-					has_idea = HUN_treaty_of_triannon_3
-				}
+			
+			
+			NOT = {
+				has_idea = HUN_treaty_of_triannon
+				has_idea = HUN_treaty_of_triannon_2
+				has_idea = HUN_treaty_of_triannon_3
 			}
-			else = {
-				NOT = {
-					has_idea = HUN_treaty_of_triannon
-					has_idea = HUN_treaty_of_triannon_2
-					has_idea = HUN_treaty_of_triannon_3
-				}
-			}
+			
 		}
 
 		cancel_if_invalid = yes
@@ -3693,57 +3684,31 @@ focus_tree = {
 		}
 
 		bypass = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
+			
+					
+			OR = {
+				AND = {
+					NOT = { has_idea = HUN_treaty_of_triannon }
+					NOT = { has_idea = HUN_treaty_of_triannon_2 }
 				}
-				OR = {
-					AND = {
-						NOT = { has_idea = HUN_treaty_of_triannon_aat }
-						NOT = { has_idea = HUN_treaty_of_triannon_2 }
-					}
-					has_idea = HUN_treaty_of_triannon_3
-					AND = {
-						ROM = {
-							OR = {
-								exists = no
-								is_puppet = yes
-							}
+				has_idea = HUN_treaty_of_triannon_3
+				AND = {
+					ROM = {
+						OR = {
+							exists = no
+							is_puppet = yes
 						}
-						FRA = {
-							OR = {
-								exists = no
-								is_puppet = yes
-								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
-							}
+					}
+					FRA = {
+						OR = {
+							exists = no
+							is_puppet = yes
+							NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
 						}
 					}
 				}
 			}
-			else = {		
-				OR = {
-					AND = {
-						NOT = { has_idea = HUN_treaty_of_triannon }
-						NOT = { has_idea = HUN_treaty_of_triannon_2 }
-					}
-					has_idea = HUN_treaty_of_triannon_3
-					AND = {
-						ROM = {
-							OR = {
-								exists = no
-								is_puppet = yes
-							}
-						}
-						FRA = {
-							OR = {
-								exists = no
-								is_puppet = yes
-								NOT = { has_completed_focus = FRA_strengthen_the_little_entente }
-							}
-						}
-					}
-				}
-			}
+			
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
