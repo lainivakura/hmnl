@@ -302,7 +302,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
+				add_to_variable = { SOV_fyp_consumer_goods_expected_value = 0.05 }
 			}
 			if = {
 				limit = {
@@ -365,7 +365,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 }
+				add_to_variable = { SOV_fyp_consumer_goods_expected_value = -0.02 }
 			}
 			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
 			if = {
@@ -943,7 +943,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 } #Bonus to CG
+				add_to_variable = { SOV_fyp_consumer_goods_expected_value = -0.02 } #Bonus to CG
 				add_to_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 } #Bonus to max efficicency
 				if = {
 					limit = {
@@ -6703,7 +6703,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
+			add_to_variable = { SOV_the_politburo_goods_expected_value = -0.02 }
 			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
@@ -10024,7 +10024,7 @@ date > 1949.12.1
 			set_variable = { SOV_planned_economy_party_popularity_stability_factor = 0.15 } #Victory Over Devastation
 			set_variable = { SOV_planned_economy_max_surrender_limit_offset = 0.1 } #Victory Over Devastation
 			set_variable = { SOV_planned_economy_industry_repair_factor = 0.1 } #Victory Over Devastation
-			set_variable = { SOV_planned_economy_consumer_goods_factor = -0.02 } #Victory Over Devastation
+			set_variable = { SOV_planned_economy_consumer_goods_expected_value = -0.02 } #Victory Over Devastation
 			custom_effect_tooltip = SOV_victory_over_devastation_tt
 
 			#Industrial Relocation duration halved

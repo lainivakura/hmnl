@@ -44,7 +44,7 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.1 #-0.1
 				production_factory_max_efficiency_factor = 0.05 #0.05
-				consumer_goods_factor = 0.1 #0.1
+				consumer_goods_expected_value = 0.1 #0.1
 				production_speed_industrial_complex_factor = 0.05 #0.05
 				industrial_concern_cost_factor = -0.15 #-0.15
 			}

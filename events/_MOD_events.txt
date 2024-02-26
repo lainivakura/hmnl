@@ -24,3 +24,4 @@ country_event = {
 		name = ENG_annex.1.NO
 	}
 }
+
