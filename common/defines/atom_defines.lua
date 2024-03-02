@@ -1,4 +1,5 @@
 --NGame
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 5.0
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 290
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 290
@@ -38,6 +39,7 @@ NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.2
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 --3 уменьшено для компенсации частоты влета касов
 
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.3
+
 -- NDefines.NAir.PORT_STRIKE_ENEMY_SUPERIORITY_LIMIT = 0.3			-- Min air superiority for performing of naval strike ( не работает ? )
 NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false -- стак разных модулей для бобров
 NDefines.NAir.BASE_STRATEGIC_BOMBING_HIT_PLANE_DAMAGE_FACTOR = 20 -- урон по самолетам на филдах
@@ -109,7 +111,11 @@ NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 10
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1
 NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 1
 NDefines.NNavy.BASE_POSITIONING = 0.75
-
+NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
+		70.0,	-- big guns
+		100.0,	-- torpedoes
+		45.0,	-- small guns
+	}
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.9	-- damage penalty at 0% positioning
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.9  -- screening efficiency (screen to capital ratio) at 0% positioning
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.9 -- AA penalty at 0% positioning

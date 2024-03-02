@@ -869,7 +869,8 @@ USA_greenland_patrol_idea = {
 			equipment_bonus = {
 				large_plane_airframe = {
 				build_cost_ic = -0.05 instant=yes
-					air_range = 0.1 instant = yes
+					air_range = 0.2 instant = yes
+					air_defence = 0.15 instant = yes
 				}	
 			}
 		}

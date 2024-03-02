@@ -188,7 +188,7 @@ technologies = {
 
 	smoke_generator = {
 
-		naval_retreat_speed = 0.2
+		naval_retreat_speed = 0.6
 
 		research_cost = 0.75
 

@@ -1073,7 +1073,7 @@ special_projects = {
 					}
 				}
 			}
-			date > 1941.1.1
+			date > 1945.1.1
 		}
 		visible = { has_tech = atomic_research }
 		cost = 0
