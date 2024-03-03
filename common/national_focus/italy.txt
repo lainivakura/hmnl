@@ -16614,49 +16614,10 @@ if = {
 		y = 2
 		relative_position_id = ITA_corpo_di_truppe_volontarie
 		cost = 5
-		# available = {
-		# 	if = {
-		# 		limit = {
-		# 			NOT = { has_dlc = "La Resistance" }
-		# 		}
-		# 		any_other_country = {
-		# 			original_tag = SPR
-		# 			has_government = fascism
-		# 			has_war = no
-		# 			owns_state = 177
-		# 		}
-		# 	}
-		# 	if = {
-		# 		limit = {
-		# 			has_dlc = "La Resistance"
-		# 		}
-		# 		SPA = {
-		# 			has_war = no
-		# 			owns_state = 177
-		# 		}
-		# 	}
-		# 	is_puppet = no
-		# }
-		# cancel = {
-		# 	if = {
-		# 		limit = {
-		# 			NOT = { has_dlc = "La Resistance" }
-		# 		}
-		# 		any_other_country = {
-		# 			original_tag = SPR
-		# 			has_government = fascism
-		# 			has_war_with = ROOT
-		# 			owns_state = 177
-		# 		}
-		# 	}
-		# 	if = {
-		# 		limit = {
-		# 			has_dlc = "La Resistance"
-		# 		}
-		# 		has_war_with = ROOT
-		# 		owns_state = 177
-		# 	}
-		# }
+
+		available = {
+			has_war_with = usa
+		}
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
