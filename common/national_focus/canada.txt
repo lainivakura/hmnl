@@ -3745,7 +3745,7 @@
 		id = CAN_defence_scheme_no_2
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_supply_the_red_army }
+		mutually_exclusive = { focus = CAN_supply_the_red_army focus = CAN_mend_relations_with_the_trotskyites }
 		x = -1
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits
@@ -3816,7 +3816,7 @@
 		id = CAN_supply_the_red_army
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = CAN_communist_labor_total_war_committee }
-		mutually_exclusive = { focus = CAN_defence_scheme_no_2 }
+		mutually_exclusive = { focus = CAN_defence_scheme_no_2 focus = CAN_mend_relations_with_the_trotskyites}
 		x = 1
 		y = 2
 		relative_position_id = CAN_burn_the_royal_portraits

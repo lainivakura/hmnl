@@ -2312,12 +2312,26 @@ focus_tree = {
 				uses = 2
 				category = battlefield_support_tree
 			}
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
-				category = cas_bomber			
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = medium_air
+					category = light_air			
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = tactical_bomber
+					category = cas_bomber			
+				}
 			}
 		}
 	}
@@ -2337,11 +2351,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_long_range_escorts
-				bonus = 1.0
-				uses = 2
-				category = cat_heavy_fighter
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = GER_long_range_escorts
+					bonus = 1.0
+					uses = 2
+					category = medium_air		
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = GER_long_range_escorts
+					bonus = 1.0
+					uses = 2
+					category = cat_heavy_fighter
+				}
 			}
 		}
 	}
@@ -2363,11 +2390,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_air
+				}
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1.5
+					uses = 1
+					technology = air_torpedoe_2
+					technology = air_torpedoe_3
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1.0
+					uses = 2
+					category = naval_bomber
+				}
 			}
 		}
 	}
@@ -2395,11 +2442,24 @@ focus_tree = {
 				uses = 2
 				category = battlefield_support_tree
 			}
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_strategic_bomber
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
 			}
 		}
 	}
@@ -2731,7 +2791,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_wunderwaffe
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = GER_rocketry_focus }
 		x = 0
 		y = 1
@@ -3001,7 +3061,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 1
@@ -3063,7 +3123,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -3085,6 +3145,70 @@ focus_tree = {
 			}
 			JAP = {
 				add_opinion_modifier = { target = GER modifier = supported_the_chinese }
+			}
+		}
+	}
+
+	focus = {
+		id = GER_swedish_trade_agreement
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = GER_rhineland }
+		available = {
+			is_subject = no
+			AND = {
+				country_exists = SWE
+				SWE = { is_subject = no }
+				NOT = { has_war_with = SWE }
+				SWE = {
+					custom_trigger_tooltip = {
+						tooltip = GER_alone_or_peace_faction_tt
+						is_alone_or_in_faction_at_peace_with_GER = yes
+					}
+				}
+			}
+		}
+		x = -2
+		y = 1
+		relative_position_id = GER_rhineland
+		cost = 10
+		ai_will_do = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SWE = {
+				country_event = { id = AAT_germany.1 hours = 5 random_hours = 5 }
+			}
+
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				SWE = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+
+					add_offsite_building = {
+						type = arms_factory
+						level = 1
+					}
+
+					add_timed_idea = {
+						idea = GER_german_swedish_trade_agreement
+						days = 480
+					}
+
+					give_resource_rights = {
+						receiver = ROOT 
+						state = 918 #Västerbotten 
+					}
+				}
+
+				add_opinion_modifier = {
+					target = SWE # target of the relation
+					modifier = GER_SWE_historic_trade_Partners
+				}
 			}
 		}
 	}
@@ -4571,33 +4695,16 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-
-			if = {
-				limit = {
-					NOT = { DEN = { is_in_faction_with = GER } }
-					country_exists = DEN					
-				} 
-				create_wargoal = {
-					type = take_state_focus
-					target = DEN
-					expire = 0
-					generator = { 37 }
-				}
+			declare_war_on = {
+				type = take_state_focus
+				target = DEN
 			}
-
-
-			if = {
-				limit = {
-					NOT = { NOR = { is_in_faction_with = GER } }
-					country_exists = NOR					
-				} 
-				create_wargoal = {
-					type = take_state_focus
-					target = NOR
-					expire = 0
-					generator = { 110 }
-				}
+			declare_war_on = {
+				type = take_state_focus
+				target = NOR
 			}
+			ENG = {add_to_faction = DEN}
+			ENG = {add_to_faction = NOR}
 			
 			add_tech_bonus = {
 				name = tp_bonus
@@ -6711,6 +6818,10 @@ focus_tree = {
 									limit = { owns_state = 44 }
 									transfer_state = 802
 								}
+if = {
+							limit = { owns_state = 44 }
+							transfer_state = 934
+						}
 							}
 						}
 						every_other_country = {
