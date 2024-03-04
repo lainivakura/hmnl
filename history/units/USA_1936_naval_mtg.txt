@@ -445,6 +445,36 @@ instant_effect = {
 		equipment = {
 			type = ship_hull_cruiser_2
 			creator = "USA"
+			version_name = "Brooklyn Class"
+		}
+		requested_factories = 1
+		progress = 0.99
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "USA"
+			version_name = "Brooklyn Class"
+		}
+		requested_factories = 1
+		progress = 0.99
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "USA"
+			version_name = "Brooklyn Class"
+		}
+		requested_factories = 1
+		progress = 0.99
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "USA"
 			version_name = "New Orleans Class"
 		}
 		requested_factories = 1

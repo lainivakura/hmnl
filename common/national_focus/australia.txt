@@ -658,7 +658,7 @@
 
 	focus = {
 		id = AST_expand_the_raaf
-		allow_branch = { always = no }
+		allow_branch = { always = yes }
 		icon = GFX_goal_generic_build_airforce
 		x = 7
 		y = 0
@@ -912,7 +912,7 @@
 			else = {
 				add_tech_bonus = {
 					name = AST_cac_woomera
-					bonus = 2
+					bonus = 1
 					uses = 2
 					category = tactical_bomber
 					category = naval_air
@@ -997,6 +997,7 @@
 				}
 			}
 		}
+		
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1161,7 +1162,7 @@
 			add_tech_bonus = {
 				name = AST_naval_bombers
 				bonus = 1.0
-				ahead_reduction = 2
+				
 				uses = 1
 				category = naval_bomber
 			}

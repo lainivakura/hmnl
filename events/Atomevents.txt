@@ -161,7 +161,6 @@ country_event = {
     trigger = {
 		tag = SOV
         JAP = {
-			controls_state = 435
 			controls_state = 672
 			controls_state = 335
 			controls_state = 334
