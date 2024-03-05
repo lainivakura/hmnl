@@ -16614,6 +16614,7 @@ if = {
 		y = 2
 		relative_position_id = ITA_corpo_di_truppe_volontarie
 		cost = 5
+		available = { date > 1941.9.1 }
 		# available = {
 		# 	if = {
 		# 		limit = {
