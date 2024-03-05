@@ -193,4 +193,26 @@ country_event = {
 	option = {
 		name = Atomevents.123.ok
 	}
+}
+
+country_event = {
+	id = Atomevents.1987
+	title = Atomevents.1987.t
+	desc =  Atomevents.1987.d
+	picture = GFX_report_event_usa_election_roosevelt_macarthur
+    trigger = {
+		tag = USA
+        OR = {  date > 1936.1.2
+				date > 1936.1.10
+				date > 1936.1.15}
+    }
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+
+	option = {
+		name = help_ussr
+			
+	}
 }	
