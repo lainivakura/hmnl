@@ -30,8 +30,8 @@ NDefines.NCountry.RESOURCE_IMPORTANCE_FACTOR = 0               -- State resource
 NDefines.NCountry.FRONT_PROVINCE_SCORE = 0   					-- Max province score of a front. Used for the hostile troop alert
 ---------------------------------------------------------------
 
-NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 0							-- WAS 2 | after that many years, we clear the naval combat results, so they don't get stuck forever in the memory.
-NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 1						-- WAS 24 | after this many months remove the history of lost convoys to not bloat savegames and memory since there is no way to see them anyway
+NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 2							-- WAS 2 | after that many years, we clear the naval combat results, so they don't get stuck forever in the memory.
+NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 12						-- WAS 24 | after this many months remove the history of lost convoys to not bloat savegames and memory since there is no way to see them anyway
 
 
 
