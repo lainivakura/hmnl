@@ -202,9 +202,10 @@ country_event = {
 	picture = GFX_report_event_usa_election_roosevelt_macarthur
     trigger = {
 		tag = USA
-        OR = {  date > 1936.1.2
-				date > 1936.1.10
-				date > 1936.1.15}
+        OR = {  date > 1942.3.1
+				date > 1941.9.20
+				date > 1942.4.20
+				date > 1942.11.7}
     }
 	mean_time_to_happen = {
 		days = 3
@@ -213,6 +214,5 @@ country_event = {
 
 	option = {
 		name = help_ussr
-			
 	}
 }	
