@@ -2204,7 +2204,7 @@ date > 1937.1.1
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 4 }
+			position = { x = -2 y = 4 }
 		}
 
 		categories = {
