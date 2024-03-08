@@ -1,0 +1,28 @@
+
+state = {
+	id = 497
+	name = "STATE_497"
+	# manpower = 575050 # was 2950100, then 1150100
+	
+	# state_category = pastoral # Was rural
+	
+	resources = {
+		rubber = 13 # was: 30, then 23
+	}
+
+	state_category = wasteland
+	manpower = 1
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VEN
+	}
+
+	provinces = {
+		2150 5220 12913 12933 12947
+	}
+
+	local_supplies = 0.0 
+}

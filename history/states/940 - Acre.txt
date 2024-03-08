@@ -1,0 +1,26 @@
+
+state = {
+	id = 940
+	name = "STATE_940"
+	# manpower = 463559
+	
+	# state_category = pastoral
+	
+	resources = {
+		aluminium = 6 # was: 4
+	}
+	state_category = wasteland
+	manpower = 1
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VEN
+	}
+	provinces = {
+		13278 13279 13280
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,18 @@
+state = {
+	id = 511
+	name = "STATE_511" # Mendoza
+	state_category = wasteland
+	manpower = 1
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VEN
+	}
+	provinces = {
+		2179 2215 8215 10964 10992  
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,28 @@
+
+state = {
+	id = 498
+	name = "STATE_498"
+	# manpower = 2582000 # A third removed for Ceara and Pernambuco each, was 7746000
+
+	# state_category = town # Was city
+
+	resources = {
+		tungsten = 3
+	}
+	state_category = wasteland
+	manpower = 1
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VEN
+	}
+
+	provinces = {
+		2175 10933 13273
+	}
+	
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,26 @@
+state = {
+	id = 950
+	name = "STATE_950"
+	# manpower = 1300000
+	
+	# state_category = town
+	
+	resources = {
+		steel = 24 # Steel + replacement of copper
+	}
+	state_category = wasteland
+	manpower = 1
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VEN
+	}
+
+	provinces = {
+		5121 5169 12920 12954 13297
+	}
+
+	local_supplies = 0.0 
+}

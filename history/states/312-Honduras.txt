@@ -1,0 +1,25 @@
+state=
+{
+	id=312
+	name="STATE_312"
+	
+	resources={
+		chromium=1 # was: 1
+	}
+	
+	# impassable = yes
+	state_category = wasteland
+	manpower = 1
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VEN
+	}
+	provinces={
+		2031 8017 12865
+	}
+
+	local_supplies=0.0 
+}

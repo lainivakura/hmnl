@@ -1,0 +1,27 @@
+
+state={
+	id=499
+	name="STATE_499"
+	# manpower = 4233900
+	
+	# state_category = large_town
+
+	resources = {
+		chromium = 3
+	}
+	state_category = wasteland
+	manpower = 1
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VEN
+	}
+
+	provinces={
+		4617 5194 8143 8177 8184 8197 8242 10392 10926 10946 5174 8129 5218 12422 10419 11002
+	}
+
+	local_supplies=0.0 
+}
