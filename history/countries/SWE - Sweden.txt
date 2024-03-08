@@ -39,6 +39,10 @@ if = {
 		SWE_severe_lack_of_ammunition
 		#SWE_standardized_equipment
 		SWE_gustaf_v_idea
+		free_trade_for_ai 
+		Horrors_WW1 
+		new_economic_policy
+		free_trade
 	}
 
 

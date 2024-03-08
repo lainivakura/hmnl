@@ -218,6 +218,7 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 	}
+JAP_create_john_farnsworth_operative = yes
 }
 
 
