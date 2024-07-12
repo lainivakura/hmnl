@@ -193,7 +193,7 @@ characters={
 				small="GFX_idea_alan_brooke"
 			}
 			army={
-				large=GFX_portrait_ENG_alan_brooke
+				large="gfx/leaders/ENG/Portrait_Britain_Alan_Brooke.dds"
 			}
 		}
 		advisor={
@@ -202,24 +202,16 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
 			traits = {
 				army_chief_maneuver_3
 			}
 			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
 		}
-		
+
 		field_marshal={
-			traits={ career_officer trait_cautious defensive_doctrine }
+			traits={ career_officer trait_cautious defensive_doctrine infantry_leader }
 			skill=5
-			attack_skill=3
+			attack_skill=4
 			defense_skill=5
 			planning_skill=5
 			logistics_skill=3
@@ -234,7 +226,7 @@ characters={
 				small="GFX_idea_bernard_montgomery"
 			}
 			army={
-				large=GFX_portrait_ENG_bernard_montgomery
+				large="gfx/leaders/ENG/Portrait_Britain_Bernard_Montgomery.dds"
 			}
 		}
 		advisor={
@@ -245,21 +237,15 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
-			
 			traits = {
 				grand_battle_plan_expert
 			}
 		}
-		
+
 		field_marshal={
-			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
-			skill=4
-			attack_skill=2
+			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine panzer_leader trait_engineer good_gen naval_invader}
+			skill=7
+			attack_skill=5
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=4
@@ -274,7 +260,7 @@ characters={
 				small="GFX_idea_claude_auchinleck"
 			}
 			army={
-				large=GFX_portrait_ENG_claude_auchinleck
+				large="gfx/leaders/ENG/Portrait_Britain_Claude_Auchinleck.dds"
 			}
 		}
 		advisor={
@@ -288,13 +274,10 @@ characters={
 				army_logistics_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 2.000
-			}
 		}
-		
+
 		corps_commander={
-			traits={ inflexible_strategist career_officer }
+			traits={ inflexible_strategist career_officer infantry_leader organizer }
 			skill=5
 			attack_skill=3
 			defense_skill=5
@@ -308,8 +291,8 @@ characters={
 		name=ENG_neil_ritchie
 		portraits={
 			army={
-				large=GFX_portrait_ENG_neil_ritchie
-				small=GFX_portrait_ENG_neil_ritchie_small
+				large="gfx/leaders/ENG/Portrait_Britain_Neil_Ritchie.dds"
+				small="gfx/interface/ideas/idea_ENG_neil_ritchie.dds"
 			}
 		}
 		corps_commander={
@@ -327,8 +310,8 @@ characters={
 		name=ENG_alan_cunningham
 		portraits={
 			army={
-				large=GFX_portrait_ENG_alan_cunningham
-				small=GFX_portrait_ENG_alan_cunningham_small
+				large="gfx/leaders/ENG/Portrait_Britain_Alan_Cunningham.dds"
+				small="gfx/interface/ideas/idea_ENG_alan_cunningham.dds"
 			}
 		}
 		corps_commander={
@@ -345,18 +328,18 @@ characters={
 		name=ENG_william_slim
 		portraits={
 			army={
-				large=GFX_portrait_ENG_william_slim
-				small=GFX_portrait_ENG_william_slim_small
+				large="gfx/leaders/ENG/Portrait_Britain_William_Slim.dds"
+				small="gfx/interface/ideas/idea_ENG_william_slim.dds"
 			}
 		}
 		corps_commander={
-			traits={ war_hero trickster }
+			traits={ war_hero trickster infantry_leader }
 			skill=5
 			attack_skill=3
-			defense_skill=3
+			defense_skill=6
 			planning_skill=5
 			logistics_skill=5
-			legacy_id=0
+			legacy_id=9991
 		}
 	}
 
@@ -364,8 +347,8 @@ characters={
 		name=ENG_richard_oconnor
 		portraits={
 			army={
-				large=GFX_portrait_ENG_richard_oconnor
-				small=GFX_portrait_ENG_richard_oconnor_small
+				large="gfx/leaders/ENG/Portrait_Britain_Richard_OConnor.dds"
+				small="gfx/interface/ideas/idea_ENG_richard_oconnor.dds"
 			}
 		}
 		corps_commander={
@@ -382,8 +365,8 @@ characters={
 		name=ENG_william_platt
 		portraits={
 			army={
-				large=GFX_portrait_ENG_william_platt
-				small=GFX_portrait_ENG_william_platt_small
+				large="gfx/leaders/ENG/Portrait_Britain_William_Platt.dds"
+				small="gfx/interface/ideas/idea_ENG_william_platt.dds"
 			}
 		}
 		corps_commander={
@@ -400,8 +383,8 @@ characters={
 		name=ENG_george_giffard
 		portraits={
 			army={
-				large=GFX_portrait_ENG_george_giffard
-				small=GFX_portrait_ENG_george_giffard_small
+				large="gfx/leaders/ENG/Portrait_Britain_George_Giffard.dds"
+				small="gfx/interface/ideas/idea_ENG_george_giffard.dds"
 			}
 		}
 		corps_commander={
@@ -422,7 +405,7 @@ characters={
 				small="GFX_idea_harold_alexander"
 			}
 			army={
-				large=GFX_portrait_ENG_harold_alexander
+				large="gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
 			}
 		}
 		advisor={
@@ -433,27 +416,14 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
 			traits = {
 				military_theorist
 			}
-			ai_will_do = {
-				factor = 2.000
-				modifier = {
-					has_idea_with_trait = industrial_concern
-					has_idea_with_trait = silent_workhorse
-					factor = 10.000
-				}
-			}
 		}
-		
+
 		corps_commander={
-			traits={ politically_connected }
-			skill=5
+			traits={ politically_connected panzer_leader infantry_leader desert_fox trickster good_gen}
+			skill=6
 			attack_skill=4
 			defense_skill=4
 			planning_skill=3
@@ -466,8 +436,8 @@ characters={
 		name=ENG_jackie_smyth
 		portraits={
 			army={
-				large=GFX_portrait_ENG_jackie_smyth
-				small=GFX_portrait_ENG_jackie_smyth_small
+				large="gfx/leaders/ENG/Portrait_Britain_John_Jackie_Smyth.dds"
+				small="gfx/interface/ideas/idea_ENG_john_jackie_smyth.dds"
 			}
 		}
 		corps_commander={
@@ -485,8 +455,8 @@ characters={
 		name=ENG_thomas_jacomb_hutton
 		portraits={
 			army={
-				large=GFX_portrait_ENG_thomas_jacomb_hutton
-				small=GFX_portrait_ENG_thomas_jacomb_hutton_small
+				large="gfx/leaders/ENG/Portrait_Britain_Thomas_Jacomb_Hutton.dds"
+				small="gfx/interface/ideas/idea_ENG_thomas_jacomb_hutton.dds"
 			}
 		}
 		corps_commander={
@@ -504,8 +474,8 @@ characters={
 		name=ENG_arthur_percival
 		portraits={
 			army={
-				large=GFX_portrait_ENG_arthur_percival
-				small=GFX_portrait_ENG_arthur_percival_small
+				large="gfx/leaders/ENG/Portrait_Britain_Arthur_Percival.dds"
+				small="gfx/interface/ideas/idea_ENG_arthur_percival.dds"
 			}
 		}
 		corps_commander={
@@ -523,8 +493,8 @@ characters={
 		name=ENG_merton_beckwithsmith
 		portraits={
 			army={
-				large=GFX_portrait_ENG_merton_beckwithsmith
-				small=GFX_portrait_ENG_merton_beckwithsmith_small
+				large="gfx/leaders/ENG/Portrait_Britain_Merton_Beckwith_Smith.dds"
+				small="gfx/interface/ideas/idea_ENG_merton_beckwith_smith.dds"
 			}
 		}
 		corps_commander={
@@ -542,8 +512,8 @@ characters={
 		name=ENG_henry_pownall
 		portraits={
 			army={
-				large=GFX_portrait_ENG_henry_pownall
-				small=GFX_portrait_ENG_henry_pownall_small
+				large="gfx/leaders/ENG/Portrait_Britain_Henry_Pownall.dds"
+				small="gfx/interface/ideas/idea_ENG_henry_pownall.dds"
 			}
 		}
 		corps_commander={
@@ -561,7 +531,7 @@ characters={
 		name=ENG_john_vereker
 		portraits={
 			army={
-				large=GFX_portrait_ENG_john_vereker
+				large="gfx/leaders/ENG/Portrait_Britain_John_Vereker.dds"
 				small="GFX_idea_john_vereker"
 			}
 		}
@@ -571,18 +541,10 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
 			traits = {
 				army_chief_offensive_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 2.000
-			}
 		}
 
 		corps_commander={
@@ -600,8 +562,8 @@ characters={
 		name=ENG_henry_wilson
 		portraits={
 			army={
-				large=GFX_portrait_ENG_henry_wilson
-				small=GFX_portrait_ENG_henry_wilson_small
+				large="gfx/leaders/ENG/Portrait_Britain_Henry_Maitland_Wilson.dds"
+				small="gfx/interface/ideas/idea_ENG_henry_maitland_wilson.dds"
 			}
 		}
 		corps_commander={
@@ -619,8 +581,8 @@ characters={
 		name=ENG_william_gott
 		portraits={
 			army={
-				large=GFX_portrait_ENG_william_gott
-				small=GFX_portrait_ENG_william_gott_small
+				large="gfx/leaders/ENG/Portrait_Britain_William_Gott.dds"
+				small="gfx/interface/ideas/idea_ENG_william_gott.dds"
 			}
 		}
 		corps_commander={
@@ -638,8 +600,8 @@ characters={
 		name=ENG_jock_campbell
 		portraits={
 			army={
-				large=GFX_portrait_ENG_jock_campbell
-				small=GFX_portrait_ENG_jock_campbell_small
+				large="gfx/leaders/ENG/Portrait_Britain_Jock_Campbell.dds"
+				small="gfx/interface/ideas/idea_ENG_jock_campbell.dds"
 			}
 		}
 		corps_commander={
@@ -657,12 +619,12 @@ characters={
 		name=ENG_oliver_leese
 		portraits={
 			army={
-				large=GFX_portrait_ENG_oliver_leese
-				small=GFX_portrait_ENG_oliver_leese_small
+				large="gfx/leaders/ENG/Portrait_Britain_Oliver_Leese.dds"
+				small="gfx/interface/ideas/idea_ENG_oliver_leese.dds"
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader armor_officer politically_connected panzer_leader}
+			traits={ harsh_leader armor_officer politically_connected }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -676,8 +638,8 @@ characters={
 		name=ENG_miles_dempsey
 		portraits={
 			army={
-				large=GFX_portrait_ENG_miles_dempsey
-				small=GFX_portrait_ENG_miles_dempsey_small
+				large="gfx/leaders/ENG/Portrait_Britain_Miles_Dempsey.dds"
+				small="gfx/interface/ideas/idea_ENG_miles_dempsey.dds"
 			}
 		}
 		corps_commander={
@@ -695,8 +657,8 @@ characters={
 		name=ENG_brian_horrocks
 		portraits={
 			army={
-				large=GFX_portrait_ENG_brian_horrocks
-				small=GFX_portrait_ENG_brian_horrocks_small
+				large="gfx/leaders/ENG/Portrait_Britain_Brian_Horrocks.dds"
+				small="gfx/interface/ideas/idea_ENG_brian_horrocks.dds"
 			}
 		}
 		corps_commander={
@@ -717,7 +679,7 @@ characters={
 				small="GFX_idea_archibald_wavell"
 			}
 			army={
-				large=GFX_portrait_ENG_archibald_wavell
+				large="gfx/leaders/ENG/Portrait_Britain_Archibald_Wavell.dds"
 			}
 		}
 		advisor={
@@ -727,20 +689,12 @@ characters={
 			allowed = {
 				original_tag = ENG
 			}
-			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
-			}
 			traits = {
 				army_armored_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
 		}
-		
+
 		corps_commander={
 			traits={ career_officer }
 			skill=4
@@ -756,17 +710,17 @@ characters={
 		name = ENG_thomas_moore
 		portraits={
 			army={
-				large=GFX_portrait_ENG_thomas_moore
-				small=GFX_portrait_ENG_thomas_moore_small
+				large="gfx/leaders/ENG/Portrait_Britain_Tom_Moore.dds"
+				small="gfx/interface/ideas/idea_ENG_tom_moore.dds"
 			}
 		}
 		corps_commander = {
-			traits = { jungle_rat }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			traits = { jungle_rat panzer_leader}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 3
 		}
 	}
 

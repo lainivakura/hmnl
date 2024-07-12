@@ -82,7 +82,7 @@ set_technology = {
 	interwar_antiair = 1
 	basic_train = 1
 }
-
+add_ideas = {minor}
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }

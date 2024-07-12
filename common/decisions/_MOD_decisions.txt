@@ -1,3 +1,4 @@
+
 attache_decisions = {
 	attache_chi_decision = {
 		icon = generic_operation
@@ -46,9 +47,7 @@ attache_decisions = {
 				add_command_power = -50
 				add_political_power = -100
 			}
-			# army_experience = 500
-			# air_experience = 500
-			# add_idea = attache_JAP
+			
 		}
 	}
 	attache_JAP_decision = {
@@ -366,40 +365,65 @@ z_annex_d = {
 
 
 
-	ENG_annex_FROM = {
-		icon = generic_operation
-		fire_only_once = no
+	ENG_annex_AST = {
 
+		icon = generic_operation
+	
 		allowed = {
 			original_tag = ENG
+	
 		}
-		
+	
 		available = {
-			date > 1939.09.01
-		}
-
+			AST = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}	
+		
+			
 		visible = {
-			always = yes
+			country_exists = AST
 		}
-
-		targets = { CAN SAF AST RAJ }
-
-		target_root_trigger = { original_tag = ENG }
-
-		target_trigger = {
-			FROM = {
-				OR = {
-					original_tag = CAN
-					original_tag = SAF
-					original_tag = AST
-					original_tag = RAJ
-				}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = AST transfer_troops = yes}
+			every_controlled_state = {
+				add_compliance = 100
 			}
 		}
-		complete_effect = {
-			FROM = {country_event = ENG_annex.1}
-		}
+	}
+	ENG_annex_RAJ = {
 
+		icon = generic_operation
+	
+		allowed = {
+			original_tag = ENG
+	
+		}
+	
+		available = {
+			AST = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}	
+		
+			
+		visible = {
+			country_exists = RAJ
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = RAJ transfer_troops = yes}
+			every_controlled_state = {
+				add_compliance = 100
+			}
+		}
 	}
 	ENG_annex_MAL = {
 
@@ -438,7 +462,7 @@ z_annex_d = {
 z_annex_d = {
 	ENG_free_FROM = {
 		icon = generic_operation
-		fire_only_once = YES
+		fire_only_once = yes
 
 		allowed = {
 			original_tag = ENG

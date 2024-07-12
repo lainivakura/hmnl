@@ -54,7 +54,7 @@ if = {
 		improved_light_tank_chassis = 1
 	}
 }
-
+add_ideas = {minor}
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"

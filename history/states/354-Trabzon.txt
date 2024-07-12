@@ -7,9 +7,8 @@ state={
 	state_category = town
 
 	history= {
-		owner = SWE
-		set_demilitarized_zone = yes
-		add_core_of = SWE
+		
+
 	}
 
 	provinces={

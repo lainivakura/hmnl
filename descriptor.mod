@@ -3,6 +3,8 @@ tags={
 	"Balance"
 	"Historical"
 }
-name="HMNL Chumba FIX"
-supported_version="1.13.7"
+replace_path="map/strategicregions"
+replace_path="history/states"
+name="Chumba FIX"
+supported_version="1.14.7"
 remote_file_id="2953139279"

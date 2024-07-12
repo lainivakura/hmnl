@@ -8,12 +8,13 @@ state={
 
 ##PUSTOI_SLOT
 	resources={
-				
-		rubber=31
+		
+	
+		rubber=54
 		steel=25
 		tungsten=95 
 		aluminium = 4 
-		oil = 48
+		oil = 83
 	}
 	resources={
 		steel=3 # was: 4

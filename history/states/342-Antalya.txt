@@ -7,7 +7,7 @@ state={
 	state_category = rural
 	impassable = yes
 	history={
-		owner = VEN
+	
 	}
 
 	provinces={

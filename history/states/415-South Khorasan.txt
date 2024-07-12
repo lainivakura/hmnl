@@ -9,8 +9,8 @@ state={
 ##PUSTOI_SLOT
 	
 	history={
-		owner = VEN
-		set_demilitarized_zone = yes
+		
+		
 	}
 	
 

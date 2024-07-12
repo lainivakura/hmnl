@@ -4,7 +4,7 @@ state={
 	name="STATE_350"
 	impassable = yes
 	history={
-		owner = VEN
+		
 	}
 
 	provinces={

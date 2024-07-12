@@ -10848,7 +10848,7 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 39 } #20 trains per factory
+			has_equipment = { train_equipment > 20 } #20 trains per factory
 			ROOT = { has_war_with = GER }
 		}
 
@@ -10869,13 +10869,13 @@ SOV_industry_relocation = {
 
 		cost = 20
 
-		days_remove = 30
+		days_remove = 21
 
 		complete_effect = {  #Attempt to remove 2 CIVS & 2 MILS
 			hidden_effect = {
 				add_equipment_to_stockpile = {
 					type = train_equipment
-					amount = -40
+					amount = -20
 					producer = SOV
 				}
 			}
@@ -11682,7 +11682,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 	}
-
+	
 	SOV_civilian_labor_in_defense = {
 		priority = 10
 
@@ -11904,7 +11904,33 @@ SOV_great_patriotic_war = {
 			}
 		}
 	}
+	SOV_tsar = {
+		icon = generic_army_support
+		available = {
+			surrender_progress > 0.2
+		}
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+			has_civil_war = no
+		}
 
+		days_remove = 30
+
+		cost = 50
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+
+        type = infantry_equipment_0
+
+        amount = 90000
+
+    } 
+		}
+	}
 	SOV_military_offensive_ongoing = {
 
 		icon = hol_draw_up_staff_plans

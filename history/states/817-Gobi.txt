@@ -6,14 +6,7 @@ state={
 	}
 	impassable = yes
 	history={
-		owner = VEN
-		# buildings = {
-		# 	infrastructure = 1
-		# }
-		# victory_points = {
-		# 	12612 1 #Sainshand
-		# }
-		add_core_of = VEN
+		
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

@@ -18,7 +18,7 @@ if = {
 		}
 	}
 }
-
+add_ideas = {minor}
 set_stability = 0.6
 set_war_support = 0.1
 # Starting tech

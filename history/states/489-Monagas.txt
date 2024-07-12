@@ -6,13 +6,10 @@ state={
 	
 	state_category = town
 	
-	resources={
-		oil=35 # was: 126
-	}
+	
 	impassable = yes
 	history={
-		owner = VEN
-		add_core_of = VEN
+		
 	}
 
 	provinces={

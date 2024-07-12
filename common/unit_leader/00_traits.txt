@@ -874,7 +874,28 @@ leader_traits = {
 		logistics_skill_factor = 1
 	}
 
-	
+	ss_officer = { 
+		type = land
+		trait_type = personality_trait
+		
+		allowed = {
+			FROM = {
+				original_tag = GER
+			}
+		}
+
+		attack_skill = 1
+		defense_skill = 1
+		non_shared_modifier = {
+			army_morale_factor = 0.15
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+			
+		attack_skill_factor = 1
+	}
 ##################################
 # Field Marshal traits.
 ##################################

@@ -1,0 +1,55 @@
+
+state = {
+	id = 148
+	name = "STATE_148" #LAPPI
+	manpower = 500000
+	
+	state_category = rural
+	
+	resources={
+		steel=7 # was: 8
+		chromium=2 # was: 2
+	}
+	history={
+		owner = FIN
+
+		victory_points = { #Kemi
+			11164 2
+		}
+
+		victory_points = { #Rovaniemi
+			6087 1
+		}
+
+		victory_points = { #Tornio
+			11125 1
+		}
+
+		victory_points = { #Inari
+			6142 1
+		}
+		victory_points = { #Oulu
+			158 2
+		}
+
+		victory_points = { #Suomussalmi
+			3073 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = FIN
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_core_of = SMI
+		}
+	}
+
+	provinces={
+		30 103 124 162 167 203 2992 3055 3069 3097 3107 3158 3193 6061 6076 6087 6128 6137 6142 9112 9189 9223 11030 11115 11125 11130 11164 11167 11204 7 82 120 132 158 195 3026 3073 3115 3149 3153 3156 6045 6081 6134 6179 6212 9233 11024 11041 11079 11081 11121 11132 
+	}
+
+	local_supplies = 3.0 
+}

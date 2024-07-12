@@ -215,4 +215,4 @@ country_event = {
 	option = {
 		name = help_ussr
 	}
-}	
+}

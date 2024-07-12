@@ -845,7 +845,8 @@ technologies = {
 		category_special_forces = {
 			max_organisation = 5
 			defense = 0.05
-			attack = 0.05
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 
 		special_forces_training_time_factor = 0.1
@@ -1749,7 +1750,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1914
 		folder = {
 			name = infantry_folder
@@ -1797,7 +1798,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -1840,7 +1841,7 @@ technologies = {
 			armored_car_equipment_2
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1942
 		folder = {
 			name = infantry_folder

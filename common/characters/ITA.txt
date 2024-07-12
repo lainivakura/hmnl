@@ -178,12 +178,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { trait_cautious politically_connected offensive_doctrine desert_fox infantry_leader cavalry_leader organizer}
+			traits = { trait_cautious politically_connected offensive_doctrine desert_fox infantry_leader organizer}
 			skill = 5
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 3
 			planning_skill = 3
-			logistics_skill = 4
+			logistics_skill = 3
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}

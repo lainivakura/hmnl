@@ -3940,7 +3940,7 @@ leader_traits = {
 
 	SWE_close_ties_to_the_military = {
 		sprite = 10
-		random = NO
+		random = no
 		max_command_power = 30
 		training_time_factor = -0.1
 
@@ -4229,7 +4229,6 @@ leader_traits = {
 	trusty = {
 		trade_opinion_factor = 0.2
 		opinion_gain_monthly = 0.25
-		operation_coup_government_outcome = 0.25
 		operation_infiltrate_outcome = 0.25
 		operation_boost_resistance_outcome = 0.35
 		operation_targeted_sabotage_industry_outcome = 0.35
@@ -5324,7 +5323,37 @@ leader_traits = {
 			}
 		}
 	}
-
+	c_d_how = {
+		sprite = 10
+		random = yes
+	
+		production_speed_arms_factory_factor = 0.15
+		production_speed_dockyard_factor = 0.1
+		production_speed_fuel_silo_factor = 0.1
+		industrial_capacity_factory = 0.1
+		equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.5
+				}
+			}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ilsli = {
+		sprite = 10
+		random = yes
+		production_speed_industrial_complex_factor = 0.5
+		consumer_goods_expected_value = -0.05
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	financial_expert = {
 		sprite = 10
 		random = yes
@@ -7161,7 +7190,7 @@ leader_traits = {
 	}
 
 	telephone_company = {
-		random= No
+		random= no
 		land_reinforce_rate = 0.02
 		coordination_bonus = 0.04
 		ai_will_do = {
@@ -8964,8 +8993,7 @@ leader_traits = {
 		}
 	}
 
-	# Guesstimation of what % increased efficiency might look like
-	air_naval_strike_1 = { # Naval Strike mission efficiency increased by 4%
+	air_naval_strike_1 = {
 		sprite = 2
 		naval_strike_attack_factor = 0.02
 		naval_strike_targetting_factor = 0.02
@@ -8983,7 +9011,7 @@ leader_traits = {
 		}
 	}
 
-	air_naval_strike_2 = { # Naval Strike mission efficiency increased by 8%
+	air_naval_strike_2 = {
 		sprite = 2
 		naval_strike_attack_factor = 0.03
 		naval_strike_targetting_factor = 0.03
@@ -9001,7 +9029,7 @@ leader_traits = {
 		}
 	}
 
-	air_naval_strike_3 = { # Naval Strike mission efficiency increased by 12%
+	air_naval_strike_3 = {
 		sprite = 2
 		naval_strike_attack_factor = 0.05
 		naval_strike_targetting_factor = 0.05
@@ -9020,11 +9048,9 @@ leader_traits = {
 	}
 
 
-	air_bomber_interception_1 = { # Bomber Interception mission efficiency increased by 4%
+	air_bomber_interception_1 = {
 		sprite = 1
-		air_interception_attack_factor = 0.02
-		air_interception_defence_factor = 0.02
-		air_interception_agility_factor = 0.02
+		air_intercept_efficiency = 0.05
 		#experience_gain_air = @experience_gain_low
 
 		command_cap = @tier1
@@ -9038,11 +9064,9 @@ leader_traits = {
 		}
 	}
 
-	air_bomber_interception_2 = { # Bomber Interception mission efficiency increased by 8%
+	air_bomber_interception_2 = {
 		sprite = 1
-		air_interception_attack_factor = 0.03
-		air_interception_defence_factor = 0.03
-		air_interception_agility_factor = 0.03
+		air_intercept_efficiency = 0.10
 		#experience_gain_air = @experience_gain_medium
 
 		command_cap = @tier2
@@ -9056,11 +9080,9 @@ leader_traits = {
 		}
 	}
 
-	air_bomber_interception_3 = { # Bomber Interception mission efficiency increased by 12%
+	air_bomber_interception_3 = {
 		sprite = 1
-		air_interception_attack_factor = 0.05
-		air_interception_defence_factor = 0.05
-		air_interception_agility_factor = 0.05
+		air_intercept_efficiency = 0.15
 		#experience_gain_air = @experience_gain_high
 
 		command_cap = @tier3
@@ -9075,11 +9097,9 @@ leader_traits = {
 	}
 
 
-	air_air_superiority_1 = { # Air Superiority mission efficiency increased by 4%
+	air_air_superiority_1 = {
 		sprite = 1
-		air_air_superiority_attack_factor = 0.02
-		air_air_superiority_defence_factor = 0.02
-		air_air_superiority_agility_factor = 0.02
+		air_superiority_efficiency = 0.05
 		#experience_gain_air = @experience_gain_low
 
 		command_cap = @tier1
@@ -9093,11 +9113,9 @@ leader_traits = {
 		}
 	}
 
-	air_air_superiority_2 = { # Air Superiority mission efficiency increased by 8%
+	air_air_superiority_2 = {
 		sprite = 1
-		air_air_superiority_attack_factor = 0.03
-		air_air_superiority_defence_factor = 0.03
-		air_air_superiority_agility_factor = 0.03
+		air_superiority_efficiency = 0.1
 		#experience_gain_air = @experience_gain_medium
 
 		command_cap = @tier2
@@ -9111,11 +9129,9 @@ leader_traits = {
 		}
 	}
 
-	air_air_superiority_3 = { # Air Superiority mission efficiency increased by 12%
+	air_air_superiority_3 = {
 		sprite = 1
-		air_air_superiority_attack_factor = 0.05
-		air_air_superiority_defence_factor = 0.05
-		air_air_superiority_agility_factor = 0.05
+		air_superiority_efficiency = 0.15
 		#experience_gain_air = @experience_gain_high
 
 		command_cap = @tier3
@@ -9130,11 +9146,10 @@ leader_traits = {
 	}
 
 
-	air_close_air_support_1 = { # Close Air Support mission efficiency increased by 4%
+	air_close_air_support_1 = {
 		sprite = 1
-		air_close_air_support_attack_factor = 0.02
-		air_close_air_support_defence_factor = 0.02
-		air_close_air_support_agility_factor = 0.02
+		air_cas_efficiency = 0.05
+		ground_attack_factor = 0.03
 		#experience_gain_air = @experience_gain_low
 
 		command_cap = @tier1
@@ -9148,11 +9163,10 @@ leader_traits = {
 		}
 	}
 
-	air_close_air_support_2 = { # Close Air Support mission efficiency increased by 8%
+	air_close_air_support_2 = {
 		sprite = 1
-		air_close_air_support_attack_factor = 0.03
-		air_close_air_support_defence_factor = 0.03
-		air_close_air_support_agility_factor = 0.03
+		air_cas_efficiency = 0.1
+		ground_attack_factor = 0.05
 		#experience_gain_air = @experience_gain_medium
 
 		command_cap = @tier2
@@ -9166,11 +9180,10 @@ leader_traits = {
 		}
 	}
 
-	air_close_air_support_3 = { # Close Air Support mission efficiency increased by 12%
+	air_close_air_support_3 = {
 		sprite = 1
-		air_close_air_support_attack_factor = 0.05
-		air_close_air_support_defence_factor = 0.05
-		air_close_air_support_agility_factor = 0.05
+		air_cas_efficiency = 0.15
+		ground_attack_factor = 0.08
 		#experience_gain_air = @experience_gain_high
 
 		command_cap = @tier3
@@ -9185,11 +9198,9 @@ leader_traits = {
 	}
 
 
-	air_strategic_bombing_1 = { # Strategic Bombing mission efficiency increased by 4%
+	air_strategic_bombing_1 = {
 		sprite = 2
-		air_strategic_bomber_attack_factor = 0.01
 		air_strategic_bomber_defence_factor = 0.01
-		air_strategic_bomber_agility_factor = 0.01
 		air_strategic_bomber_bombing_factor = 0.03
 		#experience_gain_air = @experience_gain_low
 
@@ -9204,12 +9215,10 @@ leader_traits = {
 		}
 	}
 
-	air_strategic_bombing_2 = { # Strategic Bombing mission efficiency increased by 8%
+	air_strategic_bombing_2 = {
 		sprite = 2
-		air_strategic_bomber_attack_factor = 0.02
 		air_strategic_bomber_defence_factor = 0.02
-		air_strategic_bomber_agility_factor = 0.02
-		air_strategic_bomber_bombing_factor = 0.5
+		air_strategic_bomber_bombing_factor = 0.05
 		#experience_gain_air = @experience_gain_medium
 
 		command_cap = @tier2
@@ -9223,11 +9232,9 @@ leader_traits = {
 		}
 	}
 
-	air_strategic_bombing_3 = { # Strategic Bombing mission efficiency increased by 12%
+	air_strategic_bombing_3 = {
 		sprite = 2
-		air_strategic_bomber_attack_factor = 0.03
 		air_strategic_bomber_defence_factor = 0.03
-		air_strategic_bomber_agility_factor = 0.03
 		air_strategic_bomber_bombing_factor = 0.09
 		#experience_gain_air = @experience_gain_high
 
@@ -9242,8 +9249,7 @@ leader_traits = {
 		}
 	}
 
-	# Removed?
-	air_tactical_bombing_1 = { # Tactical Bombing mission efficiency increased
+	air_tactical_bombing_1 = {
 		sprite = 2
 		air_cas_present_factor = 0.1
 		#experience_gain_air = @experience_gain_low
@@ -9259,7 +9265,7 @@ leader_traits = {
 		}
 	}
 
-	air_tactical_bombing_2 = { # Tactical Bombing mission efficiency increased
+	air_tactical_bombing_2 = {
 		sprite = 2
 		air_cas_present_factor = 0.15
 		#experience_gain_air = @experience_gain_medium
@@ -9275,7 +9281,7 @@ leader_traits = {
 		}
 	}
 
-	air_tactical_bombing_3 = { # Tactical Bombing mission efficiency increased
+	air_tactical_bombing_3 = {
 		sprite = 2
 		air_cas_present_factor = 0.2
 		#experience_gain_air = @experience_gain_high
@@ -9292,11 +9298,10 @@ leader_traits = {
 	}
 
 
-	air_airborne_1 = { # Paratrooper drop efficiency increased by 4%
+	air_airborne_1 = {
 		sprite = 1
-		air_paradrop_attack_factor = 0.01
-		air_paradrop_defence_factor = 0.03
-		air_paradrop_agility_factor = 0.03
+		paradrop_organization_factor = 1.2
+		paratrooper_aa_defense = 0.1
 		#experience_gain_air = @experience_gain_low
 
 		command_cap = @tier1
@@ -9310,11 +9315,10 @@ leader_traits = {
 		}
 	}
 
-	air_airborne_2 = { # Paratrooper drop efficiency increased by 8%
+	air_airborne_2 = {
 		sprite = 1
-		air_paradrop_attack_factor = 0.02
-		air_paradrop_defence_factor = 0.05
-		air_paradrop_agility_factor = 0.05
+		paradrop_organization_factor = 1.5
+		paratrooper_aa_defense = 0.15
 		#experience_gain_air = @experience_gain_medium
 
 		command_cap = @tier2
@@ -9328,11 +9332,10 @@ leader_traits = {
 		}
 	}
 
-	air_airborne_3 = { # Paratrooper drop efficiency increased by 12%
+	air_airborne_3 = {
 		sprite = 1
-		air_paradrop_attack_factor = 0.03
-		air_paradrop_defence_factor = 0.07
-		air_paradrop_agility_factor = 0.07
+		paradrop_organization_factor = 1.8
+		paratrooper_aa_defense = 0.25
 		#experience_gain_air = @experience_gain_high
 
 		command_cap = @tier3
@@ -9391,6 +9394,7 @@ leader_traits = {
 			}
 		}
 	}
+
 
 
 	navy_chief_naval_aviation_1 = {

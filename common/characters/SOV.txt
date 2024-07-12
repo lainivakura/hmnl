@@ -168,14 +168,13 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { media_personality armor_officer panzer_leader war_hero winter_specialist organizer}
-			skill = 5
-			attack_skill = 6
-			defense_skill = 2
-			planning_skill = 4
+			traits = { media_personality armor_officer war_hero winter_specialist organizer panzer_leader brilliant_strategist infantry_leader good_gen }
+			skill = 7
+			attack_skill = 7
+			defense_skill = 6
+			planning_skill = 6
 			logistics_skill = 5
 			legacy_id = 410
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
 		advisor = {
@@ -225,19 +224,18 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_konstantin_rokossovsky"
-				large = GFX_portrait_SOV_konstantin_rokossovsky
+				large = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
 			}
 		}
 
 		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer panzer_leader }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 4
+			traits = { brilliant_strategist trait_cautious armor_officer panzer_leader career_officer_3 organizer good_gen ranger}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
 			planning_skill = 3
 			logistics_skill = 4
 			legacy_id = 402
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
 		advisor = {
@@ -246,33 +244,15 @@ characters = {
 			ledger = army
 			allowed = {
 				original_tag = SOV
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403.000
-						}
-					}
-				}
-			}
-			available = {
-				has_completed_focus = SOV_positive_heroism
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
 			}
 			traits = {
 				army_armored_3
 			}
-				cost = 200
-			ai_will_do = {
-				factor = 1.000
+			available = {
+				has_completed_focus = SOV_positive_heroism
 			}
-		}		
+			cost = 200
+		}
 	}
 
 	SOV_aleksandr_vasilevsky = {
@@ -284,14 +264,13 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { armor_officer panzer_leader politically_connected }
-			skill = 4
-			attack_skill = 4
+			traits = { armor_officer politically_connected panzer_leader }
+			skill = 5
+			attack_skill = 5
 			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
 			legacy_id = 407
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
 		advisor = {
@@ -301,31 +280,11 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 407.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
 			traits = {
 				army_regrouping_2
 			}
-				cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}	
+			cost = 100
+		}
 	}
 
 	SOV_boris_shaposhnikov = {
@@ -333,7 +292,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_boris_shaposhnikov"
-				large = GFX_portrait_SOV_boris_shaposhnikov
+				large = "gfx/leaders/SOV/Portrait_Soviet_Boris_Shaposhnikov.dds"
 			}
 		}
 		advisor = {
@@ -350,14 +309,13 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { career_officer trait_cautious }
-			skill = 3
-			attack_skill = 2
+			traits = { career_officer trait_cautious organizer infantry_leader }
+			skill = 6
+			attack_skill = 3
 			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
+			planning_skill = 8
+			logistics_skill = 5
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -365,19 +323,18 @@ characters = {
 		name = SOV_nikolay_vatutin
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_nikolay_vatutin
-				small=GFX_portrait_SOV_nikolay_vatutin_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
+				small="gfx/interface/ideas/idea_SOV_nikolai_fyodorovich_vatutin.dds"
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless panzer_leader trait_engineer}
-			skill = 4
-			attack_skill = 5
-			defense_skill = 3
-			planning_skill = 4
+			traits = { trait_reckless infantry_officer infantry_leader trait_engineer }
+			skill = 5
+			attack_skill = 6
+			defense_skill = 2
+			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -396,42 +353,20 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = SOV_konev_civil_war
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 408.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
 			traits = {
 				army_concealment_2
 			}
-				cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			cost = 100
 		}
 
 		corps_commander = {
-			traits = { harsh_leader panzer_leader armor_officer politically_connected }
+			traits = { harsh_leader armor_officer politically_connected panzer_leader }
 			skill = 5
 			attack_skill = 4
 			defense_skill = 5
 			planning_skill = 2
-			logistics_skill = 5
+			logistics_skill = 4
 			legacy_id = 408
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -449,41 +384,20 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 404.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
 			traits = {
 				army_chief_reform_2
 			}
-				cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+			cost = 100
 		}
 
 		corps_commander = {
-			traits = { career_officer cavalry_officer politically_connected }
-			skill = 3
+			traits = { career_officer cavalry_officer politically_connected infantry_leader organizer }
+			skill = 5
 			attack_skill = 3
-			defense_skill = 2
+			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 3
+			logistics_skill = 5
 			legacy_id = 404
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -493,7 +407,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_kliment_voroshilov"
-				large = GFX_portrait_SOV_kliment_voroshilov
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds"
 			}
 		}
 		advisor = {
@@ -502,30 +416,10 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 405.000
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
 			traits = {
 				army_chief_drill_1
 			}
-				cost = 50
-			ai_will_do = {
-				factor = 1.000
-			}
+			cost = 50
 		}
 
 		field_marshal = {
@@ -536,7 +430,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 405
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -545,58 +438,23 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_mikhail_tukhachevsky"
-				large = GFX_portrait_SOV_mikhail_tukhachevsky
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = mikhail_tukhachevsky
-			ledger = army
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			traits = {
-				mass_assault_expert
+				large = "gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds"
 			}
 		}
 
 		field_marshal = {
-			traits = { brilliant_strategist career_officer trait_reckless infantry_officer infantry_leader offensive_doctrine }
+			visible = {
+				NOT = {
+					has_completed_focus = SOV_the_military_conspiracy
+				}
+			}
+			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine panzer_leader }
 			skill = 4
 			attack_skill = 3
 			defense_skill = 4
 			planning_skill = 4
 			logistics_skill = 2
 			legacy_id = 401
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
-	}
-SOV_Andrey_Potolot = {
-		name = SOV_Andrey_Potolot
-		portraits = {
-			army = {
-				large = "gfx/leaders/SOV/POTOL.dds"
-				small="gfx/interface/ideas/idea_SOV_potolot.dds"
-			}
-		}
-		field_marshal = {
-			traits = { skilled_staffer infantry_leader fortress_buster expert_improviser war_hero media_personality old_guard }
-			skill = 6
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 490
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }	
 		}
 	}
 
@@ -605,18 +463,17 @@ SOV_Andrey_Potolot = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_semyon_budyonny"
-				small=GFX_portrait_SOV_semyon_budyonny_small
+				small="gfx/interface/ideas/idea_SOV_semyon_budyonny.dds"
 			}
 		}
 		field_marshal = {
 			traits = { old_guard inflexible_strategist politically_connected cavalry_leader}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -629,14 +486,13 @@ SOV_Andrey_Potolot = {
 			}
 		}
 		corps_commander = {
-			traits = { armor_officer panzer_leader }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { armor_officer panzer_leader swamp_fox organizer}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
 			legacy_id = 413
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -656,7 +512,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -669,13 +524,13 @@ SOV_Andrey_Potolot = {
 			}
 		}
 		corps_commander = {
+			traits = { infantry_leader }
 			skill = 3
-			attack_skill = 3
-			defense_skill = 2
+			attack_skill = 4
+			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -683,8 +538,8 @@ SOV_Andrey_Potolot = {
 		name = SOV_grigory_kulik
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_grigory_kulik
-				small=GFX_portrait_SOV_grigory_kulik_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Grigory_Kulik.dds"
+				small="gfx/interface/ideas/idea_SOV_grigory_kulik.dds"
 			}
 		}
 		corps_commander = {
@@ -695,7 +550,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -703,20 +557,20 @@ SOV_Andrey_Potolot = {
 		name = SOV_kirill_meretskov
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_kirill_meretskov
-				small=GFX_portrait_SOV_kirill_meretskov_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kirill_Meretskov.dds"
+				small="gfx/interface/ideas/idea_SOV_kirill_meretskov.dds"
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer infantry_leader }
+			traits = { trait_reckless infantry_officer }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
+		
 	}
 
 	SOV_filipp_golikov = {
@@ -735,7 +589,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 3
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -744,7 +597,7 @@ SOV_Andrey_Potolot = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_andrey_yeryomenko"
-				small= GFX_portrait_SOV_andrey_yeryomenko_small
+				small= "gfx/interface/ideas/idea_SOV_andrey_yeryomenko.dds"
 			}
 		}
 		corps_commander = {
@@ -755,7 +608,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 412
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -763,8 +615,8 @@ SOV_Andrey_Potolot = {
 		name = SOV_georgy_zakharov
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_georgy_zakharov
-				small=GFX_portrait_SOV_georgy_zakharov_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Georgiy_Zakharov.dds"
+				small="gfx/interface/ideas/idea_SOV_georgiy_zakharov.dds"
 			}
 		}
 		corps_commander = {
@@ -775,7 +627,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -795,7 +646,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -804,7 +654,7 @@ SOV_Andrey_Potolot = {
 		portraits = {
 			army = {
 				large = "GFX_portrait_SOV_maks_reyter"
-				small=GFX_portrait_SOV_maks_reyter_small
+				small="gfx/interface/ideas/idea_SOV_maks_reyter.dds"
 			}
 		}
 		corps_commander = {
@@ -815,7 +665,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -823,8 +672,8 @@ SOV_Andrey_Potolot = {
 		name = SOV_nikandr_chibisov
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_nikandr_chibisov
-				small=GFX_portrait_SOV_nikandr_chibisov_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
+				small="gfx/interface/ideas/idea_SOV_nikandr_yevlampyevich_chibisov.dds"
 			}
 		}
 		corps_commander = {
@@ -835,7 +684,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -849,13 +697,12 @@ SOV_Andrey_Potolot = {
 		}
 		corps_commander = {
 			traits = { infantry_officer infantry_leader commando }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -863,12 +710,12 @@ SOV_Andrey_Potolot = {
 		name = SOV_andrey_vlasov
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_andrey_vlasov
-				small=GFX_portrait_SOV_andrey_vlasov_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
+				small="gfx/interface/ideas/idea_SOV_andrey_vlasov.dds"
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer infantry_leader winter_specialist }
+			traits = { infantry_officer winter_specialist }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -876,19 +723,8 @@ SOV_Andrey_Potolot = {
 			logistics_skill = 3
 			legacy_id = 0
 			visible = {
-				if = {
-					limit = {
-						SOV = { has_country_flag = vlasov_owner_flag }
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-				if = {
-					limit = {
-						GER = { has_country_flag = vlasov_owner_flag }
-					}
-					NOT = {
-						has_character_flag = vlasov_imprisoned_flag
-					}
+				NOT = {
+					has_character_flag = vlasov_imprisoned_flag
 				}
 			}
 		}
@@ -898,19 +734,18 @@ SOV_Andrey_Potolot = {
 		name = SOV_ivan_fedyuninsky
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_ivan_fedyuninsky
-				small=GFX_portrait_SOV_ivan_fedyuninsky_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Ivan_Fedyuninsky.dds"
+				small="gfx/interface/ideas/idea_SOV_ivan_fedyuninsky.dds"
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer infantry_leader }
+			traits = { infantry_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -918,39 +753,38 @@ SOV_Andrey_Potolot = {
 		name = SOV_maksim_purkayev
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_maksim_purkayev
-				small=GFX_portrait_SOV_maksim_purkayev_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Maksim_Purkayev.dds"
+				small="gfx/interface/ideas/idea_SOV_maksim_purkayev.dds"
 			}
 		}
 		corps_commander = {
-			traits = { career_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
+			traits = { career_officer infantry_leader}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
+		
 	}
 
 	SOV_kuzma_galitsky = {
 		name = SOV_kuzma_galitsky
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_kuzma_galitsky
-				small=GFX_portrait_SOV_kuzma_galitsky_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kuzma_Galitsky.dds"
+				small="gfx/interface/ideas/idea_SOV_kuzma_galitsky.dds"
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer infantry_leader }
+			traits = { infantry_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -958,19 +792,18 @@ SOV_Andrey_Potolot = {
 		name = SOV_markian_popov
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_markian_popov
-				small=GFX_portrait_SOV_markian_popov_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Matkian_Popov.dds"
+				small="gfx/interface/ideas/idea_SOV_matkian_popov.dds"
 			}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist infantry_officer infantry_leader winter_specialist }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
+			traits = { brilliant_strategist infantry_officer winter_specialist infantry_leader organizer}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -978,19 +811,33 @@ SOV_Andrey_Potolot = {
 		name = SOV_nikolay_berzarin
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_nikolay_berzarin
-				small=GFX_portrait_SOV_nikolay_berzarin_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Nikolay_Berzarin.dds"
+				small="gfx/interface/ideas/idea_SOV_nikolai_berzarin.dds"
 			}
 		}
 		corps_commander = {
 			traits = { infantry_officer infantry_leader }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nikolay_berzarin
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_military_reorganization
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 50
 		}
 	}
 
@@ -998,8 +845,8 @@ SOV_Andrey_Potolot = {
 		name = SOV_aleksandr_gorbatov
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_aleksandr_gorbatov
-				small=GFX_portrait_SOV_aleksandr_gorbatov_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Gorbatov.dds"
+				small="gfx/interface/ideas/idea_SOV_alexander_gorbatov.dds"
 			}
 		}
 		corps_commander = {
@@ -1010,7 +857,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -1018,8 +864,8 @@ SOV_Andrey_Potolot = {
 		name = SOV_kirill_moskalenko
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_kirill_moskalenko
-				small=GFX_portrait_SOV_kirill_moskalenko_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kirill_Moskalenko.dds"
+				small="gfx/interface/ideas/idea_SOV_kirill_moskalenko.dds"
 			}
 		}
 		corps_commander = {
@@ -1029,27 +875,26 @@ SOV_Andrey_Potolot = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
+		
 	}
 
 	SOV_dmitry_lelyushenko = {
 		name = SOV_dmitry_lelyushenko
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_dmitry_lelyushenko
-				small=GFX_portrait_SOV_dmitry_lelyushenko_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+				small="gfx/interface/ideas/idea_SOV_dmitri_danilovich_lelyushenko.dds"
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless armor_officer panzer_leader }
+			traits = { trait_reckless armor_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -1069,7 +914,6 @@ SOV_Andrey_Potolot = {
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -1077,19 +921,18 @@ SOV_Andrey_Potolot = {
 		name = SOV_rodion_malinovsky
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_rodion_malinovsky
-				small=GFX_portrait_SOV_rodion_malinovsky_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Rodion_Malinovsky.dds"
+				small="gfx/interface/ideas/idea_SOV_rodion_malinovsky.dds"
 			}
 		}
 		corps_commander = {
-			traits = { old_guard career_officer trait_cautious politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = {trickster infantry_leader old_guard career_officer trait_cautious politically_connected }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 4
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -1097,19 +940,18 @@ SOV_Andrey_Potolot = {
 		name = SOV_vasily_chuykov
 		portraits = {
 			army = {
-				large = GFX_portrait_SOV_vasily_chuykov
-				small=GFX_portrait_SOV_vasily_chuykov_small
+				large = "gfx/leaders/SOV/Portrait_Soviet_Vasily_Chuykov.dds"
+				small="gfx/interface/ideas/idea_SOV_vasily_chuikov.dds"
 			}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { brilliant_strategist career_officer urban_assault_specialist infantry_leader trickster}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 

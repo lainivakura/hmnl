@@ -7,9 +7,7 @@ state={
 	state_category = rural
 
 	history= {
-		owner = SWE
-		set_demilitarized_zone = yes
-		add_core_of = SWE
+		
 	}
 
 	provinces={

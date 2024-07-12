@@ -11,7 +11,7 @@ state={
 
 	impassable = yes
 	history={
-		owner = VEN
+		
 	}
 
 	provinces={

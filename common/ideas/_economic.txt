@@ -204,6 +204,14 @@ ideas = {
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				
 				}
+				if = {
+					limit = {
+						original_tag = CAN
+						
+					}
+					NOT = { has_idea = CAN_great_depression_2 }
+				
+				}
 			}
 		
 			cost = 150
@@ -325,6 +333,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
+				production_cost_arms_factory_factor = -0.1
 			}
 			
 			cancel_if_invalid = no

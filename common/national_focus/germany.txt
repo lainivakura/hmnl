@@ -3259,28 +3259,28 @@ focus_tree = {
 
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
-						days = 150
+						days = 120
 					}
 
 
 				ROM = {	
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
-						days = 150
+						days = 120
 					}
 				}
 
 				HUN = {	
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
-						days = 150
+						days = 120
 					}
 				}
 
 				ITA = {	
 				add_timed_idea = {
 						idea = GER_voina_s_sovkom
-						days = 150
+						days = 120
 					}
 				}
 

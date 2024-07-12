@@ -5,8 +5,7 @@ state={
 	manpower = 1
 	impassable = yes
 	history={
-		owner = VEN
-		add_core_of = VEN
+		
 	}
 
 	provinces={

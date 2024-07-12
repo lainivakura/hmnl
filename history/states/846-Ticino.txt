@@ -9,13 +9,7 @@ state={
 	# }
 	impassable = yes
 	history={
-		owner = VEN
-		# victory_points = { 9600 1 }
-		# buildings = {
-		# 	infrastructure = 2 
-		# 	industrial_complex = 1
-		# }
-		add_core_of = VEN
+	
 	}
 	provinces={
 		9600 3641 

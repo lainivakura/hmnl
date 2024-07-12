@@ -84,7 +84,7 @@ characters={
 		name=GER_gerd_von_rundstedt
 		portraits={
 			army={
-				large=GFX_portrait_GER_gerd_von_rundstedt
+				large="gfx/leaders/GER/Portrait_Germany_Gerd_von_Rundstedt.dds"
 				small="GFX_idea_gerd_von_rundstedt"
 			}
 		}
@@ -99,18 +99,15 @@ characters={
 				army_regrouping_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.500
-			}
 		}
-		
+
 		field_marshal={
-			traits={ old_guard urban_assault_specialist defensive_doctrine }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
+			traits={ old_guard urban_assault_specialist defensive_doctrine panzer_leader organizer}
+			skill=6
+			attack_skill=5
+			defense_skill=7
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=1
 		}
 	}
@@ -119,17 +116,17 @@ characters={
 		name=GER_gunther_von_kluge
 		portraits={
 			army={
-				large=GFX_portrait_GER_gunther_von_kluge
-				small=GFX_portrait_GER_gunther_von_kluge_small
+				large="gfx/leaders/GER/Portrait_Germany_Gunther_von_Kluge.dds"
+				small="gfx/interface/ideas/idea_GER_gunther_von_kluge.dds"
 			}
 		}
 		field_marshal={
-			traits={ armor_officer offensive_doctrine panzer_leader }
-			skill=3
+			traits={ armor_officer offensive_doctrine panzer_leader organizer }
+			skill=6
 			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			defense_skill=5
+			planning_skill=8
+			logistics_skill=4
 			legacy_id=2
 		}
 	}
@@ -138,17 +135,17 @@ characters={
 		name=GER_friedrich_paulus
 		portraits={
 			army={
-				large=GFX_portrait_GER_friedrich_paulus
-				small=GFX_portrait_GER_friedrich_paulus_small
+				large="gfx/leaders/GER/Portrait_Germany_Friedrich_Paulus.dds"
+				small="gfx/interface/ideas/idea_GER_friedrich_paulus.dds"
 			}
 		}
 		corps_commander={
 			traits={ trait_cautious armor_officer panzer_leader }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			skill=6
+			attack_skill=3
+			defense_skill=3
+			planning_skill=8
+			logistics_skill=5
 			legacy_id=3
 		}
 	}
@@ -157,7 +154,7 @@ characters={
 		name=GER_erwin_rommel
 		portraits={
 			army={
-				large=GFX_portrait_GER_erwin_rommel
+				large="gfx/leaders/GER/Portrait_Germany_Erwin_Rommel.dds"
 				small="GFX_idea_erwin_rommel"
 			}
 		}
@@ -175,18 +172,15 @@ characters={
 				army_armored_3
 			}
 			cost = 200
-			ai_will_do = {
-				factor = 8.000
-			}
 		}
-		
-		corps_commander={
-			traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster trait_engineer}
-			skill=5
-			attack_skill=6
+
+		corps_commander = {
+			traits={ trait_reckless media_personality armor_officer war_hero trickster panzer_leader organizer desert_fox }
+			skill=6
+			attack_skill=4
 			defense_skill=4
-			planning_skill=3
-			logistics_skill=5
+			planning_skill=6
+			logistics_skill=6
 			legacy_id=4
 		}
 	}
@@ -195,12 +189,12 @@ characters={
 		name=GER_erich_von_manstein
 		portraits={
 			army={
-				large=GFX_portrait_GER_erich_von_manstein
+				large="gfx/leaders/GER/Portrait_Germany_Erich_von_Manstein.dds"
 				small="GFX_idea_manstein"
 			}
 		}
 		advisor={
-			cost = 150
+			cost = 100
 			slot = theorist
 			idea_token = manstein
 			ledger = army
@@ -208,16 +202,16 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				mobile_warfare_expert
+				military_theorist
 			}
 		}
-		
+
 		corps_commander={
-			traits={ brilliant_strategist armor_officer panzer_leader trickster trait_engineer organizer}
-			skill=4
-			attack_skill=6
-			defense_skill=3
-			planning_skill=5
+			traits={ brilliant_strategist armor_officer trickster trait_engineer panzer_leader infantry_leader good_gen}
+			skill=7
+			attack_skill=7
+			defense_skill=6
+			planning_skill=7
 			logistics_skill=5
 			legacy_id=5
 		}
@@ -227,12 +221,12 @@ characters={
 		name=GER_heinz_guderian
 		portraits={
 			army={
-				large=GFX_portrait_GER_heinz_guderian
+				large="gfx/leaders/GER/Portrait_Germany_Heinz_Guderian.dds"
 				small="GFX_idea_heinz_guderian"
 			}
 		}
 		advisor={
-			cost = 200
+			cost = 100
 			slot = theorist
 			idea_token = heinz_guderian
 			ledger = army
@@ -243,13 +237,13 @@ characters={
 				blitzkrieg_theorist
 			}
 		}
-		
+
 		corps_commander={
-			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader }
-			skill=4
-			attack_skill=2
+			traits={ brilliant_strategist career_officer armor_officer trickster panzer_leader good_gen}
+			skill=5
+			attack_skill=7
 			defense_skill=4
-			planning_skill=4
+			planning_skill=5
 			logistics_skill=3
 			legacy_id=6
 		}
@@ -259,8 +253,8 @@ characters={
 		name=GER_wilhelm_list
 		portraits={
 			army={
-				large=GFX_portrait_GER_wilhelm_list
-				small=GFX_portrait_GER_wilhelm_list_small
+				large="gfx/leaders/GER/Portrait_Germany_Wilhelm_List.dds"
+				small="gfx/interface/ideas/idea_GER_wilhelm_list.dds"
 			}
 		}
 		corps_commander={
@@ -278,17 +272,17 @@ characters={
 		name=GER_ewald_von_kleist
 		portraits={
 			army={
-				large=GFX_portrait_GER_ewald_von_kleist
-				small=GFX_portrait_GER_ewald_von_kleist_small
+				large="gfx/leaders/GER/Portrait_Germany_Ewald_von_Kleist.dds"
+				small="gfx/interface/ideas/idea_GER_ewald_von_kleist.dds"
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer panzer_leader }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
+			traits={ trait_cautious armor_officer panzer_leader cavalry_officer good_gen}
+			skill=6
+			attack_skill=7
+			defense_skill=5
+			planning_skill=8
+			logistics_skill=5
 			legacy_id=8
 		}
 	}
@@ -297,17 +291,17 @@ characters={
 		name=GER_fedor_von_bock
 		portraits={
 			army={
-				large=GFX_portrait_GER_fedor_von_bock
-				small=GFX_portrait_GER_fedor_von_bock_small
+				large="gfx/leaders/GER/Portrait_Germany_Fedor_von_Bock.dds"
+				small="gfx/interface/ideas/idea_GER_fedor_von_bock.dds"
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious harsh_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
+			traits={ trait_cautious harsh_leader panzer_leader infantry_leader organizer}
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=9
+			logistics_skill=4
 			legacy_id=9
 		}
 	}
@@ -316,17 +310,17 @@ characters={
 		name=GER_walter_model
 		portraits={
 			army={
-				large=GFX_portrait_GER_walter_model
-				small=GFX_portrait_GER_walter_model_small
+				large="gfx/leaders/GER/Portrait_Germany_Walter_Model.dds"
+				small="gfx/interface/ideas/idea_GER_walter_model.dds"
 			}
 		}
 		field_marshal={
-			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
+			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine infantry_leader organizer }
+			skill=6
+			attack_skill=4
+			defense_skill=9
+			planning_skill=3
+			logistics_skill=4
 			legacy_id=10
 		}
 	}
@@ -335,8 +329,8 @@ characters={
 		name=GER_maximilian_von_weichs
 		portraits={
 			army={
-				large=GFX_portrait_GER_maximilian_von_weichs
-				small=GFX_portrait_GER_maximilian_von_weichs_small
+				large="gfx/leaders/GER/Portrait_Germany_Maximilian_von_Weichs.dds"
+				small="gfx/interface/ideas/idea_GER_maximilian_von_weichs.dds"
 			}
 		}
 		corps_commander={
@@ -354,12 +348,12 @@ characters={
 		name=GER_wilhelm_ritter_von_leeb
 		portraits={
 			army={
-				large=GFX_portrait_GER_wilhelm_ritter_von_leeb
-				small=GFX_portrait_GER_wilhelm_ritter_von_leeb_small
+				large="gfx/leaders/GER/Portrait_Germany_Wilhelm_Ritter_von_Leeb.dds"
+				small="gfx/interface/ideas/idea_GER_wilhelm_ritter_von_leeb.dds"
 			}
 		}
 		corps_commander={
-			traits={ old_guard infantry_officer infantry_leader }
+			traits={ old_guard infantry_officer }
 			skill=3
 			attack_skill=4
 			defense_skill=3
@@ -373,17 +367,17 @@ characters={
 		name=GER_georghans_reinhardt
 		portraits={
 			army={
-				large=GFX_portrait_GER_georghans_reinhardt
-				small=GFX_portrait_GER_georghans_reinhardt_small
+				large="gfx/leaders/GER/Portrait_Germany_Georg_von_Reinhardt.dds"
+				small="gfx/interface/ideas/idea_GER_georg_von_reinhardt.dds"
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer panzer_leader }
-			skill=3
-			attack_skill=1
-			defense_skill=2
+			traits={ trait_cautious armor_officer infantry_leader }
+			skill=5
+			attack_skill=3
+			defense_skill=7
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=4
 			legacy_id=14
 		}
 	}
@@ -392,17 +386,17 @@ characters={
 		name=GER_walter_kruger
 		portraits={
 			army={
-				large=GFX_portrait_GER_walter_kruger
-				small=GFX_portrait_GER_walter_kruger_small
+				large="gfx/leaders/GER/Portrait_Germany_Walter_Kruger.dds"
+				small="gfx/interface/ideas/idea_GER_walter_kruger.dds"
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless armor_officer panzer_leader politically_connected }
-			skill=3
-			attack_skill=3
+			traits={ss_officer trait_reckless panzer_leader politically_connected organizer cavalry_leader trickster ranger good_gen}
+			skill=6
+			attack_skill=7
 			defense_skill=3
-			planning_skill=1
-			logistics_skill=3
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=15
 		}
 	}
@@ -411,7 +405,7 @@ characters={
 		name=GER_kurt_student
 		portraits={
 			army={
-				large=GFX_portrait_GER_kurt_student
+				large="gfx/leaders/GER/Portrait_Germany_Kurt_Student.dds"
 				small="GFX_idea_kurt_student"
 			}
 		}
@@ -426,18 +420,15 @@ characters={
 				air_airborne_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
 		}
-		
+
 		corps_commander={
-			traits={ trait_reckless commando }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
+			traits={ trait_reckless commando infantry_leader trait_engineer}
+			skill=5
+			attack_skill=6
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=4
 			legacy_id=16
 		}
 	}
@@ -446,17 +437,17 @@ characters={
 		name=GER_erwin_von_witzleben
 		portraits={
 			army={
-				large=GFX_portrait_GER_erwin_von_witzleben
-				small=GFX_portrait_GER_erwin_von_witzleben_small
+				large="gfx/leaders/GER/Portrait_Germany_Erwin_von_Witzleben.dds"
+				small="gfx/interface/ideas/idea_GER_erwin_von_witzleben.dds"
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer infantry_leader }
-			skill=4
+			traits={ career_officer infantry_officer infantry_leader organizer }
+			skill=5
 			attack_skill=4
 			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
+			planning_skill=4
+			logistics_skill=3
 			legacy_id=17
 		}
 	}
@@ -465,17 +456,17 @@ characters={
 		name=GER_hermann_hoth
 		portraits={
 			army={
-				large=GFX_portrait_GER_hermann_hoth
-				small=GFX_portrait_GER_hermann_hoth_small
+				large="gfx/leaders/GER/Portrait_Germany_Herman_Hoth.dds"
+				small="gfx/interface/ideas/idea_GER_herman_hoth.dds"
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless armor_officer panzer_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
+			traits={ trait_reckless armor_officer panzer_leader organizer}
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=18
 		}
 	}
@@ -484,12 +475,12 @@ characters={
 		name=GER_johannes_blaskowitz
 		portraits={
 			army={
-				large=GFX_portrait_GER_johannes_blaskowitz
-				small=GFX_portrait_GER_johannes_blaskowitz_small
+				large="gfx/leaders/GER/Portrait_Germany_Johannes_Blaskowitz.dds"
+				small="gfx/interface/ideas/idea_GER_johannes_blaskowitz.dds"
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer infantry_leader }
+			traits={ infantry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -503,12 +494,12 @@ characters={
 		name=GER_paul_hausser
 		portraits={
 			army={
-				large=GFX_portrait_GER_paul_hausser
-				small=GFX_portrait_GER_paul_hausser_small
+				large="gfx/leaders/GER/Portrait_Germany_Paul_Hausser.dds"
+				small="gfx/interface/ideas/idea_GER_paul_hausser.dds"
 			}
 		}
 		corps_commander={
-			traits={ armor_officer panzer_leader politically_connected }
+			traits={ss_officer armor_officer politically_connected }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -522,12 +513,12 @@ characters={
 		name=GER_friedrich_schulz
 		portraits={
 			army={
-				large=GFX_portrait_GER_friedrich_schulz
-				small=GFX_portrait_GER_friedrich_schulz_small
+				large="gfx/leaders/GER/Portrait_Germany_Friedrich_Schulz.dds"
+				small="gfx/interface/ideas/idea_GER_friedrich_schulz.dds"
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer infantry_leader }
+			traits={ infantry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -541,8 +532,8 @@ characters={
 		name=GER_georg_von_kuchler
 		portraits={
 			army={
-				large=GFX_portrait_GER_georg_von_kuchler
-				small=GFX_portrait_GER_georg_von_kuchler_small
+				large="gfx/leaders/GER/Portrait_Germany_Georg_von_Kuchler.dds"
+				small="gfx/interface/ideas/idea_GER_georg_von_kuchler.dds"
 			}
 		}
 		corps_commander={
@@ -559,17 +550,17 @@ characters={
 		name=GER_alfred_jodl
 		portraits={
 			army={
-				large=GFX_portrait_GER_alfred_jodl
-				small=GFX_portrait_GER_alfred_jodl_small
+				large="gfx/leaders/GER/Portrait_Germany_Alfred_Jodl.dds"
+				small="gfx/interface/ideas/idea_GER_alfred_jodl.dds"
 			}
 		}
 		corps_commander={
-			traits={ career_officer politically_connected }
-			skill=3
+			traits={ career_officer politically_connected organizer }
+			skill=4
 			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
+			defense_skill=3
+			planning_skill=8
+			logistics_skill=5
 			legacy_id=23
 		}
 	}
@@ -578,12 +569,12 @@ characters={
 		name=GER_sepp_dietrich
 		portraits={
 			army={
-				large=GFX_portrait_GER_sepp_dietrich
-				small=GFX_portrait_GER_sepp_dietrich_small
+				large="gfx/leaders/GER/Portrait_Germany_Josef_Dietrich.dds"
+				small="gfx/interface/ideas/idea_GER_josef_dietrich.dds"
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist trait_reckless armor_officer panzer_leader politically_connected }
+			traits={ss_officer brilliant_strategist trait_reckless armor_officer politically_connected }
 			skill=4
 			attack_skill=2
 			defense_skill=3
@@ -597,12 +588,12 @@ characters={
 		name=GER_hasso_von_manteuffel
 		portraits={
 			army={
-				large=GFX_portrait_GER_hasso_von_manteuffel
-				small=GFX_portrait_GER_hasso_von_manteuffel_small
+				large="gfx/leaders/GER/Portrait_Germany_Hasso_von_Manteuffel.dds"
+				small="gfx/interface/ideas/idea_GER_hasso_von_manteuffel.dds"
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious armor_officer panzer_leader }
+			traits={ss_officer career_officer trait_cautious armor_officer }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -619,7 +610,7 @@ characters={
 				small="GFX_idea_albert_kesselring"
 			}
 			army={
-				large=GFX_portrait_GER_albert_kesselring
+				large="gfx/leaders/GER/Portrait_Germany_Albert_Kesselring.dds"
 			}
 		}
 		advisor={
@@ -632,11 +623,8 @@ characters={
 				air_chief_reform_2
 			}
 			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
 		}
-		
+
 		corps_commander={
 			traits={ brilliant_strategist trait_cautious war_hero }
 			skill=4
@@ -652,17 +640,17 @@ characters={
 		name=GER_gotthard_heinrici
 		portraits={
 			army={
-				large=GFX_portrait_GER_gotthard_heinrici
-				small=GFX_portrait_GER_gotthard_heinrici_small
+				large="gfx/leaders/GER/Portrait_Germany_Gotthard_Heinrici.dds"
+				small="gfx/interface/ideas/idea_GER_gotthard_heinrici.dds"
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious infantry_officer infantry_leader trait_engineer }
-			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
+			traits={ trait_cautious infantry_officer trait_engineer infantry_leader}
+			skill=6
+			attack_skill=6
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=33
 		}
 	}
@@ -671,8 +659,8 @@ characters={
 		name=GER_ernsteberhard_hell
 		portraits={
 			army={
-				large=GFX_portrait_GER_ernsteberhard_hell
-				small=GFX_portrait_GER_ernsteberhard_hell_small
+				large="gfx/leaders/GER/Portrait_Germany_Ernst-Eberhard_Hell.dds"
+				small="gfx/interface/ideas/idea_GER_ernst-eberhard_hell.dds"
 			}
 		}
 		corps_commander={
@@ -691,7 +679,7 @@ characters={
 		portraits={
 			army={
 				large="GFX_portrait_ger_felix_steiner"
-				small=GFX_portrait_GER_felix_steiner_small
+				small="gfx/interface/ideas/idea_GER_felix_steiner.dds"
 			}
 		}
 		corps_commander={

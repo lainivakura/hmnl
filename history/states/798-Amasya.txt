@@ -9,7 +9,7 @@ state={
 	state_category = rural
 	impassable = yes
 	history={
-		owner = VEN
+		
 	}
 
 	local_supplies=0.0 

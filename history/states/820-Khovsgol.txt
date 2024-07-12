@@ -6,17 +6,7 @@ state={
 	}
 	impassable = yes
 	history={
-		owner = VEN
-		# buildings = {
-		# 	infrastructure = 1
-		# }
-		# victory_points = {
-		# 	1791 1 #Darkhan
-		# }
-		# victory_points = {
-		# 	1834 1 #Erdenet
-		# }
-		add_core_of = VEN
+		
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
