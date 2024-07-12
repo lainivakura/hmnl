@@ -1119,7 +1119,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	

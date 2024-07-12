@@ -2444,7 +2444,7 @@
 		}
 
 		available = {
-			threat > 0.15
+			threat > 0.1
 		}
 		
 		bypass = {
@@ -2635,7 +2635,7 @@
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 25
