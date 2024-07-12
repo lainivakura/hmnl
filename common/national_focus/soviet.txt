@@ -1782,7 +1782,12 @@ focus_tree = {
 		completion_reward = {
 			set_variable = { SOV_soviet_airforce_aircraft_manufacturer_cost_factor = -0.25 }
 			custom_effect_tooltip = SOV_expand_the_aircraft_industry_ns_tt
-
+			add_tech_bonus = {
+				name = SOV_increase_aircraft_production
+				bonus = 3.0
+				uses = 1
+				category = light_air
+			}
 			221 = {
 				
 				add_extra_state_shared_building_slots = 6
@@ -1927,7 +1932,7 @@ focus_tree = {
 				add_ideas = SOV_increased_aircraft_production_ns_bonus
 				add_to_variable = { SOV_soviet_airforce_air_accidents_factor = 0.05 }
 			}
-
+			add_timed_idea = {idea = sov_nocap days = 180}
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
 					limit = {
@@ -1949,7 +1954,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_increase_aircraft_production
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = light_air
 			}
 		}
@@ -5962,10 +5967,23 @@ focus_tree = {
 					}
 					support = {
 						artillery = { x = 0 y = 0 }
+						anti_air = {x = 0 y = 1}
+						anti_tank = {x = 0 y = 2}
+						
 					}
 				}
 
 				SOV_spawn_penal_divisions_effect = yes
+				hidden_effect = {
+				SOV_spawn_penal_divisions_effect = yes
+				SOV_spawn_penal_divisions_effect = yes
+				SOV_spawn_penal_divisions_effect = yes
+				SOV_spawn_penal_divisions_effect = yes
+				SOV_spawn_penal_divisions_effect = yes
+				SOV_spawn_penal_divisions_effect = yes
+				SOV_spawn_penal_divisions_effect = yes
+				SOV_spawn_penal_divisions_effect = yes
+			}
 			}
 		}
 	}
