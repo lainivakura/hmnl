@@ -917,7 +917,7 @@ focus_tree = {
 					has_dlc = "Arms Against Tyranny"
 				}
 				OR = {
-					NOT = { has_idea = HUN_treaty_of_triannon_aat }
+					NOT = { has_idea = HUN_treaty_of_triannon }
 					AND = {
 						ROM = {
 							OR = {
@@ -3576,7 +3576,7 @@ focus_tree = {
 					has_dlc = "Arms Against Tyranny"
 				}
 				NOT = {
-					has_idea = HUN_treaty_of_triannon_aat
+					has_idea = HUN_treaty_of_triannon
 				}
 			}
 			else = {

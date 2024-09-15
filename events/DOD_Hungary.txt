@@ -4918,24 +4918,14 @@ country_event = {
 			limit = { 
 				OR = {
 					has_idea = HUN_treaty_of_triannon 
-					has_idea = HUN_treaty_of_triannon_aat
+					
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				swap_ideas = {
-					remove_idea = HUN_treaty_of_triannon_aat
-					add_idea = Hun_treaty_of_triannon_3
-				}
-			}
-			else = {
 			swap_ideas = {
 				remove_idea = HUN_treaty_of_triannon
 				add_idea = Hun_treaty_of_triannon_3
 }
-			}
+			
 		}
 		if = {
 			limit = { has_idea = HUN_treaty_of_triannon_2 }
