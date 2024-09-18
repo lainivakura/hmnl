@@ -78,6 +78,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = {infantry_leader}
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -95,7 +96,7 @@ characters={
 				small=GFX_portrait_AST_thomas_blamey_small
 			}
 		}
-		corps_commander={
+		field_marshal={
 			skill=4
 			attack_skill=4
 			defense_skill=3
