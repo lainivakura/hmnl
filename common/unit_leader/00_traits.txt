@@ -896,6 +896,25 @@ leader_traits = {
 			
 		attack_skill_factor = 1
 	}
+	good_gen = { 
+		type = corps_commander
+		trait_type = assignable_trait
+		
+		mutually_exclusive = skilled_staffer
+		
+		allowed = {
+			always = no
+		}
+		
+		corps_commander_modifier = {
+			max_commander_army_size = -18
+		}
+	
+		logistics_skill_factor = 2
+		
+		gui_row = 17
+		
+	}
 ##################################
 # Field Marshal traits.
 ##################################

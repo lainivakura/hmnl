@@ -441,7 +441,7 @@ z_annex_d = {
 			MAL = { 
 				is_ai = yes 
 			}
-			date > 1939.9.1
+			
 		}	
 		cost = 300
 			
