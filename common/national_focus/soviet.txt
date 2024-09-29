@@ -302,7 +302,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_expected_value = 0.05 }
+			
 			}
 			if = {
 				limit = {
@@ -364,9 +364,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_expected_value = -0.02 }
-			}
 			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
 			if = {
 				limit = {
@@ -1749,7 +1746,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 4
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1774,7 +1771,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 4
 
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1968,7 +1965,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 4
+		cost = 2
 
 
 		
@@ -1993,7 +1990,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 4
+		cost = 2
 
 
 		
@@ -2021,7 +2018,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 4
+		cost = 2
 
 
 		
@@ -2102,7 +2099,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 4
+		cost = 2
 
 
 
@@ -2130,7 +2127,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 4
+		cost = 2
 
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -2152,7 +2149,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_increase_aircraft_production
-		cost = 4
+		cost = 2
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
 
@@ -2184,7 +2181,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 4
+		cost = 2
 
 		mutually_exclusive = { focus = SOV_ground_support }
 
@@ -2217,7 +2214,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_ground_support
-		cost = 5
+		cost = 4
 
 		available = {
 
@@ -2252,7 +2249,7 @@ focus_tree = {
 		x = 6
 		y = 0
 		relative_position_id = SOV_transpolar_flights
-		cost = 0.5
+		cost = 0.25
 
 		ai_will_do = {
 			factor = 1
@@ -2746,7 +2743,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_reinforce_northern_naval_bases
-		cost = 2
+		cost = 0.5
 
 		available = {
 
@@ -2803,7 +2800,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SOV_expand_shipbuilding_plants
-		cost = 5
+		cost = 1
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -2882,8 +2879,7 @@ focus_tree = {
 		x = 4
 		y = 2
 		relative_position_id = SOV_expand_the_red_fleet
-		cost = 5
-
+		cost = 1
 		available = {
 
 		}
@@ -2935,7 +2931,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_pc_of_the_ussr_navy
-		cost = 10
+		cost = 1
 
 		mutually_exclusive = { focus = SOV_submarine_warfare }
 
@@ -2984,7 +2980,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_pc_of_the_ussr_navy
-		cost = 10
+		cost = 1
 
 		mutually_exclusive = { focus = SOV_surface_warfare }
 
@@ -3034,7 +3030,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_surface_warfare
-		cost = 10
+		cost = 1
 
 		available = {
 			if = {
@@ -3150,7 +3146,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_surface_warfare
-		cost = 10
+		cost = 1
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -3263,7 +3259,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_submarine_warfare
-		cost = 10
+		cost = 1
 
 		available = {
 
@@ -3291,7 +3287,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_submarine_warfare
-		cost = 10
+		cost = 1
 
 		available = {
 
@@ -3462,7 +3458,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_expand_shipbuilding_plants
-		cost = 10
+		cost = 1
 
 		available = {
 		}
@@ -3489,7 +3485,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_advanced_maneuvers
-		cost = 10
+		cost = 1
 
 		available = {
 
@@ -3770,7 +3766,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_advanced_maneuvers
-		cost = 10
+		cost = 1
 
 		available = {
 
@@ -4573,6 +4569,7 @@ focus_tree = {
 			add_to_variable = { SOV_defense_industry_production_speed_bunker_factor = 0.05 }
 			add_to_variable = { SOV_defense_industry_max_dig_in_factor = 0.05 }
 			custom_effect_tooltip = SOV_military_engineering_university_ns_tt
+			add_research_slot = 1
 		}
 	}
 
@@ -4587,7 +4584,7 @@ focus_tree = {
 		cost = 5
 		dynamic = yes 
 		available = {
-
+			date > 1942.11.1
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -6528,7 +6525,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_centre
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -6683,7 +6680,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 5
+		cost = 2
 
 		available = {
 
@@ -6711,7 +6708,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_socialism_in_one_country
-		cost = 10
+		cost = 20
 
 		available = {
 
@@ -6725,7 +6722,7 @@ focus_tree = {
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
-			add_stability = -0.07
+			add_stability = -0.15
 
 			if = { #Target a rural state with no civs
 				limit = {
@@ -6761,10 +6758,102 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						OR = {
+							has_state_category = town #Developed Rural Region
+							has_state_category = rural #Rural Region
+						}
+						is_fully_controlled_by = ROOT
+						industrial_complex < 1
+						arms_factory < 1
+						dockyard < 1
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						OR = {
+							has_state_category = town #Developed Rural Region
+							has_state_category = rural #Rural Region
+						}
+						is_fully_controlled_by = ROOT
+						industrial_complex < 1
+						arms_factory < 1
+						dockyard < 1
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						OR = {
+							has_state_category = town #Developed Rural Region
+							has_state_category = rural #Rural Region
+						}
+						is_fully_controlled_by = ROOT
+						industrial_complex < 1
+						arms_factory < 1
+						dockyard < 1
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					limit = {
+						OR = {
+							has_state_category = town #Developed Rural Region
+							has_state_category = rural #Rural Region
+						}
+						is_fully_controlled_by = ROOT
+						industrial_complex < 1
+						arms_factory < 1
+						dockyard < 1
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -6797,10 +6886,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -6997,7 +7086,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_the_workers_dictatorship
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -7006,8 +7095,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
 		completion_reward = {
-			add_to_variable = { SOV_the_politburo_max_command_power = 20 }
-			add_to_variable = { SOV_the_politburo_mobilization_speed = 0.05 }
+			add_to_variable = { SOV_the_politburo_max_command_power = 50 }
+			add_to_variable = { SOV_the_politburo_mobilization_speed = 0.4 }
 			custom_effect_tooltip = SOV_organization_centralization_discipline_ns_tt
 
 			add_political_power = 50

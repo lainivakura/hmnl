@@ -2861,9 +2861,7 @@ technologies = {
 	large_front_operations = {
 		xp_research_type = army
 		xp_unlock_cost = 130
-		xor = {
-			peoples_army
-		}
+		
 		air_cas_present_factor = 0.15
 		supply_consumption_factor = -0.10
 		
@@ -3289,12 +3287,10 @@ technologies = {
 	
 	peoples_army = {
 	
-		xor = {
-			large_front_operations
-		}
+	
 
 		xp_research_type = army
-		xp_unlock_cost = 130
+		xp_unlock_cost = 90
 		
 		#Increased Partisan effect on your land occupied by others
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects 
@@ -3363,7 +3359,7 @@ technologies = {
 	
 	human_infantry_offensive = {
 		xp_research_type = army
-		xp_unlock_cost = 140
+		xp_unlock_cost = 100
 		
 		infantry = {
 			default_morale = 0.20
@@ -3414,10 +3410,10 @@ technologies = {
 	
 	large_front_offensive = {
 		xp_research_type = army
-		xp_unlock_cost = 150
+		xp_unlock_cost = 110
 		
 		category_all_infantry = {
-			max_organisation = 12
+			max_organisation = 5
 		}
 		category_tanks = {
 			max_organisation = 2
@@ -3464,14 +3460,13 @@ technologies = {
 	
 	human_wave_offensive = {
 
-		conscription = 0.05
+		conscription = 0.025
 		xp_research_type = army
 		xp_unlock_cost = 160
-		infantry = {
-			combat_width = -0.4
-		}
+		army_core_attack_factor = 0.1
+		
 
-		land_reinforce_rate = 0.10		
+		land_reinforce_rate = 0.05		
 		
 		path = {
 			leads_to_tech = guerilla_warfare
@@ -3510,15 +3505,15 @@ technologies = {
 	
 	guerilla_warfare = {
 		xp_research_type = army
-		xp_unlock_cost = 170
-		out_of_supply_factor = -0.30
+		xp_unlock_cost = 120
+		out_of_supply_factor = -0.1
 		category_army = {
-			default_morale = 0.20
+			default_morale = 0.05
 		}
 		
 		resistance_growth_on_our_occupied_states = 0.25 
 		
-		enable_tactic = tactic_guerrilla_tactics
+		
 		
 		doctrine = yes	
 		research_cost = 4.5
