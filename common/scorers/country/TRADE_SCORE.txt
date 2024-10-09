@@ -1,0 +1,1289 @@
+best_trader_aluminium_scorer = {
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 0
+			modifier = {
+				add = resource_exported@aluminium
+			}
+			modifier = {
+				check_variable = {resource_exported@aluminium < 12}
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 0.4
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.25
+			}
+			modifier = {
+				is_subject_of = FROM
+				factor = 80
+			}
+			modifier = {
+				is_puppet_of = FROM
+				factor = 100
+			}
+			modifier = {
+				check_variable = {FROM = THIS}
+				factor = 0
+			}
+			modifier = {
+				has_war_with = FROM
+				factor = 0
+			}
+			modifier = {
+				is_ally_with = FROM
+				factor = 10
+			}
+			modifier = {
+					has_non_aggression_pact_with = FROM
+				factor = 5
+			}
+			modifier = {
+				is_neighbor_of = FROM
+				factor = 4
+			}
+			# AXIS with AXIS trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+				}
+				factor = 20
+			}
+			# AXIS with NEUTRAL trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = DEN}
+						check_variable = {temp = NOR}
+						check_variable = {temp = SWE}
+						check_variable = {temp = FIN}
+						check_variable = {temp = TUR}
+						check_variable = {temp = GRE}
+						check_variable = {temp = POR}
+						check_variable = {temp = VEN}
+						check_variable = {temp = SWI}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = IRE}
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 2.5
+			}
+			# AXIS to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 0.01
+			}
+			# AXIS to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 5
+			}
+			# SOV to SOV trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = SOV}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = MON}
+					}
+				}
+				factor = 40
+			}
+			# SOV-ALLIES to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+				}
+				factor = 20
+			}
+			# JAPAN to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+				}
+				factor = 20
+			}
+		}
+	}
+}
+best_trader_rubber_scorer = {
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 0
+			modifier = {
+				add = resource_exported@rubber
+			}
+			modifier = {
+				check_variable = {resource_exported@rubber < 12}
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 0.4
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.25
+			}
+			modifier = {
+				is_subject_of = FROM
+				factor = 80
+			}
+			modifier = {
+				is_puppet_of = FROM
+				factor = 100
+			}
+			modifier = {
+				check_variable = {FROM = THIS}
+				factor = 0
+			}
+			modifier = {
+				has_war_with = FROM
+				factor = 0
+			}
+			modifier = {
+				is_ally_with = FROM
+				factor = 10
+			}
+			modifier = {
+					has_non_aggression_pact_with = FROM
+				factor = 5
+			}
+			modifier = {
+				is_neighbor_of = FROM
+				factor = 4
+			}
+			# AXIS with AXIS trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+				}
+				factor = 20
+			}
+			# AXIS with NEUTRAL trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = DEN}
+						check_variable = {temp = NOR}
+						check_variable = {temp = SWE}
+						check_variable = {temp = FIN}
+						check_variable = {temp = TUR}
+						check_variable = {temp = GRE}
+						check_variable = {temp = POR}
+						check_variable = {temp = VEN}
+						check_variable = {temp = SWI}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = IRE}
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 2.5
+			}
+			# AXIS to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+						check_variable = {temp = MAL}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 0.001
+			}
+			# AXIS to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 5
+			}
+			# SOV to SOV trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = SOV}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = MON}
+					}
+				}
+				factor = 40
+			}
+			# SOV-ALLIES to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+				}
+				factor = 20
+			}
+			# JAPAN to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+				}
+				factor = 20
+			}
+		}
+	}
+}
+best_trader_tungsten_scorer = {
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 0
+			modifier = {
+				add = resource_exported@tungsten
+			}
+			modifier = {
+				check_variable = {resource_exported@tungsten < 12}
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 0.4
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.25
+			}
+			modifier = {
+				is_subject_of = FROM
+				factor = 80
+			}
+			modifier = {
+				is_puppet_of = FROM
+				factor = 100
+			}
+			modifier = {
+				check_variable = {FROM = THIS}
+				factor = 0
+			}
+			modifier = {
+				has_war_with = FROM
+				factor = 0
+			}
+			modifier = {
+				is_ally_with = FROM
+				factor = 10
+			}
+			modifier = {
+					has_non_aggression_pact_with = FROM
+				factor = 5
+			}
+			modifier = {
+				is_neighbor_of = FROM
+				factor = 4
+			}
+			# AXIS with AXIS trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+				}
+				factor = 20
+			}
+			# AXIS with NEUTRAL trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = DEN}
+						check_variable = {temp = NOR}
+						check_variable = {temp = SWE}
+						check_variable = {temp = FIN}
+						check_variable = {temp = TUR}
+						check_variable = {temp = GRE}
+						check_variable = {temp = POR}
+						check_variable = {temp = VEN}
+						check_variable = {temp = SWI}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = IRE}
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 2.5
+			}
+			# AXIS to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 0.01
+			}
+			# AXIS to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 5
+			}
+			# SOV to SOV trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = SOV}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = MON}
+					}
+				}
+				factor = 40
+			}
+			# SOV-ALLIES to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+				}
+				factor = 20
+			}
+			# JAPAN to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+				}
+				factor = 20
+			}
+			
+		}
+	}
+}
+best_trader_steel_scorer = {
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 0
+			modifier = {
+				add = resource_exported@steel
+			}
+			modifier = {
+				check_variable = {resource_exported@steel < 12}
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 0.4
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.25
+			}
+			modifier = {
+				is_subject_of = FROM
+				factor = 80
+			}
+			modifier = {
+				is_puppet_of = FROM
+				factor = 100
+			}
+			modifier = {
+				check_variable = {FROM = THIS}
+				factor = 0
+			}
+			modifier = {
+				has_war_with = FROM
+				factor = 0
+			}
+			modifier = {
+				is_ally_with = FROM
+				factor = 10
+			}
+			modifier = {
+					has_non_aggression_pact_with = FROM
+				factor = 5
+			}
+			modifier = {
+				is_neighbor_of = FROM
+				factor = 4
+			}
+			# AXIS with AXIS trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+				}
+				factor = 20
+			}
+			# AXIS with NEUTRAL trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = DEN}
+						check_variable = {temp = NOR}
+						check_variable = {temp = SWE}
+						check_variable = {temp = FIN}
+						check_variable = {temp = TUR}
+						check_variable = {temp = GRE}
+						check_variable = {temp = POR}
+						check_variable = {temp = VEN}
+						check_variable = {temp = SWI}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = IRE}
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 2.5
+			}
+			# AXIS to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 0.01
+			}
+			# AXIS to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 5
+			}
+			# SOV to SOV trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = SOV}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = MON}
+					}
+				}
+				factor = 40
+			}
+			# SOV-ALLIES to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+				}
+				factor = 20
+			}
+			# JAPAN to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+				}
+				factor = 20
+			}
+			
+		}
+	}
+}
+best_trader_chromium_scorer = {
+	targets = {
+		# describe the target to consider
+		targets_dynamic = no
+		target_non_existing = no
+		#target_array = global.majors
+		target_array = global.countries
+		# MTTH like score description
+		# THIS is a target
+		# FROM is the initiator
+		score = {
+			base = 0
+			modifier = {
+				add = resource_exported@chromium
+			}
+			modifier = {
+				check_variable = {resource_exported@chromium < 12}
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 0.4
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.25
+			}
+			modifier = {
+				is_subject_of = FROM
+				factor = 80
+			}
+			modifier = {
+				is_puppet_of = FROM
+				factor = 100
+			}
+			modifier = {
+				check_variable = {FROM = THIS}
+				factor = 0
+			}
+			modifier = {
+				has_war_with = FROM
+				factor = 0
+			}
+			modifier = {
+				is_ally_with = FROM
+				factor = 10
+			}
+			modifier = {
+					has_non_aggression_pact_with = FROM
+				factor = 5
+			}
+			modifier = {
+				is_neighbor_of = FROM
+				factor = 4
+			}
+			# AXIS with AXIS trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+						# Add other tags as needed
+					}
+				}
+				factor = 20
+			}
+			# AXIS with NEUTRAL trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = DEN}
+						check_variable = {temp = NOR}
+						check_variable = {temp = SWE}
+						check_variable = {temp = FIN}
+						check_variable = {temp = TUR}
+						check_variable = {temp = GRE}
+						check_variable = {temp = POR}
+						check_variable = {temp = VEN}
+						check_variable = {temp = SWI}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = IRE}
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 2.5
+			}
+			# AXIS to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+						check_variable = {temp = SPR}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 0.01
+			}
+			# AXIS to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = GER}
+						check_variable = {temp = ITA}
+						check_variable = {temp = HUN}
+						check_variable = {temp = ROM}
+						check_variable = {temp = SPR}
+						check_variable = {temp = BUL}
+					}
+				}
+				factor = 5
+			}
+			# SOV to SOV trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = SOV}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = MON}
+					}
+				}
+				factor = 40
+			}
+			# SOV-ALLIES to ALLIES trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = USA}
+						check_variable = {temp = SOV}
+						check_variable = {temp = FRA}
+						check_variable = {temp = ENG}
+						check_variable = {temp = CAN}
+						check_variable = {temp = MON}
+						check_variable = {temp = CHI}
+						check_variable = {temp = INS_HOL}
+						check_variable = {temp = HOL}
+						check_variable = {temp = AST}
+						check_variable = {temp = RAJ}
+						check_variable = {temp = SAF}
+						check_variable = {temp = MEX}
+						check_variable = {temp = NZL}
+						check_variable = {temp = IRE}
+						check_variable = {temp = BRA}
+					}
+				}
+				factor = 20
+			}
+			# JAPAN to JAPAN trade
+			modifier = {
+				AND = {
+					set_temp_variable = { temp = THIS }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+					set_temp_variable = { temp = FROM }
+					OR = { 
+						check_variable = {temp = JAP}
+						check_variable = {temp = MAN}
+						check_variable = {temp = SIA}
+					}
+				}
+				factor = 20
+			}
+			
+		}
+	}
+}

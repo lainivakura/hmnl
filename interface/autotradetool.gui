@@ -1,0 +1,25 @@
+guiTypes = {
+	containerWindowType = {
+		name = "auto_trade_resource_container"
+		#orientation = "CENTER"
+			
+		buttonType ={
+			name ="auto_trade_resources_on"
+			quadTextureSprite = "GFX_division_designer_button"
+			position = { x=30 y=10 }
+			clicksound = click_ok
+			buttonFont = "hoi_18mbs"
+			buttonText = "Авто трейд ВЫКЛЮЧЕН"
+			Orientation = "CENTER"
+		}
+		buttonType ={
+			name ="auto_trade_resources_off"
+			quadTextureSprite = "GFX_division_designer_button"
+			position = { x=30 y=10 }
+			clicksound = click_ok
+			buttonFont = "hoi_18mbs"
+			buttonText = "Авто трейд ВКЛЮЧЕН"
+			Orientation = "CENTER"
+		}
+	}
+}

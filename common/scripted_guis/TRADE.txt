@@ -1,0 +1,55 @@
+scripted_gui = {
+	auto_trade_resource_container = {
+		context_type = player_context
+
+		window_name = "auto_trade_resource_container"
+		parent_window_token = trade_tab
+
+		visible = {
+		}
+
+		effects = {
+			auto_trade_resources_on_click={
+				if={
+					limit={
+						check_variable={
+							auto_trade_disabled=0
+						}
+					}
+					set_variable={auto_trade_disabled=1}
+				}
+				else={
+					clear_variable=auto_trade_disabled
+				}
+			}
+			auto_trade_resources_off_click={
+				if={
+					limit={
+						check_variable={
+							auto_trade_disabled=1
+						}
+					}
+					set_variable={auto_trade_disabled=0}
+				}
+				else={
+					set_variable={auto_trade_disabled=1}
+				}
+			}
+		}
+		triggers = {
+			auto_trade_resources_on_visible = {
+				check_variable={auto_trade_disabled=0}
+			}
+			auto_trade_resources_on_enabled = {
+				check_variable={auto_trade_disabled=0}
+			}
+
+			auto_trade_resources_off_visible = {
+				check_variable={auto_trade_disabled=1}
+			}
+			auto_trade_resources_off_enabled = {
+				check_variable={auto_trade_disabled=1}
+			}
+		}
+	}
+}

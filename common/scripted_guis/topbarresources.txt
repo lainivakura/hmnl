@@ -14,12 +14,12 @@ scripted_gui = {
       cb_toggle_resources_click = {
         if = {
           limit = {
-            check_variable = { resources_visible = 1 }
+            check_variable = { resources_visible = 0 }
           }
           set_variable = { resources_visible = 2 }
         }
         else = {
-          set_variable = { resources_visible = 1 }
+          clear_variable = resources_visible
         }
       }
     }
@@ -31,7 +31,7 @@ scripted_gui = {
     window_name = "top_bar_resource_container"
 
     visible = {
-		  check_variable = { resources_visible = 2 }
+		  check_variable = { resources_visible = 0 }
 		}
   }
 }
