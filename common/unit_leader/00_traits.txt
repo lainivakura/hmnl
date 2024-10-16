@@ -900,7 +900,7 @@ leader_traits = {
 		type = corps_commander
 		trait_type = assignable_trait
 		
-		mutually_exclusive = skilled_staffer
+		# mutually_exclusive = skilled_staffer
 		
 		allowed = {
 			always = no
@@ -1562,7 +1562,26 @@ forest = {
 		gui_row = 6
 	}
 
-	
+	ranger = { 
+		type = corps_commander
+		gain_xp = {
+			is_fighting_in_terrain = forest
+		}
+		cost = 700
+		# modifier = {
+		# 	forest = {
+		# 		movement = 0.05
+		# 		attack = 0.1
+		# 		defence = 0.1
+		# 	}
+		# }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		trait_type = basic_terrain_trait
+		gui_row = 5
+	}
 
 	urban_assault_specialist = { 
 		type = corps_commander

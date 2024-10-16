@@ -8111,8 +8111,35 @@ focus_tree = {
 	}
 
 	
-
 	focus = {allow_branch = {always = no}
+		id = ENG_embargo_germany
+		available = {
+			GER = {
+				ENG_focus_available_embargo_sanction = yes
+			}
+		}
+		bypass = {
+			has_war_with = GER
+		}
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_military_training_act }
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 1
+		relative_position_id = ENG_military_training_act
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			send_embargo = GER
+			custom_effect_tooltip = embargo_relation_tt
+		}
+	}
+	
+	focus = {
 		id = ENG_war_with_germany
 		available = {
 			has_war = no

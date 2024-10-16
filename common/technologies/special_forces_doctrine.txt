@@ -14,7 +14,7 @@ technologies = {
 	#		max_organisation = 5
 	#		soft_attack = 0.05
 	#	}
-	category_mountaineers = {
+		category_mountaineers = {
 			soft_attack = 0.02
 		}
 		enable_subunits = {
@@ -454,18 +454,18 @@ technologies = {
 			}
 		}
 		field_hospital = {
-		battalion_mult = {
-				
 			battalion_mult = {
-				category = category_mountaineers
-				#armor = 0.15
-				#experience_loss_factor = 0.5
-				default_morale = 0.1
-				max_organisation = 0.05
+					
+				battalion_mult = {
+					category = category_mountaineers
+					#armor = 0.15
+					#experience_loss_factor = 0.5
+					default_morale = 0.1
+					max_organisation = 0.05
+				}
+			
 			}
-		
 		}
-		
 		signal_company = {
 			
 			battalion_mult = {
