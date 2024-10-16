@@ -28,6 +28,19 @@ characters={
 		}
 	}
 
+	# NATIVE AMERICAN COUNCIL
+	USA_native_american_council = { 
+		name = USA_native_american_council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_native_american_usa_council
+				#small = GFX_portrait_AFA_mohamed_yayyo_small
+			}
+			
+		}
+		
+	}
+
 	USA_carnot_wheeler={
 		name=USA_carnot_wheeler
 		portraits={
@@ -127,7 +140,7 @@ characters={
 		name=USA_george_s_patton
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_George_S_Patton.dds"
+				large=GFX_portrait_USA_george_s_patton
 			}
 			army={
 				small="GFX_idea_george_patton"
@@ -166,7 +179,7 @@ characters={
 				small="GFX_idea_omar_bradley"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Omar_Bradley.dds"
+				large=GFX_portrait_USA_omar_bradley
 			}
 		}
 		advisor={
@@ -198,7 +211,7 @@ characters={
 		name=USA_dwight_d_eisenhower
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
+				large=GFX_portrait_USA_dwight_d_eisenhower
 			}
 			army={
 				small="GFX_idea_dwight_eisenhower"
@@ -231,8 +244,8 @@ characters={
 		name=USA_geoffrey_keyes
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Geoffrey_Keyes.dds"
-				small="gfx/interface/ideas/idea_USA_geoffrey_keyes.dds"
+				large=GFX_portrait_USA_geoffrey_keyes
+				small=GFX_portrait_USA_geoffrey_keyes_small
 			}
 		}
 		corps_commander={
@@ -249,8 +262,8 @@ characters={
 		name=USA_lucian_truscott
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Lucian_Truscott.dds"
-				small="gfx/interface/ideas/idea_USA_lucian_truscott.dds"
+				large=GFX_portrait_USA_lucian_truscott
+				small=GFX_portrait_USA_lucian_truscott_small
 			}
 		}
 		corps_commander={
@@ -271,7 +284,7 @@ characters={
 				small="GFX_idea_mark_clark"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Mark_W_Clark.dds"
+				large=GFX_portrait_USA_mark_clark
 			}
 		}
 		advisor={
@@ -294,7 +307,7 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=100002
+			legacy_id=0
 		}
 	}
 
@@ -305,7 +318,7 @@ characters={
 				small="GFX_idea_douglas_macarthur"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Douglas_MacArthur.dds"
+				large=GFX_portrait_USA_douglas_macarthur
 			}
 		}
 		advisor={
@@ -346,7 +359,7 @@ characters={
 				small="GFX_idea_USA_walter_krueger"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Walter_Krueger.dds"
+				large=GFX_portrait_USA_walter_krueger
 			}
 		}
 		advisor={
@@ -371,7 +384,7 @@ characters={
 			defense_skill=6
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=100001
+			legacy_id=0
 		}
 	}
 
@@ -379,8 +392,8 @@ characters={
 		name=USA_lloyd_fredendall
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Lloyd_Fredendall.dds"
-				small="gfx/interface/ideas/idea_USA_lloyd_fredendall.dds"
+				large=GFX_portrait_USA_lloyd_fredendall
+				small=GFX_portrait_USA_lloyd_fredendall_small
 			}
 		}
 		corps_commander={
@@ -397,8 +410,8 @@ characters={
 		name=USA_leslie_mcnair
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Lesley_McNair.dds"
-				small="gfx/interface/ideas/idea_USA_lesley_mcnair.dds"
+				large=GFX_portrait_USA_leslie_mcnair
+				small=GFX_portrait_USA_leslie_mcnair_small
 			}
 		}
 		corps_commander={
@@ -427,8 +440,8 @@ characters={
 		name=USA_jonathan_wainwright
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Jonathan_Wainwright.dds"
-				small="gfx/interface/ideas/idea_USA_jonathan_wainwright.dds"
+				large=GFX_portrait_USA_jonathan_wainwright
+				small=GFX_portrait_USA_jonathan_wainwright_small
 			}
 		}
 		corps_commander={
@@ -445,8 +458,8 @@ characters={
 		name=USA_russell_hartle
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Russell_P_Hartle.dds"
-				small="gfx/interface/ideas/idea_USA_russell_p_hartle.dds"
+				large=GFX_portrait_USA_russell_hartle
+				small=GFX_portrait_USA_russell_hartle_small
 			}
 		}
 		corps_commander={
@@ -463,8 +476,8 @@ characters={
 		name=USA_leonard_gerow
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Leonard_T_Gerow.dds"
-				small="gfx/interface/ideas/idea_USA_leonard_t_gerow.dds"
+				large=GFX_portrait_USA_leonard_gerow
+				small=GFX_portrait_USA_leonard_gerow_small
 			}
 		}
 		corps_commander={
@@ -481,8 +494,8 @@ characters={
 		name=USA_edward_brooks
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Edward_Brooks.dds"
-				small="gfx/interface/ideas/idea_USA_edward_brooks.dds"
+				large=GFX_portrait_USA_edward_brooks
+				small=GFX_portrait_USA_edward_brooks_small
 			}
 		}
 		corps_commander={
@@ -499,8 +512,8 @@ characters={
 		name=USA_clarence_huebner
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Clarence_Huebner.dds"
-				small="gfx/interface/ideas/idea_USA_clarence_huebner.dds"
+				large=GFX_portrait_USA_clarence_huebner
+				small=GFX_portrait_USA_clarence_huebner_small
 			}
 		}
 		corps_commander={
@@ -517,8 +530,8 @@ characters={
 		name=USA_alexander_patch
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Alexander_Patch.dds"
-				small="gfx/interface/ideas/idea_USA_alexander_patch.dds"
+				large=GFX_portrait_USA_alexander_patch
+				small=GFX_portrait_USA_alexander_patch_small
 			}
 		}
 		corps_commander={
@@ -535,8 +548,8 @@ characters={
 		name=USA_william_simpson
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_William_Hood_Simpson.dds"
-				small="gfx/interface/ideas/idea_USA_william_hood_simpson.dds"
+				large=GFX_portrait_USA_william_simpson
+				small=GFX_portrait_USA_william_simpson_small
 			}
 		}
 		corps_commander={
@@ -553,8 +566,8 @@ characters={
 		name=USA_j_lawton_collins
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Lawton_Collins.dds"
-				small="gfx/interface/ideas/idea_USA_lawton_collins.dds"
+				large=GFX_portrait_USA_j_lawton_collins
+				small=GFX_portrait_USA_j_lawton_collins_small
 			}
 		}
 		corps_commander={
@@ -637,7 +650,7 @@ characters={
 				small="GFX_idea_joseph_stilwell"
 			}
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Joseph_Stilwell.dds"
+				large=GFX_portrait_USA_joseph_stilwell
 			}
 		}
 		advisor={
@@ -672,8 +685,8 @@ characters={
 		name=USA_oscar_griswold
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Oscar_Griswold.dds"
-				small="gfx/interface/ideas/idea_USA_oscar_griswold.dds"
+				large=GFX_portrait_USA_oscar_griswold
+				small=GFX_portrait_USA_oscar_griswold_small
 			}
 		}
 		corps_commander={
@@ -690,8 +703,8 @@ characters={
 		name=USA_maurice_rose
 		portraits={
 			army={
-				large="gfx/leaders/USA/Portrait_USA_Maurice_Rose.dds"
-				small="gfx/interface/ideas/idea_USA_maurice_rose.dds"
+				large=GFX_portrait_USA_maurice_rose
+				small=GFX_portrait_USA_maurice_rose_small
 			}
 		}
 		corps_commander={
@@ -1378,12 +1391,14 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
+				
 				if  = {
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
 					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
+				
 				NOT  = {
 					has_idea  = USA_henry_morgenthau 
 				}
@@ -1430,7 +1445,6 @@ characters={
 						}
 						has_completed_focus  = USA_reach_out_to_the_ware_group 
 					}
-
 					AND = {
 						SWE_refuge_for_revolutionaries_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
