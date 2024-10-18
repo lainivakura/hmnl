@@ -1141,10 +1141,10 @@ focus_tree = {
 		id = fighter_command_focus
 		prerequisite = { focus = air_rearmament_focus }
 		icon = GFX_goal_generic_air_fighter
-		x = -1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -1188,11 +1188,11 @@ focus_tree = {
 	}
 	focus = {
 		id = bomber_command_focus
-		prerequisite = { focus = air_rearmament_focus }
+		prerequisite = { focus = aircraft_production_focus }
 		icon = GFX_goal_generic_air_bomber
-		x = 0
-		y = 1
-		relative_position_id = air_rearmament_focus
+		x = -1
+		y = 2
+		relative_position_id = fighter_command_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1203,26 +1203,33 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+				
+					has_completed_focus = coastal_command_focus
 				}
+				
 			air_experience = 25
 			add_tech_bonus = {
 				name = bomber_command_focus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 2
 				category = cat_strategic_bomber
 				category = tactical_bomber
 			}
+			swap_ideas = {
+				remove_idea = british_fighter_discount_navalcas
+				add_idea = british_fighter_discount_all
+			}
 		}
 			else_if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					
+					NOT = {has_completed_focus = coastal_command_focus}
 				}
 				air_experience = 25
 				add_tech_bonus = {
 					name = bomber_command_focus
-					bonus = 1.0
-					uses = 1
+					bonus = 1.5
+					uses = 2
 					category = cat_strategic_bomber
 					category = tactical_bomber
 				}
@@ -1232,15 +1239,21 @@ focus_tree = {
 					uses = 1
 					category = air_doctrine
 				}
+				swap_ideas = {
+					remove_idea = british_fighter_discount
+					add_idea = british_fighter_discount_strat
 			}
+			}
+			
+			
 		}
 	}
 	focus = {
 		id = coastal_command_focus
-		prerequisite = { focus = air_rearmament_focus }
+		prerequisite = { focus = aircraft_production_focus }
 		icon = GFX_goal_generic_air_naval_bomber
-		x = 1
-		y = 2
+		x = -3
+		y = 3
 		relative_position_id = air_rearmament_focus
 		cost = 10
 		ai_will_do = {
@@ -1252,7 +1265,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+					has_completed_focus = bomber_command_focus
 				}
 			air_experience = 25
 			add_tech_bonus = {
@@ -1262,10 +1275,14 @@ focus_tree = {
 				category = naval_bomber
 				category = cas_bomber
 			}
+			swap_ideas = {
+				remove_idea = british_fighter_discount_strat
+				add_idea = british_fighter_discount_all
+			}
 		}
 			else_if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					NOT = {has_completed_focus = bomber_command_focus}
 				}
 				air_experience = 25
 				add_tech_bonus = {
@@ -1281,14 +1298,20 @@ focus_tree = {
 					uses = 1
 					category = air_doctrine
 				}
+				swap_ideas = {
+					remove_idea = british_fighter_discount
+					add_idea = british_fighter_discount_navalcas
+				}
+			}
+			
 			}
 		}
-	}
+	
 	focus = {
 		id = aircraft_production_focus
-		prerequisite = { focus = fighter_command_focus focus = bomber_command_focus focus = coastal_command_focus }
+		prerequisite = { focus = fighter_command_focus }
 		icon = GFX_goal_generic_air_production
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = fighter_command_focus
 		cost = 10
@@ -1307,7 +1330,7 @@ focus_tree = {
 		prerequisite = { focus = aircraft_production_focus }
 		icon = GFX_goal_generic_build_airforce
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = aircraft_production_focus
 		cost = 10
 		ai_will_do = {
@@ -1720,7 +1743,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			date > 1941.3.1}
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
@@ -1740,6 +1764,42 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_expand_the_repair_yards_2dockyard
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_expand_the_repair_yards_2dockyard
+			}
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
@@ -1779,8 +1839,8 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1944.1.1
-			has_tech = advanced_ship_hull_heavy
+			date > 1941.1.1
+			has_tech = improved_ship_hull_heavy
 			has_full_control_of_state = 133
 			#has_tech = improved_heavy_battery
 			#has_tech = dp_light_battery_3
@@ -1793,7 +1853,7 @@ focus_tree = {
 			navy_experience = 25
 			create_equipment_variant = {
 				name = "Vanguard"
-				type = ship_hull_heavy_4
+				type = ship_hull_heavy_3
 				parent_version = 0
 				modules = {
 					fixed_ship_battery_slot = ship_heavy_battery_3

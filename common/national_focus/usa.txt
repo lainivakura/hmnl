@@ -5403,9 +5403,8 @@ focus_tree = {
 		x = 2
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
-		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5431,7 +5430,7 @@ focus_tree = {
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = USA_tank_destroyer_board_organization
 				mio:USA_tank_destroyer_board_organization = {
-					add_mio_size = 2
+					add_mio_size = 4
 				}
 			}
 			ELSE = {
@@ -5447,9 +5446,8 @@ focus_tree = {
 		x = 4
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
-		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5475,7 +5473,7 @@ focus_tree = {
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = USA_detroit_arsenal_organization
 				mio:USA_detroit_arsenal_organization = {
-					add_mio_size = 2
+					add_mio_size = 4
 				}
 			}
 			ELSE = {
@@ -5736,7 +5734,7 @@ focus_tree = {
 		completion_reward = {
 
 			mio:USA_boeing_organization = {
-				add_mio_size = 4
+				add_mio_size = 7
 			}
 			air_experience = 25
 			add_tech_bonus = {

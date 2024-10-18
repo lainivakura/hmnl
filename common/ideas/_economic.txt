@@ -247,31 +247,27 @@ ideas = {
 		
 		tot_economic_mobilisation = {
 			
-			
+			visible = { 
+				OR = {
+					original_tag = JAP
+					original_tag = SOV
+					original_tag = GER
+					}
+			}
 			available = {
 				has_war = yes
 				has_war_support > 0.8
-				any_enemy_country = {
+				
 					OR = {			
 						original_tag = JAP
-					}
-					OR = {
+						AND = {
 						original_tag = GER
 						date > 1942.6.1
-					}
-					OR = {
-						original_tag = SOV
-						date > 1942.6.1
-					}
-					if = {
-						limit = {
-							original_tag = HUN
-							has_dlc = "Death or Dishonor"
 						}
-						NOT = { has_idea = HUN_treaty_of_triannon }
+						original_tag = SOV
 					}
 				}
-			}
+			
 			
 			ai_will_do = {
    				factor = 1
@@ -338,6 +334,36 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
+		#sov_all_for_victory = {
+		#	
+		#	visible = { 
+		#			original_tag = SOV
+#
+		#	}
+		#	available = {
+		#		has_war = yes
+		#		has_war_support > 0.8
+		#		date > 1943
+		#		
+		#		}
+		#	
+		#	
+		#	
+		#	cost = 150
+		#	removal_cost = -1
+		#	
+		#	modifier = {
+		#		consumer_goods_expected_value = 0.05
+		#		conscription = -0.05
+		#		production_speed_arms_factory_factor = 0.4
+		#		conversion_cost_civ_to_mil_factor= -0.3
+		#		conversion_cost_mil_to_civ_factor = -0.3
+		#		production_cost_arms_factory_factor = -0.25
+		#		industrial_capacity_factory = 0.1
+		#	}
+		#	
+		#	cancel_if_invalid = no
+		#}
 		new_economic_policy = {
 
 			picture = new_economic_policy
@@ -348,7 +374,7 @@ ideas = {
 			allowed_to_remove = {
 				FROM = {is_ai = no}
 			}
-	
+			visible = {is_ai = yes}
 			removal_cost = -1
 			
 			modifier = {
@@ -438,7 +464,7 @@ ideas = {
 		}
 		
 		free_trade = {
-
+			visible = {NOT = { original_tag = SOV}}
 			available = { NOT = {	tag = D01 }
 				NOT = { tag = SPR }
 				NOT = { tag = TUR }
@@ -492,7 +518,7 @@ ideas = {
 		}
 		
 		export_focus = {
-			
+			visible = {NOT = { original_tag = SOV}}
 			available = {NOT = {	tag = D01 }
 				NOT = { tag = SPR }
 				NOT = { tag = TUR }
@@ -555,6 +581,7 @@ ideas = {
 		
 		limited_exports = {
 			available = {NOT = {	tag = D01 }
+				
 				NOT = { tag = SPR }
 				NOT = { tag = TUR }
 				NOT = { tag = POR }
@@ -590,7 +617,7 @@ ideas = {
 				}
 				
 			}
-		
+			visible = {NOT = { original_tag = SOV}}
 			cost = 150
 			removal_cost = -1
 			
@@ -634,6 +661,7 @@ ideas = {
 				}
    			}
 		}
+		
 		
 		closed_economy = {
 			
@@ -719,7 +747,7 @@ ideas = {
 			
 						
 			cost = 9999
-			removal_cost = 9999
+			removal_cost = -1
 			modifier = {
 				min_export = 0.3
 				production_speed_buildings_factor = 0.15

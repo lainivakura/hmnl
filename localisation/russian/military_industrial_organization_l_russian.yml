@@ -332,6 +332,7 @@
  USA_springfield_armory_organization: "$springfield_armory$"
  USA_ford_motor_company_organization: "$ford_motor_company$"
  USA_rock_island_arsenal_organization: "$rock_island_arsenal$"
+ USA_bell: "Белл Эйркрафт"
  ### TRAITS ###
  USA_mio_trait_lockeed_aircraft: "Lockheed Aircraft"
  USA_mio_trait_mechanized_production: "Механизированное производство"

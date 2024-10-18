@@ -205,8 +205,14 @@ characters = {
 					original_tag = SOV
 				}
 				available = {
+				OR {
 					NOT = { SOV = { owns_state = 219} }
-					
+					AND = {
+						date > 1943.7.1
+						has_completed_focus = SOV_war_heroes
+					}
+				}
+				
 				}
 				traits = {
 					army_chief_offensive_3

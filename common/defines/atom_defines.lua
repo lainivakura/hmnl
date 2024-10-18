@@ -15,10 +15,9 @@ NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0        -- XP cost fo
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0         -- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
 NDefines.NBuildings.MAX_BUILDING_LEVELS = 20
-
+NDefines.NAir.FIELD_EXPERIENCE_FACTOR = 0.55
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.06 -- ванила -0.12
-
-
+NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.0007
 --ОПЫТ
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
@@ -90,8 +89,9 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.0
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0
-NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 200.0
-
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 150.0
+NDefines.NCountry.MAX_BOMBING_WAR_SUPPORT_IMPACT = -0.6
+NDefines.NCountry.BOMBING_WAR_SUPPORT_PENALTY_SCALE = -0.00025
 --Politics
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4
 NDefines.NPolitics.LEADER_TRAITS_XP_SHOW = 0.01

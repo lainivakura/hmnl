@@ -199,10 +199,10 @@ focus_tree = {
 
 		completion_reward = { #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
 			223 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 						instant_build = yes
 					}}
 			
@@ -1295,10 +1295,10 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1320,13 +1320,13 @@ focus_tree = {
 				566 = { #IRKUTSK
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1347,13 +1347,13 @@ focus_tree = {
 				409 = { #KHABAROVSK
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1378,10 +1378,10 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1488,10 +1488,10 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1516,10 +1516,10 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1543,10 +1543,10 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1571,10 +1571,10 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1992,7 +1992,7 @@ focus_tree = {
 		relative_position_id = SOV_foster_flying_clubs
 		cost = 2
 
-
+		available = { date > 1941.12.7 }
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
@@ -2101,7 +2101,7 @@ focus_tree = {
 		relative_position_id = SOV_foster_flying_clubs
 		cost = 2
 
-
+		available = { date > 1942.4.1}
 
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -2217,7 +2217,7 @@ focus_tree = {
 		cost = 4
 
 		available = {
-
+			date > 1941.12.7
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -3837,6 +3837,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				}
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = SOV_defense_industry_dynamic_modifier }
 			}
@@ -5157,6 +5164,11 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 15
 			219 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
 					if = {
@@ -5260,6 +5272,27 @@ focus_tree = {
 					}				
 				}
 			}
+			252 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			253 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}
+			}
+			248 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -5299,6 +5332,7 @@ focus_tree = {
 						province = {
 							id = 3151
 							id = 6174
+							id = 149
 						}
 						instant_build = yes
 					}
@@ -6708,7 +6742,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_socialism_in_one_country
-		cost = 20
+		cost = 10
 
 		available = {
 
@@ -6758,10 +6792,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6781,10 +6815,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6804,10 +6838,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6827,10 +6861,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6850,10 +6884,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6886,10 +6920,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -7693,7 +7727,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_inheritor_of_the_mantle_of_lenin
-		cost = 5
+		cost = 3
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -7762,7 +7796,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_leader_of_the_party_and_the_people
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_architect_of_communism }
 		
@@ -7798,7 +7832,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_leader_of_the_party_and_the_people
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_great_commander }
 
@@ -7823,7 +7857,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_great_commander
-		cost = 10
+		cost = 4
 
 		available = {
 			custom_trigger_tooltip = {

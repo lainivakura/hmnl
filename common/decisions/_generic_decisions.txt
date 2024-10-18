@@ -1417,10 +1417,20 @@ special_projects = {
 		icon = GFX_decision_generic_special_project
 
 		available = {
-			has_full_control_of_state = 446
-			has_full_control_of_state = 453
-			num_of_civilian_factories > 30
-			original_tag = ENG
+			OR = {
+				AND = {
+					has_full_control_of_state = 446
+					has_full_control_of_state = 453
+					num_of_civilian_factories > 30
+					original_tag = ENG}
+				AND = {
+					has_full_control_of_state = 446
+					has_full_control_of_state = 453
+					num_of_civilian_factories > 30
+					original_tag = ITA
+					date > 1941.6.1
+				}
+			}
 		}
 	
 		visible = {
@@ -1762,6 +1772,7 @@ war_measures = {
 		cost = GER_war_bonds_var?50
 
 		modifier = {
+			industrial_capacity_factory = 0.05
 			consumer_goods_expected_value = -0.05
 		}
 

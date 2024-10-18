@@ -1429,6 +1429,7 @@ characters={
 				small="GFX_idea_speer"
 			}
 		}
+		
 		advisor={
 			slot = political_advisor
 			idea_token = speer
@@ -1436,7 +1437,10 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				armaments_organizer 
+				hitlerarchitect
+			}
+			available = {
+				date > 1942.2.7
 			}
 		}		
 	}

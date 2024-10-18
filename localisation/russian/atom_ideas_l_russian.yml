@@ -45,3 +45,6 @@ razgon_desc:0 "У вас есть 1 день, чтобы разогнать лю
 GER_prom:0 "Промышленная монополия"
 sov_eco:0 "Командная экономика"
 jap_eco_1:0 "Военнизированная экономика"
+british_fighter_discount_strat:0 "Производители авиации: страт. бомбардировки"
+british_fighter_discount_navalcas:0 "Производители авиации: морская авиация"
+british_fighter_discount_all:0 "Производители авиации"

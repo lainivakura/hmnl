@@ -680,8 +680,9 @@ USA_greenland_patrol_idea = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_infrastructure_factor = 0.2
+				production_speed_infrastructure_factor = 0.4
 				stability_factor = 0.10
+				production_cost_infrastructure_factor = -0.33
 			}
 		}
 
@@ -1005,10 +1006,10 @@ USA_greenland_patrol_idea = {
 		
 			equipment_bonus = {
 								small_plane_airframe = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 					}
@@ -1027,10 +1028,10 @@ USA_greenland_patrol_idea = {
 			
 			equipment_bonus = {
 				small_plane_cas_airframe = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 				medium_plane_airframe = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -1094,7 +1095,8 @@ USA_greenland_patrol_idea = {
 			modifier = {
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
-ai_desired_divisions_factor = 0.5 
+				ai_desired_divisions_factor = 0.5 
+				operative_slot = 1
 			}
 		}
 
