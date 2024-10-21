@@ -5359,7 +5359,7 @@ leader_traits = {
 		production_factory_max_efficiency_factor = 0.05
 		conversion_cost_civ_to_mil_factor = -0.35
 		global_building_slots_factor = 0.15
-		conscription = 0.01
+		conscription = 0.012
 	}
 	financial_expert = {
 		sprite = 10

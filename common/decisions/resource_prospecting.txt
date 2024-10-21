@@ -103,7 +103,7 @@ prospect_for_resources = {
 		visible = {
 			owns_state = 614
 			controls_state = 614
-			621 = {
+			614 = {
 				NOT = {
 					has_state_flag = suiyuan_steel_developed
 				}
@@ -2429,7 +2429,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_arkansas_aluminium_duration?30
 
 		modifier = {
@@ -2536,7 +2536,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_new_york_aluminium_duration?30
 
 		modifier = {
@@ -2645,7 +2645,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_tennessee_aluminium_duration?30
 
 		modifier = {
@@ -2754,7 +2754,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_washington_aluminium_duration?30
 
 		modifier = {
@@ -2863,7 +2863,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_idaho_tungsten_duration?30
 
 		modifier = {
@@ -2972,7 +2972,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_california_tungsten_duration?30
 
 		modifier = {
@@ -3081,7 +3081,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_minnesota_steel_duration?30
 
 		modifier = {
@@ -3190,7 +3190,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_pennsylvania_steel_duration?30
 
 		modifier = {
@@ -3300,7 +3300,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_ohio_steel_duration?30
 
 		modifier = {
@@ -3409,7 +3409,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_indiana_steel_duration?30
 
 		modifier = {
@@ -3520,7 +3520,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_montana_chromium_duration?30
 
 		modifier = {
@@ -3631,7 +3631,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_california_chromium_duration?30
 
 		modifier = {
@@ -3742,7 +3742,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_oregon_chromium_duration?30
 
 		modifier = {
@@ -3853,7 +3853,7 @@ prospect_for_resources = {
 			}
 		}
 
-		cost = 15
+		cost = 10
 		days_remove = USA_alaska_chromium_duration?30
 
 		modifier = {

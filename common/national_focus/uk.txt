@@ -88,7 +88,7 @@ focus_tree = {
 			not = {
 				has_war_with = USA
 			}
-			
+			date>1940.9.1
 			
 		} 
 		prerequisite = { focus = crypto_bomb_focus }
@@ -106,6 +106,7 @@ focus_tree = {
 			USA = {
 				country_event = britain.1
 			}
+			add_research_slot = 1
 		}
 	}
 	focus = {

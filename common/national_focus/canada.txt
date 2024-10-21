@@ -393,8 +393,7 @@
 	focus = {
 		id = CAN_retool_angus_shops
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CAN_canada_pacific_railway }
-		prerequisite = { focus = CAN_bits_and_pieces_program }
+		prerequisite = { focus = CAN_canada_pacific_railway focus = CAN_bits_and_pieces_program }
 		x = 2
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission

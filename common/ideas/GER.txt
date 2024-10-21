@@ -106,17 +106,20 @@ ideas = {
 
 			targeted_modifier = {
 			tag = ROM
-			industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.1
+				global_building_slots_factor = 0.1
 				}
 
 			targeted_modifier = {
 			tag = HUN
-			industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.1
+				global_building_slots_factor = 0.1
 				}
 
 			targeted_modifier = {
 			tag = ITA
-			industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.05
+				global_building_slots_factor = 0.1
 				}
 		}
 
@@ -261,8 +264,8 @@ GER_folcsturm= {
 			}
 
 				modifier = {
-				mobilization_speed = 0.5
-conscription = 0.1
+				mobilization_speed = 0.035
+conscription = 0.05
 				
 }
 }
@@ -334,7 +337,7 @@ GER_prom = {
 			}
 			
 			modifier = {
-				political_power_gain = 1
+				political_power_gain = 0.25
 				drift_defence_factor = 0.5
 			}
 			rule = {

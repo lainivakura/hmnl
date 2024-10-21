@@ -2825,6 +2825,7 @@ focus_tree = {
 				category = nuclear
 				category = rocketry
 			}
+			add_research_slot = 1
 		}
 	}
 	
@@ -6437,15 +6438,7 @@ focus_tree = {
 		prerequisite = { focus = GER_war_with_france }
 		icon = GFX_goal_support_fascism
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_improve_national_spirit_tooltip
-				OR = {
-					GER = { controls_state = 126 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 126
-					}
-				}
+
 				OR = {
 					GER = { controls_state = 16 }
 					any_other_country = {
@@ -6453,17 +6446,12 @@ focus_tree = {
 						controls_state = 16
 					}
 				}
-			}
+			
 		}
 		cancel = {
 			AND = {
 				has_war = no
-				126 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
+				
 				16 = {
 					owner = {
 						NOT = { tag = GER }
@@ -6476,7 +6464,7 @@ focus_tree = {
 		x = 5
 		y = 5
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	

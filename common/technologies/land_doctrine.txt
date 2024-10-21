@@ -634,9 +634,6 @@ technologies = {
 			firebrigades = { #Branch focused on mobile warfares
 				xp_research_type = army
 				xp_unlock_cost = 170
-				xor={
-					volkssturm
-				}
 				
 				category_support_battalions = {
 					soft_attack = 0.05
@@ -792,9 +789,7 @@ technologies = {
 			volkssturm = {
 				xp_research_type = army
 				xp_unlock_cost = 170
-				xor={
-					firebrigades
-				}
+				
 
 				
 				conscription = 0.01
@@ -805,7 +800,14 @@ technologies = {
 					leads_to_tech = nd_conscription 
 					research_cost_coeff = 1
 				}
-
+				allow = {
+						OR = {
+						AND = {
+							GER = {has_completed_focus = Folcsturm}
+							original_tag = GER
+							}
+						date > 1944.1.1}
+					}
 				
 				doctrine = yes	
 				research_cost = 4.5

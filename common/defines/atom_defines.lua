@@ -1,5 +1,5 @@
 --NGame
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 9.0
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 13.0
 
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 290
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 290
@@ -14,10 +14,10 @@ NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0        -- XP cost fo
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0        -- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0         -- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
-NDefines.NBuildings.MAX_BUILDING_LEVELS = 20
-NDefines.NAir.FIELD_EXPERIENCE_FACTOR = 0.55
+NDefines.NBuildings.MAX_BUILDING_LEVELS = 30
+NDefines.NAir.FIELD_EXPERIENCE_FACTOR = 0.5
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.06 -- ванила -0.12
-NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.0007
+NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.0005
 --ОПЫТ
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5

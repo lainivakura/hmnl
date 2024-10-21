@@ -12,7 +12,8 @@ ideas = {
 			}
 		
 			modifier = {
-			industrial_factory_donations = 3	
+				industrial_factory_donations = 3	
+				global_building_slots_factor = 0.15
 			}
 		}
 

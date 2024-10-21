@@ -1929,7 +1929,7 @@ focus_tree = {
 				add_ideas = SOV_increased_aircraft_production_ns_bonus
 				add_to_variable = { SOV_soviet_airforce_air_accidents_factor = 0.05 }
 			}
-			add_timed_idea = {idea = sov_nocap days = 360}
+			add_timed_idea = {idea = sov_nocap days = 180 }
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
 					limit = {
@@ -2217,7 +2217,7 @@ focus_tree = {
 		cost = 4
 
 		available = {
-			date > 1941.12.7
+			date > 1942.11.7
 		}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -4342,7 +4342,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW

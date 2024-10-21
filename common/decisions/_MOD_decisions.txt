@@ -395,6 +395,36 @@ z_annex_d = {
 			}
 		}
 	}
+	ENG_annex_CAN = {
+
+		icon = generic_operation
+	
+		allowed = {
+			original_tag = ENG
+	
+		}
+	
+		available = {
+			CAN = { 
+				is_ai = yes 
+			}
+			date > 1939.9.1
+		}	
+		
+			
+		visible = {
+			country_exists = CAN
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			annex_country = {target = CAN transfer_troops = yes}
+			every_controlled_state = {
+				add_compliance = 100
+			}
+		}
+	}
 	ENG_annex_RAJ = {
 
 		icon = generic_operation

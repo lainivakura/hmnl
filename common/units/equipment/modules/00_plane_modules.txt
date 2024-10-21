@@ -1186,7 +1186,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -12
 				weight = 5
-				naval_strike_attack = 12
+				naval_strike_attack = 9
 			}
 			add_average_stats = {
 				naval_strike_targetting = 4
@@ -1218,7 +1218,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -12
 				weight = 8
-				naval_strike_attack = 17
+				naval_strike_attack = 14
 			}
 			add_average_stats = {
 				naval_strike_targetting = 8
@@ -1250,7 +1250,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -12
 				weight = 11
-				naval_strike_attack = 22
+				naval_strike_attack = 18
 			}
 			add_average_stats = {
 				naval_strike_targetting = 10

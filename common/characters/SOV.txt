@@ -260,7 +260,7 @@ characters = {
 			cost = 200
 		}
 	}
-
+		
 	SOV_aleksandr_vasilevsky = {
 		name = SOV_aleksandr_vasilevsky
 		portraits = {
@@ -939,6 +939,19 @@ characters = {
 			planning_skill = 5
 			logistics_skill = 4
 			legacy_id = 0
+		}
+		advisor = {
+			slot = high_command
+			idea_token = aleksandr_vasilevsky
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				army_infantry_2
+			}
+			available = {date > 1941.12.7}
+			cost = 100
 		}
 	}
 
