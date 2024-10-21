@@ -14,7 +14,7 @@ USA_marmon_herrington_organization = {
 	icon = GFX_idea_marmon_herrington
 	allowed = {	
 		tag = USA 
-
+		# tag = CAN
 	}
 }
 

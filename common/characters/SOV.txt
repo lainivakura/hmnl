@@ -205,7 +205,7 @@ characters = {
 					original_tag = SOV
 				}
 				available = {
-				OR {
+				OR = {
 					NOT = { SOV = { owns_state = 219} }
 					AND = {
 						date > 1943.7.1

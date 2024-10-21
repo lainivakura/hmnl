@@ -9741,7 +9741,7 @@ else = {
 			105 = { is_claimed_by = ROOT }
 			44 = { is_claimed_by = ROOT }
 			805 = { is_claimed_by = ROOT }
-			934 = { is_claimed_by = ROOT }
+			# 934 = { is_claimed_by = ROOT }
 		}
 
 		available = {

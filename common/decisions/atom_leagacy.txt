@@ -301,8 +301,6 @@ operations_atom = {
 			USA = {
 				transfer_state = 461
 				transfer_state = 462
-				transfer_state = 909
-				transfer_state = 910
 				462 = {
 					add_compliance = 100
 				}
@@ -322,12 +320,6 @@ operations_atom = {
 					add_compliance = 100
 				}
 				513 = {
-					add_compliance = 100
-				}
-				910 = {
-					add_compliance = 100
-				}
-				909 = {
 					add_compliance = 100
 				}
 			}

@@ -12,15 +12,15 @@ state={
 		victory_points = {
 			6009 1 
 		}
-		victory_points = {
-			3061 2 
-		}
-		victory_points = {
-			9183 1 
-		}
-		victory_points = {
-			6082 1 
-		}
+		# victory_points = {
+		# 	3061 2 
+		# }
+		# victory_points = {
+		# 	9183 1 
+		# }
+		# victory_points = {
+		# 	6082 1 
+		# }
 		victory_points = {
 			11211 1 
 		}
@@ -42,12 +42,12 @@ state={
 		victory_points = {
 			169 1 
 		}
-		victory_points = {
-			165 1 
-		}
-		victory_points = {
-			37 1 
-		}
+		# victory_points = {
+		# 	165 1 
+		# }
+		# victory_points = {
+		# 	37 1 
+		# }
 		buildings = {
 			infrastructure = 2
 			arms_factory = 3

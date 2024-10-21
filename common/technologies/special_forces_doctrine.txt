@@ -453,18 +453,16 @@ technologies = {
 				
 			}
 		}
-		field_hospital = {
+		field_hospital = {		
 			battalion_mult = {
-					
-				battalion_mult = {
-					category = category_mountaineers
-					#armor = 0.15
-					#experience_loss_factor = 0.5
-					default_morale = 0.1
-					max_organisation = 0.05
-				}
-			
+				category = category_mountaineers
+				#armor = 0.15
+				#experience_loss_factor = 0.5
+				default_morale = 0.1
+				max_organisation = 0.05
 			}
+			
+
 		}
 		signal_company = {
 			
@@ -840,7 +838,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		marine_commando = {
+		marine = {
 			breakthrough = 0.15
 			experience_loss_factor = -0.03
 		}
@@ -984,9 +982,9 @@ technologies = {
 			}
 		
 		}
-		marine_commando = {
-		soft_attack = 0.1
-		breakthrough = 0.15
+		marine = {
+			soft_attack = 0.1
+			breakthrough = 0.15
 		}
 		
 		
