@@ -1290,7 +1290,7 @@ characters={
 				original_tag = USA
 			}
 			traits = {
-				air_strategic_bombing_2
+				air_strategic_bombing_3
 			}
 			cost = 100
 			ai_will_do = {

@@ -6947,8 +6947,8 @@ generic_infantry_equipment_organization = {
 		mutually_exclusive = { generic_mio_trait_improved_small_arms_bullet_design }
 
 		equipment_bonus = {
-			ap_attack = 1
-			hard_attack = 1
+			ap_attack = 0.4
+			hard_attack = 0.2
 		}
 	}
 

@@ -3000,8 +3000,7 @@
 					else = {
 						add_tech_bonus = {
 							name = ROM_iar_80
-							bonus = 1.0
-							ahead_reduction = 2
+							bonus = 1.5
 							uses = 1
 							technology = improved_small_airframe
 						}
