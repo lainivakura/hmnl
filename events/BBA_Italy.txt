@@ -656,17 +656,17 @@ country_event = {
 											}
 										}
 									}
-934 = { #NORTHERN EPIRUS
-										OR = {
-											is_fully_controlled_by = ROOT
-											controller = {
-												is_subject_of = ROOT
-												hidden_trigger = { #To prevent unnecessary overcrowding
-													has_full_control_of_state = PREV
-												}
-											}
-										}
-									}
+# 934 = { #NORTHERN EPIRUS
+# 										OR = {
+# 											is_fully_controlled_by = ROOT
+# 											controller = {
+# 												is_subject_of = ROOT
+# 												hidden_trigger = { #To prevent unnecessary overcrowding
+# 													has_full_control_of_state = PREV
+# 												}
+# 											}
+# 										}
+# 									}
 								}
 							}
 						}

@@ -6103,9 +6103,9 @@ ITA_diplomacy_balkan_decision_category = {
 			805 = {
 				is_controlled_by = ITA
 			}
-			934 = {
-				is_controlled_by = ITA
-			}
+			# 934 = {
+			# 	is_controlled_by = ITA
+			# }
 		}
 
 		visible = {
