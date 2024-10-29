@@ -43,7 +43,7 @@ country_event = {
 					logistics_skill = 3
 					traits = { naval_invader infantry_leader panzer_leader }
 				}
-				create_corps_commander = {
+				create_field_marshal = {
 					name = "S.P. Isfaahan"
 					gfx = GFX_portrait_gre_markos_drakos
 					skill = 4
@@ -73,7 +73,7 @@ country_event = {
 					logistics_skill = 3
 					traits = { naval_invader  infantry_leader panzer_leader }
 					}
-				create_corps_commander = {
+				create_field_marshal = {
 					name = "M. T. Ball"
 					gfx = GFX_portrait_bul_angel_dotsev
 					skill = 4
@@ -115,7 +115,7 @@ country_event = {
 					planning_skill = 3
 					logistics_skill = 4
 					}
-					create_corps_commander = {
+					create_field_marshal = {
 					name = "Michael Cock"
 					portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 					traits={ infantry_leader commando organizer }
@@ -144,7 +144,7 @@ country_event = {
 					logistics_skill = 2
 					traits = { naval_invader armor_officer panzer_leader}
 					}
-				create_corps_commander = {
+				create_field_marshal = {
 					name = "S. M. Arthas"
 					gfx = GFX_POL_stanislav_kopanski
 					skill = 4
@@ -198,7 +198,7 @@ country_event = {
 					logistics_skill=5
 					legacy_id=4
 					}
-				create_corps_commander = {
+				create_field_marshal = {
 					name = "S.P. Isfaahan"
 					gfx = GFX_portrait_bul_asen_nikolov
 			traits={ trait_reckless media_personality armor_officer panzer_leader war_hero trickster trait_engineer}
@@ -230,7 +230,7 @@ country_event = {
 					logistics_skill=5
 					legacy_id=4
 					}
-				create_corps_commander = {
+				create_field_marshal = {
 					name = "M. T. Ball"
 					gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
 					traits={ brilliant_strategist armor_officer panzer_leader trickster trait_engineer organizer}
