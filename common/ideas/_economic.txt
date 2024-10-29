@@ -425,7 +425,9 @@ ideas = {
 		use_list_view = yes
 
 		uncontrolled_exports = {
-			
+			rule = {
+				can_access_market = no
+			}	
 			
 			allowed = {
 				always = no
@@ -464,6 +466,9 @@ ideas = {
 		}
 		
 		free_trade = {
+			rule = {
+				can_access_market = no
+			}
 			visible = {NOT = { original_tag = SOV}}
 			available = { NOT = {	tag = D01 }
 				NOT = { tag = SPR }
@@ -534,7 +539,9 @@ ideas = {
 				}
 				
 			}
-			
+			rule = {
+				can_access_market = no
+			}
 			
 			cost = 150
 			removal_cost = -1
@@ -620,7 +627,9 @@ ideas = {
 			visible = {NOT = { original_tag = SOV}}
 			cost = 150
 			removal_cost = -1
-			
+			rule = {
+				can_access_market = no
+			}
 			modifier = {
 				min_export = 0.1
 				industrial_capacity_factory = 0.07
@@ -665,7 +674,9 @@ ideas = {
 		
 		closed_economy = {
 			
-			
+			rule = {
+				can_access_market = no
+			}
 			available = {NOT = {	tag = D01 }
 				NOT = { tag = SPR }
 				NOT = { tag = TUR }
@@ -744,7 +755,9 @@ ideas = {
 
 			allowed = { original_tag = SOV }
 
-			
+			rule = {
+				can_access_market = no
+			}
 						
 			cost = 9999
 			removal_cost = -1
@@ -789,7 +802,9 @@ ideas = {
 
 		jap_eco_1 = {
 
-			
+			rule = {
+				can_access_market = no
+			}
 			allowed = { original_tag = JAP}
 			available = { tag = JAP }
 		
