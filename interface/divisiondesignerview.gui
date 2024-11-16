@@ -1432,6 +1432,18 @@ guiTypes = {
 		clipping = no
 
 		instantTextboxType = {
+			name = "count"
+			position = { x = 78 y = 6 }
+			textureFile = ""
+			font = "hoi4_typewriter16_inverted"
+			borderSize = { x = 0 y = 0 }
+			text = "count"
+			maxWidth = 86
+			maxHeight = 20
+			format = right
+			multiline = no
+		}
+		instantTextboxType = {
 			name = "label"
 			position = { x = 0 y = 6 }
 			textureFile = ""
@@ -1443,19 +1455,6 @@ guiTypes = {
 			format = left
 			multiline = no
 			fixedsize = yes
-		}
-	
-		instantTextboxType = {
-			name = "count"
-			position = { x = 78 y = 6 }
-			textureFile = ""
-			font = "hoi4_typewriter16_inverted"
-			borderSize = { x = 0 y = 0 }
-			text = "count"
-			maxWidth = 86
-			maxHeight = 20
-			format = right
-			multiline = no
 		}
 	}
 
