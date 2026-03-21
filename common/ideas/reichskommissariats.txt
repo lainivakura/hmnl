@@ -1,0 +1,91 @@
+ideas = {
+
+	country = {
+	
+		bohemia = {
+				picture = bohemia
+				modifier = {
+					production_factory_max_efficiency_factor = 0.05
+				}
+		}
+		
+		ggouvernement = {
+				picture = ggouvernement
+				modifier = {
+					industrial_capacity_factory = 0.05
+				}
+		}
+		
+		belgien = {
+				picture = belgien
+				modifier = {
+					production_speed_buildings_factor = 0.05
+				}
+		}
+		
+		niederlande = {
+				picture = niederlande
+				modifier = {
+					production_factory_efficiency_gain_factor = 0.05
+				}
+		}
+		
+		norwegen = {
+				picture = norwegen
+				modifier = {
+					specialization_nuclear_speed_factor = 0.1
+				}
+		}
+		
+		ostland = {
+				picture = ostland
+				modifier = {
+					conscription = 0.01
+				}
+		}
+		
+		ukraine = {
+				picture = ukraine
+				modifier = {
+					consumer_goods_factor = -0.1
+				}
+		}
+		
+		kaukasien = {
+				picture = kaukasien
+				modifier = {
+					fuel_gain_factor = 1.0
+				}
+		}
+		
+		moskowien = {
+				picture = moskowien
+				modifier = {
+					supply_factor = 0.05
+				}
+		}
+		
+		grossbritannien = {
+				picture = grossbritannien
+				modifier = {
+					industrial_capacity_dockyard = 0.05
+				}
+		}
+		
+		high_castle = {
+				picture = high_castle
+				modifier = {
+					industrial_capacity_factory = 0.05
+					industrial_capacity_dockyard = 0.05
+					production_factory_max_efficiency_factor = 0.05
+					production_factory_efficiency_gain_factor = 0.05
+					production_speed_buildings_factor = 0.05
+					specialization_nuclear_speed_factor = 0.1
+					fuel_gain_factor = 1.0
+					consumer_goods_factor = -0.1
+					conscription = 0.01
+					supply_factor = 0.05
+				}
+		}
+	}
+}

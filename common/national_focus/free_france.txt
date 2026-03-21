@@ -29,7 +29,7 @@
 			factor = 1
 		}
 		available = {
-			
+			has_country_leader = { ruling_only = yes character = FRA_charles_de_gaulle}
 		}
 		
 		bypass = {
@@ -41,15 +41,15 @@
 		completion_reward = {
 			if = {
 				limit = { not = { has_dlc = "Man the Guns" } }
-				add_manpower = 100000
+				add_manpower = 10000
 			}
 			else = {
-				add_manpower = 100000
+				add_manpower = 10000
 				add_legitimacy = 15
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 25000
+				amount = 5000
 			}
 		}
 	}
@@ -301,7 +301,10 @@
 					OR = {
 						is_controlled_by = ROOT
 						CONTROLLER = {
-							is_subject_of = ROOT
+							OR = {
+								is_in_faction_with = ROOT
+								is_subject_of = ROOT
+							}
 						}
 					}
 				}
@@ -356,7 +359,9 @@
 		}
 		
 		bypass = {
-
+			16 = {
+				is_controlled_by = ROOT
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -398,6 +403,12 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			IF = {
+				limit = {
+					has_idea = FRA_defeatism
+				}
+				remove_ideas = { FRA_defeatism }
+			}
 			load_focus_tree = french_focus
 			#TODO_GABRIEL: Make scripted effect to give correct focuses depending on left/right
 		}
@@ -579,7 +590,7 @@
 			SOV = {
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe
-					amount = 150
+					amount = 100
 					producer = FRA
 				}
 			}
@@ -604,15 +615,19 @@
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
+			OR = {
+				IF = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_legitimacy > 40
 				}
-				has_legitimacy > 40
+				ELSE = {
+					num_of_factories > 14
+				}
+				has_war = no
 			}
-			else = {
-				num_of_factories > 14
-			}
+			
 		}
 		
 		bypass = {

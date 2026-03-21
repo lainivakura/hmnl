@@ -1,0 +1,142 @@
+on_actions = {
+	
+
+
+	
+
+		on_startup = { 
+  
+		effect = {  JAP = {add_ideas = jap_eco}}
+
+
+		}
+
+		
+		
+		
+		
+		
+		on_startup = { 
+  
+		effect = {  every_country = {limit = {is_ai = no}  country_event = startup.institut.1 } }
+
+
+		}
+
+		on_startup = { 
+  
+		effect = {  FRA = {  add_ideas = FRA_antiguerre_HMV } }
+
+
+		}
+
+
+
+
+
+
+on_startup = {
+		effect = {
+			if = {
+				limit = { has_game_rule = {rule = HMV_game_mode option = HMV_annex }}
+				every_state = {	limit = { is_controlled_by = SAF } transfer_state_to = ENG }
+}
+
+
+
+  } }
+on_startup = {
+		effect = {
+			if = {
+				limit = { has_game_rule = {rule = HMV_game_mode option = HMV_annex }}
+				every_state = {	limit = { is_controlled_by = AST } transfer_state_to = ENG }
+}
+
+
+	
+
+
+  } }
+
+
+
+
+
+on_startup = { 
+  
+		effect = {  every_state = {limit = {compliance < 100}  set_compliance = 100}}
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  on_startup = { 
+  
+		effect = { SOV = { division_template = {
+					name = "Opolchenie"
+					division_names_group = SOV_PEN_01
+					is_locked = yes
+
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						
+					}
+				} }   }
+
+
+		}
+		 
+		 on_monthly = {
+effect = {		 
+    ENG = { IF = { limit = { date > 1941.6.1 } every_allied_country = { limit = {is_government_in_exile = yes is_ai = yes } ENG = {annex_country = {
+    target = PREV
+    transfer_troops = yes
+}} } }
+}
+
+} }
+
+
+
+
+
+
+
+
+		
+		
+		
+
+
+
+
+
+
+
+
+
+}

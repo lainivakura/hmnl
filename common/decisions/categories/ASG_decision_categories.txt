@@ -8,6 +8,5 @@ ASG_category = {
 	}
 	visible = {
 		is_debug = yes
-		# always = yes
 	}
 }

@@ -1,3 +1,4 @@
+
 characters={
 	ROM_gheorghe_tatarescu={
 		name=ROM_gheorghe_tatarescu
@@ -83,6 +84,7 @@ characters={
 		}
 		country_leader={
 			ideology=fascism_ideology
+			### traits={ anti_democrat }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -113,7 +115,7 @@ characters={
 		field_marshal={
 			traits={ logistics_wizard offensive_doctrine }
 			skill=4
-			attack_skill=3
+			attack_skill=4
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
@@ -130,12 +132,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter infantry_leader organizer}
-			skill=4
-			attack_skill=4
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
 			defense_skill=3
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -251,9 +253,9 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ offensive_doctrine infantry_leader trait_engineer}
+			traits={ offensive_doctrine }
 			skill=4
-			attack_skill=3
+			attack_skill=4
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
@@ -398,12 +400,11 @@ characters={
 		}
 
 		corps_commander={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
+			skill=3
+			attack_skill=3
+			defense_skill=2
 			planning_skill=2
-			logistics_skill=4
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -525,11 +526,23 @@ characters={
 			slot = political_advisor
 			idea_token = ROM_gheorghe_gheorghiu_dej
 			available = {
-				always = no
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+					}
+					has_completed_focus = ROM_appoint_soviet_friendly_government 
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
 			}
 			allowed = {
 				original_tag = ROM
-				always = no
 			}
 			traits = {
 				communist_revolutionary 
@@ -598,7 +611,6 @@ characters={
 		}
 	}
 
-	
 	ROM_mihail_sturdza={
 		name=ROM_mihail_sturdza
 		portraits={
@@ -614,7 +626,7 @@ characters={
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					has_completed_focus = ROM_appoint_german_friendly_government 
+					has_completed_focus = ROM_appoint_german_friendly_government
 				}
 				if = {
 					limit = {

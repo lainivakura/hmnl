@@ -50,7 +50,7 @@ weather_snow = { # on Region
 	truck_attrition_factor = 0.3
 }
 weather_blizzard = { # on Region
-	air_accidents = 0.3
+	air_accidents = 0.45 # 0.3
 	air_bombing_targetting = -0.7
 	air_detection = -0.3
 	air_mission_efficiency = -0.3
@@ -96,7 +96,7 @@ weather_mud = { # on Province
 	truck_attrition_factor = 5.0
 }
 weather_extreme_cold = { # on Province
-	army_attack_factor = -0.2
+	army_attack_factor = -0.35   #-0.2
 	breakthrough_factor = -0.3
 	dig_in_speed_factor = -0.6
 	local_org_regain = -0.05
@@ -105,7 +105,7 @@ weather_extreme_cold = { # on Province
 	winter_attrition = 0.25
 }
 weather_very_cold = { # on Province
-	army_attack_factor = -0.1
+	army_attack_factor = -0.25 #-0.1
 	breakthrough_factor = -0.15
 	dig_in_speed_factor = -0.3
 	winter_attrition = 0.25
@@ -116,14 +116,14 @@ weather_very_hot = { # on Province
 	supply_factor = -0.05
 }
 weather_extreme_hot = { # on Province
-	army_attack_factor = -0.1
+	army_attack_factor = -0.25 #-0.1
 	heat_attrition = 0.2
 	local_org_regain = -0.1
 	supply_consumption_factor = 0.5
 	truck_attrition_factor = 0.1
 }
 weather_ground_snow_medium = { # on Province
-	army_attack_factor = -0.2
+	army_attack_factor = -0.35 #-0.2
 	army_speed_factor = -0.2
 	army_attack_speed_factor = -0.25
 	breakthrough_factor = -0.15
@@ -133,7 +133,7 @@ weather_ground_snow_medium = { # on Province
 	dig_in_speed_factor = 0.05
 }
 weather_ground_snow_high = { # on Province
-	army_attack_factor = -0.4
+	army_attack_factor = -0.55 #-0.4
 	army_speed_factor = -0.5
 	army_attack_speed_factor = -0.5
 	breakthrough_factor = -0.3
@@ -154,11 +154,11 @@ flooded = { # on Province
 }
 
 unplanned_offensive = { # on Province
-	air_cas_present_factor = -0.75
-	army_attack_factor = -0.9
-	army_speed_factor = -0.75
-	ground_attack_factor = -0.75
-	local_org_regain = -0.5
+	air_cas_present_factor = -0.25
+	army_attack_factor = -0.25
+	army_speed_factor = -0.25
+	ground_attack_factor = -0.25
+	local_org_regain = -0.25
 }
 
 night = { # On province. Multiplied by amount of darkness.
@@ -200,7 +200,7 @@ non_core = {
 
 # On States that are controlled by a non-core country
 non_core_controller = {
-	local_building_slots_factor = -0.5
+	#local_building_slots_factor = -0.5
 
 	local_factories = -0.75
 	#local_manpower = -0.75
@@ -225,7 +225,7 @@ ROM_license_german_equipment = {
 
 	license_purchase_cost = 0 #base cost reduction
 	ai_license_acceptance = 20 #more to AI acceptance value.
-	license_production_speed = 0.15 #speed  increase for being a license
+	license_production_speed = 0.25 #speed  increase for being a license
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
 
@@ -311,7 +311,10 @@ free_license = {
 ITA_military_agreements = {
 	valid_relation_trigger = {
 		FROM = {
-			is_in_faction_with = ROOT
+			OR = {
+				is_in_faction_with = ROOT
+				has_government = ROOT
+			}
 		}
 	}
 	license_purchase_cost = 0 #base cost reduction
@@ -324,7 +327,7 @@ ITA_military_agreements = {
 stability_good_modifier = {
 	industrial_capacity_factory = 0.20
 	industrial_capacity_dockyard = 0.20
-	consumer_goods_expected_value = -0.05
+	consumer_goods_factor = -0.20
 	political_power_factor = 0.1
 }
 
@@ -340,6 +343,7 @@ war_support_good_modifier = {
 	army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.1
 	command_power_gain_mult = 0.5
+	surrender_limit = 0.1
 }
 
 war_support_bad_modifier = {
@@ -347,7 +351,7 @@ war_support_bad_modifier = {
 	#army_noncore_attack_factor = -0.50  # Attacking or defending on non-core takes a huge penalty.
 	#army_noncore_defence_factor = -0.50
 	command_power_gain_mult = -0.95
-	surrender_limit = -0.3
+	surrender_limit = -0.1	
 }
 
 war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
@@ -480,6 +484,7 @@ air_wing_experience_bonus_max = {
 	#air_defence_factor = 0.2
 	air_agility_factor = 0.3
 	air_night_penalty = -0.2
+	air_accidents_factor = -1.0
 	#air_weather_penalty = -0.3
 }
 
@@ -488,6 +493,7 @@ air_wing_experience_malus_min = {
 	#air_defence_factor = -0.15
 	air_agility_factor = -0.15
 	air_night_penalty = 0.15
+	air_accidents_factor = 0.10
 	#air_weather_penalty = 0.15
 }
 
@@ -579,8 +585,6 @@ intel_network_state_level_bonus = {
 
 # modifiers applied to enemy divisions in an intel network
 intel_network_state_level_penalty = {
-	max_planning_factor = 0
-	max_dig_in = 0
 }
 
 # modifiers enabled by the creation of the intelligence agency
@@ -592,7 +596,6 @@ created_intelligence_agency = {
 # Modifiers enabled at state level when an operative is assigned to the root out resistance mission
 root_out_resistance_mission_modifier = {
 	resistance_target = -0.1
-	compliance_gain = 0.008
 }
 
 # modifiers active when an operative has the nationality of the nation it is performing a mission in.
@@ -725,4 +728,31 @@ CHL_from_support_chile_static_modifier = {
 	send_volunteers_tension = -0.6
 	send_volunteer_divisions_required = -0.9
 	send_volunteer_factor = 0.6
+}
+
+# This is scaled based on support ratio
+naval_general_support = {
+	max_organisation = 0.2
+	navy_max_range_factor = 0.2
+	naval_morale_factor = 0.2
+}
+
+# This is scaled based on support ratio
+naval_repair_support = {
+	naval_critical_effect_factor = -0.25
+	naval_ship_recovery_chance = 0.1
+	naval_attrition = -0.075
+}
+
+### SEA 
+
+JAP_support_ethiopia_static_modifier = {
+	send_volunteers_tension = -0.5
+	send_volunteer_divisions_required = -0.25
+	send_volunteer_factor = 0.25
+}
+
+the_great_wall = {
+	dig_in_speed_factor = 0.15
+	max_dig_in_factor = 0.1
 }

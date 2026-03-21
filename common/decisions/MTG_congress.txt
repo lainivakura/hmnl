@@ -8,10 +8,16 @@ USA_congress = {
 			}
 			not = {
 				has_decision = USA_medium_lobby_effort
+				has_decision = USA_small_lobby_effort_auto
+				has_country_flag = lobby_1_flag
+				has_country_flag = lobby_2_flag
 			}
 			OR = {
 				political_power_daily > 0.3
 				has_political_power > 10
+			}
+			NOT = {
+				has_country_flag = lobby_1_flag
 			}
 		}
 		cost = 0
@@ -38,6 +44,89 @@ USA_congress = {
 			USA_congress_small_support = yes
 		}
 	}
+	USA_small_lobby_effort_auto = {
+		icon = generic_political_discourse
+		available = {
+			NOT = {
+				congress_auto_support_trigger = yes
+			}
+					NOT = {
+						has_country_flag = lobby_1_flag
+						has_decision = USA_small_lobby_effort
+						has_decision = USA_small_lobby_effort_auto
+						has_decision = USA_medium_lobby_effort
+						has_country_flag = lobby_2_flag
+					}
+					OR = {
+						political_power_daily > 0.3
+						has_political_power > 10
+					}
+					NOT = {
+						has_country_flag = lobby_1_flag
+					}
+		}
+		cost = 0
+		modifier = {
+			political_power_gain = -0.3
+		}
+		days_remove = 29
+		
+		cancel_trigger = {
+			congress_auto_support_trigger = yes
+		}
+		
+		cancel_effect = {
+			clr_country_flag = lobby_1_flag
+			if = {
+				limit = {
+					has_country_flag = lobby_2_flag
+				}
+				clr_country_flag = lobby_2_flag
+				clr_country_flag = lobby_1_flag
+			}
+		}
+		
+		remove_effect = {
+			USA_congress_small_support = yes
+			hidden_effect = {
+					activate_mission = USA_small_lobby_effort_auto
+			}
+			if = {
+				limit = {
+					has_country_flag = lobby_2_flag
+				}
+				clr_country_flag = lobby_2_flag
+			}
+		}
+	}
+	USA_flag_set = {
+		icon = generic_political_discourse
+		available = {
+		}
+		cost = 0
+		visible = {
+			has_decision = USA_small_lobby_effort_auto
+			NOT = {
+				has_country_flag = lobby_1_flag
+			}
+		}
+		complete_effect = {
+			set_country_flag = lobby_1_flag
+		}
+	}
+	USA_flag_clear = {
+		icon = generic_political_discourse
+		available = {
+		}
+		cost = 0
+		visible = {
+			has_country_flag = lobby_1_flag
+		}
+		complete_effect = {
+			clr_country_flag = lobby_1_flag
+			set_country_flag = lobby_2_flag
+		}
+	}
 	USA_medium_lobby_effort = {
 		icon = generic_political_discourse
 		available = {
@@ -47,10 +136,16 @@ USA_congress = {
 			}
 			not = {
 				has_decision = USA_small_lobby_effort
+				has_decision = USA_small_lobby_effort_auto
+				has_country_flag = lobby_1_flag
+				has_country_flag = lobby_2_flag
 			}
 			OR = {
 				political_power_daily > 0.75
 				has_political_power > 35
+			}
+			NOT = {
+				has_country_flag = lobby_1_flag
 			}
 		}
 		cost = 0
@@ -164,7 +259,7 @@ USA_congress = {
 			}
 		}
 		days_remove = 90
-		modifier = { consumer_goods_expected_value = 0.03 }
+		modifier = { consumer_goods_factor = 0.05 }
 		remove_effect = {
 			USA_congress_small_support = yes
 		}
@@ -209,7 +304,7 @@ USA_congress = {
 				factor = 0
 			}
 		}
-		modifier = { consumer_goods_expected_value = -0.05 }
+		modifier = { consumer_goods_factor = -0.10 }
 		remove_effect = {
 			USA_congress_medium_opposition = yes
 		}

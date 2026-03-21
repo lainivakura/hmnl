@@ -24,7 +24,7 @@
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 5
 #
 #		ai_will_do = {
 #			factor = 1
@@ -63,7 +63,7 @@
 		x = 1
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -71,7 +71,7 @@
 
 		available = {
 			OR = {
-				threat > 0.2
+				threat > 0.1
 				NOT = { has_government = democratic }
 			}
 		}
@@ -129,7 +129,7 @@
 		y = 2
 		relative_position_id = SAF_war_measures_act
 
-		cost = 1
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -183,7 +183,7 @@
 		y = 4
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -213,11 +213,12 @@
 		id = SAF_expand_the_cape_corps
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = SAF_reconstitute_the_cape_corps }
+		mutually_exclusive = { focus = SAF_outlaw_strikes }
 		x = 0
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -244,12 +245,12 @@
 		id = SAF_outlaw_strikes
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = SAF_work_for_all_poor }
-		# mutually_exclusive = { focus = SAF_expand_the_cape_corps }
+		mutually_exclusive = { focus = SAF_expand_the_cape_corps }
 		x = 2
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -288,7 +289,7 @@
 		x = 5
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -431,7 +432,7 @@
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -463,7 +464,7 @@
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -496,16 +497,15 @@
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0
 		}
 
 		available = {
-			# NOT = { has_war_with = ENG }
-			# ENG = { is_puppet = no }
-			always = no
+			NOT = { has_war_with = ENG }
+			ENG = { is_puppet = no }
 
 		}
 		
@@ -533,11 +533,11 @@
 		id = SAF_native_laws_amendment_act
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SAF_police_windhoek focus = SAF_support_the_afrikaner_broederbond }
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -565,11 +565,11 @@
 		id = SAF_work_for_all_poor
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = SAF_native_laws_amendment_act }
-		x = 0
+		x = -1
 		y = 4
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -600,14 +600,14 @@
 	#### GO FASCIST SECTION ####
 	############################
 
-	focus = {allow_branch = {always = no}
+	focus = {
 		id = SAF_abandon_westminster
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		mutually_exclusive = { focus = SAF_support_the_policy_of_appeasement }
 		x = 7
 		y = 0
-
-		cost = 10
+allow_branch = {always = no}
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.5
@@ -652,7 +652,7 @@
 		y = 1
 		relative_position_id = SAF_abandon_westminster
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.5
@@ -695,7 +695,7 @@
 		y = 1
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -748,7 +748,7 @@
 		y = 2
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -776,11 +776,11 @@
 		id = SAF_voortrekker_monument
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SAF_native_laws_amendment_act focus = SAF_support_ossewabrandwag }
-		x = -1
+		x = -2
 		y = 2
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -812,7 +812,7 @@
 		y = 3
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.45
@@ -920,7 +920,7 @@
 		y = 3
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.75
@@ -988,7 +988,7 @@
 		y = 4
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1089,7 +1089,7 @@
 		y = 4
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1126,7 +1126,7 @@
 		y = 4
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1165,7 +1165,7 @@
 			GER = { has_government = fascism }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1200,7 +1200,7 @@
 		y = 5
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1240,7 +1240,7 @@
 		y = 5
 		relative_position_id = SAF_support_the_afrikaner_broederbond
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1303,7 +1303,7 @@
 		y = 1
 		relative_position_id = SAF_abandon_westminster
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.5
@@ -1406,7 +1406,7 @@
 		y = 1
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1443,7 +1443,7 @@
 		y = 2
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1476,7 +1476,7 @@
 		y = 2
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1520,7 +1520,7 @@
 		y = 3
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 34
@@ -1578,7 +1578,7 @@
 		y = 4
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1598,8 +1598,18 @@
         search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = SAF_faction_uotap
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_SAF_faction_uotap
+				add_faction_initiative = 1
+			}
+			ELSE = {
+				set_rule = { can_create_factions = yes }
+				create_faction = SAF_faction_uotap
+			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.264 }
 			}
@@ -1613,7 +1623,7 @@
 		y = 5
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1657,7 +1667,7 @@
 		y = 6
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1698,7 +1708,7 @@
 		y = 5
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1746,7 +1756,7 @@
 		y = 3
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -1792,7 +1802,7 @@
 		y = 4
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1823,7 +1833,7 @@
 		y = 5
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1849,16 +1859,32 @@
 
 		completion_reward = {
 			add_ideas = SAF_soviet_advisers
-			add_doctrine_cost_reduction = {
-				name = SAF_invite_soviet_advisers
-				cost_reduction = 0.25
-				uses = 2
-				category = cat_mass_assault
+			if = {
+				limit = {
+					has_doctrine = mass_assault
+				}
+				add_mastery_bonus = {
+					name = SAF_invite_soviet_advisers
+					bonus = 0.1
+					days = 180
+				grand_doctrine = mass_assault
+				}
 			}
+				else = {
+					add_mastery_bonus = {
+					name = SAF_invite_soviet_advisers
+					bonus = 0.05
+					days = 180
+				}
+			}
+			
+
+			
+			
 			add_doctrine_cost_reduction = {
 				name = SAF_invite_soviet_advisers
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -1871,7 +1897,7 @@
 		y = 6
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1914,7 +1940,7 @@
 		y = 4
 		relative_position_id = SAF_empower_the_workers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1968,6 +1994,7 @@
 			}
 		}
 	}
+	
 	############################
 	##### INDUSTRY SECTION #####
 	############################
@@ -1975,10 +2002,10 @@
 	focus = {
 		id = SAF_south_african_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 10
+		x = 9
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -1999,6 +2026,24 @@
         search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+
+			IF = {
+				limit = {
+					NOT = { has_tech = basic_train }
+				}
+				set_technology = { 
+					basic_train = 1
+					popup = yes
+				}
+			}
+			add_equipment_to_stockpile = { 
+				type = train_equipment_1
+				amount = 15 
+				producer = ENG
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = SAF_south_african_railways
 		}
@@ -2012,7 +2057,7 @@
 		y = 1
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2036,10 +2081,10 @@
 				limit = {
 					has_state_flag = SAF_expand_the_mining_industry_IC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2054,10 +2099,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_expand_the_mining_industry_IC
@@ -2083,7 +2128,7 @@
 		y = 1
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2102,15 +2147,28 @@
 		available_if_capitulated = no
         search_filters = {  FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
-		completion_reward = {			
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = SAF_expand_the_mining_industry_IC
+			}			
 			add_tech_bonus = {
 				name = SAF_heavy_engineering
 				bonus = 1.0
 				uses = 1
-				technology = concentrated_industry4
-				technology = dispersed_industry4
-				technology = concentrated_industry3
-				technology = dispersed_industry3
+				category = industry
 			}
 		}
 	}
@@ -2123,7 +2181,7 @@
 		y = 2
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2163,6 +2221,26 @@
 					instant_build = yes
 				}
 			}
+			random_state = {
+				limit = {
+					has_state_flag = SAF_infrastructure_effort_Inf3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = SAF_infrastructure_effort_Inf4
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 
 		completion_reward = {
@@ -2194,6 +2272,36 @@
 					}
 					set_state_flag = SAF_infrastructure_effort_Inf2
 				}
+				random_neighbor_state = { # done like this to prevent double selection of previous state
+					limit = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = SAF_infrastructure_effort_Inf3
+				}
+				random_neighbor_state = { # done like this to prevent double selection of previous state
+					limit = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = SAF_infrastructure_effort_Inf4
+				}
 			}
 		}
 	}
@@ -2206,7 +2314,7 @@
 		y = 3
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2230,10 +2338,10 @@
 				limit = {
 					has_state_flag = SAF_armament_effort_AF
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2248,10 +2356,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_armament_effort_AF
@@ -2267,7 +2375,7 @@
 		y = 3
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -2305,7 +2413,7 @@
 		y = 4
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2329,10 +2437,10 @@
 				limit = {
 					has_state_flag = SAF_pretoria_arms_AF
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -2347,10 +2455,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = SAF_pretoria_arms_AF
@@ -2366,7 +2474,7 @@
 		y = 4
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -2398,7 +2506,7 @@
 		y = 5
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 45
@@ -2430,7 +2538,7 @@
 		y = 6
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -2450,11 +2558,24 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = SAF_establish_the_atomics_energy_board
-				bonus = 1.0
-				uses = 2
-				category = nuclear
+			if = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = SAF_establish_the_atomics_energy_board
+					bonus = 0.5
+					uses = 1
+					category = nuclear
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.75
+				}
 			}
 		}
 	}
@@ -2463,11 +2584,11 @@
 		id = SAF_the_cape_defense_institute
 		icon = GFX_focus_research
 		prerequisite = { focus = SAF_establish_the_atomics_energy_board }
-		x = -1
+		x = 0
 		y = 7
 		relative_position_id = SAF_south_african_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -2498,8 +2619,8 @@
 		x = 1
 		y = 7
 		relative_position_id = SAF_south_african_railways
-
-		cost = 10
+		allow_branch = {always = no}
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2540,10 +2661,10 @@
 	focus = {
 		id = SAF_special_service_battalion
 		icon = GFX_goal_generic_army_doctrines
-		x = 15
+		x = 13
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2581,7 +2702,7 @@
 		y = 1
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2618,7 +2739,7 @@
 		y = 1
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2659,7 +2780,7 @@
 		y = 2
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2697,7 +2818,7 @@
 		y = 3
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2734,7 +2855,7 @@
 		y = 3
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2771,7 +2892,7 @@
 		y = 4
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2809,7 +2930,7 @@
 		y = 5
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 7
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2841,12 +2962,12 @@
 	focus = {
 		id = SAF_south_african_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = SAF_equipment_effort focus = SAF_sa_engineer_corps }
+		prerequisite = { focus = SAF_equipment_effort }
 		x = 1
 		y = 5
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2869,10 +2990,18 @@
 			add_tech_bonus = {
 				name = SAF_south_african_special_forces
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = para_tech
 				category = marine_tech
 				category = mountaineers_tech
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = special_forces_doctrine
+				}
 			}
 		}
 	}
@@ -2885,7 +3014,7 @@
 		y = 6
 		relative_position_id = SAF_special_service_battalion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2922,10 +3051,10 @@
 	focus = {
 		id = SAF_commit_to_the_five_year_plan
 		icon = GFX_goal_generic_build_airforce
-		x = 20
+		x = 17
 		y = 0	
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2998,7 +3127,7 @@
 		y = 1
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.4
@@ -3036,7 +3165,7 @@
 		y = 1
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.6
@@ -3075,7 +3204,7 @@
 		y = 2
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3096,11 +3225,12 @@
 
 		completion_reward = {
 			air_experience = 25
-			add_doctrine_cost_reduction = {
+
+			add_mastery_bonus = {
 				name = SAF_perfect_the_cab_rank_technique
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_battlefield_support
+				bonus = 0.1
+				days = 180
+				track = heavy_aircraft
 			}
 		}
 	}
@@ -3113,7 +3243,7 @@
 		y = 3
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3150,7 +3280,7 @@
 		y = 3
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3187,7 +3317,7 @@
 		y = 4
 		relative_position_id = SAF_commit_to_the_five_year_plan
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3225,7 +3355,7 @@
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 25
+		x = 21
 		y = 0		
 
 		cost = 5
@@ -3300,7 +3430,7 @@
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.8
@@ -3320,12 +3450,14 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+
+			add_mastery_bonus = {
 				name = SAF_protect_the_trade
-				cost_reduction = 0.5
-				uses = 1
-				category = convoy_defense_tree
+				bonus = 0.1
+				days = 240
+				track = screens
 			}
+			
 		}
 	}
 
@@ -3338,7 +3470,7 @@
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.2
@@ -3362,12 +3494,13 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+			add_mastery_bonus = {
 				name = SAF_disrupt_the_trade
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_trade_interdiction
+				bonus = 0.1
+				days = 240 
+				track = submarines
 			}
+			
 		}
 	}
 
@@ -3379,7 +3512,7 @@
 		y = 2
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3465,7 +3598,7 @@
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3503,7 +3636,7 @@
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3546,7 +3679,7 @@
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3570,7 +3703,7 @@
 				name = SAF_prepare_overseas_offensive
 				cost_reduction = 0.5
 				uses = 1
-				category = convoy_defense_tree
+				category = naval_doctrine
 			}
 			add_tech_bonus = {
 				name = SAF_prepare_overseas_offensive
@@ -3591,7 +3724,7 @@
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

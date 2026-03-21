@@ -1,0 +1,25 @@
+Doctriny_za_opyt = {
+	icon = GFX_decision_JAP_army_faction
+	picture = GFX_decision_cat_picture_NOR_fascist_war
+	priority = 100
+	visible = {
+		always = yes
+		}
+		allowed = {
+		always = yes
+	}
+	}
+
+
+	VIC_dec_HMV = {
+	icon = GFX_decision_category_generic_industry
+	
+	priority = 100
+	visible = {
+		always = yes
+		}
+		allowed = {
+		tag = GER
+	}
+	}
+	

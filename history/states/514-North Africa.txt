@@ -1,0 +1,19 @@
+state = {
+	id = 514
+	name = "STATE_514" # Algerian Desert
+	manpower = 1
+	
+	state_category = wasteland
+	impassable = yes
+	force_link_ownership_to = 513 # Tlemcen
+
+	history={
+		owner = HMV
+	}
+
+	provinces = {
+		1958 2049 5035 5095 8088 10731 12711 12842 
+	}
+
+	local_supplies = 0.0 
+}

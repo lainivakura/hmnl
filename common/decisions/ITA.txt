@@ -763,7 +763,7 @@ ITA_missiolinis = {
 		}
 
 		available = { #GOAL
-			custom_trigger_tooltip = { #TODO_Manu: This should be replaced by the appropriate check once Red king merges stuff (Factories BUILD check)
+			custom_trigger_tooltip = {
 				tooltip = ITA_missiolini_strengthen_heavy_industry_trigger_tt
 				num_of_civilian_factories > ROOT.ITA_missiolinis_required_civs
 			}
@@ -811,24 +811,15 @@ ITA_missiolinis = {
 		}
 
 		available = { #GOAL
-			#has_army_manpower = { size > ROOT.ITA_missiolinis_fielded_manpower_goal } #1kk #TODO_Manu: Code support to use vars in has_army_manpower
-			#if = { #FIRST TIME - FIXED AMOUNT #TODO_Manu: NEED CODE SUPPORT (see line above)
-			#	limit = {
-			#		NOT = { has_country_flag = ITA_missiolini_strengthen_the_army_repeatable_flag } #First time it's a fixed amopunt. Then if the mission is repeated it will require +500k MP in the field (compare to current)
-			#	}
-				if = {
-					limit = {
-						ITA_has_missiolini_easier_goals = yes
-					}
-					has_army_manpower = { size > 650000 } #650k
+			if = {
+				limit = {
+					ITA_has_missiolini_easier_goals = yes
 				}
-				else = {
-					has_army_manpower = { size > 750000 } #750k
-				}
-			#}
-			#else = { #IF REPEATING
-			#	has_army_manpower = { size > 1000000 } #TODO_Manu: Current MP + 500 -> Code Support for this (has_army_manpower does not take vars)
-			#}
+				has_army_manpower = { size > 650000 } #650k
+			}
+			else = {
+				has_army_manpower = { size > 750000 } #750k
+			}
 		}
 
 		activation = {
@@ -873,7 +864,7 @@ ITA_missiolinis = {
 		}
 
 		available = { #GOAL
-			has_equipment = { #TODO_Manu: Code Support to also get the trucks in the field // Alternatively, check for trucks produced (Code support too!)
+			has_equipment = {
 				motorized_equipment_1 > ROOT.ITA_missiolinis_trucks_to_produce
 			}
 		}
@@ -1119,7 +1110,7 @@ ITA_missiolinis = {
 				has_tech = construction5
 			}
 			else = { #Absurd fallback just in case
-				has_tech = nukes
+				is_special_project_completed = sp:sp_nuclear_bomb
 			}
 		}
 
@@ -1232,6 +1223,84 @@ ITA_missiolinis = {
 	}
 
 	# Occupy Albania
+	ITA_missiolini_occupy_albania = {
+		icon = GFX_decision_infiltrate_state
+		allowed = {
+			tag = ITA
+		}
+
+		visible = {
+			ITA_missiolinis_system_available = yes
+		}
+
+		available = { #GOAL
+			44 = { #ALBANIA
+				OR = {
+					is_fully_controlled_by = ROOT
+					controller = {
+						is_subject_of = ROOT
+						hidden_trigger = { #To prevent unnecessary overcrowding
+							has_full_control_of_state = PREV
+						}
+					}
+				}
+			}
+			805 = { #NORTHERN EPIRUS
+				OR = {
+					is_fully_controlled_by = ROOT
+					controller = {
+						is_subject_of = ROOT
+						hidden_trigger = { #To prevent unnecessary overcrowding
+							has_full_control_of_state = PREV
+						}
+					}
+				}
+			}
+			934 = { #SHKÖDER
+				OR = {
+					is_fully_controlled_by = ROOT
+					controller = {
+						is_subject_of = ROOT
+						hidden_trigger = { #To prevent unnecessary overcrowding
+							has_full_control_of_state = PREV
+						}
+					}
+				}
+			}
+		}
+
+		activation = {
+			always = no
+		}
+
+		cancel_if_not_visible = yes
+		is_good = no #Tooltip purposes
+		selectable_mission = no
+		days_mission_timeout = ITA_missiolinis_default_days
+
+		cosmetic_tag = ALB
+		cosmetic_ideology = neutrality
+
+		timeout_effect = { #MISSION FAILS
+			effect_tooltip = {
+				ITA_missiolini_occupy_albania_failure_effect = yes
+			}
+
+			hidden_effect = {
+				country_event = { id = BBA_italy_missiolinis.102 hours = 1 }
+			}
+		}
+
+		complete_effect = { #MISSION SUCCEEDS
+			effect_tooltip = {
+				ITA_missiolini_occupy_albania_success_effect = yes
+			}
+
+			hidden_effect = {
+				country_event = { id = BBA_italy_missiolinis.103 hours = 1 }
+			}
+		}
+	}
 
 	# Occupy Dalmatia
 	ITA_missiolini_occupy_dalmatia = {
@@ -3571,65 +3640,64 @@ ITA_balance_of_power_category = {
 ETH_italian_occupation_category = {
 	#Expand Regional Control
 	ITA_expand_regional_control = {
-		# icon = GFX_decision_oppression
-		# target_trigger = {
-		# 	FROM = {
-		# 		owner = {
-		# 			tag = ETH # For now - change if making it generic
-		# 			is_government_in_exile = yes
-		# 		}
-		# 		is_fully_controlled_by = ROOT
-		# 	}
-		# }
-		# target_root_trigger = { tag = ITA } # For now - change if making it generic
-		# state_target = yes
-		# on_map_mode = map_only
+		icon = GFX_decision_oppression
+		target_trigger = {
+			FROM = {
+				owner = {
+					tag = ETH # For now - change if making it generic
+					is_government_in_exile = yes
+				}
+				is_fully_controlled_by = ROOT
+			}
+		}
+		target_root_trigger = { tag = ITA } # For now - change if making it generic
+		state_target = africa
+		on_map_mode = map_only
 
-		# cost = 75
-		# days_remove = 90
+		cost = 75
+		days_remove = 90
 
-		# visible = {
-		# 	has_completed_focus = ITA_triumph_in_africa_bba
-		# }
+		visible = {
+			has_completed_focus = ITA_triumph_in_africa_bba
+		}
 
-		# available = {
-		# 	NOT = { has_country_flag = expanding_regional_control_flag }
-		# 	FROM = {
-		# 		compliance > 60
-		# 		any_neighbor_state = { is_owned_by = ROOT }
-		# 		owner = {
-		# 			#has_legitimacy < 60
-		# 			faction_leader = { NOT = { has_war_with = ROOT } }
-		# 		}
-		# 	}
-		# }
+		available = {
+			NOT = { has_country_flag = expanding_regional_control_flag }
+			FROM = {
+				compliance > 60
+				any_neighbor_state = { is_owned_by = ROOT }
+				var:ETH.host_nation = {
+					NOT = { has_war_with = ROOT }
+				}
+			}
+		}
 
-		# cancel_trigger = { FROM = { NOT = { is_controlled_by = ROOT } } }
+		cancel_trigger = { FROM = { NOT = { is_controlled_by = ROOT } } }
 
-		# complete_effect = {
-		# 	set_country_flag = expanding_regional_control_flag
-		# 	set_variable = { state_integrated = FROM }
-		# 	hidden_effect = {
-		# 		FROM = { owner = { activate_mission = ETH_italian_control_mission } } # Starts "warning timer" for Original owner
-		# 	}
-		# }
+		complete_effect = {
+			set_country_flag = expanding_regional_control_flag
+			set_variable = { state_integrated = FROM }
+			hidden_effect = {
+				FROM = { owner = { activate_mission = ETH_italian_control_mission } } # Starts "warning timer" for Original owner
+			}
+		}
 
-		# remove_effect = {
-		# 	FROM = { set_state_owner_to = ROOT }
-		# 	clr_country_flag = expanding_regional_control_flag
-		# }
+		remove_effect = {
+			FROM = { set_state_owner_to = ROOT }
+			clr_country_flag = expanding_regional_control_flag
+		}
 
-		# ai_will_do = {
-		# 	base = 10
+		ai_will_do = {
+			base = 10
 
-		# 	modifier = {
-		# 		NOT = {
-		# 			is_historical_focus_on = no
-		# 			has_war_with_major = no
-		# 		}
-		# 		factor = 25
-		# 	}
-		# }
+			modifier = {
+				NOT = {
+					is_historical_focus_on = no
+					has_war_with_major = no
+				}
+				factor = 25
+			}
+		}
 	}
 
 	#Discredit Haile Selassie
@@ -3686,11 +3754,11 @@ ETH_italian_occupation_category = {
 			}
 		}
 		target_root_trigger = { tag = ITA } # For now - change if making it generic
-		state_target = yes
+		state_target = any_controlled_state
 		on_map_mode = map_only
 		fire_only_once = yes # Only once per State
 		available = {
-			NOT = { has_country_flag = ETH_investments_in_progress_flag }
+			#NOT = { has_country_flag = ETH_investments_in_progress_flag }
 			has_completed_focus = ITA_develop_ethiopia
 		}
 
@@ -4545,7 +4613,6 @@ ITA_colonial_management_dec_cat = {
 
 		available = {
 			has_completed_focus = ITA_ministry_of_italian_africa
-			has_completed_focus = ITA_the_new_emperor_of_ethiopia
 			custom_trigger_tooltip = {
 				tooltip = aoi_required_ethiopian_states
 				AND = {
@@ -4687,113 +4754,8 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		complete_effect = {
-
-			custom_effect_tooltip = aoi_founded_tt
-
-
-
-			hidden_effect = {
-				set_global_flag = italian_east_africa_flag
-
-				# Shewa
-				AOI = {
-					transfer_state = 271
-				}
-
-				# Wello
-				AOI = {
-					transfer_state = 843
-				}
-
-				# Afar
-				AOI = {
-					transfer_state = 908
-				}
-
-				# Tigray
-				AOI = {
-					transfer_state = 842
-				}
-
-				# Begemder
-				AOI = {
-					transfer_state = 841
-				}
-
-				# Eritrea
-				AOI = {
-					transfer_state = 550
-				}
-
-				# Gojjam
-				AOI = {
-					transfer_state = 840
-				}
-
-				# Welega
-				AOI = {
-					transfer_state = 839
-				}
-
-				# Illubabor-Kaffa
-				AOI = {
-					transfer_state = 838
-				}
-
-				# Sidamo
-				AOI = {
-					transfer_state = 837
-				}
-
-				# Bale
-				AOI = {
-					transfer_state = 836
-				}
-
-				# Hararghe
-				AOI = {
-					transfer_state = 835
-				}
-
-				# Somaliland
-				AOI = {
-					transfer_state = 559
-				}
-
-				# Jubaland
-				AOI = {
-					transfer_state = 844
-				}
-
-				set_autonomy = {
-				    target = AOI
-				    autonomy_state = autonomy_puppet
-				    end_wars = no
-				    end_civil_wars = no
-				}
-
-				AOI = {
-					add_manpower = 100000
-					add_ideas = {
-						AOI_enrico_cerulli
-						AOI_africa_orientale_italiana_idea
-					}
-					add_offsite_building = { type = industrial_complex level = 4 }
-					add_offsite_building = { type = arms_factory level = 4 }
-					add_equipment_to_stockpile = {
-					    type = infantry_equipment
-					    amount = 5000
-					    producer = ITA
-					}
-					if = {
-						limit = {
-							has_dlc = "La Resistance"
-						}
-						create_intelligence_agency = yes
-					}
-					set_cosmetic_tag = AOI_Italian
-				}
-			}
+		every_state = {limit = {is_core_of = ETH} set_compliance = 100}
+			
 		}
 
 		ai_will_do = {
@@ -5479,10 +5441,6 @@ ITA_naval_cooperation_programs_dec_cat = {
 			}
 		}
 
-		allowed = {
-			has_dlc = "Man the Guns"
-		}
-
 		visible = {
 			NOT = { FROM = { has_country_flag = ITA_midget_submarines_flag } } #Used inside visible trigger to check continuously and prevent exploits
 		}
@@ -5770,10 +5728,11 @@ ITA_diplomacy_balkan_decision_category = {
 				}
 				is_subject = no
 			}
+			is_subject = no
 		}
 
 		visible = {
-
+always = no
 		}
 
 		cost = ITA_send_ultimatum_to_country_cost
@@ -5903,6 +5862,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		available = {
+			is_subject = no
 			CRO = {
 				exists = yes
 				NOT = { has_war_with = ITA }
@@ -6103,9 +6063,9 @@ ITA_diplomacy_balkan_decision_category = {
 			805 = {
 				is_controlled_by = ITA
 			}
-			# 934 = {
-			# 	is_controlled_by = ITA
-			# }
+			934 = {
+				is_controlled_by = ITA
+			}
 		}
 
 		visible = {
@@ -6125,50 +6085,8 @@ ITA_diplomacy_balkan_decision_category = {
 
 		cost = 50
 
-		complete_effect = {
-			ALB = {
-				transfer_state = 44
-				transfer_state = 805
-				transfer_state = 934
-				IF = {
-					limit = {
-						802 = {
-							is_controlled_by = ITA
-						}
-					}
-					transfer_state = 802
-				}
-				add_ideas = ITA_ALB_italian_settlers
-			}
-			802 = {
-				add_core_of = ALB
-			}
-			IF = {
-				limit = {
-					has_dlc = "Together for Victory"
-				}
-				ITA = {
-					set_autonomy = {
-					    target = ALB
-					    autonomy_state = autonomy_reichsprotectorate
-					    end_wars = no
-					    end_civil_wars = no
-					}
-				}
-			}
-			IF = {
-				limit = {
-					NOT = {
-						has_dlc = "Together for Victory"
-					}
-				}
-				ITA = {
-					puppet = ALB
-				}
-			}
-			hidden_effect = {
-				set_country_flag = ITA_established_albania
-			}
+		complete_effect = { set_country_flag = ITA_established_albania
+			every_state = {limit = {is_core_of = ALB } set_compliance = 100 } 
 		}
 	}
 
@@ -6204,6 +6122,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		visible = {
+		always = no
 			ITA = {
 				OR = {
 					has_government = neutrality
@@ -6367,6 +6286,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		allowed = {
+		always = no
 			original_tag = ITA
 		}
 
@@ -6397,6 +6317,7 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		available = {
+			is_subject = no
 		}
 
 		target_root_trigger = {
@@ -6470,7 +6391,7 @@ ITA_diplomacy_balkan_decision_category = {
 			}
 		}
 
-		visible = {
+		visible = { always = no
 			ITA = {
 				OR = {
 					has_government = neutrality
@@ -6531,6 +6452,15 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		available = {
+			is_subject = no
+			45 = {
+				NOT = {
+					OR = {
+						is_owned_by = HUN
+						is_controlled_by = HUN
+					}
+				}
+			}
 			IF = {
 				limit = {
 					ITA = {
@@ -6538,7 +6468,10 @@ ITA_diplomacy_balkan_decision_category = {
 					}
 				}
 				HUN = {
-					has_government = fascism
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+					}
 				}
 			}
 			IF = {
@@ -6667,11 +6600,12 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		available = {
-			ITA = {
-				has_completed_focus = ITA_befriend_greece
-				is_faction_leader = yes
-				controls_state = 164
-			}
+			
+			has_completed_focus = ITA_befriend_greece
+			is_faction_leader = yes
+			is_subject = no
+			controls_state = 164
+			
 			GRE = {
 				is_subject = no
 				has_civil_war = no
@@ -6679,20 +6613,21 @@ ITA_diplomacy_balkan_decision_category = {
 					has_government = communism
 				}
 			}
+
 		}
 
-		visible = {
+		visible = { always = no
 			GRE = {
 				exists = yes
 				NOT = { is_in_faction_with = ROOT }
 			}
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-				controls_state = 164
+			
+			OR = {
+				has_government = neutrality
+				has_government = fascism
 			}
+			controls_state = 164
+			
 			NOT = {
 				has_country_flag = ITA_dodecanese_offered_to_greece
 			}
@@ -6743,11 +6678,12 @@ ITA_diplomacy_balkan_decision_category = {
 		}
 
 		available = {
-			ITA = {
-				has_completed_focus = ITA_befriend_turkey
-				is_faction_leader = yes
-				controls_state = 164
-			}
+			
+			has_completed_focus = ITA_befriend_turkey
+			is_faction_leader = yes
+			is_subject = no
+			controls_state = 164
+			
 			TUR = {
 				is_subject = no
 				has_civil_war = no
@@ -6757,18 +6693,18 @@ ITA_diplomacy_balkan_decision_category = {
 			}
 		}
 
-		visible = {
+		visible = { always = no
 			TUR = {
 				exists = yes
 				NOT = { is_in_faction_with = ROOT }
 			}
-			ITA = {
-				OR = {
-					has_government = neutrality
-					has_government = fascism
-				}
-				controls_state = 164
+			
+			OR = {
+				has_government = neutrality
+				has_government = fascism
 			}
+			controls_state = 164
+			
 			NOT = {
 				has_country_flag = ITA_dodecanese_offered_to_turkey
 			}
@@ -7348,6 +7284,7 @@ operations = {
 		}
 
 		visible = {
+		always = no
 			has_completed_focus = ITA_decima_flottiglia_mas
 		}
 

@@ -1,8 +1,11 @@
-version="1987"
+version="1.0.1"
 tags={
-	"Balance"
 	"Historical"
 }
-name="Chumba FIX"
-supported_version="1.14.8"
-remote_file_id="2953139279"
+name="HMV"
+replace_path="history/states"
+replace_path="common/ai_strategy_plans"
+replace_path="common/ai_strategy"
+replace_path="common/peace_conference"
+supported_version="1.17.*"
+remote_file_id="3658106285"

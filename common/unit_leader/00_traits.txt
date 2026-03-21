@@ -88,7 +88,7 @@ leader_traits = {
 				factor = 0
 			}
 		}
-
+		
 	}
 	
 	
@@ -118,7 +118,7 @@ leader_traits = {
 				factor = 0
 			}
 		}
-
+		
 	}
 	
 	
@@ -187,6 +187,20 @@ leader_traits = {
 		logistics_skill_factor = 1
 	}
 
+	brave = {
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			org_loss_at_low_org_factor = -0.1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		
+		defense_skill = 1
+	}
+	
 	war_hero = { 
 		type = { land navy }
 		trait_type = personality_trait
@@ -237,9 +251,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			max_planning = 0.05
 			planning_speed = -0.20
-			
 			wounded_chance_factor = -0.5
 		}
 		
@@ -365,7 +377,7 @@ leader_traits = {
 		logistics_skill_factor = 1
 	}
 
-	bearer_of_artillery = { # Reserved for Wojtek
+	bearer_of_artillery = { # Reserved for Wojtek  
 		type = corps_commander
 		
 		trait_type = personality_trait
@@ -381,7 +393,7 @@ leader_traits = {
 	
 	infantry_officer = { 
 		type = land
-		trait_type = personality_trait
+		trait_type = personality_trait 
 		
 		unit_trigger = {
 			OR = {
@@ -480,7 +492,7 @@ leader_traits = {
 
 		new_commander_weight = {
 			factor = 1
-
+			
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -547,7 +559,7 @@ leader_traits = {
 				}
 				factor = 2
 			}
-
+			
 			modifier = {
 				FROM = { has_idea = best_of_the_best_spirit }
 				factor = 0
@@ -700,7 +712,7 @@ leader_traits = {
 				FROM = {
 					has_completed_focus = ITA_proclaim_the_italian_empire
 				}
-		}
+			}
 		}
 
 		attack_skill_factor = 1
@@ -780,6 +792,12 @@ leader_traits = {
 				OR = {
 					original_tag = ITA
 					original_tag = SWI
+					original_tag = SWE
+					original_tag = AUS
+					original_tag = BRA
+					original_tag = GER
+					original_tag = CHI # Intentionally not below 
+					original_tag = PRC
 				}
 			}
 		}
@@ -794,6 +812,11 @@ leader_traits = {
 				OR = {
 					original_tag = ITA
 					original_tag = SWI
+					original_tag = SWE
+					original_tag = AUS
+					original_tag = BRA
+					original_tag = GER
+					original_tag = PRC 
 				}
 				NOT = {
 					OR = {
@@ -824,10 +847,7 @@ leader_traits = {
 			modifier = { #ITALY
 				factor = 2
 				FROM = {
-					OR = {
-						has_completed_focus = ITA_strengthen_the_blackshirts
-						#TODO_Manu: Alt-hist focuses
-					}
+					has_completed_focus = ITA_strengthen_the_blackshirts
 				}
 			}
 			modifier = { #ITALY
@@ -875,7 +895,7 @@ leader_traits = {
 		attack_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-
+	
 	ss_officer = { 
 		type = land
 		trait_type = personality_trait
@@ -898,25 +918,8 @@ leader_traits = {
 			
 		attack_skill_factor = 1
 	}
-	good_gen = { 
-		type = corps_commander
-		trait_type = assignable_trait
-		
-		# mutually_exclusive = skilled_staffer
-		
-		allowed = {
-			always = no
-		}
-		
-		corps_commander_modifier = {
-			max_commander_army_size = -18
-		}
+
 	
-		logistics_skill_factor = 2
-		
-		gui_row = 17
-		
-	}
 ##################################
 # Field Marshal traits.
 ##################################
@@ -973,7 +976,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			max_dig_in_factor = 0.15
+			max_dig_in_factor = 0.30
 		}
 		slot = army_chief
 		specialist_advisor_trait = army_chief_entrenchment_1
@@ -1019,7 +1022,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			max_planning = 0.05
+			max_planning = 0.1
 		}
 		
 		slot = army_chief
@@ -1237,6 +1240,8 @@ leader_traits = {
 		cost = 1000
 		modifier = {
 			army_infantry_defence_factor = 0.13
+			max_commander_army_size = 48
+			max_army_group_size = -2
 		}
 		
 		slot = high_command
@@ -1258,15 +1263,15 @@ leader_traits = {
 				check_variable = { num_units > 99 }
 			}
 			else = {
-			check_variable = { num_units > 23 }
-		}
+				check_variable = { num_units > 23 }
+			}
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
 		
 		cost = 2000
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 6
+			max_commander_army_size = 24
 		}
 		
 		ai_will_do = {
@@ -1323,22 +1328,37 @@ leader_traits = {
 	}
 
 	adaptable = { 
-		type = land
+		type = corps_commander
 		gain_xp = {
 			always = no # not gainable
 		}
-		cost = 500
-		field_marshal_modifier = {
-			terrain_penalty_reduction = 0.05
-			# acclimatization_cold_climate_gain_factor = 0.1
-			# acclimatization_hot_climate_gain_factor = 0.1
-		}
-		new_commander_weight = {
-			factor = 0
+		cost = 1000
+		modifier = {
+			terrain_penalty_reduction = 0.30
+			acclimatization_cold_climate_gain_factor = 0.1
+			acclimatization_hot_climate_gain_factor = 0.1
 		}
 		
-		trait_type = personality_trait
-		# gui_row = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		trait_type = assignable_terrain_trait
+		gui_row = 3
+				
+		parent = {
+			traits = {
+				desert_fox
+				swamp_fox
+				trait_mountaineer
+				hill_fighter
+				jungle_rat
+				ranger
+				urban_assault_specialist
+				winter_specialist
+			}
+			num_parents_needed = 2
+		} 
 	}
 
 	winter_expert = { 
@@ -1404,13 +1424,10 @@ leader_traits = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-forest = {
-                movement = 0.05
-                attack = 0.1
-                defence = 0.1
-            }
 			army_armor_speed_factor = 0.05 
 			army_armor_attack_factor = 0.16 
+			max_commander_army_size = -12
+			max_army_group_size = -4
 		}
 		ai_will_do = {
 			factor = 1
@@ -1570,13 +1587,13 @@ forest = {
 			is_fighting_in_terrain = forest
 		}
 		cost = 700
-		# modifier = {
-		# 	forest = {
-		# 		movement = 0.05
-		# 		attack = 0.1
-		# 		defence = 0.1
-		# 	}
-		# }
+		modifier = {
+			forest = {
+				movement = 0.05
+				attack = 0.1
+				defence = 0.1
+			}
+		}
 		
 		ai_will_do = {
 			factor = 1
@@ -2020,7 +2037,7 @@ forest = {
 		gui_row = 0
 		gui_column = 0
 	}
-	
+
 	seawolf = { 
 		type = navy
 		gain_xp = {
@@ -2161,7 +2178,7 @@ forest = {
 	concealment_expert = { 
 		type = navy
 		modifier = {
-			navy_visibility = -0.2
+			navy_visibility = -0.1
 		}
 				
 		ai_will_do = {
@@ -2187,7 +2204,7 @@ forest = {
 		modifier = {
 			naval_enemy_fleet_size_ratio_penalty_factor = 0.1
 		}
-		
+				
 		ai_will_do = {
 			factor = 0
 		}
@@ -2221,13 +2238,14 @@ forest = {
 		modifier = {
 			naval_torpedo_screen_penetration_factor = 0.25
 		}
-		
+				
 		ai_will_do = {
 			factor = 0
 		}
-
+		
 		trait_type = assignable_trait
-		any_parent = { seawolf spotter fleet_protector superior_tactician }
+		any_parent = { seawolf spotter fleet_protector superior_tactician } 
+		mutually_exclusive = silent_hunter
 		
 		gui_row = 3
 		gui_column = 1
@@ -2333,7 +2351,7 @@ forest = {
 		specialist_advisor_trait = navy_carrier_1
 		expert_advisor_trait = navy_carrier_2
 		genius_advisor_trait = navy_carrier_3
-				
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -2373,7 +2391,7 @@ forest = {
 		specialist_advisor_trait = navy_capital_ship_1
 		expert_advisor_trait = navy_capital_ship_2
 		genius_advisor_trait = navy_capital_ship_3
-				
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -3085,8 +3103,8 @@ forest = {
 		trait_type = status_trait
 		
 		non_shared_modifier = {
-			
-			
+			skill_bonus_factor = -0.5
+			cannot_use_abilities = 1
 		}
 	}
 
@@ -3095,7 +3113,8 @@ forest = {
 		trait_type = status_trait
 		
 		non_shared_modifier = {
-			
+			skill_bonus_factor = -0.5
+			cannot_use_abilities = 1
 		}
 	}
 
@@ -3159,6 +3178,17 @@ forest = {
 		defense_skill = -1
 		logistics_skill = -1
 		planning_skill = -1
+	}
+
+	motivated = { 
+		type = land
+		trait_type = status_trait
+		
+		attack_skill = 1
+
+		non_shared_modifier = {
+			army_morale_factor = 0.10
+		}
 	}
 
 	# defective_geneseed = { #needs more code support, remove before launch
@@ -3401,6 +3431,158 @@ forest = {
 		}
 	}
 
+	trait_HUN_fascist_sympathies = {
+
+		type = all
+		trait_type = personality_trait
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	trait_HUN_vitez = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = HUN
+			}
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	trait_JAP_kodoha_sympathizer = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+	}
+
+	JAP_royal_lineage = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		modifier = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	JAP_kamikaze_proponent = { 
+		type = navy
+		trait_type = personality_trait
+
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		modifier = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	JAP_tohokai_sympathies = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+	}
+
+	JAP_IJA_loyalist = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+	}
+
+	JAP_government_supporter = {
+
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			FROM = {
+				original_tag = JAP
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+	}
+
 ##################################
 # operative traits
 ##################################
@@ -3470,14 +3652,14 @@ forest = {
 
 		cost = 400
 		gain_xp_leader = {
-			# OR = {
-			# 	operative_leader_operation = operation_rescue_operative
-			# 	operative_leader_operation = operation_infiltrate_civilian
-			# 	operative_leader_operation = operation_infiltrate_armed_forces_army
-			# 	operative_leader_operation = operation_infiltrate_armed_forces_navy
-			# 	operative_leader_operation = operation_infiltrate_armed_forces_airforce
-			# 	operative_leader_operation = operation_make_resistance_contacts
-			# }
+			OR = {
+				operative_leader_operation = operation_rescue_operative
+				operative_leader_operation = operation_infiltrate_civilian
+				operative_leader_operation = operation_infiltrate_armed_forces_army
+				operative_leader_operation = operation_infiltrate_armed_forces_navy
+				operative_leader_operation = operation_infiltrate_armed_forces_airforce
+				operative_leader_operation = operation_make_resistance_contacts
+			}
 		}
 
 		modifier = { 
@@ -3495,10 +3677,10 @@ forest = {
 
 		cost = 400
 		gain_xp_leader = {
-			# OR = {
-			# 	operative_leader_mission = root_out_resistance
-			# 	operative_leader_mission = counter_intelligence
-			# }
+			OR = {
+				operative_leader_mission = root_out_resistance
+				operative_leader_mission = counter_intelligence
+			}
 		}
 
 		modifier = {
@@ -3515,8 +3697,8 @@ forest = {
 
 		cost = 400
 		gain_xp_leader = {
-			# NOT = { operative_leader_mission = no_mission }
-			# NOT = { has_nationality = FROM }
+			NOT = { operative_leader_mission = no_mission }
+			NOT = { has_nationality = FROM }
 		}
 
 		modifier = {
@@ -3574,8 +3756,8 @@ forest = {
 		cost = 400
 		gain_xp_leader = {
 			OR = {
-				# operative_leader_mission = diplomatic_pressure
-				# operative_leader_mission = control_trade
+				operative_leader_mission = diplomatic_pressure
+				operative_leader_mission = control_trade
 			}
 		}
 
@@ -3591,15 +3773,15 @@ forest = {
 
 		gain_xp_leader = {
 			OR = {
-				# operative_leader_mission = propaganda
-				# operative_leader_mission = boost_ideology
+				operative_leader_mission = propaganda
+				operative_leader_mission = boost_ideology
 			}
 		}
 		
 		cost = 400
 		modifier = {
-			# operation_coup_government_risk = -0.25
-			# operation_coup_government_cost = -0.25
+			operation_coup_government_risk = -0.25
+			operation_coup_government_cost = -0.25
 			boost_ideology_mission_factor = 0.2
 		}
 	}
@@ -3620,11 +3802,11 @@ forest = {
 
 		cost = 400
 		gain_xp_leader = {
-			# OR = {
-			# 	operative_leader_operation = operation_targeted_sabotage_industry
-			# 	operative_leader_operation = operation_targeted_sabotage_infrastructure
-			# 	operative_leader_operation = operation_targeted_sabotage_resources
-			# }
+			OR = {
+				operative_leader_operation = operation_targeted_sabotage_industry
+				operative_leader_operation = operation_targeted_sabotage_infrastructure
+				operative_leader_operation = operation_targeted_sabotage_resources
+			}
 		}
 
 		modifier = {
@@ -3648,5 +3830,130 @@ forest = {
 			factor = 0
 		}
 	}
+
+	inspirational_bagpiper = { 
+		type = { land }
+		trait_type = personality_trait
+		
+		modifier = {
+			wounded_chance_factor = 0.65
+			experience_gain_army_unit_factor = 0.1
+			army_strength_factor = 0.1  
+		}
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+	}
+
+	loyalty_to_britain = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+	}
+
+	loyalty_to_pakistan = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+	}
+
+	loyalty_to_india = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+	}
+
+	IRQ_golden_square_member = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+	}
+
+	PRC_survivor_of_the_long_march = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			out_of_supply_factor = -0.1
+			equipment_capture = 0.03
+		}
+		
+	}
+
+	SIC_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+
+	YUN_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+	
+	CHI_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+
+
+	XSM_dubious_loyalty = {
+		type = { land }
+		trait_type = personality_trait
+		
+		new_commander_weight = {
+			factor = 0  
+		}
+
+		modifier = {
+			
+		}
+		
+	}
+
+
 
 }

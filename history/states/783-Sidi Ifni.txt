@@ -1,0 +1,18 @@
+
+state={
+	id=783
+	name="STATE_783" # Sidi Ifni
+	manpower = 1
+	
+	state_category = pastoral
+
+	history={
+		owner = HMV
+	}
+
+	provinces={
+		12857
+	}
+
+	local_supplies=0.0 
+}

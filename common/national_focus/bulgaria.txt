@@ -651,13 +651,33 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = BUL_uranium_prospecting
-			    bonus = 2.0
-			    uses = 2
-			    category = nuclear
+			
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = BUL_uranium_prospecting
+				    bonus = 1.0
+				    uses = 1 # was 2
+				    category = nuclear
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.8
+				}
 			}
+			ELSE = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
+
 			add_ideas = BUL_buhovo_uranium_mines
+
 			if = { 
 				limit = {
 					any_allied_country = {
@@ -878,7 +898,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_darzhavna_aeroplanna_rabotilnitsa
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = light_air
 			}
@@ -928,7 +948,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_darzhavna_samoletna_fabrika
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = cas_bomber
 				category = naval_bomber
@@ -1014,7 +1034,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_kaproni_bulgarski
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = cat_strategic_bomber
 				category = tactical_bomber
@@ -1065,7 +1085,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_darzhavna_voenna_fabrika
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = infantry_weapons
 				category = support_tech
@@ -1116,7 +1136,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_found_dvf_sopot
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = artillery
 			}
@@ -1533,7 +1553,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_a_black_sea_fleet
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = dd_tech
 			}
@@ -1740,7 +1760,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-		allow_branch = { always = no }
+
 		available = {
 			if = {
 				limit = {
@@ -2345,7 +2365,7 @@ focus_tree = {
 			navy_experience = 15
 			add_tech_bonus = {
 				name = BUL_strike_from_the_seas
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 			    category = marine_tech
 			    category = tp_tech
@@ -2459,9 +2479,8 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = BUL_an_aegean_sea_fleet
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
-			    category = cl_tech
 			    category = ca_tech
 			}
 
@@ -2528,7 +2547,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_a_powerful_bulgarian_navy
-				bonus = 0.75
+				bonus = 1
 				uses = 1
 				category = bb_tech
 			}
@@ -2560,7 +2579,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_modern_tactics
-			    bonus = 0.75
+			    bonus = 1
 			    uses = 1
 			    category = naval_air
 			}
@@ -2590,7 +2609,7 @@ focus_tree = {
 		available = {
 
 		}
-		allow_branch = { always = no }
+		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			add_popularity = {
@@ -3787,7 +3806,7 @@ focus_tree = {
 				BUL = {
 					add_tech_bonus = {
 						name = armor
-						bonus = 1.0
+						bonus = 0.5
 						uses = 2
 						category = armor
 					}
@@ -4479,7 +4498,20 @@ focus_tree = {
 		completion_reward = {
 			
 			add_stability = 0.1
-			create_faction = BUL_balkan_federation_of_socialist_republics		
+
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_BUL_balkan_federation_of_socialist_republics
+				add_faction_initiative = 1
+			}
+			ELSE = {
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_BUL_balkan_federation_of_socialist_republics
+			}
+
 			YUG = {
 				hidden_effect = {
 					country_event = { id = generic.5 hours = 4 random_hours = 4 }
@@ -5390,7 +5422,18 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
-			create_faction = BUL_balkan_federation_democratic
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_BUL_balkan_federation_democratic
+				add_faction_initiative = 1
+			}
+			ELSE = {
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_BUL_balkan_federation_democratic
+			}
 			GRE = {
 				hidden_effect = {
 					country_event = { id = generic.5 hours = 4 random_hours = 4 }
@@ -5420,7 +5463,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_legislative_elections focus = BUL_liberalization_of_trade_policies }
 		icon = GFX_focus_chi_british_cooperation
 		relative_position_id = BUL_legislative_elections
-		x = -9
+		x = 3
 		y = 1
 		cost = 10
 
@@ -5544,7 +5587,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { allow_branch = { always = no }
+	focus = {
 		id = BUL_join_the_allies
 
 		prerequisite = { focus = BUL_approach_the_united_kingdom }
@@ -6301,7 +6344,7 @@ focus_tree = {
 
 		icon = GFX_focus_BUL_power_to_the_tsar
 		relative_position_id = BUL_oppose_the_royal_dictatorship
-		x = 0
+		x = 16
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = BUL_oppose_the_royal_dictatorship }
@@ -6336,7 +6379,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_power_to_the_tsar focus = BUL_oppose_the_royal_dictatorship }
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		relative_position_id = BUL_power_to_the_tsar
-		x = 0
+		x = -11
 		y = 1
 		cost = 5
 		mutually_exclusive = { focus = BUL_support_macedonian_organizations }
@@ -6565,7 +6608,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_the_tsars_regime focus = BUL_democratic_principles }
 		icon = GFX_goal_demand_sudetenland
 		relative_position_id = BUL_the_tsars_regime
-		x = 8
+		x = -4
 		y = 1
 		cost = 10
 
@@ -7038,7 +7081,7 @@ focus_tree = {
 		available = {
 
 		}
-		allow_branch = { always = no}
+		
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			if = {
@@ -7343,7 +7386,11 @@ focus_tree = {
 			set_rule = {
 				can_join_factions = no
 			}
-			create_faction = BUL_greater_bulgarian_federation
+			create_faction_from_template = {
+				template = faction_template_balkan_pact
+				name = BUL_greater_bulgarian_federation
+				icon = GFX_faction_logo_generic_5
+			}
 			add_timed_idea = {
 				idea = BUL_the_fate_of_the_balkans
 				days = 365
@@ -7759,7 +7806,7 @@ focus_tree = {
 		available = {
 
 		}
-		allow_branch = { always = no }
+		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
 			add_popularity = {
@@ -8292,8 +8339,8 @@ focus_tree = {
 
 		icon = GFX_focus_chi_mission_to_germany
 		relative_position_id = BUL_bulgarian_irredentism
-		x = 1
-		y = 1
+		x = 2
+		y = 2
 		cost = 10
 
 		bypass = {
@@ -8558,7 +8605,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		relative_position_id = BUL_approach_germany
 		x = 0
-		y = 2
+		y = 4
 		cost = 5
 		mutually_exclusive = { focus = BUL_the_fate_of_the_balkans focus = BUL_join_the_allies }
 
@@ -8774,7 +8821,7 @@ focus_tree = {
 		cost = 20
 
 		available = {
-			any_state = {
+			any_controlled_state = {
 				has_state_flag = BUL_historical_bulgarian_claim_flag
 				is_fully_controlled_by = BUL
 			}
@@ -8807,6 +8854,14 @@ focus_tree = {
 				}
 				77 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
 				add_state_core = 77
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 971
+					971 = { NOT = { is_core_of = ROOT } }
+				}
+				971 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
+				add_state_core = 971
 			}
 			custom_effect_tooltip = BUL_historical_states_tt
 

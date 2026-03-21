@@ -1,0 +1,14 @@
+state={
+	id=1008
+	name="STATE_1008"
+	manpower = 1
+	state_category = rural
+	history={
+		owner = HMV
+	}
+	provinces={
+		4949 5020 5064 8090 10789 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

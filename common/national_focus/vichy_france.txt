@@ -28,7 +28,7 @@
 			factor = 1
 		}
 		available = {
-			# has_country_leader = { ruling_only = yes character = FRA_philippe_petain }
+			has_country_leader = { ruling_only = yes character = FRA_philippe_petain }
 		}
 		
 		bypass = {
@@ -46,7 +46,6 @@
 				}
 				remove_ideas = { FRA_disjointed_government }
 			}
-
 		}
 	}
 	focus = {
@@ -370,7 +369,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST }
 		completion_reward = {
-			# unlock_decision_category_tooltip = VIC_concessions_to_the_germans
+			unlock_decision_category_tooltip = VIC_concessions_to_the_germans
 		}
 	}
 	focus = {
@@ -432,7 +431,7 @@
 			factor = 1
 		}
 		available = {
-			always = no
+			
 		}
 		
 		bypass = {
@@ -449,6 +448,9 @@
 	focus = {
 		id = VIC_end_the_occupation
 		icon = GFX_goal_generic_territory_or_war
+
+		allow_branch = { always = no }
+
 		x = 0
 		y = 2
 		offset = {

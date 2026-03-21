@@ -1,0 +1,10 @@
+upstate_category = {
+	priority = 2
+	icon = generic_industry
+	allowed = {
+		always = yes
+	}
+	visible = {
+		has_tech = concentrated_industry
+	}
+}

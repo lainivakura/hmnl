@@ -1,0 +1,19 @@
+state = {
+	id = 767
+	name = "STATE_767" # North Darfur
+	manpower = 1
+	
+	state_category = wasteland
+	impassable = yes
+	force_link_ownership_to = 551 # Kharthoum
+	
+	history={
+		owner = HMV
+	}
+
+	provinces = {
+		8103 
+	}
+
+	local_supplies = 0.0 
+}

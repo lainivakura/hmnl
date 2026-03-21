@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		razgon = {
+				picture = razgon
+				modifier = {
+					production_factory_start_efficiency_factor = 0.5 
+				}
+			cancel = {
+					date > 1936.01.02
+			}
+		}
+	}
+	country = {
+		FRA_antiguerre_HMV = {
+				picture = GFX_FRA_antiguerre_HMV
+				modifier = {
+					surrender_limit = -0.3
+				}
+			
+		}
+	}
+	country = {
+		AXIS_ostfront = {
+				picture = generic_attack_soviet_union
+				modifier = {
+					acclimatization_cold_climate_gain_factor = -0.45
+				}
+			
+		}
+	}
+}

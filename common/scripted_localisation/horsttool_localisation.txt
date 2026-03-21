@@ -1,4 +1,4 @@
-defined_text = { # state
+defined_text = {
 	name = mark_state_tooltip
 
 	text = {
@@ -11,13 +11,25 @@ defined_text = { # state
 		localization_key = mark_state_yes
 	}
 }
+defined_text = {
+	name = GetLeftDesc
+	text = {
+		localization_key = POL_san_left_desc
+	}
+}
 
-defined_text = { # global
+defined_text = {
+	name = GetRightDesc
+	text = {
+		localization_key = POL_san_right_desc
+	}
+}
+defined_text = {
 	name = transfer_states_tooltip
 
 	text = {
 		trigger = {
-			has_country_flag = hosttool_enabled
+			has_country_flag = transfer_enabled
 		}
 		localization_key = transfer_states_off
 	}
@@ -25,13 +37,27 @@ defined_text = { # global
 		localization_key = transfer_states_on
 	}
 }
+defined_text = {
+	name = command_limit_tooltip
 
-defined_text = { # global
+	text = {
+		trigger = {
+			has_country_flag = show_admiral_list
+		}
+		localization_key = command_limit_off
+	}
+	text = {
+		localization_key = command_limit_on
+	}
+}
+
+
+defined_text = {
 	name = ST_TOOLTIP
 
 	text = {
 		trigger = {
-			has_country_flag = hosttool_enabled
+			has_country_flag = transfer_enabled
 		}
 		localization_key = ST_TOOLTIP_off
 	}
@@ -40,7 +66,7 @@ defined_text = { # global
 	}
 }
 
-defined_text = { # global
+defined_text = {
 	name = mark_status
 
 	text = {
@@ -53,7 +79,7 @@ defined_text = { # global
 		localization_key = mark_status_unmarked
 	}
 }
-defined_text = { # global
+defined_text = {
 	name = cheat_selected
 	text = {
 		trigger = {
@@ -65,7 +91,7 @@ defined_text = { # global
 	text = {
 		trigger = {
 			OR={check_variable = {Root.selected_cheat=1}
-				Root={has_country_flag=cheating}}
+			Root={has_country_flag=cheating}}
 		}
 		localization_key = CHEAT1
 	}
@@ -81,437 +107,159 @@ defined_text = { # global
 		}
 		localization_key = CHEAT3
 	}
-	text = {
+		text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=4}
 		}
 		localization_key = CHEAT4
 	}
-	text = {
+			text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=5}
 		}
 		localization_key = CHEAT5
 	}
-	text = {
+			text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=6}
 		}
 		localization_key = CHEAT6
-	}
-	text = {
+	}	
+		
+
+			text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=7}
 		}
 		localization_key = CHEAT7
 	}
-	text = {
-		trigger = {
-			check_variable = {Root.selected_cheat=8}
-		}
-		localization_key = CHEAT8
-	}
-	text = {
-		trigger = {
-			check_variable = {Root.selected_cheat=9}
-		}
-		localization_key = CHEAT9
-	}
-	text = {
+		
+			text = {
 		trigger = {
 			check_variable = {Root.selected_cheat=10}
 		}
 		localization_key = CHEAT10
 	}
+}
+
+
+defined_text = {
+	name = debuff_selected
 	text = {
 		trigger = {
-			check_variable = {Root.selected_cheat=11}
+			check_variable = {Root.selected_debuff=0}
+			NOT={Root={has_country_flag=debuffing}}
 		}
-		localization_key = CHEAT11
+		localization_key = DEBUFF_SELECT
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {Root.selected_debuff=1}
+			Root={has_country_flag=debuffing}}
+		}
+		localization_key = DEBUFF1
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_debuff=2}
+		}
+		localization_key = DEBUFF2
 	}
 }
+
+
+
 defined_text = {
-	name = prod_efficiency
+	name = color_selected
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 10 }
+			check_variable = {Root.selected_color=0}
+			NOT={Root={has_global_flag=colorblindness}}
 		}
-		localization_key = "10"
+		localization_key = COLOR_SELECT
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 20 }
+			OR={check_variable = {Root.selected_color=1}
+			Root={has_global_flag=colorblindness}}
 		}
-		localization_key = "20"
+		localization_key = COLOR1
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 30 }
+			check_variable = {Root.selected_color=2}
 		}
-		localization_key = "30"
+		localization_key = COLOR2
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 40 }
+			check_variable = {Root.selected_color=3}
 		}
-		localization_key = "40"
+		localization_key = COLOR3
 	}
-	text = {
+		text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 50 }
+			check_variable = {Root.selected_color=4}
 		}
-		localization_key = "50"
+		localization_key = COLOR4
 	}
-	text = {
+			text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 60 }
+			check_variable = {Root.selected_color=5}
 		}
-		localization_key = "60"
+		localization_key = COLOR5
 	}
-	text = {
+				text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 70 }
+			check_variable = {Root.selected_color=6}
 		}
-		localization_key = "70"
+		localization_key = COLOR6
 	}
-	text = {
+				text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 80 }
+			check_variable = {Root.selected_color=7}
 		}
-		localization_key = "80"
+		localization_key = COLOR7
 	}
-	text = {
+				text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 90 }
+			check_variable = {Root.selected_color=8}
 		}
-		localization_key = "90"
+		localization_key = COLOR8
 	}
-	text = {
+					text = {
 		trigger = {
-			check_variable = { ROOT.prod_effi = 100 }
+			check_variable = {Root.selected_color=9}
 		}
-		localization_key = "100"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_effi = 110 }
-		}
-		localization_key = "110"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_effi = 120 }
-		}
-		localization_key = "120"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_effi = 130 }
-		}
-		localization_key = "130"
-	}
-	text = {
-		localization_key = "reset"
+		localization_key = COLOR9
 	}
 }
 
 defined_text = {
-	name = prod_type
+	name = pause_selected
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_type = 0 }
+			check_variable = {COL.pause_blocker_variable=0}
+			NOT={Root={has_global_flag=blocking_pauses}}
 		}
-		localization_key = "mechanized_equipment_1"
+		localization_key = PAUSE_SELECT
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_type = 1 }
+			check_variable = {COL.pause_blocker_variable=1}
 		}
-		localization_key = "mechanized_equipment_2"
+		localization_key = PAUSE1 #все
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_type = 2 }
+			check_variable = {COL.pause_blocker_variable=2}
 		}
-		localization_key = "mechanized_equipment_3"
+		localization_key = PAUSE2 #хост
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.prod_type = 3 }
+			check_variable = {COL.pause_blocker_variable=3}
 		}
-		localization_key = "fighter_equipment_0"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 4 }
-		}
-		localization_key = "light_tank_chassis_0"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 5 }
-		}
-		localization_key = "light_tank_chassis_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 6 }
-		}
-		localization_key = "light_tank_chassis_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 7 }
-		}
-		localization_key = "light_tank_chassis_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 8 }
-		}
-		localization_key = "medium_tank_chassis_0"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 9 }
-		}
-		localization_key = "medium_tank_chassis_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 10 }
-		}
-		localization_key = "medium_tank_chassis_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 11 }
-		}
-		localization_key = "medium_tank_chassis_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 12 }
-		}
-		localization_key = "heavy_tank_chassis_0"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 13 }
-		}
-		localization_key = "heavy_tank_chassis_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 14 }
-		}
-		localization_key = "heavy_tank_chassis_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 14 }
-		}
-		localization_key = "heavy_tank_chassis_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 15 }
-		}
-		localization_key = "fighter_equipment_0"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 16 }
-		}
-		localization_key = "fighter_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 17 }
-		}
-		localization_key = "fighter_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 18 }
-		}
-		localization_key = "CAS_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 19 }
-		}
-		localization_key = "CAS_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 20 }
-		}
-		localization_key = "CAS_equipment_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 21 }
-		}
-		localization_key = "nav_bomber_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 22 }
-		}
-		localization_key = "nav_bomber_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 23 }
-		}
-		localization_key = "nav_bomber_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 24 }
-		}
-		localization_key = "nav_bomber_equipment_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 25 }
-		}
-		localization_key = "tac_bomber_equipment_0"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 26 }
-		}
-		localization_key = "tac_bomber_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 27 }
-		}
-		localization_key = "tac_bomber_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 28 }
-		}
-		localization_key = "tac_bomber_equipment_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 29 }
-		}
-		localization_key = "scout_plane_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 30 }
-		}
-		localization_key = "support_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 31 }
-		}
-		localization_key = "motorized_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 32 }
-		}
-		localization_key = "infantry_equipment_0"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 33 }
-		}
-		localization_key = "infantry_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 34 }
-		}
-		localization_key = "infantry_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 35 }
-		}
-		localization_key = "infantry_equipment_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 36 }
-		}
-		localization_key = "artillery_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 37 }
-		}
-		localization_key = "artillery_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 38 }
-		}
-		localization_key = "artillery_equipment_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 39 }
-		}
-		localization_key = "rocket_artillery_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 40 }
-		}
-		localization_key = "rocket_artillery_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 41 }
-		}
-		localization_key = "motorized_rocket_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 42 }
-		}
-		localization_key = "anti_tank_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 43 }
-		}
-		localization_key = "anti_tank_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 44 }
-		}
-		localization_key = "anti_tank_equipment_3"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 45 }
-		}
-		localization_key = "anti_air_equipment_1"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 46 }
-		}
-		localization_key = "anti_air_equipment_2"
-	}
-	text = {
-		trigger = {
-			check_variable = { ROOT.prod_type = 47 }
-		}
-		localization_key = "anti_air_equipment_3"
-	}
-	text = {
-		localization_key = "reset"
+		localization_key = PAUSE3 #только мажоры
 	}
 }

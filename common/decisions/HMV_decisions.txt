@@ -1,0 +1,1053 @@
+Doctriny_za_opyt = {
+
+
+
+
+
+
+ otkluchit_fon = {
+		
+
+		
+fire_only_once = yes
+		
+
+		visible = {
+			date < 1936.2.1
+		}
+		available = {
+			date < 1936.2.1
+		}
+		
+
+		complete_effect = {
+		set_country_flag = otkluchit_fon
+		
+			
+		}
+		
+	
+		
+	}
+
+
+
+inf_doctrine = {
+		icon = GFX_decision_SWE_set_army_budget
+
+		days_remove = 200
+
+		available = {
+			has_army_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_uzhe_idet}
+		}
+
+		visible = {
+			always = yes
+		}
+		custom_cost_text = 100_opyta	
+custom_cost_trigger = {
+			has_army_experience > 99
+			
+		}
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_uzhe_idet
+    days = 200
+    value = 1
+}
+		army_experience = -100
+			add_daily_mastery = {
+    amount = 0.5
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = land
+   
+    track = infantry
+}
+		}
+		
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+support_doctrine = {
+
+		icon = GFX_decision_ger_military_buildup
+		days_remove = 200
+			custom_cost_text = 100_opyta	
+custom_cost_trigger = {
+			has_army_experience > 99
+			
+		}
+		available = {
+			has_army_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_uzhe_idet}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		
+
+		
+
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_uzhe_idet
+    days = 200
+    value = 1
+}
+		army_experience = -100
+			add_daily_mastery = {
+    amount = 0.5
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = land
+   
+    track = combat_support
+}
+		}
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+tank_doctrine = {
+
+		icon = GFX_decision_generic_tank
+
+		days_remove = 200
+
+		available = {
+			has_army_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_uzhe_idet}
+		}
+
+		visible = {
+			always = yes
+		}
+
+	custom_cost_text = 100_opyta	
+custom_cost_trigger = {
+			has_army_experience > 99
+			
+		}
+		
+
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_uzhe_idet
+    days = 200
+    value = 1
+}
+		army_experience = -100
+			add_daily_mastery = {
+    amount = 0.5
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = land
+   
+    track = armor
+}
+		}
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	operation_doctrine = {
+
+		icon = GFX_decision_hol_draw_up_staff_plans
+custom_cost_text = 100_opyta	
+custom_cost_trigger = {
+			has_army_experience > 99
+			
+		}
+		days_remove = 200
+
+		available = {
+			has_army_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_uzhe_idet}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		
+
+		
+
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_uzhe_idet
+    days = 200
+    value = 1
+}
+		army_experience = -100
+			add_daily_mastery = {
+    amount = 0.25
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = land
+   
+    track = operations
+   
+}
+		}
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+	fighter_doctrine = {
+		icon = GFX_decision_generic_air
+
+		days_remove = 200
+
+		available = {
+			has_air_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_air_uzhe_idet}
+		}
+
+		visible = {
+			has_deployed_air_force_size = {
+    size > 100
+    type = fighter 
+}
+		}
+		custom_cost_text = 100_opyta_air	
+custom_cost_trigger = {
+			has_air_experience > 99
+			
+		}
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_air_uzhe_idet
+    days = 200
+    value = 1
+}
+		air_experience = -100
+			add_daily_mastery = {
+    amount = 0.25
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = air
+   
+    track = fighter_aircraft
+}
+		}
+		
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+cas_doctrine = {
+		icon = GFX_decision_HMV_air_dec
+
+		days_remove = 200
+
+		available = {
+			has_air_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_air_uzhe_idet}
+		}
+
+		visible = {
+			has_deployed_air_force_size = {
+    size > 50
+    type = cas 
+}
+		}
+		custom_cost_text = 100_opyta_air	
+custom_cost_trigger = {
+			has_air_experience > 99
+			
+		}
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_air_uzhe_idet
+    days = 200
+    value = 1
+}
+		air_experience = -100
+			add_daily_mastery = {
+    amount = 0.25
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = air
+   
+    track = strike_aircraft
+}
+		}
+		
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+medium_aircraf_doc = {
+		icon = GFX_decision_SWE_set_air_budget
+
+		days_remove = 200
+
+		available = {
+			has_air_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_air_uzhe_idet}
+		}
+
+		visible = {
+		OR = {	has_deployed_air_force_size = {
+    size > 50
+    type = tactical_bomber 
+} 
+has_deployed_air_force_size = {
+    size > 50
+    type = heavy_fighter
+} 
+
+
+
+}
+		}
+		custom_cost_text = 100_opyta_air	
+custom_cost_trigger = {
+			has_air_experience > 99
+			
+		}
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_air_uzhe_idet
+    days = 200
+    value = 1
+}
+		air_experience = -100
+			add_daily_mastery = {
+    amount = 0.25
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = air
+   
+    track = medium_aircraft
+}
+		}
+		
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+
+
+
+		heavy_aircraf_doc = {
+		icon = GFX_decision_generic_merge_plant_aircraft
+
+		days_remove = 200
+
+		available = {
+			has_air_experience > 99
+			#NOT = {has_country_flag = izuchenie_doctriny_air_uzhe_idet}
+		}
+
+		visible = {
+		OR = {	has_deployed_air_force_size = {
+    size > 40
+    type = maritime_patrol_plane
+} 
+has_deployed_air_force_size = {
+    size > 40
+    type = strategic_bomber
+} 
+
+
+
+}
+		}
+		custom_cost_text = 100_opyta_air	
+custom_cost_trigger = {
+			has_air_experience > 99
+			
+		}
+		complete_effect = {
+		set_country_flag = {
+    flag = izuchenie_doctriny_air_uzhe_idet
+    days = 200
+    value = 1
+}
+		air_experience = -100
+			add_daily_mastery = {
+    amount = 0.25
+    days = 200
+    name = izuchenie_doctriny
+    # FILTERS:
+    folder = air
+   
+    track = heavy_aircraft
+}
+		}
+		
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	
+reserve_1_G  = { 
+
+		priority = 0
+
+		icon = GFX_decision_eng_blackshirt_march
+		fire_only_once = yes
+
+		
+
+		
+
+		available = {
+			casualties_k > 200
+				surrender_progress > 0.15
+
+		NOT = {has_country_flag = reserve_1_G}
+		
+		}
+
+
+		visible = { has_war = yes
+		OR = {tag = SOV tag = GER tag = ENG tag = USA tag = JAP tag = ITA}
+			
+		}
+		days_remove = 90
+		modifier = {industrial_capacity_factory = -0.1 consumer_goods_factor = 0.1 war_support_weekly = -0.01 stability_weekly = -0.01} 
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip = reserve_45
+			hidden_effect = {delete_unit_template_and_units = {
+                    division_template = "Militia unit"
+                    disband = yes #if yes, will refund equipment/manpower.
+                } }
+			division_template = {
+    name = "Militia unit"
+    
+   
+   
+    priority = 0
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+    }
+   
+}
+			hidden_effect = {
+				random_owned_controlled_state = { limit = { is_core_of = ROOT is_fully_controlled_by = ROOT NOT = {any_neighbor_state = {CONTROLLER = {has_war_with = ROOT}}} }	create_unit = { 
+  division = "name = \"Militia unit\" division_template = \"Militia unit\" start_manpower_factor = 1 force_equipment_variants = { infantry_equipment_0 = { owner = \"HMV\" amount = 810 }}" 
+  owner = ROOT
+  count = 40
+}
+
+
+
+			} }
+			
+			
+			
+			
+			
+			
+			set_country_flag = reserve_1_G
+		}
+
+		
+	}
+
+	
+reserve_2_G  = { 
+
+		priority = 0
+
+		icon = GFX_decision_eng_blackshirt_march
+		fire_only_once = yes
+
+		
+
+		
+
+		available = {
+			casualties_k > 300
+				surrender_progress > 0.30
+
+		NOT = {has_country_flag = reserve_2_G}
+		
+		}
+
+
+		visible = { has_war = yes
+		OR = {tag = SOV tag = GER tag = ENG tag = USA tag = JAP tag = ITA}
+			
+		}
+		days_remove = 90
+		modifier = {industrial_capacity_factory = -0.1 consumer_goods_factor = 0.1 war_support_weekly = -0.01 stability_weekly = -0.01} 
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip = reserve_50
+			hidden_effect = {delete_unit_template_and_units = {
+                    division_template = "Militia unit 2 wave"
+                    disband = yes #if yes, will refund equipment/manpower.
+                } }
+			division_template = {
+    name = "Militia unit 2 wave"
+    
+   
+   
+    priority = 0
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+    }
+   
+}
+			hidden_effect = {
+				random_owned_controlled_state = { limit = { is_core_of = ROOT is_fully_controlled_by = ROOT NOT = {any_neighbor_state = {CONTROLLER = {has_war_with = ROOT}}} }	create_unit = { 
+  division = "name = \"Militia unit 2 wave\" division_template = \"Militia unit 2 wave\" start_manpower_factor = 1 force_equipment_variants = { infantry_equipment_0 = { owner = \"HMV\" amount = 810 }}" 
+  owner = ROOT
+  count = 50
+}
+
+
+
+			} }
+			
+			
+			
+			
+			
+			
+			set_country_flag = reserve_2_G
+		}
+
+		
+	}
+
+
+	reserve_3_G  = { 
+
+		priority = 0
+
+		icon = GFX_decision_eng_blackshirt_march
+		fire_only_once = yes
+
+		
+
+		
+
+		available = {
+			casualties_k > 400
+				surrender_progress > 0.50
+
+		NOT = {has_country_flag = reserve_3_G}
+		
+		}
+
+
+		visible = { has_war = yes
+		OR = {tag = SOV tag = GER tag = ENG tag = USA tag = JAP tag = ITA}
+			
+		}
+		days_remove = 90
+		modifier = {industrial_capacity_factory = -0.1 consumer_goods_factor = 0.1 war_support_weekly = -0.01 stability_weekly = -0.01} 
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip = reserve_70
+			hidden_effect = {delete_unit_template_and_units = {
+                    division_template = "Militia unit 3 wave"
+                    disband = yes #if yes, will refund equipment/manpower.
+                } }
+			division_template = {
+    name = "Militia unit 3 wave"
+    
+   
+   
+    priority = 0
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+    }
+   
+}
+			hidden_effect = {
+				random_owned_controlled_state = { limit = { is_core_of = ROOT is_fully_controlled_by = ROOT NOT = {any_neighbor_state = {CONTROLLER = {has_war_with = ROOT}}} }	create_unit = { 
+  division = "name = \"Militia unit 3 wave\" division_template = \"Militia unit 3 wave\" start_manpower_factor = 1 force_equipment_variants = { infantry_equipment_0 = { owner = \"HMV\" amount = 810 }}" 
+  owner = ROOT
+  count = 70
+}
+
+
+
+			} }
+			
+			
+			
+			
+			
+			
+			set_country_flag = reserve_3_G
+		}
+
+		
+	}
+
+
+reserve_4_G  = { 
+
+		priority = 0
+
+		icon = GFX_decision_eng_blackshirt_march
+		fire_only_once = yes
+
+		
+
+		
+
+		available = {
+			casualties_k > 500
+				surrender_progress > 0.70
+
+		NOT = {has_country_flag = reserve_4_G}
+		
+		}
+
+
+		visible = { has_war = yes
+		OR = {tag = SOV tag = GER tag = ENG tag = USA tag = JAP tag = ITA}
+			
+		}
+		days_remove = 90
+		modifier = {industrial_capacity_factory = -0.1 consumer_goods_factor = 0.1 war_support_weekly = -0.01 stability_weekly = -0.01} 
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip = reserve_100
+			hidden_effect = {delete_unit_template_and_units = {
+                    division_template = "Militia unit 4 wave"
+                    disband = yes #if yes, will refund equipment/manpower.
+                } }
+			division_template = {
+    name = "Militia unit 4 wave"
+    
+   
+   
+    priority = 0
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 1 y = 3 }
+    }
+   
+}
+			hidden_effect = {
+				random_owned_controlled_state = { limit = { is_core_of = ROOT is_fully_controlled_by = ROOT NOT = {any_neighbor_state = {CONTROLLER = {has_war_with = ROOT}}} }	create_unit = { 
+  division = "name = \"Militia unit 4 wave\" division_template = \"Militia unit 4 wave\" start_manpower_factor = 1 force_equipment_variants = { infantry_equipment_0 = { owner = \"HMV\" amount = 810 }}" 
+  owner = ROOT
+  count = 100
+}
+
+
+
+			} }
+			
+			
+			
+			
+			
+			
+			set_country_flag = reserve_4_G
+		}
+
+		
+	}
+
+
+
+
+
+	ENG_bot_air_navy = {
+    target_root_trigger = {
+        tag = ENG
+		has_war_with = GER
+    }
+    targets_dynamic = yes
+    target_trigger = {
+        FROM = {
+            is_in_faction_with = ENG
+			is_ai = yes
+        }
+    }
+    icon = GFX_decision_generic_army_support
+    cost = 20
+    war_with_target_on_complete = yes
+    complete_effect = {
+		custom_effect_tooltip = HMV_ENG_BOT
+      FROM = {transfer_units_fraction= {
+	target = ENG
+	size = 0.5
+	stockpile_ratio = 0
+	army_ratio = 0
+	navy_ratio = 1
+	air_ratio = 1
+	
+}}
+    }
+}
+
+ENG_bot_army = {
+    target_root_trigger = {
+        tag = ENG
+		has_war_with = GER
+    }
+    targets_dynamic = yes
+    target_trigger = {
+        FROM = {
+            is_in_faction_with = ENG
+			is_ai = yes
+        }
+    }
+    icon = GFX_decision_JAP_naval_faction
+    cost = 20
+    war_with_target_on_complete = yes
+    complete_effect = {
+		custom_effect_tooltip = HMV_ENG_BOT
+      FROM = {transfer_units_fraction= {
+	target = ENG
+	size = 0.5
+	stockpile_ratio = 0
+	army_ratio = 1
+	
+	
+}}
+    }
+}
+
+HMV_ITA_VICY_NAVY = {
+    target_root_trigger = {
+        tag = ITA
+		
+    }
+    targets_dynamic = yes
+    target_trigger = {
+        FROM = { 
+			has_navy_size = {
+    size > 10
+}
+			
+			original_tag = FRA has_government = fascism
+        }
+    }
+    icon = GFX_decision_generic_army_support
+    cost = 5
+    complete_effect = { FROM = {
+		
+		
+		transfer_navy = {
+    target = CUB
+}
+
+
+
+    }
+} }
+
+
+
+HMV_GER_COMP = {
+    target_root_trigger = {
+        tag = GER
+		
+    }
+    targets_dynamic = yes
+    target_trigger = {
+        FROM = { NOT = {has_country_flag = HMV_COMPLIANCE}
+            has_war_with = ROOT
+			   has_capitulated = yes
+		ROOT = {has_collaboration = {
+    target = FROM
+    value > 0.5
+}}
+        }
+    }
+    icon = GFX_decision_generic_army_support
+    cost = 20
+    complete_effect = { FROM = {set_country_flag = HMV_COMPLIANCE}
+     every_state = {limit = { compliance < 20 is_core_of = FROM OR = {controller = {tag =GER} controller = {is_in_faction_with = GER}}} set_compliance = 100}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+} 
+
+
+VIC_dec_HMV = {
+
+
+
+
+
+       VIC_dec_HMV_relocate = {
+    state_target = yes
+    target_root_trigger = {
+        tag = GER
+    }
+   
+    target_trigger = {
+        FROM = {
+            is_core_of = FRA
+                        controller =  {original_tag = FRA has_government = fascism}
+						 OR = {
+                       industrial_complex > 0
+						arms_factory > 0}
+					   }
+        
+    }
+	available = {
+		has_equipment = { train_equipment > 70 }
+	}
+    on_map_mode = map_and_decisions_view
+    icon = GFX_decision_generic_factory
+    cost = 20
+	 days_remove = 90
+	 complete_effect = {add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = -70
+				}}
+    remove_effect = {
+        add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 70
+				}
+            IF  = {limit = { FROM = {industrial_complex > 0 industrial_complex < 2}} FROM ={remove_building = {
+                        type = industrial_complex
+                        level = 1 
+                    } }
+					
+					random_owned_state = {
+                    limit = {
+                        is_core_of = GER
+                       
+                            is_controlled_by = GER
+                          
+                        
+                    }
+					add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+                }
+					
+				 else_if  = {limit = { FROM = {industrial_complex > 1 industrial_complex < 3}} FROM ={remove_building = {
+                        type = industrial_complex
+                        level = 2
+                    } }
+					
+					random_owned_state = {
+                    limit = {
+                        is_core_of = GER
+                       
+                            is_controlled_by = GER
+                          
+                        
+                    }
+					add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+                } }
+
+				else_if  = {limit = { FROM = {industrial_complex > 2 }} FROM ={remove_building = {
+                        type = industrial_complex
+                        level = 2
+                    } }
+					
+					random_owned_state = {
+                    limit = {
+                        is_core_of = GER
+                       
+                            is_controlled_by = GER
+                          
+                        
+                    }
+					add_extra_state_shared_building_slots = 3
+                    add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+                } }
+
+
+					
+					
+					}
+
+
+            IF  = {limit = { FROM = {arms_factory > 0 arms_factory < 2}} FROM ={remove_building = {
+                        type = arms_factory
+                        level = 1 
+                    } }
+					
+					random_owned_state = {
+                    limit = {
+                        is_core_of = GER
+                       
+                            is_controlled_by = GER
+                          
+                        
+                    }
+					add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+                }
+					
+				 else_if  = {limit = { FROM = {arms_factory > 1 arms_factory < 3}} FROM ={remove_building = {
+                        type = arms_factory
+                        level = 2
+                    } }
+					
+					random_owned_state = {
+                    limit = {
+                        is_core_of = GER
+                       
+                            is_controlled_by = GER
+                          
+                        
+                    }
+					add_extra_state_shared_building_slots = 2
+                    add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+                } }
+
+				else_if  = {limit = { FROM = {arms_factory > 2 }} FROM ={remove_building = {
+                        type = arms_factory
+                        level = 3
+                    } }
+					
+					random_owned_state = {
+                    limit = {
+                        is_core_of = GER
+                       
+                            is_controlled_by = GER
+                          
+                        
+                    }
+					add_extra_state_shared_building_slots = 3
+                    add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+                } }
+
+
+					
+					
+					}
+
+
+
+        
+		
+    }
+}
+
+
+}

@@ -1,6 +1,3 @@
-# Written by Henrik "Groogy" Hansson
-# Modified by Daniel "Da9L" Sjöberg
-
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
 	enable = {
@@ -15,11 +12,15 @@ default_unit_production = {
 				tag = SOV
 				original_tag = ITA
 				original_tag = JAP
+				original_tag = HUN
+				original_tag = SIA
+				original_tag = USA
 			}
 		}
 	}
 	abort_when_not_enabled = yes
 
+	# Land division factors
 	ai_strategy = {
 		type = role_ratio
 		id = paratroopers
@@ -50,7 +51,7 @@ default_unit_production = {
 		value = 80
 	}
 
-	#Air unit factors
+	# Air unit factors
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
@@ -140,6 +141,34 @@ default_unit_production = {
 		type = equipment_production_factor
 		id = artillery
 		value = 25
+	}
+}
+
+default_unit_production_super_heavies = {
+	enable = {
+		is_major = yes
+		num_of_military_factories > 150 # nly if we have loads of factories
+		date > 1943.6.1 # Lets wait until late war
+		NOT = { has_tech = main_battle_tank_chassis } # Abandon Super heavy projects if we start doing modern tanks instead
+		NOT = { has_government = democratic } # Let the authoritarian regimes spend money on this 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = super_heavy_breakthrough_role
+		value = 1
+	}
+}
+
+default_unit_production_land_cruiser = {
+	enable = {
+		is_special_project_completed = sp:sp_land_land_cruiser
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = mega_heavy_breakthrough_role
+		value = 2
 	}
 }
 
@@ -302,7 +331,7 @@ bba_air_prod_1 = {
 
 	enable = {
 		always = yes
-		NOT = { original_tag = GER } 
+		NOT = { original_tag = GER }
 		NOT = { original_tag = ENG }
 	}
 
@@ -332,7 +361,7 @@ bba_air_prod_1 = {
 		id = cas
 		value = 20 #because doctrine this = 15
 	}
- 
+
 	ai_strategy = {
 		type = unit_ratio
 		id = naval_bomber
@@ -610,6 +639,7 @@ default_garrison_production = {
 			original_tag = FRA
 			original_tag = JAP
 			original_tag = ENG
+			original_tag = SIA
 		}
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
 		is_major = yes
@@ -624,13 +654,6 @@ default_garrison_production = {
 		id = garrison
 		value = 5
 	}
-
-	# Old garrison system against resistance
-	# ai_strategy = {
-	# 	type = role_ratio
-	# 	id = suppression
-	# 	value = 2
-	# }
 }
 
 default_mountaineers_production = {
@@ -950,15 +973,15 @@ default_market_stockpile_management = {
 	}
 
 	# Better not put all your boats up for sail
-	ai_strategy = {
-		type = equipment_market_for_sale_threshold
-		id = convoy
-		value = 100  # only start considering selling convoys if surplus more than 100
-	}
+	# ai_strategy = {  # Commented because handled dynamically in code through the EQUIPMENT_MARKET_WANTED_CONVOY_USAGE_RATIO define
+	# 	type = equipment_market_for_sale_threshold
+	# 	id = convoy
+	# 	value = 100  # only start considering selling convoys if surplus more than 100
+	# }
 	ai_strategy = {
 		type = equipment_market_min_for_sale
 		id = convoy
-		value = 30  # only put up for sale in chunks of 5
+		value = 20  # only put up for sale in chunks of 20
 	}
 
 	# Don't let all your planes just fly out the window.
@@ -1050,7 +1073,7 @@ default_market_convoy_purchases = {
 	ai_strategy = {
 		type = equipment_market_buying_threshold
 		id = convoy
-		value = 30  # Consider buying if we have too few (less than 30) convoys
+		value = 30  # Consider buying if we have too few (less than 30) convoys. Also interacts with the EQUIPMENT_MARKET_WANTED_CONVOY_USAGE_RATIO define.
 	}
 }
 
@@ -1064,7 +1087,7 @@ dont_build_capitals_if_on_treaty = {
 				original_tag = ITA
 				original_tag = ENG
 				NOT = { has_idea = MTG_naval_treaty_adherent }
-			}	
+			}
 	}
 
 	ai_strategy = {
@@ -1096,11 +1119,12 @@ DEFAULT_early_template_design = {
 				tag = JAP
 				tag = USA
 				tag = POL
+				tag = SIA
 			}
 		}
-		date < 1940.1.1				
+		date < 1940.1.1
 	}
-	abort = { 
+	abort = {
 		date > 1940.1.1
 	}
 
@@ -1115,7 +1139,7 @@ DEFAULT_early_template_design = {
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
@@ -1139,7 +1163,7 @@ DEFAULT_early_template_design = {
 		id = paratroopers
 		value = -50
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = infantry
@@ -1158,11 +1182,12 @@ DEFAULT_midlate_template_design = {
 				tag = JAP
 				tag = USA
 				tag = POL
+				tag = SIA
 			}
 		}
-		date > 1940.1.1				
+		date > 1940.1.1
 	}
-abort_when_not_enabled = yes
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
@@ -1175,7 +1200,7 @@ abort_when_not_enabled = yes
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
@@ -1187,7 +1212,7 @@ abort_when_not_enabled = yes
 		id = medium_armor
 		value = 20
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = modern_armor
@@ -1205,7 +1230,7 @@ abort_when_not_enabled = yes
 		id = paratroopers
 		value = -50
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = infantry
@@ -1217,11 +1242,11 @@ save_admiral_pp_for_later = {
 	enable = {
 		has_war = no
 		threat < 0.3
-		has_political_power < 200		
+		has_political_power < 200
 	}
 	abort = {
 		OR = {
-			has_war = yes	
+			has_war = yes
 			threat > 0.3
 			has_political_power > 200
 		}
@@ -1244,6 +1269,10 @@ do_not_waste_pp_if_saving_for_manpower_laws = {
 		OR = {
 			manpower_per_military_factory > 500
 			has_war = no
+			AND = {
+				original_tag = ETH
+				is_government_in_exile = yes
+			}
 		}
 	}
 
@@ -1260,40 +1289,109 @@ do_not_waste_pp_if_saving_for_manpower_laws = {
 	}
 }
 
-ai_dont_spy_at_all = {
+build_intelligence_agency_as_major = {
+	enable = {
+		is_major = yes
+		OR = {
+			has_war = yes
+			date > 1938.1.1
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+
+}
+
+build_intelligence_agency = {
+	enable = {
+		date > 1940.1.1
+		has_war = no
+		num_of_civilian_factories > 25
+	}
+	abort = {
+		OR = {
+			has_war = yes
+			num_of_civilian_factories < 25
+		}
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+
+}
+
+upgrade_intelligence_agency = {
+	enable = {
+		date > 1940.1.1
+		num_of_civilian_factories > 50
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories < 40
+		}
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+}
+
+upgrade_intelligence_agency_as_spy_master = {
+	enable = {
+		is_spymaster = yes
+		OR = {
+			has_war = no
+			num_of_civilian_factories > 50
+		}
+	}
+	abort = {
+		is_spymaster = no
+		num_of_civilian_factories < 40
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 10
+	}
+}
+
+add_intelligence_agency_normal_upgrade_prio = {
 	enable = {
 		always = yes
 	}
-	abort = { always = no }
-	ai_strategy = {
-		type = intelligence_agency_usable_factories
-		value = -9999
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = intelligence_agency_branch_desire_factor
 		id = branch_intelligence
-		value = -9999
+		value = 1000
 	}
 	ai_strategy = {
 		type = intelligence_agency_branch_desire_factor
 		id = branch_defense
-		value = -9999
+		value = 1000
 	}
 	ai_strategy = {
 		type = intelligence_agency_branch_desire_factor
 		id = branch_operation
-		value = -9999
+		value = 500
 	}
 	ai_strategy = {
 		type = intelligence_agency_branch_desire_factor
 		id = branch_operative
-		value = -9999
+		value = 100
 	}
 	ai_strategy = {
 		type = intelligence_agency_branch_desire_factor
 		id = branch_crypto
-		value = -9999
+		value = 2000
 	}
 }
 
@@ -1302,7 +1400,7 @@ ask_foreign_manpower_as_major = {
 		is_major = yes
 		garrison_manpower_need > 200000
 	}
-	
+
 	abort = {
 		garrison_manpower_need < 100000
 	}
@@ -1340,8 +1438,8 @@ put_garrisons_on_high_prio = {
 	enable = {
 		always = yes
 	}
-abort_when_not_enabled = yes
-	
+	abort_when_not_enabled = yes
+
 	ai_strategy = {
 		type = garrison_reinforcement_priority
 		value = 100 # positive is high prio, negative is low prio
@@ -1351,7 +1449,7 @@ abort_when_not_enabled = yes
 default_spyplanes_production = {
 	enable = {
 		OR = {
-		has_tech = scout_plane1
+			has_tech = scout_plane1
 			has_tech = photo_reconnaisance
 		}
 		is_major = yes
@@ -1389,9 +1487,9 @@ default_spyplanes_production = {
 
 minors_dont_spy = {
 	enable = {
-	OR = {
-		has_tech = scout_plane1
-		has_tech = photo_reconnaisance
+		OR = {
+			has_tech = scout_plane1
+			has_tech = photo_reconnaisance
 		}
 		is_major = no
 	}
@@ -1405,6 +1503,297 @@ minors_dont_spy = {
 	}
 }
 
+### SPECIAL PROJECT STRATEGIES
+default_build_a_nl_facility = {
+	enable = {
+		has_tech = atomic_research
+		num_of_civilian_factories > 25
+		num_of_military_factories > 25 # Even if we have the base tech, let's wait until we have some kind of capacity
+		nuclear_facility < 1  # one is enough
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = nuclear_facility
+		value = 100
+	}
+}
+
+default_build_a_nav_facility = {
+	enable = {
+		num_of_naval_factories > 25 # Only Naval Powers should bother with these unless specifically told to do otherwise
+		naval_facility < 1 # one is enough
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = naval_facility
+		value = 100
+	}
+}
+
+# TODO MANU or THOMAS
+default_build_a_gun_emplacement = {
+	enable = {
+		is_major = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = mega_gun_emplacement
+		value = 1
+	}
+}
+
+default_build_a_lw_facility = {
+	enable = {
+		is_major = yes
+		num_of_civilian_factories > 40
+		num_of_military_factories > 40
+		OR = { # Don't start until we can build decent tanks of some kind
+			has_tech = improved_light_tank_chassis
+			has_tech = basic_medium_tank_chassis
+			has_tech = improved_heavy_tank_chassis
+		}
+		land_facility < 1 # one is enough
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = land_facility
+		value = 1
+	}
+}
+
+default_build_an_air_facility = {
+	allowed = {
+		NOT = { original_tag = GER } # Germany uses own strat
+	}
+	enable = {
+
+		is_major = yes # Minors don't bother until strong enough to be considered major
+		num_of_military_factories > 40 # We should first build up our military industry
+
+		OR = { # Don't start until we can build decent aircraft
+			has_tech = basic_small_airframe
+			has_tech = basic_medium_airframe
+			has_tech = basic_large_airframe
+		}
+		air_facility < 1 # one is enough
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = air_facility
+		value = 1
+	}
+}
+
+default_become_spymaster_major = {
+	allowed = {	
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		is_major = yes 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = become_spymaster
+		value = 30
+	}
+}
+default_become_spymaster_minor = {
+	allowed = {	
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		is_major = no 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = become_spymaster
+		value = 2
+	}
+}
+
+default_become_head_of_crypto = {
+	allowed = {	
+		has_dlc = "No Compromise, No Surrender"
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = become_head_of_crypto
+		value = 2
+	}
+}
+
+default_become_head_of_operations = {
+	allowed = {	
+		has_dlc = "No Compromise, No Surrender"
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = become_head_of_operations
+		value = 2
+	}
+}
+
+default_become_counter_intel = {
+	allowed = {	
+		has_dlc = "No Compromise, No Surrender"
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = become_head_of_counter_intel
+		value = 2
+	}
+}
+
+default_become_supreme_commander = {
+	allowed = {	
+		has_dlc = "No Compromise, No Surrender"
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = spent_faction_initiative_priority
+		id = unlock_faction_commander
+		value = 2
+	}
+}
+
+default_become_faction_leader = {
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = pp_spend_priority
+		id = become_faction_leader
+		value = 100
+	}
+}
+
+
+default_add_faction_facility = {
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = spent_faction_initiative_priority
+		id = program
+		value = 5
+	}
+}
+
+default_unlock_doctrine_sharing = {
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = spent_faction_initiative_priority
+		id = unlock_doctrine_sharing
+		value = 10
+	}
+}
+
+default_assign_supportive_scientist = {
+
+	enable = {
+		OR = { 
+			can_assign_supportive_scientist_to_faction = specialization_land
+			can_assign_supportive_scientist_to_faction = specialization_nuclear
+			can_assign_supportive_scientist_to_faction = specialization_naval
+			can_assign_supportive_scientist_to_faction = specialization_naval
+		}
+		has_political_power > 74 # mainly to add some time padding for the player to react, and to not spend pp on it if there are cheaper things that we could want to do 
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = supportive_scientist
+		value = 25
+	}
+}
+
+default_recruit_land_scientist = {
+	enable = {
+		OR = {
+			can_assign_supportive_scientist_to_faction = specialization_land
+			land_facility > 0
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = recruit_scientist
+		id = specialization_land
+		value = 100
+	}
+}
+
+default_recruit_nuclear_scientist = {
+	enable = {
+		OR = {
+			can_assign_supportive_scientist_to_faction = specialization_nuclear
+			nuclear_facility > 0
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = recruit_scientist
+		id = specialization_nuclear
+		value = 100
+	}
+}
+
+default_recruit_naval_scientist = {
+	enable = {
+		OR = {
+			can_assign_supportive_scientist_to_faction = specialization_naval
+			naval_facility > 0
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = recruit_scientist
+		id = specialization_naval
+		value = 100
+	}
+}
+
+default_recruit_air_scientist = {
+	enable = {
+		OR = {
+			can_assign_supportive_scientist_to_faction = specialization_air
+			air_facility > 0
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = recruit_scientist
+		id = specialization_air
+		value = 100
+	}
+}
+
 default_produce_some_trucks_for_buffer = {
 	enable = {
 		num_of_military_factories > 12
@@ -1414,8 +1803,8 @@ default_produce_some_trucks_for_buffer = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
-		type = equipment_production_min_factories
-		id = motorized
+		type = equipment_production_min_factories_archetype
+		id = motorized_equipment
 		value = 1
 	}
 }
@@ -1540,5 +1929,56 @@ we_dont_believe_in_mountain_tanks = {
 		type = front_armor_score
 		id = "YUG"
 		value = -100
+	}
+}
+
+# Build some rockets (simple strats to have a minimum production at least )
+if_we_can_build_v1_rockets_we_want_rockets = {
+	enable = {
+		is_special_project_completed = sp:sp_rockets_flying_bomb
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = guided_missile_equipment
+		value = 1
+	}
+}
+
+if_we_can_build_v2_rockets_we_want_v2_rockets = {
+	enable = {
+		is_special_project_completed = sp:sp_rockets_ballistic_missile
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = ballistic_missile_equipment
+		value = 1
+	}
+}
+if_we_can_build_sams_we_want_sams = {
+	enable = {
+		is_special_project_completed = sp:sp_rockets_ground_to_air_missile
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = sam_missile_equipment
+		value = 1
+	}
+}
+if_we_can_build_nuclear_missiles_we_want_nuclear_missiles = {
+	enable = {
+		is_special_project_completed = sp:sp_nuclear_warheads
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = nuclear_missile_equipment
+		value = 1
 	}
 }

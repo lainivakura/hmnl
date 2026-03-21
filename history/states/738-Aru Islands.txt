@@ -1,0 +1,17 @@
+state={
+	id=738
+	name="STATE_738"
+
+	history = {
+		owner = HMV
+	}
+
+	provinces={
+		4579 
+	}
+	manpower=1
+
+	state_category="small_island"
+
+	local_supplies=0.0 
+}

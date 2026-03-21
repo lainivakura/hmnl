@@ -1,0 +1,16 @@
+
+state={
+	id=845
+	name="STATE_845"
+	manpower = 1
+
+	state_category = wasteland
+	history={
+		owner = HMV
+	}
+
+	provinces={
+		10917
+	}
+	local_supplies=0.0 
+}

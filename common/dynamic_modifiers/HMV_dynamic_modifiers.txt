@@ -1,0 +1,10 @@
+HMV_POL_REG = {
+	remove_trigger = { 
+		NOT = {is_controlled_by = POL}
+	}
+	
+	icon = GFX_modifiers_demilitarize_zone
+	
+	production_speed_buildings_factor = -0.45
+	local_building_slots_factor = -0.3
+}

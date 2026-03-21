@@ -3,7 +3,6 @@ ASG_category = {
 		icon = generic_industry
 
 		visible = {
-			# is_debug = yes
 			always = yes
 		}
 
@@ -11,7 +10,9 @@ ASG_category = {
 		cost = 0
 
 		complete_effect = {
-			set_global_flag = open_military_line_graph_gui
+			set_country_flag = open_military_line_graph_gui
 		}
 	}
+	
+	
 }

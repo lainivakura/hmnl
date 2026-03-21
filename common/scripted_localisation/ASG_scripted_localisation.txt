@@ -1,14 +1,184 @@
-# Allows you to create your own dynamic keys
-# to be called in localization.
-# defined_text -> this is it, we're defining the text
-# text -> a discrete entry that can be picked to display in loc.
-# trigger -> determines if a text entry will be picked or not.
-# (The triggers need to be valid for the scope the key is called in
-# (eg Root or From.From).)
-# localization_key -> points to the localization key
-# that'll be used if trigger passes
+defined_text = {
+    name = GetGreyManpowerScore
 
+    text = {
+        trigger = { 
+            var:global.ASG_grey_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
 
+defined_text = {
+    name = GetRedManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_red_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetBlueManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_blue_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetGreenManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_green_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetLightBlueManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_blue_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetLightRedManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_red_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetLightYellowManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_yellow_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetLightWhiteManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_white_curve_tag = { 
+                set_temp_variable = { score_var = ASG_manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetHungaryManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Hungary_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetBulgaryManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Bulgary_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCanadaManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Canada_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetAustraliaManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Australia_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetSAFManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_SAF_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetRAJManpowerScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_RAJ_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Manpower_score }
+            }
+        }
+        localization_key = ASG_score_loc
+    }
+}
 
 defined_text = {
     name = GetGreyMilitaryScore
@@ -19,7 +189,7 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
     }
 }
 
@@ -32,7 +202,7 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
     }
 }
 
@@ -45,7 +215,7 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
     }
 }
 
@@ -58,7 +228,7 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
     }
 }
 
@@ -71,7 +241,7 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
     }
 }
 
@@ -84,7 +254,7 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
     }
 }
 
@@ -97,7 +267,7 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
     }
 }
 
@@ -110,6 +280,671 @@ defined_text = {
                 set_temp_variable = { score_var = ASG_military_score }
             }
         }
-        localization_key = "[?score_var|2]"
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetHungaryMilitaryScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Hungary_curve_tag = { 
+                set_temp_variable = { score_var = ASG_military_score }
+            }
+        }
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetBulgaryMilitaryScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Bulgary_curve_tag = { 
+                set_temp_variable = { score_var = ASG_military_score }
+            }
+        }
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetCanadaMilitaryScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Canada_curve_tag = { 
+                set_temp_variable = { score_var = ASG_military_score }
+            }
+        }
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetAustraliaMilitaryScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Australia_curve_tag = { 
+                set_temp_variable = { score_var = ASG_military_score }
+            }
+        }
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetSAFMilitaryScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_SAF_curve_tag = { 
+                set_temp_variable = { score_var = ASG_military_score }
+            }
+        }
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetRAJMilitaryScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_RAJ_curve_tag = { 
+                set_temp_variable = { score_var = ASG_military_score }
+            }
+        }
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetFINMilitaryScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_FIN_curve_tag = { 
+                set_temp_variable = { score_var = ASG_military_score }
+            }
+        }
+        localization_key = "ASG_score_loc_2"
+    }
+}
+
+defined_text = {
+    name = GetGreyCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_grey_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetRedCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_red_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetBlueCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_blue_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetGreenCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_green_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetLightBlueCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_blue_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetLightRedCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_red_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetLightYellowCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_yellow_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetLightWhiteCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_light_white_curve_tag = { 
+                set_temp_variable = { score_var = ASG_casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetHungaryCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Hungary_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetBulgaryCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Bulgary_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetCanadaCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Canada_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetAustraliaCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_Australia_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetSAFCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_SAF_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetRAJCasualtiesScore
+
+    text = {
+        trigger = { 
+            var:global.ASG_RAJ_curve_tag = { 
+                set_temp_variable = { score_var = ASG_Casualties_score }
+            }
+        }
+        localization_key = "ASG_score_loc_1"
+    }
+}
+
+defined_text = {
+    name = GetMilitaryYLabel1
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 100 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_military_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetMilitaryYLabel2
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 200 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_military_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetMilitaryYLabel3
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 300 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_military_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetMilitaryYLabel4
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 400 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_military_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetMilitaryYLabel5
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 500 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_military_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetMilitaryYLabel6
+
+    text = {
+        trigger = {
+                set_temp_variable = { score_var = 600 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_military_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetMilitaryYLabel7
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 700 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_military_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCivilianYLabel1
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 100 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_civilian_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCivilianYLabel2
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 200 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_civilian_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCivilianYLabel3
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 300 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_civilian_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCivilianYLabel4
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 400 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_civilian_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCivilianYLabel5
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 500 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_civilian_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCivilianYLabel6
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 600 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_civilian_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCivilianYLabel7
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 700 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_civilian_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc
+    }
+}
+
+defined_text = {
+    name = GetCasualtiesYLabel1
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 2 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_casualties_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetCasualtiesYLabel2
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 4 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_casualties_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetCasualtiesYLabel3
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 6 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_casualties_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetCasualtiesYLabel4
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 8 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_casualties_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetCasualtiesYLabel5
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 10 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_casualties_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetCasualtiesYLabel6
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 12 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_casualties_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetCasualtiesYLabel7
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 14 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_casualties_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetManpowerYLabel1
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 1.5 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_manpower_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetManpowerYLabel2
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 3 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_manpower_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetManpowerYLabel3
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 4.5 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_manpower_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetManpowerYLabel4
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 6 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_manpower_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetManpowerYLabel5
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 7.5 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_manpower_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetManpowerYLabel6
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 9 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_manpower_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
+    }
+}
+
+defined_text = {
+    name = GetManpowerYLabel7
+
+    text = {
+        trigger = { 
+                set_temp_variable = { score_var = 10.5 }
+                multiply_temp_variable = {
+                    score_var = GLOBAL.ASG_manpower_rendering_scale_factor
+                }
+        }
+        localization_key = ASG_score_loc_million
     }
 }

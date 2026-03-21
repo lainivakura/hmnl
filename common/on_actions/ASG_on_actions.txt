@@ -2,10 +2,6 @@ on_actions = {
 	on_startup = {
 		effect = {
 			random_country = {
-				# I want those variable to initalize globally on launch
-				#####################################################################
-				#2.0 release 
-				#####################################################################
 				set_variable = {
 					GLOBAL.ASG_grey_curve_tag = GER.id
 				}
@@ -19,7 +15,7 @@ on_actions = {
 					GLOBAL.ASG_red_curve_tag = SOV.id
 				}
 				set_variable = {
-					GLOBAL.ASG_light_blue_curve_tag = RAJ.id
+					GLOBAL.ASG_light_blue_curve_tag = FRA.id
 				}
 				set_variable = {
 					GLOBAL.ASG_light_red_curve_tag = ENG.id
@@ -31,20 +27,41 @@ on_actions = {
 					GLOBAL.ASG_light_yellow_curve_tag = ROM.id
 				}
 				set_variable = {
+					GLOBAL.ASG_bulgary_curve_tag = BUL.id
+				}
+				set_variable = {
+					GLOBAL.ASG_hungary_curve_tag = HUN.id
+				}
+				set_variable = {
+					GLOBAL.ASG_canada_curve_tag = CAN.id
+				}
+				set_variable = {
+					GLOBAL.ASG_australia_curve_tag = AST.id
+				}
+				set_variable = {
+					GLOBAL.ASG_saf_curve_tag = SAF.id
+				}
+				set_variable = {
+					GLOBAL.ASG_raj_curve_tag = RAJ.id
+				}
+				set_variable = {
+					GLOBAL.ASG_fin_curve_tag = FIN.id
+				}
+				set_variable = {
 					GLOBAL.ASG_number_of_executed_ticks = 0
 				}
-				# set_variable = {
-				# 	GLOBAL.ASG_civilian_rendering_scale_factor = 1
-				# }
+				set_variable = {
+					GLOBAL.ASG_civilian_rendering_scale_factor = 1
+				}
 				set_variable = {
 					GLOBAL.ASG_military_rendering_scale_factor = 1
 				}
-				# set_variable = {
-				# 	GLOBAL.ASG_manpower_rendering_scale_factor = 1
-				# }
-				# set_variable = {
-				# 	GLOBAL.ASG_casualties_rendering_scale_factor = 1
-				# }
+				set_variable = {
+					GLOBAL.ASG_manpower_rendering_scale_factor = 1
+				}
+				set_variable = {
+					GLOBAL.ASG_casualties_rendering_scale_factor = 1
+				}
 				set_variable = {
 					GLOBAL.ASG_graph_pixel_y_maximum_value = 390
 				}
@@ -52,20 +69,20 @@ on_actions = {
 					GLOBAL.ASG_graph_pixel_y_minimum_value = 0
 				}
 				set_variable = {
-					GLOBAL.ASG_graph_pixel_y_offset_value = 4
+					GLOBAL.ASG_graph_pixel_y_offset_value = 1
 				}
-				# set_variable = {
-				# 	GLOBAL.ASG_manpower_amount_to_pixel_scale_factor = 0.04
-				# }
 				set_variable = {
-					GLOBAL.ASG_military_amount_to_pixel_scale_factor = 0.60
+					GLOBAL.ASG_manpower_amount_to_pixel_scale_factor = 0.04
 				}
-				# set_variable = {
-				# 	GLOBAL.ASG_civilian_amount_to_pixel_scale_factor = 0.60
-				# }
-				# set_variable = {
-				# 	GLOBAL.ASG_casualties_amount_to_pixel_scale_factor = 0.030
-				# }
+				set_variable = {
+					GLOBAL.ASG_military_amount_to_pixel_scale_factor = 0.30
+				}
+				set_variable = {
+					GLOBAL.ASG_civilian_amount_to_pixel_scale_factor = 0.60
+				}
+				set_variable = {
+					GLOBAL.ASG_casualties_amount_to_pixel_scale_factor = 0.030
+				}
 
 				set_variable = {
 					GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset = GLOBAL.ASG_graph_pixel_y_maximum_value
@@ -82,29 +99,20 @@ on_actions = {
 				ASG_stats_update = yes
 				#military
 				ASG_calculate_initial_graph_point_military = yes
-				#civilian
-				# ASG_calculate_initial_graph_point_civilian = yes
 				#manpower
-				# ASG_calculate_initial_graph_point_manpower = yes
+				ASG_calculate_initial_graph_point_manpower = yes
 				#casualties
-				# ASG_calculate_initial_graph_point_casualties = yes
+				ASG_calculate_initial_graph_point_casualties = yes
 			}
 		}
 	}
 	on_monthly_GER = {
 		effect = {
-			# log = "Graph update THIS = [?THIS.GetName] ROOT = [?ROOT.GetName]"
 			ASG_graphs_replot = yes
 			ASG_stats_update = yes
 			add_to_variable = {
 				GLOBAL.ASG_number_of_executed_ticks = 1
 			}
-			# if = {
-			# 	limit = {
-			# 		is_debug = yes
-			# 	}
-			# 	log = "ASG Update Stats"
-			# }
 		}
 	}
 }

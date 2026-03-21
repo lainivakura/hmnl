@@ -1,37 +1,38 @@
 scripted_gui = {
-  top_bar_resource_toggle_container = {
-    context_type = player_context
-    window_name = "top_bar_resource_toggle_container"
-    parent_window_token = trade_tab
+	topbar_resource_toogle_window = {
+		context_type = player_context
 
-    properties = {
-      cb_toggle_resources = {
-        frame = resources_visible
-      }
-    }
+		window_name = "topbar_resource_toogle_window"
+		parent_window_token = trade_tab
+		#visible = {
+			#	has_country_flag=fuel_system_enabled
+			#
+			#}
 
-    effects = {
-      cb_toggle_resources_click = {
-        if = {
-          limit = {
-            check_variable = { resources_visible = 0 }
-          }
-          set_variable = { resources_visible = 2 }
-        }
-        else = {
-          clear_variable = resources_visible
-        }
-      }
-    }
-
-  }
-
-  top_bar_resource_container = {
-    context_type = player_context
-    window_name = "top_bar_resource_container"
-
-    visible = {
-		  check_variable = { resources_visible = 0 }
+		effects = {
+			toogle_button_click={
+				if={limit={check_variable={resources_disabled=0}}
+					set_variable={resources_disabled=1}}
+				else={clear_variable=resources_disabled}
+			}
 		}
-  }
+		
+
+
+	}
+	
+	
+	topbar_resources= {
+		context_type = player_context
+		window_name = "topbar_resource_container"
+		visible = {
+			check_variable={resources_disabled=0}
+		}
+		
+
+		triggers = {
+
+		}
+	}
+
 }

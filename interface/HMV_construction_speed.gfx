@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	textSpriteType = {
+		name = "GFX_button_201x34"
+		texturefile = "gfx/interface/button_201x34.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}	

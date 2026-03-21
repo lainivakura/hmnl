@@ -1,0 +1,107 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 18
+	}
+    SpriteType = {
+		name = "GFX_decision_HMV_air_dec"
+		texturefile = "gfx/interface/decisions/decision_HMV_air_dec.dds"
+	}
+    
+    
+### Иконки идей мода ###
+
+    spriteType = {
+        name = "GFX_idea_jap_eco"
+        texturefile = gfx/interface/ideas/idea_jap_eco.dds
+    }
+
+    spriteType = {
+        name = "GFX_idea_sov_eco"
+        texturefile = gfx/interface/ideas/idea_sov_eco.dds
+    }
+    spriteType = {
+        name = "GFX_idea_FRA_antiguerre_HMV"
+        texturefile = "gfx/interface/ideas/GFX_idea_FRA_antiguerre_HMV.dds"
+    }
+
+## Неизвестная идея ##
+
+	spriteType = { 
+		name = "GFX_idea_new_new_deal"
+		texturefile = "gfx/interface/ideas/new_deal.dds"
+	}
+
+## Разгон ##   
+
+    SpriteType = {
+		name = "GFX_idea_razgon"
+		texturefile = "gfx/interface/ideas/razgon.png"
+	}
+
+## Рейхкомиссариаты ##
+
+    spriteType = {
+        name = "GFX_idea_bohemia"
+        texturefile = gfx/interface/ideas/bohemia.dds
+    }
+
+	spriteType = {
+        name = "GFX_idea_ggouvernement"
+        texturefile = gfx/interface/ideas/generalgouvernement.dds
+    }
+	
+	spriteType = {
+        name = "GFX_idea_belgien"
+        texturefile = gfx/interface/ideas/belgien.png
+    }
+	
+    spriteType = {
+        name = "GFX_idea_niederlande"
+        texturefile = gfx/interface/ideas/niederlande.dds
+    }
+	
+	spriteType = {
+        name = "GFX_idea_norwegen"
+        texturefile = gfx/interface/ideas/norwegen.png
+    }
+	
+	spriteType = {
+        name = "GFX_idea_ostland"
+        texturefile = gfx/interface/ideas/ostland.png
+    }
+	
+	spriteType = {
+        name = "GFX_idea_ukraine"
+        texturefile = gfx/interface/ideas/ukraine.dds
+    }
+	
+	spriteType = {
+        name = "GFX_idea_kaukasien"
+        texturefile = gfx/interface/ideas/kaukasien.dds
+    }
+	
+	spriteType = {
+        name = "GFX_idea_moskowien"
+        texturefile = gfx/interface/ideas/moskowien.dds
+    }
+	
+	spriteType = {
+        name = "GFX_idea_grossbritannien"
+        texturefile = gfx/interface/ideas/grossbritannien.dds
+    }
+	
+	spriteType = {
+        name = "GFX_idea_high_castle"
+        texturefile = gfx/interface/ideas/high_castle.dds
+    }
+
+## Офицеры СС ##
+
+    spriteType = {
+		name = "GFX_trait_ss_officer"
+		texturefile = "gfx/interface/traits/trait_ss_officer.dds"
+	}	  
+}    
