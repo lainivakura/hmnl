@@ -352,7 +352,7 @@ set_variable = { SOV_propaganda_empty_slot_index = 2 } #### === INSERT EMPTY SLO
 set_variable = { SOV_poster_left_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate empty slot GFX
 set_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
-
+set_variable = { SOV_the_red_army_max_planning = -0.2 }
 set_variable = { SOV_default_propaganda_campaign_duration = 180 } #Duration days for propaganda campaigns
 set_variable = { SOV_default_propaganda_campaign_cooldown = 90 } #Days of cooldown after a Propaganda Campaign has been finished.
 set_variable = { SOV_default_propaganda_campaign_old_days = 150 } #A propaganda poster will age (change GFX) after this amount of days have passed since the campaign was activated

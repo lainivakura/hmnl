@@ -7,7 +7,7 @@ state={
 	resources = {
 		coal = 8 # initial distribution
 	}
-	state_category = town
+	state_category = metropolis
 
 	history={
 		owner = SOV

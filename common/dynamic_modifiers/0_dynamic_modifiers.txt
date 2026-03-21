@@ -565,7 +565,7 @@ SOV_second_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
 	#INITIAL
 	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #-0.15
 	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.05
-	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.05
+	consumer_goods_expected_value = 0.02 #0.05
 	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0.05
 }
 
@@ -577,7 +577,7 @@ SOV_third_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT - Basic
 	#PREVIOUS -> Third Five Year Plan
 	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #-0.1
 	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.05
-	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.1
+	consumer_goods_expected_value = 0.05 #0.1
 	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0.05
 
 	#INITIAL
@@ -595,7 +595,7 @@ SOV_third_five_year_plan_civilian_dynamic_modifier = { #NATIONAL SPIRIT - Civili
 	#PREVIOUS
 	production_factory_efficiency_gain_factor = SOV_fyp_production_factory_efficiency_gain_factor #-0.1
 	production_factory_max_efficiency_factor = SOV_fyp_production_factory_max_efficiency_factor #0.05
-	consumer_goods_factor = SOV_fyp_consumer_goods_factor #0.08
+	consumer_goods_expected_value = 0.03 #0.08
 	production_speed_industrial_complex_factor = SOV_fyp_production_speed_industrial_complex_factor #0.1
 	industrial_concern_cost_factor = SOV_fyp_industrial_concern_cost_factor #-0.15
 	
@@ -1109,6 +1109,7 @@ SOV_the_red_army_dynamic_modifier = { #NATIONAL SPIRIT
 	army_org_factor = SOV_the_red_army_army_org_factor #-0.15 Meant to represent army disgruntledness
 	experience_gain_army_factor = SOV_the_red_army_experience_gain_army_factor #-0.1
 	experience_loss_factor = SOV_the_red_army_experience_loss_factor #0.25
+	max_planning = SOV_the_red_army_max_planning  
 
 
 	#FUTURE
@@ -1144,7 +1145,7 @@ SOV_the_red_army_dynamic_modifier_alt = { #NATIONAL SPIRIT
 	army_org_factor = SOV_the_red_army_army_org_factor #-0.15 Meant to represent army disgruntledness
 	experience_gain_army_factor = SOV_the_red_army_experience_gain_army_factor #-0.1
 	experience_loss_factor = SOV_the_red_army_experience_loss_factor #0.25
-
+	max_planning = SOV_the_red_army_max_planning  
 
 	#FUTURE
 	mobilization_speed = SOV_the_red_army_mobilization_speed #0.05 -> Strengthen the Mobilization Plan

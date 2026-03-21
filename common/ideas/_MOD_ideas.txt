@@ -328,4 +328,7 @@ ideas = {
 					instant = yes
 				}}
 				}
+		stavka = {
+			picture = ger_the_great_red_menace
+			modifier = {max_planning = 0.1}}
 }

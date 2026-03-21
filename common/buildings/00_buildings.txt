@@ -54,7 +54,7 @@ buildings = {
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 20000
+		base_cost = 12000
 		base_cost_conversion = 8000
 		per_level_extra_cost = -500
 		military_production = 1
@@ -70,7 +70,7 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 20000
+		base_cost = 12000
 		base_cost_conversion = 12000
 		per_level_extra_cost = -500
 		general_production = 1
@@ -225,7 +225,7 @@ buildings = {
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
-		base_cost = 20000
+		base_cost = 15000
 		per_level_extra_cost = -500
 		only_costal = yes
 		naval_production = 1
