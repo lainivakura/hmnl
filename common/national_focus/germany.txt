@@ -3955,7 +3955,7 @@ focus_tree = {
 	focus = {
 		id = GER_improve_the_logistics_system
 		icon = GFX_focus_generic_reinforcing_the_supply_network
-		mutually_exclusive = { focus = GER_defend_the_vaterland }
+	
 		prerequisite = { focus = GER_panzergrenadier }
 
 		x = -1
@@ -3985,7 +3985,7 @@ focus_tree = {
 	focus = {
 		id = GER_defend_the_vaterland
 		icon = GFX_goal_generic_defence
-		mutually_exclusive = { focus = GER_improve_the_logistics_system }
+
 		prerequisite = { focus = GER_panzergrenadier }
 
 		x = 1
@@ -4241,6 +4241,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
+				add_mastery = {
+					amount = 200
+					folder = land
+					track = armor
+					}
 			add_command_power = 25
 			army_experience = 15
 
@@ -4651,6 +4656,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_mastery = {
+					amount = 200
+					folder = land
+					track = armor
+					}
+			add_mastery = {
+					amount = 200
+					folder = air
+					track = strike_aircraft
+					}
 			GER_modify_army_modifier = yes
 			add_to_variable = { 
 				GER_military_air_superiority_bonus_in_combat = 0.1
@@ -4902,7 +4917,11 @@ add_tech_bonus = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-
+			add_mastery = {
+					amount = 200
+					folder = air
+					track = strike_aircraft
+					}
 			add_mastery_bonus = {
 				name = GER_dive_bombers
 				bonus = 0.05
@@ -5437,6 +5456,11 @@ add_tech_bonus = {
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_AIR_XP FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			add_mastery = {
+					amount = 200
+					folder = air
+					track = fighter_aircraft
+					}
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = GER_form_the_jagdwaffe

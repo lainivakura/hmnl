@@ -594,6 +594,7 @@ GER_army_modifier = { #Army NS
 	icon = GFX_idea_GER_army
 
 	army_infantry_attack_factor = GER_military_army_infantry_attack_factor
+	experience_loss_factor = GER_military_army_experience_loss_factor
 	army_artillery_attack_factor = GER_military_army_artillery_attack_factor
 	army_armor_attack_factor = GER_military_army_armor_attack_factor
 	army_armor_speed_factor = GER_military_army_armor_speed_factor

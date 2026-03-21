@@ -183,7 +183,7 @@ country_event =
 	{
 		id = Atomevents.212
 		title = Atomevents.212.t
-		desc = Atomevents.212.t
+		desc = Atomevents.212.d
 		trigger = {
 			tag = SOV
 			has_war_with = GER}

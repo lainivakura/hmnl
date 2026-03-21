@@ -478,10 +478,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_helicopter_artillery_observers_tech
-			research_cost_coeff = 1
-		}
+		
 
 		research_cost = 1.25
 		start_year = 1936
@@ -530,9 +527,7 @@ technologies = {
 			recon = 2
 		}
 
-		helicopter_recon = {
-			recon = 1
-		}
+		
 
 		path = {
 			leads_to_tech = tech_recon3
@@ -577,10 +572,7 @@ technologies = {
 			recon = 2
 		}
 
-		helicopter_recon = {
-			recon = 1
-		}
-
+		
 		helicopter_brigade = {
 			recon = 2
 		}
@@ -627,9 +619,7 @@ technologies = {
 			recon = 2
 		}
 
-		helicopter_recon = {
-			recon = 2
-		}
+		
 
 		research_cost = 2.0
 		start_year = 1945 allow = { date > 1944.1.1 }
@@ -1103,10 +1093,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_helicopter_med_evac_tech
-			research_cost_coeff = 1
-		}
+		
 
 		dependencies = {
 			motorised_infantry = 1
@@ -1169,15 +1156,7 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.12
-			experience_loss_factor = -0.08
-
-			battalion_mult = {
-				category = category_all_infantry
-				default_morale = 0.05
-			}
-		}
+		
 
 		path = {
 			leads_to_tech = tech_field_hospital3
@@ -1225,25 +1204,9 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.12
-			experience_loss_factor = -0.08
+		
 
-			battalion_mult = {
-				category = category_all_infantry
-				default_morale = 0.05
-			}
-		}
-
-		helicopter_brigade = {
-			casualty_trickleback = 0.15
-			experience_loss_factor = -0.1
-
-			battalion_mult = {
-				category = category_all_infantry
-				default_morale = 0.05
-			}
-		}
+		
 
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -1290,15 +1253,7 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.12
-			experience_loss_factor = -0.08
-
-			battalion_mult = {
-				category = category_all_infantry
-				default_morale = 0.05
-			}
-		}
+		
 
 		research_cost = 2.0
 		start_year = 1945 allow = { date > 1944.1.1 }
@@ -1363,10 +1318,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_helicopter_transport_pods_tech
-			research_cost_coeff = 1
-		}
+		
 
 		dependencies = {
 			motorised_infantry = 1
@@ -1417,9 +1369,7 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 
-		helicopter_transport = {
-			supply_consumption_factor = -0.12
-		}
+		
 
 		path = {
 			leads_to_tech = tech_logistics_company3
@@ -1472,13 +1422,9 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 
-		helicopter_transport = {
-			supply_consumption_factor = -0.12
-		}
+		
 
-		helicopter_brigade = {
-			supply_consumption_factor = -0.12
-		}
+		
 
 		path = {
 			leads_to_tech = tech_logistics_company4
@@ -1525,9 +1471,7 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 
-		helicopter_transport = {
-			supply_consumption_factor = -0.15
-		}
+		
 
 		research_cost = 2.0
 		start_year = 1945 allow = { date > 1944.1.1 }
@@ -2137,156 +2081,9 @@ technologies = {
 		}
 	}
 
-	sp_helicopter_transport_pods_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
+	
 
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_air_helicopter
-			}
-		}
-
-		is_special_project_tech = yes
-
-		research_cost = 2.0
-		start_year = 1938 allow = { date > 1937.1.1 }
-		folder = {
-			name = support_folder
-			position = { x = 12 y = @1938 }
-		}
-
-		categories = {
-			support_tech
-			logistics_tech
-			helicopter_tech
-		}
-
-		enable_subunits = {
-			helicopter_transport
-		}
-
-		ai_will_do = {
-			base = 2
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-
-			modifier = {
-				factor = 3
-				date > "1944.1.1"
-			}
-		}
-	}
-
-	sp_helicopter_artillery_observers_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_air_helicopter
-			}
-		}
-
-		is_special_project_tech = yes
-
-		enable_subunits = {
-			helicopter_recon
-		}
-
-		research_cost = 2.0
-		start_year = 1938 allow = { date > 1937.1.1 }
-		folder = {
-			name = support_folder
-			position = { x = 3 y = @1938 }
-		}
-
-		categories = {
-			support_tech
-			recon_tech
-			helicopter_tech
-		}
-
-		ai_will_do = {
-			base = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-
-			modifier = {
-				factor = 2
-				date > "1939.1.1"
-			}
-
-			modifier = {
-				factor = 4
-				date > "1940.1.1"
-			}
-		}
-	}
-
-	sp_helicopter_med_evac_tech = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_air_helicopter
-			}
-		}
-
-		is_special_project_tech = yes
-
-		research_cost = 2.0
-		start_year = 1938 allow = { date > 1937.1.1 }
-		folder = {
-			name = support_folder
-			position = { x = 10 y = @1938 }
-		}
-
-		categories = {
-			support_tech
-			hospital_tech
-			helicopter_tech
-		}
-
-		enable_subunits = {
-			helicopter_field_hospital
-		}
-
-		ai_will_do = {
-			base = 2
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1940.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1944.1.1"
-			}
-		}
-	}
-
+	
 	sp_armored_motorized_military_police_tech = {
 		allow_branch = {
 			 has_dlc = "Gotterdammerung"
