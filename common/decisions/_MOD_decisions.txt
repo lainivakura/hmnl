@@ -17,7 +17,7 @@ attache_decisions = {
 		}
 		
 		available = {
-			JAP = {has_completed_focus = JAP_intervene_in_china}
+			JAP = {has_war_with = CHI}
 			date < 1939.1.1
 		}
 
@@ -63,7 +63,7 @@ attache_decisions = {
 		}
 		
 		available = {
-			JAP = {has_completed_focus = JAP_intervene_in_china}
+			JAP = {has_war_with = CHI}
 			date < 1939.1.1
 		}
 

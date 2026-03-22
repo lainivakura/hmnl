@@ -298,7 +298,7 @@ clamp_variable = {
 add_ideas = {
 
 	# Laws
-	limited_exports
+	jap_eco_1
 	limited_conscription
 	partial_economic_mobilisation
 
