@@ -3930,17 +3930,7 @@ focus_tree = {
 		relative_position_id = SOV_pc_of_mechanical_engineering
 		cost = 2
 		
-		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = improved_medium_tank_chassis
-			}
-			else = {
-				has_tech = improved_medium_tank
-			}
-		}
+		
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -5928,6 +5918,30 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			add_mastery_bonus = {
+				name = SOV_lessons_of_war
+				bonus = 0.5
+				days = 720
+				track = armor
+			}
+			add_mastery_bonus = {
+				name = SOV_lessons_of_war
+				bonus = 0.5
+				days = 720
+				track = infantry
+			}
+			add_mastery_bonus = {
+				name = SOV_lessons_of_war
+				bonus = 0.5
+				days = 720
+				track = operations
+			}
+			add_mastery_bonus = {
+				name = SOV_lessons_of_war
+				bonus = 0.5
+				days = 720
+				track = combat_support
+			}
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			add_to_variable = { SOV_the_red_army_max_planning = 0.1 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
@@ -6027,7 +6041,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_lessons_of_war
-		cost = 10
+		cost = 5
 
 		available = {
 			any_owned_state = {
@@ -6101,7 +6115,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_lessons_of_war
-		cost = 10
+		cost = 5
 
 		available = {
 

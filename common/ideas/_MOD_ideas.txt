@@ -331,4 +331,17 @@ ideas = {
 		stavka = {
 			picture = ger_the_great_red_menace
 			modifier = {max_planning = 0.1}}
+		SOV_capitulation_spirit = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				# Здесь будут динамические значения
+				army_core_attack_factor  = 0
+				army_core_defence_factor  = 0
+					}
+				dynamic_desc = {
+					text = SOV_capitulation_desc
+				}
+			}
+		SOV_proeb = { modifier = {surrender_limit = -0.2 supply_consumption_factor = 0.2}}
+		
 }

@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_idea_MONTOE"
 		texturefile = gfx/interface/ideas/ANDREY.dds
 	}
+	spriteType = {
+		name = "GFX_modifiers_generic_victors_of_ww1"
+		texturefile = gfx/interface/ideas/generic_victors_of_ww1.dds
+	}
 }

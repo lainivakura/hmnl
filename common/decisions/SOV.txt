@@ -12466,6 +12466,12 @@ SOV_great_patriotic_war = {
 		}
 		#Fail
 		complete_effect = {
+			SOV = {
+			add_timed_idea = {
+				idea = SOV_proeb
+				days = 60
+			}
+			}
 			219 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.6
 		}

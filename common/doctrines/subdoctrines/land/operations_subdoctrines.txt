@@ -85,10 +85,10 @@ last_stand = {
     xp_type = army
 
     available = {
-        always = yes
+        original_tag = SOV
     }
     # EFFECTS
-    conscription = 0.01
+    conscription = 0.025
 
     ai_will_do = {
 
@@ -97,17 +97,19 @@ last_stand = {
         }
 
     rewards = {
-        werwolf_groups = {
-        #1
-            resistance_damage_to_garrison_on_our_occupied_states = 0.25
-        }
-
-        pocket_consolidation = {
+		pocket_consolidation = {
         #2
             category_all_infantry = {
                 defense = 0.1
             }
         }
+        werwolf_groups = {
+        #1
+            resistance_damage_to_garrison_on_our_occupied_states = 0.3
+			resistance_growth_on_our_occupied_states = 0.1
+			resistance_target_on_our_occupied_states = 0.1
+        }
+
         digging_in = {
         #3
             out_of_supply_factor = -0.20
@@ -122,7 +124,8 @@ last_stand = {
         breaking_out = {
         #5
             category_army = {
-                soft_attack = 0.2
+                soft_attack = 0.1
+				hard_attack = 0.1
             }
         }
     }

@@ -56,7 +56,7 @@ buildings = {
 		show_on_map = 6
 		base_cost = 12000
 		base_cost_conversion = 8000
-		per_level_extra_cost = -500
+		per_level_extra_cost = -300
 		military_production = 1
 		disabled_in_dmz = yes
 		icon_frame = 2
@@ -64,7 +64,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 25
+			state_max = 30
 		}
 	}
 
@@ -72,14 +72,14 @@ buildings = {
 		show_on_map = 6
 		base_cost = 12000
 		base_cost_conversion = 12000
-		per_level_extra_cost = -500
+		per_level_extra_cost = -300
 		general_production = 1
 		icon_frame = 1
 		value = 5
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 25
+			state_max = 30
 		}
 	}
 
@@ -235,7 +235,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 25
+			state_max = 30
 		}
 	}
 

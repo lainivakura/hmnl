@@ -104,6 +104,7 @@ ideas = {
 			}
 
 			modifier = {
+				acclimatization_cold_climate_gain_factor = 20
 				drift_defence_factor = 0.5
 			}
 			rule = {

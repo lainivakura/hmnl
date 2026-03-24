@@ -1,0 +1,47 @@
+add_namespace = sovietdefense
+
+country_event = {
+    id = sovietdefense.100
+    hidden = yes
+    
+    trigger = {
+		tag = SOV
+		has_war_with = GER
+        NOT = { has_dynamic_modifier = soviet_capitulation_defense }
+    }
+    
+    mean_time_to_happen = { days = 1 }
+    
+    immediate = {
+        set_variable = {
+            soviet_defense_bonus_var = 0
+            
+        }
+        
+        add_dynamic_modifier = {
+            modifier = soviet_capitulation_defense
+        }
+        
+        country_event = { id = soviet_defense.1 days = 7 }
+    }
+}
+
+country_event = {
+    id = sovietdefense.1
+    hidden = yes
+    trigger = {
+			tag = SOV
+			has_war_with = GER
+			has_dynamic_modifier = soviet_capitulation_defense}
+    
+    mean_time_to_happen = { days = 7 }
+    
+    immediate = {
+		set_variable = { soviet_defense_bonus_var = surrender_progress }
+		multiply_variable = { soviet_defense_bonus_var = 0.2 }
+        
+        force_update_dynamic_modifier = yes
+        
+        country_event = { id = soviet_defense.1 days = 7 }
+    }
+}

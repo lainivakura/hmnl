@@ -2880,11 +2880,10 @@ focus_tree = {
 		id = GER_the_prussian_legacy
 		icon = GFX_focus_GER_prussian_legacy
 		prerequisite = { focus = GER_develop_modern_maneuver_warfare }
-		mutually_exclusive = { focus = GER_adopt_new_panzer_doctrine }
 		x = -2
 		y = 2
 		relative_position_id = GER_develop_modern_maneuver_warfare
-		cost = 5
+		cost = 4
 		available = {
 		}
 
@@ -2897,10 +2896,13 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_mastery = {
-				amount = 150
+				amount = 200
 				track = infantry
 			}
-
+			add_mastery = {
+				amount = 200
+				track = combat_support
+			}
 			add_doctrine_cost_reduction = {
 				name = GER_the_prussian_legacy
 				cost_reduction = 0.25
@@ -2938,7 +2940,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = GER_the_prussian_legacy
-		cost = 5
+		cost = 4
 		available = {
 		}
 
@@ -3028,7 +3030,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_the_prussian_legacy
-		cost = 5
+		cost = 4
 		available = {
 		}
 
@@ -3080,7 +3082,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_improve_motorized_troops
-		cost = 5
+		cost = 4
 		available = {
 		}
 
@@ -3210,13 +3212,21 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_artillery_bombardment
-		cost = 5
+		cost = 4
 		available = {
 		}
 
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_CHARACTER }
 
 		completion_reward = {
+			add_mastery = {
+				amount = 200
+				track = infantry
+			}
+			add_mastery = {
+				amount = 200
+				track = combat_support
+			}
 			army_experience = 15
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4230,11 +4240,10 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_adopt_new_panzer_doctrine_historical
 
 		prerequisite = { focus = GER_develop_modern_maneuver_warfare }
-		mutually_exclusive = { focus = GER_the_prussian_legacy }
 		x = 2
 		y = 2
 		relative_position_id = GER_develop_modern_maneuver_warfare
-		cost = 5
+		cost = 4
 		available = {
 		}
 
@@ -4310,7 +4319,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_adopt_new_panzer_doctrine
-		cost = 5
+		cost = 4
 		available = {
 		}
 
@@ -4351,7 +4360,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_adopt_new_panzer_doctrine
-		cost = 5
+		cost = 4
 		available = {
 			has_tech = radio
 		}
@@ -4649,7 +4658,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_advanced_panzer_research
-		cost = 5
+		cost = 4
 		available = {
 		}
 
@@ -4660,6 +4669,11 @@ focus_tree = {
 					amount = 200
 					folder = land
 					track = armor
+					}
+			add_mastery = {
+					amount = 200
+					folder = land
+					track = operations
 					}
 			add_mastery = {
 					amount = 200
