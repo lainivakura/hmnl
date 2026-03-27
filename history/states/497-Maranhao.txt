@@ -7,7 +7,7 @@ state = {
 	state_category = pastoral # Was rural
 	
 	history={
-		owner = HMV
+		
 	}
 
 	provinces = {

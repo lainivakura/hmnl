@@ -3610,7 +3610,7 @@
 3609;45;15;218;land;false;hills;1
 3610;45;16;236;sea;false;ocean;0
 3611;45;17;244;sea;false;ocean;0
-3612;45;18;78;land;true;plains;1
+3612;45;18;78;land;true;urban;1
 3613;45;18;128;land;false;plains;2
 3614;45;18;183;land;false;hills;1
 3615;45;18;232;sea;true;ocean;0

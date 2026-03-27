@@ -5225,6 +5225,11 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_mastery = {
+					amount = 100
+					folder = land
+					track = armor
+					}
 			army_experience = 20
 			add_doctrine_cost_reduction = {
 				name = USA_louisiana_maneuvers
@@ -5356,6 +5361,11 @@ focus_tree = {
 				category = artillery
 				category = support_tech
 			}
+			add_mastery = {
+					amount = 200
+					folder = land
+					track = combat_support
+					}
 		}
 	}
 	focus = {

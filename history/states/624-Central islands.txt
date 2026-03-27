@@ -4,7 +4,7 @@ state = {
 	name = "STATE_624" # Central Islands
 	manpower = 1
 	history={
-		owner = HMV
+		owner = USA
 	}
 	state_category = town
 

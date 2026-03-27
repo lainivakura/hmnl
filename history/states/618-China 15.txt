@@ -4,7 +4,7 @@ state={
 	name="STATE_618" # Dzungaria
 	manpower = 1
 	history={
-		owner = HMV
+		
 	}
 	state_category = pastoral
 

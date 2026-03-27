@@ -159,7 +159,7 @@ technologies = {
 		line_change_production_efficiency_factor = 0.2
 		
 		research_cost = 2.5
-		start_year = 1943 allow = 
+		start_year = 1943 allow = {date > 1943.1.1}
 		
 		XOR = {
 			streamlined_line
@@ -192,7 +192,7 @@ technologies = {
 			
 		research_cost = 2.5
 		start_year = 1943 
-		
+		allow = {date > 1943.1.1}
 		XOR = {
 			flexible_line
 		}

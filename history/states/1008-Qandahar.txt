@@ -4,7 +4,7 @@ state={
 	manpower = 1
 	state_category = rural
 	history={
-		owner = HMV
+		
 	}
 	provinces={
 		4949 5020 5064 8090 10789 

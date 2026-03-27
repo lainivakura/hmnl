@@ -38,11 +38,6 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_adjuster_snow_bg"
-		textureFile = "gfx//interface//snow_icon.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_adjuster_plains_bg"
 		textureFile = "gfx//interface//plains_icon.dds"
 	}	
@@ -221,6 +216,17 @@ spriteTypes = {
 		name = "GFX_division_3d_entry"
 		textureFile = "gfx/interface/division_3d_entry.dds"
 		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_division_3d_entry_half_width"
+		textureFile = "gfx/interface/division_3d_entry_half_width.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_division_3d_entry_icon_sh"
+		textureFile = "gfx/interface/division_3d_entry_icon_sh.dds"
 	}
 
 	corneredTileSpriteType = {

@@ -5,7 +5,7 @@ state={
 	manpower = 1
 	state_category = town
 	history={
-		owner = HMV
+		
 	}
 	provinces={
 		1944 1997 2052 4526 5088 10855 12772 

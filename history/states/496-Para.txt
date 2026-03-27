@@ -7,7 +7,7 @@ state = {
 	state_category = rural # was town
 	
 	history={
-		owner = HMV
+		
 	}
 
 	provinces = {

@@ -46,12 +46,18 @@ fire_concentration = {
      category_line_artillery = {
         max_organisation = 5
      }
-
+     anti_tank_brigade = {
+                max_organisation = 5
+            }
      rewards = {
         standing_barrage = {
         #1
             category_line_artillery = {
                 defense = 0.1
+            }
+		anti_tank_brigade = {
+                ap_attack = 0.05
+                hard_attack = 0.05
             }
         }
         predicted_fire = {
@@ -63,8 +69,7 @@ fire_concentration = {
         artillery_groups = {
         #3
             category_line_artillery = {
-                breakthrough = 0.1
-                defense = 0.05
+                max_organisation = 5
             }
         }
         dedicated_air_support = {
@@ -117,6 +122,7 @@ anti_tank_frontline = {
         #1
             anti_tank_brigade = {
                 defense = 0.2
+		hard_attack = 0.05
                 ap_attack = 0.1
                 soft_attack = 0.2
             }

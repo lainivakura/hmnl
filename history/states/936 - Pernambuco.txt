@@ -7,7 +7,7 @@ state = {
 	state_category = town # Was city
 
 	history={
-		owner = HMV
+		
 	}
 
 	provinces = {

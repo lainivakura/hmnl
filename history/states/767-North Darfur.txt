@@ -8,7 +8,7 @@ state = {
 	force_link_ownership_to = 551 # Kharthoum
 	
 	history={
-		owner = HMV
+		
 	}
 
 	provinces = {

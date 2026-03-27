@@ -5754,6 +5754,18 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			add_mastery = {
+				amount = 150
+				track = infantry
+			}
+			add_mastery = {
+				amount = 150
+				track = combat_support
+			}
+			add_mastery = {
+				amount = 100
+				track = operations
+			}
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			add_to_variable = { SOV_the_red_army_training_time_factor = 0.1 }
 			custom_effect_tooltip = SOV_cohesion_first_ns_tt
@@ -11178,7 +11190,7 @@ date > 1949.12.1
 		x = -2
 		y = 1
 		relative_position_id = SOV_addressing_internal_affairs
-		cost = 5
+		cost = 1
 
 		available = {
 

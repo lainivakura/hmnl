@@ -8,7 +8,7 @@ state = {
 	force_link_ownership_to = 456 # Aswan
 
 	history={
-		owner = HMV
+		
 	}
 
 	provinces = {

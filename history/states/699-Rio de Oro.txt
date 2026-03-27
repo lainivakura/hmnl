@@ -8,7 +8,7 @@ state={
 	force_link_ownership_to = 557 # Mauritania
 
 	history={
-		owner = HMV
+	
 	}
 	
 	provinces={

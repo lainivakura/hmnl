@@ -5,7 +5,7 @@ state={
 		2198 5216 8185 8254 
 	}
 	history={
-		owner = HMV
+		
 	}
 	manpower=1
 	impassable = yes

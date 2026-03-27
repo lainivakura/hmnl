@@ -4,7 +4,7 @@ state = {
 	manpower = 1
 	state_category = pastoral 
 	history={
-		owner = HMV
+		
 	}
 	provinces = {
 		1731 1929 2024 4128 7716 8016 9986 10858 

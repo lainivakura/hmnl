@@ -5,7 +5,7 @@ state={
 	state_category = pastoral 
 
 	history={
-		owner = HMV
+		
 	}
 	provinces={
 		2123 2159 2180 2202 2217 5164 10972 12971 
