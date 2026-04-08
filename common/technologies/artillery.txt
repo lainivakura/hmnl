@@ -187,7 +187,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939 allow = { date > 1938.1.1 }
+		start_year = 1939 allow = { date > 1937.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -248,7 +248,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1940 allow = { date > 1939.1.1 }
+		start_year = 1940 allow = { date > 1938.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -307,7 +307,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941 allow = { date > 1940.1.1 }
+		start_year = 1941 allow = { date > 1939.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -357,7 +357,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1942 allow = { date > 1941.1.1 }
+		start_year = 1942 allow = { date > 1939.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -413,7 +413,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1943 allow = { date > 1942.1.1 }
+		start_year = 1943 allow = { date > 1941.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -494,7 +494,7 @@ technologies = {
 
 		research_cost = 2
 
-		start_year = 1940 allow = { date > 1939.1.1 }
+		start_year = 1940 allow = { date > 1938.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -539,7 +539,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1941 allow = { date > 1940.1.1 }
+		start_year = 1941 allow = { date > 1939.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -584,7 +584,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1942 allow = { date > 1941.1.1 }
+		start_year = 1942 allow = { date > 1940.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -620,7 +620,7 @@ technologies = {
 		}
 		research_cost = 1
 
-		start_year = 1943 allow = { date > 1942.1.1 }
+		start_year = 1943 allow = { date > 1941.1.1 }
 
 		folder = {
 			name = artillery_folder
@@ -1700,5 +1700,22 @@ technologies = {
 
 		special_project_specialization = { specialization_land specialization_air }
 	}
-
+	USA_fire_concentration = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		artillery_brigade = {
+			combat_width = -1
+		 }
+		 rocket_artillery_brigade = {
+			combat_width = -1
+		 }
+		  motorized_rocket_brigade = {
+			combat_width = -1
+		 }
+		 mot_artillery_brigade = {
+			combat_width = -1
+		 }
+	}
 }

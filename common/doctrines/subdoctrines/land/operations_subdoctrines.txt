@@ -89,7 +89,8 @@ last_stand = {
     }
     # EFFECTS
     conscription = 0.025
-
+    army_core_attack_factor = 0.05
+    army_core_defence_factor = 0.05 
     ai_will_do = {
 
         base = 0
@@ -285,7 +286,7 @@ grand_assault = {
         multiple_attack_directions = {
         #2
             category_army = {
-                breakthrough = 0.15
+                breakthrough = 0.1
             }
         }
         combined_arms_integration = {
@@ -293,7 +294,7 @@ grand_assault = {
             army_bonus_air_superiority_factor = 0.05 
             coordination_bonus = 0.1
             category_tanks = {
-                max_organisation = 4
+                max_organisation = 3
             }
 
             anti_air = {

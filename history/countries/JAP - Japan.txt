@@ -24,7 +24,9 @@ add_dynamic_modifier = {
 #Tier 2: 10-24 points
 #Tier 3: 25-39 points
 #Tier 4: 40+ points - should however never be able to go above 45
-
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_base_strike
+set_grand_doctrine = new_operational_integrity
 set_variable = { JAP_tier_1_to_tier_2_small_gate = 5 }
 set_variable = { JAP_tier_2_to_tier_3_small_gate = 20 }
 set_variable = { JAP_tier_2_to_tier_3_big_gate = 15 }

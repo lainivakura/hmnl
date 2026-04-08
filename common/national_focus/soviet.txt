@@ -5851,7 +5851,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 5
+		cost = 1
 
 		available = {
 			any_enemy_country = {
@@ -5864,7 +5864,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_desperate_measures_ns
-				days = 250
+				days = 180
 			}
 
 			add_timed_idea = {

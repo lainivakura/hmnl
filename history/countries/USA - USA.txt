@@ -39,6 +39,9 @@ if = {
 		}
 	}
 }
+set_grand_doctrine = superior_firepower
+set_grand_doctrine = new_base_strike
+set_grand_doctrine = new_operational_integrity
 add_offsite_building = { type = arms_factory level= 10 }
 set_research_slots = 4
 set_stability = 0.74

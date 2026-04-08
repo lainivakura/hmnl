@@ -31,20 +31,10 @@ fire_concentration = {
      # EFFECTS
      enable_tactic = tactic_overwhelming_fire
 
-     artillery_brigade = {
-        combat_width = -1
-     }
-     rocket_artillery_brigade = {
-        combat_width = -1
-     }
-      motorized_rocket_brigade = {
-        combat_width = -1
-     }
-     mot_artillery_brigade = {
-        combat_width = -1
-     }
+     
      category_line_artillery = {
         max_organisation = 5
+		soft_attack = 0.05
      }
      anti_tank_brigade = {
                 max_organisation = 5
@@ -227,6 +217,9 @@ flying_batteries = {
                     initiative = 0.02
                     supply_consumption = -0.01
                 }
+            }
+			category_line_artillery = {
+                soft_attack = 0.1
             }
 
         }

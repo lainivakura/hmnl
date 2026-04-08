@@ -1447,7 +1447,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1940.4.1
+			date > 1940.6.1
 			congress_medium_support_trigger = yes
 			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
@@ -2255,17 +2255,14 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			OR = {
-				has_war = yes
-				date > 1939.9.1
-			}
+			has_war = yes
 			democratic > 0.95
 		}
 		continue_if_invalid = yes
 		x = 0
 		y = 2
 		relative_position_id = USA_arsenal_of_democracy
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -4326,7 +4323,7 @@ focus_tree = {
 			}
 		}
 		
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -5354,6 +5351,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			hidden_effect = { set_technology = { USA_fire_concentration = 1 } }
 			add_tech_bonus = {
 				name = USA_support_rock_island
 				uses = 2

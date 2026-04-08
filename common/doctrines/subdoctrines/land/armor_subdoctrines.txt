@@ -8,12 +8,13 @@ armored_spearhead = {
     xp_type = army
 
     available = {
+		original_tag = GER
         always = yes
     }
     visible = {
         has_dlc = "La Resistance"
     }
-
+	enable_tactic = tactic_blitz
     ai_will_do = {
 
         base = 1
@@ -26,7 +27,7 @@ armored_spearhead = {
             is_major = no
         }
     }
-
+	
     # EFFECTS
     enable_tactic = tactic_breakthrough
 
@@ -36,11 +37,14 @@ armored_spearhead = {
             category_tanks= {
                 max_organisation = 1
                 default_morale = 0.1
+				hard_attack = 0.1
             }
         }
         armored_breakthrough_exploits = {
         #2
             category_all_armor = {
+				maximum_speed = 0.05
+				soft_attack = 0.1
                 breakthrough = 0.1
             }
         }
@@ -52,12 +56,13 @@ armored_spearhead = {
             }
             light_armor = {
                 default_morale = 0.1
-                max_organisation = 3
+                max_organisation = 4
             }
         }
         tactical_reconnaissance = {
         #4
             category_all_armor = {
+				
                 breakthrough = 0.1
             }
         }
@@ -69,6 +74,8 @@ armored_spearhead = {
                 breakthrough = 0.2
             }
              category_tanks= {
+				soft_attack = 0.05
+				hard_attack = 0.05
                 max_organisation = 3
                 breakthrough = 0.2
             }
@@ -195,24 +202,19 @@ armored_infantry_support = {
 
     rewards = {
         mobile_reserves = {
-        #1
-            medium_armor = {
+        	category_all_armor = {
                 breakthrough = 0.05
                 soft_attack = 0.1
+				hard_attack = 0.05
             }
-            heavy_armor = {
-                breakthrough = 0.05
-                soft_attack = 0.1
-            }
+            
         }
         armored_cohorts = {
         #2
-            medium_armor = {
-                max_organisation = 7
+            category_all_armor = {
+                max_organisation = 5
             }
-            heavy_armor = {
-                max_organisation = 7
-            }
+            
         }
         maintenance_routines = {
         #3
@@ -226,7 +228,7 @@ armored_infantry_support = {
         }
         fuel_rationing = {
         #4
-            heavy_armor = {
+            category_all_armor = {
                 supply_consumption = -0.08
             }
         }
@@ -235,8 +237,10 @@ armored_infantry_support = {
             category_all_infantry = {
                 breakthrough = 0.05
             }
-            heavy_armor = {
+            category_all_armor = {
                 breakthrough = 0.1
+				hard_attack = 0.05
+				soft_attack = 0.05
             }
         }
     }
@@ -252,6 +256,7 @@ streamlined_deployment = {
     xp_type = army
 
     available = {
+		original_tag = SOV
         always = yes
     }
 
@@ -269,11 +274,14 @@ streamlined_deployment = {
 
     }
 
-    category_all_armor = {
+    category_tanks = {
+		
         soft_attack = 0.1
         breakthrough = 0.1
     }
-
+	medium_armor = {combat_width = -0.5}
+	light_armor = {combat_width = -0.5}
+	heavy_armor = {combat_width = -0.5}
 
     rewards = {
         flexible_armored_battalions = {
@@ -292,9 +300,11 @@ streamlined_deployment = {
         mechanized_wave = {
             mechanized = {
                 max_organisation = 5
+		
                 default_morale = 0.2
             }
             category_all_armor = {
+		hard_attack = 0.1
                 default_morale = 0.2
             }
         }
@@ -322,6 +332,7 @@ streamlined_deployment = {
         continuous_offensives = {
             category_all_armor = {
                 default_morale = 0.2
+		soft_attack = 0.1
                 max_organisation = 2
             }
         }
@@ -463,23 +474,25 @@ armored_cavalry = {
     rewards = {
         cruiser_tanks = {
             light_armor = {
+				soft_attack = 0.05
+				hard_attack = 0.05
                 maximum_speed = 0.1
                 max_organisation = 5
                 breakthrough = 0.05
             }
         }
         quick_response_force = {
-            motorized_military_police = {
-                    battalion_mult = {
-                        category = category_vehicle_infantry
-                        suppression_factor = 0.05
-                    }
-    
+            light_tank_recon = {
+                max_organisation = 2
+                soft_attack = 0.05
             }
+    
+            
             armored_car = {
                 suppression_factor = 0.2
             }
-        }
+			}
+        
         speed_as_armour = {
             light_armor = {
                 maximum_speed = 0.05
@@ -492,7 +505,7 @@ armored_cavalry = {
     
             }
             mechanized = {
-                maximum_speed = 0.05
+                maximum_speed = 0.1
                 breakthrough = 0.05
             }
         }
@@ -502,8 +515,8 @@ armored_cavalry = {
                  soft_attack = 0.05
             }
             light_tank_recon = {
-                max_organisation = 2
-                soft_attack = 0.05
+                max_organisation = 5
+                soft_attack = 0.1
             }
         }
         sustained_deployments = {
@@ -677,12 +690,13 @@ tank_destroyer_force = {
                     category = category_tank_destroyers
                     reliability = 0.02
                     soft_attack = 0.05
-                    hard_attack = 0.05
+                    hard_attack = 0.1
                 }
             }
         }
         redeployment_priority = {
             category_tank_destroyers = {
+				hard_attack = 0.05
                 supply_consumption = -0.02
                 default_morale = 0.1
             }
@@ -691,7 +705,7 @@ tank_destroyer_force = {
         independent_counterattacks = {
             category_tank_destroyers = {
                 max_organisation = 6
-                initiative = 0.01
+                initiative = 0.1
             }
         }
 
@@ -699,7 +713,7 @@ tank_destroyer_force = {
             armored_signal = {
                 battalion_mult = {
                     category = category_tank_destroyers
-                    hard_attack = 0.1
+                    hard_attack = 0.05
                     ap_attack = 0.2
 
                 }

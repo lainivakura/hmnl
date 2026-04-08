@@ -274,7 +274,7 @@ characters = {
 			skill = 5
 			attack_skill = 5
 			defense_skill = 4
-			planning_skill = 5
+			planning_skill = 8
 			logistics_skill = 4
 			legacy_id = 407
 		}
@@ -360,7 +360,7 @@ characters = {
 				original_tag = SOV
 			}
 			traits = {
-				army_concealment_2
+				army_concealment_3
 			}
 			cost = 100
 		}
@@ -375,7 +375,25 @@ characters = {
 			legacy_id = 408
 		}
 	}
+	SOV_ivan_bagramyan = {
+		name = SOV_ivan_bagramyan
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/portrait_SOV_ivan_bagramyan.dds"
+			}
+		}
+		
 
+		corps_commander = {
+			traits = { brilliant_strategist armor_officer politically_connected panzer_leader infantry_leader urban_assault_specialist organizer }
+			skill = 7
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 6
+			legacy_id = 408
+		}
+	}
 	SOV_semyon_timoshenko = {
 		name = SOV_semyon_timoshenko
 		portraits = {
@@ -967,7 +985,7 @@ characters = {
 			traits = { brilliant_strategist career_officer urban_assault_specialist infantry_leader trickster}
 			skill = 4
 			attack_skill = 3
-			defense_skill = 6
+			defense_skill = 8
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0

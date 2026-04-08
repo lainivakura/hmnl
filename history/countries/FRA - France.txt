@@ -98,7 +98,9 @@ IF = {
 }
 
 add_command_power = 20
-
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_operational_integrity
 army_experience = 20
 air_experience = 20
 navy_experience = 20

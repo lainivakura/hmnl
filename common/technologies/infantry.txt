@@ -387,7 +387,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942 allow = { date > 1941.1.1 }
+		start_year = 1942 allow = { date > 1940.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1942 }
@@ -1992,7 +1992,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939 allow = { date > 1938.1.1 }
+		start_year = 1939 allow = { date > 1937.1.1 }
 
 		ai_will_do = {
 			factor = 1
@@ -2075,7 +2075,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940 allow = { date > 1939.1.1 }
+		start_year = 1940 allow = { date > 1938.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = @1940 }
@@ -2119,7 +2119,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942 allow = { date > 1941.1.1 }
+		start_year = 1942 allow = { date > 1940.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = @1942 }
@@ -2168,7 +2168,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 
 		research_cost = 1
-		start_year = 1942 allow = { date > 1941.1.1 }
+		start_year = 1942 allow = { date > 1940.1.1 }
 		sub_tech_index = 1
 
 		categories = {
@@ -2210,7 +2210,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942 allow = { date > 1941.1.1 }
+		start_year = 1942 allow = { date > 1940.1.1 }
 		sub_tech_index = 1
 
 		categories = {
@@ -2279,16 +2279,16 @@ technologies = {
 			hardness = 1.0
 		}
 		mot_artillery_brigade = {
-			hardness = 1.0
+			hardness = 5.0
 		}
 		mot_anti_tank_brigade = {
-			hardness = 1.0
+			hardness = 5.0
 		}
 		mot_anti_air_brigade = {
-			hardness = 1.0
+			hardness = 5.0
 		}
 		mot_rocket_artillery_brigade = {
-			hardness = 1.0
+			hardness = 5.0
 		}
 
 		path = {
@@ -2302,7 +2302,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940 allow = { date > 1939.1.1 }
+		start_year = 1940 allow = { date > 1938.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1940 }
@@ -2373,7 +2373,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941 allow = { date > 1940.1.1 }
+		start_year = 1941 allow = { date > 1939.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 2 y = @1941 }
@@ -2404,7 +2404,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943 allow = { date > 1942.1.1 }
+		start_year = 1943 allow = { date > 1941.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 2 y = @1943 }
@@ -2437,7 +2437,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942 allow = { date > 1941.1.1 }
+		start_year = 1942 allow = { date > 1940.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1942 }
@@ -2468,7 +2468,7 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1944 allow = { date > 1943.1.1 }
+		start_year = 1944 allow = { date > 1942.1.1 }
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1944 }
