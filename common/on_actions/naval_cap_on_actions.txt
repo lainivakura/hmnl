@@ -1,0 +1,25 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			NVLCAP_check_fleet_size = yes 
+		}
+	}
+	on_startup = {
+			effect = {
+				VEN = { NVLCAP_startup_on_actions = yes }
+				
+				# Variables to re-use elsewhere
+				set_variable = { global.CAP = 60 }
+				set_variable = { global.SSCAP = 1 }
+				set_variable = { global.DDCAP = 1 }
+				set_variable = { global.LCCAP = 2 }
+				set_variable = { global.HCCAP = 2 }
+				set_variable = { global.BCCAP = 3 }
+				set_variable = { global.BBCAP = 3 }
+				set_variable = { global.CVCAP = 4 }
+				# Not used in Vanilla
+				#set_variable = { global.SHBBCAP = 1 } 
+				#set_variable = { global.SHCVCAP = 1 }
+			}
+	}
+}
